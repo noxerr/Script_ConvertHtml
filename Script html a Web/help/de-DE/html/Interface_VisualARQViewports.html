@@ -1,0 +1,65 @@
+<h3>VisualARQ-Ansichtsfenster</h3>
+
+<p>VisualARQ-Ansichtsfenster weisen das gleiche Verhaltens- und Steuerungsmuster wie Rhino-Ansichtsfenster auf. Der Hauptunterschied liegt in der Darstellung der VisualARQ-Objekte in der Draufsicht (Planansicht), die in VisualARQ "Geschoss 1" heißt.</p>
+
+<p class="figureWithDescription">
+<img src="../images/Level 02 plan View.png" alt="Planansicht (Geschoss 1) und perspektivische Ansicht" width="450" height="400"/><br/>
+Planansicht (Ebene 02).</p>
+
+<p>Rhino-Objekte werden von oben in 3D angezeigt, während VisualARQ-Objekte in diesen Ansichten in 2D gezeichnet werden. Die 2D-Darstellung nutzt die Standardanzeige von Geschosselementen in Architekturzeichnungen: Wände zeigen ihre Komponenten an, Türen ihre Öffnungsrichtung, Stufen von Treppen werden nummeriert, etc.</p>
+
+<p>Die VisualARQ-<strong>Plan</strong>ansicht ist ein horizontaler Schnitt mit einer Schnittebene auf einer standardmäßigen Höhe von 1,40 m über dem aktuellen Geschoss. Die können die Höhe der Geschosse und die Höhe der Schnittebene jedes Geschosses im Dialogfenster <a href="Commands_vaLevels.html" title="Dialogfenster Ebenenmanager">Ebenenmanager</a> ändern.</p>
+
+<p>Bei Verwendung von VisualARQ-Vorlagen wird als Titel der <strong>Plan</strong>ansicht standardmäßig als 
+<strong>Ebene 01</strong>
+ oder <em></em><strong>Erdgeschoss</strong> angegeben. Wenn Sie im Dialogfenster <a href="Commands_vaLevels.html" title="Dialogfenster Ebenenmanager">Ebenenmanager</a> weitere Ebenen erstellen, können Sie die in der ausgewählten Ansicht dargestellten Informationen filtern und sich nur die der als 
+<strong>Aktuelle Ebene</strong><em> definierten Ebene entsprechenden Elemente und eine Projektion der sichtbaren Elemente darunter anzeigen lassen.</em>
+<em> </em>Die aktuelle Ebene wird im Tooltip der Ansicht angezeigt.</p>
+
+
+<p>Der <a href="Commands_vaLevels.html" title="Dialogfenster Ebenenmanager">Ebenenmanager</a> kann auf vier verschiedene Arten geöffnet werden:</p>
+
+<ul>
+	<li>Wählen Sie im Menü <strong>VisualARQ</strong> den Eintrag <strong>Ebenen &gt; Ebenen bearbeiten ...</strong></li>
+	<li>Klicken Sie mit der rechten Maustaste auf den Titel der Ansicht und wählen Sie <strong>VisualARQ &gt; Ebenen...</strong></li>
+	<li>Klicken Sie in der <strong>VisualARQ<em>-</em></strong>Werkzeugleiste<strong>
+	</strong> auf die Schaltfläche <strong>Ebenen</strong>.</li>
+	<li>Führen Sie in der Befehlszeile den Befehl <strong>vaEbenen</strong> aus.</li>
+</ul>
+<p class="figureWithDescription">
+<img src="../images/setfloorview.jpg" alt="Kontextmenü der Titelzeile von Ansichtsfenstern &gt; VisualARQ &gt; Ebenen" /><br/>
+<br/>
+Zum Öffnen des Ebenen-Dialogfensters klicken Sie mit der rechten Maustaste auf den Titel der Ansicht und wählen Sie <strong>
+VisualARQ &gt; Ebenen ...</strong></p>
+
+<p>Sie können jede beliebige Ebene im <a href="Commands_vaLevels.html" title="Dialogfenster Ebenenmanager">Ebenenmanager</a> als <strong>Aktuell</strong> setzen.</p>
+
+<p>Es gibt zwei Möglichkeiten, zwischen der üblichen Rhino-Draufsicht und der VisualARQ-2D-Zeichnung zu wechseln.</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Planansicht"/></td>
+				<td>Klicken Sie im <strong>Ebenenmanager</strong> auf die Schaltfläche 
+				<strong>Schnittebene</strong>. </td>
+			</tr>
+		</table>			
+	</li>
+	<li>Geben Sie in der Befehlszeile den Befehl <strong>vaAnsichtDefinieren</strong> ein. Dadurch wird im aktuellen Ansichtsfenster die Draufsicht eingestellt und die Schnittebene eines gewählten Gebäudes oder einer Ebene aktiviert.</li>
+</ul>
+
+<p><strong>HINWEIS: </strong> Sie können die Optionen <strong>vaAnsichtDefinieren</strong> <strong>&gt; Ebene 
+</strong>und <strong>vaAnsichtDefinieren &gt; Modell </strong>in jeder Ansicht verwenden.</p>
+
+<p>
+<img alt="Skalasymbol in orthografischen Ansichten" height="144" src="../images/Scale%20symbol.png" style="float: right" width="274" /></p>
+<h5>Skalasymbol</h5>
+
+<p>Wenn VisualARQ geladen ist und Sie mit einer VisualARQ-Vorlagen arbeiten, zeigen die Ansichtsfenster mit paralleler Projektion (d.h. alle außer der perspektivischen Ansicht) ein der unteren rechten Ecke eine Skala an.</p>
+<p>Die Optionen des Skalasymbols können in den <a href="Interface_VisualARQOptions.html">VisualARQ-Optionen</a> im Dialogfenster der <strong>Rhino-Optionen</strong> bearbeitet werden.</p>
+<br clear="all" />
+<p>
+<img style="float: right" alt="Höhenreferenzen in Frontansicht" height="144" src="../images/Elevation%20marks%20front.png" width="274" /></p>
+
+<h5>Höhenreferenzen</h5>
+<p>In der <em>Front</em>- und <em>Seitenansicht</em> werden die Höhenreferenzen inklusive Nummer, Name und Höhe vom Boden angezeigt, die im Ebenenmanager eingestellt wurden. Die Ebene, die Sie gerade bearbeiten, wird dabei farblich hervorgehoben dargestellt.</p>
+<p>Die Höhenreferenzen können in den <a href="Interface_VisualARQOptions.html">VisualARQ-Optionen</a> im Dialogfenster der <strong>Rhino-Optionen</strong> eingestellt werden.</p>

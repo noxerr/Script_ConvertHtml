@@ -1,0 +1,4 @@
+ECHO OFF
+CHCP 1252
+SET LANG=fr-FR
+CALL Bin\buildWeb

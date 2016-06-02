@@ -1,0 +1,34 @@
+<h3>Muro: Extender</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaMuroExtender</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_WallExtendToSrf.jpg" alt="Muro: Extender"/> clic derecho [<a href="Commands_vaWallUnextend.html" title="Muro: Cancelar extensión">clic derecho</a>]
+
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html#VisualARQWallsToolbar">Muros</a>: </div>
+	<div class="value toolbar"><img src="../images/Walls.jpg" alt="Barra de herramientas Muros de VisualARQ" usemap ="#WallsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Muro &gt; Extender</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaWallExtSrf.wmv" preview="../images/previews/vaWallExtSrfvideo.png" width="300px" height="300px"></div>
+
+<p>Opción para extender muros verticalmente hacia arriba o hacia abajo hasta una geometría que pertenece a un objeto creado anteriormente y que cubre total o parcialmente los muros. Los muros pueden extenderse hasta superficies, polisuperficies, muros, escaleras, losas y cubiertas.</p>
+<p>Cuando ejecute el comando <strong>vaMuroExtender</strong>, siga los pasos que se indican en la línea de comandos. Pulse el botón derecho del ratón o INTRO para aceptar y pasar al siguiente paso.</p> 
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione los <strong>muros a extender.</strong></li>
+	<li>Seleccione la dirección de extensión de muro en la línea de comandos:<ul>
+	<li><strong>Superior</strong>: el muro se extenderá hacia arriba.</li>
+	<li><strong>Inferior</strong>: el muro se extenderá hacia abajo.</li></ul></li>
+	<li>Seleccione la <strong>entidad</strong> o <strong>entidades</strong> (superficie, polisuperficie, muro, escalera, losa o cubierta) a la cual desea extender los muros.</li>	
+</ol>
+<p>Los muros se extienden verticalmente hasta encontrarse con la superficie que los cubre, adaptándose a su forma.</p>
+Si la superficie no cubre totalmente los muros a extender, se extenderá únicamente la parte del muro que quede cubierta. Las caras superior e inferior de los muros se actualizan automáticamente después de cualquier modificación en la superficie/polisuperficie/muro/escalera/losa/cubierta. La parte del muro que no está cubierta por la superficie se mantendrá con la misma altura. <p>La asociatividad entre muros y los objetos a los que se extendieron termina si los objetos se eliminan. Sin embargo, las caras superiores o inferiores de los muros extendidos mantienen la forma de la superficie.</p>
+
+<h4>Cancelar extensión de muros</h4>
+<p>Para cancelar la extensión de los muros y recuperar su forma original, ejecute el comando <a href="Commands_vaWallUnextend.html" title="Muro: Cancelar extensión"><strong>vaMuroExtender &gt; Cancelar extensión</strong></a> o haga clic en la flecha <em>Cancelar extensión de muro</em> que se mostrará cuando se activen los puntos de control del muro extendido.</p>

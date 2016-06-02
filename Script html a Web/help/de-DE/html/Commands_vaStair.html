@@ -1,0 +1,175 @@
+<h3>Treppe</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaTreppe</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Treppe"/> Linksklick [<a href="Commands_vaStairStyles.html" title="Befehl Treppenstile">Rechtsklick</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Werkzeugleiste</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Treppe &gt; Treppe</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaStair.wmv" preview="../images/previews/vaStairvideo.png" width="300px" height="300px"></div>
+
+<p>Durch Ausführen des Befehls <strong>vaTreppe</strong> wird das <a href="Interface_Dialog.html">Einfüge-Dialogfenster</a> für Treppen geöffnet. Das Dialogfenster zeigt eine Liste mit allen erhältlichen Treppenstilen sowie die grundlegenden Optionen des Treppenobjekts und die entsprechende Vorschau an.</p>
+<p>Zur Erzeugung einer Treppe sind mindestens ein Einfügungspunkt und ein Endpunkt nötig.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Treppenstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Fügen Sie die Treppe durch Wahl eines <strong>Einfügungspunkts</strong> ein.</li>
+	<li>Wählen Sie eine beliebige Anzahl von Punkten entlang des Treppenobjekts aus. Jeder Punkt markiert den Beginn eines neuen Treppenlaufs und dessen Richtung. Der Längenwert hängt von den vorher definierten Parametern ab (<strong>Höhe</strong>, 
+	<strong>Auftritt</strong>, <strong>Auftrittszahl</strong>).</li>
+	<li>Schließen Sie die Ausführung des Befehls durch Drücken von ENTER oder mit Klick auf die rechte Maustaste ab.</li>
+</ol>
+
+<p>Der Befehl erzeugt einen Treppenlauf, dessen Richtung geändert werden oder an jedem ausgewählten Punkt gerade bleiben kann. Diese Treppenläufe werden mit Podesten verbunden.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/StairInsert.png" alt="Einfügedialog Treppen"/><br/>
+Einfügedialog Treppe
+</div>
+<br clear="all" />
+
+
+<h3>Wendeltreppe</h3>
+
+<p>Durch Auswahl der Option <a href="Interface_Dialog.html">Wendeltreppe</a> wird im Einfügedialog eine spezielle Sektion angezeigt, in der die Parameter einer Wendeltreppe angegeben werden können.</p>
+
+<ul>
+	<li>Drehwinkel</li>
+	<li>Radius</li>
+	<li>Uhrzeigersinn: bestimmt die Richtung der Wendeltreppe</li>
+</ul>
+<p>Diese Option kann nicht mehr bearbeitet werden, wenn die Treppe einmal eingefügt wurde. Um eine Treppe mit geraden Abschnitten in eine Wendeltreppe umzuwandeln, fügen Sie die Treppe erneut ein, wobei Sie die gewünschte Option auswählen.</p>
+<p><strong>HINWEIS</strong>: Der Drehwinkel einer Wendeltreppe kann nicht größer als 360° sein. Um eine Wendeltreppe mit einem größeren Drehwinkel zu erzeugen, fügen Sie einfach zwei oder mehr Treppen hintereinander ein.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/winding stair.png" alt="Drauf- und perspektivische Ansicht einer Wendeltreppe." width="400" height="170"/><br/>
+Wendeltreppe: Plan- und perspektivische Ansicht
+</div>
+
+<br clear="all" />
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+	<div class="figureWithDescription picRight"><img src="../images/stair_scheme.png" alt="Kontrollpunkte auf Treppen" width="250" height="135" style="float: right;"/></div>
+	<p>Die Anzahl der Kontrollpunkte einer Treppe entspricht derjenigen der Einfügungspunkte zur Erstellung derselben.</p>
+	<ol>
+		<li>Einfügungspunkt (Treppenanfang)</li>
+		<li>Beginn des zweiten Treppenlaufs</li>
+		<li>Beginn des dritten Treppenlaufs</li>
+		<li>Ende der Treppe</li>
+	</ol>
+<p>Kontrollpunkte werden verwendet, um die Treppe zu verschieben. Sie dienen nicht zum Skalieren derselben.</p>
+<p>Um die Richtung jedes Treppenlaufs zu definieren, wählen und bewegen Sie den gewünschten Punkt auf dem Bildschirm oder geben Sie einen Winkel in der Befehlszeile ein.</p>
+
+
+<br clear="all" />
+
+<h4>Einfügungsoptionen und -parameter</h4>
+<p>Die meisten Parameter einer Treppe werden im Einfügedialog definiert, wenn die Treppe eingefügt wird. Diese Parameter können auch nachträglich in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> <img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen <img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" /> geändert werden). 
+</p>
+
+<h5>Ausrichtung</h5>
+
+<p>Die Treppe kann auf 3 Arten ausgerichtet werden:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment c.jpg" alt="Ausrichtung Mitte"/></td>
+				<td><strong>Mitte</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment r.jpg" alt="Ausrichtung rechts."/></td>
+				<td><strong>Rechts</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment l.jpg" alt="Ausrichtung links"/></td>
+				<td><strong>Links</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Höhe</h5>
+<p>Der Höhenwert entspricht dem Abstand zwischen der Höhe des Treppenanfangspunkts und der Höhe des Treppenendpunkts.</p>
+
+
+<h5>Breite</h5>
+
+<p>Die Breite ist für alle Stufen auf der ganzen Treppe konstant.</p>
+
+<h5>Auftrittszahl</h5>
+<p>Bestimmt die Anzahl der Auftritte einer Treppe.</p>
+
+
+<h5>Auftritt</h5>
+
+<p>Der Wert für den Auftritt entspricht der Tiefe jeder Stufe. Er bleibt für alle Stufen auf der ganzen Treppe konstant.</p>
+
+
+<h5>Steigung</h5>
+
+<p>Der Wert für die Steigung entspricht der Höhe jeder Stufe. Er wird automatisch mit der Höhe und der Auftrittszahl berechnet und bleibt für alle Stufen auf der gesamten Treppe konstant.
+</p>
+
+<h5>Stärke der Treppendecke oben und unten:</h5>
+<p>Diese Werte passen die Stärke der Treppendecke an ihrem Start- und Endpunkt an, damit sie mir der Stärke der Decke übereinstimmen.</p>
+
+
+<h4>Parameter des Treppenlaufs und -podests:</h4>
+
+<p>Anders als bei den anderen VisualARQ-Objekten verfügt die Treppe über einige Objekteigenschaften, erst nach dem Einfügen der Treppe zugewiesen werden können. <br/>
+Diese Eigenschaften sind der <strong>Treppenlauf</strong> und das <strong>Treppenpodest</strong>, deren Parameter jeweils nur im Dialogfenster der <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> <img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> eingestellt werden können:</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/stair flight landing.png" alt="Dialogfenster für die Treppe (Objekteigenschaften)" /><br />
+Dialogfenster für die Treppe (Objekteigenschaften)
+</div>
+<br clear="all" />
+
+<h4>Treppenlaufparameter</h4>
+<ul>
+	<li>Typ
+		<ul>
+			<li><strong>Podest</strong>: Der Treppenlauf besteht aus einer flachen Platte oder einem Podest.</li>
+			<li><strong>Stufen</strong>: Der Treppenlauf besteht aus Stufen.</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<h4>Podestparameter</h4>
+<ul>
+	<li>Typ
+		<ul>
+			<li><strong>Podest</strong>: Das Podest besteht aus einer flachen Platte oder einem Podest.</li>
+			<li><strong>Stufen</strong>: Das Podest besteht aus Stufen.</li>
+		</ul>
+	</li>
+	<li>Begrenzung
+		<ul>
+			<li>Innen
+				<ul>
+					<li><strong>Gerade</strong>: Die innere Begrenzung ist gerade.</li>
+					<li><strong>Bogenförmig</strong>: Die innere Begrenzung ist bogenförmig.</li>
+				</ul>
+			</li>
+			<li>Außen
+				<ul>
+					<li><strong>Gerade</strong>: Die äußere Begrenzung ist gerade (eckig).</li>
+					<li><strong>Bogenförmig</strong>: Die äußere Begrenzung ist bogenförmig.</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+

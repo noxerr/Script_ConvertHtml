@@ -1,0 +1,102 @@
+<h3>Fläche</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaFläche</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Space.jpg" alt="Fläche"/> Linksklick [<a href="Commands_vaSpaceStyles.html" title="Befehl Flächenstil">Rechtsklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Dokumentation</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Werkzeugleiste VisualARQ-Dokumentation" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Fläche &gt;<li>Aus Punkt</li>
+			<li>Aus Kurve</li>
+			<li>Aus planarer Fläche</li>
+	</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaSpace.wmv" preview="../images/previews/vaSpacevideo.png" width="300px" height="300px"></div>
+
+<p>Das Flächenobjekt stellt das Flächenelement dar, das die Informationen (Name, Flächeninhalt, Umfang, etc.) einer Fläche oder eines Raums mit einem Schraffierungsmuster und einer Markierung anzeigt.</p>
+<p>Ein Raum wird definiert als eine beliebige geschlossene Fläche, die durch Wände und/oder Stützen auf allen vier Seiten begrenzt wird. Wände und Stützen können sich auf verschiedenen Höhe befinden, wenn sie Teil des gleichen Geschosses sind.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Es gibt drei Möglichkeiten, eine Fläche zu erzeugen. Diese Optionen erscheinen in der <em> </em>Befehlszeile, wenn Sie den Befehl <strong>vaFläche</strong> ausführen:</li>
+		<ul>
+			<li>Fläche aus <strong>Wänden und/oder Stützen</strong> (Raum): Klicken Sie mit der linken Maustaste in den Raum, für den Sie die Fläche berechnen möchten. </li>
+			<li>Fläche aus einer <strong>Kurve</strong>: Klicken Sie auf die Befehlszeilenoption <em><u>A</u>usKurve</em>. Wählen Sie eine geschlossene und planare Kurve aus.</li>
+			<li>Fläche aus einer <strong>Fläche</strong>: Klicken Sie auf die Befehlszeilenoption <em>A<u>u</u>sPlanarFläche</em>. Wählen Sie eine planare Fläche.</li>
+		</ul>
+	<li>Daraufhin öffnet sich das Dialogfenster <strong>Neue Fläche</strong>. Geben Sie folgende Informationen für die ausgewählte Fläche ein:</li>
+		<ul>
+			<li><strong>Name</strong></li>
+			<li><strong>Flächentyp</strong>: Nützlich oder Bebaut</li>
+			<li><strong>Stil</strong></li>
+		</ul>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Space/Space Insert.png" alt="Einfügedialog für das Flächenobjekt." /><br />
+	Einfügedialog Fläche</div>
+<br clear="all" />
+<p>Daraufhin wird ein Schraffierungsmuster zur Kennzeichnung der benutzten Fläche eingefügt und auf einem Etikett der Name der Fläche und ihre geometrischen Eigenschaften angezeigt.</p>
+<p>Sie können beliebig viele Flächen erzeugen und die Ausführung des Befehls durch Drücken von ENTER oder ESC beenden.</p>
+
+<h4>Bearbeitung einer Fläche</h4>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaFlächeKonturDefinieren</div>
+</div>
+<p> </p>
+
+<p>Eine Fläche kann mithilfe des Befehls <strong>vaFlächeKonturDefinieren</strong> auf drei verschiedene Arten verändert werden:</p> 
+<ol>
+	<li>Wählen Sie die <strong>Fläche</strong> aus, die Sie ändern möchten.</li>
+	<li>Wählen Sie einen <strong>neuen Punkt</strong> (in einem Raum) zum Einfügen der Fläche oder wählen Sie eine der Optionen in der Befehlszeile: 
+	<strong></strong><u><strong>A</strong></u><strong>usKurve</strong> oder 
+	<strong>A</strong><u><strong>u</strong></u><strong>sPlanarFläche</strong>.</li>
+</ol>
+<p class="style2">Beim Bearbeiten einer Fläche bleiben ihre Eigenschaften erhalten. </p>
+<p><strong>ANMERKUNG: </strong>Flächen aus Wänden und/oder Stützen können <em>manuell</em> mit der Maus in andere Räume verschoben werden. Sie können außerdem <em></em>mit dem Befehl <a href="Commands_vaUpdate.html" title="vaAktualisieren">vaAktualisieren</a> 
+<img alt="vaAktualisieren" height="26" src="../images/VA_Update.jpg" width="26" /> aktualisiert werden, wenn die ursprünglichen Wände bzw. Stützen verändert wurden.</p>
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/assistants/Space/Space Control Points.png" alt="Kontrollpunkte auf Flächen" width="250" height="170"  style="float: right;"/>
+<p>Flächen verfügen über zwei Kontrollpunkte:<br />
+<ol>
+	<li>Einen Einfügungspunkt für das <strong>Schraffierungsmuster</strong>, das die Fläche markiert.</li>
+	<li>Einen Einfügungspunkt für das <strong>Etikett</strong><em>.</em></li>
+</ol>
+</p>
+<p><strong>HINWEIS: </strong> Alle Kontrollpunkte der Fläche werden verwendet, um diese zu verschieben (sie skalieren die Fläche nicht).</p>
+<p>Um eine Fläche in einen neuen Raum zu verschieben, wählen Sie die Fläche aus (Schraffierungsmuster und Etikett) und ziehen Sie sie in den neuen Raum.</p>
+<p>Um die Flächenbeschriftung zu verschieben, aktivieren Sie die Flächenkontrollpunkte und verschieben Sie den Etikettenkontrollpunkt an den gewünschten Punkt.</p>
+
+<h4>Einfügungsoptionen und -parameter</h4>
+
+<p> Der Einfügedialog für die Fläche bietet folgende Einstellungsmöglichkeiten: 
+<strong>Name</strong>, <strong>Flächentyp</strong> und <strong>Stil</strong>.</p>
+<p> Die Parameter, die die Eigenschaften einer Fläche definieren, entsprechen einem <strong>Flächenstil</strong>, obgleich sie auch unabhängig von ihrem Stil im Dialogfenster der <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" /> geändert werden können.</p>
+
+
+<h5>Name</h5>
+
+
+
+<p>Der Name einer Fläche wird zur Unterscheidung und zur Angabe ihrer Funktionalität verwendet.</p>
+<p>Um den Namen einer Fläche zu ändern, gehen Sie in das Dialogfenster der Objekteigenschaften und klicken Sie mit der linken Maustaste auf den Namen der Fläche.</p>
+
+<h5>Flächentyp</h5>
+
+<p>Es sind zwei Typen von Flächen erhältlich:</p>
+<ul>
+	<li><strong>Nützlich:</strong> eine durch einen Raum oder ein Gebäude begrenzte Fläche (ausschließlich der Wandstärke).</li>
+	<li><strong>Bebaut:</strong> eine durch die äußeren Begrenzungen der Konstruktionsebene begrenzte Fläche.</li>
+</ul>
+<p>Um den Flächentyp einer Fläche zu ändern, löschen Sie die Fläche und erzeugen Sie sie erneut unter Auswahl des gewünschten Flächentyps.</p>
+
+<h5>Höhe</h5>
+<p>Das Flächenobjekt hat einen Höhenwert, aus dem sich der Rauminhalt berechnet. Dieser Wert kann im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" /> geändert werden).</p>

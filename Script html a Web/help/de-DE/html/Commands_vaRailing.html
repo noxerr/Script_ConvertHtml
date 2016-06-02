@@ -1,0 +1,112 @@
+<h3>Geländer</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaGeländer</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Railing.jpg" alt="Geländer"/> Linksklick [<a href="Commands_vaRailingStyles.html" title="Befehl GeländerStile">Rechtsklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Geländer &gt; Geländer</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaRailing.wmv" preview="../images/previews/vaRailingvideo.png" width="300px" height="300px"></div>
+
+<p>Durch Ausführen des Befehls <strong>vaGeländer</strong> wird das <strong></strong>Einfüge-Dialogfenster<a href="Interface_Dialog.html">
+<strong> für Geländer</strong></a> geöffnet. Das Dialogfenster zeigt eine Liste aller verfügbaren Geländerstile sowie die grundlegenden Optionen des Geländerobjekts und die entsprechende Vorschau an.</p>
+
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Geländerstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Wählen Sie eine beliebige Anzahl von <strong>Punkten</strong> entlang des Geländerobjekts aus.</li>
+	<li>Schließen Sie die Ausführung des Befehls durch Drücken von <em>ENTER</em> oder mit einem Rechtsklick ab<strong></strong>.</li>
+</ol>
+
+<p>Sie können so viele <strong>Geländer</strong> einfügen, wie Sie möchten und den Befehl durch Drücken von ENTER oder ESC beenden.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Einfügedialog Geländer" height="567" src="../images/assistants/Railing/Railing%20insert%20dialog.png" width="358"/><br/>
+	Einfügedialog Geländer
+</div>
+
+<br clear= "all" />
+
+<h3>Geländer aus Kurve</h3>
+<p>Geländer können auch aus einer Kurve im Modell erzeugt werden:</p>
+
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Geländerstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Wählen Sie in der Befehlszeile <strong>AusKurven</strong> und wählen Sie dann eine <strong>Kurve</strong> oder mehrere <strong>Kurven</strong> aus dem Modell. Die Kurven können jeden beliebigen Typs oder Form sein, so lange sie <em>offen</em> sind.</li>
+	<li>Schließen Sie die Ausführung des Befehls durch Drücken von ENTER oder mit Klick auf die rechte Maustaste ab.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Geländer samt Kontrollpunkten aus einer Kurve" height="275" longdesc="Railing From Curve" src="../images/assistants/Railing/Railing from curve.png" width="400" /><br/>
+	Geländer samt Kontrollpunkten aus einer Kurve.
+</div>
+
+
+<br clear= "all" />
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Geländer können je nachdem, wie sie erzeugt wurden, unterschiedliche Kontrollpunkte haben: Diese Kontrollpunkte können in alle Richtungen bewegt werden, wodurch sich die Position und die Bemaßungen des Geländers ändern.</p>
+<ul>
+	<li><strong>Gerades Geländer:</strong> das Geländer verfügt über je einen Kontrollpunkt an jedem Ende des Objekts.</li>
+	<li><strong>Wand aus Kurve:</strong> das Geländer hat genau so viele Kontrollpunkte wie die Kurve, aus der es erzeugt wurde. </li>
+</ul>
+<br/>
+<h4>Einfügungsoptionen und -parameter</h4>
+
+<h5>Ausrichtung</h5>
+
+<p>Geländer können in Abhängigkeit von der Richtung der Grundkurve drei Regeln entsprechend ausgerichtet werden:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Ausrichtung Mitte"/></td>
+				<td><strong>Mitte</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Ausrichtung rechts."/></td>
+				<td><strong>Rechts</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Ausrichtung links"/></td>
+				<td><strong>Links</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>Um die Ausrichtung eines Geländers zu verändern, bearbeiten Sie die Werte im Dialogfenster <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Optionen" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Ausrichtungsversatz</h5>
+<p>Fügt das Geländer in einem bestimmten Abstand von der Richtung seiner Grundkurve ein.</p>
+
+<p>Zum Ändern des Versatzes eines Geländers bearbeiten Sie seinen Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Höhe vom Boden</h5>
+<p>Die Höhe vom Boden eines Geländers wird immer in Bezug auf die Grundlinie der Ebene, in der sie eingefügt wird, gemessen. Die Höhe vom Boden ist keine Stileigenschaft. Der Wert wird für jedes Geländerobjekt beim Erzeugen desselben im Einfügedialog definiert.<br/>
+Der standardmäßige Höhenwert für Geländer ist 0. Wenn Sie diesen Wert ändern, zeigt der Einfügedialog den zuletzt verwendeten Wert an.</p>
+<h5>Höhe</h5>
+<p>Obwohl die Höhe eine <strong>Eigenschaft des Geländerstils</strong> ist, können Sie einen vom Standardwert für die Höhe im Einfügedialog abweichenden Wert eingeben. Deaktivieren Sie dazu das Kontrollkästchen 
+<strong>Höhe nach Stil</strong> und wählen Sie den gewünschten Wert anhand der numerischen Höhensteuerung aus.</p>
+<p>Dieser Wert kann auch in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" /> geändert werden.</p>
+

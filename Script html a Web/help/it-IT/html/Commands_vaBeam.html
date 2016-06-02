@@ -1,0 +1,103 @@
+<h3>Trave</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaTrave</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_beam.jpg" alt="Trave"/> clic sinistro [<a href="Commands_vabeamStyles.html" title="Stili di trave">clic destro</a>]
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html">Oggetti</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Trave &gt; Trave</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaBeam.wmv" preview="../images/previews/vaBeamvideo.png" width="300px" height="300px"></div>
+
+<p>Quando si esegue il comando <strong>vaTrave</strong>, appare la 
+<a href="../Ele/Interface_Dialog.html">finestra di dialogo di inserimento</a> delle travi. Questa finestra mostra l'elenco di tutti gli stili di trave disponibili, così come le opzioni di base dell'oggetto trave ed un'anteprima dello stesso.</p>
+
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare lo <strong>stile di trave</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Specificare il <strong>punto iniziale</strong> <strong>della trave</strong> con un clic sul punto desiderato.</li>
+	<li>Specificare il <strong>punto finale</strong> <strong>della trave</strong> con un clic sul punto desiderato.</li>
+</ol>
+
+<p>Si può proseguire con l'inserimento delle travi fino all'annullamento del comando con INVIO o ESC.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Finestra di dialogo di inserimento travi" height="808" src="../images/assistants/Beam/beam.png" width="358"/><br/>
+	Finestra di dialogo delle travi
+</div>
+
+<br clear= "all" />
+
+<h3>Trave da curva</h3>
+<p>Le travi si possono creare anche a partire da una curva presente nel modello:</p>
+
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Eseguire il comando <strong>vaTrave</strong> per creare una nuova trave. Apparirà la <strong>finestra di dialogo di inserimento delle travi
+	</strong>.</li>
+	<li>Selezionare lo <strong>stile di trave</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Selezionare <strong>DaCurve</strong><em> </em>sulla linea di comando e quindi selezionare una <strong>curva</strong> dal modello.</li>
+	<li>Premere INVIO oppure il tasto destro del mouse per terminare il comando.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Punti di controllo della trave" height="198" longdesc="Beam created from a curve, with control points on" src="../images/assistants/Beam/beamFromCurve.png" width="325" /><br/>
+	Trave creata da una curva, con i punti di controllo attivati.
+</div>
+
+<br clear= "all" />
+
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Il numero di punti di controllo delle travi varia a seconda di come esse sono state create. I punti di controllo di una trave si possono spostare in qualsiasi direzione per modificare la posizione e le dimensioni della trave.</p>
+<ul>
+	<li><strong>Trave lineare:</strong> la trave ha due punti di controllo, alle sue estremità.</li>
+	<li><strong>Trave da curva:</strong> la trave ha tanti punti di controllo quanti la curva da cui è stata creata. </li>
+</ul>
+<br/>
+<h4>Opzioni e parametri di inserimento</h4>
+
+<h5>Allineamento</h5>
+
+<p>L'allineamento determina la posizione del punto di inserimento della trave secondo la forma del suo profilo.<br/> Opzioni di allineamento:</p>
+
+
+<ul>
+	<li>Superiore sinistra, Superiore centro e Superiore destra</li>
+	<li>Centro sinistra, Centro e Centro destra</li>
+	<li>Inferiore sinistra, Inferiore centro e Inferiore destra</li>
+</ul>
+<p>Per modificare l'allineamento di una trave, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a>
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Offset</h5>
+<p>Indica la distanza (offset) tra i punti X ed Y della trave ed il punto di inserimento.</p>
+
+<p>Per modificare l'offset di una trave, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a>
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevazione</h5>
+<p>L'elevazione di una trave si misura sempre rispetto alla linea di base del livello in cui essa è inserita. L'elevazione non è una proprietà di stile. Il valore si specifica per ciascun oggetto trave, nella relativa finestra di inserimento, nel momento in cui si inserisce una nuova trave.<br/>
+Il valore di elevazione predefinito per le travi è pari a 3 metri. Se questo valore viene modificato, la 
+<strong>finestra di dialogo di inserimento delle travi</strong> mostra l'ultimo valore usato.</p>
+
+<h5>Rollio</h5>
+<p>Questo valore determina l'angolo secondo il quale la trave ruota attorno al suo asse, considerando come centro di rotazione la sua posizione di allineamento. </p>
+<p>Il rollio di una trave si può editare solo nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Riflesso</h5>
+<p>Quando attivata, questa opzione cambia l'orientamento della trave in base a quello della sua immagine speculare. </p>
+<p>Questa opzione si può editare solo nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+

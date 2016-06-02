@@ -1,0 +1,291 @@
+<h3>Style Properties</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaStyleProperties</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Properties"/> right click
+	[<a href="Interface_ObjectProperties.html" title="Object Properties">left 
+		click</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Tools Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="VisualARQ Tools Toolbar" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Properties &gt; Style Properties ...</div>
+	
+	<div class="field">Shortcut: </div>
+	<div class="value menu">Select the object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + Double-click</div>
+
+	
+	
+</div>
+
+<p>
+The <strong>Style Properties </strong>dialog box (also called <strong>Style 
+Manager</strong> dialog box) can be used to edit the style properties of the selected objects and to create new styles for that object. The following commands open the Style Manager for each object type:</p>
+<p>Architectural objects:</p>
+<ul>
+<li><strong>Wall</strong>: <a href="Commands_vaWallStyles.html">vaWallStyles</a></li>
+<li><strong>Curtain Wall</strong>: <a href="Commands_vaCurtainWallStyles.html">vaCurtainWallStyles</a></li>
+<li><strong>Beam</strong>: <a href="Commands_vaBeamStyles.html">vaBeamStyles</a></li>
+<li><strong>Column</strong>: <a href="Commands_vaColumnStyles.html">vaColumnStyles</a></li>
+<li><strong>Door</strong>: <a href="Commands_vaDoorStyles.html">vaDoorStyles</a></li>
+<li><strong>Window</strong>: <a href="Commands_vaWindowStyles.html">vaWindowStyles</a></li>
+<li><strong>Opening</strong>: <a href="Commands_vaOpeningStyles.html">vaOpeningStyles</a></li>
+<li><strong>Stair</strong>: <a href="Commands_vaStairStyles.html">vaStairStyles</a></li>
+<li><strong>Railing</strong>: <a href="Commands_vaRailingStyles.html">vaRailingStyles</a></li>
+<li><strong>Slab</strong>: <a href="Commands_vaSlabStyles.html">vaSlabStyles</a></li>
+<li><strong>Roof</strong>: <em>(Roofs don't have styles)</em></li>
+
+</ul>
+<p>Documentation objects:</p>
+<ul>
+<li><strong>Space</strong>: <a href="Commands_vaSpaceStyles.html">vaSpaceStyles</a></li>
+<li><strong>Table</strong>: <a href="Commands_vaTableStyles.html">vaTableStyles</a></li>
+<li><strong>Tag</strong>: <a href="Commands_vaTagStyles.html">vaTagStyles</a></li>
+<li><strong>Opening elevation</strong>: <a href="Commands_vaOpeningElevationStyles.html">vaOpeningElevationStyles</a></li>
+<li><strong>Section Mark</strong>: <a href="Commands_vaSectionStyles.html">vaSectionStyles</a></li>
+<li><strong>Section View</strong>: <a href="Commands_vaSectionViewStyles.html">vaSectionViewStyles</a></li>
+<li><strong>Plan View</strong>: <a href="Commands_vaPlanViewStyles.html">vaPlanViewStyles</a></li>
+
+</ul>
+
+<p>When you run the <strong>vaStyleProperties</strong> command, the <strong>Style Properties
+</strong>dialog box appears.<br />
+This dialog box can be used to edit the style properties of the selected objects.</p>
+
+<h3>How is this dialog organized?</h3>
+<p>The Style properties dialog is divided in the following areas areas:</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/window/Style Properties - window.png" alt="Style Properties dialog box, style properties of a window" /><br />
+Style Properties dialog box, style properties of a window.</p>
+
+<h4>1. Toolbar</h4>
+<ul>
+	<li><img alt="New icon" height="20" src="../images/New Icon.png" width="20" /> <strong>New</strong>: adds new object styles and new component items.</li>
+	<li><img alt="Delete" height="16" src="../images/delete.jpg" width="16" /> <strong>Delete</strong>: deletes any object style or object style component after selection from the top left panel list.</li>
+	<li><img alt="Rename" height="20" src="../images/Rename.jpg" width="20" /> <strong>Rename</strong>: changes an object style or object style component's name after selection from the top left panel list.</li>
+	<li><strong>Up and Down arrows</strong>: change the position of components within an object style.</li>
+	<li><img alt="Preview window On" height="26" src="../images/Preview%20on.jpg" width="26" /> Option to 
+			show or hide the <strong>Preview window</strong>.</li>
+	<li><img alt="Preview in plan view on" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Option to display the object style in Plan or Perspective 
+			view in the preview window.</li>
+</ul>
+	
+<h4>2. Top left panel</h4>
+<p>It shows the list of styles for the objects selected 
+	when running the command.</p>
+
+<h4>3. Preview window</h4>
+<p>Shows the object style selected in Plan or Perspective view. The preview can be modified with the mouse, similar to the method used in Rhino views:</p>
+<ul>
+	<li><em>Right mouse button</em>: you can rotate the viewpoint to display the model from different points.</li>
+	<li><em>Ctrl + Right mouse button</em>: you can zoom in or out to expand or reduce the field of view.</li>
+	<li><em>Shift + Right mouse button</em>: you can move the viewpoint parallel to the plane of vision; upwards, downwards, right or left.</li>
+</ul>
+<p>The preview allows the selection of the object style components directly on the model displayed. The selected component will be shown in the top left panel list.</p>
+<h4>4. Right panel</h4>
+
+<p>This area shows different information depending on what is selected in 
+	the top left panel:</p>
+	
+<ul>
+	<li>When the general object styles folder is selected, this area 
+			shows the list of existing object styles. At the bottom of the 
+			dialog appear the options to create a New Style, Duplicate or Delete 
+			an existing one from the list above.
+	</li>
+	<li>When a specific object style or object style component is selected, this area shows 
+	the different tabs and properties from where you can edit each object style 
+	parameters.</li>
+</ul>
+
+<a name="NewStyle" />
+<h3>Create a new object style</h3>
+
+<p>There are two options to create a new object style. First, select the <strong>object styles folder</strong> at the top left 
+panel, in order to display the list of styles at the right panel.</p> 
+<ol>
+<li><strong>Create a New Style</strong>: use one of the following options:
+	<ul>
+		<li><strong>New Style... button</strong>: opens the <strong>New style wizard</strong> for some object types and creates a new style with the standard parameters for the others.</li>
+		<li><strong>Context menu</strong>: do right-click on the object style folder to display the context menu and select <em>New &gt; Object Style</em>.</li>
+		<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />, from the dialog toolbar. Select <em>New &gt; Object style</em>. A new style will be created with the standard parameters.</li>
+	</ul>
+</li>
+<li><strong>Duplicate an existing style</strong>: select one style from the right panel list and press the <strong>Duplicate </strong>button.</li>
+</ol>
+
+<p class="figureWithDescription">
+<img alt="Styles dialog for the railing object"  src="../images/assistants/Railing/Railing%20styles.png" /><br/>
+Style Manager dialog box for the Railing object.
+</p>
+<h4>New Style wizard</h4>
+<p>In the option 1, after clicking on <strong>New style...</strong> button, a wizard will guide you throughout the process, requesting the parameters of the object style defined in simple steps.</p>
+<p>Only the <strong>Wall, Column, Door, Window, Stair and Table objects</strong> use the wizard to create new styles. Furthermore, 
+some object style parameters can be only defined after the wizard is 
+finished. (i.e. the object style attributes, the glass muntins for doors and 
+windows, the stairs slab thickness, etc.).</p>
+<p>The object types that don't use the 
+wizard simply add a new object style at the end of the list, after clicking on 
+the <strong>New style</strong> button.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Door style wizard."  /><br/>
+Door style wizard.</p>
+
+<a name="Delete" />
+<h3>Delete an object style</h3>
+
+<p>An object style can be deleted from different options:</p>
+	<ul>
+		<li><strong>Delete... button</strong>: select the object style folder to display the object styles list at the right panel. Select the object style to delete and click on the <strong>Delete...</strong> button.</li>
+		<li><strong>Context menu</strong>: do right-click on the object style name to delete and select <em>Delete</em>.</li>
+		<li><strong>Delete icon</strong> <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />: select the object style name to delete and click on the delete icon, at the dialog toolbar.</li>
+	</ul>
+	
+<p><strong>Note</strong>: only object styles that are not being used by any existing object in the model can be deleted.</p>	
+
+<h3>Edit the object styles</h3>
+
+<p>To edit an object style, select the object style or object style component 
+and edit its properties in the tabs located in the right box. These tabs and 
+properties can be different depending on the object type or object component.</p>
+
+
+<h3>Tabs</h3>
+
+
+<h4>Attributes</h4>
+
+<p>This tab is displayed for all objects that use a dialog box. The tab defines the features (attributes) of each object style and each of its components. The attributes 
+	vary depending on the object style they apply to.</p>
+	
+<ul>
+	<li><strong>Architectural object</strong>: Walls, Curtain walls, Beams, Columns, Doors, Windows, Openings, Stairs 
+	and Railings:
+		<ul>
+			<li>General attributes
+				<ul>
+					<li>Layer</li>
+					<li>Visibility</li>
+					<li>Material</li>
+				</ul>
+			</li>
+			<li>Section and projection attributes:
+				<ul>
+					<li>Color</li>
+					<li>Linetype</li>
+					<li>Line print width</li>
+					<li>Line print color</li>
+					<li>Pattern</li>
+					<li>Pattern scale</li>
+					<li>Pattern angle</li>
+					<li>Pattern color</li>
+				</ul>
+			</li>
+		</ul></li>
+	<li><strong>Documentation object</strong>: Spaces, Tables, Tags, Sections, Section Views and Plan Views:
+		<ul>
+			<li>General attributes
+				<ul>
+					<li>Layer</li>
+					<li>Visibility</li>
+					<li>Text style</li>
+					<li>Dimension style</li>
+					<li>Color</li>
+					<li>Linetype</li>
+					<li>Line print width</li>
+					<li>Line print color</li>
+					<li>Pattern</li>
+					<li>Pattern scale</li>
+					<li>Pattern angle</li>
+					<li>Pattern color</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	
+	</ul>
+	<p><strong>NOTE:</strong> From the Material attribute of the object style you can assign a different material to each object component. To assign a single material to the whole object, follow the usual procedure in Rhino.<br />
+	</p> <br />
+	
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/wall/Wall style attributes.png" alt="Attributes tab at the wall styles dialog" /><br/>
+		Attributes tab in the wall styles dialog.</p>
+	</div>
+	
+<br clear="all" />
+	
+<h4>Geometry</h4>
+	
+		All objects except stairs, slabs and roofs have this tab. The geometric values of each object and object component are defined in this tab.<br />
+		Geometric values for the Wall object:
+		<ul>
+			<li>Height</li>
+			<li>Thickness (can only be edited for each wall layer)</li>
+		</ul>
+		
+		Geometric values for the Beam and the Column object:
+		<ul>
+			<li>Height</li>
+			<li>Profile (defines the object shape)</li>
+			<li>Coating thickness (only for columns)</li>
+		</ul>
+		
+		Geometric values for the Door, the Window and the Opening object:
+		<ul>
+			<li>Profile (defines the object shape)</li>
+			<li>Sizes (width and depth) for the frame and doorstop</li>
+			<li>Sizes (width and depth) and opening side for the leaf</li>
+			<li>Sizes (thickness, extension and depth) for the sill (only for 
+			Windows and Openings)</li>
+		</ul>
+		Geometric values for the Railing object components:
+		<ul>
+			<li>Rail component: Ending margins and style. Planar and non planar 
+			joints.</li>
+			<li>Balusters: Top and bottom margins.</li>
+		</ul>
+
+<h4>Sizes</h4>
+<p>This tab is only used for the objects that use profiles to define their shape (columns, doors, windows 
+	and openings). This tab is used to define the Sizes (width and height) of the profile used by the object.
+	This option can be used to create different sizes for the same profile.</p>
+<h4>Blocks</h4>
+	
+<p>Only doors, windows and 
+	openings have this tab. The tab defines the 2D (Plan) and 3D (Model) representations of the object, assigning a block that has been previously created by the user with custom features to each one. 
+This option can be used to create custom doors and windows.</p>
+
+<h4>Construction and Wrapping</h4>
+<p>Only walls have this tab. This tab is used to define how the 
+	wall layers finish at the end caps of a wall, and at their encounter with openings. 
+	The construction tab is used to define the wall layers type and function.</p>
+	
+	<h4>Type</h4>
+	<p>Only stairs have this tab. It is used to define the 
+	type of stair used, depending on whether the Balanced stair option is activated or not.</p>
+	
+	<h4>Steps</h4>
+	<p>Only stairs have this tab, where the geometric values of the tread and riser slabs can be specified.</p>
+	<ul> 		
+		<li>Geometric values for the <strong>Tread slab</strong>:
+		<ul>
+			<li>Slab thickness</li>
+			<li>Nosing</li>
+	</ul></li>
+		<li>Geometric values for the <strong>Riser slab</strong>:
+		<ul>
+			<li>Slab thickness</li>
+	</ul></li>
+	
+</ul>
+<h4>Division <span class="auto-style1">and</span> Infill</h4>
+<p>Only Curtain walls have these tabs. They are used to define the parameters of 
+the Cell component.</p>
+
+

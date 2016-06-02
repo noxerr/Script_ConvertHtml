@@ -1,0 +1,106 @@
+<h3>Administrador de estilos</h3>
+
+<p>El cuadro de diálogo <strong>Administrador de estilos</strong> no sólo permite editar las propiedades de estilo del objeto seleccionado, sino también crear nuevos estilos de ese objeto.</p>
+
+<p>Para crear nuevos estilos de objetos, pulse el botón <strong>Nuevo estilo</strong>.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorNewStyle.png" alt="Cuadro de diálogo Administrador de estilos del objeto Puerta." width="350" height="243"/><br/>
+Cuadro de diálogo Administrador de estilos del objeto Puerta.
+</p>
+
+<p>Un cómodo asistente le guiará a lo largo del proceso, solicitando paso a paso los parámetros del estilo de objeto a definir.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Asistente de creación de estilos del objeto Puerta."  width="300" height="347" /><br/>
+Asistente de creación de estilos del objeto Puerta.</p>
+
+<p>Cuando se selecciona algún estilo de la lista de estilos de objeto, en el recuadro inferior izquierdo se muestra una previsualización del objeto.</p>
+<p>Cuando dicho objeto consta de varios componentes, el componente seleccionado aparece resaltado en color turquesa.</p>
+<p>Es posible modificar la vista de la previsualización utilizando el ratón, de una forma similar a como se manejan las vistas de Rhino:</p>
+
+<ul>
+	<li><em>Botón derecho del ratón</em>: permite rotar el punto de vista en referencia al objetivo, para ver el modelo entero desde diferentes puntos situados alrededor de él.</li>
+	<li><em>CTRL + Botón derecho</em>: permite acercar o alejar el punto de la cámara, para poder ampliar o reducir el campo de visión.</li>
+	<li><em>MAYÚS + Botón derecho</em>: permite desplazar el punto de vista paralelamente al plano de visión: hacia arriba, hacia abajo, hacia la izquierda o hacia la derecha.</li>
+</ul>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorAttributes.png" alt="Cuadro de diálogo Administrador de estilos &gt; Ficha Atributos." width="350" height="243"/><br/>
+Cuadro de diálogo Administrador de estilos &gt; Ficha Atributos.</p>
+
+<p>Para cada uno de los estilos de objeto seleccionados, pueden definirse propiedades que se muestran en el recuadro derecho. Esta zona comprende distintas fichas, que varían dependiendo del tipo de objeto:</p>
+
+<ul>
+
+	<li><strong>Atributos<em> </em> </strong><br />
+		Todos los objetos que usan cuadros de diálogo disponen de esta ficha. En ella se definen las características (atributos) de cada estilo de objeto y de cada uno de sus componentes. Los atributos son: <ul>
+			<li>Capa</li>
+			<li>Visibilidad</li>
+			<li>Color de visualización</li>
+			<li>Tipo de línea</li>
+			<li>Ancho de impresión</li>
+			<li>Color de impresión</li>
+			<li>Material</li>
+			<li>Trama</li>
+			<li>Estilo de texto</li>
+			<li>Estilo de cota</li>
+		</ul>
+		<br />
+		<strong>NOTA: </strong> Desde el atributo Material del estilo de objeto, es posible asignar un material distinto a cada uno de los componentes del objeto. Para asignar un único material a todo el objeto (sin distinción de sus partes), siga el procedimiento habitual de Rhino.<br />
+	</li>
+	
+	<li><strong>Geometría </strong><br />
+		Muros, pilares, puertas y ventanas disponen de esta pestaña. En ella se definen los valores geométricos de cada objeto y de cada componente de objeto.<br />
+		Valores geométricos del objeto Muro:
+		<ul>
+			<li>Altura</li>
+			<li>Anchura (editable únicamente para cada componente de muro)</li>
+		</ul>
+		
+		Valores geométricos del objeto Pilar:
+		<ul>
+			<li>Altura</li>
+			<li>Perfil (define la forma del objeto)</li>
+			<li>Anchura de recubrimiento</li>
+		</ul>
+		
+		Valores geométricos del objeto Puerta: <ul>
+			<li>Perfil (define la forma del objeto)</li>
+			<li>Medidas (anchura y profundidad) del marco y del tope</li>
+			<li>Medidas (anchura y profundidad) y lado de apertura de la hoja</li>
+		</ul>
+		
+		Valores geométricos del objeto Ventana:
+		<ul>
+			<li>Perfil (define la forma del objeto)</li>
+			<li>Medidas (anchura y profundidad) del marco y del tope</li>
+			<li>Medidas (anchura y profundidad) y lado de apertura de la hoja</li>
+			<li>Medidas (grosor, extensión y profundidad) del alféizar.</li>
+		</ul>
+	</li>
+	
+	<li><strong>Medidas<em> </em> </strong><br />
+	Sólo los objetos que utilizan perfiles para definir su forma (pilares, puertas y ventanas) disponen de esta pestaña. En ella se definen las Medidas (anchura y altura) del perfil que utiliza el objeto. Esta opción permite crear distintas medidas para un mismo perfil.
+	</li>
+	
+	<li><strong>Bloques<em></em> </strong><br />
+	Solo las puertas y las ventanas disponen de esta ficha. En ella se define la representación en 2D (Planta) y 3D (Modelo) del objeto, asignando a cada una un bloque previamente creado al gusto del usuario. Esta opción permite crear puertas y ventanas personalizadas.</li>
+	
+	<li><strong>Machones<em> </em> </strong><br />
+	Sólo los muros disponen de esta pestaña. En ella se define el valor de cada tipo de machón de muro (Inicio, Final, Esquina y Carpintería).</li>
+	
+	<li><strong>Tipo<em> </em> </strong><br />
+	Sólo las escaleras disponen de esta pestaña. En ella se define el Tipo de escalera a utilizar, dependiendo si se activa o no la opción de escalera Compensada.</li>
+
+	<li><strong>Peldaños </strong><br />
+		Solo las escaleras disponen de esta ficha, donde se pueden especificar los valores geométricos de las losas de huella y de contrahuella. Valores geométricos de la <strong>Losa de huella</strong>:
+		<ul>
+			<li>Grosor de losa</li>
+			<li>Nariceo</li>
+		</ul>
+		
+		Valores geométricos de la <strong>Losa de contrahuella</strong>:
+		<ul>
+			<li>Grosor de losa</li>
+		</ul>
+	</li>
+</ul>

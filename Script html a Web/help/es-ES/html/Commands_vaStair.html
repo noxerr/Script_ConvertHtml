@@ -1,0 +1,175 @@
+<h3>Escalera</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaEscalera</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Escalera"/> clic izquierdo [<a href="Commands_vaStairStyles.html" title="Comando EscaleraEstilos">clic derecho</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barra de herramientas</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Escalera &gt; Escalera</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaStair.wmv" preview="../images/previews/vaStairvideo.png" width="300px" height="300px"></div>
+
+<p>Cuando ejecute el comando <strong>vaEscalera</strong>, aparecerá el <a href="Interface_Dialog.html">cuadro de diálogo de inserción</a> de escalera. Este cuadro de diálogo muestra una lista con los estilos de escalera disponibles, así como las opciones básicas del objeto escalera y una previsualización del mismo.</p>
+<p>Se requieren al menos dos puntos (punto de inserción y punto final) para crear una escalera.</p>
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione el <strong>Estilo de escalera</strong> que desea utilizar y defina las opciones básicas de inserción.</li>
+	<li>Inserte la escalera seleccionando un <strong>punto de inserción</strong>.</li>
+	<li>Seleccione tantos puntos como se desee, hasta alcanzarse el valor del largo total de la escalera. Cada punto determina un nuevo tramo de la escalera y su dirección. Este valor depende de los parámetros previamente definidos (<strong>Altura</strong>, 
+	<strong>Huella</strong>, <strong>Número de huellas</strong>).</li>
+	<li>Pulse botón INTRO o haga clic con el botón derecho para finalizar el comando.</li>
+</ol>
+
+<p>A cada punto seleccionado, el comando crea un tramo de escalera que puede cambiar de dirección o seguir recto. Estos tramos están unidos mediante descansillos.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/StairInsert.png" alt="Cuadro de inserción del objeto Escalera."/><br/>
+Cuadro de inserción de la escalera
+</div>
+<br clear="all" />
+
+
+<h3>Escalera de caracol</h3>
+
+<p>Seleccione la opción Escalera de caracol en la parte inferior del <a href="Interface_Dialog.html">cuadro de inserción</a> para mostrar una sección especial donde se definen los parámetros que definen una escalera de caracol:</p>
+
+<ul>
+	<li>Ángulo de giro</li>
+	<li>Radio</li>
+	<li>Sentido horario: determina la la dirección de la escalera de caracol</li>
+</ul>
+<p>Esta opción  no puede editarse una vez insertada la escalera. Para cambiar de una escalera de tramo/s recto/s a una escalera de caracol, ha de insertar nuevamente la escalera, activando la opción deseada.</p>
+<p><strong>NOTA</strong>: las escaleras de caracol no pueden tener un ángulo de giro superior a 360º. Para crear una escalera de caracol que gira sobre sí misma más de 360º, es necesario crear dos o más escaleras de caracol.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/winding stair.png" alt="Vista superior y perspectiva de una escalera de caracol." width="400" height="170"/><br/>
+Escalera de caracol: vistas superior y perspectiva
+</div>
+
+<br clear="all" />
+<h4>Puntos de control <img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+	<div class="figureWithDescription picRight"><img src="../images/stair_scheme.png" alt="Puntos de control en escaleras" width="250" height="135" style="float: right;"/></div>
+	<p>Las escaleras tienen tantos puntos de control como puntos insertados para definir la escalera:</p>
+	<ol>
+		<li>Punto de inserción (inicio escalera)</li>
+		<li>Inicio del segundo tramo</li>
+		<li>Inicio del tercer tramo</li>
+		<li>Final de la escalera</li>
+	</ol>
+<p>Todos los puntos de control de escalera sirven para mover la escalera. No la escalan.</p>
+<p>Para definir la dirección de cada tramo de la escalera, elija y mueva el punto deseado en pantalla o bien introduzca un ángulo en la línea de comandos.</p>
+
+
+<br clear="all" />
+
+<h4>Opciones y parámetros de inserción</h4>
+<p>La mayoría de los parámetros de una escalera se definen desde el cuadro de inserción, al momento de insertarla. Estos parámetros pueden modificarse en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a><img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />, o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+</p>
+
+<h5>Alineación</h5>
+
+<p>La escalera puede alinearse de 3 maneras:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment c.jpg" alt="Alineación central"/></td>
+				<td><strong>Centro</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment r.jpg" alt="Alineación a la derecha"/></td>
+				<td><strong>Derecha</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment l.jpg" alt="Alineación a la izquierda"/></td>
+				<td><strong>Izquierda</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Altura</h5>
+<p>El valor Altura corresponde a la distancia que hay desde el nivel de arranque de la escalera, hasta el nivel a donde ésta lleva.</p>
+
+
+<h5>Anchura</h5>
+
+<p>El valor Anchura se mantiene constante para todos los tramos a lo largo de la escalera.</p>
+
+<h5>Número de huellas</h5>
+<p>Indica el número total de peldaños de la escalera a todo lo largo.</p>
+
+
+<h5>Huella</h5>
+
+<p>El valor Huella corresponde a la profundidad de cada peldaño. Se mantiene constante para todos los peldaños a lo largo de la escalera.</p>
+
+
+<h5>Contrahuella</h5>
+
+<p>El valor de Contrahuella corresponde a la altura de cada peldaño. Se calcula automáticamente a partir de la Altura y el Número de huellas y se mantiene constante para todos los peldaños a lo largo de la escalera.
+</p>
+
+<h5>Grosor de parte superior e inferior de losa de escalera:</h5>
+<p>Estos valores ajustan el grosor de la losa de la escalera en el punto inicial y final para que coincida con el grosor de las losas.</p>
+
+
+<h4>Parámetros de tramo y descansillo de escalera:</h4>
+
+<p>A diferencia del resto de objetos de VisualARQ, la escalera tiene ciertas propiedades (de objeto) que pueden ser asignadas únicamente después de que se ha insertado la escalera. <br/>
+Estas propiedades son los parámetros de <strong>Tramo de escalera</strong> y <strong>Descansillo de escalera</strong>, y solo pueden editarse en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a> <img alt="Propiedades VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />:</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/stair flight landing.png" alt="Cuadro de diálogo (Propiedades de objeto) de la escalera." /><br />
+Cuadro de diálogo (Propiedades de objeto) de la escalera.
+</div>
+<br clear="all" />
+
+<h4>Parámetros de tramo</h4>
+<ul>
+	<li>Tipo
+		<ul>
+			<li><strong>Descansillo</strong>: Indica que el tramo está formado por una losa plana o descansillo.</li>
+			<li><strong>Peldaños</strong>: Indica que el tramo está formado por peldaños.</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<h4>Parámetros de descansillo</h4>
+<ul>
+	<li>Tipo
+		<ul>
+			<li><strong>Descansillo</strong>: Indica que el descansillo está formado por una losa plana o descansillo.</li>
+			<li><strong>Peldaños</strong>: Indica que el descansillo está formado por peldaños.</li>
+		</ul>
+	</li>
+	<li>Contorno
+		<ul>
+			<li>Interior
+				<ul>
+					<li><strong>Recto</strong>: Indica que el contorno interior es recto (angular).</li>
+					<li><strong>Curvado</strong>: Indica que el contorno interior es curvo (en arco).</li>
+				</ul>
+			</li>
+			<li>Exterior
+				<ul>
+					<li><strong>Recto</strong>: Indica que el contorno exterior es recto (angular).</li>
+					<li><strong>Curvado</strong>: Indica que el contorno exterior es curvo (en arco)</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+

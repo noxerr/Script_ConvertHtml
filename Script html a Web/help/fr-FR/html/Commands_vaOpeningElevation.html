@@ -1,0 +1,40 @@
+<h3>Élévation d'ouverture</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaÉlévationOuverture</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_OpeningElevation.jpg" alt="Élévation d'ouverture"/> clic
+	</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">
+		Documentation</a> :</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barre d'outils Documentation de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Élévation des ouvertures &gt; Élévation des ouvertures</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaOpeningElevation.wmv" preview="../images/previews/vaOpeningElevationvideo.png" width="300px" height="300px"></div>
+
+<p>Cette commande génère des représentations 2D à partir des élévations des différentes ouvertures du modèle.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez les <strong>portes</strong> et les <strong>fenêtres</strong> dont vous voulez obtenir l'élévation. La commande filtre automatiquement la sélection afin que ne soient affichées que les ouvertures.</li>
+	<li>Sélectionnez le point de <strong>départ</strong> et <strong>final</strong> de l'insertion.</li>
+</ol>
+<p>La commande se termine lorsque le dessin 2D de chaque ouverture sélectionnée est inséré, avec les références correspondantes. Les mêmes références seront affichées dans la vue en plan, pour indiquer la position de chaque type de portes et de fenêtres dans le modèle.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningsSelect.png" alt="Sélection des ouvertures (filtrage)" width="250" height="245" /><br/>Sélection des ouvertures (filtrage)</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevations.png" alt="Références des ouvertures du modèle" width="250" height="245"/><br/>Références des ouvertures du modèle</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevZoom.png" alt="Élévations des ouvertures cotées " width="500" height="150"/><br/>Élévations des ouvertures cotées, avec une référence à chaque ouverture de modèle</div>
+<br clear="all" />
+
+<p><strong>REMARQUE :  </strong> si plusieurs ouvertures (portes ou fenêtres) ont les mêmes caractéristiques - tailles, élévation et côté d'ouverture - un seul dessin est créé avec une seule référence.</p>
+
+<p>Les élévations d'ouverture et leurs références sont créées par défaut sur le calque <strong>Documentation</strong>.<br/>
+Pour masquer les références, désactivez le calque où elles ont été insérées.<br/>
+Pour supprimer les références, sélectionnez l'ouverture que vous voulez supprimer puis ouvrez la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> du panneau Propriétés de Rhino <img alt="icône des propriétés de Rhinlo" height="26" src="../images/Rhino Properties.jpg" width="26" />). Supprimez la valeur du <strong>Texte de référence</strong>
+ dans la section 
+<strong>Référence</strong>.</p>
+

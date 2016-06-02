@@ -1,0 +1,139 @@
+<h3>Estilos de carpintería</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaHuecoEstilos</div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Hueco &gt; Estilos de hueco</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menú contextual</a>: </div>
+	<div class="value context">Hueco &gt; Estilos de hueco</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione un objeto de hueco &gt; (<em>Alt, Mayús</em> o <em>Ctrl</em>) + doble clic</div>
+
+	
+</div>
+
+<p>El estilo de hueco define las características de los huecos. Para cada estilo de hueco se pueden definir los siguientes parámetros: <strong>Nombre</strong>, <strong>Atributos</strong>, <strong>Forma</strong> (geometría) y <strong>Bloques personalizados</strong>.</p>
+
+<p>Los estilos de hueco están definidos por el componente <strong>Marco de hueco</strong>, que se puede agregar o eliminar en cualquier momento.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening/Opening Components.jpg" alt="Componentes de hueco" width="300" height="300" /><br />
+Componentes y partes diferentes de un hueco:
+<ol>
+<li><strong>1: Perfil de hueco</strong></li>
+<li><strong>2: <img alt="Marco de puerta" height="16" src="../images/Frame-16.png" width="16" /> Marco de puerta</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+<p>Para crear  un estilo de puerta, pulse el botón <strong>Nuevo estilo</strong> del cuadro de diálogo <a href="Interface_StyleProperties.html">Administrador de estilos</a>. Utilice el asistente que aparezca para introducir los parámetros del hueco que se explican a continuación.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/opening/opening New Style.png" alt="Cuadro de diálogo Administrador de estilos del objeto hueco." /><br />
+Cuadro de diálogo Administrador de estilos del objeto hueco
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="value">
+<div class="field">Edición general de estilos</div>
+<div class="value">Puede utilizar el comando <strong>vaHuecoEstilos</strong> o, alternativamente
+	<ul>
+		<li>Utilice el comando <strong>vaEstiloPropiedades</strong>, seleccione un hueco y pulse Intro, o bien</li>
+		<li>Haga clic con el botón derecho en 
+		<img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione un hueco y pulse Intro, o bien</li>
+		<li>Seleccione un hueco, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Hueco &gt; Propiedades de estilo</strong>, o bien</li>
+		<li>Pulse <em>Alt, Mayús</em> o <em>Ctrl </em> y haga doble clic en un objeto de hueco.</li>
+	</ul>
+	Los cambios aplicados a un estilo se aplican a <strong>todos los elementos</strong> con ese estilo.
+</div>
+<div class="field">Edición específica por objeto</div>
+<div class="value"><ul>
+		<li>Utilice el comando <strong>vaPropiedades</strong>, seleccione un hueco y pulse Intro, o bien</li>
+		<li>Haga clic en <img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione un hueco y pulse Intro, o bien</li>
+		<li>Seleccione un hueco, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Hueco &gt; Propiedades</strong>, o bien,</li>
+		<li>Haga doble clic en un  objeto de hueco. </li>
+	</ul>
+	</div>
+	Los cambios se aplican solo en el estilo del <strong>elemento seleccionado</strong>.</div>
+</div>
+
+<h4>Atributos</h4>
+<p>Los atributos definen las características de cada estilo de hueco y sus componentes para las vistas y la impresión. Los atributos válidos son:</p>
+<ul>
+<li><strong>General</strong>: Capa, visibilidad y material</li>
+<li><strong>Proyección</strong>: Color, Tipo de línea , Ancho de impresión de línea y Color de impresión de línea</li>
+<li><strong>Sección</strong>: Color, Tipo de línea, Ancho de impresión de línea, Color de impresión de línea, Patrón, Escala de patrón, Ángulo de patrón y Color de patrón</li>
+</ul>
+
+<h4>Forma</h4>
+
+<p>La forma (o hueco de obra) del hueco viene definida por un perfil. VisualARQ ofrece una librería con perfiles paramétricos predefinidos: Rectangular, Circular, Arco de 90º, Gótico, etc.<br />
+</p>
+
+<p>También pueden usarse perfiles de formas personalizadas para definir huecos.</p>
+
+<p>Para añadir un perfil personalizado, dibuje previamente una curva cerrada y plana, y conviértala en perfil utilizando el comando <a href="Commands_vaProfileFromCurve.html"><em>vaPerfilDesdeCurva</em></a>
+<img alt="Perfil desde curva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br/>
+Una vez creado, el perfil personalizado aparece al final de la lista de la librería de perfiles paramétricos predefinidos.</p>
+
+<p>El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.</p>
+
+<h4>Medidas</h4>
+<p>Los parámetros que corresponden a las medidas de un hueco varían según el tipo de perfil seleccionado.<br />
+Pueden especificarse diferentes medidas para un mismo estilo de hueco.</p>
+<p>Las medidas también pueden especificarse en el momento de insertar el hueco, desde el cuadro de inserción, eligiendo la opción 
+<strong>Medidas &gt; Otras</strong> dentro de la sección <strong>Perfil</strong> de este panel.</p>
+
+<h3>Componentes de hueco</h3>
+<h4>Marco <img alt="Marco de puerta" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>Los estilos de hueco pueden tener o no tener marco.<br />
+Para agregar un marco a un hueco, en la lista de estilos de hueco, haga clic con el botón derecho en el nombre del 
+<strong>hueco</strong><strong></strong> y seleccione <strong>Nuevo &gt; Marco de hueco</strong>.<br /> 
+Para eliminar el marco del hueco, en la lista de estilos de hueco, haga clic con el botón derecho en el nombre del 
+<strong>marco de hueco</strong> y seleccione <strong>Eliminar</strong>. </p>
+<p>Los valores editables del marco son <strong>Anchura</strong> y <strong>Profundidad</strong>. También es posible activar la opción 
+<strong>Ajustar profundidad a la grosor de muro</strong>.</p>
+
+
+<h3>Hueco desde bloques personalizados</h3>
+
+<p>Los estilos de carpintería pueden crearse a partir de bloques 2D y 3D, que definen su representación en las vistas planta y modelo, respectivamente.<br />
+Para crear un estilo de carpintería personalizado, asigne un <strong>perfil</strong> (que defina la forma del hueco de obra en el muro), un 
+<strong>bloque 2D</strong> (que defina la representación en planta) y un <strong>bloque 3D</strong> (que defina la representación en el modelo).</p>
+
+<p><strong>Pasos:</strong></p>
+<ul>
+<li><strong>Cree un perfil personalizado:</strong> Dibuje una curva cerrada y plana, y conviértala en perfil utilizando el comando <a href="Commands_vaProfileFromCurve.html"><em>vaPerfilDesdeCurva</em></a>
+<img alt="vaPerfilDesdeCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Una vez creado el perfil personalizado, éste aparece al final de la lista de la librería de perfiles paramétricos predefinidos.<br />
+El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.
+</li>
+<li><strong>Crear los bloques 2D y 3D:</strong> Cree el modelo 3D y dibuje la representación 2D a partir del mismo. A continuación, cree dos bloques con el comando <strong>Bloque</strong> (menú <strong>Edición
+</strong><strong> &gt; Bloque &gt; Crear definición de bloque</strong>).</li>
+<li><strong>Crear el nuevo estilo de hueco:</strong> Una vez creado el perfil y los bloques 2D/3D, pulse el botón 
+<strong>Nuevo estilo</strong> del cuadro de diálogo Administrador de estilos. Utilice el asistente que aparezca para asignar al estilo el perfil personalizado. <p>Omita los diálogos donde se definen los parámetros de estilo de carpintería pulsando el botón 
+<strong>Siguiente</strong>, hasta llegar al diálogo de definición de bloques personalizados.<br />
+En el diálogo 
+<strong>Bloques personalizados</strong>, seleccione las casillas de verificación que activan las opciones para usar bloques personalizados para las vistas modelo y planta. Una vez activadas, en el menú desplegable, seleccione los bloques 3D y 2D para definir la representación del estilo de hueco en dichas vistas.</p>
+</li>
+</ul>
+
+<p>Antes de crear los bloques (2D/3D), asegúrese de que los objetos que desea convertir en carpinterías de VisualARQ están alineados a los ejes X, Y y Z universales (SCU).<br />
+Una vez haya alineado los objetos al SCU, al momento de crear el bloque, elija el <strong>punto inferior central</strong> de su geometría como punto de inserción.<br />
+Esto garantizará que la orientación de la carpintería sea correcta.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/opening/Opening blocks.png" alt="asistente de creación de puertas, definición de bloques." width="400" height="247" /><br />
+	Creación de puertas, definición de bloques
+</div>
+
+<p>Cuando se utilizan bloques 3D y 2D para definir la representación de un estilo personalizado, los parámetros Medidas y Marco no influyen en la apariencia del estilo creado. Los estilos personalizados NO son paramétricos: su apariencia (tamaño, proporción, nivel de detalle) depende del dibujo de los bloques que se utilicen para definirlo.</p>
+
+<p>VisualARQ permite también crear estilos de hueco <em>híbridos</em>, sustituyendo únicamente la representación en planta (mediante un bloque 2D) y utilizando la representación en modelo de un estilo  paramétrico, o viceversa.<br />
+La representación que no utilice un bloque, ha de definirse mediante los parámetros de estilo (Medidas y Marco), como con cualquier estilo de hueco estándar.</p>
+
+
+

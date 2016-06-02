@@ -1,0 +1,95 @@
+<h3>Estilos de viga</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaVigaEstilos</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Beam.jpg" alt="Viga"/> clic derecho [<a href="Commands_vaBeam.html" title="Comando Viga">clic izquierdo</a>]
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html">Objetos</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Viga &gt; Estilos de viga</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menú contextual</a>: </div>
+	<div class="value context">Viga &gt; Propiedades de estilo</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione un objeto de viga &gt; (<em>Alt, Mayús</em> o <em>Ctrl</em>) + doble clic</div>
+
+	
+</div>
+
+<p>El estilo de viga define las características de las vigas. Para cada estilo de viga se pueden definir los siguientes parámetros: <strong>Nombre</strong>, <strong>Atributos</strong>, <strong>Forma</strong> (geometría) y <strong>Medidas</strong>.</p>
+<p>Para crear un estilo de viga, pulse el botón <strong>Nuevo estilo</strong> del cuadro de diálogo <a href="Interface_StyleProperties.html">Administrador de estilos</a>. Aparecerá un nuevo estilo de viga al final de la lista de estilos de viga. Seleccione este nuevo estilo de viga y edite sus parámetros a partir de las siguientes opciones.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Beam/BeamNewStyle.png" alt="Cuadro de diálogo Administrador de estilos del objeto Viga." /><br/>
+Cuadro de diálogo Administrador de estilos del objeto Viga
+</div>
+<br clear= "all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Edición general de estilos</div>
+<div class="value">Puede utilizar el comando <strong>vaVigaEstilos</strong> o, alternativamente
+	<ul>
+		<li>Utilice el comando <strong>vaEstiloPropiedades</strong>, seleccione una viga y pulse Intro, o bien</li>
+		<li>Haga clic con el botón derecho en 
+		<img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una viga y pulse Intro, o bien</li>
+		<li>Seleccione una viga, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Viga &gt; Propiedades de estilo</strong>, o bien</li>
+		<li>Pulse <em>Alt, Mayús</em> o <em>Ctrl </em> y haga doble clic en un objeto de viga.</li>
+	</ul>
+	Los cambios aplicados a un estilo se aplican a <strong>todos los elementos</strong> con ese estilo.
+</div>
+<div class="field">Edición específica por objeto</div>
+<div class="value"><ul>
+		<li>Utilice el comando <strong>vaPropiedades</strong>, seleccione una viga y pulse Intro, o bien</li>
+		<li>Haga clic en <img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una viga y pulse Intro, o bien</li>
+		<li>Seleccione una viga, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Viga &gt; Propiedades</strong>, o bien,</li>
+		<li>Haga doble clic en un objeto de viga. </li>
+	</ul>
+		</div>
+	Los cambios se aplican solo en el estilo del <strong>elemento seleccionado</strong>.</div>
+</div>
+
+<h4>Atributos</h4>
+<p>Los atributos definen las características de cada estilo de viga para las vistas y la impresión. Los atributos válidos son:</p>
+
+<ul>
+<li><strong>General</strong>: Capa, visibilidad y material</li>
+<li><strong>Proyección</strong>: Color, Tipo de línea , Ancho de impresión de línea y Color de impresión de línea</li>
+<li><strong>Sección</strong>: Color, Tipo de línea, Ancho de impresión de línea, Color de impresión de línea, Patrón, Escala de patrón, Ángulo de patrón y Color de patrón</li>
+</ul>
+
+
+<h5>Representación de la vista en planta</h5>
+
+<p>Las vigas se representan en la vista en planta con una curva con un tipo de línea GuiónPunto de manera predeterminada. <span>Esta curva sigue la misma alineación que la viga que representa</span>. Puede editar este tipo de línea desde la ficha Atributos para cada estilo de viga.</p>
+
+<h4>Forma</h4>
+
+<p>La forma de la viga viene definida por un perfil.<br/>
+VisualARQ ofrece una librería con los principales perfiles estándar de <em>Europa</em> y <em>EEUU</em>.</p>
+
+<p>También pueden usarse perfiles de formas personalizadas para definir vigas.</p>
+
+<p>Para añadir un perfil personalizado, dibuje previamente una curva cerrada y plana, y conviértala en perfil utilizando el comando <a href="Commands_vaProfileFromCurve.html"><em>vaPerfilDesdeCurva</em></a>
+<img alt="Perfil desde curva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br/>
+Una vez creado, el perfil personalizado aparece al final de la lista de la librería de perfiles paramétricos predefinidos.</p>
+
+<p>El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Beam/BeamCustomProfile.png" alt="Nuevo estilo de viga con un perfil personalizado." /><br/>
+Nuevo estilo de viga con un perfil personalizado.
+</div>
+<br clear= "all" />
+
+<h4>Medidas</h4>
+
+<p>Los parámetros que corresponden a las medidas de una viga varían dependiendo del tipo de perfil seleccionado. Pueden especificarse diferentes medidas para un mismo estilo de viga.</p>
+
+<p>Las medidas también pueden especificarse en el momento de insertar la viga, desde el cuadro de inserción, eligiendo la opción 
+<strong>Medidas &gt; Otras</strong> dentro de la sección <strong>Perfil</strong> de este cuadro.</p>
+

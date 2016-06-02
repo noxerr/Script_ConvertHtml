@@ -1,0 +1,95 @@
+<h3>Balkenstile</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaBalkenStile</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Beam.jpg" alt="Balken"/> Linksklick [<a href="Commands_vaBeam.html" title="Befehl Balken">Rechtsklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Balken &gt; Balkenstile...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Kontextmenü</a>: </div>
+	<div class="value context">Balken &gt; Stileigenschaften</div>
+	
+	<div class="field">Tastenkombination: </div>
+	<div class="value menu">Balkenobjekt auswählen &gt; (<em>Alt, Umschalttaste</em> oder <em>Strg</em>) + Doppelklick</div>
+
+	
+</div>
+
+<p>Der Balkenstil bestimmt die Eigenschaften des Balkens. Folgende Parameter können für jeden Balkenstil definiert werden: <strong>Name</strong>, <strong>Attribute</strong>, <strong>Form</strong> (Geometrie) und <strong>Größe</strong>.</p>
+<p>Zur Erzeugung eines neuen Ebenenstils klicken Sie die Schaltfläche <strong>Neuer Stil</strong> im Dialogfenster <a href="Interface_StyleProperties.html">Stilmanager</a>. Daraufhin erscheint am Ende der Liste der verfügbaren Balkenstile ein neuer Stil. Wählen Sie diesen neuen Stil und bearbeiten Sie seine Parameter gemäß der folgenden Optionen.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Beam/BeamNewStyle.png" alt="Dialogfenster Stilmanager für das Balkenobjekt." /><br/>
+Dialogfenster Stilmanager für das Balkenobjekt
+</div>
+<br clear= "all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Allgemeine Bearbeitung des Stils</div>
+<div class="value">Sie können entweder den Befehl <strong>vaBalkenStile</strong> verwenden, oder
+	<ul>
+		<li>den Befehl <strong>vaStilEigenschaften</strong> ausführen, einen Balken wählen und mit Enter bestätigen, oder</li>
+		<li>mit der rechten Maustaste auf die Schaltfläche 
+		<img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Rechtsklick)"/> klicken, eine Balken wählen und mit Enter bestätigen, oder</li>
+		<li>durch einen langen Klick mit der rechten Maustaste auf einen Balken das dazugehörige Kontextmenü öffnen und <strong>Balken &gt; Stileigenschaften</strong> wählen, oder</li>
+		<li><em>Alt, Umschalttaste</em> oder <em>Strg</em> drücken und doppelt auf ein Balkenobjekt klicken.</li>
+	</ul>
+	Die Änderungen wirken sich auf <strong>alle Elemente</strong> mit diesem Stil aus.
+</div>
+<div class="field">Objektspezifische Bearbeitung des Stils</div>
+<div class="value"><ul>
+		<li>Geben Sie den Befehl <strong>vaEigenschaften</strong> ein, wählen Sie einen Balken und bestätigen Sie mit Enter, oder</li>
+		<li>Klicken Sie auf die Schaltfläche <img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Linksklick)"/>, wählen Sie einen Balken und bestätigen Sie mit Enter, oder</li>
+		<li>Wählen Sie einen Balken, öffnen Sie durch einen langen Rechtsklick das Kontextmenü und wählen Sie darin <strong>Balken &gt; Eigenschaften</strong>, oder</li>
+		<li>Doppelklicken Sie auf ein Objekt. </li>
+	</ul>
+		</div>
+	Die Änderungen wirken sich nur auf den Stil des <strong>ausgewählten Elements</strong> aus.</div>
+</div>
+
+<h4>Attribute</h4>
+<p>Mit den Attributen werden die Anzeige- und Druckeigenschaften eines Balkenstils bestimmt. Gültige Attribute sind:</p>
+
+<ul>
+<li><strong>Allgemein</strong>: Ebene, Sichtbarkeit und Material</li>
+<li><strong>Projektion</strong>: Farbe, Linientyp, Liniendruckbreite und Liniendruckfarbe</li>
+<li><strong>Schnitt</strong>: Farbe, Linientyp, Liniendruckbreite, Liniendruckfarbe, Muster, Musterskala, Musterwinkel und Musterfarbe</li>
+</ul>
+
+
+<h5>Darstellung in Draufsicht</h5>
+
+<p>Balken werden in der Planansicht standardmäßig mit einer Kurve mit Strichpunktlinie dargestellt. <span>Die jeweilige Kurve hat dabei dieselbe Ausrichtung wie der entsprechende Balken, den sie repräsentiert</span>. Der Linientyp kann im Reiter "Attribute" für jeden Balkenstil geändert werden.</p>
+
+<h4>Form</h4>
+
+<p>Die Balkenform wird durch ein Profil definiert.<br/>
+In VisualARQ ist eine Bibliothek mit den wichtigsten <em>europäischen</em> und <em>nordamerikanischen</em> Standardformen integriert.</p>
+
+<p>Es können auch benutzerdefinierte Formprofile verwendet werden, um Balken zu definieren.</p>
+
+<p>Zum Hinzufügen eines benutzerdefinierten Profils zeichnen Sie eine geschlossene und flache Kurve und konvertieren diese mithilfe des Befehls <a href="Commands_vaProfileFromCurve.html"><em>vaProfilAusKurve</em></a> 
+<img alt="Profil aus Kurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" /> in ein Profil.<br/>
+Wenn das benutzerdefinierte Profil erzeugt wurde, erscheint es am Ende der Liste der Bibliothek mit den vordefinierten parametrischen Profilen.</p>
+
+<p>Das erhaltene Profil ist nicht parametrisch, so dass es nur mit den Abmessungen und Proportionen der Originalzeichnung verwendet werden kann.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Beam/BeamCustomProfile.png" alt="Neuer Balkenstil mit benutzerdefiniertem Profil." /><br/>
+Neuer Balkenstil mit benutzerdefiniertem Profil.
+</div>
+<br clear= "all" />
+
+<h4>Abmessungen</h4>
+
+<p>Die den Balkengrößen entsprechenden Parameter variieren je nach ausgewähltem Profiltyp. Sie können verschiedene Ausmaße für den gleichen Balkenstil definieren.</p>
+
+<p>Die Ausmaße können beim Einfügen eines Balkens jederzeit geändert werden, wenn im Einfügedialog im Abschnitt 
+<strong>Profil</strong> die Option <strong>Ausmaße &gt; Andere</strong> ausgewählt wird.</p>
+

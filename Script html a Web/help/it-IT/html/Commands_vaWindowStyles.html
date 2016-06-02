@@ -1,0 +1,198 @@
+<h3>Stili di finestra</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaFinestraStili</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Window.jpg" alt="Finestra"/> clic destro [<a href="Commands_vaWindow.html" title="Finestra">clic sinistro</a>]
+	
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html">Oggetti</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Finestra &gt; Stili di finestra...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menu di scelta rapida</a>: </div>
+	<div class="value context">Finestra &gt; Proprietà degli stili</div>
+	
+	<div class="field">Tasto scorciatoia: </div>
+	<div class="value menu">Selezionare un oggetto finestra &gt; (<em>Alt, Maiusc</em> o <em>Ctrl</em>) + doppio clic</div>
+
+	
+</div>
+
+<p>Lo stile di una finestra definisce le caratteristiche della finestra. Per ciascuno stile di finestra, si possono definire i seguenti parametri: <strong>Nome</strong>, <strong>Attributi</strong>, 
+<strong>Tipo</strong> <strong>di apertura</strong>, <strong>Forma</strong> (geometria) ed uso di <strong>Blocchi personalizzati</strong>.</p>
+<p>Gli stili di finestra vengono definiti da vari componenti che possono essere aggiunti od eliminati in qualsiasi momento:<strong> Telaio</strong>, <strong>Fermo</strong>, <strong>Anta</strong>
+ e <strong>Davanzale</strong>.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Window components.png" alt="Parti e componenti dell'oggetto finestra" width="300" height="300" /><br />
+Parti e componenti dell'oggetto finestra:
+<ol>
+	<li><strong>Profilo</strong> della finestra</li>
+	<li><img height="16" src="../images/Frame-16.png" width="16" /> <strong>Telaio</strong> della finestra</li>
+	<li><img height="16" src="../images/Stop-16.png" width="16" /> <strong>Fermo</strong> della finestra</li>
+	<li><img height="16" src="../images/Window leaf-16.png" width="16" /> <strong>Anta</strong> della finestra</li>
+	<li><strong>Listelli</strong> del vetro</li>
+	<li><img height="16" src="../images/Glass component 16.png" width="16" /> <strong>Vetro</strong> dell'anta</li>
+	<li><img height="16" src="../images/Window Sill-16.png" width="16" /><strong>Davanzale</strong></li>
+</ol>
+
+</div>
+
+<p>Per creare uno stile di finestra, premere il pulsante <strong>Nuovo stile</strong> nella finestra di dialogo <a href="Interface_StyleProperties.html">Gestore degli stili</a>. Usare la procedura guidata per inserire i seguenti parametri della finestra.</p>
+<p>Per aggiungere un nuovo componente ad uno stile di finestra, selezionare il nome dello stile di finestra sulla parte sinistra della finestra di dialogo, cliccare con il tasto destro per aprire il menu di scelta rapida, selezionare 
+<strong>Nuovo</strong> e quindi il componente.</p>
+<br clear="all" />
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/WindowNewStyle.png" alt="Finestra di dialogo Gestore degli stili dell'oggetto Finestra" /><br />
+Finestra di dialogo Gestore degli stili dell'oggetto Finestra
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="field">Editing generico</div>
+<div class="value">Si può usare il comando <strong>vaFinestraStili</strong> oppure, in alternativa,
+	<ul>
+		<li>Usare il comando <strong>vaStileProprietà</strong>, quindi selezionare una finestra e premere Invio, oppure</li>
+		<li>Fare clic destro su 
+		<img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic destro)"/>, quindi selezionare una finestra e premere Invio, oppure</li>
+		<li>Selezionare una finestra ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Finestra &gt; Proprietà degli stili</strong>, oppure</li>
+		<li>Premere <em>Alt, Maiusc</em> o <em>Ctrl</em> e quindi fare doppio clic su un oggetto finestra.</li>
+	</ul>
+	Le modifiche applicate ad uno stile vengono applicate a <strong>tutti gli elementi</strong> aventi quello stile.
+</div>
+<div class="field">Editing specifico per oggetto</div>
+<div class="value"><ul>
+		<li>Usare il comando <strong>vaProprietà</strong>, quindi selezionare una finestra e premere Invio, oppure</li>
+		<li>Fare clic su <img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic sinistro)"/>, quindi selezionare una finestra e premere Invio, oppure</li>
+		<li>Selezionare una finestra ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Finestra &gt; Proprietà</strong>, oppure,</li>
+		<li>Fare doppio clic su un oggetto finestra. </li>
+	</ul>
+	Le modifiche vengono applicate solo allo stile dell'<strong>elemento selezionato</strong>.</div>
+</div>
+
+<h4>Attributi</h4>
+<p>Gli attributi definiscono le caratteristiche di ciascuno stile di finestra e dei suoi componenti ai fini della visualizzazione e della stampa. Gli attributi validi sono:</p>
+
+<ul>
+<li><strong>Generali</strong>: Livello, visibilità e materiale</li>
+<li><strong>Proiezione</strong>: Colore, tipo di linea, larghezza di stampa e colore di stampa</li>
+<li><strong>Sezione</strong>: Colore, tipo di linea, larghezza di stampa, colore di stampa, modello, scala del modello, angolo del modello e colore del modello</li>
+</ul>
+
+<h4>Tipo di apertura</h4>
+
+<p>VisualARQ consente di creare stili di finestra con sei tipi diversi di apertura:</p>
+<ol>
+	<li><strong>A battente:</strong> finestra che si apre da un lato, con battente che ruota sui cardini </li>
+	<li><strong>Scorrevole:</strong> finestra che scorre lungo un binario o una scanalatura</li>
+	<li><strong>A saliscendi:</strong> finestra che scorre lungo un binario o una scanalatura verticale 
+	</li>
+	<li><strong>A ribalta:</strong> finestra che si apre da un lato, con battente su cardini orizzontali, dal basso verso l'alto</li>
+	<li><strong>A vasistas:</strong> finestra che si apre da un lato, con battente su cardini orizzontali, dall'alto verso il basso</li>
+	<li><strong>Fisso: </strong>finestra che non si può aprire. (Questo tipo di apertura è assegnato per anta).</li>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/window types.png" alt="Tipi di apertura delle finestre" width="500" height="250" /><br />
+	Tipi di apertura delle finestre
+</div>
+<br clear="all" />
+<h4>Forma</h4>
+
+<p>La forma della finestra viene definita tramite un <strong>profilo</strong>. VisualARQ fornisce una libreria con vari profili parametrici predefiniti: Rettangolare, Circolare, Arco 90º, Gotico, ecc.<br />
+Per definire le finestre, si possono usare anche profili dalle forme personalizzate, usando il comando <a href="Commands_vaProfileFromCurve.html">
+<strong>vaProfiloDaCurva</strong></a> 
+<img alt="vaProfiloDaCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.
+</p>
+
+<h4>Dimensioni</h4>
+<p>I parametri che corrispondono alle dimensioni di una finestra variano a seconda del tipo di profilo selezionato.<br />
+Si possono specificare varie dimensioni per lo stesso stile di finestra.</p>
+<p>Le dimensioni si possono specificare nel momento in cui si inserisce la finestra, scegliendo l'opzione 
+<strong>Dimensioni &gt; Altro</strong> della sezione Profilo della finestra di inserimento.</p>
+<h3>Componenti delle finestre</h3>
+
+	<h4>Telaio <img alt="Telaio della finestra" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>Gli stili di finestra possono presentare o meno un telaio.<br />
+I valori modificabili del telaio sono <strong>Larghezza</strong> e <strong>Profondità</strong>. È inoltre possibile attivare l'opzione 
+<strong>Regola profondità secondo spessore muro</strong>.</p>
+
+<h4>Fermo <img height="16" src="../images/Stop-16.png" width="16" /></h4>
+<p>Gli stili di finestra possono presentare o meno un fermo.<br />
+Le proprietà del fermo sono <strong>Larghezza</strong> e <strong>Profondità</strong>.</p>
+
+
+<h4>Ante <img height="16" src="../images/Window leaf-16.png" width="16" /></h4>
+<p>Gli stili di finestra possono presentare una o più ante. Per aggiungere un'anta ad una finestra, selezionare il nome di uno stile di finestra sulla parte sinistra della finestra di dialogo, cliccare con il tasto destro per aprire il menu di scelta rapida e selezionare 
+<strong>Nuovo &gt; Anta finestra</strong><em>.</em> </p>
+<p>Le proprietà delle ante sono <strong>Larghezza</strong> (in percentuale), <strong>Spessore
+</strong> e se si tratta di ante di tipo <strong>fisso</strong> o no.</p>
+<p>Le ante di una finestra possono essere uguali oppure avere larghezze diverse. Disattivando l'opzione <strong>Larghezze uguali
+</strong> nella procedura guidata per la creazione degli stili di finestra, è possibile editare la percentuale di larghezza di ciascuna anta, assegnandole un valore compreso tra lo 0% ed il 100%.<br />
+È anche possibile cambiare il verso di apertura di ciascuna anta, attivando l'opzione <strong>Inverti verso di apertura</strong>.</p>
+
+<h4>Vetro <img height="16" src="../images/Glass component 16.png" width="16" /></h4>
+<p>Le ante delle finestre contengono un vetro. Quando si crea una nuova anta, viene incluso un vetro in modo predefinito. Questo vetro si può eliminare dall'anta selezionando il componente Vetro sulla parte sinistra della finestra di dialogo, cliccando con il tasto destro per aprire il menu di scelta rapida, e quindi selezionando <strong>Cancella</strong><em>.</em> Per aggiungere un vetro ad un'anta priva di vetro, selezionare il componente Anta sulla parte sinistra della finestra di dialogo, cliccare con il tasto destro per aprire il menu di scelta rapida, e quindi selezionare 
+<strong>Nuovo &gt; Vetro</strong><em>.</em></p>
+<p>I vetri hanno due componenti diversi:</p>
+<ul>
+	<li><strong>Telaio del vetro:</strong> Il telaio che sostiene il vetro nell'anta di una finestra. Le proprietà del telaio del vetro sono la <em>Larghezza</em><strong> </strong>e lo 
+	<em>Spessore</em>; quest'ultimo equivale allo spessore dell'anta e si può editare selezionando il componente anta. Il telaio può essere rimosso dal vetro.</li>
+	<li><strong>Listelli: </strong>I listelli di supporto tra un riquadro di vetro e quello contiguo. Le proprietà dei listelli sono il <strong>numero</strong> di listelli che suddividono un pannello di vetro e la loro <strong>Larghezza</strong>.</li>
+</ul>
+
+<h4>Davanzale <img height="16" src="../images/Window Sill-16.png" width="16" /></h4>
+<p>Gli stili di finestra possono presentare o meno un davanzale.<br />
+Le proprietà dei davanzali delle finestre sono: <strong>Spessore</strong>, <strong>Estensione interna/esterna</strong> e <strong>Profondità interna/esterna</strong>.</p>
+
+<h3>Blocchi personalizzati</h3>
+
+<p>Gli stili di finestra si possono creare a partire da blocchi 2D e 3D che ne definiscono la rappresentazione nelle viste in pianta e modello, rispettivamente.<br />
+Per creare uno stile di finestra personalizzato, assegnare un <strong>profilo</strong> (che definisca la forma dell'apertura nel muro), un 
+<strong>blocco 2D</strong> (che definisca la rappresentazione in pianta) ed un <strong>blocco 3D</strong> (che definisca la rappresentazione nel modello).</p>
+
+<p><strong>Passi:</strong></p>
+
+<ul>
+<li><strong>Creare un profilo personalizzato:</strong> Disegnare una curva chiusa e piana e trasformarla in un profilo usando il comando <a href="Commands_vaProfileFromCurve.html">
+<strong>vaProfiloDaCurva</strong></a> 
+<img alt="vaProfiloDaCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Una volta creato, il profilo personalizzato appare in fondo all'elenco della libreria di profili parametrici predefiniti.<br />
+Il profilo risultante non è parametrico, per cui esso potrà essere usato solo con le misure e proporzioni con cui si è disegnato in origine.
+</li>
+<li><strong>Creare i blocchi 2D e 3D:</strong> Creare il modello 3D e quindi tracciare la rappresentazione 2D a partire da esso. Quindi, creare due blocchi con il comando <strong>Blocco</strong> (menu Modifica &gt; Blocchi &gt; Crea definizione blocco).</li>
+<li><strong>Creare il nuovo stile di finestra:</strong> Una volta creato il profilo ed i blocchi 2D/3D, premere il pulsante 
+<strong>Nuovo stile...</strong> nella finestra di dialogo del gestore degli stili. Usare la procedura guidata per assegnare un profilo personalizzato allo stile.
+
+<p>Ignorare le finestre in cui si definiscono i parametri di stile della finestra premendo il pulsante 
+<strong>Avanti &gt;</strong>, fino ad arrivare alla finestra di dialogo di definizione dei blocchi personalizzati.<br />
+Nella finestra dei blocchi personalizzati, spuntare le caselle di selezione che attivano le opzioni per l'uso di blocchi personalizzati nelle viste modello e in pianta. Queste caselle verranno attivate solo in presenza di un blocco creato nel documento. Una volta spuntate le caselle, selezionare i blocchi 3D e 2D dal menu a discesa per definire la rappresentazione dello stile di finestra in tali viste.</p>
+</li>
+</ul>
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/profile custom2.jpg" alt="Finestra di dialogo Gestore degli stili dell'oggetto Finestra" /><br />
+Procedura guidata per la creazione di una finestra: selezione del profilo
+</div>
+
+<p>Prima di creare i blocchi (2D/3D), assicurarsi che gli oggetti che si desidera trasformare in aperture di VisualARQ siano allineati agli assi universali X, Y e Z (WCS).<br />
+Una volta allineati gli oggetti al sistema globale, nel momento in cui si va a creare il blocco, selezionare il <strong>punto inferiore centrale</strong> della geometria come punto di inserimento.<br />
+Ciò garantirà che l'orientamento dell'apertura sia corretto.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/2d 3d blocks.png" alt="Procedura guidata per la creazione di una finestra: definizione blocchi" /><br />
+Procedura guidata per la creazione di una finestra: definizione blocchi
+</div>
+
+<p>Quando si usano blocchi 3D e 2D per definire la rappresentazione di uno stile personalizzato, i parametri Dimensioni, Telaio, Fermo ed Ante non influiscono sull'aspetto dello stile creato. Gli stili personalizzati NON sono parametrici: il loro aspetto (dimensioni, proporzione, livello di dettaglio) dipende dai blocchi usati per definirli.</p>
+
+<p>VisualARQ consente anche la creazione di stili di finestra <em>ibridi</em>, sostituendo solo la rappresentazione in pianta (tramite un blocco 2D) ed usando la vista modello di uno stile standard parametrico o viceversa.<br />
+La rappresentazione che non usa un blocco va definita tramite i parametri di stile (Dimensioni, Telaio, Fermo ed Ante), come con qualsiasi stile di finestra standard.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window.png" alt="Blocco 3D, blocco 2D ed un profilo per il nuovo stile di finestra personalizzato" width="400" height="222" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window 2.png" alt="Stile di finestra personalizzato, definito a partire da un blocco 3D, un blocco 2D ed un profilo" width="400" height="167" /><br />Stile di finestra personalizzato, definito a partire da un blocco 3D, un blocco 2D ed un profilo</div>
+
+<br clear="all" />

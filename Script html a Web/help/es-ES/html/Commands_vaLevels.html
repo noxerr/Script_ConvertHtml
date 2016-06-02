@@ -1,0 +1,201 @@
+<h3>Editar niveles</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaNiveles</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_FloorManager.jpg" alt="Administrador de niveles"/>clic izquierdo
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Barra de herramientas Herramientas</a>:</div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Herramientas de VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Niveles &gt; Editar niveles</div>
+</div>
+	
+<p>El comando <strong>vaNiveles</strong> abre el diálogo acoplable <strong>Administrador de niveles
+</strong> desde el que es posible crear, eliminar y editar nuevos edificios y niveles.</p> 
+<p> Desde el cuadro de diálogo <strong>Administrador de niveles</strong> se puede controlar el 
+<strong>PlanoC </strong> de cada nivel (plano de construcción), el estado de <strong>visibilidad</strong> y <strong>bloqueo/desbloqueo</strong>, además de los valores de <strong>elevación
+</strong> y plano de corte.</p>
+<p>El cuadro de diálogo <strong>Administrador de niveles</strong> se divide en dos partes:
+<ul>
+	<li>Una línea de barras de herramientas con las siguientes opciones: <strong>Nuevo edificio, Nuevo nivel, Eliminar</strong> y <strong>Plano de corte</strong>.</li>
+	<li>La lista de edificios y niveles y sus propiedades: <strong>PlanoC
+	</strong> (plano de construcción) <strong>Activado/Desactivado</strong>, visibilidad de <strong>Vista en planta</strong>, valor de <strong>Elevación</strong>, <strong>Altura de plano de corte</strong>, <strong>Desfase superior</strong> y <strong>Desfase inferior</strong>.</li>
+
+</ul>
+</p>	
+
+<p class="figureWithDescription"><img src="../images/Level Manager.png" alt="Cuadro de diálogo Administrador de niveles"/><br/>
+Cuadro de diálogo Administrador de niveles.</p>
+<br/>
+<p class="figureWithDescription"><img src="../images/Levels.png" alt="Partes y parámetros del Nivel 1"/><br/>
+Parámetros del Nivel "1":
+<ul>
+<li><strong>L0</strong>: Elevación del Nivel "0" y posición del PlanoC del Nivel 0</li>
+<li><strong>L1</strong>: Elevación del Nivel "1" y posición del PlanoC del Nivel 1</li>
+<li><strong>L2</strong>: Elevación del Nivel "2" y posición del PlanoC del Nivel 2 (y límites superiores del Nivel 1)</li>
+<li><strong>CP</strong>: Altura del plano de corte del Nivel 1</li>
+<li><strong>TO</strong>: Distancia de desfase superior del Nivel 1</li>
+<li><strong>BO</strong>: Distancia de desfase inferior del Nivel 1</li>
+
+</ul></p>
+
+<h5>Nuevo edificio</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Building.jpg" alt="Nuevo edificio"/></td>
+	<td>Crea nuevos edificios a partir de los cuales se pueden añadir niveles. Cada edificio tiene su propio valor de elevación y el valor de elevación de sus niveles son relativos a ese edificio.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Nuevo nivel</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Level.jpg" alt="Nuevo nivel"/></td>
+	<td>Agrega un nuevo nivel a un edificio seleccionado. El nuevo nivel se creará de forma automática por encima del nivel existente superior y tendrá por defecto el mismo valor de la elevación que el nivel inferior. Para crear niveles debe crearse un edificio.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Eliminar</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Delete.jpg" alt="Eliminar"/></td>
+	<td>Elimina un nivel o edificio específico. Esta opción no afecta a todos los objetos de Rhino y VisualARQ que contiene el nivel o edificio eliminado. Estos se quedan en el mismo lugar.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Plano de corte</h5>
+<p>El <strong>Plano de corte</strong> representa un plano de <em>sección horizontal</em> 
+<em></em> invisible que tiene cada nivel, situado a una altura específica de cada elevación del nivel. El botón Plano de corte activa o desactiva el <strong>Plano de corte</strong> de un nivel seleccionado en la vista activa. Debe crearse un edificio y un nivel para activar el estado de <strong>
+Plano de corte</strong>.</p>
+<p>Cuando el plano de corte está activado en un determinado nivel en la vista activa, <em>
+no se mostrará nada de lo que haya por encima del plano de corte de ese nivel. </em></p>
+<p>Cuando el plano de corte está activado en la <em>vista Superior</em>, los objetos de VisualARQ como puertas, ventanas, escaleras, etc. muestran su representación gráfica de vista en planta en 2D.</p>
+<br/>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Plano de corte activado"/></td>
+	<td><strong>Plano de corte activado</strong>: la vista muestra el nivel seccionado según la posición del plano de corte.</td>
+</tr>
+
+<tr>
+	<td valign="top" style="height: 28px"><img align="left" src="../images/Cut Plane Off.jpg" alt="Plano de corte desactivado"/></td>
+	<td style="height: 28px"><strong>Plano de corte desactivado</strong>: la vista muestra todo el nivel (según su estado de visibilidad Activado/Desactivado).</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane Dis.jpg" alt="Plano de corte desactivado"/></td>
+	<td><strong>Plano de corte desactivado</strong>: debe seleccionar un nivel para activar el estado del plano de corte.</td>
+</tr>
+
+</table>
+</div>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane On.jpg" />
+<br/>
+Vista del Nivel 0 y Nivel 1 con el plano de corte del Nivel 1 activado.</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane Off.jpg" />
+<br/>
+Vista del Nivel 0 y Nivel 1 con el plano de corte del Nivel 1 desactivado. (La visualización del Nivel 2 está desactivada)</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 only.jpg" />
+<br/>
+Vista del Nivel 1 con el plano de corte desactivado. (La visualización de los Niveles 0 y 2 está desactivada)</p><br/>
+
+
+<h5>PlanoC</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/CPlane.jpg" alt="PlanoC"/></td>
+	<td>El PlanoC (plano de construcción) determina la elevación del plano desde donde se está trabajando. Haga clic en en cualquier icono de PlanoC de nivel para mover el PlanoC a la elevación de ese nivel en la vista activa.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Activado/Desactivado</h5>
+<p>
+El estado de visibilidad Activado/Desactivado de los niveles muestra u oculta los objetos o partes de los objetos situados entre la elevación del nivel actual y la elevación del nivel superior (teniendo en cuenta los valores de desfase superior e inferior).</p>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/On.jpg" alt="Activado"/></td>
+	<td>El nivel está visible y puede ver objetos o partes de los objetos en este nivel.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Off.jpg" alt="Desactivado"/></td>
+	<td>El nivel no está visible y no puede ver objetos ni partes de los objetos en este nivel.</td>
+</tr>
+</table>
+</div>
+<p><strong>Nota</strong>: los niveles intermedios no pueden ocultarse individualmente. Cuando un nivel intermedio está oculto, el resto de niveles inferiores se oculta automáticamente.</p>
+
+<h5>Vista en planta activada/desactivada</h5>
+<p>La vista en planta muestra la representación en 2D de cualquier nivel, en el PlanoC de la vista activa. Esta representación en 2D no es editable y solo muestra los objetos seccionados en el nivel seleccionado según la posición del plano de corte en ese nivel.</p>
+<p><div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View on.jpg" alt="Vista en planta activada"/></td>
+	<td>La representación en 2D del nivel seleccionado está visible en el PlanoC de la vista activa.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View off.jpg" alt="Vista en planta desactivada"/></td>
+	<td>La representación en 2D del nivel seleccionado no está visible en el PlanoC de la vista activa.</td>
+</tr>
+</table>
+</div>
+</p>
+
+
+
+<h5>Definir planta actual</h5>
+<p>Para definir un nivel específico como planta actual en la vista activa, 
+<strong>haga doble clic en el nombre del nivel</strong>. Esta operación colocará automáticamente el PlanoC en el nivel seleccionado y activará este nivel en el caso de que estuviese oculto.</p>
+
+<h5>Elevación</h5>
+<p>El valor de Elevación indica la altura base de cada edificio o nivel y la posición de un plano de construcción relativo a cada edificio o nivel. Determina qué parte del modelo corresponde a cada nivel. <em>Los valores de elevación de los niveles</em> son relativos a la altura de la elevación del edificio. El valor de <em>elevación del edificio</em> se calcula a lo largo del eje Z del documento.</p>
+
+<p class="figureWithDescription">
+<img alt="Marcas de elevación" src="../images/Left View 400.jpg" /><br/>
+La marca de elevación del nivel actual aparece resaltada.</p>
+
+<h5>Altura del plano de corte</h5>
+<p>El plano de corte determina la elevación a la que se realiza la <em>sección horizontal</em> de cada planta; esto significa que sólo se representan aquellos objetos que se encuentran a esa elevación, o que están por debajo de ella.</p>
+
+
+
+<p><strong>NOTA: </strong> Cuando una vista cambia al modo de vista en planta de VisualARQ, el modo de visualización cambia al modo "oculto" y se pasa a la vista <strong>Superior</strong><em></em>. Si está activada la vista en planta, la ventana muestra cualquier modo de visualización seleccionado aunque se cambie la vista del nivel.</p>
+
+<h5>Desfase superior</h5>
+<p>El desfase superior determina el valor por el cual se aumenta o disminuye el límite superior del nivel cuando se ocultan niveles enteros. Esta opción es especialmente útil cuando se oculta la parte superior de un edificio y también quiere ocultar la losa superior del último nivel mostrado. Este valor es irrelevante para el nivel superior de un edificio y solo afecta a las vistas que tienen el plano de corte desactivado.</p>
+<h5>Desfase inferior</h5>
+
+<p>El desfase inferior determina el valor por el cual se aumenta o disminuye el límite inferior del nivel cuando se ocultan niveles enteros. Esta opción es especialmente útil cuando se oculta la parte inferior de un edificio y también quiere ocultar la losa inferior del último nivel mostrado. Este valor es irrelevante para el nivel inferior de un edificio y solo afecta a las vistas que tienen el plano de corte desactivado.</p>
+
+
+
+	

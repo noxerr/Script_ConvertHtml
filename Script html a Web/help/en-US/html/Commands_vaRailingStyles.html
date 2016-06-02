@@ -1,0 +1,365 @@
+
+<h3>Railing Styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaRailingStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Railing.jpg" alt="Railing"/> right click
+	[<a href="Commands_vaRailing.html" title="Railing command">left click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects</a> toolbar:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Railing &gt; Railing Styles...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Railing &gt; Styles Properties</div>
+	
+	<div class="field">Shortcut key: </div>
+	<div class="value menu">Select a railing object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + 
+		double left click</div>
+
+	
+</div>
+
+<p>The railing style defines the railing features.  You can define the following parameters in each 
+railing style: <strong>Name </strong>and <strong>Attributes</strong>.</p>
+ <p>Each railing style is defined by the combination of 3 components that can be added or deleted anytime: <strong>
+Rail</strong>, <strong>Post</strong> and <strong>Baluster</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing components.jpg" alt="Railing object and its Components" width="300" height="340" /><br />
+Different parts and components of a railing:
+<ol>
+<li><strong>1. <img alt="Railing Rail" height="16" src="../images/Railing Rail.png" width="16" /> Rail</strong></li>
+<li><strong>2. <img alt="Railing Post" height="16" src="../images/Railing Post.png" width="16" /> Post</strong></li>
+<li><strong>3. <img alt="Railing baluster" height="16" src="../images/Railing baluster.png" width="16"/> Baluster</strong></li>
+</ol>
+</div>
+<br clear="all" />
+<p>You can define the following parameters for each 
+railing style and each component: <strong>Name</strong>, <strong>Attributes</strong>, <strong>
+Location, Geometry</strong> and <strong>Profile</strong>.</p>
+
+
+<h4>New railing style</h4>
+<p>You can create new styles and duplicate existing styles from the Railing <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+
+<h4><strong>Delete a railing style</strong>:</h4>
+<p>You can delete railing styles from the Railing <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing railing in the model.</p>
+
+<h4>Edit a railing style:</h4>
+<p>Select the railing style or the railing component item at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add a new railing component:</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the railing style name to open the context menu, and select <em>New > "Component item"</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the railing style and click on the <em>New</em> icon, from the dialog toolbar. Select <em>New > "Component item"</em>.</li>	
+</ul>
+<p><strong>Delete components:</strong> use the Context menu (righ-click on the component to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing styles dialog.png" alt="Style Manager dialog box for the Railing object." /><br/>
+Style Manager dialog box for the railing object
+</div>
+<br clear= "all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaRailingStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		railing and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)"/>, 
+		then select a railing and press Enter, or</li>
+		<li>Select a railing and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Railing &gt; Style Properties</strong>, 
+		or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on a railing object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a railing 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a railing and press Enter, or</li>
+		<li>Select a railing and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Railing &gt; Properties</strong>, or,</li>
+		<li>Double click on a railing object. </li>
+	</ul>
+		</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each railing style and its components 
+for display and print purposes. The valid attributes are:</p>
+ 
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle and Pattern color</li>
+</ul>
+
+<h3>Railing components</h3>
+
+<h4>Rail   <img alt="Railing Rail" height="16" src="../images/Railing Rail.png" width="16" /></h4>
+<p>It is the horizontal component that goes along the base path curve. It can 
+define the handrail or the secondary rails of the railing object. The rail component is defined by the following parameters:</p>
+<h5>Location</h5>
+
+<p>The location of the rail component defines its position in relation with the 
+base path curve and the railing heigth.</p>
+<ul>
+<li><img src="images/Rail horizontal alignment 32.png" alt="Rail horizontal alignment"/>
+<strong>Horizontal alignment:</strong> the rail alignment depends 
+on the direction of the base curve. It has three different options: <strong>
+Exterior,
+Center </strong>and <strong>Interior</strong>. </li>
+	<li><img src="images/Rail horizontal offset 32.png" alt="Rail horizontal offset"/> <strong>Horizontal offset</strong>: 
+	the 
+	horizontal alignment offset inserts the 
+rail at a specific distance from the base curve.</li>
+
+<li><img src="images/Rail vertical alignment 32.png" alt="Rail vertical alignment"/><strong> Vertical alignment:</strong> 
+the vertical alignment 
+defines the vertical position of the rail component in relation with the total 
+height of the railing object. It has three different options: <strong>Top,
+Center </strong>and <strong>Bottom</strong>. </li>
+	<li><img src="images/Rail vertical offset 32.png" alt="Rail vertical offset"/>
+	<strong>Vertical offset</strong>: the vertical alignment offset inserts the rail 
+at a specific distance from the vertical alignment position.</li>
+<li><img src="images/Rail orientation 32.png" alt="Rail orientation"/><strong> Orientation:</strong>
+<ul><li><strong>Aligned</strong>: the geometry is generated extruding the rail profile 
+	perpendicular to the railing axis direction.</li>
+<li><strong>Vertical</strong>: the geometry is generated extruding the rail profile vertically 
+along the railing axis direction.</li></ul></li>
+</ul>
+
+<p>The sizes can be specified at any time when inserting the railing from the insert dialog box by choosing the 
+<strong>Sizes &gt; Other</strong> option in the <strong>Profile</strong> section of this panel.</p>
+<h5>Geometry:</h5>
+<p>The geometry parameters of the rail components define them at their ends and at their joints:</p>
+<ul><li><strong>Ends:</strong>
+<ul>
+		<li><img src="images/Rail style 32.png" alt="Rail style"/><strong>Style</strong>: options to define the rail edge cut at ends:
+		
+<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Square</strong></li>
+			<li><strong>Plumb</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Rail ends styles" height="80" src="../images/assistants/Railing/Rail%20end%20styles.png" class="auto-style2" width="280" /></td>
+	</tr>
+</table>
+		</li>
+		<li><img src="images/Rail ends offset 32.png" alt="Rail ends margin"/><strong>Margin</strong>: 
+		distance between the ends of the railing path curve and the rail ends.</li>
+	</ul>
+	</li>
+	<li><strong>Joints:
+	</strong>
+	<ul>
+			<li><img src="images/Rail planar joints 32.png" alt="Rail planar joints"/><strong>Planar</strong>:
+			
+				<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>None</strong></li>
+			<li><strong>Break</strong></li>
+			<li><strong>Miter</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Rail planar Joints" height="100" src="../images/assistants/Railing/Rail%20planar%20Joints.png" class="auto-style2" width="600"/></td>
+	</tr>
+</table>
+			</li>
+		<li><img src="images/Rail non planar joints 32.png" alt="Rail non planar joints"/><strong>Non 
+		planar</strong>:
+		<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>None</strong></li>
+			<li><strong>Break</strong></li>
+			<li><strong>Miter</strong></li>
+			<li><strong>Flat</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Rail Non planar joints" height="100" src="../images/assistants/Railing/Rail%20non%20planar%20Joints.png" class="auto-style2" width="800"/></td>
+	</tr>
+</table>
+		</li>
+	</ul>
+	</li>
+</ul>
+<h5>Profile</h5>
+
+<ul>
+<li><img src="images/Shape profile -32.png" alt="Rail shape profile"/><strong> Profile:</strong> 
+the profiles available by default for the rail component are the <strong>Rectangular
+</strong>and the <strong>Circular</strong> profiles.<br/>
+
+Custom shape profiles can also be used to define railings 
+rails:<br/>
+<ul>
+<li>To add a custom profile: draw a closed and flat curve and convert it into a 
+new profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em>  
+<img alt="Profile from curve command" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a> command</li>
+<li>Once the custom profile has been created, it will appear at the end of the list of preset parametric profiles library. (The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="Rail rotation profile"/><strong> Rotation</strong>: angle 
+by which the rails rotate around the railing 
+axis, taking as the center of rotation the central point of their profile area.</li>
+<li><strong>Sizes</strong>: parameters corresponding to the rail sizes, according to the type of profile selected.</li>
+</ul>
+
+<h4>Post   <img alt="Railing Post" height="16" src="../images/Railing Post.png" width="16" /></h4>
+<p>The posts are the main vertical component of a railing 
+object. A post is placed at the end and start points of a railing path curve and 
+at each one of the discontinuity points in between. The <strong>Post</strong> component is defined by the following parameters:</p>
+
+<h5>Location</h5>
+
+<p>The location of the post component defines its position in relation with the base path curve and the 
+railing heigth.</p>
+<ul>
+<li><img src="images/Posts horizontal alignment 32.png" alt="Posts horizontal alignment"/><strong> Horizontal alignment:</strong> 
+the post alignment depends 
+on the direction of the base curve. It has three different options: <strong>
+Exterior</strong>,
+<strong>Center</strong> and <strong>Interior</strong>.</li>
+	<li><img src="images/Posts horizontal offset 32.png" alt="Posts horizontal offset"/> <strong>Horizontal alignment offset</strong>: 
+	the offset alignment inserts the post at a specific distance from the base curve. 
+	</li>
+<li><img src="images/Posts end offset 32.png" alt="Posts end margin"/> <strong>
+Ends margin:</strong> distance <span>between the posts and the ends of the 
+railing base curve</span>.</li>
+</ul>
+
+<h5>Profile</h5>
+
+<p>The post shape is defined by a <strong>profile</strong>,<em> </em>a <strong>rotation 
+</strong>angle and a 
+profile <strong>size</strong>.</p>
+<ul>
+
+<li><img src="images/Shape profile -32.png" alt="post shape profile"/> <strong>Profile:</strong>
+the profiles available by default for the post component are the <strong>Rectangular</strong> 
+and <strong>Circular </strong>profiles.<br/>
+
+Custom shape profiles can also be used to define railings posts:<br/>
+<ul>
+<li>Add a custom profile: draw a closed and flat curve and convert it into a 
+new profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em>  
+<img alt="Profile from curve command" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a> command.</li>
+<li>Once the custom profile has been created, it will appear at the end of the list of preset parametric profiles library. (The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="Post rotation profile"/> <strong>Rotation</strong>: 
+rotation angle of the posts around their 
+vertical axis, taking as the center of rotation the central point of their 
+profile area.</li>
+<li><strong>Sizes</strong>: parameters corresponding to the posts sizes, according to the type of profile selected.</li>
+</ul>
+
+<h4>Baluster   
+<img alt="Railing baluster" height="16" src="../images/Railing baluster.png" width="16"/></h4>
+
+<p>The baluster is the secondary vertical component of a railing object.</p>
+
+<h5>Location</h5>
+
+<p>The location of the baluster component defines its position in relation with the 
+railing base path curve.</p>
+<ul>
+<li><img src="images/Posts horizontal alignment 32.png" alt="balusters horizontal alignment"/><strong> Horizontal alignment:</strong> 
+the baluster alignment depends 
+on the direction of the base curve. It has three different options:
+<strong>Interior</strong>,
+<strong>Center </strong>and <strong>Exterior.</strong></li>
+	<li><img src="images/Posts horizontal offset 32.png" alt="balusters horizontal offset"/> <strong>Horizontal alignment offset</strong>: 
+	the offset alignment inserts the 
+	balusters at a specific distance from the base curve. 
+	</li>
+
+<li><img src="images/baluster path distance 32.png" alt="balusters path distance"/>  <strong>Path distance:</strong> maximum distance between the central vertical axis 
+of each baluster along the railing path. This distance might not be exact when the alignment is set to <em>Justify</em>.</li>
+	<li><img src="images/baluster path alignment 32.png" alt="balusters path alignment"/> <strong>Path alignment</strong>: 
+	distribution of balusters along the railing path. There are four options available: 
+		<ul>
+			<li><strong>Start</strong></li>
+			<li><strong>Middle</strong></li>
+			<li><strong>End</strong></li>
+			<li><strong>Justify</strong></li>
+		</ul></li>
+	<li><img src="images/baluster path margin 32.png" alt="balusters path margin"/> 
+	<strong>Path margin</strong>: distance between the external faces of the 
+	posts and the nearest baluster face. Posts are located at the ends and at 
+	the discontinuity points of the railing base curve. In railings which do not have posts, the path margin distance is 
+	the one between the first and last balusters, located at the ends of 
+	the railing base curve and at the 
+discontinuity points.</li>
+</ul>
+
+<h5>Geometry</h5>
+
+<p>The geometry of the baluster component defines its shape in relation with the 
+railing heigth.</p>
+<ul>
+<li><img src="images/baluster top offset 32.png" alt="balusters top offset"/> <strong>Top 
+margin: </strong>distance between the top of the railing and the top surface of the baluster.</li>
+
+<li><img src="images/baluster bottom offset 32.png" alt="balusters bottom offset"/> <strong>Bottom 
+margin: </strong>distance between the base line of the railing and the bottom surface of the baluster.</li>
+</ul>
+
+
+<h5>Profile</h5>
+
+<p>The baluster shape is defined by a <strong>profile</strong>,<em> </em>a
+<strong>rotation </strong>angle and 
+profile <strong>sizes</strong>.</p>
+
+<ul>
+
+<li><img src="images/Shape profile -32.png" alt="baluster shape profile"/> <strong>Profile:</strong> 
+the profiles available by default for the baluster component are the <strong>Rectangular</strong> 
+and <strong>Circular</strong> profiles.<br/>
+
+Custom shape profiles can also be used to define railings balusters:<br/>
+<ul>
+<li>To add a custom profile: draw a closed and flat curve and convert it into a 
+new profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em>  
+<img alt="Profile from curve command" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a> command</li>
+<li>Once the custom profile has been created, it will appear at the end of the list of preset parametric profiles library. (The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="baluster rotation profile"/> <strong>Rotation</strong>: angle 
+by which the balusters rotate around their 
+vertical axis, taking as the center of rotation the central point of their 
+profile area</li>
+<li><strong>Sizes</strong>: parameters corresponding to the baluster sizes, according to the type of profile selected.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing styles.jpg" alt="Railing styles samples." width="500" height="226" /><br/>
+Railing styles samples
+</div>
+

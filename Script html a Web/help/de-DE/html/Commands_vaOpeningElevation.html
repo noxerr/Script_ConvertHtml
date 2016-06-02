@@ -1,0 +1,40 @@
+<h3>Öffnungshöhe</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaÖffnungsHöhe</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_OpeningElevation.jpg" alt="Öffnungshöhe"/> Linksklick
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">
+		Dokumentation</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Werkzeugleiste VisualARQ-Dokumentation" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Öffnungshöhe &gt; Öffnungshöhe</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaOpeningElevation.wmv" preview="../images/previews/vaOpeningElevationvideo.png" width="300px" height="300px"></div>
+
+<p>Dieser Befehl erzeugt 2D-Darstellungen der Höhen über dem Boden der verschiedenen Öffnungen.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie die <strong>Türen</strong> und <strong>Fenster</strong>, von denen Sie die Höhe vom Boden erhalten möchten. Der Befehl filtert die Auswahl automatisch, so dass nur die Öffnungsobjekte angezeigt werden.</li>
+	<li>Wählen Sie den <strong>Start</strong>- und <strong>Endpunkt</strong> der Einfügung.</li>
+</ol>
+<p>Der Befehl wird mit dem Einfügen der 2D-Zeichnung der gewählten Öffnungen mit ihren entsprechenden Referenzen abgeschlossen. Die gleichen Referenzen werden in der Planansicht angezeigt und identifizieren den Standort jedes Tür- und Fenstertyps im Modell.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningsSelect.png" alt="Auswahl von Öffnungen (Filterung)" width="250" height="245" /><br/>Auswahl von Öffnungen (Filterung)</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevations.png" alt="Referenzen der Modellöffnungen" width="250" height="245"/><br/>Referenzen der Modellöffnungen</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevZoom.png" alt="Bemaßte Öffnungshöhen " width="500" height="150"/><br/>Bemaßte Öffnungshöhen, mit Referenzen der Modellöffnungen</div>
+<br clear="all" />
+
+<p><strong>HINWEIS: </strong> Für alle Öffnungen (Türen oder Fenster) gleicher Eigenschaften aufweisen - Abmessungen, Höhe vom Boden und Öffnungsseite - wird eine einzelne Zeichnung mit einer einzigen Referenz erzeugt.</p>
+
+<p>Öffnungshöhen und ihre Referenzen werden standardmäßig auf der Ebene <strong>Dokumentation</strong> erzeugt.<br/>
+Um die Referenzen auszublenden, deaktivieren Sie die Ebene, auf der sie erzeugt wurden.<br/>
+Um die Referenzen zu löschen, wählen Sie die Öffnung aus, die Sie löschen möchten und öffnen Sie den Abschnitt der <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> (im Dialogfenster der Rhino-Eigenschaften <img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />). Löschen Sie den <strong>Referenztext</strong>
+ im Abschnitt 
+<strong>Referenz</strong>.</p>
+

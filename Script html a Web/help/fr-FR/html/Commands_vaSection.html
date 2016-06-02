@@ -1,0 +1,70 @@
+<h3>Section</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaSection</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon">
+		<img alt="Section" height="24" src="../images/VA_Section.jpg" width="24" /> clic gauche [<a href="Commands_vaSectionStyles.html" title="Styles de  de section">clic droit</a>]</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> :</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barre d'outils Documentation de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Section &gt;  Section</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionMark.wmv" preview="../images/previews/vaSectionvideo.png" width="300px" height="300px"></div>
+
+<p>La commande <strong>vaSection</strong><em></em> est utilisée lors de la création d'un dessin 2D qui représente des objets 3D projetés sur un plan et aussi pour visualiser une section dynamique du modèle 3D en temps réel.</p>
+
+<p>Lorsque vous lancez la commande <strong>vaSection</strong>, vous créez la 
+<strong>ligne de coupe de la section</strong> qui représente le plan de coupe à partir duquel vous pourrez générer ensuite la <strong>vue de section</strong> et la <strong>section dynamique</strong>. Lorsque vous lancez la commande, la boîte de dialogue d'insertion d'une 
+<strong> Section</strong> apparaît. Suivez les invites dans la ligne de commande<em>.</em> Appuyez sur le bouton de droite ou Entrée pour accepter et passer à l'étape suivante.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section mark insert.png" alt="Boîte de dialogue d'insertion d'une Section" /><br/>Boîte de dialogue d'insertion d'une Section</div>
+<br clear="all" />
+
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Choisissez un <strong>style de section</strong> dans la boîte de dialogue.</li>
+	<li>Indiquez le <strong>premier point</strong> de la ligne de coupe de la section.</li>
+	<li>Indiquez les <strong>points suivants</strong> de la ligne de coupe de la section en cliquant sur les points désirés à l'écran. Cliquez avec le bouton droit pour finir l'étape.</li>
+	<li>Indiquez la <strong>position du point de vue</strong> et la <strong>longueur de la section</strong> en plaçant le curseur sur le côté de la ligne à l'opposé de la cible et en cliquant. La longueur de la section déterminera les objets qui seront inclus dans la 
+	<strong>vue de section</strong> et la <strong>section dynamique</strong>. </li>
+	<li>Entrez le <strong>texte de référence de la section</strong> dans la ligne de commandes.</li>
+</ol>
+
+<p>Lorsque la section est insérée, vous pouvez créer une <a href="Commands_vaSectionView.html">
+<strong>vue de section</strong> <img alt="Section" height="24" src="../images/VA_SectionView.png" width="24" /></a> à partir de celle-ci ou activer la <a href="Commands_vaDynamicSection.html"><strong>section dynamique</strong><img alt=" Section" height="24" src="../images/VA_DynamicSection.png" width="24" /></a>.</p>
+<h4>Ajouter et supprimer des décrochés dans une section.</h4>
+	<ul>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaAjouterDécrochéSection et vaSupprimerDécrochéSection</div>
+
+		<div class="field"><a href="Interface_Context.html">Menu contextuel </a>: </div>
+	<div class="value context">Ligne de coupe de la section &gt; Section &gt; Ajouter un décroché à la section ou Supprimer un décroché de la section</div>
+</div>
+</ul>
+<p>Option pour ajouter ou supprimer des points de décroché dans une ligne de coupe de section.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez les points de décroché que vous voulez ajouter/supprimer le long de la ligne de coupe de la section. Cliquez avec le bouton droit pour terminer la commande.</li>
+</ol>
+<p>Les points de section sont ajoutés ou supprimés le long de la ligne de coupe de la section. Pour voir ces nouveaux points, sélectionnez la ligne de coupe de la section et activez ses points de contrôle.</p>
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/section control points.png" alt="Points de contrôle sur une ligne de coupe de section" width="400" height="240"  style="float: right;"/>
+<p>La ligne de coupe de la section possède cinq points de contrôle :<br />
+<ol>
+	<li>Les points de contrôle du <strong>bord</strong>. Les points d'insertion de départ et final.</li>
+	<li>Les points de contrôle de la <strong>longueur de la section</strong>.</li>
+	<li>Les <strong>points de décroché de la section</strong>.</li>
+	<li>Les points de contrôle de la <strong>position du point de vue</strong>.</li>
+	<li>Les points de contrôle du <strong>texte</strong> <strong>de référence de la section</strong>.</li>
+</ol>
+</p>
+<p>Pour modifier le point de vue, déplacez ou faites tourner la ligne de coupe manuellement jusqu'à ce que vous atteigniez la position désirée, en utilisant les points de contrôle. Les modifications sont automatiquement actualisées (en temps réel).</p>
+<p>Pour actualiser la section, après avoir modifié un objet sélectionné, sélectionnez la ligne de coupe ou le dessin 2D de la section puis cliquez sur l'icône <a href="Commands_vaUpdate.html">Actualiser</a> 
+<img alt="vaActualiser" height="26" src="../images/VA_Update.jpg" width="26" />. Cette icône se trouve dans la barre d'outils <a href="Interface_Toolbars.html">Outils de VisualARQ</a>.</p>
+
+<p><strong>REMARQUE :  </strong> Seuls les objets contenus à l'intérieur de la zone de section, délimitée par ses points d'insertion et ses points de longueur de section, seront affichés dans la section dynamique et la vue de section.</p>

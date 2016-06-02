@@ -1,0 +1,130 @@
+<h3>Muro cortina</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaMuroCortina</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_CurtainWall.jpg" alt="Muro cortina"/> clic izquierdo [<a href="Commands_vaCurtainWallStyles.html" title="comando Estilo de muro cortina">clic derecho</a>]
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html">Objetos</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Muro cortina &gt; Muro cortina</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaCurtainWall.wmv" preview="../images/previews/vaCurtainWallvideo.png" width="300px" height="300px"></div>
+
+<p>Cuando ejecute el comando <strong>vaMuroCortina</strong>, aparecerá el <strong></strong><a href="Interface_Dialog.html">cuadro de diálogo de inserción</a> de muro cortina. Este cuadro muestra una lista con los estilos de muro cortina disponibles, así como las opciones básicas del objeto muro cortina y una previsualización del mismo.</p>
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione el <strong>estilo de muro cortina</strong> que desea utilizar y defina las opciones básicas de inserción.</li>
+	<li>Seleccione el <strong>punto inicial</strong> (punto de inserción) del muro cortina con un clic. Al definir el punto de inicio, una cota dinámica muestra en tiempo real el valor de la longitud del muro cortina que se está insertando.</li>
+	<li>Pulse nuevamente el botón izquierdo del ratón, para definir el <strong>punto final</strong> del muro cortina.</li>
+</ol>
+
+<p>La <strong>longitud</strong> y la <strong>dirección</strong> del muro cortina pueden definirse de varias maneras:
+<ul>
+	<li>Tecleando coordenadas (relativas o absolutas) en la línea de comandos.</li>
+	<li>Teleando un valor para fijar la longitud y/o el ángulo en la línea de comandos.</li>
+	<li>Manualmente, pulsando el botón izquierdo del ratón en el punto deseado.</li>
+</ul>
+</p>
+
+<p>Cada nuevo muro cortina se dibuja siguiendo el anterior, hasta que pulse INTRO o ESC o el botón derecho. El comando vuelve a solicitar de inmediato el punto de inicio para trazar el siguiente muro cortina, pero esta vez no lo liga al muro cortina anterior por defecto, sino que comienza su trazo a partir del nuevo punto de inicio seleccionado.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Curtain wall/Curtain wall insert dialog.png" alt="Cuadro de inserción del objeto Muro cortina."/><br/>
+Cuadro de inserción del muro cortina
+</div>
+<br clear="all" />
+
+<h3>Muro cortina: Desde curvas</h3>
+
+<p>Los muros cortina también pueden crearse a partir de curvas previamente dibujadas en el modelo.</p>
+
+<p>Cuando ejecute el comando <strong>vaMuroCortina</strong>, aparecerá el 
+<a href="Interface_Dialog.html">cuadro de diálogo de inserción</a> del muro cortina.</p> 
+<p><strong>Pasos:</strong></p>
+<ol>
+		<li>Seleccione <strong>DesdeCurvas</strong> en la línea de comandos.</li>
+		<li>Seleccione una <strong>Curva</strong> o varias <strong>Curvas</strong> desde el modelo que se utilizarán para generar muros cortina. Las curvas pueden ser de cualquier forma o tipo, siempre y cuando sean <em>planas. </em>Si se selecciona una polilínea, se generará un objeto de muro cortina para cada segmento de polilínea.</li>
+		<li>Seleccione las <strong>opciones de inserción del muro cortina</strong> desde el 
+		<span lang="es"></span>
+		<a href="Interface_Dialog.html">cuadro de diálogo de inserción</a> de muro cortina que definirán el <span lang="es">muro cortina</span> creado a partir de esa curva<strong>.</strong> Este paso puede realizarse antes o después de seleccionar las curvas para generar los muros cortina.<br/>
+		</li>
+		
+</ol>
+<br />
+
+<p>Los muros cortina resultantes de esta operación se comportan como el resto de objetos muro cortina de VisualARQ.</p>
+
+<br clear="all" />
+
+<h4>Puntos de control <img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Los muros cortina tienen tres <em>puntos de control</em> y tres <em>flechas de control</em>:<br />
+<ul>
+	<li>Los puntos de control <em>inicial</em> y <em>final</em> sirven para estirarlo y/o cambiar su dirección , mientras que el <em>punto de control central</em> sirve para doblegarlo si el muro cortina es curvo.</li>
+	<li>Las <em>flechas de control</em> que aparecen en la vista en Planta (y también en la vista Perspectiva) sirven para estirar horizontalmente al muro cortina desde sus extremos, mientras que la <em>flecha de control</em> que aparece en el resto de las vistas (Perspectiva, Frontal y Derecha) sirve para estirar verticalmente al muro cortina, modificando así su altura de forma manual.</li>
+</ul>
+</p>
+
+<div class="figureWithDescription block"><img src="../images/Curtain Wall Control Points.jpg" alt="Puntos de control en muros cortina" width="450" height="150" /><br/>
+Puntos de control en muros cortina</div>
+
+<br clear="all" />
+
+<ol>
+	<li>Punto de control inicial (punto de inserción).</li>
+	<li>Flecha de control (vertical), no se puede editar en la vista Superior.</li>
+	<li>Punto de control final.</li>
+	<li>Flechas de control (horizontal).</li>
+	<li>Muro cortina desde puntos de control de curva.</li>
+</ol>
+
+<h4>Opciones y parámetros de inserción</h4>
+
+
+<h5>Altura</h5>
+<p>Aunque la <strong>Altura</strong> es una propiedad del estilo de muro cortina, desde el cuadro de inserción es posible asignar un valor de altura distinto al predefinido. Basta con desactivar la casilla de verificación 
+<strong>Altura por estilo</strong> y elegir el valor deseado, utilizando el control numérico de altura.</p>
+
+<p>Para modificar la altura de un muro cortina, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />, o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (dentro del <span lang="es"></span>panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Alineación</h5>
+<p>Existen tres opciones para alinear el muro cortina, según su posición relativa a la dirección de su curva base:
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"></span></p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Alineación central"/></td>
+				<td><strong>Centro</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Alineación a la derecha"/></td>
+				<td><strong>Derecha</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Alineación a la izquierda"/></td>
+				<td><strong>Izquierda</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Desfase de alineación</h5>
+<p>Inserta el muro cortina a una distancia específica desde la dirección de su curva base.</p>
+<p>Para modificar la alineación del muro cortina o el desfase de alineación, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />, o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (dentro del cuadro de diálogo Propiedades de Rhino
+<img alt="Icono Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

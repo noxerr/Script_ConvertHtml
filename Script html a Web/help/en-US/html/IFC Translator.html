@@ -1,0 +1,35 @@
+<h3>IFC Translator</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">Export: SaveAs</div>
+	<div class="value keyboardCommand">Import: Open</div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">Export: File &gt; Save as..</div>
+	<div class="value menu">Import: File &gt; Open..</div>
+</div>
+
+<p>VisualARQ includes a built-in IFC import and export plug-in, which makes it possible to exchange VisualARQ and Rhino models with other AEC softwares using IFC 2x3 files.</p>
+<h4>What is IFC?</h4>
+<p>The Industry Foundation Classes (IFC) file format is a standard way of exchanging objects
+ in the building industry to reduce loss of information when transmitting files between different applications.
+</p>
+<h4>Export to IFC</h4>
+	
+<li>Go to<strong> File &gt; Save as</strong> and save the model as an IFC file format.</li>
+<p><strong>Export Options</strong>: click on the <em>Options...</em> button to open the <a href="Commands_IfcExportOptionsDialog.html">IFC Export Options Dialog</a> and assign IFC class properties to the existing layers in the document.</p>
+
+<p>The <a href="Commands_IfcTag.html">IFC tag</a> panel allows you to assign IFC properties to the objects when they are exported to IFC.</p>
+
+<h4>Import IFC files</h4>
+	
+<li>Open a new file (<strong> File &gt; Open...</strong>) and select the IFC file to import. Make sure you have selected the <em>IFC 2x3 Building Model (*.ifc)</em> file type, or <em>All compatible file types</em>.</li>
+
+<h4>What kind of geometry and data does VisualARQ export to IFC?</h4>
+<p>When a document is saved as an IFC file all VisualARQ architectural objects keep 
+their information and can be further edited in the ouput AEC software platforms. 
+The Rhino solids, surfaces and meshes are opened as independent mesh objects, unless they have had an specific IFC type assigned <a href="Commands_IfcTag.html">by object</a>, or <a href="Commands_IfcExportOptionsDialog.html">by layer</a>. 
+Annotation objects such as texts, hatches or dimensions, are not exported to IFC.</p>
+<div class="figureWithDescription block"><img src="../images/From VA to Revit IFC.jpg" alt="Model exported from VisualARQ to Revit in IFC."/><br/>
+Model exported from VisualARQ to Revit in IFC
+</div>

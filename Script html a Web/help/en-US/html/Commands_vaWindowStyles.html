@@ -1,0 +1,253 @@
+<h3>Window Styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaWindowStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Window.jpg" alt="Window"/> right click
+	[<a href="Commands_vaWindow.html" title="Window command">left click</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects</a> toolbar: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Window &gt; Window Styles...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Window &gt; Styles Properties</div>
+	
+	<div class="field">Shortcut key: </div>
+	<div class="value menu">Select a window object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + 
+		double click</div>
+
+	
+</div>
+
+<p>The window style defines the window features. You can define the following 
+parameters in each window style: <strong>Name</strong>, <strong>Attributes</strong>, 
+<strong>Opening</strong> <strong>type</strong>, <strong>Shape </strong>and <strong>Custom blocks</strong>.</p>
+<p>The window styles are defined by different components that can be added or 
+deleted at any time:<strong> Window Frame</strong>, <strong>Window Stop</strong>, <strong>Leaf </strong>
+and<strong> Sill.</strong></p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Window components.png" alt="Components and parts of a window" width="300" height="300" /><br />
+Different parts and components of a window:</div>
+<ol>
+	<li>Window<strong> Profile</strong></li>
+	<li><img height="16" src="../images/Frame-16.png" width="16" /> Window <strong>Frame</strong></li>
+	<li><img height="16" src="../images/Stop-16.png" width="16" /> Window <strong>Stop</strong></li>
+	<li><img height="16" src="../images/Window leaf-16.png" width="16" /> Window <strong>Leaf</strong></li>
+	<li>Glass <strong>Muntins</strong></li>
+	<li><img height="16" src="../images/Glass component 16.png" width="16" /> Leaf <strong>Glass</strong></li>
+	<li><img height="16" src="../images/Window Sill-16.png" width="16" /><strong>Sill</strong></li>
+</ol>
+
+
+<br clear="all" />
+
+<h4>New window style:</h4>
+<p>You can create new styles and duplicate existing styles from the window <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+<p>When clicking on the <strong>New Style... button</strong>, the new style wizard appears. Follow the steps of the wizard to define the new window style parameters:</p>
+<ul>
+<li>Name</li>
+<li>Opening type</li>
+<li>Opening profile</li>
+<li>Standard size</li>
+<li>Frame component parameters</li>
+<li>Stop component parameters</li>
+<li>Leaf component parameters</li>
+<li>Sill component parameters</li>
+<li>Custom blocks</li>
+</ul>
+
+
+<h4><strong>Delete a window style</strong>:</h4>
+<p>You can delete window styles from the window <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing window in the model.</p>
+
+<h4>Edit a window style:</h4>
+<p>Select the window style or the window component item at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add a new window component:</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the window style name to open the context menu, and select <em>New > "Component item"</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the window style and click on the <em>New</em> icon, from the dialog toolbar. Select <em>"Component item"</em>.</li>	
+</ul>
+<p><strong>Delete components:</strong> use the Context menu (righ-click on the component to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/WindowNewStyle.png" alt="Style Manager dialog box for the Window object." /><br />
+Style Manager dialog box for the window object
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaWindowStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		window and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)"/>, 
+		then select a window and press Enter, or</li>
+		<li>Select a window and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Window &gt; Style Properties</strong>, 
+		or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on a window object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a window 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a window and press Enter, or</li>
+		<li>Select a window and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Window &gt; Properties</strong>, or,</li>
+		<li>Double click on a window object. </li>
+	</ul>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of a window style and its components 
+for display and print purposes. The valid attributes are:</p>
+
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle and Pattern color</li>
+</ul>
+
+<h4>Opening Type</h4>
+
+<p>VisualARQ can create window styles with six types of aperture:</p>
+<ol>
+	<li><strong>Swing:</strong> window that is opened to one side on hinges </li>
+	<li><strong>Sliding:</strong> window that runs or slides on a rail or slot</li>
+	<li><strong>Hung:</strong> window that runs or slides on a vertical rail or slot 
+	</li>
+	<li><strong>Awning:</strong>  window that is opened to one side on horizontal hinges down to up</li>
+	<li><strong>Hopper:</strong> window that is opened to one side on horizontal hinges from up to down</li>
+	<li><strong>Fixed: </strong>window that 
+	can&#39;t be opened. (This aperture type is assigned by window leaf).</li>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/window types.png" alt="Window aperture types" width="500" height="250" /><br />
+	Windows aperture types
+</div>
+<br clear="all" />
+<h4>Shape</h4>
+
+<p>The window shape (or rough opening) is defined by a <strong>profile.</strong> VisualARQ offers a library with predefined parametric profiles: Rectangular, Circular, 90º Arc, Gothic, etc.<br />
+Custom profiles can also be used to define windows using the <a href="Commands_vaProfileFromCurve.html">
+<strong>vaProfileFromCurve</strong></a> command
+<img alt="vaProfileFromCurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.
+</p>
+
+<h4>Sizes</h4>
+<p>The parameters corresponding to the sizes of a window will depend on the type of profile selected.<br />
+Different sizes can be specified for the same window style.</p>
+<p>The sizes can also be specified at any time when inserting the window from the insert dialog box by choosing the 
+<strong>Sizes &gt; Other</strong> option in the Profile section of this box.</p>
+<h3>Window components</h3>
+
+	<h4>Frame <img alt="Window Frame" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>The window styles can have a frame.<br />
+The frame <strong>Width</strong> and <strong>Depth </strong>values can be edited. In addition, the 
+<strong>Adjust depth to wall thickness </strong>option can be enabled.</p>
+
+<h4>Stop <img height="16" src="../images/Stop-16.png" width="16" /></h4>
+<p>The window styles can have a windowstop.<br />
+The windowstop properties are <strong>Width</strong> and <strong>Depth</strong>.</p>
+
+
+<h4>Leaves <img height="16" src="../images/Window leaf-16.png" width="16" /></h4>
+<p>The window styles can have one or more leaves.
+To add a leaf to a window,  select the window name on the left side of the dialog box, right-click to open the context menu, and select 
+<strong>New &gt; 
+Window Leaf</strong><em>.</em> </p>
+<p>The leaf properties are <strong>Width </strong>(as a percentage), <strong>Thickness
+</strong>and if 
+it is a <strong>fixed</strong> leaf or not.</p>
+<p>Window leaves can have the same or different widths. If you clear the <strong>Equal Widths
+</strong>option, you can edit the percentage width of each leaf, assigning a value between 0 and 100%.<br />
+You can also change the opening side by enabling the <strong>Invert</strong> opening side option.</p>
+
+<h4>Glass <img height="16" src="../images/Glass component 16.png" width="16" /></h4>
+<p>Each window leaf contains a glass. When a new leaf is created a 
+glass is included by default. The glass can be removed from the leaf by 
+selecting the Glass component on the left side of the dialog box, right-click to 
+open the context menu, and select <strong>Delete</strong><em>.</em> To add a glass to a leaf that 
+hasn&#39;t any,  select the Leaf component on the left side of the dialog box, right-click to open the context menu, and select 
+<strong>New &gt; Glass</strong><em>.</em></p>
+<p>Glasses can have two different components:</p>
+<ul>
+	<li><strong>Glass frame:</strong> Frame that holds the glass in a window&#39;s 
+	leaf. The glass frame properties are the <em>Width</em><strong> </strong>and 
+	<em>Thickness</em>, which is the 
+	same as the leaf thicknesss and can be edited selecting the leaf component. 
+	The frame can be removed from the glass.</li>
+	<li><strong>Muntins: </strong>The rigid supporting strips between adjacent 	panes of glass. 
+	The muntins properties are the <strong>amount</strong> of muntins that 
+	divide a glass panel and their <strong>Width</strong>.</li>
+</ul>
+
+<h4>Sill <img height="16" src="../images/Window Sill-16.png" width="16" /></h4>
+<p>The window styles can have a window sill.<br />
+The window sill properties are: <strong>Thickness</strong>, <strong>Interior/Exterior Extension</strong> and <strong>Interior/Exterior Depth</strong>.</p>
+
+<h3>Custom Blocks</h3>
+
+<p>The window styles can be created with 2D and 3D blocks that define their representation in the plan and model views, respectively.<br />
+To create a custom window style, assign a <strong>profile</strong> (which defines the shape of the rough opening on the wall), a 
+<strong>2D block</strong> (which defines the plan representation) and a <strong>3D block</strong> (which defines the model representation).</p>
+
+<p><strong>Steps:</strong></p>
+
+<ul>
+<li><strong>Create a custom profile:</strong> Draw a planar and closed curve and convert the profile using the <a href="Commands_vaProfileFromCurve.html">
+<strong>vaProfileFromCurve</strong></a> command
+<img alt="vaProfileFromCurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Once the custom profile has been created, it will appear at the end of the list of the preset parametric profiles library.<br />
+The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.
+</li>
+<li><strong>Create the 2D and 3D blocks:</strong> Create the 3D model and draw the 2D representation from it. 
+Then create two blocks from them with the <strong>Block</strong> command (Menu &gt; Edit &gt; Block &gt; Create block definition).</li>
+<li><strong>Create the new window style:</strong> Once you have created the profile and the 2D/3D blocks, press the 
+<strong>New style</strong> button in the Style Manager dialog box. Use the wizard displayed to assign a custom profile to the style.
+
+<p>Skip the dialogs where the window style parameters are defined by pressing the 
+<strong>Next</strong> button until the custom block definition dialog box is displayed.<br />
+Select the checkbox that enables the options to use custom blocks for the model and plan views in the Custom Block dialog box. 
+These checkboxes will be only enabled if there is a block created in the 
+document. Once they have been enabled, select the 3D and 2D blocks in the drop-down menu to define the representation of window styles in those views.</p>
+</li>
+</ul>
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/profile custom2.jpg" alt="Style Manager dialog box for the Window object." /><br />
+Window creation wizard, Profile selection
+</div>
+
+<p>Before creating the blocks (2D/3D), make sure that the objects you wish to convert in VisualARQ openings are aligned with the universal X, Y and Z axes (WCS).<br />
+Once you have aligned the objects with the WCS, choose the <strong>lower center point</strong> of your geometry as the insertion point when creating the block.<br />
+This will guarantee that the orientation of the opening is correct.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/2d 3d blocks.png" alt="Window creation wizard, block definition." /><br />
+Window creation wizard, block definition
+</div>
+
+<p>When 3D and 2D blocks are used to define the representation of a custom style, the Sizes, Frame, Windowstop and Leaves parameters do not have an effect on the appearance of the style created. Custom styles are NOT parametric: their appearance (size, proportion, level of detail) depends on the block drawing used to define them.</p>
+
+<p>VisualARQ can also create <em>hybrid</em> window styles, replacing only the plan view (with a 2D block) and using the model view of a parametric style or vice versa.<br />
+The representation that does not use a block must be defined with style parameters (Sizes, Frame, Windowstop and Leaves), as in any standard window style.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window.png" alt="3D block, 2D block and a profile for the new custom window style" width="400" height="222" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window 2.png" alt="Custom window style, defined from a 3D block, a 2D block and a profile" width="400" height="167" /><br />Custom window style, defined from a 3D block, a 2D block and a profile.</div>
+
+<br clear="all" />

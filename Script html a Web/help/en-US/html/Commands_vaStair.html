@@ -1,0 +1,186 @@
+<h3>Stair</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaStair</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Stair"/> left click
+	[<a href="Commands_vaStairStyles.html" title="StairStyle command">right 
+		click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Stair &gt; Stair</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaStair.wmv" preview="../images/previews/vaStairvideo.png" width="300px" height="300px"></div>
+
+<p>After running the <strong>vaStair </strong>command, the stair <a href="Interface_Dialog.html">insert dialog box</a> will appear. This dialog box shows a list of all 
+stair styles available, as well as the basic options of the stair object and its preview.</p>
+<p>Two minimum points (insertion and end point) are required to create a stair.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>Stair style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Insert the stair by selecting an <strong>insertion point</strong>.</li>
+	<li>Select any number of points throughout the total length of the stair. Each point determines a new stair flight 
+	and its direction. The length value depends on the parameters previously defined (<strong>Height</strong>, 
+	<strong>Tread</strong>, <strong>Tread count</strong>).</li>
+	<li>Press ENTER or right click button to finish the stair command.</li>
+</ol>
+
+<p>The command creates a stair flight that can change its direction or remain straight on each point selected. These flights are joined with landings.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/StairInsert.png" alt="Insert dialog box for stairs."/><br/>
+Stair insert dialog box
+</div>
+<br clear="all" />
+
+
+<h3>Spiral Stair</h3>
+
+<p>Select the Spiral stair option at the bottom part of the stair <a href="Interface_Dialog.html">insert dialog box</a> to display 
+a special section, which will be used to define the parameters of a spiral stair:</p>
+
+<ul>
+	<li>Turning angle</li>
+	<li>Radius</li>
+	<li>Clockwise: determines the direction of the spiral stair</li>
+</ul>
+<p>This option cannot be edited once the stair has been inserted. To change a stair with straight section(s) to a spiral stair, insert the stair again, selecting the desired option.</p>
+<p><strong>NOTE</strong>: spiral stairs can't have a turning angle superior to 
+360º. To create a spiral stair that turns over itself more than 360º, you need 
+to create two or more spiral stairs.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/winding stair.png" alt="Top and Perspective view of a spiral staircase." width="400" height="170"/><br/>
+Spiral stair: top and perspective view
+</div>
+
+<br clear="all" />
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+	<div class="figureWithDescription picRight"><img src="../images/stair_scheme.png" alt="Control points on stairs" width="250" height="135" style="float: right;"/></div>
+	<p>Stairs have as many control points as points inserted to define the stair:</p>
+	<ol>
+		<li>Insert point (stair start)</li>
+		<li>Start of the second flight</li>
+		<li>Start of the third flight</li>
+		<li>End of the stair</li>
+	</ol>
+<p>All stair control points are used to move the stair. They do not scale it.</p>
+<p>To define the direction of each stair flight, select and move the desired point on the screen or enter an angle in the command line.</p>
+
+
+<br clear="all" />
+
+<h4>Insertion Options and Parameters</h4>
+<p>Most parameters in a stair are specified in the insert dialog box when the stair is inserted. These parameters can be edited afterwards in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box <img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (Rhino Properties Panel <img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+</p>
+
+<h5>Alignment</h5>
+
+<p>The stair can be aligned with 3 methods:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment c.jpg" alt="Center alignment"/></td>
+				<td><strong>Center</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment r.jpg" alt="Right alignment"/></td>
+				<td><strong>Right</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment l.jpg" alt="Left alignment"/></td>
+				<td><strong>Left</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Height</h5>
+<p>The Height value corresponds to the distance between the stair starting point level and the stair ending point level.</p>
+
+
+<h5>Width</h5>
+
+<p>The Width value remains constant for all flights throughout the stair.</p>
+
+<h5>Tread count</h5>
+<p>Specifies the total number of treads throughout a stair.</p>
+
+
+<h5>Tread</h5>
+
+<p>The Tread value corresponds to the depth of each step. It remains constant for all steps throughout the stair.</p>
+
+
+<h5>Riser</h5>
+
+<p>The Riser value corresponds to the height of each step. It is calculated automatically with the Height and the Tread count and it remains constant for all steps throughout the stair.
+</p>
+
+<h5>Stair slab Top and Bottom thickness:</h5>
+<p>These values adjust the stair slab thickness at its start and ending point in order to fit with slabs thickness.</p>
+
+
+<h4>Stair flight and landing parameters:</h4>
+
+<p>Unlike other VisualARQ objects, the stair has some object properties which can only be assigned after the stair has been inserted. <br/>
+These properties are the <strong>Stair flight</strong> and <strong>Stair landing</strong> parameters 
+and can only be edited in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box <img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> :</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/stair flight landing.png" alt="Stair dialog box (Object Properties)" /><br />
+Stair dialog box (Object Properties)
+</div>
+<br clear="all" />
+
+<h4>Flight Parameters</h4>
+<ul>
+	<li>Type
+		<ul>
+			<li><strong>Landing</strong>: Indicates that the flight consists of a flat slab or landing.</li>
+			<li><strong>Steps</strong>: Indicates that the flight consists of steps.</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<h4>Landing Parameters</h4>
+<ul>
+	<li>Type
+		<ul>
+			<li><strong>Landing</strong>: Indicates that the landing consists of a flat slab or landing.</li>
+			<li><strong>Steps</strong>: Indicates that the landing consists of steps.</li>
+		</ul>
+	</li>
+	<li>Boundary
+		<ul>
+			<li>Interior
+				<ul>
+					<li><strong>Straight</strong>: Indicates that the interior boundary is straight (angular).</li>
+					<li><strong>Curved</strong>: Indicates that the interior boundary is curved (arc shaped).</li>
+				</ul>
+			</li>
+			<li>Exterior
+				<ul>
+					<li><strong>Straight</strong>: Indicates that the exterior boundary is straight (angular).</li>
+					<li><strong>Curved</strong>: Indicates that the exterior boundary is curved (arc shaped)</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+

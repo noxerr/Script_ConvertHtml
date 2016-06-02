@@ -1,0 +1,58 @@
+<h3>Zusammenarbeit von VisualARQ mit Rhino (Befehle und Benutzeroberfläche)</h3>
+
+<h4>Rhino-Befehle</h4>
+
+<p>Da es sich bei VisualARQ-Objekten eigentlich um Rhino-Blöcke handelt, sind alle Rhino-Befehle, die Blöcke betreffen, auch ohne Probleme auf VisualARQ-Objekte anwendbar. Andere Befehle wurden angepasst: so beispielsweise die Befehle zum Duplizieren von Objekten (wie Kopieren, Anordnen und Spiegeln) oder bestimmte Windows-Bearbeitungsbefehle (wie Ausschneiden, Kopieren und Einfügen: Strg+X, Strg+C, Strg+V).<br />
+Wenn Rhino-Befehle ausgeführt werden, die nicht von VisualARQ unterstützt werden, können VisualARQ-Objekte nicht ausgewählt werden.</p>
+
+<p>Der Befehl <strong>Zerlegen</strong> entfernt die Eigenschaften von VisualARQ-Objekten und wandelt diese in Flächenverbände um. In diesem Fall können Sie sie wie beliebige Rhino-Flächenverbände bearbeiten.</p>
+
+<p>VisualARQ verfügt zudem über spezielle Befehle zur Konvertierung (oder Rekonvertierung) einiger Rhino-Objekte in VisualARQ-Objekte.<br />
+Diese Befehle sind <a href="Commands_vaWall.html#Wallfromcurves"><strong>vaWand &gt; AusKurven</strong></a> und 
+<a href="Commands_vaWallFromSolid.html"><strong>vaWandAusVolumenkörper</strong></a><em>.</em> Weitere Infos dazu finden Sie in den Hilfe-Sektionen der jeweiligen Befehle. Zudem können Geländer- und Balkenobjekte aus 2D- und 3D-Kurven erzeugt werden. Decken- und Dachobjekte werden ebenfalls aus geschlossenen Kurven erzeugt.</p>
+
+<h4>Verhalten der Rhino-Befehle</h4>
+
+<ul>
+	<li><strong>Letzten Befehl und zuletzt verwendete Befehle wiederholen:</strong><br />
+		Wie bei den Rhino-Befehlen können die meisten VisualARQ-Befehle wie folgt wiederholt werden: 
+		<ul>
+			<li>Um den zuletzt verwendeten Befehl zu wiederholen, drücken Sie die EINGABETASTE, die LEERTASTE oder klicken Sie mit der rechten Maustaste, solange gerade kein anderer Befehl ausgeführt wird. </li>
+			<li>Um einen kürzlich verwendeten Befehl zu wiederholen, klicken Sie mit der rechten Maustaste in die Befehlszeile.
+			</li>
+	</ul>
+	</li>
+	<li><strong>Objekte auswählen:</strong><br />
+		Wie bei den Rhino-Befehlen erfordern die meisten VisualARQ-Operationen die Auswahl eines oder mehrerer Objekte. VisualARQ-Objekte werden wie Rhino-Objekte ausgewählt:
+		<ul>
+			<li>Um ein einzelnes Objekt auszuwählen, klicken Sie auf das Objekt.</li>
+			<li>Um mehrere Objekte auszuwählen, drücken Sie die Umschalttaste, während Sie auf das gewünschte Objekt klicken, oder verwenden Sie die Fensterauswahl.</li>
+		</ul>
+	</li>
+	<li><strong>Modellierhilfen und Objektfänge:</strong><br />
+		Für VisualARQ-Objekte können Modellierhilfen (Rasterfang, Orthogonal- und Planar-Modus) und Objektfänge (End, Schließen, Punkt, Mitte, Zentrum, Schnitt, Lot, etc.) auf die gleiche Art und Weise wie für Rhino-Objekte verwendet werden.</li>
+</ul>
+<h4>Kontrollpunkte</h4>
+<div class="comDescr">
+	<div class="field">Tastatur: </div>
+	<div class="value keyboardCommand">PunkteEin/PunkteAus</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Eigenschaften"/> Kontrollpunkte ein: Linksklick</div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Eigenschaften"/> Kontrollpunkte aus: Rechtsklick</div>
+	
+		
+	<div class="field">Menü: </div>
+	<div class="value menu">Bearbeiten &gt; Kontrollpunkte &gt; Kontrollpunkte ein/aus</div>
+	
+	<div class="field">Tastenkombination: </div>
+	<div class="value menu">Kontrollpunkte ein (F10), Kontrollpunkte aus (F11)</div>
+
+	
+	
+</div>
+
+<p>Alle VisualARQ-Objekte können durch Aktivieren der Kontrollpunkte bearbeitet werden. Um VisualARQ-Kontrollpunkte ein- und auszuschalten, können dieselben Befehle wie in Rhino verwendet werden.</p>
+<p class="figureWithDescription">
+<img src="../images/Wall and door control points.jpg" alt="VisualARQ-Wand und -Tür mit aktivierten Kontrollpunkten" /><br/>
+VisualARQ-Wand und -Tür mit aktivierten Kontrollpunkten.</p>

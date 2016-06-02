@@ -1,0 +1,179 @@
+<h3>Muro</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaMuro</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Wall.jpg" alt="Muro"/> clic sinistro [<a href="Commands_vaWallStyles.html" title="MuroStili">clic destro</a>, <a href="Interface_Toolbars.html#VisualARQWallsToolbar" title="Barra strumenti Muri di VisualARQ">clic prolungato</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barra degli strumenti</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Muro &gt; Muro</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaWall.wmv" preview="../images/previews/vaWallvideo.png" width="300px" height="300px"></div>
+
+<p>I muri sono elementi fondamentali in VisualARQ.</p>
+
+<p>Quando si esegue il comando <strong>vaMuro</strong>, appare la <a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> dei muri. Questa finestra mostra l'elenco di tutti gli stili di muro disponibili, così come le opzioni di base dell'oggetto muro ed un'anteprima dello stesso.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare lo <strong>stile di muro</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Selezionare il <strong>punto iniziale</strong> (punto di inserimento) del muro con un clic. Quando si specifica il punto iniziale, appare una quota dinamica che indica in tempo reale il valore della lunghezza del muro che si sta inserendo.</li>
+	<li>Cliccare di nuovo per specificare il <strong>punto finale</strong> del muro.</li>
+</ol>
+
+<p>La <strong>lunghezza</strong> e la <strong>direzione</strong> del muro si possono specificare in vari modi:
+<ul>
+	<li>Digitando le coordinate (relative o assolute) nella linea di comando.</li>
+	<li>Digitando un valore per specificare la lunghezza e/o l'angolo nella linea di comando.</li>
+	<li>Manualmente, con un clic sinistro sul punto desiderato.</li>
+</ul>
+</p>
+
+<p>Ciascun nuovo muro viene tracciato di seguito a quello precedente, fino a quando non si preme INVIO, ESC o clic destro. Il comando richiede di nuovo di specificare il punto di inizio per tracciare il seguente muro, tuttavia, questa volta non lo collega al muro precedente in modo predeterminato, ma inizia a tracciarlo a partire dal nuovo punto iniziale selezionato.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/wall/wall 1.png" alt="Finestra di dialogo di inserimento dell'oggetto Muro"/><br/>
+Finestra di dialogo di inserimento dei muri
+</div><br/>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Wall Dimensions.png" alt="Quota che mostra le dimensioni di un muro" /><br/>
+Quota che mostra le dimensioni di un muro
+</div>
+
+<br clear="all" />
+
+<a name="Wallfromcurves" />
+<h3>Muro: Da curve</h3>
+
+<div class="comDescr">	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_WallsFromCurves.jpg" alt="Muro: Da curve"/> clic sinistro [<a href="Commands_vaWallSetPath.html" title="Muro: Imposta percorso">clic destro</a>]
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html#VisualARQWallsToolbar">Muri</a>: </div>
+	<div class="value toolbar"><img src="../images/Walls.jpg" alt="Barra strumenti Muri di VisualARQ" usemap ="#WallsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Muro &gt; Da curve</div>
+</div>
+
+<div class="comVideo" id="video2" src="vaWallFromCurve.wmv" preview="../images/previews/vaWallFromCurvevideo.png" width="300px" height="300px"></div>
+
+<p>Opzione per creare muri da curve disegnate in precedenza, seguendone i contorni.</p>
+
+<p>Quando si esegue il comando <strong>vaMuro</strong>&gt;<strong> DaCurve</strong>, appare la 
+<a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> dei muri. Seguire i passi dalla linea di comando. Per terminare il comando, premere il tasto destro del mouse all'esterno della finestra di dialogo di inserimento dei muri oppure premere INVIO.</p> 
+<p><strong>Passi:</strong></p>
+<ol>
+		<li>Selezionare una <strong>curva</strong> o varie <strong>curve</strong> da usare per generare i muri. Queste curve possono essere di qualsiasi tipo e forma, a patto che siano <em>piane</em>.</li>
+		<li>Selezionare le <strong>opzioni di inserimento del muro</strong>, dalla 
+		<a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> dei muri, che definiranno il muro creato a partire da quella curva<strong></strong>. Questo passo si può eseguire prima o dopo la selezione della curva o delle curve per la generazione dei muri.<br/>
+		</li>
+		
+</ol>
+<br />
+
+<p>I muri risultanti da questa operazione si comportano come il resto degli oggetti Muro di VisualARQ. Essi si possono editare (per oggetto o stile) e consentono l'inserimento di porte e finestre.</p>
+<p>I muri creati a partire da curve sono parametrici ed il loro tracciato si può modificare manualmente. Per farlo, VisualARQ offre due opzioni:<br/>
+	<ul>
+		<li>Deformare il percorso del muro tramite i suoi punti di controllo.</li>
+		<li>Deformare il percorso del muro usando il comando <a href="Commands_vaWallSetPath.html"><strong>vaMuroImpostaPercorso</strong></a>.</li>
+	</ul>
+</p>
+
+<br clear="all" />
+
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>I muri possiedono tre <em>punti di controllo</em> e tre <em>frecce di controllo</em>:<br />
+<ul>
+	<li>I <em>punti di controllo iniziale</em> e <em>finale</em> si possono usare per stirare un muro e/o cambiarne la direzione, mentre il <em>punto di controllo centrale</em> viene usato per piegarlo, se esso è curvo.</li>
+	<li>Le <em>frecce di controllo</em> che appaiono nella vista Piana servono per stirare orizzontalmente il muro dai suoi estremi, mentre la <em>freccia di controllo</em> che appare nel resto delle viste (Prospettica, Frontale e Destra) viene usata per stirare il muro verticalmente, modificandone così l'altezza in modo manuale.</li>
+</ul>
+</p>
+
+<div class="figureWithDescription block"><img src="../images/Wall control points.jpg" alt="Punti di controllo dei muri" width="450" height="150" /><br/>
+Punti di controllo dei muri</div>
+
+<br clear="all" />
+
+<ol>
+	<li>Punto di controllo iniziale (punto di inserimento).</li>
+	<li>Freccia di controllo (verticale), non editabile nella vista superiore.</li>
+	<li>Punto di controllo finale.</li>
+	<li>Frecce di controllo (orizzontali).</li>
+	<li>Muro dai punti di controllo della curva.</li>
+</ol>
+
+<h4>Opzioni e parametri di inserimento</h4>
+
+
+<h5>Altezza</h5>
+<p>Anche se l'<strong>Altezza</strong> è una proprietà dello stile di un muro, dalla finestra di inserimento è possibile assegnare un valore di altezza diverso da quello predefinito. Basta disattivare la casella di selezione 
+<strong>Altezza per stile</strong> e specificare il valore desiderato, usando il controllo numerico per l'altezza.</p>
+
+<p>Per modificare l'altezza di un muro, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a>
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Allineamento</h5>
+<p>Esistono tre opzioni per allineare un muro, in funzione della sua posizione in base alla direzione della sua curva base:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Opzioni di allineamento"/></td>
+				<td><strong>Centro</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Opzioni di allineamento"/></td>
+				<td><strong>Destra</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Opzioni di allineamento"/></td>
+				<td><strong>Sinistra</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Offset di allineamento</h5>
+<p>Inserisce il muro ad una distanza specifica dalla direzione della sua curva base.</p>
+<p>Per modificare l'allineamento o l'offset di allineamento di un muro, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a>
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Intersezioni tra muri:</h5>
+
+<p>Le intersezioni tra i muri (ed i loro livelli) vengono risolte automaticamente. Di default, un muro viene esteso fino al muro più vicino se quest'ultimo ricade nei limiti del raggio di posizionamento del muro.</p>
+<ul>
+	<li>
+	<img alt="Raggio di posizionamento" height="32" src="../images/Cleanup%20radius.png" width="32" /> Il <strong>raggio di posizionamento</strong> specifica la distanza massima a cui la linea di base di un muro si può trovare rispetto alla linea di base di un altro muro per l'unione dei due muri. </li>
+	<li>
+	<img alt="Estensione massima" height="32" src="../images/Maximum%20extension.png" width="32" /> L'<strong>estensione massima</strong> specifica la distanza massima secondo la quale un muro si estende dai suoi estremi fino al punto in cui si interseca con un altro muro.</li>
+</ul>
+
+<p>Per modificare il <strong>raggio di posizionamento</strong> o l'<strong>estensione massima</strong> di un muro, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a>
+<img alt="Proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+
+<h3>Creare e modificare i muri</h3>
+<p>VisualARQ offre una barra degli strumenti con varie opzioni che consentono di creare e di modificare i muri in vari modi.</p>
+
+<div class="figureWithDescription block">
+	<div class="value toolbar"><img src="../images/Walls.jpg" alt="Barra strumenti Muri di VisualARQ" usemap ="#WallsToolbarMap"/><br/>
+	Barra strumenti Muri di VisualARQ</div>
+	</div>
+	<br clear="all" />
+	
+
+

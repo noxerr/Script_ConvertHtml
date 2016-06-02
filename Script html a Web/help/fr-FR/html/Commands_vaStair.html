@@ -1,0 +1,175 @@
+<h3>Escalier</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaEscalier</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Escalier"/> clic [<a href="Commands_vaStairStyles.html" title="Commande vaEscalierStyles">clic droit</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barre d'outils </a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Escalier &gt; Escalier</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaStair.wmv" preview="../images/previews/vaStairvideo.png" width="300px" height="300px"></div>
+
+<p>Lorsque vous lancez la commande <strong>vaEscalier</strong>, la <a href="Interface_Dialog.html">boîte de dialogue d'insertion</a> d'un escalier apparaît. Cette boîte de dialogue affiche une liste de tous les styles d'escaliers disponibles, des options de base pour définir l'escalier et un aperçu.</p>
+<p>Un minimum de deux points  (insertion et final) sont nécessaires pour créer un escalier.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez le <strong>Style d'escalier</strong> que vous voulez utiliser et définissez les options d'insertion de base.</li>
+	<li>Insérez l'escalier en sélectionnant un <strong>point d'insertion</strong>.</li>
+	<li>Vous pouvez sélectionner autant de points que vous voulez sur toute la longueur de l'escalier. Chaque point détermine une nouvelle volée d'escalier ainsi que sa direction. La valeur de longueur dépend des paramètres définis auparavant (<strong>hauteur</strong>, 
+	<strong>largeur</strong>, <strong>nombre de girons</strong>).</li>
+	<li>Appuyez sur ENTRÉE ou cliquez avec le bouton droit pour terminer la commande.</li>
+</ol>
+
+<p>La commande crée une volée d'escalier dont la direction peut changer ou rester droite sur chaque point sélectionné. Ces volées sont jointes avec des paliers.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/StairInsert.png" alt="Boîte de dialogue d'insertion des escaliers"/><br/>
+Boîte de dialogue d'insertion d'un escalier
+</div>
+<br clear="all" />
+
+
+<h3>Escalier à vis</h3>
+
+<p>Sélectionnez l'option Escalier à vis dans la partie inférieure de la <a href="Interface_Dialog.html">boîte de dialogue d'insertion</a> d'un escalier pour afficher une section spéciale, qui sera utilisée pour définir les paramètres d'un escalier à vis :</p>
+
+<ul>
+	<li>Angle tournant</li>
+	<li>Rayon</li>
+	<li>Vers la droite : détermine la direction de l'escalier à vis</li>
+</ul>
+<p>Cette option ne peut pas être modifiée une fois que l'escalier a été inséré. Pour transformer un escalier droit en escalier à vis, insérez à nouveau un escalier en sélectionnant l'option désirée.</p>
+<p><strong>REMARQUE </strong>: l'angle tournant des escaliers à vis ne peut pas être supérieur à 360 degrés. Pour créer un escalier à vis qui tourne sur lui-même sur plus de 360 degrés, vous devez créer plusieurs escaliers.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/winding stair.png" alt="Vues de dessus et en perspective d'un escalier à vis." width="400" height="170"/><br/>
+Escalier à vis : vue de dessus et en perspective
+</div>
+
+<br clear="all" />
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+	<div class="figureWithDescription picRight"><img src="../images/stair_scheme.png" alt="Points de contrôle sur les escaliers" width="250" height="135" style="float: right;"/></div>
+	<p>Les escaliers possèdent autant de points de contrôle que de points sélectionnés pour définir l'escalier :</p>
+	<ol>
+		<li>Point d'insertion (point de départ de l'escalier)</li>
+		<li>Point de départ de la deuxième volée</li>
+		<li>Point de départ de la troisième volée</li>
+		<li>Fin de l'escalier</li>
+	</ol>
+<p>Tous les points de contrôle sont utilisés pour déplacer les éléments de l'escalier. Ils ne permettent pas de modifier la taille.</p>
+<p>Pour définir la direction de chaque volée, sélectionnez le point désiré dans le modèle et déplacez-le ou entrez un angle dans la ligne de commande.</p>
+
+
+<br clear="all" />
+
+<h4>Options et paramètres d'insertion</h4>
+<p>La plupart des paramètres dans un escalier sont définis dans la boîte de dialogue d'insertion quand l'escalier est inséré. Ces paramètres peuvent ensuite être modifiés dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a><img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> du panneau Propriétés de Rhino<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />.) 
+</p>
+
+<h5>Alignement</h5>
+
+<p>L'escalier peut être aligné suivant 3 méthodes :</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment c.jpg" alt="Alignement au centre"/></td>
+				<td><strong>Centre</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment r.jpg" alt="Alignement à droite"/></td>
+				<td><strong>Droite</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment l.jpg" alt="Alignement à gauche"/></td>
+				<td><strong>Gauche</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Hauteur</h5>
+<p>La valeur de hauteur correspond à la distance entre le niveau du point de départ et le niveau de la fin de l'escalier.</p>
+
+
+<h5>Largeur </h5>
+
+<p>La largeur reste constante pour toutes les volées de l'escalier.</p>
+
+<h5>Nombre de girons</h5>
+<p>Indique le nombre total de girons que contient l'escalier.</p>
+
+
+<h5>Giron</h5>
+
+<p>La valeur de Giron correspond à la profondeur de chaque marche. Elle reste constante pour toutes les marches de l'escalier.</p>
+
+
+<h5>Contremarche</h5>
+
+<p>La valeur de contremarche correspond à la hauteur de chaque marche. Elle est calculée automatiquement avec la hauteur et le nombre de girons, et elle reste constante pour toutes les marches de l'escalier.
+</p>
+
+<h5>Épaisseur supérieure et inférieure de la dalle d'escalier :</h5>
+<p>Ces valeurs ajustent l'épaisseur de la dalle de l'escalier à son départ et son point final afin qu'elle s'adapte à l'épaisseur des dalles.</p>
+
+
+<h4>Paramètres de palier et de la volée d'escalier :</h4>
+
+<p>Contrairement aux autres objets de VisualARQ, l'escalier a certaines propriétés objet qui ne peuvent être assignées qu'après avoir inséré l'escalier. <br/>
+Ces propriétés sont les paramètres de <strong>Volée d'escalier</strong> et de <strong>Palier d'escalier</strong> et ne peuvent être modifiées que dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés Objet</a><img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> :</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/stair flight landing.png" alt="Boîte de dialogue des escaliers (gestionnaire de styles)" /><br />
+Boîte de dialogue des escaliers (gestionnaire de styles)
+</div>
+<br clear="all" />
+
+<h4>Paramètres de la volée</h4>
+<ul>
+	<li>Type
+		<ul>
+			<li><strong>Palier </strong>: indique que la volée est composée d'une dalle plate ou palier.</li>
+			<li><strong>Marches </strong>: indique que la volée est composée de marches.</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<h4>Paramètres du palier</h4>
+<ul>
+	<li>Type
+		<ul>
+			<li><strong>Palier </strong>: indique que le palier est composé d'une dalle plate ou palier.</li>
+			<li><strong>Marches </strong>: indique que le palier est composé de marches.</li>
+		</ul>
+	</li>
+	<li>Frontière
+		<ul>
+			<li>Intérieur
+				<ul>
+					<li><strong>Droite </strong>: indique que la frontière intérieure est droite (formant un angle).</li>
+					<li><strong>Courbée </strong>: indique que la frontière intérieure est courbée (forme d'arc).</li>
+				</ul>
+			</li>
+			<li>Extérieur
+				<ul>
+					<li><strong>Droite </strong>: indique que la frontière extérieure est droite (formant un angle).</li>
+					<li><strong>Courbée </strong>: indique que la frontière extérieur est courbée (forme d'arc)</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+

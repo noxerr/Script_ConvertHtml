@@ -1,0 +1,70 @@
+<h3>Sezione</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaSezione</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon">
+		<img alt="Sezione" height="24" src="../images/VA_Section.jpg" width="24" /> clic sinistro [<a href="Commands_vaSectionStyles.html" title="Stili sezioni">clic destro</a>]</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentazione</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra degli strumenti Documentazione di VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Sezione &gt; Sezione</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionMark.wmv" preview="../images/previews/vaSectionvideo.png" width="300px" height="300px"></div>
+
+<p>Il comando <strong>vaSezione</strong><em> </em>viene usato come primo passo per creare un disegno 2D che rappresenta gli oggetti 3D proiettati su un piano, così come per visualizzare una sezione dinamica del modello 3D in tempo reale.</p>
+
+<p>Quando si esegue il comando <strong>vaSezione</strong>, si crea la 
+<strong>linea di taglio per la sezione</strong> che rappresenta il piano di taglio verticale da cui si potrà generare la <strong>vista di sezione</strong> e quindi la <strong>sezione dinamica</strong>. Quando si esegue il comando, appare la finestra di dialogo di inserimento delle 
+<strong>sezioni</strong>. Seguire i passi dalla linea di comando<em>.</em> Premere il tasto destro del mouse oppure INVIO per accettare e passare al passo successivo.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section mark insert.png" alt="Finestra di inserimento delle sezioni" /><br/>Finestra di inserimento delle sezioni</div>
+<br clear="all" />
+
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Specificare uno <strong>stile di sezione</strong> dalla finestra di dialogo di inserimento.</li>
+	<li>Specificare il <strong>primo punto</strong> della linea di taglio per la sezione.</li>
+	<li>Specificare i <strong>punti successivi</strong> della linea di taglio per la sezione selezionando con un clic i punti desiderati. Fare clic destro per terminare.</li>
+	<li>Specificare la <strong>posizione dell'osservatore</strong> e la <strong>lunghezza della sezione</strong> sistemando il cursore dalla parte della linea opposta alla destinazione e premere il tasto sinistro del mouse. La lunghezza della sezione determinerà quali oggetti verranno inclusi nella 
+	<strong>vista di sezione</strong> e nella <strong>sezione dinamica</strong>. </li>
+	<li>Introdurre il <strong>testo di riferimento della sezione</strong> digitandolo sulla linea di comando.</li>
+</ol>
+
+<p>Una volta inserita la sezione, si può creare una <a href="Commands_vaSectionView.html">
+<strong>vista di sezione</strong> <img alt="Sezione" height="24" src="../images/VA_SectionView.png" width="24" /></a> a partire da essa, oppure attivare la <a href="Commands_vaDynamicSection.html"><strong>sezione dinamica </strong><img alt="Sezione" height="24" src="../images/VA_DynamicSection.png" width="24" /></a>.</p>
+<h4>Aggiungere cambi di direzione ad una sezione e rimuovere i cambi di direzione da una sezione</h4>
+	<ul>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaSezioneAggiungiCambioDirezione e vaSezioneRimuoviCambioDirezione</div>
+
+		<div class="field"><a href="Interface_Context.html">Menu di scelta rapida</a>: </div>
+	<div class="value context">Linea di taglio della sezione &gt; Sezione &gt; Aggiungi cambio di direzione a sezione o Rimuovi cambio di direzione da sezione</div>
+</div>
+</ul>
+<p>Opzione per inserire dei punti di cambio di direzione nella linea di taglio di una sezione oppure rimuoverli da essa.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare i punti di cambio di direzione da inserire nella/rimuovere dalla linea di taglio della sezione. Cliccare con il tasto destro per terminare il comando.</li>
+</ol>
+<p>Vengono inseriti dei nuovi punti di cambio di direzione lungo la linea di taglio della sezione oppure vengono rimossi da essa. Per vedere questi nuovi punti, selezionare la linea di taglio della sezione ed attivarne i punti di controllo.</p>
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/section control points.png" alt="Punti di controllo sul contrassegno della sezione" width="400" height="240"  style="float: right;"/>
+<p>La linea di taglio della sezione ha cinque punti di controllo:<br />
+<ol>
+	<li>Punti di controllo degli <strong>estremi</strong>. Punto di inserimento iniziale e finale.</li>
+	<li>Punti di controllo per la <strong>lunghezza della sezione</strong>.</li>
+	<li><strong>Punti di cambio di direzione della sezione</strong>.</li>
+	<li>Punti di controllo per la <strong>posizione dell'osservatore</strong>.</li>
+	<li>Punti di controllo per il <strong>testo di riferimento</strong> <strong>della sezione</strong>.</li>
+</ol>
+</p>
+<p>Per modificare la posizione dell'osservatore, spostare o ruotare manualmente la linea di taglio, usandone i punti di controllo, fino a raggiungere la posizione desiderata. Le modifiche si aggiornano automaticamente (in tempo reale).</p>
+<p>Per aggiornare la sezione, dopo aver apportato una modifica ad uno qualsiasi degli oggetti selezionati, selezionare la linea di taglio o il disegno 2D della sezione e fare clic sinistro sull'icona <a href="Commands_vaUpdate.html">Aggiorna</a> 
+<img alt="vaAggiorna" height="26" src="../images/VA_Update.jpg" width="26" />. Tale icona si trova nella barra <a href="Interface_Toolbars.html">Strumenti di VisualARQ</a>.</p>
+
+<p><strong>NOTA: </strong> Nella sezione dinamica e nella vista di sezione, verranno mostrati solo gli oggetti che ricadono nell'area della sezione delimitata dai punti di inserimento e dai punti della lunghezza della sezione.</p>

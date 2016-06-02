@@ -1,0 +1,165 @@
+<h3>Roof</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaRoof</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Roof.jpg" alt="Roof"/> left click [<a href="Interface_Toolbars.html#VisualARQRoofsToolbar" title="VisualARQ Roofs Toolbar">long 
+		click</a>]
+	</div>
+	<div class="field"><a href="Interface_Toolbars.html">Objects</a> toolbar:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Roof &gt; From Boundary</div>
+	
+
+</div>
+<div  class="comVideo" id="video1" src="vaGableRoof.wmv" preview="../images/previews/vaGableRoofvideo.png" width="300px" height="300px"></div>
+
+<p>There are three types of roof you can create with VisualARQ when you run the 
+<strong>vaRoof</strong> command. </p>
+<ul>
+	<li><strong>Gable roof:</strong> roof with two flights.</li>
+	<li><strong>Hip roof:</strong> roof with three or more flights.</li>
+	<li><strong>Shed roof:</strong> one flight roof.</li>
+</ul>
+
+
+<p>The command to create roofs does not use an insert box or dialog boxes. There is no wizard availabe to create styles, since there are no roof styles.</p>
+<p>When you run the <strong>vaRoof</strong> command, follow the steps from the 
+command line<em>.</em> Press the right mouse button or ENTER to accept and go to next step.</p>
+
+
+<p><strong>Steps:</strong></p>
+<ul>
+	<li>
+	<h4>Gable roof</h4>
+	</li>
+</ul>
+<ol>
+		<li>Pick a <strong>Curve</strong> that will be used as the roof 
+		boundary. This curve must be <strong>flat</strong> and <strong>closed</strong><em>.</em></li>
+		<li>Select the roof type <strong><span class="auto-style1">G</span>able </strong> 
+		from the command line<em>.</em></li>
+		<li>Enter the roof <strong>Slope angle</strong>.</li>
+		<li>Enter the roof <strong>Thickness.</strong></li>
+		<li>Define the <strong>Axis direction</strong> of the gable roof ridge<strong>.</strong></li>
+</ol>
+<ul>
+	<li>
+	<h4>Hip roof</h4>
+	</li>
+</ul>
+<ol>
+		<li>Pick a <strong>Curve</strong> that will be used as the roof 
+		boundary. This curve must be <strong>flat</strong> and <strong>closed</strong><em>.</em></li>
+		<li>Select the roof type <strong><span class="auto-style1">H</span>ip
+		</strong>from the command line<em>.</em></li>
+		<li>Enter the roof <strong>Slope angle</strong>.</li>
+		<li>Enter the roof <strong>Thickness.</strong></li>
+</ol>
+<ul>
+	<li>
+	<h4>Shed roof</h4>
+	</li>
+</ul>
+<ol>
+		<li>Pick a <strong>Curve</strong> that will be used as the roof 
+		boundary. This curve must be <strong>flat</strong> and <strong>closed</strong><em>.</em></li>
+		<li>Select the roof type <strong><span class="auto-style1">S</span>hed
+		</strong>from the command line<em>.</em></li>
+		<li>Enter the roof <strong>Slope angle</strong>.</li>
+		<li>Enter the roof <strong>Thickness.</strong></li>
+		<li>Specify roof axis start and end points.</li>		
+</ol>
+<p>The command ends when the roof is created according to the curve that defines its boundary. 
+</p>
+<br clear="all" />
+
+<div class="figureWithDescription block">
+	<img alt="Gable roof example" height="169" src="../images/assistants/Roof/Gable%20roof%20example.png" width="300"/><br/>
+	Gable roof
+<br/></div>
+<div class="figureWithDescription block">
+	<img alt="Hip roof example" height="169" src="../images/assistants/Roof/hip%20roof%20example.png" width="300"/><br/>
+	Hip roof
+<br/>
+</div>
+<br clear="all" />
+
+<h4>Roof Properties</h4>
+<p>Once a roof has been created, there are some values 
+that can be edited to change the roof geometry. These options are available in 
+the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />), 
+after selecting the roof object.</p>
+
+<h5>Thickness:</h5> 
+<p>Determines the roof thickness for all its flights.
+</p>
+<h5>Roof type:</h5> 
+<p>Change the roof type from Hip to Gable and from Gable to Hip.
+</p>
+<h5>Edge cut:</h5> 
+<p>There are three options available to define the roof edge cut:
+</p>
+<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Flat</strong></li>
+			<li><strong>Plumb</strong></li>
+			<li><strong>Square</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Roof edge cut types" height="100" src="../images/assistants/Roof/Roof%20edge%20cut.png" width="250" class="auto-style2"/>
+		</td>
+	</tr>
+</table>
+
+<h5>Slope:</h5> 
+<p>The roof slope can be edited globally or individually for each roof flight. 
+The roof slope is measured in angle degrees.</p>
+
+<h5>Gable height: (only in Gable roofs)</h5> 
+<p>Set the value of the gable roof ridge position. When this value is changed, the roof slope angles may get modified. </p>
+
+<h5>Axis orientation: (only in Gable roofs)</h5> 
+<p>Set the value in angle degrees of the gable roof ridge axis orientation in the XY plane.</p>
+
+<h5>Top cutting height: (only in Hip roofs)</h5> 
+<div class="figureWithDescription picRight"><img src="../images/Top cutting height.png" alt="Top cutting height" width="300" height="100"/></div>
+
+<p>Represents the height value in which a hip roof will be flatten.</p>
+
+
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+
+<p>The roofs have as many control points as the original curve they were created from. 
+You can select any of these points and change the roof boundary position. The roof is regenerated automatically keeping the slopes angle values and roof thickness.</p>
+<p>The Gable roof has 3 additional control points to move the ridge position and 
+change its axis orientation.</p>
+
+<div class="figureWithDescription picRight"><img src="../images/Roof control points.png" alt="Control points on roofs" width="400" height="300" /></div>
+<br />
+
+<ol>
+	<li>Roof Boundary control points. </li>
+	<li>Gable roof ridge position</li>
+	<li>Gable roof ridge axis orientation</li>
+	<li>Roof hole contour</li>
+	<li>Height control arrow (only editable in front and side viewports)</li>
+</ol>
+
+
+<h3>Edit Roofs</h3>
+<p>To edit the roof, VisualARQ has a toolbar with some options than can be used to modify the roof slope angle and its shape.</p>
+
+<div class="figureWithDescription block">
+	<div class="value toolbar"><img src="../images/Roofs.jpg" alt="VisualARQ Roofs Toolbar" usemap ="#RoofsToolbarMap"/><br/>
+	VisualARQ Roofs toolbar</div>
+</div>
+<br clear="all" />

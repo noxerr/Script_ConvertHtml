@@ -1,0 +1,43 @@
+<h3>Muro: Desde sólido</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaMuroDesdeSólido</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_WallFromSolid.jpg" alt="Muro: Desde sólido"/> clic izquierdo [<a href="Commands_vaWallSetCustomSolid.html" title="Muro: Definir sólido personalizado">clic derecho</a>]
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html#VisualARQWallsToolbar">Muros</a>: </div>
+	<div class="value toolbar"><img src="../images/Walls.jpg" alt="Barra de herramientas Muros de VisualARQ" usemap ="#WallsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Muro &gt; Desde sólido</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaWallFromSolid.wmv" preview="../images/previews/vaWallFromSolidvideo.png" width="300px" height="300px"></div>
+
+<p>Opción para crear un muro a partir de un sólido modelado con Rhino.</p>
+<p>Cuando ejecute el comando <strong>vaMuroDesdeSólido</strong>, siga los pasos que se indican en la línea de comandos. Pulse el botón derecho del ratón o INTRO para aceptar y pasar al siguiente paso.</p> 
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione un <strong>objeto sólido</strong>. Puede ser cualquier tipo de forma siempre que sea una polisuperficie o una extrusión cerrada.</li>
+	<li>
+	<span style="font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;" class="style1">
+	Seleccione</span><span style="font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;" class="style1">
+	</span>
+	<span style="font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;" class="style1">
+	 una </span><span style="font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;" class="style1">
+	<strong>curva base</strong> que determinará el punto donde se insertarán las puertas y ventanas dentro del muro.</span><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">
+	</span>La curva debe ser <em>plana</em> y <em>abierta</em>. </li>	
+</ol>
+
+<p><strong>NOTA: </strong> Asegúrese de que la curva base esté dibujada antes de ejecutar el comando.</p>
+
+<p>Tras seleccionar la curva base, el sólido se convierte en muro, permitiendo la inserción de puertas y ventanas.<br/>
+El muro resultante de esta operación puede ser deformado mediante sus flechas de control verticales y mediante los puntos de control horizontales de su curva base, pero <em>NO es paramétrico</em>. Mantiene las medidas y proporciones del sólido inicial.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Wall From Solid 1x.png" alt="Muro desde sólido" width="200" height="150" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Wall From Solid 2x.png" alt="Muro desde sólido" width="200" height="150" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Rhino-wall2.png" alt="Muro desde sólido" width="200" height="150" /><br/>
+Ejemplos de muros creados a partir de distintos tipos de sólidos.</div>
+<br clear="all" />

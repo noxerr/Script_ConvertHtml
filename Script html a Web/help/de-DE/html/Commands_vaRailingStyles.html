@@ -1,0 +1,283 @@
+
+<h3>Geländerstile</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaGeländerStile</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Railing.jpg" alt="Geländer"/> Rechtsklick [<a href="Commands_vaRailing.html" title="Befehl Geländer">Linksklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Geländer &gt; Geländerstile...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Kontextmenü</a>: </div>
+	<div class="value context">Geländer &gt; Stileigenschaften</div>
+	
+	<div class="field">Tastenkombination: </div>
+	<div class="value menu">Geländerobjekt auswählen &gt; (<em>Alt, Umschalttaste</em> oder <em>Strg</em>) + Doppelklick</div>
+
+	
+</div>
+
+<p>Der Geländerstil bestimmt die Eigenschaften des Geländers. Folgende Parameter können für jeden Geländerstil definiert werden: <strong>Name</strong> und <strong>Attribute</strong>.</p>
+ <p>Die Geländerstile werden von einer Kombination aus 3 Komponenten bestimmt, die jederzeit hinzugefügt oder gelöscht werden können: <strong>
+Geländerholm</strong>, <strong>Pfosten</strong> und <strong>Vertikalholm</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing components.jpg" alt="Geländerobjekt und seine Komponenten" width="300" height="340" /><br />
+Verschiedene Teile und Komponenten eines Geländers:
+<ol>
+<li><strong>1. <img alt="Geländerholm" height="16" src="../images/Railing Rail.png" width="16" /> Geländerholm</strong></li>
+<li><strong>2. <img alt="Geländerpfosten" height="16" src="../images/Railing Post.png" width="16" /> Pfosten</strong></li>
+<li><strong>3. <img alt="Vertikalholm" height="16" src="../images/Railing baluster.png" width="16"/> Vertikalholm</strong></li>
+</ol>
+</div>
+<br clear="all" />
+<p>Folgende Parameter können für jeden Geländerstil und jede Komponente definiert werden: <strong>Name</strong>, <strong>Attribute</strong>, <strong>
+Standort, Geometrie</strong> und <strong>Profil</strong>.</p>
+
+
+<h3>Neuer Geländerstil</h3>
+<p>Um einen Geländerstil zu erzeugen, klicken Sie auf die Schaltfläche <strong>Neuer Stil…</strong> im Dialogfenster des <a href="Interface_StyleProperties.html">
+Stilmanagers</a>. Um einen bestehenden Geländerstil zu duplizieren, wählen Sie den betreffenden Stil aus und klicken Sie auf die Schaltfläche <strong>Duplizieren</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing styles dialog.png" alt="Dialogfenster Stilmanager für das Geländerobjekt." /><br/>
+Dialogfenster Stilmanager für das Geländerobjekt
+</div>
+<br clear= "all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Allgemeine Bearbeitung des Stils</div>
+<div class="value">Sie können entweder den Befehl <strong>vaGeländerStile</strong> verwenden, oder
+	<ul>
+		<li>den Befehl <strong>vaStilEigenschaften</strong> ausführen, ein Geländer wählen und mit Enter bestätigen, oder</li>
+		<li>mit der rechten Maustaste auf die Schaltfläche 
+		<img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Rechtsklick)"/> klicken, ein Geländer wählen und mit Enter bestätigen, oder</li>
+		<li>durch einen langen Klick mit der rechten Maustaste auf ein Geländer das dazugehörige Kontextmenü öffnen und <strong>Geländer &gt; Stileigenschaften</strong> wählen, oder</li>
+		<li><em>Alt, Umschalttaste</em> oder <em>Strg</em> drücken und doppelt auf ein Geländerobjekt klicken.</li>
+	</ul>
+	Die Änderungen wirken sich auf <strong>alle Elemente</strong> mit diesem Stil aus.
+</div>
+<div class="field">Objektspezifische Bearbeitung des Stils</div>
+<div class="value"><ul>
+		<li>Geben Sie den Befehl <strong>vaEigenschaften</strong> ein, wählen Sie ein Geländer und bestätigen Sie mit Enter, oder</li>
+		<li>Klicken Sie auf die Schaltfläche <img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Linksklick)"/>, wählen Sie ein Geländer und bestätigen Sie mit Enter, oder</li>
+		<li>Wählen Sie ein Geländer, öffnen Sie durch einen langen Rechtsklick das Kontextmenü und wählen Sie darin <strong>Geländer &gt; Eigenschaften</strong>, oder</li>
+		<li>Doppelklicken Sie auf ein Geländerobjekt. </li>
+	</ul>
+		</div>
+	Die Änderungen wirken sich nur auf den Stil des <strong>ausgewählten Elements</strong> aus.</div>
+</div>
+
+<h4>Attribute</h4>
+<p>Mit den Attributen werden die Anzeige- und Druckeigenschaften eines Geländerstils und seiner Komponenten bestimmt. Gültige Attribute sind:</p>
+ 
+<ul>
+<li><strong>Allgemein</strong>: Ebene, Sichtbarkeit und Material</li>
+<li><strong>Projektion</strong>: Farbe, Linientyp, Liniendruckbreite und Liniendruckfarbe</li>
+<li><strong>Schnitt</strong>: Farbe, Linientyp, Liniendruckbreite, Liniendruckfarbe, Muster, Musterskala, Musterwinkel und Musterfarbe</li>
+</ul>
+
+<h3>Geländerkomponenten</h3>
+
+<h4>Geländerholm <img alt="Geländerholm" height="16" src="../images/Railing Rail.png" width="16" /></h4>
+<p>Die horizontale Komponente, die entlang der Grundkurve des Geländers verläuft. Sie kann den Handlauf oder die sekundären Geländerholme des Geländerobjekts definieren. Für den Geländerholm sind die folgenden Parameter definiert:</p>
+<h5>Standort</h5>
+
+<p>Der Standort des Geländerholms bestimmt seine Position in Bezug auf die Grundkurve und die Höhe des Geländers.</p>
+<ul>
+<li><img src="images/Rail horizontal alignment 32.png" alt="Horizontale Ausrichtung des Geländerholms"/>
+<strong>Horizontale Ausrichtung:</strong> Die Ausrichtung des Geländerholms hängt von der Richtung der Grundkurve ab. Sie hat drei Optionen: <strong>
+Außen, Mitte</strong> und <strong>Innen</strong>. </li>
+	<li><img src="images/Rail horizontal offset 32.png" alt="Horizontaler Versatz des Geländerholms"/> <strong>Horizontaler Versatz</strong>: der horizontale Ausrichtungsversatz bestimmt den Abstand des Geländerholms von der Grundkurve.</li>
+
+<li><img src="images/Rail vertical alignment 32.png" alt="Vertikale Ausrichtung des Geländerholms"/><strong> Vertikale Ausrichtung:</strong> Die vertikale Ausrichtung bestimmt die vertikale Position des Geländerholms in Bezug auf die Gesamthöhe des Geländerobjekts. Sie hat drei Optionen: <strong>Oben, Mitte</strong> und <strong>Unten</strong>. </li>
+	<li><img src="images/Rail vertical offset 32.png" alt="Vertikaler Versatz des Geländerholms"/>
+	<strong>Vertikaler Versatz</strong>: der vertikale Ausrichtungsversatz bestimmt den Abstand des Pfostens von der vertikalen Ausrichtungsposition.</li>
+<li><img src="images/Rail orientation 32.png" alt="Ausrichtung des Geländerholms"/><strong> Ausrichtung:</strong>
+<ul><li><strong>Ausgerichtet</strong>: Die Geometrie wird erzeugt, indem das Profil des Geländerholms senkrecht zur Achsenrichtung des Geländers extrudiert wird.</li>
+<li><strong>Vertikal</strong>: Die Geometrie wird erzeugt, indem das Profil des Geländerholms vertikal entlang der Achsenrichtung des Geländers extrudiert wird.</li></ul></li>
+</ul>
+
+<p>Die Abmessungen können beim Einfügen eines Geländers jederzeit geändert werden, wenn im Einfügedialog im Abschnitt 
+<strong>Profil</strong> die Option <strong>Abmessungen &gt; Andere</strong> ausgewählt wird.</p>
+<h5>Geometrie:</h5>
+<p>Die Geometrieparameter des Geländerholms bestimmen seine Enden und Verbindungen:</p>
+<ul><li><strong>Enden:</strong>
+<ul>
+		<li><img src="images/Rail style 32.png" alt="Stil"/><strong>Stil</strong>: Option zur Einstellung der Schnittkanten des Geländerholms an seinen Enden:
+		
+<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Lotrecht/Horizontal</strong></li>
+			<li><strong>Vertikal</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Stile der Geländerholmenden" height="80" src="../images/assistants/Railing/Rail%20end%20styles.png" class="auto-style2" width="280" /></td>
+	</tr>
+</table>
+		</li>
+		<li><img src="images/Rail ends offset 32.png" alt="Rand"/><strong>Rand</strong>: Abstand zwischen den Enden der Geländerpfadkurve und den Geländerholmenden.</li>
+	</ul>
+	</li>
+	<li><strong>Verbindungen
+	</strong>
+	<ul>
+			<li><img src="images/Rail planar joints 32.png" alt="Planare Verbindungen"/><strong>Planar</strong>:
+			
+				<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Nichts</strong></li>
+			<li><strong>Break</strong></li>
+			<li><strong>Gehrung</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Planare Verbindungen Geländerholm" height="100" src="../images/assistants/Railing/Rail%20planar%20Joints.png" class="auto-style2" width="600"/></td>
+	</tr>
+</table>
+			</li>
+		<li><img src="images/Rail non planar joints 32.png" alt="Nichtplanare Verbindungen"/><strong>Nicht planar</strong>:
+		<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Nichts</strong></li>
+			<li><strong>Break</strong></li>
+			<li><strong>Gehrung</strong></li>
+			<li><strong>Flach</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Nichtplanare Verbindungen" height="100" src="../images/assistants/Railing/Rail%20non%20planar%20Joints.png" class="auto-style2" width="800"/></td>
+	</tr>
+</table>
+		</li>
+	</ul>
+	</li>
+</ul>
+<h5>Profil</h5>
+
+<ul>
+<li><img src="images/Shape profile -32.png" alt="Formprofil"/><strong> Profil:</strong> Die standardmäßig verfügbaren Profile für den Geländerholm sind <strong>Rechteckig
+</strong> und <strong>Kreisförmig</strong>.<br/>
+
+Es können auch benutzerdefinierte Formprofile verwendet werden, um Geländerholme zu definieren:<br/>
+<ul>
+<li>Hinzufügen eines benutzerdefinierten Profils: Zeichnen Sie eine geschlossene und flache Kurve und konvertieren diese mithilfe des Befehls <a href="Commands_vaProfileFromCurve.html"><em>vaProfilAusKurve</em> 
+<img alt="vaProfilAusKurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a> in ein Profil</li>
+<li>Wenn das benutzerdefinierte Profil erzeugt wurde, erscheint es am Ende der Liste der Bibliothek mit den vordefinierten parametrischen Profilen. (Das erhaltene Profil ist nicht parametrisch, so dass es nur mit den Abmessungen und Proportionen der Originalzeichnung verwendet werden kann.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="Rotationsprofil"/><strong> Rotation</strong>: Der Rotationswinkel des Geländerholms um die Geländerachse. Das Zentrum der Rotation ist dabei der Mittelpunkt ihres Profilbereichs.</li>
+<li><strong>Abmessungen</strong>: Die Parameter der Geländerholmabmessungen gemäß ausgewähltem Profiltyp.</li>
+</ul>
+
+<h4>Pfosten <img alt="Pfosten" height="16" src="../images/Railing Post.png" width="16" /></h4>
+<p>Die primären vertikalen Komponenten eines Geländerobjekts. Pfosten werden jeweils am Start- und Endpunkt einer Geländerkurve sowie an jedem der Unstetigkeitspunkte dazwischen eingefügt. Eine <strong>Pfosten</strong>-Komponente wird durch die folgenden Parameter bestimmt:</p>
+
+<h5>Standort</h5>
+
+<p>Der Standort der Pfostenkomponente bestimmt ihre Position in Bezug auf die Grundkurve und die Länge des Geländers.</p>
+<ul>
+<li><img src="images/Posts horizontal alignment 32.png" alt="Horizontale Ausrichtung des Pfostens"/><strong> Horizontale Ausrichtung:</strong> Die Ausrichtung des Pfostens hängt von der Richtung der Grundkurve ab. Sie hat drei Optionen: <strong>
+Außen</strong>, 
+<strong>Mitte</strong> und <strong>Innen</strong>.</li>
+	<li><img src="images/Posts horizontal offset 32.png" alt="Horizontaler Versatz des Pfostens"/> <strong>Horizontaler Versatz der Ausrichtung</strong>: der Versatz bestimmt den Abstand des Pfostens von der Grundkurve. 
+	</li>
+<li><img src="images/Posts end offset 32.png" alt="Rand der Pfostenenden"/> <strong>
+Rand der Enden:</strong> der Abstand<span> zwischen den Pfosten und den Enden der Grundkurve des Geländers</span>.</li>
+</ul>
+
+<h5>Profil</h5>
+
+<p>Die Form des Pfostens wird durch ein <strong>Profil</strong>,<em> </em>einen <strong>Rotationswinkel
+</strong> und seine <strong>Abmessungen</strong> definiert.</p>
+<ul>
+
+<li><img src="images/Shape profile -32.png" alt="Formprofil des Pfostens"/> <strong>Profil:</strong>
+ Die standardmäßig verfügbaren Profile für den Pfosten sind <strong>Rechteckig</strong> und <strong>Kreisförmig</strong>.<br/>
+
+Es können auch benutzerdefinierte Formprofile verwendet werden, um Pfosten zu definieren:<br/>
+<ul>
+<li>Hinzufügen eines benutzerdefinierten Profils: Zeichnen Sie eine geschlossene und flache Kurve und konvertieren diese mithilfe des Befehls <a href="Commands_vaProfileFromCurve.html"><em>vaProfilAusKurve</em> 
+<img alt="vaProfilAusKurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a> in ein Profil.</li>
+<li>Wenn das benutzerdefinierte Profil erzeugt wurde, erscheint es am Ende der Liste der Bibliothek mit den vordefinierten parametrischen Profilen. (Das erhaltene Profil ist nicht parametrisch, so dass es nur mit den Abmessungen und Proportionen der Originalzeichnung verwendet werden kann.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="Rotationsprofil"/> <strong>Rotation</strong>: Der Rotationswinkel des Pfostens um seine vertikale Achse. Das Zentrum der Rotation ist dabei der Mittelpunkt des Profilbereichs.</li>
+<li><strong>Abmessungen</strong>: Die Parameter der Pfostenabmessungen gemäß ausgewähltem Profiltyp.</li>
+</ul>
+
+<h4>Vertikalholm 
+<img alt="Vertikalholm" height="16" src="../images/Railing baluster.png" width="16"/></h4>
+
+<p>Die sekundäre vertikale Komponente eines Geländerobjekts.</p>
+
+<h5>Standort</h5>
+
+<p>Der Standort der Vertikalholmkomponente bestimmt ihre Position in Bezug auf die Grundkurve des Geländers.</p>
+<ul>
+<li><img src="images/Posts horizontal alignment 32.png" alt="Horizontale Ausrichtung des Vertikalholms"/><strong> Horizontale Ausrichtung:</strong> Die Ausrichtung des Vertikalholms hängt von der Richtung der Grundkurve ab. Sie hat drei Optionen:
+<strong>Innen</strong>, 
+<strong>Mitte</strong> und <strong>Außen.</strong></li>
+	<li><img src="images/Posts horizontal offset 32.png" alt="Horizontaler Versatz des Vertikalholms"/> <strong>Horizontaler Versatz der Ausrichtung</strong>: der Versatz bestimmt den Abstand des Vertikalholms von der Grundkurve. 
+	</li>
+
+<li><img src="images/baluster path distance 32.png" alt="Pfadabstand zwischen den Vertikalholmen"/> <strong>Abstand:</strong> Abstand zwischen den zentralen vertikalen Achsen der Vertikalholme entlang des Geländerpfads.</li>
+	<li><img src="images/baluster path alignment 32.png" alt="Pfadausrichtung der Vertikalholme"/> <strong>Ausrichtung</strong>: die Verteilung der Vertikalholme entlang des Geländerpfads. Es sind vier Optionen verfügbar: 
+		<ul>
+			<li><strong>Start</strong></li>
+			<li><strong>Mitte</strong></li>
+			<li><strong>Ende</strong></li>
+			<li><strong>Justieren</strong></li>
+		</ul></li>
+	<li><img src="images/baluster path margin 32.png" alt="Rand des Pfads"/> <strong>
+	<span class="auto-style1">Rand</span></strong>: Abstand zwischen den Außenseiten der Pfosten und der nächsten Seite eines Vertikalholms. Pfosten befinden sich an den Enden und den Unstetigkeitspunkten der Grundkurve des Geländers. Bei Geländern ohne Pfosten bezieht sich der Rand auf den Abstand zwischen dem ersten und letzten Vertikalholm an den Enden und den Unstetigkeitspunkten der Grundkurve des Geländers.</li>
+</ul>
+
+<h5>Geometrie</h5>
+
+<p>Die Geometrie der Vertikalholmkomponente bestimmt ihre Form in Abhängigkeit von der Höhe des Geländers.</p>
+<ul>
+<li><img src="images/baluster top offset 32.png" alt="Oberer Rand"/> <strong>Oberer Rand: </strong>der Abstand zwischen der Oberseite des Geländers und der Oberseite des Vertikalholms.</li>
+
+<li><img src="images/baluster bottom offset 32.png" alt="Unterer Rand"/> <strong>Unterer Rand: </strong>der Abstand zwischen der Grundkurve des Geländers und der Unterseite des Vertikalholms.</li>
+</ul>
+
+
+<h5>Profil</h5>
+
+<p>Die Form des Vertikalholms wird durch ein <strong>Profil</strong>,<em> </em>einen 
+<strong>Rotationswinkel</strong> und seine <strong>Abmessungen</strong> definiert.</p>
+
+<ul>
+
+<li><img src="images/Shape profile -32.png" alt="Formprofil"/> <strong>Profil:</strong> Die standardmäßig verfügbaren Profile für den Vertikalholm sind <strong>Rechteckig</strong> und <strong>Kreisförmig</strong>.<br/>
+
+Es können auch benutzerdefinierte Formprofile verwendet werden, um Vertikalholme zu definieren:<br/>
+<ul>
+<li>Hinzufügen eines benutzerdefinierten Profils: Zeichnen Sie eine geschlossene und flache Kurve und konvertieren diese mithilfe des Befehls <a href="Commands_vaProfileFromCurve.html"><em>vaProfilAusKurve</em> 
+<img alt="vaProfilAusKurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a> in ein Profil</li>
+<li>Wenn das benutzerdefinierte Profil erzeugt wurde, erscheint es am Ende der Liste der Bibliothek mit den vordefinierten parametrischen Profilen. (Das erhaltene Profil ist nicht parametrisch, so dass es nur mit den Abmessungen und Proportionen der Originalzeichnung verwendet werden kann.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="Rotationsprofil"/> <strong>Rotation</strong>: Der Rotationswinkel des Vertikalholms um ihre vertikale Achse. Das Zentrum der Rotation ist dabei der Mittelpunkt ihres Profilbereichs</li>
+<li><strong>Abmessungen</strong>: Die Parameter der Vertikalholmabmessungen gemäß ausgewähltem Profiltyp.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing styles.jpg" alt="Beispiele für Geländerstile." width="500" height="226" /><br/>
+Beispiele für Geländerstile
+</div>
+

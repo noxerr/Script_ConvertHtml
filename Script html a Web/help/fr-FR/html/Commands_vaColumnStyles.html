@@ -1,0 +1,112 @@
+<h3>Styles de poteau</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaPoteauStyles</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Column.jpg" alt="Poteau"/> clic droit [<a href="Commands_vaColumn.html" title="Commande Poteau">clic gauche</a>]
+	</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html">Objets</a> :</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Poteau &gt; Styles de poteau...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menu contextuel </a>: </div>
+	<div class="value context">Poteau &gt; Propriétés de style</div>
+	
+	<div class="field">Raccourci : </div>
+	<div class="value menu">Sélectionner un poteau, appuyer sur <em>Alt, Maj</em> ou <em>Ctrl</em> et double cliquer</div>
+
+	
+</div>
+
+<p>Le style de poteau définit les caractéristiques des poteaux. Vous pouvez définir les paramètres suivants pour chaque style de poteau : <strong>Nom</strong>, <strong>Attributs</strong>, <strong>Forme</strong> (géométrie) et <strong>Tailles</strong>.</p>
+
+<p>Les styles de poteau sont définis par un composant de <strong>Revêtement</strong> qui peut être ajouté ou supprimé à tout moment.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column Components.jpg" alt="Composants du poteau" width="300" height="300" /><br />
+Poteau et ses composants de revêtement :
+<ol>
+<li><strong>Poteau</strong></li>
+<li><strong><img alt="Revêtement de poteau" height="16" src="../images/Column Coating-16.jpg" width="16" /> Revêtement</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+
+<p>Pour créer un style de poteau, cliquez sur le bouton <strong>Nouveau style</strong> dans le <a href="Interface_StyleProperties.html">gestionnaire de styles</a>. Utilisez l'assistant pour définir les paramètres suivants.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/ColumnNewStyle.png" alt="Gestionnaire de styles pour les poteaux." /><br />
+Gestionnaire de styles pour les poteaux
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Modifications sur le style en général</div>
+<div class="value">Utilisez la commande <strong>vaPoteauStyles</strong> ou,
+	<ul>
+		<li>Utilisez la commande <strong>vaStylePropriétés</strong>, puis sélectionnez un poteau et appuyez sur Entrée, ou</li>
+		<li>Cliquez avec le bouton de droite sur 
+		<img src="images/VA_Properties.jpg" alt="vaStylePropriétés (clic droit)"/>, puis sélectionnez un poteau et appuyez sur entrée, ou</li>
+		<li>Sélectionnez un poteau et ouvrez le menu contextuel en appuyant sur le bouton de droite pendant un instant puis sélectionnez <strong>Poteau &gt; Propriétés de style</strong>, ou</li>
+		<li>Appuyez sur <em>Alt, Maj</em> ou <em>Ctrl</em> puis double cliquez sur un poteau.</li>
+	</ul>
+	Les modifications réalisées sur un style sont appliquées à <strong>tous les éléments</strong> de ce style.
+</div>
+<div class="field">Modification d'un objet particulier</div>
+<div class="value"><ul>
+		<li>Utilisez la commande <strong>vaPropriétés</strong>, puis sélectionnez un poteau et appuyez sur Entrée, ou</li>
+		<li>Cliquez sur <img src="images/VA_Properties.jpg" alt="vaStylePropriétés (clic gauche)"/>, puis sélectionnez un poteau et appuyez sur entrée, ou</li>
+		<li>Sélectionnez un poteau et ouvrez le menu contextuel en appuyant sur le bouton de droite pendant un instant puis sélectionnez <strong>Poteau &gt; Propriétés</strong>, ou,</li>
+		<li>Double-cliquez sur un poteau. </li>
+	</ul>
+		</div>
+	Les modifications sont appliquées au style de <strong>l'élément sélectionné</strong>.</div>
+</div>
+
+<h4>Attributs</h4>
+<p>Les attributs définissent les caractéristiques de chaque style de poteau pour l'affichage et l'impression. Attributs valides :</p>
+
+<ul>
+<li><strong>Général </strong>: Calque, Visibilité et Matériau</li>
+<li><strong>Projection </strong>: Couleur, Type de ligne, Largeur d'impression de ligne et Couleur d'impression de ligne</li>
+<li><strong>Section</strong> : Couleur, Type de ligne, Largeur d'impression de ligne, Motif, Échelle du motif, Angle du motif et Couleur du motif</li>
+</ul>
+
+<h4>Forme</h4>
+
+<p>La forme du poteau est définie par un profil.<br />
+VisualARQ possède une bibliothèque avec les principaux profils standards en <em>Europe</em> et <em>Amérique du Nord</em>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column custom profile.jpg" alt="Assistant de création de poteaux : sélection d'un profil." /><br />
+Assistant de création de poteaux : sélection d'un profil
+</div>
+<br clear="all" />
+
+<p>Des profils de forme personnalisés peuvent aussi être utilisés pour définir les poteaux.</p>
+
+<p>Pour ajouter un profil personnalisé, dessinez une courbe fermée et plate et convertissez-la en profil avec la commande <a href="Commands_vaProfileFromCurve.html"><em>vaProfilÀPartirDeCourbe</em></a>
+<img alt="Profil à partir de courbe" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Lorsque le profil personnalisé a été créé, il apparaît à la fin de la liste dans la bibliothèque des profils prédéfinis.</p>
+
+<p>Le profil obtenu n'est pas paramétrique, il ne peut donc être utilisé qu'avec les cotes et les proportions du dessin original.</p>
+
+<h4>Tailles</h4>
+
+<p>Les paramètres correspondants aux tailles des poteaux varieront en fonction du type de profil sélectionné. Vous pouvez définir différentes tailles pour le même style de poteau.</p>
+
+<p>Les tailles peuvent être définies à tout moment, lors de l'insertion du poteau, dans la boîte de dialogue d'insertion en choisissant l'option 
+<strong>Tailles &gt; Autre</strong> dans la section <strong>Profil</strong>.</p>
+
+<h3>Composants du poteau</h3>
+<h4>Revêtement <img alt="Revêtement de poteau" height="16" src="../images/Column Coating-16.jpg" width="16" /> </h4>
+
+<p>Les poteaux peuvent avoir un revêtement.<br />
+Le revêtement ne possède qu'une seule propriété, son épaisseur.</p>
+<p>Pour ajouter un revêtement à un poteau qui n'en a pas, sélectionnez le style de poteau dans la partie de gauche de la boîte de dialogue, cliquez avec le bouton de droite pour ouvrir le menu contextuel et sélectionnez 
+<strong>Nouveau &gt; Revêtement</strong>.</p>
+<br clear="all" />

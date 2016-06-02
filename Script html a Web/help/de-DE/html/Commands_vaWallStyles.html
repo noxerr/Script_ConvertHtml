@@ -1,0 +1,195 @@
+
+<h3>Wandstile</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaWandStile</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Wall.jpg" alt="Wand "/> Rechtsklick [<a href="Commands_vaWall.html" title="Befehl Wand">Linksklick</a>, <a href="Interface_Toolbars.html#VisualARQWallsToolbar" title="VisualARQ-Werkzeugleiste Wände">Langer Klick</a>]
+	
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Wand &gt; Wandstile...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Kontextmenü</a>: </div>
+	<div class="value context">Wand &gt; Stileigenschaften</div>
+	
+	<div class="field">Tastenkombination: </div>
+	<div class="value menu">Wandobjekt auswählen &gt; (<em>Alt, Umschalttaste</em> oder <em>Strg</em>) + Doppelklick</div>
+
+</div>
+
+<p>Der Wandstil definiert die Wandeigenschaften. Es können die folgenden Parameter für jeden Stil definiert werden: <strong>Name, Attribute, Geometrie</strong> und <strong>
+Abschluss.</strong></p>
+
+<p>Die Wandstile werden von verschiedenen <strong>Wandschichten</strong> bestimmt, die hinzugefügt oder gelöscht werden können.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Wall layers.png" alt="Wandstil aus 3 Schichten" width="300" height="300" /><br />
+Wandstil aus 3 Schichten:
+<ol>
+<li><strong><img alt="Wandschicht" height="16" src="../images/Wall Layer-16.png" width="16" /> Wandschicht A</strong></li>
+<li><strong><img alt="Wandschicht" height="16" src="../images/Wall Layer-16.png" width="16" /> Wandschicht B</strong></li>
+<li><strong><img alt="Wandschicht" height="16" src="../images/Wall Layer-16.png" width="16" /> Wandschicht C</strong></li>
+</ol>
+</div>
+<br clear="all" />
+
+<h4>Neuer Wandstil:</h4>
+<p>Ein neuer Wandstil kann auf zwei verschiedene Arten erzeugt werden:</p>
+<ul><li><strong>Mit dem Assistenten für neue Stile:</strong> Klicken Sie auf die Schaltfläche <strong>Neuer Stil
+	</strong> im Dialogfenster <a href="Interface_StyleProperties.html">Stilmanager</a> . Verwenden Sie den Assistenten, um die folgenden Wandparameter einzugeben:<br/>
+<ol>
+<li>Stilname</li>
+<li>Anzahl Schichten</li>
+<li>Name und Stärke jeder Schicht</li>
+<li>Wandhöhe</li>
+</ol>
+</li>
+<li><strong>Durch Duplizieren eines vorhandenen Stils:</strong> Wählen Sie auf der rechten Seite des Dialogs einen Stil aus der Wandstilliste aus und klicken Sie auf die Schaltfläche <strong>Duplizieren</strong><em></em>.</li>
+</ul>
+<div class="figureWithDescription block"><img src="../images/assistants/Wall/WallNewStyle.png" alt="Dialogfenster Stilmanager für das Wandobjekt" /><br/>
+Dialogfenster Stilmanager für das Wandobjekt
+</div>
+<br clear="all" />
+
+<div class="comDescr">
+	<div class="field">Allgemeine Bearbeitung des Stils</div>
+	<div class="value">Sie können entweder den Befehl <strong>vaWandStile</strong> verwenden, oder <ul>
+		<li>den Befehl <strong>vaStilEigenschaften</strong> ausführen, eine Wand auswählen und mit Enter bestätigen, oder</li>
+		<li>mit der rechten Maustaste auf die Schaltfläche 
+		<img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Rechtsklick)" /> klicken, eine Wand wählen und mit Enter bestätigen, oder</li>
+		<li>durch einen langen Klick mit der rechten Maustaste auf eine Wand das dazugehörige Kontextmenü öffnen und <strong>Wand &gt; Stileigenschaften</strong> wählen, oder</li>
+		<li><em>Alt, Umschalttaste</em> oder <em>Strg</em> drücken und doppelt auf ein Wandobjekt klicken.</li>
+	</ul>
+	Die Änderungen wirken sich auf <strong>alle Elemente</strong> mit diesem Stil aus.
+</div>
+<div class="field">Objektspezifische Bearbeitung des Stils</div>
+<div class="value"><ul>
+		<li>Geben Sie den Befehl <strong>vaEigenschaften</strong> ein, wählen Sie eine Wand und bestätigen Sie mit Enter, oder</li>
+		<li>Klicken Sie auf die Schaltfläche <img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Linksklick)"/>, wählen Sie ein Wand und bestätigen Sie mit Enter, oder</li>
+		<li>Wählen Sie eine Wand aus, öffnen Sie durch einen langen Rechtsklick das Kontextmenü und wählen Sie darin <strong>Wand &gt; Eigenschaften</strong>, oder</li>
+		<li>Doppelklicken Sie auf ein Wandobjekt. </li>
+	</ul>
+		</div>
+	Die Änderungen wirken sich nur auf den Stil des <strong>ausgewählten Elements</strong> aus.</div>
+
+<h4>Attribute</h4>
+<p>Mit den Attributen werden die Anzeige- und Druckeigenschaften eines Wandstils und seiner Schichten bestimmt. Gültige Attribute sind:</p>
+<ul>
+<li><strong>Allgemein</strong>: Ebene, Sichtbarkeit und Material</li>
+<li><strong>Projektion</strong>: Farbe, Linientyp, Liniendruckbreite und Liniendruckfarbe</li>
+<li><strong>Schnitt</strong>: Farbe, Linientyp, Liniendruckbreite, Liniendruckfarbe, Muster, Musterskala, Musterwinkel und Musterfarbe</li>
+</ul>
+
+
+<p><strong>Anmerkung</strong>: Schichten unterschiedlicher Wände mit demselben Schraffierungsmuster werden an Wandschnittstellen vereinigt. Die nicht aufeinander folgenden Schichten desselben Wandobjekts mit demselben Schraffierungsmuster werden ebenfalls vereinigt, wenn sie am Abschluss zusammentreffen. </p>
+
+<h3>Wandkomponenten</h3>
+
+<h4>Schichten <img alt="Wandschicht" height="16" src="../images/Wall Layer-16.png" width="16" /></h4>
+<p>Wandschichten werden nur in der Planansicht angezeigt.<br />
+Folgende Parameter können für jede Wandschicht definiert werden: <strong>
+Name, Attribute, Geometrie, Typ, Funktion</strong> und <strong>Abschluss</strong>. Typ, Funktion und Abschluss können im Reiter <strong>
+Konstruktion</strong> bearbeitet werden.</p>
+<div class="figureWithDescription block">
+	<img alt="Wandstildialog, Komponenten" src="../images/assistants/Wall/Wall components.png" /><br/>
+Attributsreiter für Schicht 1 eines Standard-Wandstils, im Wandstildialog</div>
+<br clear="all" />
+<p>Im Folgenden ein Beispiel eines Wandstils mit 5 Schichten mit äußerem Abschluss an den Enden der Wanddeckfläche:</p>
+
+<p>
+<img alt="Schema der Wandkomponenten" height="175" src="../images/Wall Components.png" width="400" style="float: right" /></p>
+<ol>
+	<li>Innere Schicht 1 (z.B. Stuck)</li>
+	<li>Schicht 2 (z.B. Backstein)</li>
+	<li>Schicht 3 (z.B. Luftkammer)</li>
+	<li>Schicht 4 (z.B. Dämmschicht)</li>
+	<li>Äußere Schicht 5 (z.B. Backstein)</li>
+	<li>Umbruch Schicht 4</li>
+	<li>Umbruch Schicht 5</li>
+</ol>
+
+<p><strong>Hinzufügen neuer Schichten:</strong> Sie können einem Wandstil neue Schichten hinzufügen, indem Sie den Wandstil auswählen, durch Klick mit der rechten Maustaste das Kontextmenü öffnen und darin <strong>Neu &gt; Wandschicht</strong><em> wählen.</em></p>
+<p><strong>Entfernen von Schichten:</strong> Sie können eine Schicht eines Wandstils entfernen, indem Sie die zu löschende Schicht auswählen, durch Klick mit der rechten Maustaste das Kontextmenü öffnen und darin <strong>Löschen</strong> wählen. Außerdem können Sie einen Wandstil oder eine Wandschicht durch Klick auf die Schaltfläche 
+<img alt="Löschen" height="16" src="../images/delete.jpg" width="16" /> in der Werkzeugleiste entfernen. Sie können keinen Wandstil oder Wandschicht löschen, die von einer vorhandenen Wand im Modell verwendet wird.</p>
+<p>Jeder Schicht werden ein geeigneter <strong>Name</strong> und eine <strong>Stärke</strong> zugeordnet.</p>
+
+<p>Die <strong>Gesamtstärke</strong> der Wand ist die Summe der Stärken ihrer Schichten. <br />
+Die <strong>Höhe</strong> der Wand ist im Gegensatz dazu für die Wand als Einheit definiert und bleibt für alle Schichten konstant.</p>
+
+<h4>Typ</h4>
+<p>Es gibt zwei Arten von Wandschichten, die die Verbindungsreihenfolge untereinander festlegen:</p>
+<ul><li><strong>Kern</strong>: Schichten mit der Priorität 1. <em>Kern</em>-Schichten sind die strukturellen Schichten einer Wand und werden somit untereinander verbunden.</li>
+<li><strong>Normal</strong>: Schichten mit der Priorität 2. Diese tendieren dazu, sich mit anderen normalen Schichten zu verbinden, nachdem die Kernschichten verbunden sind. Sie können auch je nach Abschlusseinstellungen um Kernschichten herum abgeschlossen werden. </li></ul>
+
+<h4>Funktion</h4>
+<p>Es gibt 5 Arten von Funktionsspezifikationen, die den Wandschichten zugeordnet werden können. Diese Funktionen dienen nur Informationszwecken.</p>
+<ul>
+<li>Keine</li>
+<li>Struktur</li>
+<li>Isolierung</li>
+<li>Oberfläche</li>
+<li>Dekoration</li>
+</ul>
+<h4>Abschluss</h4>
+<p>Der Wandabschluss ist die Art des Abschlusses der Wandschichten an den Enden einer Wand und bei ihrem Zusammentreffen mit Öffnungen (Fenster, Türen und Fenster). Wandabschlüsse gibt es nur bei Wänden mit 3 oder mehr Schichten und sind in der <strong>Planansicht</strong> sichtbar.</p>
+<p>Es gibt 3 Arten von Wandabschlüsen für die Enden der Wand und das Zusammentreffen mit Öffnungen:</p>
+<ol>
+		<li><strong>Nichts:</strong> Wand ohne Abschluss (an Öffnungen und Enden).</li>
+		<li><strong>Außen:</strong>	Die äußeren Schichten der Wand werden an den Wandenden und Öffnungen nach innen umgeschlagen.</li>
+		<li><strong>Innen:</strong>	Die inneren Schichten der Wand werden an den Wandenden und Öffnungen nach außen umgeschlagen.</li>
+</ol>
+<br clear="all" />
+<div style="padding:5px;" class="figureWithDescription block"><img alt="Wandabschluss: Nichts" height="54" src="../images/Wall wrapping None.png" width="350"  /><br/>
+1. Wandabschluss: Nichts.
+</div>
+<div style="padding:5px;" class="figureWithDescription block">
+	<img alt="Wandabschluss: Außen" height="53" src="../images/Wall wrapping Exterior.png" width="350" /><br/>
+	2. Wandabschluss: Außen.
+</div>
+<div style="padding:5px;" class="figureWithDescription block">
+	<img alt="Wandabschluss: Innen" height="54" src="../images/Wall wrapping Interior.png" width="350" /><br/>
+	3. Wandabschluss: Innen.
+</div>
+<br clear="all" />
+<p><strong>Wandschichtenabschluss: </strong>Es gibt vier Optionen zur Definition des Wandschichtenabschlusses:</p>
+<ul>
+	<li><strong>Nichts:</strong> Es wird kein Abschluss erzeugt.</li>
+	<li><strong>Enden:</strong> Die Wandschichten werden an den Enden der Wand umgeschlagen.</li>
+	<li><strong>Öffnungen</strong>: Die Wandschichten werden beim Zusammentreffen der Wand mit einer Tür, einem Fenster oder einer Öffnung umgeschlagen.</li>
+	<li><strong>Enden und Öffnungen</strong>: Die Wandschichten werden an den Enden und beim Zusammentreffen der Wand mit einer Tür, einem Fenster oder einer Öffnung umgeschlagen.</li>
+</ul>
+<br clear="all" />
+<p><strong>Anmerkung</strong>: Wandschichten vom Typ <strong>Kern</strong> können nicht umgeschlagen werden.</p>
+<h4>Wandverbindungen
+<img alt="Wandverbindungen" height="24" src="../images/Wall Joints.png" width="24" /></h4>
+
+<p>Es gibt drei Arten von Wandverbindungen:</p>
+
+<ul>
+	<li>Nichts</li>
+	<li>Gehrung</li>
+	<li>Stumpf</li>
+</ul>
+<div class="figureWithDescription block">
+	<img alt="Wandverbindung: Nichts" height="150" src="../images/Wall Joint None.png" width="250" /><br/>
+	1. Wandverbindung: Nichts.
+</div>
+<div class="figureWithDescription block">
+	<img alt="Wandverbindung: Gehrung" height="150" src="../images/Wall Joint Miter.png" width="250" /><br/>
+	2. Wandverbindung: Gehrung.
+</div>
+<div class="figureWithDescription block">
+	<img alt="Wandverbindung: Stumpf" height="150" src="../images/Wall Joint Butt.png" width="250" /><br/>
+	3. Wandverbindung: Stumpf.
+</div>
+<br clear="all" />
+<p><strong>Bearbeitung der Wandverbindungen:</strong></p>
+<p>Wandverbindungen können im Abschnitt VisualARQ in den Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" /> bearbeitet werden, wenn <strong>alle an der Verbindung beteiligten Wände ausgewählt werden</strong>. Beim Schnitt zweier Wände wird eine automatische Verbindungsart zugewiesen, die vom Wandstil abhängt. Wenn die Wände denselben Stil haben, wird als Standardverbindungstyp <strong>Gehrung</strong><em> ausgewählt.</em> Bei unterschiedlichen Wandstilen ist der Standard-Verbindungstyp <strong>Stumpf</strong>.</p>
+<p>Beim Schnitt von drei oder mehr Wänden hängt die Verbindungsauflösung von der Reihenfolge ab, in der die Wände am Schnittpunkt hinzugefügt wurden. Die <strong>Sortierreihenfolge</strong><em></em> im Abschnitt <strong>Geometrie</strong><em></em> erlaubt die Einstellung der Wandreihenfolge. </p>
+<p>Bei der Verbindung zweier Wandschichten mit unterschiedlichen Schraffierungsmustern wird an der Verbindung eine Linie angezeigt. Haben sie dasselbe Schraffierungsmuster, ist keine Linie zu sehen.</p>
+

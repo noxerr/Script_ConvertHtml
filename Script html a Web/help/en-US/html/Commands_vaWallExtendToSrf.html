@@ -1,0 +1,47 @@
+<h3>Wall: Extend</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaWallExtend</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_WallExtendToSrf.jpg" alt="Wall: Extend"/> left click 
+	[<a href="Commands_vaWallUnextend.html" title="Wall: Unextend">right 
+		click</a>]
+
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQWallsToolbar">Walls</a> 
+		toolbar: </div>
+	<div class="value toolbar"><img src="../images/Walls.jpg" alt="VisualARQ Walls Toolbar" usemap ="#WallsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Wall &gt; Extend</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaWallExtSrf.wmv" preview="../images/previews/vaWallExtSrfvideo.png" width="300px" height="300px"></div>
+
+<p>Option to extend walls vertically upwards or downwards to a geometry that belongs to an object 
+that have been previously created and which fully or partially covers the walls. 
+Walls can be extended to single surfaces, polysurfaces, walls, stairs, slabs and roofs.</p>
+<p>When you run the <strong>vaWallExtend</strong> command, follow the steps from the command line. Press the right mouse button or ENTER to accept and go to 
+the next step.</p> 
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>walls to extend.</strong></li>
+	<li>Select in the command line the wall extension direction:<ul>
+	<li><strong>Top</strong>: the wall will be extended upwards.</li>
+	<li><strong>Bottom</strong>: the wall will be extended downwards.</li></ul></li>
+	<li>Select the <strong>entity</strong> or <strong>entities</strong> (surface, polysurface, wall, stair, slab or roof) 
+	to which the walls will be extended.</li>	
+</ol>
+<p>The walls will extend vertically until they reach the surface covering them, adapting to its shape.</p>
+If the surface doesn't fully cover the walls to extend, only the part of the 
+wall that is actually covered will be extended. The top or bottom faces of walls are updated automatically after any modification to the surface/polysurface/wall/stair/slab/roof.
+The part of the wall that is not covered by the surface will remain with the 
+same height.
+<p>The association between walls and the objects they were extended to stops being effective when 
+these objects are deleted. However, the top or bottom faces of the extended walls maintain the surface shape.</p>
+
+<h4>Unextend Walls</h4>
+<p>To undo the extension of walls and get their original shape, run the <a href="Commands_vaWallUnextend.html" title="Wall: Unextend"><strong>vaWallExtend 
+&gt; Unextend</strong></a> command or click on the <em>Wall Unextend arrow</em> that will be displayed when activating the control points of the extended wall.</p>

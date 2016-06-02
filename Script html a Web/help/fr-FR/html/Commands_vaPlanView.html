@@ -1,0 +1,62 @@
+<h3>Vue en plan</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaVueEnPlan</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_CreatePlanView.jpg" alt="Vue en plan"/> clic [<a href="Commands_vaPlanViewStyles.html" title="Styles de vue en plan">clic droit</a>]
+</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> :</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barre d'outils Documentation de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Vue en plan &gt; Vue en plan
+	</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaPlanView.wmv" preview="../images/previews/vaPlanViewvideo.png" width="300px" height="300px"></div>
+
+<p>La commande <strong>vaVueEnPlan</strong> crée une entité qui représente les objets 3D projetés sur un plan horizontal, mais elle ne montre pas les faces cachées.</p>
+<p>La vue en plan est créée par rapport à un niveau existant dans le modèle, le document doit donc posséder un bâtiment et un niveau avant que cette commande puisse être utilisée. </p>
+<p>Lorsque vous lancez la commande <strong>vaVueEnPlan</strong>, la boîte de dialogue d'insertion d'une vue en plan apparaît. Cette boîte de dialogue est suivie par une autre qui demande le niveau à afficher dans la vue en plan. Après avoir fermé ces boîtes de dialogue, suivez les invites dans la ligne de commande. Appuyez sur le bouton de droite ou Entrée pour accepter et passer à l'étape suivante.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/insert plan view style.png" alt="Sélectionner le style de la vue en plan" /><br/>
+	Boîte de dialogue d'insertion 1 : Sélectionner le style de la vue en plan</div>
+	<br clear="all" />
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/Select Level dialog.png" alt="Sélectionner le niveau de la vue en plan" /><br/>
+	Boîte de dialogue d'insertion 2 : Sélectionner le niveau de la vue en plan</div>
+<br clear="all" />
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez le <strong>	style de vue en plan</strong> que vous voulez utiliser.</li>
+	<li>Dans la boîte de dialogue suivante, sélectionnez le <strong>Niveau</strong> que vous voulez représenter sur un plan horizontal 2D, en fonction des niveaux existants du modèle. (Si aucun niveau n'est créé, annulez la commande et lancez la commande 
+	<a href="Commands_vaLevels.html">vaNiveaux</a> pour créer un nouveau bâtiment et un niveau)</li>
+	<li>Définissez une <strong>zone frontière</strong> autour des objets à inclure dans la vue en plan. Deux options sont disponibles :<ol>
+		<li><strong></strong><strong>Zone frontière rectangulaire</strong> : définissez les deux sommets opposés de la zone rectangulaire.</li>
+
+		<li><strong>Zone frontière personnalisée </strong>: sélectionnez l'option <strong>ÀPartirDeCourbe</strong> dans la ligne de commandes et cliquez sur une courbe <em>fermée</em> et <em>plane</em> (déjà créée) qui définira la zone des objets à afficher dans la vue en plan. </li>
+
+	</ol>
+	</li>
+	<li>
+	Indiquez un <strong>point d'insertion</strong>. Cliquez à l'écran pour insérer la vue en plan.</li></ol>
+
+<p>La commande se termine quand le dessin 2D de la vue en plan est inséré au point indiqué. Ce dessin est créé sur le calque actuel.</p>
+
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Le dessin de la vue en plan dispose des mêmes points de contrôle que la zone frontière sélectionnée pour définir les objets à inclure dans la vue en plan.</p>
+<h4>Paramètres de la vue en plan</h4>
+Les paramètres suivants peuvent être définis pour chaque objet de Vue en plan après leur création. Ils peuvent être modifiés dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Style </strong>: le style définit les attributs des vues en plan.</li>
+	<li><strong>Niveau </strong>: option permettant de modifier le niveau affiché dans la vue en plan.</li>
+<li><strong>Titre</strong> : le nom du niveau est utilisé par défaut comme titre de la vue en plan. Cependant, n'importe quel texte peut être utilisé pour ce titre.</li>
+<li><strong>Échelle</strong> : facteur d'échelle définissant l'affichage de la vue en plan.</li>
+<li><strong>Actualisation automatique </strong> : option permettant une actualisation automatique de la vue en plan lorsque les propriétés du niveau (Nom, Élévation ou Plan de coupe) sont modifiées.</li>
+<li><strong>Montrer la frontière </strong>: option pour afficher ou cacher la zone frontière de la vue en plan.</li>
+	<li><strong>Montrer les cotes </strong>: option permettant de dessiner les lignes de cotation alignées avec les murs extérieurs, les toits et les ouvertures d'un projet lorsque la vue en plan est créée.</li>
+	<li><strong>Facteur de tolérance </strong>: cette valeur détermine le niveau de détail avec lequel la vue en plan est générée. Plus cette valeur est élevée, moins l'affichage de la vue en plan est détaillé.</li>
+
+	</ul>

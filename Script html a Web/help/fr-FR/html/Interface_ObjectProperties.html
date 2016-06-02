@@ -1,0 +1,107 @@
+<h3>Propriétés de l'objet</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaPropriétés</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Propriétés objet"/> clic [<a href="Interface_StyleProperties.html" title="Propriétés de style"> clic droit</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Barre d'outils </a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Barre d'outils Documentation de VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Propriétés &gt; Propriétés de l'objet...</div>
+	
+	<div class="field">Raccourci : </div>
+	<div class="value menu">Sélectionner l’objet &gt; Double cliquer</div>
+
+	
+</div>
+
+<p>Lorsque vous lancez la commande <strong>vaPropriétés</strong>, la boîte de dialogue des <strong>Propriétés de l'objet
+</strong> s'affiche. Cette boîte de dialogue permet de modifier les propriétés des objets sélectionnés, sans tenir compte des propriétés de leur style.</p>
+
+<h3>Comment s'organise cette boîte de dialogue ?</h3>
+<p>La boîte de dialogue des propriétés d’un objet se divise en trois zones :</p>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Stair/Object%20Properties%20-%20stair.png" alt="Boîte de dialogue Propriétés d’un objet, propriétés d'un escalier." /><br/>
+Boîte de dialogue Propriétés Objet, propriétés d'un escalier.</p>
+
+<ol>
+	<li>Le panneau supérieur gauche affiche la liste des objets sélectionnés lorsque la commande a été lancée.</li>
+	<li>Le panneau inférieur gauche affiche l'aperçu de l'objet. Vous pouvez définir les options d'affichage suivantes pour cette fenêtre d'aperçu dans la barre d'outils située en haut de la boîte de dialogue :
+		<ul>
+			<li>
+			<img alt="Fenêtre d'aperçu activée" height="26" src="../images/Preview%20on.jpg" width="26" /> Option pour afficher ou masquer la fenêtre d'<strong>aperçu</strong>.</li>
+			<li><img alt="Aperçu dans la vue en plan" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Option pour afficher l'objet dans la vue en plan ou en perspective.</li>
+		</ul> 
+	L'aperçu affiché peut être modifié avec la souris tout comme dans les vues de Rhino : <ul>
+	<li><em>Bouton droit de la souris</em> : permet de faire tourner la vue pour afficher le modèle selon différents points de vue.</li>
+	<li><em>Ctrl + bouton droit</em> : permet de zoomer pour agrandir ou réduire le champ de vision.</li>
+	<li><em>Maj+ bouton droit</em> : permet de déplacer le point de vue parallèlement au plan de vision, vers le haut, le bas, la droite ou la gauche.</li>
+</ul>
+</li>
+	<li>Cette zone montre les différentes propriétés ou paramètres que vous pouvez modifier pour chaque objet sélectionné. Elle comprend plusieurs onglets, qui peuvent être différents en fonction du type d'objet.</li>
+</ol>
+
+
+<h3>Modifier les propriétés d'un objet</h3>
+
+<p>Pour modifier un objet, sélectionnez-le dans la liste et changez ses propriétés dans les onglets du panneau de droite.</p>
+<h4>Onglets</h4>
+
+<ul>
+	<li><strong>Style</strong><br />
+	Tous les objets utilisant des boîtes de dialogue possèdent cet onglet. Il permet d'assigner un style à l'objet sélectionné.</li>
+
+	<li><strong>Position</strong><br />
+		Tous les objets utilisant des boîtes de dialogue possèdent cet onglet. Il permet de définir les paramètres de position de chaque objet.<br />
+		<br />
+		
+		Paramètres de position pour les Murs, Murs-rideaux, Garde-corps et Escaliers :
+		<ul>
+			<li>Alignement (gauche/centre/droite)</li>
+		</ul>
+		
+		Paramètres de position pour les Poteaux et les Poutres : 
+		<ul>
+			<li>Alignement (point d'insertion dans la géométrie du profil de section)</li>
+			<li>Marque d'insertion (uniquement pour les poteaux)</li>
+			<li>Décalage (sur x/y, à partir du point d'insertion)</li>
+		</ul>
+		
+		Paramètres de position pour les Portes, les Fenêtres et les Ouvertures :
+		<ul>
+			<li>Alignement (intérieur/centre/extérieur, à partir du mur)</li>
+			<li>Élévation (à partir du mur)</li>
+		</ul>
+			
+	</li>
+	
+	<li><strong>Géométrie</strong><br />
+		Cet onglet est disponible pour les murs, les murs-rideaux, les poteaux et les escaliers. Il permet de définir les valeurs géométriques (tailles) de chaque objet.<br />
+		<ul>
+			<li>Largeur </li>
+			<li>Hauteur</li>
+		</ul>
+	</li>
+	
+	<li><strong>Profil</strong><br />
+	Les poutres, les poteaux, les portes, les fenêtres et les ouvertures (objets qui utilisent un profil) ont cet onglet. Il permet de définir les tailles du profil utilisé.</li>
+
+	<li><strong>Intersections</strong><br />
+	Seuls les murs présentent cet onglet. Il permet de définir la valeur du Rayon d'union et la valeur du Prolongement maximum pour les murs.</li>
+
+	<li><strong>Ouverture</strong><br />
+	Seules les portes et les fenêtres possèdent cet onglet. Il est utilisé pour définir la valeur du pourcentage d'ouverture.</li>
+	
+	<li><strong>Marches</strong><br />
+Seuls les escaliers présentent cet onglet. Il est utilisé pour définir la valeur et le nombre des Marches (contremarche et giron).</li>
+	<li><strong>Marque</strong><br />
+	Seules les sections présentent cet onglet. Il est utilisé pour modifier le texte de référence de la marque de section.</li>
+	
+</ul>

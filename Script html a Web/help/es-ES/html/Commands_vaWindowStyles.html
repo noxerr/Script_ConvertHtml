@@ -1,0 +1,198 @@
+<h3>Estilos de ventana</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaVentanaEstilos</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Window.jpg" alt="Ventana"/> clic derecho [<a href="Commands_vaWindow.html" title="comando Ventana">clic izquierdo</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barra de herramientas Objetos</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Ventana &gt; Estilos de ventana...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menú contextual</a>: </div>
+	<div class="value context">Ventana &gt; Propiedades de estilos</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione un objeto de ventana &gt; (<em>Alt, Mayús</em> o <em>Ctrl</em>) + doble clic</div>
+
+	
+</div>
+
+<p>El estilo de ventana define las características de las ventanas. Para cada estilo de ventana se pueden definir los siguientes parámetros: <strong>Nombre</strong>, <strong>Atributos</strong>, tipo de 
+<strong>Hueco</strong><strong></strong>, <strong>Forma</strong> y <strong>Bloques personalizados</strong>.</p>
+<p>Los estilos de ventana están definidos por diferentes componentes que se pueden agregar o eliminar en cualquier momento:<strong> Marco de ventana</strong>, <strong>Tope de ventana</strong>, <strong>Hoja</strong>
+ y <strong>Alféizar.</strong></p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Window components.png" alt="Componentes y partes de una ventana" width="300" height="300" /><br />
+Componentes y partes diferentes de una ventana:
+<ol>
+	<li><strong>Perfil</strong> de ventana</li>
+	<li><img height="16" src="../images/Frame-16.png" width="16" /> <strong>Marco</strong> de ventana</li>
+	<li><img height="16" src="../images/Stop-16.png" width="16" /> <strong>Tope</strong> de ventana</li>
+	<li><img height="16" src="../images/Window leaf-16.png" width="16" /> <strong>Hoja</strong> de ventana</li>
+	<li>Barrotillos de <strong>vidrio</strong></li>
+	<li><img height="16" src="../images/Glass component 16.png" width="16" /> Hoja de <strong>vidrio</strong></li>
+	<li><img height="16" src="../images/Window Sill-16.png" width="16" /><strong>Alféizar</strong></li>
+</ol>
+
+</div>
+
+<p>Para crear un estilo de ventana, pulse el botón <strong>Nuevo estilo</strong> del cuadro de diálogo <a href="Interface_StyleProperties.html">Administrador de estilos</a>. Utilice el asistente que aparezca para introducir los parámetros de la ventana que se explican a continuación.</p>
+<p>Para agregar un nuevo componente de estilo de ventana, seleccione el estilo de ventana en la parte izquierda del cuadro de diálogo, haga clic con el botón derecho para abrir el menú contextual y seleccione 
+<strong>Nuevo &gt; "componente"</strong>.</p>
+<br clear="all" />
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/WindowNewStyle.png" alt="Cuadro de diálogo Administrador de estilos del objeto Ventana." /><br />
+Cuadro de diálogo Administrador de estilos del objeto Ventana
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="field">Edición general de estilos</div>
+<div class="value">Puede utilizar el comando <strong>vaVentanaEstilos</strong> o, alternativamente
+	<ul>
+		<li>Utilice el comando <strong>vaEstiloPropiedades</strong>, seleccione una ventana y pulse Intro, o bien</li>
+		<li>Haga clic con el botón derecho en 
+		<img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una ventana y pulse Intro, o bien</li>
+		<li>Seleccione una ventana, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Ventana &gt; Propiedades de estilo</strong>, o bien</li>
+		<li>Pulse <em>Alt, Mayús</em> o <em>Ctrl </em> y haga doble clic en un objeto de ventana.</li>
+	</ul>
+	Los cambios aplicados a un estilo se aplican a <strong>todos los elementos</strong> con ese estilo.
+</div>
+<div class="field">Edición específica por objeto</div>
+<div class="value"><ul>
+		<li>Utilice el comando <strong>vaPropiedades</strong>, seleccione una ventana y pulse Intro, o bien</li>
+		<li>Haga clic en <img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una ventana y pulse Intro, o bien</li>
+		<li>Seleccione una ventana, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Ventana &gt; Propiedades</strong>, o bien,</li>
+		<li>Haga doble clic en un objeto de ventana. </li>
+	</ul>
+	Los cambios se aplican solo en el estilo del <strong>elemento seleccionado</strong>.</div>
+</div>
+
+<h4>Atributos</h4>
+<p>Los atributos definen las características de cada estilo de ventana y sus componentes para las vistas y la impresión. Los atributos válidos son:</p>
+
+<ul>
+<li><strong>General</strong>: Capa, visibilidad y material</li>
+<li><strong>Proyección</strong>: Color, Tipo de línea , Ancho de impresión de línea y Color de impresión de línea</li>
+<li><strong>Sección</strong>: Color, Tipo de línea, Ancho de impresión de línea, Color de impresión de línea, Patrón, Escala de patrón, Ángulo de patrón y Color de patrón</li>
+</ul>
+
+<h4>Tipo de apertura</h4>
+
+<p>VisualARQ permite crear estilos de ventana con seis tipos de apertura:</p>
+<ol>
+	<li><strong>Batiente: </strong> ventana que se abate hacia un lado sobre bisagras </li>
+	<li><strong>Corredera: </strong> ventana que corre o se desliza por una ranura o carril</li>
+	<li><strong>Guillotina:</strong> ventana que corre o se desliza por una ranura o carril vertical 
+	</li>
+	<li><strong>Elevable:</strong> ventana que se abate hacia un lado sobre bisagras horizontales de abajo hacia arriba</li>
+	<li><strong>Abatible:</strong> ventana que se abate hacia un lado sobre bisagras horizontales de arriba hacia abajo</li>
+	<li><strong>Fija: </strong>ventana que no se puede abrir. (Este tipo de apertura se asigna por hoja de ventana).</li>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/window types.png" alt="Tipos de apertura de ventana" width="500" height="250" /><br />
+	Tipos de apertura de ventanas
+</div>
+<br clear="all" />
+<h4>Forma</h4>
+
+<p>La forma (o hueco de obra) de la ventana, viene definida por un <strong>perfil</strong>. VisualARQ ofrece una librería con perfiles paramétricos predefinidos: Rectangular, Circular, Arco de 90º, Gótico, etc.<br />
+También pueden usarse perfiles de formas personalizadas para definir ventanas, utilizando el comando <a href="Commands_vaProfileFromCurve.html">
+<strong>vaPerfilDesdeCurva</strong></a>
+<img alt="vaPerfilDesdeCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.
+</p>
+
+<h4>Medidas</h4>
+<p>Los parámetros que corresponden a las medidas de una ventana varían dependiendo del tipo de perfil seleccionado.<br />
+Pueden especificarse diferentes medidas para un mismo estilo de ventana.</p>
+<p>Las medidas también pueden especificarse al momento de insertar la ventana, desde el cuadro de inserción, eligiendo la opción 
+<strong>Medidas &gt; Otras</strong> dentro de la sección Perfil de este cuadro.</p>
+<h3>Componentes de ventanas</h3>
+
+	<h4>Marco <img alt="Marco de ventana" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>Los estilos de ventana pueden tener o no tener marco.<br />
+Los valores editables del marco son <strong>Anchura</strong> y <strong>Profundidad</strong>. También es posible activar la opción 
+<strong>Ajustar profundidad a la grosor de muro</strong>.</p>
+
+<h4>Tope <img height="16" src="../images/Stop-16.png" width="16" /></h4>
+<p>Los estilos de ventana pueden tener o no tener un tope.<br />
+Las propiedades del tope son <strong>Anchura</strong> y <strong>Profundidad</strong>.</p>
+
+
+<h4>Hojas <img height="16" src="../images/Window leaf-16.png" width="16" /></h4>
+<p>Los estilos de ventana pueden tener una o más hojas. Para agregar una nueva hoja a una ventana, seleccione el nombre de la ventana en la parte izquierda del cuadro de diálogo, haga clic con el botón derecho para abrir el menú contextual y seleccione 
+<strong>Nueva &gt; Hoja de ventana</strong><em>.</em> </p>
+<p>Las propiedades de las hojas son <strong>Anchura</strong> (en porcentaje), <strong>Grosor
+</strong> y si se trata de una hoja <strong>Fija</strong> o no.</p>
+<p>Las hojas de una ventana pueden ser iguales o pueden tener anchuras diferentes. Desactivando la opción <strong>Anchuras iguales
+</strong>, es posible editar el porcentaje de anchura de cada hoja, asignándole un valor entre el 0% y el 100%.<br />
+También es posible cambiar el lado de apertura de cada hoja, activando la opción <strong>Invertir lado de apertura</strong>.</p>
+
+<h4>Vidrio <img height="16" src="../images/Glass component 16.png" width="16" /></h4>
+<p>Cada hoja de la ventana contiene un vidrio. Cuando se crea una nueva hoja, se incluye un vidrio de manera predeterminada. Para eliminar el vidrio de la hoja, seleccione el componente Vidrio en la parte izquierda del cuadro de diálogo, haga clic con el botón derecho para abrir el menú contextual y seleccione <strong>Eliminar</strong><em>.</em> Para agregar un vidrio a una hoja que no tiene, seleccione el componente Hoja en la parte izquierda del cuadro de diálogo, haga clic con el botón derecho para abrir el menú contextual y seleccione 
+<strong>Nuevo &gt; Vidrio</strong><em>.</em></p>
+<p>Los vidrios pueden tener dos componentes diferentes:</p>
+<ul>
+	<li><strong>Marco de vidrio:</strong> Marco que sujeta el vidrio en una hoja de ventana. Las propiedades del marco para el vidrio son <em>Anchura</em><strong></strong> y 
+	<em>Grosor</em>, que corresponde al grosor de hoja y puede editarse seleccionando el componente de hoja. El marco puede quitarse del vidrio.</li>
+	<li><strong>Barrotillos: </strong>Son perfiles de soporte rígidos que subdividen los paneles de vidrio. Las propiedades de los barrotillos son la <strong>cantidad</strong> de barrotillos que dividen un panel de vidrio y su <strong>Anchura</strong>.</li>
+</ul>
+
+<h4>Alféizar <img height="16" src="../images/Window Sill-16.png" width="16" /></h4>
+<p>Los estilos de ventana pueden tener o no tener un alféizar.<br />
+Las propiedades del alféizar son: <strong>Grosor</strong>, <strong>Extensión interior/exterior</strong> y <strong>Profundidad interior/exterior</strong>.</p>
+
+<h3>Bloques personalizados</h3>
+
+<p>Los estilos de ventana pueden crearse a partir de bloques 2D y 3D, que definen su representación en las vistas en planta y de modelo, respectivamente.<br />
+Para crear un estilo de ventana personalizado, asigne un <strong>perfil</strong> (que defina la forma del hueco de obra en el muro), un 
+<strong>bloque 2D</strong> (que defina la representación en planta) y un <strong>bloque 3D</strong> (que defina la representación en modelo).</p>
+
+<p><strong>Pasos:</strong></p>
+
+<ul>
+<li><strong>Cree un perfil personalizado:</strong> Dibuje una curva cerrada y plana, y conviértala en perfil utilizando el comando<a href="Commands_vaProfileFromCurve.html">
+<strong> vaPerfilDesdeCurva</strong></a> 
+<img alt="vaPerfilDesdeCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Una vez creado el perfil personalizado, éste aparece al final de la lista de la librería de perfiles paramétricos predefinidos.<br />
+El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.
+</li>
+<li><strong>Crear los bloques 2D y 3D:</strong> Cree el modelo 3D y dibuje la representación 2D a partir del mismo. A continuación, cree dos bloques con el comando <strong>Bloque</strong> (menú Edición &gt; Bloque &gt; Crear definición de bloque).</li>
+<li><strong>Crear el nuevo estilo de ventana:</strong> Una vez creado el perfil y los bloques 2D/3D, pulse el botón 
+<strong>Nuevo estilo</strong>  del cuadro de diálogo Administrador de estilos. Utilice el asistente que aparezca para asignar al estilo el perfil personalizado.
+
+<p>Omita los diálogos donde se definen los parámetros de estilo de la ventana pulsando el botón 
+<strong>Siguiente</strong>, hasta llegar al diálogo de definición de bloques personalizados.<br />
+En el diálogo Bloques personalizados, seleccione las casillas de verificación que activan las opciones para usar bloques personalizados para las vistas modelo y planta. Estas casillas de verificación solo se activan si se ha creado un bloque en el documento. Una vez activadas, en el menú desplegable, seleccione los bloques 3D y 2D para definir la representación del estilo de ventana en dichas vistas.</p>
+</li>
+</ul>
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/profile custom2.jpg" alt="Cuadro de diálogo Administrador de estilos del objeto Ventana." /><br />
+Asistente de creación de ventanas: selección de perfil
+</div>
+
+<p>Antes de crear los bloques (2D/3D), asegúrese de que los objetos que desea convertir en carpinterías de VisualARQ están alineados a los ejes X, Y y Z universales (SCU).<br />
+Una vez haya alineado los objetos al SCU, al momento de crear el bloque, elija el <strong>punto inferior central</strong> de su geometría como punto de inserción.<br />
+Esto garantizará que la orientación de la carpintería sea correcta.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/2d 3d blocks.png" alt="Asistente de creación de ventanas: definición de bloques." /><br />
+Asistente de creación de ventanas: definición de bloques
+</div>
+
+<p>Cuando se utilizan bloques 3D y 2D para definir la representación de un estilo personalizado, los parámetros Medidas, Marco, Tope y Hojas no influyen en la apariencia del estilo creado. Los estilos personalizados NO son paramétricos: su apariencia (tamaño, proporción, nivel de detalle) depende del dibujo de los bloques que se utilicen para definirlo.</p>
+
+<p>VisualARQ permite también crear estilos de ventana <em>híbridos</em>, sustituyendo únicamente la representación en planta (mediante un bloque 2D) y utilizando la representación en modelo de un estilo paramétrico, o viceversa.<br />
+La representación que no utilice un bloque, ha de definirse mediante los parámetros de estilo (Medidas, Marco, Tope y Hojas), como con cualquier estilo de ventana estándar.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window.png" alt="Bloque 3D, bloque 2D y perfil del nuevo estilo de ventana personalizado" width="400" height="222" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window 2.png" alt="Estilo de ventana personalizado: definido a partir de un bloque 3D, un bloque 2D y un perfil" width="400" height="167" /><br />Estilo de ventana personalizado: definido a partir de un bloque 3D, un bloque 2D y un perfil.</div>
+
+<br clear="all" />

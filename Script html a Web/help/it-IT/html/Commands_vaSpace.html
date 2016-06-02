@@ -1,0 +1,102 @@
+<h3>Vano</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaVano</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Space.jpg" alt="Vano"/> clic sinistro [<a href="Commands_vaSpaceStyles.html" title="Stili di vano">clic destro</a>]
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentazione</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra degli strumenti Documentazione di VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Vano &gt;<li>Da punto</li>
+			<li>Da curva</li>
+			<li>Da superficie planare</li>
+	</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaSpace.wmv" preview="../images/previews/vaSpacevideo.png" width="300px" height="300px"></div>
+
+<p>L'oggetto vano rappresenta l'entità di superficie che mostra le informazioni (nome, area, perimetro, ecc.) relative ad uno spazio o ad una stanza, tramite un modello di tratteggio ed un'etichetta.</p>
+<p>Si considera stanza qualsiasi spazio chiuso delimitato su ogni lato da muri e/o colonne. I muri e le colonne si possono trovare ad elevazioni diverse, purché essi appartengano allo stesso piano.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Esistono tre opzioni per creare un vano. Queste opzioni sono accessibili dalla<em> </em> linea di comando quando si esegue il comando <strong>vaVano</strong>:</li>
+		<ul>
+			<li>Vano delimitato da <strong>muri e/o colonne </strong>(stanza): Fare clic all'interno della stanza di cui si desidera calcolare l'area. </li>
+			<li>Vano definito da una <strong>curva</strong>: Cliccare sull'opzione <em> Da<u>C</u>urva </em>sulla linea di comando. Selezionare una curva chiusa e planare.</li>
+			<li>Vano definito da una <strong>superficie</strong>: Cliccare sull'opzione<em> D<u>a</u>SrfPlanare</em> sulla linea di comando. Selezionare una superficie planare.</li>
+		</ul>
+	<li>Apparirà la finestra di dialogo <strong>Nuovo vano</strong>. Inserire le informazioni relative al vano selezionato:</li>
+		<ul>
+			<li><strong>Nome</strong></li>
+			<li><strong>Tipo di area</strong>: Utilizzabile o Costruita</li>
+			<li><strong>Stile</strong></li>
+		</ul>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Space/Space Insert.png" alt="Finestra di dialogo di inserimento dell'oggetto Vano" /><br />
+	Finestra di dialogo di inserimento dei vani</div>
+<br clear="all" />
+<p>Nella stanza rilevata, viene inserito un modello di tratteggio che indica l'area occupata, così come un'etichetta con il nome e le caratteristiche geometriche del vano.</p>
+<p>Si può proseguire con la creazione dei vani fino all'annullamento del comando con INVIO oppure ESC.</p>
+
+<h4>Modifica dei vani</h4>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaVanoImpostaContorno</div>
+</div>
+<p> </p>
+
+<p>I vani si possono modificare con il comando <strong>vaVanoImpostaContorno</strong> in tre modi diversi:</p> 
+<ol>
+	<li>Selezionare il <strong>vano</strong> da modificare.</li>
+	<li>Selezionare un <strong>nuovo punto</strong> (all'interno di una stanza) per inserire il vano, oppure selezionare una delle opzioni di comando visualizzate sulla linea di comando: 
+	<strong></strong><u><strong>D</strong></u><strong>aCurva</strong> oppure 
+	<strong>D</strong><u><strong>a</strong></u><strong>SrfPlanare</strong>.</li>
+</ol>
+<p class="style2">Il vano viene modificato mantenendo le sue proprietà. </p>
+<p><strong>NOTA: </strong>I vani formati da muri e/o colonne si possono spostare <em>manualmente</em> con il cursore all'interno di altre stanze. Essi possono anche venire <em>aggiornati</em> dopo l'applicazione di eventuali modifiche ai muri e/o alle colonne che li delimitano, usando il comando <a href="Commands_vaUpdate.html" title="vaAggiorna">vaAggiorna</a> 
+<img alt="vaAggiorna" height="26" src="../images/VA_Update.jpg" width="26" />.</p>
+
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/assistants/Space/Space Control Points.png" alt="Punti di controllo nei vani" width="250" height="170"  style="float: right;"/>
+<p>I vani hanno due punti di controllo:<br />
+<ol>
+	<li>Punto di inserimento del <strong>modello di tratteggio</strong> che indica il vano.</li>
+	<li>Punto di inserimento dell'<strong>etichetta</strong><em>.</em></li>
+</ol>
+</p>
+<p><strong>NOTA: </strong> Tutti i punti di controllo di un vano vengono usati per spostarlo (non per operazioni di scalatura).</p>
+<p>Per spostare un vano verso una nuova stanza, selezionare il vano (modello di tratteggio ed etichetta) e trascinarlo fino alla nuova stanza.</p>
+<p>Per spostare l'etichetta del vano, attivare i punti di controllo del vano e spostare il punto di controllo dell'etichetta sul punto desiderato.</p>
+
+<h4>Opzioni e parametri di inserimento</h4>
+
+<p> La finestra di dialogo di inserimento dei vani presenta le seguenti opzioni:
+<strong>Nome</strong>, <strong>Tipo di area</strong> e <strong>Stile</strong>.</p>
+<p> Anche se i parametri che definiscono le caratteristiche di un vano corrispondono ad uno <strong>stile di vano</strong>, essi si possono modificare in modo indipendente da questo dalla finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà oggetto</a> 
+<img alt="Proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+
+<h5>Nome</h5>
+
+
+
+<p>Il nome di un vano serve per distinguerlo dagli altri vani e per indicarne la funzionalità.</p>
+<p>Per modificare il nome di un vano, andare alla finestra di dialogo delle proprietà oggetto del vano e fare clic sul nome.</p>
+
+<h5>Tipo di area</h5>
+
+<p>L'area di un vano può essere di due tipi:</p>
+<ul>
+	<li><strong>Utilizzabile:</strong> Area occupata da una stanza (o edificio), escludendo lo spessore dei muri.</li>
+	<li><strong>Costruita:</strong> Area delimitata dai limiti esterni della costruzione in pianta.</li>
+</ul>
+<p>Per modificare il tipo di area di un vano, è necessario cancellare il vano e crearlo di nuovo, selezionando il tipo di area desiderato.</p>
+
+<h5>Altezza</h5>
+<p>L'oggetto vano ha un valore di altezza, il quale determina il volume della stanza. Questo valore si può modificare nella sezione delle <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

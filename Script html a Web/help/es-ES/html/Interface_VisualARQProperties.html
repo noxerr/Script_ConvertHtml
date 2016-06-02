@@ -1,0 +1,114 @@
+<h3>Panel Propiedades de objeto (en el panel de Propiedades de Rhino)<img alt="icono de Propiedades" height="32" src="../images/properties icon.jpg" width="32"/></h3>
+
+
+<div>
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/COLUMN/Column Properties panel.png" alt="Sección Propiedades de VisualARQ del objeto Pilar, dentro del cuadro de Propiedades de Rhino."/><br/>
+		Sección de Propiedades de VisualARQ del objeto Pilar,<br />
+		 en el panel de Propiedades de Rhino.</p>
+	</div>
+	
+	<div class="leftBorder">
+		<p>Además del cuadro Propiedades de objeto previamente descrito, la edición de propiedades de un objeto de VisualARQ puede hacerse desde la sección Propiedades de VisualARQ. <img alt="icono de Propiedades"  src="../images/properties icon.jpg" height="24" width="24"/> (también disponible desde el menú de Rhino <strong>Edición &gt; Propiedades de objeto<br />
+		</strong>Esta sección está integrada en el panel de Propiedades de Rhino, pero solo aparece cuando se selecciona un objeto de VisualARQ.</p>
+
+		<p>Los parámetros disponibles en esta sección no son los mismos para todos los objetos VisualARQ. En este ejemplo se muestran los parámetros editables del objeto Pilar.</p>
+		<p>Desde la sección Propiedades de VisualARQ es posible editar aquellos parámetros del objeto de VisualARQ seleccionado que no dependen del estilo.</p>
+		
+		<p>Los parámetros disponibles dentro de esta sección dependen del tipo de objeto seleccionado, y son los mismos que se encuentran dentro del cuadro de diálogo Propiedades de objeto.</p>
+
+		</div>
+</div>
+<br clear="all"/>
+
+<h5>General</h5>
+<ul>
+	<li><strong>Nombre: </strong> Nombre del objeto seleccionado.</li>
+	<li><strong>Descripción: </strong>Descripción del objeto seleccionado.</li>
+	<li><strong>Estilo:</strong> Lista de estilos de objeto disponibles de las librerías de objetos de VisualARQ, más los nuevos estilos creado por el usuario.</li>
+	<li><strong>Número de serie: </strong>Número de serie del objeto seleccionado.</li>
+</ul>
+
+<h5>Visualización</h5>
+<ul>
+	<li><strong>Densidad de isocurva:</strong> Esta opción define el número de curvas isoparamétricas que Rhino dibuja en la superficie.</li>
+	<li><strong>Visibilidad de plano:</strong> Oculta o muestra un objeto en una vista en Planta según su ubicación respecto al plano de corte dentro de un nivel.</li>
+		<ul>
+			<li><strong>Oculto:</strong> El objeto no se mostrará independientemente de su tamaño y posición.</li>
+			<li><strong>En el plano de corte:</strong> El objeto se mostrará solo cuando esté situado en el plano de corte.</li>
+			<li><strong>Debajo del plano de corte:</strong> El objeto se mostrará cuando esté situado en el plano de corte o debajo del mismo.</li>
+			<li><strong>Encima del plano de corte:</strong> El objeto se mostrará cuando esté situado en el plano de corte o encima del mismo.</li>
+			<li><strong>Dentro del nivel:</strong> El objeto se mostrará siempre que esté situado dentro de un nivel, independientemente de su tamaño y posición.</li>
+		</ul>
+		
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/Plan Visibility.png" alt="Esquema de visibilidad de plano." width="450" height="247"/><br/>
+		Esquema de visibilidad de plano.</p>
+	</div>
+<br clear="all"/>
+
+	<p>Ejemplo de qué ventanas de la imagen se mostrarían según la opción de visibilidad de plano seleccionada:</p>
+		<ul>
+			<li><em>Oculto:</em> Ninguno.</li>
+			<li><em>En el plano de corte:</em> Ventana <strong>2.</strong></li>
+			<li><em>Debajo del plano de corte</em>: Ventanas <strong>2</strong> y <strong>3.</strong></li>
+			<li><em>Encima del plano de corte:</em> Ventanas <strong>1</strong> y <strong>2.</strong></li>
+			<li><em>Dentro del nivel: Ventanas</em> <strong>1, 2</strong> y <strong>3.</strong></li>
+
+		</ul>
+</ul>
+<br/>
+
+<h5>Posición</h5>
+<ul>
+	<li><strong>Punto de inserción:</strong> Coordenadas de un punto de inserción de objeto.</li>
+	<li><strong>Marca de inserción</strong> (solo para pilares): Activa la visualización de la marca de inserción y su tipo.</li>
+</ul>
+
+<h5>Geometría</h5>
+<ul>
+	<li><strong>Altura:</strong> Especifica la altura del objeto. Este valor se puede modificar independientemente del estilo del objeto. En muros y pilares, esta altura también se puede definir por estilo.</li>
+	<li><strong>Perfil: </strong> Descripción del perfil del objeto.</li>
+	<li><strong>Anchura/Altura:</strong> Dimensiones del objeto.</li>
+	<li><strong>Profundidad de corte</strong> (opción solo disponible para puertas, ventanas y huecos): Especifica la distancia de profundidad máxima que un perfil de hueco puede cortar en un muro.</li>
+</ul>
+
+<h5>Hueco </h5>
+<p>(Opción solo disponible para puertas y ventanas)</p>
+<ul>
+	<li><strong>Apertura (%):</strong> El porcentaje de apertura define lo abiertas o cerradas que se representan las hojas de las puertas y ventanas, tanto en la vista en Planta como en la vista en Perspectiva.</li>
+	<li><strong>Lado de apertura:</strong> Dirección hacia la que se abrirá la puerta o ventana.</li>
+</ul>
+
+
+<h5>Perfil</h5>
+<p>(Opción solo disponible para vigas y pilares)</p>
+<ul>
+	<li><strong>Rotación:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Rotación del perfil del objeto</span>.</li>
+	<li><strong>Alineación:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Posición de inserción del objeto según el perfil</span>.</li>
+	<li><strong>Desfase de alineación:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Distancia desde la posición de alineación</span>. </li>
+</ul>
+
+<h4>Botón Más...</h4>
+<p>En la parte inferior del cuadro de diálogo se encuentra el botón Más... desde el que se puede acceder rápidamente a algunos accesos directos relacionados con los objetos seleccionados. Estas opciones son similares a las que se encuentran en el <a href="Interface_Context.html">menú contextual</a> después de seleccionar un objeto.</p>
+<ul>
+	<li>Eliminar</li>
+	<li>Duplicar</li>
+	<li>Aislar objetos</li>
+	<li>Ocultar objetos</li>
+	<li>Bloquear objetos</li>
+	<li>Activar puntos de control</li>
+	<li><a href="Commands_vaWallReverse.html">Invertir</a> (solo para muros)</li>
+	<li>Seleccionar</li>
+	<li><a href="Commands_vaUpdate.html">Actualizar</a></li>
+	<li><a href="Interface_StyleProperties.html">Propiedades de estilo</a></li>
+	<li><a href="Interface_ObjectProperties.html">Propiedades</a></li></ul>

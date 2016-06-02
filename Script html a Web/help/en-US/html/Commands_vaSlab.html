@@ -1,0 +1,136 @@
+<h3>Slab</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaSlab</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Slab.jpg" alt="Slab"/> left click [<a href="Commands_vaSlabStyles.html" title="Slab Styles command">right click</a>, <a href="Interface_Toolbars.html#VisualARQSlabsToolbar" title="VisualARQ Slabs Toolbar">long 
+		click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Slab &gt; Slab</div>
+	
+</div>
+
+<div class="comVideo" id="video1" src="vaSlab.wmv" preview="../images/previews/vaSlabvideo.png" width="300px" height="300px"></div>
+<p>Slabs are defined by a boundary curve. They can be created as rectangular shapes (by default) or from any existing curve in the model.</p>
+<p>After running the <strong>vaSlab</strong> command, the slab 
+<a href="Interface_Dialog.html">insert dialog box</a> will appear. This dialog box shows a list of all 
+slab styles available, as well as the basic options and the preview of the slab object.</p>
+<p>Follow the steps from the command line. Press the right mouse button out of the insert dialog box or hit ENTER to end the command.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Slab/Slab Insert Dialog.jpg" alt="Insert dialog box for the Slab object."/><br/>
+Slab insert dialog box
+</div>
+<br clear="all" />
+<h3>Rectangular Slab</h3>
+<p><strong>Steps:</strong></p>
+	<ol>
+		<li>Select the <strong>Slab style</strong> you wish to use and define the basic <strong>insertion options</strong>.</li>
+		<li>Pick the <strong>two opposite corners</strong> that will define the slab.</li>
+	</ol>
+
+<div class="comDescr">
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_SlabFromCurves.jpg" alt="Slab: From Curve"/> left click
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQSlabsToolbar">Slabs</a> 
+		toolbar:</div>
+	<div class="value toolbar"><img src="../images/Slabs.jpg" alt="VisualARQ Slabs Toolbar" usemap ="#SlabsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Slab &gt; From Curve
+	</div>
+</div>
+
+
+<a name="FromCurves" />
+<h3>Slab: From Curves</h3>
+<p>Slabs can be also created from previously drawn curves in the model.</p>
+
+<p><strong>Steps:</strong></p>
+
+	<ol>
+		<li>Select the <strong>Slab style</strong> you wish to use and define the basic <strong>insertion options</strong> from the Insert Dialog.</li>
+		<li>Pick a <strong>curve</strong> or <strong>multiple curves</strong> that will be used as the slabs start boundary. These curves must be
+		<em>planar</em> and <em>closed</em>.</li>
+	</ol>
+	
+	<p>Slabs can be also be created from curves after running the <strong>vaSlab</strong> command, and selecting the <strong>FromCurves</strong> option in the command line.</p>
+
+
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+
+<p> Slabs have as many control points as the original curve they were created from. 
+You can select any of these points and change the slab boundary position.</p>
+
+<div class="figureWithDescription picRight"><img src="../images/Slab control points.jpg" alt="Control points on slabs" /></div>
+<br />
+
+<ol>
+	<li>Slab boundary control points. </li>
+	<li>New slab boundary points from subtracted boundaries.</li>
+	<li>New slab boundary points from added boundaries.</li>
+</ol>
+
+
+<h4>Insertion Options and Parameters</h4>
+
+<h5>Alignment</h5>
+<p>The alignment defines the position of the slab relative to its boundary curve. There are three options available:</p>
+
+
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Alignment options"/></td>
+	<td><strong>Top</strong>: the slab is aligned with the boundary curve from its top surface.</td>
+</tr>
+
+<tr>
+	<td valign="top" style="height: 28px"><img align="left" src="../images/walignment c.jpg" alt="Alignment options"/></td>
+	<td style="height: 28px"><strong>Center</strong>: the slab is aligned with the boundary curve from the middle point of the slab thickness.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Alignment options"/></td>
+	<td><strong>Bottom</strong>: the slab is aligned with the boundary curve from its bottom surface.</td>
+</tr>
+
+</table>
+</div>
+
+<br />
+<p>To modify the <strong>slab alignment</strong> edit it in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box <img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in Rhino Properties Panel <img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Thickness</h5>
+<p>The slab thickness is a property defined by the <a href="Commnads_vaSlabStyles.html">slab style</a>, but it can be edited individually for each one of the slab layers.</p> 
+<p>To modify the <strong>slab thickness</strong> edit its values in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box <img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in Rhino Properties Panel <img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Slab/slabs.png" alt="Slabs" width="500" height="190" /><br/>
+Slabs created with curves and polylines.</div>
+<br clear="all" />
+
+<h3>Edit Slabs</h3>
+<p>To edit a slab, VisualARQ has a toolbar with some options than can be used to modify the 
+slab shape.</p>
+
+<div class="figureWithDescription block">
+	<div class="value toolbar"><img src="../images/Slabs.jpg" alt="VisualARQ Slabs Toolbar" usemap ="#SlabsToolbarMap"/><br/>
+	VisualARQ Slabs toolbar</div>
+	</div>
+	<br clear="all" />
+	

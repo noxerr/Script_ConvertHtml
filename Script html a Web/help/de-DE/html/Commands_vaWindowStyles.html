@@ -1,0 +1,198 @@
+<h3>Fensterstile</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaFensterStile</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Window.jpg" alt="Fenster"/> Rechtsklick [<a href="Commands_vaWindow.html" title="Befehl Fenster">Linksklick</a>]
+	
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Fenster &gt; Fensterstile...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Kontextmenü</a>: </div>
+	<div class="value context">Fenster &gt; Stileigenschaften</div>
+	
+	<div class="field">Tastenkombination: </div>
+	<div class="value menu">Fensterobjekt auswählen &gt; (<em>Alt, Umschalttaste</em> oder <em>Strg</em>) + Doppelklick</div>
+
+	
+</div>
+
+<p>Der Fensterstil bestimmt die Eigenschaften des Fensters. Folgende Parameter können für jeden Fensterstil definiert werden: <strong>Name</strong>, <strong>Attribute</strong>, 
+<strong>Öffnung</strong><strong></strong>, <strong>Form</strong> und <strong>Benutzerdefinierte Blöcke</strong>.</p>
+<p>Die Fensterstile werden von verschiedenen Komponenten bestimmt, die hinzugefügt oder gelöscht werden können:<strong> Fensterrahmen</strong>, <strong>Fensterfalz</strong>, <strong>Flügel</strong>
+ und <strong>Fensterbank.</strong></p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Window components.png" alt="Komponenten und Teile eines Fensters" width="300" height="300" /><br />
+Verschiedene Teile und Komponenten eines Fensters:
+<ol>
+	<li><strong>Profil</strong> des Fensters</li>
+	<li><img height="16" src="../images/Frame-16.png" width="16" /> <strong>Fensterrahmen</strong></li>
+	<li><img height="16" src="../images/Stop-16.png" width="16" /> <strong>Fensterfalz</strong></li>
+	<li><img height="16" src="../images/Window leaf-16.png" width="16" /> <strong>Fensterflügel</strong></li>
+	<li><strong>Türsprossen</strong></li>
+	<li><img height="16" src="../images/Glass component 16.png" width="16" /> <strong>Glas</strong> des Flügels</li>
+	<li><img height="16" src="../images/Window Sill-16.png" width="16" /><strong>Fensterbank</strong></li>
+</ol>
+
+</div>
+
+<p>Um einen Türstil zu erzeugen, klicken Sie auf die Schaltfläche <strong>Neuer Stil…</strong> im Dialogfenster des <a href="Interface_StyleProperties.html">Stilmanagers</a>. Verwenden Sie den Assistenten, um die folgenden Fensterparameter einzugeben.</p>
+<p>Um einem Türstil eine neue Komponente hinzuzufügen, klicken Sie mit der rechten Maustaste auf seinen Namen auf der linken Seite des Dialogfensters und wählen Sie im sich öffnenden Kontextmenü 
+<strong>Neu</strong>.</p>
+<br clear="all" />
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/WindowNewStyle.png" alt="Dialogfenster Stilmanager für das Fensterobjekt." /><br />
+Dialogfenster Stilmanager für das Fensterobjekt
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="field">Allgemeine Bearbeitung des Stils</div>
+<div class="value">Sie können entweder den Befehl <strong>vaFensterStile</strong> verwenden, oder
+	<ul>
+		<li>den Befehl <strong>vaStilEigenschaften</strong> ausführen, ein Fenster auswählen und mit Enter bestätigen, oder</li>
+		<li>mit der rechten Maustaste auf die Schaltfläche 
+		<img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Rechtsklick)"/> klicken, ein Fenster wählen und mit Enter bestätigen, oder</li>
+		<li>durch einen langen Klick mit der rechten Maustaste auf ein Fenster das dazugehörige Kontextmenü öffnen und <strong>Fenster &gt; Stileigenschaften</strong> wählen, oder</li>
+		<li><em>Alt, Umschalttaste</em> oder <em>Strg</em> drücken und doppelt auf ein Fensterobjekt klicken.</li>
+	</ul>
+	Die Änderungen wirken sich auf <strong>alle Elemente</strong> mit diesem Stil aus.
+</div>
+<div class="field">Objektspezifische Bearbeitung des Stils</div>
+<div class="value"><ul>
+		<li>Geben Sie den Befehl <strong>vaEigenschaften</strong> ein, wählen Sie ein Fenster und bestätigen Sie mit Enter, oder</li>
+		<li>Klicken Sie auf die Schaltfläche <img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Linksklick)"/>, wählen Sie ein Fenster und bestätigen Sie mit Enter, oder</li>
+		<li>Wählen Sie ein Fenster aus, öffnen Sie durch einen langen Rechtsklick das Kontextmenü und wählen Sie darin <strong>Fenster &gt; Eigenschaften</strong>, oder</li>
+		<li>Doppelklicken Sie auf ein Fensterobjekt. </li>
+	</ul>
+	Die Änderungen wirken sich nur auf den Stil des <strong>ausgewählten Elements</strong> aus.</div>
+</div>
+
+<h4>Attribute</h4>
+<p>Mit den Attributen werden die Anzeige- und Druckeigenschaften eines Fensterstils und seiner Komponenten bestimmt. Gültige Attribute sind:</p>
+
+<ul>
+<li><strong>Allgemein</strong>: Ebene, Sichtbarkeit und Material</li>
+<li><strong>Projektion</strong>: Farbe, Linientyp, Liniendruckbreite und Liniendruckfarbe</li>
+<li><strong>Schnitt</strong>: Farbe, Linientyp, Liniendruckbreite, Liniendruckfarbe, Muster, Musterskala, Musterwinkel und Musterfarbe</li>
+</ul>
+
+<h4>Öffnungstyp</h4>
+
+<p>VisualARQ kann Fensterstile mit sechs Öffnungstypen erzeugen:</p>
+<ol>
+	<li><strong>Flügelfenster:</strong> ein gewöhnliches Fenster, das sich zu einer Seite hin öffnet </li>
+	<li><strong>Schiebefenster:</strong> ein Fenster, das sich auf einer Schiene oder Rille bewegt oder schieben lässt.</li>
+	<li><strong>Vertikales Schiebefenster:</strong> ein Fenster, das sich auf einer vertikalen Schiene oder Rille bewegt oder schieben lässt. 
+	</li>
+	<li><strong>Klappflügelfenster:</strong> ein Fenster, das sich horizontal von unten nach oben aufklappen lässt</li>
+	<li><strong>Kippfenster:</strong> ein Fenster, das sich horizontal oben nach unten aufklappen lässt</li>
+	<li><strong>Fixiert: </strong>ein Fenster, das nicht geöffnet werden kann. (Dieser Öffnungstyp wird einem Fensterflügel zugewiesen).</li>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/window types.png" alt="Fensteröffnungstypen" width="500" height="250" /><br />
+	Fensteröffnungstypen
+</div>
+<br clear="all" />
+<h4>Form</h4>
+
+<p>Die Fensterform wird durch ein <strong>Profil</strong> definiert. In VisualARQ ist eine Bibliothek mit vordefinierten parametrischen Formen integriert: rechteckig, kreisförmig, 90°-Bogen, gotisch, etc.<br />
+Zur Erstellung von Fenstern können unter Verwendung des Befehls  <a href="Commands_vaProfileFromCurve.html">
+<strong>vaProfilAusKurve</strong></a> 
+<img alt="vaProfilAusKurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" /> auch benutzerdefinierte Formprofile verwendet werden.
+</p>
+
+<h4>Abmessungen</h4>
+<p>Die Parameter, die den Fensterabmessungen entsprechen, variieren gemäß ausgewähltem Profiltyp.<br />
+Es können verschiedene Abmessungen für den gleichen Fensterstil definiert werden.</p>
+<p>Die Abmessungen können beim Einfügen eines Fensters im Einfügedialog geändert werden, wenn im Abschnitt Profil die Option 
+<strong>Abmessungen &gt; Andere</strong> ausgewählt wird.</p>
+<h3>Fensterkomponenten</h3>
+
+	<h4>Rahmen <img alt="Fensterrahmen" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>Die Bestimmung eines Rahmens für den Fensterstil ist optional.<br />
+Die <strong>Breite</strong> und <strong>Tiefe</strong> des Rahmens können bearbeitet werden. Außerdem kann die Option 
+<strong>Tiefe an Wandstärke anpassen</strong> aktiviert werden.</p>
+
+<h4>Falz <img height="16" src="../images/Stop-16.png" width="16" /></h4>
+<p>Die Bestimmung eines Falzes für den Fensterstil ist optional.<br />
+Die Eigenschaften des Fensterfalzes sind die <strong>Breite</strong> und <strong>Tiefe</strong>.</p>
+
+
+<h4>Flügel <img height="16" src="../images/Window leaf-16.png" width="16" /></h4>
+<p>Fensterstile können über einen oder mehrere Flügel verfügen. Um einem Fenster einen Flügel hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Namen des Fensters auf der linken Seite des Dialogs und wählen Sie im sich öffnenden Kontextmenü 
+<strong>Neu &gt; Fensterflügel</strong><em>.</em> </p>
+<p>Die Eigenschaften des Fensterflügels sind <strong>Breite</strong> (in Prozent), <strong>Stärke
+</strong> und ob es sich um einen <strong>fixierten</strong> Flügel handelt oder nicht.</p>
+<p>Fensterflügel können die gleiche oder verschiedene Breiten aufweisen. Wenn Sie die Option <strong>Gleiche Breiten
+</strong> deaktivieren, können Sie die Breite (in Prozent) eines Flügels bearbeiten und einen Wert zwischen 0 % und 100 % eingeben.<br />
+Sie können auch die Öffnungsseite ändern, indem Sie die Option <strong>Öffnungsseite umkehren</strong> aktivieren.</p>
+
+<h4>Glas <img height="16" src="../images/Glass component 16.png" width="16" /></h4>
+<p>Jeder Fensterflügel hat eine Glasscheibe. Bei der Erzeugung eines Fensterflügels wird standardmäßig eine Glasscheibe eingefügt. Das Glaselement kann aus dem Flügel entfernt werden, indem Sie es auf der linken Seite des Dialogs mit der rechten Maustaste anklicken und im sich öffnenden Kontextmenü auf <strong>Löschen</strong><em> klicken.</em> Um einem Fensterflügel ein Glaselement zuzuordnen, wählen Sie den entsprechenden Flügel auf der linken Seite des Dialogfensters, öffnen Sie sein Kontextmenü durch Klick mit der rechten Maustaste und wählen Sie 
+<strong>Neu &gt; Glas</strong><em>.</em></p>
+<p>Glaselemente können zwei Komponenten besitzen:</p>
+<ul>
+	<li><strong>Rahmen:</strong> Der Rahmen hält das Glaselement im Fensterflügel. Die Eigenschaften des Rahmens sind seine <em>Breite</em><strong> </strong>und seine 
+	<em>Dicke</em>, die derjenigen des Flügels entspricht und durch Auswahl der Flügelkomponente geändert werden kann. Der Rahmen kann auch ganz entfernt werden.</li>
+	<li><strong>Sprossen: </strong>Dies sind die festen Verbindungsstreben zwischen angrenzenden Glasscheiben. Als Eigenschaften der Türsprossen können ihre <strong>Anzahl</strong> und ihre <strong>Breite</strong> eingestellt werden.</li>
+</ul>
+
+<h4>Fensterbank <img height="16" src="../images/Window Sill-16.png" width="16" /></h4>
+<p>Die Bestimmung einer Fensterbank für den Fensterstil ist optional.<br />
+Die Fensterbankeigenschaften sind: <strong>Stärke</strong>, <strong>Interne/Externe Verlängerung</strong> und <strong>Interne/Externe Tiefe</strong>.</p>
+
+<h3>Benutzerdefinierte Blöcke</h3>
+
+<p>Fensterstile können mit 2D- und 3D-Blöcken erzeugt werden, die ihre Darstellung in der Plan- bzw. Modellansicht definieren.<br />
+Zur Erzeugung eines benutzerdefinierten Fensterstils weisen Sie diesem ein <strong>Profil</strong> (zur Definition der Wandöffnung), einen 
+<strong>2D-Block</strong> (zur Repräsentation in der Planansicht) und einen <strong>3D-Block</strong> (zur Repräsentation des Modells) zu.</p>
+
+<p><strong>Schritte:</strong></p>
+
+<ul>
+<li><strong>Erzeugen eines benutzerdefinierten Profils:</strong> Zeichnen Sie eine geschlossene und flache Kurve und wandeln Sie das Profil mit dem Befehl <a href="Commands_vaProfileFromCurve.html">
+<strong>vaProfilAusKurve</strong></a> 
+<img alt="vaProfilAusKurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" /> um.<br />
+Wenn das benutzerdefinierte Profil erzeugt wurde, erscheint es am Ende der Liste der Bibliothek mit den vordefinierten parametrischen Profilen.<br />
+Das erhaltene Profil ist nicht parametrisch, so dass es nur mit den Abmessungen und Proportionen der Originalzeichnung verwendet werden kann.
+</li>
+<li><strong>3D- und 2D-Blöcke erzeugen:</strong> Erzeugen Sie das 3D-Modell und seine entsprechende 2D-Repräsentation. Anschließend konvertieren Sie diese mithilfe des Befehls <strong>Block </strong> (Bearbeiten &gt; Block &gt; Blockdefinition erzeugen) in Blöcke.</li>
+<li><strong>Erzeugen Sie den neuen Fensterstil:</strong> Nach Erzeugen des Profils und der 2D-/3D-Blöcke drücken Sie die Schaltfläche 
+<strong>Neuer Stil…</strong> im Dialogfenster des Stilmanagers. Verwenden Sie den Assistenten, um dem Stil ein benutzerdefiniertes Profil zuzuordnen.
+
+<p>Überspringen Sie die Dialoge zur Definition der Fensterstilparameter und klicken Sie so lange  auf 
+<strong>Weiter</strong>, bis das Dialogfenster für benutzerdefinierte Blöcke angezeigt wird.<br />
+Aktivieren Sie im Dialogfenster Benutzerdefinierte Blöcke die Option zur Verwendung benutzerdefinierter Block für die Modell- und Planansichten. Die Kästchen sind nur dann aktiviert, wenn im Dokument ein Block vorhanden ist. Wenn diese aktiviert wurden, wählen Sie die 3D- und 2D-Blöcke aus dem Dropdown-Menü aus, um die Darstellung von Fensterstilen in diesen Ansichten zu definieren.</p>
+</li>
+</ul>
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/profile custom2.jpg" alt="Dialogfenster Stilmanager für das Fensterobjekt." /><br />
+Assistent für die Fenstererzeugung, Profilauswahl
+</div>
+
+<p>Vor der Erzeugung der Blöcke (2D/3D) vergewissern Sie sich, dass die Objekte, die Sie in VisualARQ-Objekte umwandeln möchten, mit den universalen X-, Y- und Z-Achsen ausgerichtet sind (Weltkoordinatensystem - WKS).<br />
+Wenn Sie die Objekte am WKS ausgerichtet haben, wählen Sie den <strong>unteren mittleren Punkt</strong> Ihrer Geometrie als Einfügungspunkt bei der Erzeugung des Blocks aus.<br />
+So wird die korrekte Ausrichtung der Öffnung garantiert.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/2d 3d blocks.png" alt="Assistent für die Fenstererzeugung, Blockdefinition." /><br />
+Assistent für die Fenstererzeugung, Blockdefinition
+</div>
+
+<p>Bei der Verwendung von 3D- und 2D-Blöcken zur Erzeugung eines benutzerdefinierten Stils haben Parameter wie Abmessungen, Rahmen, Falz und Flügel keinen Einfluss auf das Aussehen. Benutzerdefinierte Stile sind NICHT parametrisch: ihr Aussehen (Abmessungen, Proportion, Detailgrad) hängt von der Blockzeichnung ab, die sie definiert.</p>
+
+<p>VisualARQ kann auch <em>hybride</em> Fensterstile erzeugen, indem nur die Plandarstellung (mit einem 2D-Block) ersetzt wird und die Modelldarstellung eines standardmäßigen parametrischen Stils verwendet wird und umgekehrt.<br />
+Darstellungen ohne Blöcke müssen wie bei allen standardmäßigen Fensterstilen Stilparameter verwenden (Abmessungen, Rahmen, Falz und Flügel).</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window.png" alt="3D-Block, 2D-Block und ein Profil für den neuen benutzerdefinierten Fensterstil" width="400" height="222" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Window/Custom Window 2.png" alt="Benutzerdefinierter Fensterstil, erzeugt aus einem 3D-Block, einem 2D-Block und einem Profil" width="400" height="167" /><br />Benutzerdefinierter Fensterstil, erzeugt aus einem 3D-Block, einem 2D-Block und einem Profil.</div>
+
+<br clear="all" />

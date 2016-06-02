@@ -1,0 +1,52 @@
+<h3>Vue de section</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaVueSection</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon">
+		<img alt="Vue de section" height="24" src="../images/VA_SectionView.png" width="24" /> clic [<a href="Commands_vaSectionViewStyles.html" title="Styles de Vue de section">clic droit</a>]</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> : </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barre d'outils Documentation de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Section &gt; Vue de section</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionView.wmv" preview="../images/previews/vaSectionViewvideo.png" width="300px" height="300px"></div>
+
+<p>Lorsque vous lancez la commande <strong>vaVueSection</strong>, vous créez un dessin 2D qui représente les objets 3D projetés sur un plan. Cette vue de section est créée à partir de la position de la <strong>ligne de coupe de la section</strong> dans le modèle. Après avoir lancé la commande, la <a href="Interface_Dialog.html">
+<strong>boîte de dialogue d'insertion</strong></a> d'une <strong>Vue de section</strong> apparaît. Suivez les invites dans la ligne de commande. Appuyez sur le bouton de droite ou Entrée pour accepter et passer à l'étape suivante.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section view insert.png" alt="Boîte de dialogue d'insertion d'une vue de section" /><br/>Boîte de dialogue d'insertion d'une vue de section</div>
+<br clear="all" />
+
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Choisissez un <strong>style de vue de section</strong> dans la boîte de dialogue.</li>
+	<li>Sélectionnez la <strong>ligne de coupe de la section</strong>.</li>
+	<li>Indiquez un <strong>point d'insertion</strong>. Cliquez à l'écran pour insérer la section.</li>
+</ol>
+<p>Le dessin de la section reste lié à la ligne de coupe de la section à partir de laquelle il a été créé, tant que vous ne le décomposez pas. Si la marque de section est supprimée, la vue de section est également supprimée. Lorsque la position de la ligne de coupe de la section est déplacée, le dessin 2D est automatiquement actualisé. Le dessin de section conserve également les propriétés de calques des objets qu'il représente. </p>
+
+<h4>Paramètres de vue de section</h4>
+Les paramètres suivants peuvent être définis pour chaque objet de Vue de section après leur création. Ils peuvent être modifiés dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Style </strong>: le style définit les attributs des vues de section</li>
+	<li><strong>Titre</strong> : le titre de la vue de section prend par défaut le texte de référence de la ligne de coupe de la section correspondante et ajoute le même texte avec une apostrophe. (par exemple : Texte de référence de la section = A, Titre de la vue de section = A-A'). Cependant, n'importe quel texte peut être utilisé pour le titre de la vue de section.</li>
+	<li><strong>Section</strong> : option pour changer la vue de section en sélectionnant une ligne de coupe de section différente.</li>
+	<li><strong>Actualisation automatique</strong> : option permettant d'actualiser automatiquement la vue de section lorsque la ligne de coupe correspondante est déplacée ou modifiée.</li>
+	<li><strong>Facteur de tolérance </strong>: cette valeur détermine le niveau de détail avec lequel la vue de section est générée. Plus cette valeur est élevée, moins l'affichage de la vue de section est détaillé.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Dynamic Section drawing.png" alt="Vues de section dynamique, ligne de coupe de section et vue de section" width="600" height="345" /><br/>Modèle dans une vue de section dynamique, ligne de coupe de section et dessin de section</div>
+<br clear="all" />
+<p><strong>Remarque 1 :</strong> La vue de section n'affiche pas les faces cachées.</p>
+<p><strong>Remarque 2 : </strong>La vue de section et sa marque sont créées sur le calque actif au moment du lancement de la commande. Lorsque la section est supprimée, sa ligne l'est également et vice versa.</p>
+<p><strong>Remarque 3 :</strong> Seuls les objets contenus à l'intérieur de la zone de section, délimitée par ses points d'insertion et ses points de longueur de section, seront affichés dans la vue de section.</p>
+
+
+

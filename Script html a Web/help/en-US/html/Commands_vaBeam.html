@@ -1,0 +1,120 @@
+<h3>Beam</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaBeam</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_beam.jpg" alt="beam"/> left click
+	[<a href="Commands_vabeamStyles.html" title="beamStyle command">right click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects </a>Toolbar: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Beam &gt; Beam</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaBeam.wmv" preview="../images/previews/vaBeamvideo.png" width="300px" height="300px"></div>
+
+<p>After running the <strong>vaBeam</strong> command, the beam 
+<a href="../Ele/Interface_Dialog.html">insert dialog box</a> will appear. This dialog box shows a list of all 
+beam styles available, as well as the basic options and the preview of the beam object.</p>
+
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>Beam style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select the <strong>Beam</strong> <strong>start point</strong> with a left-click on the desired point.</li>
+	<li>Specify the <strong>Beam</strong> <strong>end point </strong>with a left-click on the 
+	desired point.</li>
+</ol>
+
+<p>You can enter as many beams as you wish and you can cancel the command by pressing ENTER or ESC.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Beam insertion dialog box" height="808" src="../images/assistants/Beam/beam.png" width="358"/><br/>
+	Beam dialog box
+</div>
+
+<br clear= "all" />
+
+<h3>Beam From Curve</h3>
+<p>Beams can also be created from a curve in the model:</p>
+
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Start the <strong>vaBeam</strong> command to create a new beam. The <strong>Beam
+	</strong>insert dialog box will appear.</li>
+	<li>Select the <strong>Beam style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select <strong>FromCurves</strong><em> </em>in the command line 
+	and then pick a <strong>Curve</strong> from the model.</li>
+	<li>Press ENTER or right click to finish the command.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Beam control points" height="198" longdesc="Beam created from a curve, with control points on" src="../images/assistants/Beam/beamFromCurve.png" width="325" /><br/>
+	Beam created from a curve, 
+	with control points on.
+</div>
+
+<br clear= "all" />
+
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Beams can have different control points depending on how the beam has been 
+created. These control points can be moved in any direcction, and modify the 
+beam position and dimensions.</p>
+<ul>
+	<li><strong>Straight beam:</strong> the beam has two control points, at the 
+	ends of the object.</li>
+	<li><strong>Beam from curve:</strong> the beam has as many control points as 
+	the curve from which it was created. </li>
+</ul>
+<br/>
+<h4>Insertion Options and Parameters</h4>
+
+<h5>Alignment</h5>
+
+<p>The beam alignment determines the position of the beam insertion point according 
+to its profile shape.<br/> Alignment options:</p>
+
+
+<ul>
+	<li>Top Left, Top Center and Top Right</li>
+	<li>Middle Left, Center and Middle Right</li>
+	<li>Bottom Left, Bottom Center and Bottom Right</li>
+</ul>
+<p>To modify the alignment of a beam, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Offset</h5>
+<p>Shows the distance (offset) from the beam X and Y points to the insertion point.</p>
+
+<p>To modify a beam offset, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevation</h5>
+<p>A beam elevation is always measured from the baseline of the level 
+it is inserted in. The elevation is not a style property. The value is specified 
+for each beam object in the insert dialog box when a new beam is inserted.<br/>
+The default elevation value for beams is 3 meters. If you modify this value, the 
+<strong>Beam</strong> dialog box will show the last value used.</p>
+
+<h5>Roll</h5>
+<p>This value determines the angle by which the beam rotates around its axis, 
+taking as the center of rotation its alignment position. </p>
+<p>The beam roll can only be edited in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Mirrored</h5>
+<p>When enabled this option changes the beam orientation into its mirror image. </p>
+<p>This option can only be edited in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+

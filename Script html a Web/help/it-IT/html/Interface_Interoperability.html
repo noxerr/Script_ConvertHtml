@@ -1,0 +1,58 @@
+<h3>Interoperabilità di VisualARQ con i comandi e l'interfaccia di Rhino</h3>
+
+<h4>Comandi di Rhino</h4>
+
+<p>Di fatto, gli oggetti di VisualARQ sono blocchi di Rhino, per cui tutti i comandi di Rhino che funzionano con i blocchi funzionano di default anche con gli oggetti di VisualARQ. Altri comandi sono stati adattati. Per esempio, i comandi che realizzano copie di oggetti (come Copia, Serie e CopiaSpeculare), così come alcuni comandi di editing di Windows (come Taglia, Copia e Incolla: CTRL+X, CTRL+C e CTRL+V rispettivamente).<br />
+Quando si eseguono comandi di Rhino che non sono supportati da VisualARQ, gli oggetti di VisualARQ non possono essere selezionati.</p>
+
+<p>Il comando <strong>Esplodi</strong> fa sì che gli oggetti di VisualARQ perdano le loro proprietà, trasformandoli in polisuperfici. In tal modo, è possibile editarli come si farebbe con qualsiasi altra polisuperficie di Rhino.</p>
+
+<p>VisualARQ ha dei comandi speciali che consentono di trasformare (o ritrasformare) determinati oggetti di Rhino in oggetti di VisualARQ.<br />
+Questi comandi sono <a href="Commands_vaWall.html#Wallfromcurves"><strong>vaMuro &gt; DaCurve</strong></a> e 
+<a href="Commands_vaWallFromSolid.html"><strong>vaMuroDaSolido</strong></a><em>.</em> Per ulteriori informazioni, si vedano questi comandi. Anche gli oggetti Ringhiera e Trave possono essere creati da curve 2D e 3D. Gli oggetti Solaio e Tetto vengono ricavati da curve chiuse.</p>
+
+<h4>Comportamento dei comandi di Rhino</h4>
+
+<ul>
+	<li><strong>Ripetizione dell'ultimo comando e dei comandi usati di recente:</strong><br />
+		Così come i comandi di Rhino, la maggior parte dei comandi di VisualARQ si possono ripetere in vari modi: 
+		<ul>
+			<li>Per ripetere l'ultimo comando, premere INVIO, la BARRA SPAZIATRICE oppure il pulsante destro del mouse nel caso in cui non sia attivo nessun comando. </li>
+			<li>Per ripetere un comando usato di recente, cliccare con il tasto destro sulla linea di comando.
+			</li>
+	</ul>
+	</li>
+	<li><strong>Selezione di oggetti:</strong><br />
+		Così come succede con i comandi di Rhino, la maggior parte delle operazioni di VisualARQ richiede la selezione di uno o vari oggetti. La selezione degli oggetti di VisualARQ funziona come la selezione degli oggetti di Rhino:
+		<ul>
+			<li>Per selezionare solo un oggetto, fare clic sull'oggetto.</li>
+			<li>Per selezionare vari oggetti, premere il tasto MAIUSC mentre si fa clic sugli oggetti desiderati, oppure usare la selezione tramite finestra.</li>
+		</ul>
+	</li>
+	<li><strong>Aiuti alla modellazione e snap all'oggetto:</strong><br />
+		Con gli oggetti di VisualARQ, gli aiuti alla modellazione (snap alla griglia, modalità ortogonale e modalità planare) e gli snap all'oggetto (fine, vicino, punto, medio, centro, intersezione, perpendicolare, ecc.) si possono usare come si usano con gli oggetti di Rhino.</li>
+</ul>
+<h4>Punti di controllo</h4>
+<div class="comDescr">
+	<div class="field">Tastiera: </div>
+	<div class="value keyboardCommand">PuntiOn / PuntiOff</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Proprietà"/> Attiva punti di controllo: Clic sinistro</div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Proprietà"/> Disattiva punti di controllo: Clic destro</div>
+	
+		
+	<div class="field">Menu: </div>
+	<div class="value menu">Modifica &gt; Punti di controllo &gt; Attiva / Disattiva punti di controllo</div>
+	
+	<div class="field">Scorciatoia: </div>
+	<div class="value menu">Attiva punti di controllo (F10), Disattiva punti di controllo (F11)</div>
+
+	
+	
+</div>
+
+<p>Tutti gli oggetti di VisualARQ si possono editare attivandone i punti di controllo. Per attivare e disattivare i punti di controllo di VisualARQ, si possono usare gli stessi comandi che si usano in Rhino.</p>
+<p class="figureWithDescription">
+<img src="../images/Wall and door control points.jpg" alt="Muro e porta di VisualARQ con i punti di controllo attivati" /><br/>
+Muro e porta di VisualARQ con i punti di controllo attivati.</p>

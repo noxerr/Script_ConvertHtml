@@ -1,0 +1,65 @@
+<h3>Vistas de VisualARQ</h3>
+
+<p>Las vistas de VisualARQ se comportan y controlan exactamente igual que las vistas de Rhino. La diferencia fundamental radica en la representación de los objetos de VisualARQ en la vista Superior, llamada Planta 1 en VisualARQ.</p>
+
+<p class="figureWithDescription">
+<img src="../images/Level 02 plan View.png" alt="Vista Planta 1 y vista Perspectiva" width="450" height="400"/><br/>
+Vista Planta (Nivel 02).</p>
+
+<p>A diferencia de los objetos de Rhino -que son mostrados en 3D “desde arriba”- los objetos de VisualARQ se dibujan en 2D en esta vista. El dibujo 2D utiliza la representación estándar de los elementos en planta de un plano arquitectónico: los muros muestran sus componentes, las puertas su batiente, los peldaños de las escaleras aparecen numerados, etc.</p>
+
+<p>La vista <strong>Planta</strong> de VisualARQ es una sección horizontal, cuyo plano de corte se encuentra por defecto a 1.40m de elevación respecto a la planta actual. Tanto la altura de las plantas como la elevación del plano de corte de cada una de ellas pueden modificarse desde el cuadro de diálogo <a href="Commands_vaLevels.html" title="Administrador de niveles">Administrador de niveles</a>.</p>
+
+<p>Cuando se trabaja con las plantillas de VisualARQ, el título predeterminado de la vista en <strong>Planta</strong> es 
+<strong>Nivel 01</strong>
+ o<em> </em><strong>Planta 1</strong>. Cuando se crean niveles adicionales en el dibujo mediante el cuadro de diálogo <a href="Commands_vaLevels.html" title="Administrador de niveles">Administrador de niveles</a>, VisualARQ permite filtrar la información que se muestra en la vista seleccionada y solo muestra los elementos correspondientes al nivel definido como 
+<strong>Nivel actual</strong><em> </em>
+y la proyección de los objetos visibles debajo.<em> </em>El nombre del nivel activo aparece indicado en la leyenda de la vista.</p>
+
+
+<p>Puede abrir el cuadro de diálogo <a href="Commands_vaLevels.html" title="Administrador de niveles">Administrador de niveles</a> de cuatro maneras diferentes:</p>
+
+<ul>
+	<li>En el menú <strong>VisualARQ</strong>, haga clic en <strong>Niveles &gt; Editar niveles</strong>.</li>
+	<li>Haga clic on el botón derecho en el título de la vista y seleccione <strong>VisualARQ &gt; Niveles</strong>.</li>
+	<li>En la barra de herramientas <strong>Herramientas de VisualARQ<em></em></strong><strong>
+	</strong>, haga clic en el icono <strong>Niveles</strong>.</li>
+	<li>Ejecute el comando <strong>vaNiveles</strong> desde la línea de comandos.</li>
+</ul>
+<p class="figureWithDescription">
+<img src="../images/setfloorview.jpg" alt="Menú contextual del título de la vista &gt; VisualARQ &gt; Niveles" /><br/>
+<br/>
+Para abrir el cuadro de diálogo Niveles, haga clic on el botón derecho en el título de la vista y seleccione <strong>
+VisualARQ &gt; Niveles</strong>.</p>
+
+<p>Puede definir cualquiera nivel como <strong>Actual</strong> desde el cuadro de diálogo <a href="Commands_vaLevels.html" title="Administrador de niveles">Administrador de niveles</a>.</p>
+
+<p>Hay dos maneras para cambiar entre la visualización de una vista Superior de Rhino y la representación del dibujo 2D de VisualARQ.</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Vista en planta"/></td>
+				<td>En la barra de herramientas <strong>Administrador de niveles</strong>, haga clic en el icono 
+				<strong>Plano de corte </strong>. </td>
+			</tr>
+		</table>			
+	</li>
+	<li>Ejecute el comando <strong>vaDefinirVista</strong> desde la línea de comandos. Este comando cambia automáticamente la vista actual en una vista Superior y activa el plano de corte de un edificio y un nivel seleccionado.</li>
+</ul>
+
+<p><strong>NOTA: </strong> Las opciones <strong>vaDefinirVista</strong> <strong>&gt; Nivel
+</strong> y <strong>vaDefinirVista &gt; Modelo</strong> pueden utilizarse en cualquier vista.</p>
+
+<p>
+<img alt="Símbolo de escala en vistas ortográficas" height="144" src="../images/Scale%20symbol.png" style="float: right" width="274" /></p>
+<h5>Símbolo de escala</h5>
+
+<p>Cuando VisualARQ está cargado y se trabaja con alguna de sus plantillas, en las ventanas con vistas de proyección paralela (es decir, todas las que vienen por defecto, excepto la vista Perspectiva) se muestra un símbolo de escala en la esquina inferior derecha.</p>
+<p>Las opciones del símbolo de escala pueden editarse en las <a href="Interface_VisualARQOptions.html">Opciones de VisualARQ</a> del cuadro de diálogo de <strong>Opciones de Rhino</strong>.</p>
+<br clear="all" />
+<p>
+<img style="float: right" alt="Referencias de elevación en la vista Frontal" height="144" src="../images/Elevation%20marks%20front.png" width="274" /></p>
+
+<h5>Referencias de elevación</h5>
+<p>En las vistas <em>Frontal</em> y <em>Derecha</em> se muestran referencias de elevación, cuyo número, nombre y elevación dependen de los niveles creados con el Administrador de niveles. La referencia del nivel aparece resaltada e indica el nivel desde el que se trabaja.</p>
+<p>Las referencias de elevación pueden editarse en las <a href="Interface_VisualARQOptions.html">Opciones de VisualARQ</a> del cuadro de diálogo de <strong>Opciones de Rhino</strong>.</p>

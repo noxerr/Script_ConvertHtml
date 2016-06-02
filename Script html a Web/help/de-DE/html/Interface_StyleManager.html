@@ -1,0 +1,106 @@
+<h3>Stilmanager</h3>
+
+<p>Im <strong>Stilmanager</strong> können die Stileigenschaften der ausgewählten Objekte bearbeitet und neue Stile erstellt werden.</p>
+
+<p>Um neue Objektstile zu erzeugen, klicken Sie die Schaltfläche <strong>Neuer Stil</strong>.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorNewStyle.png" alt="Dialogfenster Stilmanager für das Türobjekt." width="350" height="243"/><br/>
+Dialogfenster Stilmanager für das Türobjekt.
+</p>
+
+<p>Der Assistent begleitet Sie durch den ganzen Prozess und definiert Schritt für Schritt die Parameter des neuen Objektstils.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Türstilassistent."  width="300" height="347" /><br/>
+Türstilassistent.</p>
+
+<p>Wenn Sie einen Stil aus der Objektstilliste auswählen, wird Ihnen eine Vorschau des Objekts in der unteren linken Hälfte der Box angezeigt.</p>
+<p>Die ausgewählte Komponente ist türkis markiert, wenn das Objekt über mehrere Komponenten verfügt.</p>
+<p>Die Vorschau kann mit der Maus so ähnlich wie in den Rhino-Ansichten geändert werden:</p>
+
+<ul>
+	<li><em>Rechte Maustaste</em>: zur Änderung der Perspektive und der Anzeige des Modells aus verschiedenen Blickwinkeln.</li>
+	<li><em>Strg + rechte Maustaste</em>: zum Hinein- und Herauszoomen in die bzw. aus der Arbeitsfläche.</li>
+	<li><em>Umschalttaste + rechte Maustaste</em>: zum Bewegen des Blickwinkels parallel zur Sichtebene; aufwärts, abwärts, nach links oder rechts.</li>
+</ul>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorAttributes.png" alt="Stilmanagerdialog, Reiter "Attribute"" width="350" height="243"/><br/>
+Stilmanagerdialog, Reiter "Attribute"</p>
+
+<p>Für jeden gewählten Objektstil können Sie die Eigenschaften auf der rechten Seite definieren. Dieser Bereich enthält verschiedene Reiter, die je nach Objekttyp variieren können:</p>
+
+<ul>
+
+	<li><strong>Attribute<em> </em> </strong><br />
+		Dieser Reiter wird für alle Objekte angezeigt, die ein Dialogfenster verwenden. In diesem Reiter können die Eigenschaften (Attribute) des Objektstils und aller seiner Komponenten definiert werden. Zu den Attributen zählen: <ul>
+			<li>Ebene</li>
+			<li>Sichtbarkeit</li>
+			<li>Anzeigefarbe</li>
+			<li>Linientyp</li>
+			<li>Druckbreite</li>
+			<li>Druckfarbe</li>
+			<li>Material</li>
+			<li>Schraffierung</li>
+			<li>Textstil</li>
+			<li>Bemaßungsstil</li>
+		</ul>
+		<br />
+		<strong>HINWEIS: </strong> Sie können jeder Objektkomponente vom Materialattribut des Objektstils aus ein anderes Material zuweisen. Um dem gesamten Objekt ein einziges Material zuzuordnen, gehen Sie einfach wie von Rhino gewohnt vor.<br />
+	</li>
+	
+	<li><strong>Geometrie </strong><br />
+		Wände, Stützen, Türen und Fenster verfügen über diesen Reiter. Die Geometriewerte jedes Objekts und jeder Objektkomponente können in diesem Reiter definiert werden.<br />
+		Geometriewerte für das Wandobjekt:
+		<ul>
+			<li>Höhe</li>
+			<li>Breite (kann nur für jede Wandkomponente bearbeitet werden)</li>
+		</ul>
+		
+		Geometriewerte für das Stützenobjekt:
+		<ul>
+			<li>Höhe</li>
+			<li>Profil (definiert die Objektform)</li>
+			<li>Verkleidungsbreite</li>
+		</ul>
+		
+		Geometriewerte für das Türobjekt: <ul>
+			<li>Profil (definiert die Objektform)</li>
+			<li>Abmessungen (Breite und Tiefe) für Rahmen und Türfalz</li>
+			<li>Abmessungen (Breite und Tiefe) und Öffnungsseite für den Flügel</li>
+		</ul>
+		
+		Geometriewerte für das Fensterobjekt:
+		<ul>
+			<li>Profil (definiert die Objektform)</li>
+			<li>Abmessungen (Breite und Tiefe) für Rahmen und Türfalz</li>
+			<li>Abmessungen (Breite und Tiefe) und Öffnungsseite für den Flügel</li>
+			<li>Abmessungen (Stärke, Verlängerung und Tiefe) der Fensterbank.</li>
+		</ul>
+	</li>
+	
+	<li><strong>Abmessungen<em> </em> </strong><br />
+	Dieser Reiter wird nur für Objekte verwendet, die Ihre Form mithilfe von Profilen definieren (Stützen, Türen und Fenster). Es werden die Abmessungen (Breite und Höhe) des vom Objekt verwendeten Profils definiert. Diese Option kann verwendet werden, um verschiedene Abmessungen für das gleiche Profil zu erzeugen.
+	</li>
+	
+	<li><strong>Blöcke<em> </em> </strong><br />
+	Nur Türen und Fenster verfügen über diesen Reiter. In diesem Reiter können die 2D- und 3D-Darstellungen des Objekts definiert und ein Block zugewiesen werden, der zuvor vom Benutzer mit benutzerdefinierten Eigenschaften erzeugt wurde. Diese Option kann verwendet werden, um benutzerdefinierte Türen und Fenster zu erzeugen.</li>
+	
+	<li><strong>Verstärkungen<em> </em> </strong><br />
+	Nur Wände verfügen über diesen Reiter. Er wird verwendet, um den Wert der Wandverstärkungstypen zu definieren (Anfang, Ende, Ecke und Öffnung).</li>
+	
+	<li><strong>Typ<em> </em> </strong><br />
+	Nur Treppen verfügen über diesen Reiter. Er wird verwendet, um den gewählten Treppentyp zu definieren, je nachdem, ob die Treppenoption "Ausgeglichen" aktiviert ist oder nicht.</li>
+
+	<li><strong>Stufen </strong><br />
+		Nur Treppen haben diesen Reiter. Darin werden die Geometriewerte der Tritt- und Setzstufen definiert. Geometriewerte für die <strong>Trittstufe</strong>:
+		<ul>
+			<li>Deckenstärke</li>
+			<li>Überstand</li>
+		</ul>
+		
+		Geometriewerte für die <strong>Setzstufe</strong>:
+		<ul>
+			<li>Deckenstärke</li>
+		</ul>
+	</li>
+</ul>

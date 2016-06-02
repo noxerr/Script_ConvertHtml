@@ -1,0 +1,158 @@
+<h3>Fenster</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaFenster</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Window.jpg" alt="Fenster"/> Linksklick [<a href="Commands_vaWindowStyles.html" title="Befehl FensterStile">Rechtsklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Fenster &gt; Fenster</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaWindow.wmv" preview="../images/previews/vaWindowvideo.png" width="300px" height="300px"></div>
+
+<p>Ausführung und Verhalten eines Fensters sind mit denen einer Tür identisch.<br />
+Fenster können nur in einer Wand eingefügt werden. Die Verbindung beider Elemente wird anhand einer Verankerung vorgenommen und die Öffnung wird automatisch in der Wand generiert.</p>
+
+<p>Durch Ausführen des Befehls <strong>vaFenster</strong> wird das <a href="Interface_Dialog.html">Einfüge-Dialogfenster</a> für Fenster geöffnet. Das Dialogfenster zeigt eine Liste mit allen erhältlichen Fensterstilen sowie die grundlegenden Optionen des Fensterobjekts und die entsprechende Vorschau an.</p>
+<p>Die erforderlichen Schritte zum Einfügen eines Fensters in eine Wand hängen von den ausgewählten Einfügungsoptionen ab.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Fensterstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Zum Einsetzen eines Fensters in eine Wand gibt es zwei Möglichkeiten:<br/>
+		<ul>
+			<li><strong>Versatz:</strong> Dadurch wird das Fenster in einem bestimmten Abstand (Versatz) vom Wandende eingefügt, das sich dem Fenster am nächsten befindet. Bestimmen Sie die Öffnungsseite durch Verschieben des Mauszeigers in die entsprechende Richtung und bestätigen Sie mit einem Klick. Klicken Sie mit der linken Maustaste, um das Fenster einzufügen.</li>
+			<li><strong>Einfügungspunkt:</strong> Mit dieser Option können Sie das Fenster an einer beliebigen Position in der Wand einfügen. Klicken Sie mit der linken Maustaste, um das Fenster am gewünschten Punkt einzufügen.</li>
+		</ul>
+	</li>
+	<li>Bestimmen Sie die <strong>Öffnungsseite</strong> durch Klick auf die entsprechende Seite der Wand. Dieser Schritt ist nicht notwendig, wenn Sie das Fenster mit der Option "Versatz" einfügen.</li>
+</ol>
+
+<p>Sie können so viele Fenster wie Sie möchten eingeben und Sie können den Befehl durch Drücken von ENTER oder ESC beenden.</p>
+<p>Bei beiden Einfügungsoptionen wird in der Wand automatisch eine dem Fenster entsprechende Öffnung erzeugt.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Window/window 2.png" alt="Einfügedialog Fenster"/><br/>
+Einfügedialog Fenster
+</div>
+
+<br clear="all" />
+<h3>Fenster aus Kurve</h3>
+<p>Fenster können auch aus Kurven erstellt werden, die dann deren Form bestimmen.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Führen Sie den Befehl <strong>vaFenster</strong> aus</li>
+	<li>Wählen Sie den <strong>Fensterstil</strong> und die grundlegenden Einfügungsoptionen aus</li>
+	<li>Wählen Sie die Option <strong>AusKurven</strong> in der Befehlszeile</li>
+	<li>Wählen Sie eine <strong>Kurve</strong> (oder mehrere Kurven) im Modell. Die Kurve muss 
+	<em>geschlossen</em> und <em>vertikal</em> sein</li>
+</ol>
+<p>Das Fenster wird in der Wand erzeugt, die der Kurve am nächsten liegt.</p>
+<p><strong>Anmerkung</strong>: Die Kurven zur Erzeugung von Fenstern müssen nicht parallel zur Wand sein, in die die Fenster eingefügt werden. Die Fenster werden automatisch gemäß der nächsten Wandposition eingefügt und ausgerichtet.</p>
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/window_scheme.png" alt="Kontrollpunkte auf Wänden" width="220" height="160"  style="float: right;"/>
+<p>Fenster verfügen über fünf Kontrollpunkte:</p>
+	<ol>
+		<li>Kontrollpunkt für die Öffnungsseite</li>
+		<li>Linker Einfügungspunkt</li>
+		<li>Mittlerer Einfügungspunkt</li>
+		<li>Rechter Einfügungspunkt</li>
+		<li>Kontrollpunkt der Referenzmarkierung</li>
+	</ol>
+<br clear="all" />
+
+<p>Um ein Fenster zu verschieben (entweder in der gleichen Wand oder in eine andere Wand), wählen Sie es aus und ziehen Sie es an die gewünschte Position.</p>
+<p>Um die Öffnungsseite eines Fensters zu ändern, wählen Sie den Kontrollpunkt für die Öffnungsseite (1) und ziehen Sie ihn auf die andere Seite der Wand.</p>
+
+<h4>Einfügungsoptionen und -parameter</h4>
+
+<h5>Ausrichtung</h5>
+
+<p>Das Fenster kann auf drei Arten bezüglich der Wandstärke ausgerichtet werden:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Ausrichtung innen"/></td>
+				<td><strong>Innen</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Ausrichtung Mitte"/></td>
+				<td><strong>Mitte</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Ausrichtung außen"/></td>
+				<td><strong>Außen</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<p>Um die Ausrichtung eines Fensters zu verändern, bearbeiten Sie den Wert im Dialogfenster <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> <img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen <img alt="Rhino-Optionen" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Öffnungsgrad</h5>
+<p>Der Öffnungsgrad definiert, wie offen oder geschlossen die Fensterblätter in Plan- und perspektivischer Ansicht angezeigt werden. Für den Öffnungsgrad sind zwei Optionen verfügbar:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0">
+			<tr valign="middle">
+				<td valign="top"> <img align="left" src="../images/Max aperture 32.png" height="24" width="24" alt="Max. Öffnung (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Max. Öffnung (%)</strong>: Dieser Wert bestimmt den maximalen Öffnungsgrad, den die Fensterblätter haben können. Der maximale Öffnungsgrad wird nur in der VisualARQ-Planansicht angezeigt und durch eine einfache Linie und einen Bogen dargestellt.</td>
+			</tr>
+		</table> </li>
+	<li><table border="0" cellspacing="0" cellpadding="0" >
+			<tr valign="middle">
+				<td valign="top"><img align="left" src="../images/aperture 32.png" height="24" width="24" alt="Öffnung (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Öffnung (%):</strong> Dieser Wert bestimmt, wie offen oder geschlossen die Fensterblätter in Plan- und perspektivischer Ansicht angezeigt werden.</td>
+			</tr>
+		</table></li>
+</ul>
+<div class="figureWithDescription block"><img src="../images/Window aperture 2D 3D.jpg" alt="Beispiel für den Öffnungsgrad eines Fensters."/><br/>
+Beispiel für den Öffnungsgrad eines Fensters: Max. Öffnung: 65 %, Öffnung: 0 %
+</div>
+<br/>
+<p>Der Öffnungsgrad ist keine Stileigenschaft. Der Wert wird für jedes Objekt definiert, das mit dem Einfügedialog des Fensterobjekts eingefügt wird.</p>
+
+<p>Der standardmäßige Öffnungswert für Fenster beträgt 50 %, wobei Werte zwischen 0 % und 100 % verwendet werden können. Wenn Sie diesen Wert ändern, zeigt der Einfügedialog den zuletzt verwendeten Wert an.</p>
+
+<p>Zum Ändern des Öffnungsgrades eines Fensters bearbeiten Sie seinen Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> <img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen <img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+<br clear="all" />
+<h5>Vertikale Ausrichtung</h5>
+
+<p>Fenster können bezüglich der Grundkurve einer Wand mit zwei verschiedenen vertikalen Ausrichtungen eingefügt werden.</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Vertikale Ausrichtung unten"/></td>
+				<td><strong>Unten:</strong> Referenzdistanz zwischen der Grundkurve der Wand und der unteren Oberfläche des Fensters.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Vertikale Ausrichtung oben"/></td>
+				<td><strong>Oben:</strong> Referenzdistanz zwischen der Grundkurve der Wand und der oberen Oberfläche des Fensters.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>Die vertikale Ausrichtung ist keine Stileigenschaft. Der Wert wird beim Einfügen für jedes Objekt im Einfügedialog definiert.</p><br />
+<p>Zum Ändern der vertikalen Ausrichtung eines Fensters bearbeiten Sie den Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> <img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen <img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Höhe vom Boden</h5>
+
+<p>Die Höhe vom Boden eines Fensters wird immer unabhängig von der Ebene in Bezug zur Grundlinie der Wand gemessen, in die es eingefügt wurde. Nach Einfügen des Fensters gibt die Höhe vom Boden die Position desselben unabhängig von der zugehörigen Wand und Ebene auf der Z-Achse der Weltkoordinaten an. Die Höhe vom Boden ist keine Stileigenschaft. Der Wert wird beim Einfügen für jedes Objekt im Einfügedialog definiert.<br />
+Der standardmäßige Höhenwert für Fenster ist 0. Wenn Sie diesen Wert ändern, zeigt der Einfügedialog den zuletzt verwendeten Wert an.</p>
+
+<p>Zum Ändern der Höhe vom Boden eines Fensters bearbeiten Sie den Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> <img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen <img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>

@@ -1,0 +1,114 @@
+<h3>Objekteigenschaften (in den Rhino-Eigenschaften) <img alt="Eigenschaften" height="32" src="../images/properties icon.jpg" width="32"/></h3>
+
+
+<div>
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/COLUMN/Column Properties panel.png" alt="VisualARQ-Eigenschaften für das Stützenobjekt im Dialogfenster der Rhino-Eigenschaften."/><br/>
+		VisualARQ-Eigenschaften für das Stützenobjekt<br />
+		 im Dialogfenster der Rhino-Eigenschaften.</p>
+	</div>
+	
+	<div class="leftBorder">
+		<p>Außer im Dialogfenster "Objekteigenschaften" können Sie die Eigenschaften eines VisualARQ-Objekts auch im Bereich der VisualARQ-Eigenschaften bearbeiten. <img alt="Icon Eigenschaften"  src="../images/properties icon.jpg" height="24" width="24"/> (auch aus dem Rhino-Menü <strong>Bearbeiten &gt; Objekteigenschaften...<br />
+		</strong>Dieser Bereich ist in die Rhino-Eigenschaften integriert, wird aber nur angezeigt, wenn Sie ein VisualARQ-Objekt auswählen.</p>
+
+		<p>Die in diesem Abschnitt verfügbaren Parameter sind nicht die gleichen für alle VisualARQ-Objekte. Dieses Beispiel zeigt die Parameter des Stützenobjekts, die bearbeitet werden können.</p>
+		<p>Vom Abschnitt der VisualARQ-Eigenschaften aus können Sie die Parameter des ausgewählten VisualARQ-Objekts bearbeiten, die nicht von einem bestimmten Stil abhängig sind.</p>
+		
+		<p>Die in diesem Abschnitt erhältlichen Parameter hängen vom ausgewählten Objekttyp ab und sind die gleichen, wie jene im Dialogfenster der Objekteigenschaften.</p>
+
+		</div>
+</div>
+<br clear="all"/>
+
+<h5>Allgemein</h5>
+<ul>
+	<li><strong>Name:</strong> Der Name des ausgewählten Objekts.</li>
+	<li><strong>Beschreibung: </strong>Die Beschreibung des ausgewählten Objekts.</li>
+	<li><strong>Stil:</strong> Die Liste der verfügbaren Objektstile in den VisualARQ-Objektbibliotheken sowie die neu vom Anwender erstellten Stile.</li>
+	<li><strong>Seriennummer: </strong>Die Seriennummer des ausgewählten Objekts.</li>
+</ul>
+
+<h5>Anzeige</h5>
+<ul>
+	<li><strong>Dichte der Isokurve:</strong> Definiert die Anzahl isoparametrischer Kurven, die Rhino auf der Fläche zeichnet.</li>
+	<li><strong>Plansichtbarkeit:</strong> Zum Anzeigen bzw. Verbergen eines Objekts in der Planansicht abhängig von seiner Position bezüglich der Schnittebene einer Etage.</li>
+		<ul>
+			<li><strong>Ausgeblendet:</strong> Das Objekt wird unabhängig von seiner Größe und Position nicht angezeigt.</li>
+			<li><strong>In Schnittebene:</strong> Das Objekt wird nur angezeigt, wenn es in der Schnittebene liegt.</li>
+			<li><strong>Unter Schnittebene:</strong> Das Objekt wird angezeigt, wenn es in der Schnittebene oder darunter liegt.</li>
+			<li><strong>Über Schnittebene:</strong> Das Objekt wird angezeigt, wenn es in der Schnittebene oder darüber liegt.</li>
+			<li><strong>Innerhalb von Etage:</strong> Das Objekt wird unabhängig von seiner Größe und Position immer angezeigt, wenn es sich innerhalb einer Etage befindet.</li>
+		</ul>
+		
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/Plan Visibility.png" alt="Plansichtbarkeit." width="450" height="247"/><br/>
+		Plansichtbarkeit.</p>
+	</div>
+<br clear="all"/>
+
+	<p>Je nach ausgewählter Plansichtbarkeit würden in obigem Beispiel unterschiedliche Fenster angezeigt:</p>
+		<ul>
+			<li><em>Ausgeblendet:</em> Nichts.</li>
+			<li><em>In Schnittebene:</em> Fenster <strong>2.</strong></li>
+			<li><em>Unter Schnittebene</em>: Fenster <strong>2</strong> und <strong>3.</strong></li>
+			<li><em>Über Schnittebene:</em> Fenster <strong>1</strong> und <strong>2.</strong></li>
+			<li><em>Innerhalb von Etage: Fenster </em> <strong>1, 2</strong> und <strong>3.</strong></li>
+
+		</ul>
+</ul>
+<br/>
+
+<h5>Standort</h5>
+<ul>
+	<li><strong>Einfügungspunkt:</strong> Die Koordinaten, an denen ein Objekt eingefügt wird.</li>
+	<li><strong>Einfügungsmarkierung</strong> (nur für Stützen): Bestimmt die Anzeige und den Typ der Einfügungsmarkierung.</li>
+</ul>
+
+<h5>Geometrie</h5>
+<ul>
+	<li><strong>Höhe:</strong> Bestimmt die Höhe des Objekts. Dieser Wert kann unabhängig vom Objektstil geändert werden. Bei Wänden und Stützen kann die Höhe auch durch den Stil definiert werden.</li>
+	<li><strong>Profil: </strong> Beschreibung des Objektprofils.</li>
+	<li><strong>Breite/Höhe:</strong> Die Abmessungen des Objekts.</li>
+	<li><strong>Schnitttiefe</strong> (nur verfügbar für Türen, Fenster und Öffnungen): Bestimmt den maximalen Tiefenabstand beim Schnitt eines Öffnungsprofils mit einer Wand.</li>
+</ul>
+
+<h5>Öffnung </h5>
+<p>(nur verfügbar für Türen und Fenster)</p>
+<ul>
+	<li><strong>Öffnung (%):</strong> Der Öffnungsgrad in Prozent gibt an, wie offen oder geschlossen Fenster- und Türblätter in Plan- und perspektivischer Ansicht angezeigt werden.</li>
+	<li><strong>Öffnungsseite:</strong> Öffnungsrichtung der Tür oder des Fensters.</li>
+</ul>
+
+
+<h5>Profil</h5>
+<p>(nur verfügbar für Balken und Stützen)</p>
+<ul>
+	<li><strong>Rollen/Rotation: </strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Rotation des Objektprofils</span>.</li>
+	<li><strong>Ausrichtung:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Einfügeposition des Objekts gemäß seines Profils</span>.</li>
+	<li><strong>Ausrichtungsversatz:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">Abstand von der Ausrichtungsposition</span>. </li>
+</ul>
+
+<h4>Die Schaltfläche "Mehr..."</h4>
+<p>Im unteren Bereich des Dialogfensters befindet sich die Schaltfläche "Mehr...", über die Sie einige der wichtigsten Optionen für das gewählte Objekt schnell erreichen. Diese Optionen sind ähnlich denen des <a href="Interface_Context.html">Kontextmenüs</a> eines bestimmten Objekts.</p>
+<ul>
+	<li>Löschen</li>
+	<li>Duplizieren</li>
+	<li>Objekte isolieren</li>
+	<li>Objekte ausblenden</li>
+	<li>Objekte sperren</li>
+	<li>Kontrollpunkte ein</li>
+	<li><a href="Commands_vaWallReverse.html">Umkehrung</a> (nur für Wände)</li>
+	<li>Auswählen</li>
+	<li><a href="Commands_vaUpdate.html">Aktualisieren</a></li>
+	<li><a href="Interface_StyleProperties.html">Stileigenschaften</a></li>
+	<li><a href="Interface_ObjectProperties.html">Eigenschaften</a></li></ul>

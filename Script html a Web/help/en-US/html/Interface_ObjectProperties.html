@@ -1,0 +1,124 @@
+<h3>Object Properties</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaProperties</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Object Properties"/> left click
+	[<a href="Interface_StyleProperties.html" title="Style Properties">right 
+		click</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="VisualARQ Tools Toolbar" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Properties &gt; Object Properties...</div>
+	
+	<div class="field">Shortcut: </div>
+	<div class="value menu">Select the object &gt; Double-click</div>
+
+	
+</div>
+
+<p>When you run the <strong>vaProperties</strong> command, the <strong>Object Properties
+</strong>dialog box appears.
+This dialog box can be used to edit the properties of the selected objects, regardless of the properties of their specific style.</p>
+
+<h3>How is this dialog organized?</h3>
+<p>The Object Properties dialog box is divided in three areas:</p>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Stair/Object%20Properties%20-%20stair.png" alt="Object Properties dialog box, object properties of a stair." /><br/>
+Object Properties dialog box, stair object properties.</p>
+
+<ol>
+	<li>The top left panel shows the list of objects selected when running the 
+	command.</li>
+	<li>The lower left panel shows the selected object preview. You can set the following display options for this preview window at 
+	the toolbar located at the top of the dialog:
+		<ul>
+			<li>
+			<img alt="Preview window On" height="26" src="../images/Preview%20on.jpg" width="26" /> Option to 
+			show or hide the <strong>Preview </strong>window.</li>
+			<li><img alt="Preview in plan view on" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Option to display the object in Plan or Perspective 
+			view.</li>
+		</ul> 
+	The preview can be modified with the mouse, similar to the method used in Rhino views:
+
+<ul>
+	<li><em>Right mouse button</em>: you can rotate the viewpoint to display the model from different points.</li>
+	<li><em>Ctrl + Right mouse button</em>: you can zoom in or out to expand or reduce the field of view.</li>
+	<li><em>Shift + Right mouse button</em>: you can move the viewpoint parallel to the plane of vision; upwards, downwards, right or left.</li>
+</ul>
+</li>
+	<li>This area shows the different properties or parameters you can 
+	edit for each object selected. This area includes several tabs, which can 
+	vary depending on the object type.</li>
+</ol>
+
+
+<h3>Edit the object properties</h3>
+
+<p>To edit an object, select it from the list and edit its properties from the tabs in the right panel.</p>
+<h4>Tabs</h4>
+
+<ul>
+	<li><strong>Style</strong><br />
+	All objects using dialog boxes will have this tab. It is used to assign a style to the selected 
+	object.</li>
+
+	<li><strong>Location</strong><br />
+		All objects using dialog boxes will have this tab. It is used to define the position parameters of each object.<br />
+		<br />
+		
+		Object location parameters for the Wall, 
+	Curtain Wall, Railing and Stair object:
+		<ul>
+			<li>Alignment (left/center/right)</li>
+		</ul>
+		
+		Object location parameters for the Column 
+	and the Beam object: 
+		<ul>
+			<li>Alignment (insert point in the section profile geometry)</li>
+			<li>Insert mark (only in columns)</li>
+			<li>Offset (in x/y, from the insertion point)</li>
+		</ul>
+		
+		Object location parameters for the Door, 
+	Window and Opening object:
+		<ul>
+			<li>Alignment (interior/center/exterior, from the wall)</li>
+			<li>Elevation (from the wall)</li>
+		</ul>
+			
+	</li>
+	
+	<li><strong>Geometry</strong><br />
+		Walls, 
+	curtain walls, columns and stairs have this tab. This tab will be used to define the geometric values (sizes) of each object.<br />
+		<ul>
+			<li>Width</li>
+			<li>Height</li>
+		</ul>
+	</li>
+	
+	<li><strong>Profile</strong><br />
+	Beams, columns, doors, windows and openings (objects that use a profile) have this tab. It is used to define the 
+	sizes of  the profile used.</li>
+
+	<li><strong>Intersections</strong><br />
+	Walls have this tab. It is used to define the Cleanup Radius value and the Maximum Extension value for the Wall object.</li>
+
+	<li><strong>Opening</strong><br />
+	Doors and windows have this tab. It is used to define the Opening percentage value.</li>
+	
+	<li><strong>Steps</strong><br />
+Only stairs have this tab. It is used to define the value and number of steps (Tread and Riser).</li>
+	<li><strong>Mark</strong><br />
+	Only sections have this tab. It is used to change the reference text of the section mark.</li>
+	
+</ul>

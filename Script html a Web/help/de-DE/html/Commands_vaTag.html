@@ -1,0 +1,55 @@
+<h3>Beschriftung</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaBeschriftung</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon">
+		<img alt="Beschriftung" height="24" src="../images/VA_Tag.png" width="24" /> Linksklick [<a href="Commands_vaTagStyles.html" title="Beschriftungsstile">Rechtsklick</a>]</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Dokumentation</a>: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Werkzeugleiste VisualARQ-Dokumentation" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Beschriftung &gt; Beschriftung</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaTag.wmv" preview="../images/previews/vaTagvideo.png" width="300px" height="300px"></div>
+
+<p>Mit dem Befehl <strong>Beschriftung</strong> können Sie den VisualARQ-Objekten Etiketten mit speziellen Referenztexten zuweisen.</p>
+<p>Vor Ausführung des Befehls muss das Beschriftungsfeld des Objekts muss ausgefüllt werden. Sie können das Beschriftungsfeld eines VisualARQ-Objekts in den <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> (in den Rhino-Eigenschaften <img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />) im Abschnitt <em>Allgemein</em> ausfüllen. </p>
+
+<p>Durch Ausführen des Befehls wird das Einfüge-Dialogfenster für <strong>Beschriftungen</strong> geöffnet. Folgen Sie den Schritten in der Befehlszeile. Bestätigen Sie mit ENTER oder der rechten Maustaste und gehen Sie zum nächsten Schritt.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tag insert dialog.png" alt="Einfügedialog Beschriftung"/><br/>
+	Einfügedialog Beschriftung</div>
+<br clear="all" />
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie im Einfügedialog einen <strong>Beschriftungsstil</strong> aus.</li>
+	<li>Wählen Sie die zu beschriftenden <strong>Objekte</strong> aus.</li>
+</ol>
+<p>Die Beschriftung wird automatisch neben dem ausgewählten Objekt erzeugt. 
+</p>
+<h4>Beschriftungskontrollpunkte</h4>
+<p>Beschriftungen haben keine Kontrollpunkte. Sie können unabhängig von der Position Ihrer Referenzobjekte verschoben werden. Beim Verschieben der Referenzobjekte werden auch die Beschriftungen automatisch verschoben und behalten ihre relative Position, falls diese nicht als fest eingestellt sind. </p>
+<h4>Löschen einer Beschriftung</h4>
+<p>Zum Löschen einer Beschriftung wählen Sie diese einfach aus und löschen Sie sie.</p>
+
+<h4>Beschriftungsparameter</h4>
+Folgende Parameter können für Beschriftungen definiert werden, nachdem sie erzeugt wurden. Diese Option kann nur in den <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> (im Panel der Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />) verändert werden). 
+<ul>
+<li><strong>Stil</strong>: Der Stil bestimmt die Attribute der Beschriftungen.</li>
+	<li><strong>Position</strong>: Die Weltkoordinaten der Beschriftung.</li>
+	<li><strong>Feste Position</strong>: Mit dieser Option können Sie die Position der Beschriftung an der gewünschten Stelle fixieren, die sich auch beim Verschieben des Referenzobjekts nicht ändert.</li>
+	<li><strong>Format</strong>: Das Textformat der Beschriftung. Mit der Formel "<strong>%&lt;element.tag&gt;%</strong>" können Sie Text vor und/oder nach dem Referenztext der Beschriftung hinzufügen.
+	<ul>
+		<li>Geben Sie beispielsweise für eine Tür mit dem Referenztext <em>"D3"</em> die Formel <em>
+		"Tür %&lt;element.tag&gt;%"</em> ein, um schließlich als Beschriftung <em>"Tür D3"</em> zu erhalten.</li>
+	</ul>
+	</li>
+</ul>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tags.png" alt="Beschriftete Tür und Wand" /><br/>
+	Beispiel für Beschriftungen</div>
+<br clear="all" />
+

@@ -1,0 +1,200 @@
+<h3>Modifica livelli (piani)</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaLivelli</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_FloorManager.jpg" alt="Gestore dei livelli"/>clic sinistro
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html#VisualARQToolsToolbar">Strumenti</a>:</div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Barra Strumenti di VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Livelli &gt; Modifica livelli</div>
+</div>
+	
+<p>Il comando <strong>vaLivelli</strong> apre la finestra di dialogo ancorabile del <strong>Gestore dei livelli</strong>, da cui si possono creare, eliminare e modificare costruzioni e livelli.</p> 
+<p> Dalla finestra di dialogo del <strong>Gestore dei livelli</strong> si può esercitare un controllo sul 
+<strong>PianoC</strong> (piano di costruzione), sulla <strong>visibilità</strong> e sui valori di <strong>Elevazione</strong> e <strong>Piano di taglio
+</strong> di ciascun livello.</p>
+<p>La finestra di dialogo del <strong>Gestore dei livelli</strong> si suddivide in due parti:
+<ul>
+	<li>Una barra degli strumenti con le seguenti opzioni: <strong>Nuova costruzione, Nuovo livello, Elimina </strong>e<strong> Visualizzazione del piano di taglio</strong>.</li>
+	<li>L'elenco delle costruzioni e dei livelli e le loro proprietà: <strong>PianoC
+	</strong>(piano di costruzione), <strong>Visibilità on/off</strong>, <strong>Visibilità della vista in pianta</strong>, valore di <strong>Elevazione</strong>, valore di <strong>Altezza del piano di taglio</strong>, valori di <strong>Offset superiore</strong> ed <strong>Offset inferiore</strong>.</li>
+
+</ul>
+</p>	
+
+<p class="figureWithDescription"><img src="../images/Level Manager.png" alt="Finestra di dialogo Gestore dei livelli"/><br/>
+Finestra di dialogo Gestore dei livelli.</p>
+<br/>
+<p class="figureWithDescription"><img src="../images/Levels.png" alt="Parti e parametri del livello 1"/><br/>
+Parametri del livello "1":
+<ul>
+<li><strong>L0</strong>: Elevazione del livello "0" e posizione del PianoC del livello 0</li>
+<li><strong>L1</strong>: Elevazione del livello "1" e posizione del PianoC del livello 1</li>
+<li><strong>L2</strong>: Elevazione del livello "2" e posizione del PianoC del livello 2 (e limiti superiori del livello 1)</li>
+<li><strong>C.P</strong>: Altezza del piano di taglio del livello 1</li>
+<li><strong>T.O</strong>.: Distanza di offset superiore del livello 1</li>
+<li><strong>B.O</strong>.: Distanza di offset inferiore del livello 1</li>
+
+</ul></p>
+
+<h5>Nuova costruzione</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Building.jpg" alt="Nuova costruzione"/></td>
+	<td>Crea delle nuove costruzioni da cui si possono aggiungere dei nuovi livelli. Ciascuna costruzione ha il suo proprio valore di elevazione ed i valori di elevazione dei livelli in essa contenuti sono relativi a quella costruzione.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Nuovo livello</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Level.jpg" alt="Nuovo livello"/></td>
+	<td>Aggiunge un nuovo livello alla costruzione selezionata. Il nuovo livello verrà creato automaticamente sopra il livello esistente e, di default, avrà lo stesso valore di elevazione del livello sottostante. È necessario creare un elemento costruzione per creare dei livelli.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Elimina</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Delete.jpg" alt="Elimina"/></td>
+	<td>Elimina il livello o la costruzione specificati. Ciò non influisce sugli oggetti di Rhino e VisualARQ contenuti all'interno del livello eliminato o della costruzione eliminata. Essi rimangono nello stesso posto.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Piano di taglio</h5>
+<p>Il <strong>Piano di taglio</strong> rappresenta un <em>piano di sezione</em> 
+<em>orizzontale</em> presente in ogni livello e situato ad un'altezza specifica dall'elevazione di ciascun livello. Il pulsante del piano di taglio attiva o disattiva il <strong>Piano di taglio</strong> del livello selezionato, nella vista attiva. Per attivare lo stato del <strong>
+Piano di taglio</strong> occorre creare una costruzione ed un livello.</p>
+<p>Quando il piano di taglio viene attivato per un determinato livello nella vista attiva, <em>
+tutto ciò che si trova al di sopra del piano di taglio di quel livello NON sarà visibile. </em></p>
+<p>Quando il piano di taglio viene attivato nelle <em>viste Superiori</em>, gli oggetti di VisualARQ (porte, finestre, scale, ecc.) vengono mostrati in modalità di rappresentazione grafica 2D.</p>
+<br/>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Piano di taglio attivo"/></td>
+	<td><strong>Piano di taglio attivo</strong>: la vista mostra il livello in sezione secondo la posizione del suo piano di taglio.</td>
+</tr>
+
+<tr>
+	<td valign="top" style="height: 28px"><img align="left" src="../images/Cut Plane Off.jpg" alt="Piano di taglio disattivato"/></td>
+	<td style="height: 28px"><strong>Piano di taglio disattivato</strong>: la vista mostra tutto il livello (secondo il suo stato di visibilità On/Off).</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane Dis.jpg" alt="Piano di taglio disabilitato"/></td>
+	<td><strong>Piano di taglio disabilitato</strong>: occorre selezionare un livello per abilitare lo stato del relativo piano di taglio.</td>
+</tr>
+
+</table>
+</div>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane On.jpg" />
+<br/>
+Vista del livello 0 e del livello 1 con il piano di taglio sul livello 1 attivo.</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane Off.jpg" />
+<br/>
+Vista del livello 0 e del livello 1 con il piano di taglio sul livello 1 disattivato. (Visualizzazione del livello 2 disattivata)</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 only.jpg" />
+<br/>
+Vista del solo livello 1 con il piano di taglio disattivato. (Visualizzazione dei livelli 0 e 2 disattivata)</p><br/>
+
+
+<h5>PianoC</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/CPlane.jpg" alt="PianoC"/></td>
+	<td>Il PianoC (piano di costruzione) determina l'elevazione del piano da cui si sta lavorando. Cliccare sull'icona del piano di costruzione di un livello qualsiasi per spostare il piano di costruzione sull'elevazione di quel livello nella vista attiva.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>On/Off</h5>
+<p>
+Lo stato di visibilità On/Off di un livello mostra o nasconde gli oggetti (o parti di essi) situati tra l'elevazione del livello corrente e l'elevazione del livello superiore (tenendo conto dei valori di offset superiore ed inferiore).</p>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/On.jpg" alt="On"/></td>
+	<td>Il livello è visibile ed è possibile visualizzarne gli oggetti o parti di essi.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Off.jpg" alt="Off"/></td>
+	<td>Il livello non è visibile e non è possibile visualizzarne gli oggetti o parti di essi.</td>
+</tr>
+</table>
+</div>
+<p><strong>Nota</strong>: i livelli intermedi non si possono nascondere singolarmente. Quando si nasconde un livello intermedio, vengono nascosti automaticamente anche i livelli ad esso sottostanti.</p>
+
+<h5>Vista in pianta On/Off</h5>
+<p>La vista in pianta mostra la rappresentazione 2D di qualsiasi livello, nel piano di costruzione della vista attiva. Questa rappresentazione 2D non si può modificare e mostra solo gli oggetti in sezione che si trovano nel livello selezionato, secondo la posizione del piano di taglio in quel livello.</p>
+<p><div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View on.jpg" alt="Vista in pianta attivata"/></td>
+	<td>La rappresentazione 2D del livello selezionato è visibile nel piano di costruzione della vista attiva.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View off.jpg" alt="Vista in pianta disattivata"/></td>
+	<td>La rappresentazione 2D del livello selezionato non è visibile nel piano di costruzione della vista attiva.</td>
+</tr>
+</table>
+</div>
+</p>
+
+
+
+<h5>Imposta come piano corrente</h5>
+<p>Per impostare un livello specifico come piano corrente nella vista attiva, 
+<strong>fare doppio clic sul nome del livello</strong>. Ciò sistemerà automaticamente il PianoC sul livello selezionato ed attiverà questo livello nel caso esso fosse nascosto.</p>
+
+<h5>Elevazione</h5>
+<p>Il valore di elevazione indica l'altezza base di ciascuna costruzione o ciascun livello e la posizione di un piano di costruzione rispetto a ciascuna costruzione o ciascun livello. Determina quale parte del modello corrisponde a ciascun livello. <em>I valori di elevazione sui livelli</em> sono relativi all'altezza di elevazione della costruzione. Il valore di <em>elevazione della costruzione</em> viene misurato lungo l'asse z del documento.</p>
+
+<p class="figureWithDescription">
+<img alt="Contrassegni delle elevazioni" src="../images/Left View 400.jpg" /><br/>
+Il contrassegno di elevazione del livello corrente appare evidenziato.</p>
+
+<h5>Altezza del piano di taglio</h5>
+<p>Il piano di taglio determina l'elevazione in corrispondenza della quale si realizza la <em>sezione orizzontale</em> di ciascun piano; ciò significa che vengono rappresentati solo gli oggetti che si trovano in corrispondenza di tale elevazione o al di sotto di essa.</p>
+
+
+
+<p><strong>NOTA:</strong> Quando una finestra viene impostata sulla modalità vista in pianta di VisualARQ, la modalità di visualizzazione passa ad essere "nascosta" e cambia la finestra della vista <strong>Superiore</strong><em> </em>. Finché la modalità di visualizzazione in pianta è attivata, la finestra mostrerà qualsiasi modalità di visualizzazione selezionata, anche se si cambia di livello.</p>
+
+<h5>Offset superiore</h5>
+<p>L'offset superiore determina il valore secondo cui il limite superiore di un livello viene aumentato o diminuito quando si nascondono interi livelli. Ciò è particolarmente utile quando si nasconde la parte superiore di un edificio e si desidera nascondere anche il solaio superiore dell'ultimo livello visualizzato. Questo valore è irrilevante per il livello superiore di un edificio ed ha effetto solo sulle viste con il piano di taglio disattivato.</p>
+<h5>Offset inferiore</h5>
+
+<p>L'offset inferiore determina il valore secondo cui il limite inferiore di un livello viene aumentato o diminuito quando si nascondono interi livelli. Ciò è particolarmente utile quando si nasconde la parte inferiore di un edificio e si desidera nascondere anche il solaio inferiore dell'ultimo livello visualizzato. Questo valore è irrilevante per il livello inferiore di un edificio ed ha effetto solo sulle viste con il piano di taglio disattivato.</p>
+
+
+
+	

@@ -1,0 +1,70 @@
+<h3>Sección</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaSección</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon">
+		<img alt="Sección" height="24" src="../images/VA_Section.jpg" width="24" /> clic izquierdo [<a href="Commands_vaSectionStyles.html" title="Estilos de sección">clic derecho</a>]</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentación</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra de herramientas Herramientas de documentación de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Sección &gt; Sección</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionMark.wmv" preview="../images/previews/vaSectionvideo.png" width="300px" height="300px"></div>
+
+<p>El comando <strong>vaSección</strong><em></em> se utiliza como primer paso para crear un dibujo 2D que representa los objetos en 3D proyectados en un plano y también para visualizar una sección dinámica del modelo 3D en tiempo real.</p>
+
+<p>Al ejecutar el comando <strong>vaSección</strong>, está creando la 
+<strong>línea de corte de sección</strong> que representa el plano de corte vertical desde el que podrá generar la <strong>vista en sección</strong> y, posteriormente, la <strong>sección dinámica</strong>. Cuando ejecute el comando, aparecerá el cuadro de diálogo de inserción de 
+<strong>Sección</strong>. Siga los pasos que se indican en la línea de comandos<em>.</em> Pulse el botón derecho del ratón o INTRO para aceptar y pasar al siguiente paso.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section mark insert.png" alt="Diálogo de inserción de sección" /><br/>Diálogo de inserción de sección</div>
+<br clear="all" />
+
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Especifique un <strong>estilo de sección</strong> desde el cuadro de diálogo de inserción.</li>
+	<li>Especifique el <strong>primer punto</strong> de la línea de corte de la sección.</li>
+	<li>Especifique los <strong>siguientes puntos</strong> de la línea de corte de la sección seleccionando los puntos deseados en la pantalla con un clic izquierdo. Haga clic con el botón derecho para finalizar este paso.</li>
+	<li>Especifique la <strong>posición del observador</strong> y la <strong>longitud de la sección</strong> colocando el cursor del lado de la línea que sea opuesto al objetivo y pulse el botón izquierdo del ratón. La longitud de sección determinará los objetos que se incluirán en la 
+	<strong>vista en sección</strong> y la <strong>sección dinámica</strong>. </li>
+	<li>Introduzca el <strong>texto de referencia de la sección</strong> en la línea de comandos.</li>
+</ol>
+
+<p>Después de insertar la sección, puede crear una <a href="Commands_vaSectionView.html">
+<strong>vista en sección</strong> <img alt="Sección" height="24" src="../images/VA_SectionView.png" width="24" /></a> a partir de la marca, o bien activar la <a href="Commands_vaDynamicSection.html"><strong>sección dinámica </strong><img alt="Sección" height="24" src="../images/VA_DynamicSection.png" width="24" /></a>.</p>
+<h4>Agregar y quitar quiebres a una sección</h4>
+	<ul>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">SecciónAgregarQuiebre y SecciónQuitarQuiebre</div>
+
+		<div class="field"><a href="Interface_Context.html">Menú contextual</a>: </div>
+	<div class="value context">Línea de corte de sección &gt; Sección &gt; Agregar quiebre a sección o Quitar quiebre de sección</div>
+</div>
+</ul>
+<p>Opción para agregar o quitar puntos de quiebre a una línea de corte de sección.</p>
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Designe todos los puntos de quiebre que desee agregar/quitar en la línea de corte de sección. Haga clic con el botón derecho para finalizar el comando.</li>
+</ol>
+<p>Se agregarán o quitarán nuevos puntos de quiebre en la línea de corte de sección. Para ver esos nuevos puntos, seleccione la línea de corte de sección y active sus puntos de control.</p>
+<h4>Puntos de control <img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/section control points.png" alt="Puntos de control en marca de sección" width="400" height="240"  style="float: right;"/>
+<p>La línea de corte de sección tiene cinco puntos de control:<br />
+<ol>
+	<li>Puntos de control de <strong>borde</strong>. Punto de inserción inicial y final.</li>
+	<li>Puntos de control de <strong>longitud de sección</strong>.</li>
+	<li><strong>Puntos de quiebre de sección</strong>.</li>
+	<li>Puntos de control de <strong>posición del observador</strong>.</li>
+	<li>Puntos de control de <strong></strong><strong>texto de referencia de sección</strong>.</li>
+</ol>
+</p>
+<p>Para modificar la posición del observador, desplace o rote manualmente la línea de corte hasta alcanzar la posición deseada utilizando sus puntos de control. Los cambios se actualizan de forma automática (en tiempo real).</p>
+<p>Para actualizar la sección, tras realizar algún cambio sobre cualquiera de los objetos seccionados, seleccione la línea de corte o el dibujo 2D de la sección y pulse el icono <a href="Commands_vaUpdate.html">Actualizar</a> 
+<img alt="vaActualizar" height="26" src="../images/VA_Update.jpg" width="26" />. Este icono se encuentra dentro de la barra de herramientas <a href="Interface_Toolbars.html">Herramientas de VisualARQ</a>.</p>
+
+<p><strong>NOTA: </strong> Solo los objetos contenidos dentro del área de la sección delimitada por los puntos de inserción y los puntos de longitud de sección se mostrarán en la sección dinámica y en la vista en sección.</p>

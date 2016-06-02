@@ -1,0 +1,40 @@
+<h3>Prospetto di porte e finestre</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaProspettoPorteFinestre</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_OpeningElevation.jpg" alt="Prospetto di porte e finestre"/> clic sinistro
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">
+		Documentazione</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra degli strumenti Documentazione di VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Prospetto di porte e finestre &gt; Prospetto di porte e finestre</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaOpeningElevation.wmv" preview="../images/previews/vaOpeningElevationvideo.png" width="300px" height="300px"></div>
+
+<p>Questo comando genera rappresentazioni 2D delle elevazioni (o alzati) delle varie aperture presenti nel modello.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare le <strong>porte</strong> e le <strong>finestre</strong> da cui si desidera ricavare il prospetto. Il comando filtra la selezione automaticamente, in modo tale da rilevare solo gli oggetti porte e finestre.</li>
+	<li>Specificare un <strong>punto iniziale</strong> ed un <strong>punto finale</strong> di inserimento.</li>
+</ol>
+<p>Il comando termina quando viene inserito il disegno 2D di ciascuna apertura selezionata, con i rispettivi riferimenti. Nella vista in pianta si mostreranno questi stessi riferimenti, identificando in tal modo l'ubicazione di ciascun tipo di porta e finestra all'interno del modello.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningsSelect.png" alt="Selezione delle aperture (filtro)" width="250" height="245" /><br/>Selezione delle aperture (filtro)</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevations.png" alt="Riferimenti delle aperture del modello" width="250" height="245"/><br/>Riferimenti delle aperture del modello</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevZoom.png" alt="Prospetti quotati di porte e finestre " width="500" height="150"/><br/>Prospetti di porte e finestre quotati, con i relativi riferimenti a ciascuna apertura del modello</div>
+<br clear="all" />
+
+<p><strong>NOTA: </strong> Per tutte le aperture (porte o finestre) identiche in tutte le loro caratteristiche (dimensioni, elevazione e verso di apertura), si creerà un unico disegno con un singolo riferimento.</p>
+
+<p>I prospetti di porte e finestre ed i loro riferimenti vengono creati di default sul livello <strong>Documentazione</strong>.<br/>
+Per nascondere i riferimenti, basta disattivare il livello in cui essi sono stati creati.<br/>
+Per eliminare i riferimenti, selezionare l'apertura che si desidera eliminare ed aprire la sezione delle <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino <img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). Cancellare il valore <strong>Testo riferimento</strong>
+ nella sezione 
+<strong>Riferimento</strong>.</p>
+

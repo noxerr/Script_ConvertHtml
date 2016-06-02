@@ -1,0 +1,97 @@
+<h3>Pilar</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaPilar</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Column.jpg" alt="Pilar"/> clic izquierdo  [<a href="Commands_vaColumnStyles.html" title="Comando vaPilarEstilos">clic derecho</a>]
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html">Objetos</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Pilar &gt; Pilar</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaColumn.wmv" preview="../images/previews/vaColumnvideo.png" width="300px" height="300px"></div>
+
+<p>Los pilares pueden insertarse dentro o fuera de un muro.<br />
+Cuando se insertan dentro de un muro, el contorno del pilar recorta automáticamente la línea del muro que lo atraviesa, para resolver la intersección entre ambos elementos (tanto en la vista Planta como en la vista Perspectiva).</p>
+
+<p>Cuando ejecute el comando <strong>vaPilar</strong>, aparecerá el 
+<a href="Interface_Dialog.html">cuadro de diálogo de inserción</a> de pilar. Este cuadro muestra una lista con los estilos de pilar disponibles, así como las opciones básicas del objeto pilar y una previsualización del mismo.</p>
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione el <strong>Estilo de columna</strong> que desea utilizar y defina las opciones básicas de inserción.</li>
+	<li>Seleccione el <strong>punto de inserción de la columna</strong><strong></strong> haciendo clic en el punto deseado.</li>
+	<li>Especifique la orientación del <strong>Pilar</strong><strong></strong> de forma manual, usando el cursor. Pulse nuevamente cuando el pilar esté colocado a su gusto.</li>
+</ol>
+
+<p>Puede seguir insertando pilares hasta que cancele el comando pulsando INTRO o ESC.</p>
+
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Column/col 1.png" alt="Cuadro de inserción del objeto Pilar."/><br/>
+Cuadro de inserción del Pilar
+</div>
+<br clear="all" />
+
+<h4>Puntos de control <img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Los pilares tienen un solo punto de control, que coincide siempre con su  punto de inserción. Este punto corresponde a la alineación elegida para el pilar al momento de insertarse.</p>
+
+<div class="figureWithDescription block"><img src="../images/column_scheme.png" alt="Puntos de control en pilares" width="50" height="50" /><br/>
+Puntos de control en pilares</div>
+<br clear="all" />
+
+<h4>Opciones y parámetros de inserción</h4>
+
+<h5>Alineación</h5>
+
+<p>
+La alineación del pilar determina la posición del punto de inserción del pilar de acuerdo con la forma del perfil.</p>
+<p>Opciones de alineación:</p>
+<ul>
+	<li>Superior izquierda, Superior centro, Superior derecha</li>
+	<li>Medio izquierda, Centro y Medio derecha</li>
+	<li>Inferior izquierda, Inferior centro y Inferior derecha</li>
+</ul>
+<p>Para modificar la alineación de un pilar, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="" height="26" src="../images/VA_Properties.jpg" width="26" /> o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Marca de inserción</h5>
+
+<p>Es la marca que se coloca en el punto de alineación y que señala la cara fija del pilar. La marca sólo se muestra cuando se activa la opción Marca de inserción. Es posible elegir entre las siguientes formas:</p>
+<ul>
+	<li>Circular</li>
+	<li>Triangular</li>
+</ul>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column insertion marks.png" alt="Pilares con distintos tipos de marcas de inserción." width="303" height="126" /><br />
+Pilares con distintos tipos de marcas de inserción
+</div>
+<br clear="all" />
+
+<p>Las marcas de inserción solo se representan en la vista Planta.<br />
+Para modificar la marca de inserción de un pilar, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="" height="26" src="../images/VA_Properties.jpg" width="26" /> o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Desfase</h5>
+<p>Muestra la distancia (desfase) desde los los puntos X y Y de la pilar hasta el punto de inserción.</p>
+
+<p>Para modificar el desfase de un pilar, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />, o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Icono Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Rotación</h5>
+<p>Este valor determina el ángulo en el que el pilar gira alrededor de su eje, tomando como centro de rotación su posición de alineación. </p>
+<p>La rotación del pilar solo puede editarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="icono de Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Reflejado</h5>
+<p>Cuando está activada, esta opción cambia la orientación del pilar y la imagen queda reflejada. </p>
+<p>Esta opción solo puede editarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="icono de Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+

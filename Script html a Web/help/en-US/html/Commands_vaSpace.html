@@ -1,0 +1,126 @@
+<head>
+<style type="text/css">
+.style2 {
+	color: #000000;
+}
+</style>
+</head>
+
+<h3>Space</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaSpace</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Space.jpg" alt="Space"/> left click
+	[<a href="Commands_vaSpaceStyles.html" title="Space Style command">right 
+		click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> 
+		toolbar:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="VisualARQ Documentation Tools Toolbar" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Space &gt;<li>From Point</li>
+			<li>From Curve</li>
+			<li>From Planar Surface</li>
+	</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaSpace.wmv" preview="../images/previews/vaSpacevideo.png" width="300px" height="300px"></div>
+
+<p>The space object represents the surface entity that displays the information (name, area, perimeter, etc.) of a space or room with a hatch pattern and 
+a label.</p>
+<p>A room is defined as any closed space delimited by walls and/or columns on all four sides. Walls and columns can be at different elevations, provided that they are part of the same floor.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>There are three options to create a space. These options display in the<em> </em> 
+	command line when you run the <strong>vaSpace</strong> command:</li>
+		<ul>
+			<li>Space made up of <strong>walls and/or columns </strong>(room): Left click inside the room for which you wish to calculate the area. </li>
+			<li>Space defined by a <strong>curve</strong>: Click on the<em> From<u>C</u>urve </em>command line 
+			option. Select a closed and planar curve.</li>
+			<li>Space defined by a <strong>surface</strong>: Click on the<em> FromPlanar<u>S</u>urface</em> command line 
+			option. Select a planar surface.</li>
+		</ul>
+	<li>The <strong>New Space</strong> dialog box will display. Enter the information 
+	for the selected space:</li>
+		<ul>
+			<li><strong>Name</strong></li>
+			<li><strong>Area type</strong>: Usable or Built</li>
+			<li><strong>Style</strong></li>
+		</ul>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Space/Space Insert.png" alt="Insert dialog box for the Space object." /><br />
+	Space insert dialog box</div>
+<br clear="all" />
+<p>A hatch pattern is inserted in the room marking the occupied area, with a label 
+containing the space name and its geometric features.</p>
+<p>You can create as many spaces as you wish and you can cancel the command by pressing ENTER or ESC.</p>
+
+<h4>Modify a space</h4>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaSpaceSetContour</div>
+</div>
+<p> </p>
+
+<p>A space can be modified with the <strong>vaSpaceSetContour</strong> command in three different ways:</p> 
+<ol>
+	<li>Select the <strong>space</strong> you wish to modify.</li>
+	<li>Select a <strong>new point</strong> (inside a room) to insert the space, or select one of the command options displayed in the command line: 
+	<strong>From</strong><u><strong>C</strong></u><strong>urve</strong> or 
+	<strong>FromPlanar</strong><u><strong>S</strong></u><strong>urface</strong>.</li>
+</ol>
+<p class="style2">The space is modified while maintaining its properties. </p>
+<p><strong>NOTE: </strong>The spaces made up of walls and/or columns can be moved <em>manually</em> with the cursor inside other rooms. They can also be <em>updated</em> after making a change in their original walls and/or columns with the <a href="Commands_vaUpdate.html" title="vaUpdate">vaUpdate</a> command
+<img alt="vaUpdate" height="26" src="../images/VA_Update.jpg" width="26" />.</p>
+
+<h4>Control points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/assistants/Space/Space Control Points.png" alt="Control points on spaces" width="250" height="170"  style="float: right;"/>
+<p>Spaces have two control points:<br />
+<ol>
+	<li>Insertion point for the <strong>hatch pattern</strong> that marks the space.</li>
+	<li>Insertion point for the <strong>label</strong><em>.</em></li>
+</ol>
+</p>
+<p><strong>NOTE:</strong> All space control points are used to move it (they do not scale it).</p>
+<p>To move a space to a new room, select the space (hatch pattern and label) and drag it to the new room.</p>
+<p>To move the space label, enable the space control points and move the label control point to the desired point.</p>
+
+<h4>Insertion Options and Parameters</h4>
+
+<p> The Space insert dialog box includes the options to choose the space:
+<strong>Name</strong>, <strong>Area type</strong> and <strong>Style</strong>.</p>
+<p> The parameters that define the features of a space correspond to a <strong>Space style</strong>, 
+although they can be modified regardless of the style in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+
+<h5>Name</h5>
+
+
+
+<p>The name of a space is used to distinguish it from all others and state its functionality.</p>
+<p>To modify the name of a space, enter the object properties dialog box of the space and left click 
+on the name.</p>
+
+<h5>Area type</h5>
+
+<p>There are two types of space areas:</p>
+<ul>
+	<li><strong>Usable:</strong> Area occupied by a room (or building), excluding the thickness of walls.</li>
+	<li><strong>Built:</strong> Area delimited by the outer limits of the plan construction.</li>
+</ul>
+<p>To modify the area type of a space, delete the space and create a new one, selecting the desired area.</p>
+
+<h5>Height</h5>
+<p>The space object has a height value which determines the volume of the room. 
+This value can be changed 
+in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

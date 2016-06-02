@@ -1,0 +1,131 @@
+<h3>Apertura</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaApertura</div>
+		
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Apertura &gt; Apertura</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaopening.wmv" preview="../images/previews/vaOpeningvideo.png" width="300px" height="300px"></div>
+
+<p>Le operazioni richieste per le aperture, così come il loro comportamento, sono identiche a quelle delle finestre.<br />
+Le aperture si possono inserire solo in un muro. Entrambi gli elementi sono vincolati e l'apertura viene generata automaticamente nel punto in cui essa viene inserita nel muro.</p>
+
+<p>Quando si esegue il comando <strong>vaApertura</strong>, appare la 
+<a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> delle aperture. Questa finestra mostra l'elenco di tutti gli stili di aperture disponibili, così come le opzioni di base dell'oggetto apertura ed un'anteprima dello stesso.</p>
+<p>I passi da seguire per inserire un'apertura in un muro dipendono dalle opzioni di inserimento selezionate.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare lo <strong>stile di apertura</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Per l'inserimento dell'apertura all'interno di un muro, sono disponibili due opzioni:</li><br />
+		<ul>
+			<li><strong>Offset:</strong> Inserire l'apertura ad una distanza determinata (offset), partendo dall'estremo più prossimo del muro in cui si inserisce l'apertura. Specificare il verso di apertura spostando il cursore; il comando lo calcola automaticamente secondo la posizione del cursore. Fare clic per inserire l'apertura.</li>
+			<li><strong>Punto di inserimento:</strong> Inserire l'apertura in qualsiasi parte del muro. Fare clic per inserire l'apertura nel punto desiderato.</li>
+		</ul>
+	<li>Specificare il <strong>verso di apertura</strong> cliccando sul lato desiderato del muro. Quando si inserisce un'apertura con l'opzione "offset", questo passo non è richiesto.</li>
+
+</ol>
+
+<p>Si può proseguire con l'inserimento delle aperture fino all'annullamento del comando con INVIO o ESC.</p>
+<p>In entrambe le opzioni di inserimento, l'apertura viene generata automaticamente nel muro.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/opening/Insert Opening dialog.png" alt="Finestra di dialogo di inserimento delle aperture"/><br/>
+	Finestra di dialogo di inserimento delle aperture
+</div>
+
+<br clear="all" />
+<h3>Apertura da curva</h3>
+<p>Le aperture si possono creare a partire da curve che ne determinano il profilo della forma.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Eseguire il comando <strong>vaApertura</strong>.</li>
+	<li>Selezionare lo <strong>stile di apertura</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Selezionare l'opzione <strong>DaCurve</strong> dalla linea di comando.</li>
+	<li>Selezionare una <strong>curva</strong> (o varie curve) nel modello. Questa curva deve essere 
+	<em>chiusa</em> e <em>verticale</em>.</li>
+</ol>
+<p>L'apertura verrà generata all'interno del muro più vicino alla curva selezionata.</p>
+<p><strong>Nota</strong>: Non è necessario che le curve selezionate per creare le aperture siano parallele al muro in cui verranno sistemate le aperture. Le aperture vengono inserite ed orientate automaticamente rispetto al punto più vicino del muro.</p>
+
+
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/opening control points.png" alt="Punti di controllo nelle aperture" width="350" height="125"  style="float: right;"/>
+<p>Le aperture hanno 5 cinque punti di controllo:</p>
+	<ol>
+		<li>Punto di controllo per il verso di apertura</li>
+		<li>Punto di inserimento sinistro</li>
+		<li>Punto di inserimento centrale</li>
+		<li>Punto di inserimento destro</li>
+		<li>Punto di controllo del contrassegno di riferimento</li>
+	</ol>
+<br clear="all" />
+
+<p>Per spostare l'apertura (sia all'interno dello stesso muro che verso un altro muro), selezionarla su uno qualsiasi dei suoi punti e trascinarla fino al punto desiderato.</p>
+<p>Le aperture si possono selezionare solo dalla vista superiore di VisualARQ.</p>
+
+<h4>Opzioni e parametri di inserimento</h4>
+
+<h5>Allineamento</h5>
+
+<p>L'apertura si può allineare in 3 modi all'interno dello spessore del muro:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Allineamento interno"/></td>
+				<td><strong>Interno</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Allineamento al centro"/></td>
+				<td><strong>Centro</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Allineamento esterno"/></td>
+				<td><strong>Esterno</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<p>Per modificare l'allineamento di un'apertura, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> 
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Allineamento verticale</h5>
+
+<p>Le aperture si possono inserire in un muro con due tipi di allineamenti verticali rispetto alla linea base del muro:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Allineamento verticale superiore"/></td>
+				<td><strong>Inferiore:</strong> la distanza di riferimento tra la linea base del muro e la superficie inferiore dell'apertura.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Allineamento verticale inferiore"/></td>
+				<td><strong>Superiore:</strong> la distanza di riferimento tra la linea base del muro e la superficie superiore dell'apertura.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>L'allineamento verticale non è una proprietà di stile. Il valore si specifica per ciascun oggetto nella finestra di inserimento nel momento in cui l'oggetto viene inserito.</p><br />
+<p>Per modificare l'allineamento verticale di un'apertura, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> 
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevazione</h5>
+
+<p>L'elevazione di un'apertura nella finestra di inserimento si misura rispetto alla linea di base del muro in cui essa è inserita, a prescindere dal livello in cui si trova. Una volta inserita l'apertura, il suo valore di elevazione indica la sua posizione nelle coordinate Z assolute, a prescindere dal muro e dal livello in cui essa è inserita. L'elevazione non è una proprietà di stile. Il valore si specifica per ciascun oggetto nella finestra di inserimento nel momento in cui l'oggetto viene inserito.<br />
+Il valore di elevazione predefinito per le aperture è pari a 0. Se questo valore viene modificato, la finestra di dialogo di inserimento mostra l'ultimo valore usato.</p>
+
+<p>Per modificare l'elevazione di un'apertura, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> 
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

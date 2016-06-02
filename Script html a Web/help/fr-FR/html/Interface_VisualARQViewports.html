@@ -1,0 +1,65 @@
+<h3>Fenêtres de VisualARQ</h3>
+
+<p>Les fenêtres de VisualARQ ont le même comportement et sont contrôlées de la même façon que les fenêtres de Rhino. La principale différence se trouve dans la représentation des objets de VisualARQ dans la vue de Dessus (Vue en plan), appelée Étage 1 dans VisualARQ.</p>
+
+<p class="figureWithDescription">
+<img src="../images/Level 02 plan View.png" alt="Vue en plan (Étage 1) et Vue Perspective" width="450" height="400"/><br/>
+Vue en plan (Niveau 02)</p>
+
+<p>Les objets de Rhino sont affichés en 3D « vus de dessus » mais les objets de VisualARQ sont dessinés en 2D dans ce type de vue. Le dessin 2D utilise l'affichage standard des éléments dans les plans d'architecture : les composants des murs sont affichés, les battements des portes sont montrés, les marches des escaliers sont numérotées, etc.</p>
+
+<p>La <strong>Vue en plan</strong> de VisualArq est une section horizontale avec un plan de coupe situé à une élévation de 1,40 m par défaut par rapport à l'élévation de l'étage actuel. Le <a href="Commands_vaLevels.html" title="gestionnaire de niveaux">Gestionnaire de niveaux</a> permet de modifier la hauteur des étages et l'élévation du plan de coupe pour chaque niveau.</p>
+
+<p>Lorsque vous travaillez avec des fichiers modèles de VisualARQ, le titre de la vue en <strong>plan</strong> affiche par défaut 
+<strong>Niveau 01</strong>
+ ou <em></em><strong>Étage 1</strong>. Lorsque vous créez des niveaux supplémentaires sur le dessin en utilisant le <a href="Commands_vaLevels.html" title="boîte de dialogue Gestionnaire de niveaux">Gestionnaire de niveaux</a>, VisualARQ vous permet de filtrer les informations affichées dans la vue sélectionnée et de montrer uniquement les éléments correspondant au niveau défini comme 
+<strong>Niveau actuel</strong><em>, </em>
+et la projection des objets visibles en-dessous.<em> </em>Le nom du niveau actuel est affiché dans la légende de la vue.</p>
+
+
+<p>Vous pouvez lancer le <a href="Commands_vaLevels.html" title="boîte de dialogue du Gestionnaire de niveaux">Gestionnaire de niveaux</a> de quatre façons différentes :</p>
+
+<ul>
+	<li>Dans le menu <strong>VisualARQ</strong>, cliquez sur <strong>Niveaux &gt; Modifier les niveaux...</strong></li>
+	<li>Cliquez avec le bouton de droite sur le titre de la vue et choisissez <strong>VisualARQ &gt; Niveaux...</strong></li>
+	<li>Dans la barre d'outils <strong>Outils de VisualARQ<em></em></strong>, <strong>
+	</strong>cliquez sur l'icône <strong>Niveaux</strong>.</li>
+	<li>Lancez la commande <strong>vaNiveau</strong> dans la ligne de commandes.</li>
+</ul>
+<p class="figureWithDescription">
+<img src="../images/setfloorview.jpg" alt="Menu contextuel du titre de la fenêtre &gt; VisualARQ &gt; Niveaux" /><br/>
+<br/>
+Pour ouvrir la boîte de dialogue des niveaux cliquez avec le bouton sur le titre de la vue et choisissez <strong>
+VisualARQ &gt; Niveaux...</strong></p>
+
+<p>Vous pouvez définir le niveau <strong>Actuel</strong> à partir de la boîte de dialogue <a href="Commands_vaLevels.html" title="Gestionnaire de niveaux">Gestionnaire de niveaux</a>.</p>
+
+<p>Deux options permettent de passer du mode d'affichage standard d'une vue de dessus de Rhino à la représentation 2D de VisualARQ.</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Vue en plan"/></td>
+				<td>Dans la barre d'outils <strong>Gestionnaire de niveaux</strong>, cliquez sur l'icône 
+				<strong>Plan de coupe</strong>. </td>
+			</tr>
+		</table>			
+	</li>
+	<li>Lancez la commande <strong>vaDéfinirVue</strong> dans la ligne de commande. Cette commande change automatiquement la fenêtre active en vue de Dessus et active le plan de coupe du bâtiment ou du niveau sélectionné.</li>
+</ul>
+
+<p><strong>REMARQUE :  </strong> Les options <strong>vaDéfinirVue</strong> <strong>&gt; Niveau
+</strong> et <strong>vaDéfinirVue &gt; Modèle</strong> peuvent être utilisées à tout moment.</p>
+
+<p>
+<img alt="Symbole d'échelle dans les vues orthogonales" height="144" src="../images/Scale%20symbol.png" style="float: right" width="274" /></p>
+<h5>Symbole d'échelle</h5>
+
+<p>Lorsque VisualARQ est chargé et que vous travaillez avec un de ses fichiers modèles, les fenêtres avec les vues en projection parallèle (soit toutes celles définies par défaut sauf la vue en perspective) affichent un symbole d'échelle en bas à droite.</p>
+<p>Les options du symbole d'échelle se trouvent dans la section <a href="Interface_VisualARQOptions.html">VisualARQ</a> de la boîte de dialogue <strong>Options de Rhino</strong>.</p>
+<br clear="all" />
+<p>
+<img style="float: right" alt="Références d'élévation dans la fenêtre Face" height="144" src="../images/Elevation%20marks%20front.png" width="274" /></p>
+
+<h5>Références d'élévation</h5>
+<p>Les vues de <em>face</em> et <em>latérales</em> affichent les références d'élévation ; leur nombre, élévation et nom dépendent des niveaux créés avec le gestionnaire de niveaux. La référence de niveau apparaît en surbrillance et indique le niveau dans lequel vous travaillez</p>
+<p>Les références d'élévation peuvent être modifiées dans la section <a href="Interface_VisualARQOptions.html">VisualARQ</a> de la boîte de dialogue <strong>Options de Rhino</strong>.</p>

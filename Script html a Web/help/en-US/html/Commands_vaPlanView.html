@@ -1,0 +1,95 @@
+<h3>Plan View</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaPlanView</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_CreatePlanView.jpg" alt="Plan View"/> left click
+		[<a href="Commands_vaPlanViewStyles.html" title="Plan View Styles">right 
+		click</a>]
+</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> 
+		toolbar:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="VisualARQ Documentation Tools Toolbar" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Plan View &gt; Plan View
+	</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaPlanView.wmv" preview="../images/previews/vaPlanViewvideo.png" width="300px" height="300px"></div>
+
+<p>The <strong>vaPlanView</strong> command creates an entity that represents the 3D objects projected on a horizontal plane, although it does not show the hidden faces.</p>
+<p>The Plan View is created according to an existing level in the model, so a 
+building and a level must be created in the document before running this 
+command. </p>
+<p>After running the <strong>vaPlanView</strong> command, the Plan View insert dialog box will appear, 
+showing a list of plan view styles. This dialog is followed by a dialog which 
+asks the level to display in the Plan View. After closing these dialogs, follow the steps from the command line. Press the right mouse button or ENTER to accept and go to the next step.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/insert plan view style.png" alt="Select the plan view style" /><br/>
+	Insert dialog 1: Select the plan view style</div>
+	<br clear="all" />
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/Select Level dialog.png" alt="Select the plan view level" /><br/>
+	Insert dialog 2: Select the plan view level</div>
+<br clear="all" />
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>	Plan View style </strong>you wish to use.</li>
+	<li>In the following dialog box, select the <strong>Level</strong> you wish 
+	to represent in 2D horizontal plan, according to the existing levels created 
+	in the document. (If no levels are created, exit the command and run the 
+	<a href="Commands_vaLevels.html">vaLevels</a> command to create a new 
+	building and level)</li>
+	<li>Define the <strong>boundary area</strong> of the objects to include in the 
+	Plan View. There are two options available:<ol>
+		<li><strong>R</strong><strong>ectangular boundary area</strong>: specify 
+		the two opposite corner points of the rectangular area.</li>
+
+		<li><strong>Custom boundary area</strong>: select the <strong>FromCurve</strong> 
+		option in the command line and pick a <em>closed</em> and <em>planar</em> 
+		curve (previously created) that will define the area of the objects 
+		displayed in the Plan View. </li>
+
+	</ol>
+	</li>
+	<li>
+	Specify an <strong>insertion point</strong>. Left click anywhere on the screen to insert the 
+	plan view.</li></ol>
+
+<p>The command ends when the 2D drawing of the plan view is inserted in the specified insertion point. This drawing is created 
+in the current layer.</p>
+
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>The Plan view drawing has the same control points as the boundary area 
+selected to define the objects to include in the Plan View.</p>
+<h4>Plan View parameters</h4>
+The following parameters can be defined by each Plan View object, 
+after they have been created. They can be edited in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+	<li><strong>Style</strong>: the style defines the attributes of Plan Views.</li>
+	<li><strong>Level</strong>: option to change the level displayed in the Plan 
+	View.</li>
+	<li><strong>View depth</strong>: it is measured from the Cut Plane position of the selected level and indicated within parentheses in each option.
+		<ul>
+			<li><strong>Level</strong>: the plan view will show the objects located at the selected level only.</li>
+			<li><strong>Level below</strong>: the plan view will show the objects located beneath the selected level and the level below.</li>
+			<li><strong>Unlimited</strong>: the plan view will show everything located beneath the selected level.</li>
+		</ul>
+		</li>
+	<li><strong>Title</strong>: the level name is taken by default as the title of the Plan View. 
+	It can be changed by any other text.</li>
+	<li><strong>Scale</strong>: scale factor in which the Plan View is displayed.</li>
+	<li><strong>Auto update</strong>: option to enable an automatic update of the Plan View 
+	when the Level properties (Name, Elevation or Cut Plane values) are 
+	modified.</li>
+	<li><strong>Show boundary</strong>: option to show or hide the Plan View boundary area.</li>
+	<li><strong>Show dimensions</strong>: option to draw the dimension lines lined up with the exterior walls, roofs and openings of a project when the 
+	Plan View is created.</li>
+	<li><strong>Tolerance factor</strong>: this value determines the level of 
+	detail the plan view is generated with. The higher this value is, the less detailed the plan view will be.</li>
+
+</ul>

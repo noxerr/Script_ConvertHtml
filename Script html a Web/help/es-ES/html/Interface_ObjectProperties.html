@@ -1,0 +1,107 @@
+<h3>Propiedades de objeto</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaPropiedades</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Propiedades de objeto"/> clic izquierdo [<a href="Interface_StyleProperties.html" title="Propiedades de estilo">clic derecho</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Barra de herramientas</a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Herramientas de VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Propiedades &gt; Propiedades de objeto...</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione el objeto &gt; Haga doble clic</div>
+
+	
+</div>
+
+<p>Cuando se ejecuta el comando <strong>vaPropiedades</strong>, aparece en pantalla el cuadro de diálogo <strong>Propiedades de objeto
+</strong>. Este cuadro de diálogo permite editar algunas de las propiedades de los objetos seleccionados, independientemente de las propiedades del estilo al que pertenecen.</p>
+
+<h3>¿Cómo se organiza este cuadro de diálogo?</h3>
+<p>El cuadro de diálogo Propiedades de objeto se divide en tres partes:</p>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Stair/Object%20Properties%20-%20stair.png" alt="Cuadro de diálogo Propiedades de objeto, propiedades del objeto Escalera." /><br/>
+Cuadro de diálogo Propiedades de objeto, propiedades del objeto Escalera.</p>
+
+<ol>
+	<li>En el recuadro superior izquierdo se muestra la lista de objetos seleccionados en el momento de ejecutar el comando.</li>
+	<li>En el recuadro inferior izquierdo se muestra una vista previa del objeto seleccionado. Puede definir las siguientes opciones para esta ventana de vista previa desde la barra de herramientas de la parte superior del diálogo:
+		<ul>
+			<li>
+			<img alt="Ventana de vista previa activada" height="26" src="../images/Preview%20on.jpg" width="26" /> Opción para mostrar u ocultar la ventana <strong>Vista previa</strong>.</li>
+			<li><img alt="Vista previa en vista en planta activada" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Opción en mostrar el objeto en la vista en Planta o Perspectiva.</li>
+		</ul> 
+	Es posible modificar la vista de la previsualización utilizando el ratón, de una forma similar a como se manejan las vistas de Rhino: <ul>
+	<li><em>Botón derecho del ratón</em>: permite rotar el punto de vista en referencia al objetivo, para ver el modelo entero desde diferentes puntos situados alrededor de él.</li>
+	<li><em>CTRL + Botón derecho</em>: permite acercar o alejar el punto de la cámara, para poder ampliar o reducir el campo de visión.</li>
+	<li><em>MAYÚS + Botón derecho</em>: permite desplazar el punto de vista paralelamente al plano de visión: hacia arriba, hacia abajo, hacia la izquierda o hacia la derecha.</li>
+</ul>
+</li>
+	<li>Esta zona muestra las diferentes propiedades o parámetros que pueden editarse para cada objeto seleccionado. Esta zona comprende distintas pestañas, que varían dependiendo del tipo de objeto.</li>
+</ol>
+
+
+<h3>Editar las propiedades del objeto</h3>
+
+<p>Para editar un objeto, seleccione de la lista el objeto que quiera modificar y edite sus propiedades desde las pestañas ubicadas en el recuadro derecho.</p>
+<h4>Fichas </h4>
+
+<ul>
+	<li><strong>Estilo</strong><br />
+	Todos los objetos que usan cuadros de diálogo disponen de esta pestaña. Se utiliza para asignar un estilo al objeto seleccionado.</li>
+
+	<li><strong>Posición</strong><br />
+		Todos los objetos que usan cuadros de diálogo disponen de esta pestaña. En ella se definen los parámetros de posición de cada objeto.<br />
+		<br />
+		
+		Parámetros de posición del objeto Muro, Muro cortina, Baranda y Escalera:
+		<ul>
+			<li>Alineación (izquierda / centro / derecha)</li>
+		</ul>
+		
+		Parámetros de posición del objeto Pilar y Viga: 
+		<ul>
+			<li>Alineación (punto de inserción en la geometría del perfil de sección)</li>
+			<li>Marca de inserción (solo para pilares)</li>
+			<li>Desfase (en x / y respecto al punto de inserción)</li>
+		</ul>
+		
+		Parámetros de posición del objeto Puerta, Ventana y Hueco:
+		<ul>
+			<li>Alineación (interior / centro / exterior, respecto al muro)</li>
+			<li>Elevación (respecto al muro)</li>
+		</ul>
+			
+	</li>
+	
+	<li><strong>Geometría</strong><br />
+		Los muros, muros cortina, pilares y escaleras disponen de esta ficha. En ella se definen los valores geométricos (medidas) de cada objeto.<br />
+		<ul>
+			<li>Anchura</li>
+			<li>Altura</li>
+		</ul>
+	</li>
+	
+	<li><strong>Perfil</strong><br />
+	Vigas, pilares, puertas, ventanas y huecos (los objetos que utilizan un perfil) disponen de esta ficha. En ella se definen las medidas del perfil que utiliza el objeto.</li>
+
+	<li><strong>Intersecciones</strong><br />
+	Solo los muros disponen de esta ficha. En ella se define el valor de Radio de unión y el valor de Extensión máxima del objeto Muro.</li>
+
+	<li><strong>Hueco</strong><br />
+	Solo las puertas y las ventanas disponen de esta ficha. En ella se define el valor de porcentaje de apertura.</li>
+	
+	<li><strong>Peldaños</strong><br />
+Sólo las escaleras disponen de esta pestaña. En ella se define el valor y número de Peldaños (Huella y Contrahuella).</li>
+	<li><strong>Marca</strong><br />
+	Solo las secciones tienen esta pestaña. Se utiliza para cambiar el texto de referencia de la marca de sección.</li>
+	
+</ul>

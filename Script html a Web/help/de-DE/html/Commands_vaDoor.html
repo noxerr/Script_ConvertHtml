@@ -1,0 +1,171 @@
+<h3>Tür</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaTür</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Door.jpg" alt="Tür"/> Linksklick [<a href="Commands_vaDoorStyles.html" title="Befehl TürStile">Rechtsklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Tür &gt; Tür</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaDoor.wmv" preview="../images/previews/vaDoorvideo.png" width="300px" height="300px"></div>
+
+<p>Türen können nur in eine Wand eingefügt werden. Die Verbindung beider Elemente wird anhand einer Verankerung vorgenommen und die Türöffnung wird automatisch in der Wand generiert.</p>
+
+<p>Durch Ausführen des Befehls <strong>vaTür</strong> wird das 
+<a href="Interface_Dialog.html">Einfüge-Dialogfenster</a> für Türen geöffnet. Das Dialogfenster zeigt eine Liste aller verfügbaren Türstile sowie die grundlegenden Optionen des Türobjekts und die entsprechende Vorschau an.</p>
+<p>Die erforderlichen Schritte zum Einfügen einer Tür in eine Wand hängen von den ausgewählten Einfügungsoptionen ab.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Türstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Zum Einsetzen einer Tür in eine Wand gibt es zwei Möglichkeiten:<br />
+		<ul>
+			<li><strong>Versatz:</strong> Dadurch wird die Tür in einem bestimmten Abstand (Versatz) vom Wandende eingefügt, das sich der Wand am nächsten befindet. Bestimmen Sie die Öffnungsseite durch Verschieben des Mauszeigers in die entsprechende Richtung und bestätigen Sie mit einem Klick. Fügen Sie die Tür mit einem Klick ein.</li>
+			<li><strong>Einfügungspunkt:</strong> Mit dieser Option können Sie die Tür an einer beliebigen Position in der Wand einfügen. Klicken Sie mit der linken Maustaste, um die Tür am gewünschten Punkt einzufügen.</li>
+		</ul>
+	</li>
+	<li>Bestimmen Sie die <strong>Öffnungsseite</strong> durch Klick auf die entsprechende Seite der Wand. Dieser Schritt ist nicht notwendig, wenn Sie die Tür mit der Option "Versatz" einfügen.</li>
+</ol>
+
+<p>Sie können so viele Türen einfügen, wie Sie möchten und den Befehl durch Drücken von ENTER oder ESC beenden.</p>
+<p>Bei beiden Einfügungsoptionen wird in der Wand automatisch eine der Tür entsprechende Öffnung erzeugt.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Door/door insert dialog.png" alt="Einfügedialog Tür"/><br/>
+Einfügedialog Tür
+</div>
+
+<br clear="all" />
+<h3>Tür aus Kurve</h3>
+<p>Türen können auch aus Kurven erstellt werden, die dann deren Form bestimmen.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Führen Sie den Befehl <strong>vaTür</strong> aus.</li>
+	<li>Wählen Sie den <strong>Türstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Wählen Sie die Option <strong>AusKurven</strong> in der Befehlszeile.</li>
+	<li>Wählen Sie eine <strong>Kurve</strong> (oder mehrere Kurven) im Modell. Die Kurve muss 
+	<em>geschlossen</em> und <em>vertikal</em> sein.</li>
+</ol>
+<p>Die Tür wird in der Wand erzeugt, die der Kurve am nächsten liegt.</p>
+<p><strong>Anmerkung</strong>: Die Kurven zur Erzeugung von Türen müssen nicht parallel zur Wand sein, in die die Türen eingefügt werden. Die Türen werden automatisch gemäß der nächsten Wandposition eingefügt und ausgerichtet.</p>
+
+
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/door_scheme.png" alt="Kontrollpunkte auf Türen" width="150" height="160" style="float: right;"/>
+	<p>Türen verfügen über fünf Kontrollpunkte:</p>
+	
+	<ol>
+		<li>Kontrollpunkt für die Öffnungsseite</li>
+		<li>Linker Einfügungspunkt</li>
+		<li>Mittlerer Einfügungspunkt</li>
+		<li>Rechter Einfügungspunkt</li>
+		<li>Kontrollpunkt der Referenzmarkierung</li>
+	</ol>
+<br clear="all" />
+
+<p>Um die Tür zu verschieben (entweder in der gleichen Wand oder in eine andere Wand), wählen Sie sie aus und ziehen Sie sie an die gewünschte Position.</p>
+<p>Um die Öffnungsseite einer Tür zu ändern, wählen Sie den Kontrollpunkt für die Öffnungsseite (1) und ziehen Sie ihn auf die andere Seite der Wand.</p>
+
+<h4>Einfügungsoptionen und -parameter</h4>
+
+<h5>Ausrichtung</h5>
+
+<p>Die Tür kann auf drei Arten bezüglich der Wandstärke ausgerichtet werden:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Innen"/></td>
+				<td><strong>Innen</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Mitte"/></td>
+				<td><strong>Mitte</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Außen"/></td>
+				<td><strong>Außen</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+
+<p>Um die Ausrichtung einer Tür zu verändern, bearbeiten Sie die Werte im Dialogfenster <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Optionen" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Öffnungsgrad</h5>
+<p>Der Öffnungsgrad definiert, wie offen oder geschlossen die Türblätter in Plan- und perspektivischer Ansicht angezeigt werden. Für den Öffnungsgrad sind zwei Optionen verfügbar:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0">
+			<tr valign="middle">
+				<td valign="top"> <img align="left" src="../images/Max aperture 32.png" height="24" width="24" alt="Max. Öffnung (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Max. Öffnung (%)</strong>: Dieser Wert bestimmt den maximalen Öffnungsgrad, den die Türblätter haben können. Der maximale Öffnungsgrad wird nur in der 
+				<em>Draufsicht</em> angezeigt, wenn die VisualARQ-Planansicht aktiviert wurde, und wird durch eine einfache Linie und einen Bogen dargestellt.</td>
+			</tr>
+		</table> </li>
+	<li><table border="0" cellspacing="0" cellpadding="0" >
+			<tr valign="middle">
+				<td valign="top"><img align="left" src="../images/aperture 32.png" height="24" width="24" alt="Öffnung (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Öffnung (%):</strong> Dieser Wert bestimmt, wie offen oder geschlossen die Türblätter in Plan- und perspektivischer Ansicht angezeigt werden.</td>
+			</tr>
+		</table></li>
+</ul>
+
+<div class="figureWithDescription block"><img src="../images/Door aperture 2D 3D.jpg" alt="Beispiel für den Öffnungsgrad einer Tür."/><br/>
+Beispiel für den Öffnungsgrad einer Tür: Max. Öffnung: 50 %, Öffnung: 25 %
+</div>
+<br/>
+<p>Der Öffnungsgrad ist keine Stileigenschaft. Der Wert wird im Einfügedialog des Türobjekts für jedes Objekt definiert, das eingefügt wird.</p>
+
+<p>Der standardmäßige Öffnungswert für Türen beträgt 50 %, es können aber Werte zwischen 0 % und 100 % verwendet werden. Wenn Sie diesen Wert ändern, zeigt der Einfügedialog den zuletzt verwendeten Wert an.</p>
+
+<p>Zum Ändern des Öffnungsgrades einer Tür bearbeiten Sie seinen Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+<br clear="all" />
+<h5>Vertikale Ausrichtung</h5>
+
+<p>Türen können in eine Wand bezüglich der Grundkurve mit zwei verschiedenen vertikalen Ausrichtungen eingefügt werden.</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Unten"/></td>
+				<td><strong>Unten:</strong> Referenzdistanz zwischen der Grundkurve der Wand und der unteren Oberfläche der Tür.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Oben"/></td>
+				<td><strong>Oben:</strong> Referenzdistanz zwischen der Grundkurve der Wand und der oberen Oberfläche der Tür.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>Die vertikale Ausrichtung ist keine Stileigenschaft. Der Wert wird beim Einfügen für jedes Objekt im Einfügedialog definiert.</p><br />
+<p>Zum Ändern der vertikalen Ausrichtung einer Tür bearbeiten Sie den Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Höhe vom Boden</h5>
+<p>Die Türhöhe im Einfügedialog wird unabhängig von der Ebene in Bezug zur Grundlinie der Wand gemessen, in die sie eingefügt wurde. Nach Einfügen der Tür gibt die Höhe vom Boden die Position der Tür unabhängig von der zugehörigen Wand und Ebene auf der Z-Achse der Weltkoordinaten an. Die Höhe vom Boden ist keine Stileigenschaft. Der Wert wird beim Einfügen für jedes Objekt im Einfügedialog definiert.<br />
+Der standardmäßige Höhenwert für Türen ist 0. Wenn Sie diesen Wert ändern, zeigt der Einfügedialog den zuletzt verwendeten Wert an.</p>
+
+<p>Zum Ändern der Höhe einer Tür vom Boden bearbeiten Sie den Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>

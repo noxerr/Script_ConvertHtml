@@ -1,0 +1,103 @@
+<h3>Viga</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaViga</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_beam.jpg" alt="viga"/> clic izquierdo [<a href="Commands_vabeamStyles.html" title="comando vaViga">clic derecho</a>]
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html">Objetos</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Viga &gt; Viga</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaBeam.wmv" preview="../images/previews/vaBeamvideo.png" width="300px" height="300px"></div>
+
+<p>Cuando ejecute el comando <strong>vaViga</strong>, aparecerá el 
+<a href="../Ele/Interface_Dialog.html">cuadro de diálogo de inserción</a> de viga. Este cuadro muestra una lista con los estilos de viga disponibles, así como las opciones básicas y la vista previa del objeto viga.</p>
+
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione el <strong>Estilo de viga</strong> que desea utilizar y defina las opciones básicas de inserción.</li>
+	<li>Seleccione el <strong>punto inicial de la Viga</strong><strong></strong> haciendo clic con el botón izquierdo en el punto deseado.</li>
+	<li>Seleccione el <strong>punto final de la Viga</strong><strong></strong> haciendo clic con el botón izquierdo en el punto deseado.</li>
+</ol>
+
+<p>Puede seguir insertando vigas hasta que cancele el comando pulsando INTRO, ESC.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Cuadro de diálogo de inserción de Viga" height="808" src="../images/assistants/Beam/beam.png" width="358"/><br/>
+	Cuadro de diálogo Viga
+</div>
+
+<br clear= "all" />
+
+<h3>Viga desde curva</h3>
+<p>También se pueden crear vigas a partir de una curva en el modelo:</p>
+
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Ejecute el comando <strong>vaViga</strong> para crear una nueva viga. Una vez en el comando, aparece el cuadro de inserción de la <strong>Viga
+	</strong>.</li>
+	<li>Seleccione el <strong>Estilo de viga</strong> que desea utilizar y defina las opciones básicas de inserción.</li>
+	<li>Seleccione <strong>DesdeCurvas</strong><em> </em>en la línea de comandos y designe una <strong>Curva</strong> desde el modelo.</li>
+	<li>Pulse botón INTRO o haga clic con el botón derecho para finalizar el comando.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Puntos de control de viga" height="198" longdesc="Beam created from a curve, with control points on" src="../images/assistants/Beam/beamFromCurve.png" width="325" /><br/>
+	Viga creada a partir de una curva, con los puntos de control activados.
+</div>
+
+<br clear= "all" />
+
+<h4>Puntos de control <img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Las vigas pueden tener diferentes puntos de control según cómo se haya creado la viga. Los puntos de control se pueden mover en cualquier dirección y la posición y las dimensiones de la viga se pueden modificar.</p>
+<ul>
+	<li><strong>Viga recta:</strong> la viga tiene dos puntos de control en los extremos del objeto.</li>
+	<li><strong>Muro desde curva:</strong> La viga tiene tantos puntos de control como tiene la curva desde la que se creó. </li>
+</ul>
+<br/>
+<h4>Opciones y parámetros de inserción</h4>
+
+<h5>Alineación</h5>
+
+<p>La alineación de la viga determina la posición del punto de inserción la viga 
+de acuerdo con la forma del perfil.<br/> Opciones de alineación:</p>
+
+<ul>
+	<li>Superior izquierda, Superior centro, Superior derecha</li>
+	<li>Medio izquierda, Centro y Medio derecha</li>
+	<li>Inferior izquierda, Inferior centro y Inferior derecha</li>
+</ul>
+<p>Para modificar la alineación de una viga, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a> 
+<img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> o en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Icono Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Desfase</h5>
+<p>Muestra la distancia (desfase) desde los los puntos X y Y de la viga hasta el punto de inserción.</p>
+
+<p>Para modificar el desfase de un pilar, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />, o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Icono Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevación</h5>
+<p>La elevación de la viga siempre se calcula en relación a la línea base del muro en la que se inserta. La elevación no es una propiedad de estilo. El valor se especifica para cada objeto de viga en el cuadro de inserción y en el momento de insertarlo.<br/>
+El valor de elevación que aparece por defecto para vigas es de 3 metros. Si este valor se modifica, el cuadro de inserción de 
+<strong>Viga</strong> muestra siempre el último valor utilizado.</p>
+
+<h5>Rotación</h5>
+<p>Este valor determina el ángulo en el que la viga gira alrededor de su eje, tomando como centro de rotación su posición de alineación. </p>
+<p>La rotación de la viga solo puede editarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="icono de Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Reflejado</h5>
+<p>Cuando está activada, esta opción cambia la orientación de la viga y la imagen queda reflejada. </p>
+<p>Esta opción solo puede editarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="icono de Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+

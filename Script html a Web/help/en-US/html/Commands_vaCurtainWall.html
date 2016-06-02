@@ -1,0 +1,157 @@
+<h3>Curtain Wall</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaCurtainWall</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_CurtainWall.jpg" alt="Curtain Wall"/> left click
+	[<a href="Commands_vaCurtainWallStyles.html" title="Curtain Wall Style command">right click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Curtain Wall &gt; Curtain Wall</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaCurtainWall.wmv" preview="../images/previews/vaCurtainWallvideo.png" width="300px" height="300px"></div>
+
+<p>After running the <strong>vaCurtainWall</strong> command, the curtain 
+wall<strong> </strong><a href="Interface_Dialog.html">insert dialog box</a> will appear. This dialog box shows a list of all 
+curtain wall styles available, as well as the basic options of the 
+curtain wall object and its preview.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>curtain wall style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select the curtain wall <strong>start point</strong> (insertion point) with a left-click. When you specify the start point, a dynamic dimension will display the length value of the 
+	curtain wall being inserted in real time.</li>
+	<li>Left-click again to specify the curtain wall <strong>end point.</strong></li>
+</ol>
+
+<p>The <strong>length</strong> and <strong>direction</strong> of the curtain wall can be specified as follows:
+<ul>
+	<li>Entering the coordinates (relative and absolute) in the command line.</li>
+	<li>Entering the value to specify the length and/or angle in the command line.</li>
+	<li>Manually, by left-clicking the desired point.</li>
+</ul>
+</p>
+
+<p>Each new curtain wall will be drawn next to the previous one until you press ENTER, ESC 
+or right click. 
+The command immediately prompts the start point to start drawing the next 
+curtain wall, but it does not link it to the previous curtain wall by default but rather starts drawing it on the new start point selected.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Curtain wall/Curtain wall insert dialog.png" alt="Insert dialog box for the Curtain Wall object."/><br/>
+Curtain Wall insert dialog box
+</div>
+<br clear="all" />
+
+<h3>Curtain Wall: From Curves</h3>
+
+<p>Curtain walls can be also created from previously drawn curves in the model.</p>
+
+<p>When you run the <strong>vaCurtainWall</strong> command, the curtain wall
+<a href="Interface_Dialog.html">insert dialog box</a> will appear.</p> 
+<p><strong>Steps:</strong></p>
+<ol>
+		<li>Select <strong>FromCurves</strong> in the command line.</li>
+		<li>Pick a <strong>Curve</strong> or multiple <strong>Curves</strong> 
+		from the model 
+		that will be used to generate curtain walls. The curves can be any type or shape, as long as they are <em>flat. </em>If a polyline curve is 
+		selected, a curtain wall object will be generated for each polyline 
+		segment.</li>
+		<li>Select the <strong>curtain wall insertion options</strong> from the 
+		<span lang="es">curtain </span>wall
+		<a href="Interface_Dialog.html">insert dialog box</a> 
+		that will define the <span lang="es">curtain </span>wall created from that curve<strong>.</strong> This 
+		step can be done before or after selecting the curve or curves to 
+		generate curtain walls.<br/>
+		</li>
+		
+</ol>
+<br />
+
+<p>The curtain walls created with this operation behave as all other VisualARQ 
+curtain walls.</p>
+
+<br clear="all" />
+
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Curtain walls have three <em>control points</em> and three <em>control arrows</em>:<br />
+<ul>
+	<li>The <em>start</em> and <em>end control points</em> can be used to stretch and/or change its direction, while the <em>center control point</em> is used 
+	to bend it in the case of curved curtain walls.</li>
+	<li>A control point situated at the top start of the curtain wall object is used to move its top horizontal edge and lean the curtain wall.</li>
+	<li>The <em>control arrows</em> that appear in the Plan view (as well as in 
+	the Perspective view) are used to stretch the 
+	curtain wall horizontally from its ends, while the <em>control arrow</em> that appears in all other views (Perspective, Front and Right) is used to stretch the 
+	curtain wall vertically, as required to modify its height manually.</li>
+</ul>
+</p>
+
+<div class="figureWithDescription block"><img src="../images/Curtain Wall Control Points.jpg" alt="Control points on Curtain walls" width="450" height="150" /><br/>
+Control points on Curtain walls</div>
+
+<br clear="all" />
+
+<ol>
+	<li>Start control point (insertion point).</li>
+	<li>Control arrow (vertical), (not editable in Top viewport).</li>
+	<li>End control point.</li>
+	<li>Control arrows (horizontal).</li>
+	<li>Curtain Wall from curve control points.</li>
+	<li>Start top control point.</li>
+</ol>
+
+<h4>Insertion Options and Parameters</h4>
+
+
+<h5>Height</h5>
+<p>Even though <strong>Height</strong> is a curtain wall style property, you can assign a value that is different to the default height value in the insert dialog box. Simply clear the 
+<strong>Height by style</strong> checkbox and choose the desired value, using the numerical height control.</p>
+
+<p>To modify a curtain wall height, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in Rhino Properties <span lang="es">p</span>anel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Alignment</h5>
+<p>There are three options to align the curtain wall, depending on
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">its position based on 
+the direction of its base curve:</span></p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Center alignment"/></td>
+				<td><strong>Center</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Right alignment"/></td>
+				<td><strong>Right</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Left alignment"/></td>
+				<td><strong>Left</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Alignment offset</h5>
+<p>Inserts the curtain wall at a specific distance from the direction of its base curve.</p>
+<p>To modify a curtain wall alignment or the alignment offset, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box 
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> section (in Rhino Properties 
+panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

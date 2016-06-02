@@ -1,0 +1,62 @@
+<h3>Vista en planta</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaVistaEnPlanta</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_CreatePlanView.jpg" alt="Vista en planta"/> clic izquierdo [<a href="Commands_vaPlanViewStyles.html" title="Estilos de vista en planta">clic derecho</a>]
+</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentación</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra de herramientas Herramientas de documentación de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Vista en planta &gt; Vista en planta
+	</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaPlanView.wmv" preview="../images/previews/vaPlanViewvideo.png" width="300px" height="300px"></div>
+
+<p>El comando <strong>vaVistaEnPlanta</strong> crea una entidad que representa los objetos en 3D y los proyecta sobre un plano horizontal, sin mostrar las caras ocultas.</p>
+<p>La vista en planta se crea en función de un nivel existente en el modelo, de modo que es necesario crear un edificio y un nivel en el documento antes de ejecutar este comando. </p>
+<p>Cuando ejecute el comando <strong>vaVistaEnPlanta</strong>, aparecerá el cuadro de diálogo de inserción de vista en planta y se mostrará una lista de estilos de vista en planta. Después de este diálogo, aparece otro diálogo que solicita el nivel que desea mostrar en la vista en planta. Tras cerrar estos diálogos, siga los pasos que se indican en la línea de comandos. Pulse el botón derecho del ratón o INTRO para aceptar y pasar al siguiente paso.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/insert plan view style.png" alt="Seleccione el estilo de vista en planta" /><br/>
+	Diálogo de inserción 1: Seleccione el estilo de vista en planta</div>
+	<br clear="all" />
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/Select Level dialog.png" alt="Seleccione el nivel de vista en planta" /><br/>
+	Diálogo de inserción 2: Seleccione el nivel de vista en planta</div>
+<br clear="all" />
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione el <strong>	Estilo de vista en planta</strong> que desee utilizar.</li>
+	<li>En el cuadro de diálogo siguiente, seleccione el <strong>Nivel</strong> que desee representar en el plano horizontal 2D, según los niveles existentes creados en el documento. (Si no hay niveles creados, salga del comando y ejecute el comando 
+	<a href="Commands_vaLevels.html">vaNiveles</a> para crear un nuevo edificio y nivel)</li>
+	<li>Defina el <strong>área delimitadora</strong> de los objetos para incluir en la vista en planta. Hay dos opciones disponibles:<ol>
+		<li><strong></strong><strong>Área delimitadora rectangular</strong>: especifique los dos puntos de esquina opuestos del área rectangular.</li>
+
+		<li><strong>Área delimitadora personalizada</strong>: seleccione la opción <strong>DesdeCurva</strong> en la línea de comandos y designe una curva <em>cerrada</em> y <em>plana</em> (previamente creada) que definirá el área de los objetos que se muestran en la vista en planta. </li>
+
+	</ol>
+	</li>
+	<li>
+	Especifique un <strong>punto de inserción</strong>. Pulse el botón izquierdo del ratón sobre cualquier punto de la pantalla para insertar la vista en planta.</li></ol>
+
+<p>El comando termina al insertarse el dibujo 2D de la vista en planta en el punto de inserción especificado. El dibujo se crea en la capa actual.</p>
+
+<h4>Puntos de control <img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>El dibujo de la vista en planta tiene los mismos puntos de control que el área delimitadora seleccionada para definir los objetos que se van a incluir en la vista en planta.</p>
+<h4>Parámetros de vista en planta</h4>
+Los siguientes parámetros pueden definirse para cada objeto de vista en planta, una vez se han creado. Pueden editarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Estilo</strong>: el estilo define las atributos de las vistas en planta.</li>
+	<li><strong>Nivel</strong>: opción para cambiar el nivel que se muestra en la vista en planta.</li>
+<li><strong>Título</strong>: el nombre del nivel es el título de la vista en planta de manera predeterminada. Se puede cambiar por otro texto.</li>
+<li><strong>Escala</strong>: factor de escala en que se muestra la vista en planta.</li>
+<li><strong>Actualización automática</strong>: opción para activar una actualización automática de la vista en planta cuando se modifican las propiedades del nivel (nombre, elevación o plano de corte).</li>
+<li><strong>Mostrar contorno</strong>: opción para mostrar u ocultar el área delimitadora de la vista en planta.</li>
+	<li><strong>Mostrar cotas</strong>: Opción para dibujar las líneas de cota alineadas con los muros exteriores, cubiertas y carpinterías de un proyecto cuando se crea la vista en planta.</li>
+	<li><strong>Factor de tolerancia</strong>: este valor determina el nivel de detalle con el que se genera la vista en planta. Cuanto más alto sea este valor, menos detallada será la vista en planta.</li>
+
+	</ul>

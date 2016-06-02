@@ -1,0 +1,55 @@
+<h3>Etichetta</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaEtichetta</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon">
+		<img alt="Etichetta" height="24" src="../images/VA_Tag.png" width="24" /> clic sinistro [<a href="Commands_vaTagStyles.html" title="Stili di etichetta">clic destro</a>]</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentazione</a>: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra degli strumenti Documentazione di VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Etichetta &gt; Etichetta</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaTag.wmv" preview="../images/previews/vaTagvideo.png" width="300px" height="300px"></div>
+
+<p>Il comando <strong>Etichetta</strong> si usa per mostrare le etichette, con i corrispondenti testi di riferimento, associate agli oggetti di VisualARQ nel modello.</p>
+<p>Prima di eseguire questo comando, occorre riempire il campo "etichetta" degli oggetti per cui desideriamo visualizzare le etichette. Il campo di un'etichetta si può editare per ogni oggetto di VisualARQ nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino <img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />), sotto <em>Generali</em>. </p>
+
+<p>Quando si esegue il comando, appare la finestra di dialogo di inserimento delle <strong>etichette</strong>. Seguire i passi dalla linea di comando. Premere il tasto destro del mouse oppure INVIO per accettare e passare al passo successivo.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tag insert dialog.png" alt="Finestra di inserimento delle etichette"/><br/>
+	Finestra di inserimento delle etichette</div>
+<br clear="all" />
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Specificare uno <strong>stile di etichetta</strong> dalla finestra di dialogo di inserimento.</li>
+	<li>Selezionare gli <strong>oggetti</strong> da etichettare.</li>
+</ol>
+<p>L'etichetta verrà creata automaticamente accanto all'oggetto selezionato. 
+</p>
+<h4>Punti di controllo delle etichette</h4>
+<p>Gli oggetti etichetta non presentano punti di controllo. Essi si possono spostare indipendentemente dalla posizione dei loro oggetti di riferimento. Quando i loro oggetti di riferimento vengono spostati, essi si spostano automaticamente con loro, mantenendo la loro posizione relativa, a meno che l'opzione "Posizione fissa" non sia attiva. </p>
+<h4>Eliminare un'etichetta</h4>
+<p>Basta selezionare l'etichetta ed eliminarla.</p>
+
+<h4>Parametri delle etichette</h4>
+I seguenti parametri si possono definire per ciascun oggetto etichetta creato. Si possono editare nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino 
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Stile</strong>: lo stile definisce gli attributi delle etichette.</li>
+	<li><strong>Posizione</strong>: le coordinate XYZ assolute dell'etichetta.</li>
+	<li><strong>Posizione fissa</strong>: opzione per fissare la posizione dell'etichetta, la quale non si sposta se il relativo oggetto di riferimento viene spostato.</li>
+	<li><strong>Formato</strong>: il formato del testo visualizzato all'interno dell'etichetta. Si usi la formula "<strong>%&lt;elemento.etichetta&gt;%</strong>" per aggiungere del testo prima e/o dopo il testo di riferimento dell'etichetta.
+	<ul>
+		<li>es: per una porta la cui etichetta ha come testo di riferimento <em>"D3"</em>, potete digitare <em>
+		"Porta %&lt;elemento.etichetta&gt;%"</em> per visualizzare <em>"Porta D3"</em> nell'etichetta.</li>
+	</ul>
+	</li>
+</ul>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tags.png" alt="Porta e muro etichettati" /><br/>
+	Esempi di etichette</div>
+<br clear="all" />
+

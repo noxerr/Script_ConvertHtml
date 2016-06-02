@@ -1,0 +1,201 @@
+<h3>Modifier les niveaux</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaNiveaux</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_FloorManager.jpg" alt="Gestionnaire de niveau"/> clic
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Barre d'outils : Outils</a> &gt;</div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Barre d'outils Documentation de VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Niveaux &gt; Modifier les niveaux</div>
+</div>
+	
+<p>La commande <strong>vaNiveaux</strong> ouvre une boîte de dialogue <strong>Gestionnaire de niveaux
+</strong> à partir de laquelle il est possible de créer, supprimer et modifier des bâtiments et des niveaux.</p> 
+<p> Dans la boîte de dialogue <strong>Gestionnaire de niveaux</strong>, vous pouvez contrôler le 
+<strong>PlanC</strong> (plan de construction), la <strong>visibilité</strong> ainsi que les valeurs d'<strong>Élévation</strong> et de <strong>Plan de coupe
+</strong> de chaque niveau.</p>
+<p>La boîte de dialogue du <strong>gestionnaire de niveaux</strong> est divisée en deux parties :
+<ul>
+	<li>Une ligne d'outils avec les options suivantes : <strong>Nouveau bâtiment, Nouveau niveau, Supprimer</strong> et <strong>Visualisation du Plan de coupe</strong>.</li>
+	<li>La liste des bâtiments et des niveaux ainsi que leurs propriétés : <strong>PlanC
+	</strong>(plan de construction), Visibilité <strong>activée/désactivée</strong>, visibilité de la <strong>Vue en plan</strong>, valeur d'<strong>Élevation </strong>, valeur de <strong>Hauteur du plan de coupe</strong>, valeurs de <strong>Décalage supérieur</strong> et <strong>Décalage inférieur</strong>.</li>
+
+</ul>
+</p>	
+
+<p class="figureWithDescription"><img src="../images/Level Manager.png" alt="Boîte de dialogue du gestionnaire de niveaux"/><br/>
+Boîte de dialogue du gestionnaire de niveaux.</p>
+<br/>
+<p class="figureWithDescription"><img src="../images/Levels.png" alt="Pièces et paramètres du Niveau 1"/><br/>
+Paramètres du Niveau "1" :
+<ul>
+<li><strong>L0</strong> : Élévation du Niveau "0" et position du PlanC du Niveau 0</li>
+<li><strong>L1 </strong>: Élévation du Niveau "1" et position du PlanC du Niveau 1</li>
+<li><strong>L2 </strong>: Élévation du Niveau "2" et position du PlanC du Niveau 2 (et limites supérieures du Niveau 1)</li>
+<li><strong>C.P</strong>: Hauteur du plan de coupe du niveau 1</li>
+<li><strong>T.O</strong>.: Distance du décalage supérieur du Niveau 1</li>
+<li><strong>B.O</strong>.: Distance du décalage inférieur du Niveau 1</li>
+
+</ul></p>
+
+<h5>Nouveau bâtiment</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Building.jpg" alt="Nouveau bâtiment"/></td>
+	<td>Crée de nouveaux bâtiments dans lesquels des niveaux pourront être ajoutés. Chaque bâtiment possède sa propre valeur d'élévation ; les valeurs d'élévation des niveaux intérieurs sont relatives à ce bâtiment.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Nouveau niveau</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Level.jpg" alt="Nouveau niveau"/></td>
+	<td>Ajoute un nouveau niveau au bâtiment sélectionné. Le nouveau niveau sera automatiquement créé au-dessus du niveau le plus haut et son élévation par défaut sera la même que celle du niveau précédent. Il est nécessaire d'avoir un bâtiment pour pouvoir créer des niveaux.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Supprimer</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Delete.jpg" alt="Supprimer"/></td>
+	<td>Supprime un niveau ou un bâtiment. Les objets de Rhino et de VisualARQ contenus dans le niveau ou le bâtiment supprimés ne sont pas modifiés. Ils restent au même endroit.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Plan de coupe</h5>
+<p>Le <strong>plan de coupe</strong> représente un plan de <em>section horizontale</em>
+<em></em> propre à chaque niveau, situé à une hauteur déterminée à partir de l'élévation de chaque niveau. Le bouton Plan de coupe active et désactive le <strong>Plan de coupe</strong> du niveau sélectionné dans la fenêtre active. Un bâtiment et un niveau doivent être créés pour activer le <strong>
+Plan de coupe</strong>.</p>
+<p>Lorsque le Plan de coupe est activé pour un certain niveau dans la fenêtre active, <em>
+tout ce qui se trouve au-dessus du plan de coupe de ce niveau ne sera PAS affiché. </em></p>
+<p>Lorsque le plan de coupe est activé dans la <em>fenêtre Dessus</em>, les objets de VisualARQ, telles que les portes, les fenêtres, les escaliers, etc. seront dessinés avec leur représentation de vue en plan 2D.</p>
+<br/>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Plan de coupe activé"/></td>
+	<td><strong>Plan de coupe activé </strong>: la fenêtre affiche le niveau sectionné en fonction de la position de son plan de coupe.</td>
+</tr>
+
+<tr>
+	<td valign="top" style="height: 28px"><img align="left" src="../images/Cut Plane Off.jpg" alt="Plan de coupe désactivé"/></td>
+	<td style="height: 28px"><strong>Plan de coupe désactivé </strong>: La fenêtre affiche le niveau dans son ensemble (en fonction de l'option de visibilité).</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane Dis.jpg" alt="Plan de coupe désactivé"/></td>
+	<td><strong>Plan de coupe désactivé </strong>: Vous devez sélectionner un niveau pour activer son plan de coupe.</td>
+</tr>
+
+</table>
+</div>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane On.jpg" />
+<br/>
+Vue du Niveau 0 et du Niveau 1 alors que le Plan de coupe du Niveau 1 est activé.</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane Off.jpg" />
+<br/>
+Vue du Niveau 0 et du Niveau 1 alors que le Plan de coupe du Niveau 1 est désactivé. (le Niveau 2 n'est plus visible)</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 only.jpg" />
+<br/>
+Vue du Niveau 1 uniquement avec le plan de coupe désactivé. (Les Niveaux 0 et 2 ne sont pas visibles)</p><br/>
+
+
+<h5>PlanC</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/CPlane.jpg" alt="PlanC"/></td>
+	<td>Le plan de construction détermine l'élévation du plan sur lequel vous travaillez. Cliquez sur l'icône du plan de construction d'un niveau pour déplacer le plan de construction à l'élévation de ce niveau dans la fenêtre active.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Visibilité</h5>
+<p>
+Le paramètre de visibilité permet d'afficher ou de masquer les objets ou les parties d'objets situés entre l'élévation du niveau actuel et l'élévation du niveau le plus haut (en tenant compte des valeurs de décalage supérieure et inférieure).</p>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/On.jpg" alt="Activé"/></td>
+	<td>Le niveau est visible et vous pouvez voir les objets ou les parties d'objets se trouvant sur ce niveau.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Off.jpg" alt="Désactivé"/></td>
+	<td>Le niveau n'est pas visible et vous ne pouvez pas avoir les objets se trouvant sur ce niveau.</td>
+</tr>
+</table>
+</div>
+<p><strong>Remarque</strong>: les niveaux intermédiaires ne peuvent pas être cachés individuellement. Lorsqu'un niveau intermédiaire est caché, tous les autres niveaux situés en-dessous seront cachés automatiquement.</p>
+
+<h5>Vue en plan activée/désactivée</h5>
+<p>La vue en plan affiche la représentation 2D d'un niveau dans le plan de construction de la fenêtre active. Cette représentation 2D ne peut pas être modifiée et n'affiche que les objets sectionnés dans le plan sélectionné, en fonction de la position du plan de coupe dans ce niveau.</p>
+<p><div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View on.jpg" alt="Vue en plan activée"/></td>
+	<td>La représentation 2D du niveau sélectionné est visible dans le plan de construction de la fenêtre active.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View off.jpg" alt="Vue en plan désactivée"/></td>
+	<td>La représentation 2D du niveau sélectionné n'est pas visible dans le plan de construction de la fenêtre active.</td>
+</tr>
+</table>
+</div>
+</p>
+
+
+
+<h5>Définir l'étage actuel</h5>
+<p>Pour définir le niveau correspondant à l'étage actuel dans la fenêtre active, 
+<strong>double-cliquez sur le nom du niveau</strong>. Cette opération placera le plan de construction sur le niveau sélectionné et activera ce niveau s'il ne l'était pas déjà.</p>
+
+<h5>Élévation</h5>
+<p>La valeur de l'élévation indique la hauteur de base de chaque bâtiment ou niveau ainsi que la position d'un plan de construction par rapport à chaque bâtiment ou niveau. Elle détermine quelle partie du modèle correspond à chaque niveau. <em>Les valeurs d'élévation sur les niveau</em> sont indiquées en fonction de la hauteur d'élévation du bâtiment. La valeur d'<em>élévation du bâtiment</em> est mesurée le long de l'axedes z du document.</p>
+
+<p class="figureWithDescription">
+<img alt="Marques d'élévation" src="../images/Left View 400.jpg" /><br/>
+La marque d'élévation du niveau actuel et mise en surbrillance.</p>
+
+<h5>Hauteur du plan de coupe</h5>
+<p>Le plan de coupe détermine l'élévation de la <em>section horizontale</em> de chaque étage, en d'autres termes, seuls les objets se trouvant à cette élévation ou juste en dessous sont inclus dans la représentation.</p>
+
+
+
+<p><strong>REMARQUE :  </strong> Lorsqu'une fenêtre est affichée avec le mode de vue en plan de VisualARQ, la vue de <strong>Dessus</strong><em> </em>est établie et le mode d'affichage "caché" est défini. Tant que le mode de vue en plan est activé, la fenêtre affichera le mode d'affichage sélectionné même si vous activez la vue de niveau.</p>
+
+<h5>Décalage vertical</h5>
+<p>Le décalage supérieur détermine la valeur ajoutée ou déduite à la limite supérieure du niveau lorsque des niveaux entiers sont cachés. Cette option est particulièrement utile lorsque vous cachez la partie supérieure d'un bâtiment et que vous souhaitez cacher également la dalle supérieure du dernier niveau montré. Cette valeur n'a aucune signification pour le niveau supérieur d'un bâtiment et ne concerne que les fenêtres dont le plan de coupe est désactivé.</p>
+<h5>Décalage inférieur</h5>
+
+<p>Le décalage inférieur détermine la valeur ajoutée ou déduite à la limite inférieure du niveau lorsque des niveaux entiers sont cachés. Cette option est particulièrement utile lorsque vous cachez la partie inférieure d'un bâtiment et que vous souhaitez cacher également la dalle inférieure du dernier niveau montré. Cette valeur n'a aucune signification pour le niveau inférieur d'un bâtiment et ne concerne que les fenêtres dont le plan de coupe est désactivé.</p>
+
+
+
+	

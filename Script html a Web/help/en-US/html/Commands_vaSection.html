@@ -1,0 +1,93 @@
+<h3>Section</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaSection</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon">
+		<img alt="Section" height="24" src="../images/VA_Section.jpg" width="24" /> left click
+		[<a href="Commands_vaSectionStyles.html" title="Section styles">right 
+		click</a>]</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> 
+		toolbar:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="VisualARQ Documentation Tools Toolbar" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Section &gt; Section</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionMark.wmv" preview="../images/previews/vaSectionvideo.png" width="300px" height="300px"></div>
+
+<p>The <strong>vaSection</strong> command<em> </em>is used as the first step to create a 2D drawing that represents the 
+3D objects projected on a plane and also to visualize a dynamic section of the 
+3D model in real time.</p>
+
+<p>When you run the <strong>vaSection</strong> command, you are creating the
+<strong>section cutting line</strong> that 
+represents the vertical cutting plane from which 
+you will be able to generate the <strong>section view </strong>and the <strong>dynamic section</strong> afterwards. After 
+running the command, the
+<strong>Section </strong>insert dialog box will appear.
+Follow the steps from the command line<em>.</em> Press the right mouse button or ENTER to accept and go to 
+the next step.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section mark insert.png" alt="Section insert dialog" /><br/>Section 
+	insert dialog</div>
+<br clear="all" />
+
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Specify a <strong>section style</strong> from the insert dialog box.</li>
+	<li>Specify the <strong>first point</strong> for the section cutting line.</li>
+	<li>Specify the <strong>next points</strong> of the section cutting line by 
+	selecting the desired points on the screen with a left click. Right click to 
+	end the step.</li>
+	<li>Specify the <strong>viewer position</strong> and the <strong>section 
+	length</strong> by placing the cursor on the side of the line that is opposite the target and press the left mouse button. 
+	The section length will determine the objects that will be included in the
+	<strong>section view</strong> and <strong>dynamic section</strong>. </li>
+	<li>Enter the <strong>section reference text</strong> by typing it in the 
+	command line.</li>
+</ol>
+
+<p>After the section is inserted, you can create a <a href="Commands_vaSectionView.html">
+<strong>section view</strong> <img alt="Section" height="24" src="../images/VA_SectionView.png" width="24" /></a> from 
+it, or activate the <a href="Commands_vaDynamicSection.html"><strong>dynamic section </strong><img alt="Section" height="24" src="../images/VA_DynamicSection.png" width="24" /></a>.</p>
+<h4>Add jogs to a section and remove jogs from a section</h4>
+	<ul>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaSectionAddJog and vaSectionRemoveJog</div>
+
+		<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Section cutting line &gt; Section &gt; Add 
+		jog to section or Remove jog from section</div>
+</div>
+</ul>
+<p>Option to add or remove jog points into a section cutting line.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Pick as many jog points you want to add/remove along the section cutting 
+	line. Right click to end the command.</li>
+</ol>
+<p>New jog points are added or removed along the section cutting line. To see these new points, select the 
+section cutting line and activate its control points.</p>
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/section control points.png" alt="Control points on section mark" width="400" height="240"  style="float: right;"/>
+<p>The section cutting line has five control points:<br />
+<ol>
+	<li><strong>Edge</strong> control points. Start and end insertion point.</li>
+	<li><strong>Section lenght </strong>control points.</li>
+	<li><strong>Section jog points</strong>.</li>
+	<li><strong>Viewer position </strong>control points.</li>
+	<li><strong>Section</strong> <strong>reference text</strong> control points.</li>
+</ol>
+</p>
+<p>To modify the viewer position, manually move or rotate the cutting line until you reach the desired position, using its control points. The changes update automatically (in real time).</p>
+<p>To update the section, after a change has been made to a selected object, select the cutting line or the 2D drawing of the section and left click the <a href="Commands_vaUpdate.html">Update</a> icon
+<img alt="vaUpdate" height="26" src="../images/VA_Update.jpg" width="26" />. This icon is located in the <a href="Interface_Toolbars.html">VisualARQ Tools</a> 
+toolbar.</p>
+
+<p><strong>NOTE:</strong> Only objects contained within the section area 
+delimited by its insertion points and its section lenght points will be 
+displayed in the dynamic section and in the section view.</p>

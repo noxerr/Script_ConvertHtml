@@ -1,0 +1,104 @@
+<h3>Estilos de tabla</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaTablaEstilos</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Table.jpg" alt="Estilos de tabla"/> clic derecho [<a href="Commands_vaTable.html" title="Comando Tabla">clic izquierdo</a>]
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentación</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra de herramientas Herramientas de documentación de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Tabla &gt; Estilos de tabla</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione un objeto de tabla &gt; (<em>Alt, Mayús</em> o <em>Ctrl</em>) + doble clic</div>
+
+</div>
+
+<p>El estilo de tabla define las características de las tablas. Para cada estilo de tabla se pueden definir las siguientes características: <strong>Nombre, Atributos</strong> y <strong>Aplicar a</strong>.</p>
+<p>Los estilos de puerta están definidos por diferentes <strong>campos de propiedades</strong> que se pueden agregar o eliminar en cualquier momento.</p>
+
+<h4>Nuevo estilo de tabla</h4>
+<p>Para crear un estilo de tabla, pulse el botón <strong>Nuevo estilo</strong> del cuadro de diálogo <a href="Interface_StyleProperties.html">Administrador de estilos</a>. Siga los pasos del asistente de estilos de tabla para definir los parámetros del nuevo estilo de tabla:</p>
+<ul>
+<li><strong>Nombre de estilo</strong></li>
+<li><strong>Tipos de objetos</strong>: puede seleccionarse más de un tipo de objeto.</li>
+<li><strong>Campos de la tabla de planificación</strong>: especifique el nombre del campo y a qué propiedad se aplica.</li>
+<li><strong>Campo de cantidad</strong>: Opción para especificar el campo en el que agrupar los elementos de tabla</li>
+</ul>
+<h4>Editar un estilo de tabla</h4>
+<p>Una vez creado el nuevo estilo de tabla, aparece en la lista del panel izquierda. Seleccione el estilo de tabla que desee definir y utilice las pestañas que aparecen en el recuadro derecho para introducir los parámetros de la tabla que se explican a continuación:</p>
+<p><strong>Agregar un campo de propiedades</strong>: Se pueden agregar nuevos campos de propiedades a un estilo de tabla. Seleccione el estilo de tabla, haga clic con el botón derecho para ver el menú contextual y seleccione 
+<strong>Nuevo &gt; Campo de propiedades de Tabla</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Schedule/style Manager.png" alt="Cuadro de diálogo Administrador de estilos del objeto Tabla" /><br />
+Cuadro de diálogo Administrador de estilos del objeto Tabla, pestaña Aplicar a.
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Edición general de estilos</div>
+<div class="value">Puede utilizar el comando <strong>vaTablaEstilos</strong> o, alternativamente
+	<ul>
+		<li>Utilice el comando <strong>vaEstiloPropiedades</strong>, seleccione una tabla y pulse Intro, o bien</li>
+		<li>Haga clic con el botón derecho en 
+		<img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una tabla y pulse Intro, o bien</li>
+		<li>Seleccione una tabla, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Tabla &gt; Propiedades de estilo</strong>, o bien</li>
+		<li>Pulse <em>Alt, Mayús</em> o <em>Ctrl </em> y haga doble clic en un objeto de tabla.</li>
+	</ul>
+	Los cambios aplicados a un estilo se aplican a <strong>todos los elementos</strong> con ese estilo.
+</div>
+<div class="field">Edición específica por objeto</div>
+<div class="value"><ul>
+		<li>Utilice el comando <strong>vaPropiedades</strong>, seleccione una tabla y pulse Intro, o bien</li>
+		<li>Haga clic en <img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una tabla y pulse Intro, o bien</li>
+		<li>Seleccione una tabla, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Tabla &gt; Propiedades</strong>, o bien,</li>
+		<li>Haga doble clic en un objeto de la tabla. </li>
+	</ul>
+		</div>
+	Los cambios se aplican solo en el estilo del <strong>elemento seleccionado</strong>.</div>
+</div>
+
+
+<h4>Atributos</h4>
+<p>Los atributos definen las características de cada estilo de tabla para las vistas y la impresión. Los atributos válidos son:</p>
+<ul><li>Capa, Visibilidad, Estilo de texto, Estilo de cota, Color, Tipo de línea, Ancho de impresión de línea, Color de impresión de línea, Patrón, Escala de patrón, Ángulo de patrón y Color de patrón.</li></ul>
+
+<h4>Aplicar a</h4>
+<p>En esta pestaña se indica qué <em>tipo de objetos</em> se muestran en la tabla. El comando filtra la selección automáticamente, para que sólo se muestre el tipo de objetos elegido.</p>
+<p>Dentro del cuadro de diálogo Administrador de estilos del objeto Tabla, también se accede a otras dos pestañas, visibles únicamente cuando se selecciona alguna de las columnas de cada estilo de tabla: <strong>Grupo</strong> y <strong>Propiedad</strong>.</p>
+<p>La cantidad y el tipo de columnas de cada estilo de tabla pueden ser definidas por el usuario, según lo que necesite cuantificar. En el caso de los tres estilos de tabla que vienen por defecto, las columnas predefinidas son:</p>
+<ul>
+	<li>Estilo de <strong>Huecos</strong>: <em>Cantidad, , Referencia, Anchura, Altura, Elevación</em> y <em>Lado de apertura.</em></li>
+	<li>Estilo de <strong>Espacios</strong>: <em>Nombre, Perímetro</em> y <em>Área.</em></li>
+	<li>Estilo de <strong>Muros</strong>: <em>Cantidad, Estilo, Longitud, Área</em> y 
+	<em>Volumen</em>.</li>
+</ul>
+
+<h5>Grupo</h5>
+<p>En esta pestaña se define cuáles son las <em>características comunes</em> que debe tener el objeto cuantificado para considerarse de un mismo grupo.<br/> 
+Esta pestaña solo aparece cuando se selecciona la columna de la tabla que corresponde a <em>Cantidad</em> (se utiliza en los alzados de carpintería).</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Schedule/Style Manager - Group.png" alt="Cuadro de diálogo Administrador de estilos del objeto Tabla, pestaña Grupo" /><br />
+Cuadro de diálogo Administrador de estilos del objeto Tabla, pestaña Grupo.
+</div>
+<br clear="all" />
+
+<h5>Propiedad</h5>
+<p>En esta ficha se define el <em>tipo de propiedad</em> del objeto cuantificado que debe mostrarse en cada columna de la tabla.<br/> 
+Esta ficha aparece cuando se selecciona cualquiera de las columnas de la tabla, con excepción de <em>Cantidad</em>.</p>
+
+<h5>Ordenar</h5>
+<p>Esta ficha aparece cuando se selecciona un estilo de tabla. Se utiliza para establecer un criterio para ordenar los distintos campos de propiedades dentro del estilo de tabla y también para ordenar alfabética o numéricamente los valores de cada campo de propiedades.</p>
+<p>Haga clic en el botón <strong>Agregar</strong> para agregar un nuevo campo de propiedad que establecerá el primer criterio para ordenar los valores de ese estilo de tabla. Haga clic en este nombre de campo de propiedades para otro campo de propiedades. Seleccione el tipo Orden (Ascendiente o Descendiente) además del campo de propiedades.</p>
+<p>Puede agregar más campos de propiedades que proporcionarán nuevos criterios para ordenar los valores en los estilos de tabla. Utilice las flechas situadas en la esquina inferior derecha del cuadro de diálogo para cambiar el orden de los campos de propiedades.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Schedule/Sort Tab.png" alt="Cuadro de diálogo Administrador de estilos del objeto Tabla, ficha Ordenar" /><br />
+Cuadro de diálogo Administrador de estilos del objeto Tabla, ficha Ordenar.
+</div>
+<br clear="all" />
+

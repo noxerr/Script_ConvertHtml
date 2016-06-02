@@ -1,0 +1,157 @@
+<h3>Stair Styles</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaStairStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Stair"/> right click
+	[<a href="Commands_vaStair.html" title="Stair command">left click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Stair &gt; Stair Styles...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Stair &gt; Styles properties</div>
+	
+	<div class="field">Shortcut key: </div>
+	<div class="value menu">Select a stair object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + 
+		double left click</div>
+
+	
+</div>
+
+<p>The stair style defines the stair features. You can define the following parameters for each stair style: <strong>Name</strong>, <strong>Attributes</strong>, 
+<strong>Type</strong>, <strong>Steps</strong> and <strong>Rules</strong>.</p>
+
+
+<p>The stair styles are defined by a <strong>Slab</strong> component that can be added or deleted at any time.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stair Components.jpg" alt="Stair components" width="300" height="300" /><br />
+Different parts and components of a stair: 
+<ol>
+<li><strong>1: Riser slab</strong></li>
+<li><strong>2: Tread slab</strong></li>
+<li><strong>3: <img alt="Stair Slab" height="16" src="../images/Stair slab-16.png" width="16" /> 
+Stair Slab</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+
+<h4>New stair style:</h4>
+<p>You can create new styles and duplicate existing styles from the Stair <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+<p>When clicking on the <strong>New Style... button</strong>, the new style wizard appears. Follow the steps of the wizard to define the new stair style parameters:</p>
+<ul>
+<li>Name</li>
+<li>Type</li>
+<li>Steps</li>
+</ul>
+
+<h4><strong>Delete a stair style</strong>:</h4>
+<p>You can delete stair styles from the Stair <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing stair in the model.</p>
+
+<h4>Edit a stair style:</h4>
+<p>Select the stair style or the stair component item at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add a stair slab</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the stair style name to open the context menu, and select <em>New > Stair slab</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the stair style and click on the <em>New</em> icon, from the dialog toolbar. Select <em>Stair slab</em>.</li>	
+</ul>
+
+<p><strong>Delete slab:</strong> use the Context menu (righ-click on the slab to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/StairNewStyle.png" alt="Stair Style Manager dialog box" /> <br />
+Stair Style Manager dialog box
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaStairStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		stair and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)"/>, 
+		then select a stair and press Enter, or</li>
+		<li>Select a stair and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Stair &gt; Style Properties</strong>, 
+		or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on a stair object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a stair 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a stair and press Enter, or</li>
+		<li>Select a stair and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Stair &gt; Properties</strong>, or,</li>
+		<li>Double click on a stair object. </li>
+	</ul>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each stair style and its components 
+for display and print purposes. The valid attributes are:</p>
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle and Pattern color</li>
+</ul>
+
+<h4>Type</h4>
+<p>The Type parameter defines the stair type, which can be:</p>
+<ul>
+	<li><strong>Default:</strong> A landing is inserted in the stair inflection zone.</li>
+	<li><strong>Balanced:</strong> The tread value is applied to the center of all steps.</li>
+</ul>
+
+<h4>Steps</h4>
+<p>The components of a step are:</p>
+<ul>
+	<li><strong>Tread Slab</strong>: Displayed in 3D, elevation views and sections, but it does not affect the
+	<span class="style2"> 
+	plan view</span>.<br />
+	The tread slab properties are <strong>Thickness</strong> and <strong>Nosing</strong>.</li>
+	<li><strong>Riser Slab</strong>: Displayed in 3D, elevation views and sections, but it does not affect th<span class="style2">e</span><span class="style1"> 
+	</span> <span class="style2"> 
+	plan</span> <span class="style2">view.
+</span>The riser slab property is <strong>Thickness</strong>.</li>
+</ul>
+
+<h4>Rules:</h4>
+<p>Enable this option when you wish to define the slope of the stair according to the rule: 2*Risers + 1 Tread = "x number".<br /> 
+The "x number" by default goes from 0,54 m to 0,70 m and represents the range of dimension values of a standard human step.</p>
+
+<h3>Stair components</h3>
+<h4>Slab <img alt="Stair Slab" height="16" src="../images/Stair slab-16.png" width="16" /></h4>
+<p>Stairs can have a slab. Stair slabs can be created or deleted by right clicking 
+on the stair style name (New &gt; Stair slab or Delete the 
+existing one). The <strong>slab thickness</strong> can be edited from the Geometry tab, when selecting the slab component.</p>
+<p>The stair slab can be extended to the starting slab and the landing slab by modifying 
+its thickness from the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (Rhino Properties dialog box <img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />):</p>
+<ul>
+	<li class="style2"><strong>Top Slab Thickness</strong>:
+	The stair slab thickness necessary for the extension to the slab thickness where the stair lands</li>
+	<li><strong>Bottom Slab Thickness</strong>: The stair slab thickness 
+	necessary for the extension to the slab thickness where the stair starts.</li>
+</ul>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stairs Planta.png" alt="Stairs examples" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stairs.png" alt="Stairs examples" /><br/>Examples of 
+	straight and spiral stairs.</div>
+<br clear="all" />
+<p><strong>NOTE:</strong> Stair object properties are not part of the stair style and 
+they can't be defined in the insert dialog box.</p>

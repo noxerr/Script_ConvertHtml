@@ -1,0 +1,66 @@
+<h3>Interoperability of VisualARQ with Rhino Commands and Interface</h3>
+
+<h4>Rhino Commands</h4>
+
+<p>Since VisualARQ objects are actually Rhino blocks, all Rhino commands running with blocks will also work by default with VisualARQ objects. Other commands have been adapted; an example is seen with the commands that duplicate objects (such as Copy, Array and Mirror), as well as some 
+Windows edition commands (such as Cut, Copy and Paste: CTRL+X, CTRL+C, CTRL+V, respectively).<br />
+When running Rhino commands that are not supported by VisualARQ, VisualARQ objects can not be selected.</p>
+
+<p>The <strong>Explode</strong> command removes the properties from VisualARQ objects, turning them into polysurfaces. In this case, you can edit them like any Rhino polysurface.</p>
+
+<p>VisualARQ has special commands that can be used to convert (or reconvert) some Rhino objects into VisualARQ objects.<br />
+These commands are <a href="Commands_vaWall.html#Wallfromcurves"><strong>vaWall &gt; FromCurves</strong></a> and 
+<a href="Commands_vaWallFromSolid.html"><strong>vaWallFromSolid</strong></a><em>.</em> See these commands for more information. 
+In addition, the Railing and the Beam objects can also be created from 2D and 3D 
+curves. The Slab and the Roof objects are also created from closed curves.</p>
+
+<h4>Rhino Commands Behaviour</h4>
+
+<ul>
+	<li><strong>Repeat last command and recently used commands:</strong><br />
+		As in Rhino commands, you can repeat most VisualARQ commands as follows: 
+		<ul>
+			<li>To repeat the last command, press ENTER, the SPACE BAR or 
+			right-click when there is no active command. </li>
+			<li>To repeat a recently used command, right-click on the command line.
+			</li>
+	</ul>
+	</li>
+	<li><strong>Selecting objects:</strong><br />
+		As in Rhino commands, most VisualARQ operations prompt you to select one or more objects. VisualARQ objects are selected like Rhino objects:
+		<ul>
+			<li>To select a single object, click on the object.</li>
+			<li>To select multiple objects, press the SHIFT key while you click 
+			on the desired objects or use the window selection.</li>
+		</ul>
+	</li>
+	<li><strong>Modeling aids and object snaps:</strong><br />
+		With VisualARQ objects, modeling aids (grid snap, orthogonal mode and planar mode) and object snaps (end, close, point, middle, center, intersec, perp, etc.) can be used by simply following the same steps required for Rhino objects.</li>
+</ul>
+<h4>Control Points</h4>
+<div class="comDescr">
+	<div class="field">Keyboard: </div>
+	<div class="value keyboardCommand">_PointsOn / _PointsOff</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Properties"/> Control Points On: 
+		Left click</div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Properties"/> Control Points Off: Right click</div>
+	
+		
+	<div class="field">Menu: </div>
+	<div class="value menu">Edit &gt; Control Points &gt; Control Points On / Control Points Off</div>
+	
+	<div class="field">Shortcut: </div>
+	<div class="value menu">Control points On (F10), Control points Off (F11)</div>
+
+	
+	
+</div>
+
+<p>All VisualARQ objects can be edited by turning their control points on. To 
+turn VisualARQ control points on and off, you can use the same commands as in 
+Rhino.</p>
+<p class="figureWithDescription">
+<img src="../images/Wall and door control points.jpg" alt="VisualARQ wall and door with control points on" /><br/>
+VisualARQ wall and door with control points on.</p>

@@ -1,0 +1,130 @@
+<h3>Facciata continua</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaFacciataContinua</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_CurtainWall.jpg" alt="Facciata continua"/> clic sinistro [<a href="Commands_vaCurtainWallStyles.html" title="Stili di facciata continua">clic destro</a>]
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html">Oggetti</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Facciata continua &gt; Facciata continua</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaCurtainWall.wmv" preview="../images/previews/vaCurtainWallvideo.png" width="300px" height="300px"></div>
+
+<p>Quando si esegue il comando <strong>vaFacciataContinua</strong>, appare la<strong> </strong><a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> delle facciate continue. Questa finestra mostra l'elenco di tutti gli stili di facciata continua disponibili, così come le opzioni di base dell'oggetto facciata continua ed un'anteprima dello stesso.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare lo <strong>stile di facciata continua</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Selezionare il <strong>punto iniziale</strong> (punto di inserimento) della facciata continua con un clic. Quando si specifica il punto iniziale, appare una quota dinamica che indica in tempo reale il valore della lunghezza della facciata continua che si sta inserendo.</li>
+	<li>Cliccare di nuovo per specificare il <strong>punto finale</strong> della facciata continua.</li>
+</ol>
+
+<p>La <strong>lunghezza</strong> e la <strong>direzione</strong> della facciata continua si possono specificare in vari modi:
+<ul>
+	<li>Digitando le coordinate (relative o assolute) nella linea di comando.</li>
+	<li>Digitando un valore per specificare la lunghezza e/o l'angolo nella linea di comando.</li>
+	<li>Manualmente, con un clic sinistro sul punto desiderato.</li>
+</ul>
+</p>
+
+<p>Ciascuna nuova facciata continua viene tracciata di seguito a quella precedente, fino a quando non si preme INVIO, ESC o clic destro. Il comando richiede di nuovo di specificare il punto di inizio per tracciare la seguente facciata continua, tuttavia, questa volta non la collega alla facciata precedente in modo predeterminato, ma inizia a tracciarla a partire dal nuovo punto iniziale selezionato.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Curtain wall/Curtain wall insert dialog.png" alt="Finestra di dialogo di inserimento dell'oggetto Facciata continua"/><br/>
+Finestra di dialogo di inserimento delle facciate continue
+</div>
+<br clear="all" />
+
+<h3>Facciata continua: Da curve</h3>
+
+<p>Le facciate continue si possono anche creare a partire da curve disegnate in precedenza nel modello.</p>
+
+<p>Quando si esegue il comando <strong>vaFacciataContinua</strong>, appare la 
+<a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> delle facciate continue.</p> 
+<p><strong>Passi:</strong></p>
+<ol>
+		<li>Selezionare l'opzione <strong>DaCurve</strong> dalla linea di comando.</li>
+		<li>Selezionare una <strong>curva</strong> o varie <strong>curve</strong> dal modello, da usare per generare le facciate continue. Queste curve possono essere di qualsiasi tipo e forma, a patto che siano <em>piane. </em>Se si seleziona una polilinea, verrà generato un oggetto facciata continua per ciascun segmento di polilinea.</li>
+		<li>Selezionare le <strong>opzioni di inserimento della facciata continua</strong> dalla 
+		<span lang="es"></span>
+		<a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> delle facciate continue, che definiranno la <span lang="es">facciata continua</span> creata a partire da quella curva<strong>.</strong> Questo passo si può eseguire prima o dopo la selezione della curva o delle curve per la generazione delle facciate continue.<br/>
+		</li>
+		
+</ol>
+<br />
+
+<p>Le facciate continue risultanti da questa operazione si comportano come il resto delle facciate continue di VisualARQ.</p>
+
+<br clear="all" />
+
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Le facciate continue possiedono tre <em>punti di controllo</em> e tre <em>frecce di controllo</em>:<br />
+<ul>
+	<li>I <em>punti di controllo iniziale</em> e <em>finale</em> si possono usare per stirare una facciata continua e/o cambiarne la direzione, mentre il <em>punto di controllo centrale</em> viene usato per piegarla, se essa è curva.</li>
+	<li>Le <em>frecce di controllo</em> che appaiono nella vista Piana (così come nella vista Prospettica) servono per stirare orizzontalmente la facciata continua dai suoi estremi, mentre la <em>freccia di controllo</em> che appare nel resto delle viste (Prospettica, Frontale e Destra) viene usata per stirare la facciata continua verticalmente, modificandone così l'altezza in modo manuale.</li>
+</ul>
+</p>
+
+<div class="figureWithDescription block"><img src="../images/Curtain Wall Control Points.jpg" alt="Punti di controllo delle facciate continue" width="450" height="150" /><br/>
+Punti di controllo delle facciate continue</div>
+
+<br clear="all" />
+
+<ol>
+	<li>Punto di controllo iniziale (punto di inserimento).</li>
+	<li>Freccia di controllo (verticale), non editabile nella vista superiore.</li>
+	<li>Punto di controllo finale.</li>
+	<li>Frecce di controllo (orizzontali).</li>
+	<li>Facciata continua dai punti di controllo della curva.</li>
+</ol>
+
+<h4>Opzioni e parametri di inserimento</h4>
+
+
+<h5>Altezza</h5>
+<p>Anche se l'<strong>Altezza</strong> è una proprietà dello stile di una facciata continua, dalla finestra di inserimento è possibile assegnare un valore di altezza diverso da quello predefinito. Basta disattivare la casella di selezione 
+<strong>Altezza per stile</strong> e specificare il valore desiderato, usando il controllo numerico per l'altezza.</p>
+
+<p>Per modificare l'altezza di una facciata continua, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a>
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel <span lang="es">pannello</span> delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Allineamento</h5>
+<p>Esistono tre opzioni per allineare una facciata continua, in funzione
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">della sua posizione in base alla direzione della sua curva base:</span></p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Allineamento al centro"/></td>
+				<td><strong>Centro</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Allineamento a destra"/></td>
+				<td><strong>Destra</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Allineamento a sinistra"/></td>
+				<td><strong>Sinistra</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Offset di allineamento</h5>
+<p>Inserisce la facciata continua ad una distanza specifica dalla direzione della sua curva base.</p>
+<p>Per modificare l'allineamento o l'offset di allineamento di una facciata continua, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a>
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

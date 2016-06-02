@@ -1,0 +1,182 @@
+<h3>Column Styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaColumnStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Column.jpg" alt="Column"/> right click
+	[<a href="Commands_vaColumn.html" title="Column command">left click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects</a> toolbar:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Column &gt; Column Styles...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Column &gt; Styles Properties</div>
+	
+	<div class="field">Shortcut: </div>
+	<div class="value menu">Select a column object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + double click</div>
+
+	
+</div>
+
+<p>The column style defines the column features. You can define the following parameters for each column style: <strong>Name</strong>, <strong>Attributes</strong>, <strong>Shape</strong> (geometry), and <strong>Sizes</strong>.</p>
+
+<p>The column styles are defined by a <strong>Coating</strong> component that can be added or 
+deleted at any time.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column Components.jpg" alt="Column components" width="300" height="300" /><br />
+Column and its coating component:
+<ol>
+<li><strong>Column</strong></li>
+<li><strong><img alt="Column Coating" height="16" src="../images/Column Coating-16.jpg" width="16" /> 
+Coating</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+<h4>New column style:</h4>
+<p>You can create new styles and duplicate existing styles from the column <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+<p>When clicking on the <strong>New Style... button</strong>, the new style wizard appears. Follow the steps of the wizard to define the new column style parameters:</p>
+<ul>
+<li>Name</li>
+<li>Column profile</li>
+<li>Standard size</li>
+<li>Coating component parameters</li>
+<li>Custom blocks</li>
+</ul>
+
+<h4><strong>Delete a column style</strong>:</h4>
+<p>You can delete column styles from the column <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing column in the model.</p>
+
+<h4>Edit a column style:</h4>
+<p>Select the column style or the column component item at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add a new column component:</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the column style name to open the context menu, and select <em>New > "Component item"</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the column style and click on the <em>New</em> icon, from the dialog toolbar. Select <em>"Component item"</em>.</li>	
+</ul>
+<p><strong>Delete components:</strong> use the Context menu (righ-click on the component to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/ColumnNewStyle.png" alt="Style Manager dialog box for the Column object." /><br />
+Style Manager dialog box for the column object
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaColumnStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		column and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)"/>, 
+		then select a column and press Enter, or</li>
+		<li>Select a column and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Column &gt; Style Properties</strong>, 
+		or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on a column object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a column 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a column and press Enter, or</li>
+		<li>Select a column and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Column &gt; Properties</strong>, or,</li>
+		<li>Double click on a column object. </li>
+	</ul>
+		</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each column style and its components 
+for display and print purposes. The valid attributes are:</p>
+
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle, and Pattern color</li>
+</ul>
+
+<h4>Shape</h4>
+
+<p>The column shape is defined by a profile.<br />
+VisualARQ offers a library with the main standard <em>European</em> and <em>North American</em> profiles.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column custom profile.jpg" alt="Column creation wizard: profile selection." /><br />
+Column creation wizard: profile selection
+</div>
+<br clear="all" />
+
+<p>Customized shape profiles can also be used to define Columns.</p>
+
+<p>To add a customized profile, draw a closed and flat curve and convert it into 
+a profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em></a> command
+<img alt="vaProfileFromCurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Once the custom profile has been created, it will appear at the end of the list of preset parametric profiles library.</p>
+
+<p>The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.</p>
+
+<h4>Sizes</h4>
+
+<p>The parameters corresponding to the column sizes will vary in accordance with the type of profile selected.
+You can specify different sizes for the same column style.</p>
+
+<p>The sizes can be specified at any time when inserting the column from the insert dialog box by choosing the 
+<strong>Sizes &gt; Other</strong> option in the <strong>Profile</strong> section of this panel.</p>
+
+<h3>Column components</h3>
+<h4>Coating <img alt="Column Coating" height="16" src="../images/Column Coating-16.jpg" width="16" /> </h4>
+
+<p>Columns can have a coating.<br />
+The only property of the coating is its thickness, that can be edited under the Geometry tab.</p>
+<p>To add a coating to a column that hasn't any, select the column style on the left side of the dialog box, right-click to open the context menu or click on the New icon from the dialog toolbar, and select 
+<strong>New 
+&gt; Coating</strong>.</p>
+<br clear="all" />
+
+
+<h3>Column from custom blocks</h3>
+
+<p>The column styles can be created with <strong>2D</strong> and <strong>3D blocks</strong> that define their representation in the plan and model views, respectively.</p>
+
+<p><strong>Steps:</strong></p>
+
+<ol>
+<li><strong>Create the 2D and 3D blocks:</strong> Create the 3D model and draw the 2D representation from it. 
+Then, create two blocks from them with the <strong>Block</strong> command (<strong>Edit </strong>menu <strong>&gt; Blocks &gt; Create Block Definition</strong>).</li>
+<li><strong>Assign the 2D and 3D blocks</strong> to a new or an existing column style, in the column styles dialog:
+
+<ul>
+<li><strong>New style wizard</strong>: press the <strong>New style... </strong> button in the Style Manager dialog box. Skip the dialogs where the column style parameters are defined by pressing the 
+<strong>Next</strong> button until the custom block definition dialog box is displayed. Select the checkbox that enables the options to use custom blocks for the model and plan views in the 
+<strong>Custom blocks </strong>dialog box. Once they have been enabled, select the 3D and 2D blocks in the drop-down menu to define the 
+column style representation in those views.</li>
+<li><strong>Existing Column style</strong>: select the column style from the top-left styles list and assign the 3D and 2D blocks from the <strong>blocks</strong> tab.</li>
+</ul>
+</li>
+</ol>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column Style From 3D Block.png" alt="Style Manager dialog box for the Column object, Blocks tab." /><br />
+Style Manager dialog box for the Column object, Blocks tab.
+</div>
+<br clear="all" />
+<p>The checkboxes to assign 3D and 2D blocks will be only enabled if there is a block created in the document.</p>
+<p>When a column style only has a block assigned for its 3D representation, the 2D representation will take the real block section according to the level cut plane height where the column is situated.</p>
+<p>When a column style only has a block assigned for its 2D representation, the 3D representation will take the column style parameters.</p>

@@ -1,0 +1,104 @@
+<h3>Slab Styles</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaSlabStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Slab.jpg" alt="Slab"/> right click [<a href="Commands_vaSlab.html" title="Slab command">left click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Slab &gt; Slab Styles...</div>
+	
+</div>
+
+<p>The Slab styles define the slab features. You can define the following parameters in each 
+slab style: <strong>Name </strong>and <strong>Attributes</strong>.</p>
+<p>The slab styles are defined by different <strong>Slab Layers</strong> that can be added or deleted at any time.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Slab/Slab Style Components.png" alt="Slab style composed by 2 layers:" width="300" height="200" /><br />
+Slab style composed by 2 layers:
+<ol>
+<li><strong><img alt="Slab layer" height="16" src="../images/Wall Layer-16.png" width="16" /> Slab layer A</strong></li>
+<li><strong><img alt="Slab layer" height="16" src="../images/Wall Layer-16.png" width="16" /> Slab layer B</strong></li>
+</ol>
+</div>
+<br clear="all" />
+
+<h4>New slab style:</h4>
+<p>You can create new styles and duplicate existing styles from the Slab <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+
+<h4><strong>Delete a slab style</strong>:</h4>
+<p>You can delete slab styles from the Slab <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing slab in the model.</p>
+
+<h4>Edit a slab style:</h4>
+<p>Select the slab style or the slab component item at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add a slab layer</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the slab style name to open the context menu, and select <em>New > Slab layer</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the slab style and click on the <em>New</em> icon, from dialog toolbar. Select <em>Slab layer</em>.</li>	
+</ul>
+
+<p><strong>Delete layers:</strong> use the Context menu (righ-click on the layer to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Slab/Slab Styles Dialog.png" alt="Style Manager dialog box for the Slab object." /><br/>
+Style Manager dialog box for the slab object
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaSlabStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		slab and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)" />, 
+		then select a slab and press Enter, or</li>
+		<li>Select a slab and open the context menu by pressing the right mouse button 
+		for a while, then select <strong>Slab &gt; Style Properties</strong>, or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl</em>, then 
+		double click on a slab object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a slab 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a slab and press Enter, or</li>
+		<li>Select a slab and open the context menu by pressing the right mouse button 
+		for a while, then select <strong>Slab &gt; Properties</strong>, or,</li>
+		<li>Double click on a slab object. </li>
+	</ul>
+		</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each slab style and its layers 
+for display and print purposes. The valid attributes are:</p>
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material.</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color.</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle, and Pattern color.</li>
+</ul>
+
+
+<h3>Slab Components</h3>
+
+<h4>Layers <img alt="Slab Layer" height="16" src="../images/Wall Layer-16.png" width="16" /></h4>
+<p>Slab styles can have different number of layers, but they must have at least one.</p>
+
+<p>You can specify the following parameters for each layer: <strong>
+Name, Attributes</strong> and <strong>Geometry</strong>.</p>
+
+<h5>Geometry</h5>
+<p><strong>Thickness</strong>: the thickness of the slab layer is a property of the slab style. However, it can be also edited for each slab object individually.</p>

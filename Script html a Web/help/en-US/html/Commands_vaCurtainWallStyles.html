@@ -1,0 +1,230 @@
+
+<h3>Curtain Wall Styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaCurtainWallStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_CurtainWall.jpg" alt="Curtain Wall styles"/> right click
+	[<a href="Commands_vaCurtainWall.html" title="Curtain Wall command">left click</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects toolbar</a>:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Curtain Wall &gt; Curtain Wall Styles</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Curtain Wall &gt; Styles Properties</div>
+	
+	<div class="field">Shortcut key: </div>
+	<div class="value menu">Select a curtain wall object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + double click</div>
+
+	
+</div>
+
+<p>The curtain wall style defines the curtain wall features. The following parameters can be specified for each style: <strong>Name, Attributes, Panel</strong> and <strong>Location</strong>.</p>
+
+<p>The curtain wall styles are defined by different components that can be added or deleted at any time: 
+<strong>Cell, Frame,</strong> <strong>Mullions and</strong> <strong>Supports</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Curtain wall/Curtain wall components.png" alt="Curtain Wall object and its Components" width="300" height="300" /><br />
+Different parts and components of a Curtain Wall:
+<ol>
+<li><strong><img alt="Generic Infill" height="16" src="../images/Curtain Wall/Curtain Wall Generic Infill-16.png" width="16"/> 
+Cell</strong></li>
+<li><strong><img alt="Curtain Wall mullion" height="16" src="../images/Curtain Wall/Curtain Wall Mullions Component-16.png" width="16" /> Mullion</strong></li>
+<li><strong><img alt="Curtain Wall support" height="16" src="../images/Curtain Wall/Curtain Wall Mounting Component-16.png" width="16"/> 
+Support (vertical)</strong></li>
+<li><strong><img alt="Curtain Wall Frame" height="16" src="../images/Curtain Wall/Curtain Wall Frame Component-16.png" width="16" /> 
+Frame</strong></li>
+
+</ol>
+
+</div>
+
+<br clear="all" />
+
+<h4>New curtain wall style:</h4>
+<p>You can create new styles and duplicate existing styles from the curtain wall <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+
+<h4><strong>Delete a curtain wall style</strong>:</h4>
+<p>You can delete curtain wall styles from the curtain wall <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing curtain wall in the model.</p>
+
+<h4>Edit a curtain wall style:</h4>
+<p>Select the curtain wall style or the curtain wall component item at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add a new curtain wall component:</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the curtain wall style name to open the context menu, and select <em>New > "Component item"</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the curtain wall style and click on the <em>New</em> icon, from the dialog toolbar. Select <em>"Component item"</em>.</li>	
+</ul>
+<p><strong>Delete components:</strong> use the Context menu (righ-click on the component to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Curtain Wall/Curtain Wall Styles dialog.png" alt="Style Manager dialog box for the Curtain Wall object." /><br/>
+Style Manager dialog box for the curtain wall object
+</div>
+
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaCurtainWallStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		curtain wall and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)" />, 
+		then select a curtain wall and press Enter, or</li>
+		<li>Select a curtain wall and open the context menu by pressing the right mouse button 
+		for a while, then select <strong>Curtain Wall &gt; Style Properties</strong>, or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl</em>, then 
+		double click on a curtain wall object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a curtain wall 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a curtain wall and press Enter, or</li>
+		<li>Select a curtain wall and open the context menu by pressing the right mouse button 
+		for a while, then select <strong>Curtain Wall &gt; Properties</strong>, or,</li>
+		<li>Double click on a curtain wall object. </li>
+	</ul>
+		</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each curtain wall style and its components 
+for display and print purposes. The valid attributes are:</p>
+
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material.</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color.</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle and Pattern color.</li>
+</ul>
+
+<h4>Panel</h4>
+<p>This option determines whether the curtain wall panels will be curved or flat, when the curtain wall is created from an arch or a non straight curve.</p>
+
+<h4>Location</h4>
+<p>Curtain wall panel position relative to Frame. There are three alignment options available: <strong>Interior, Center</strong> and <strong>Exterior</strong>.</p>
+
+<h3>Curtain wall components</h3>
+
+<h4>Cell <img alt="Curtain Wall Infill" height="24" src="../images/Curtain Wall/C.Wall general Infill -24.png" width="24" /></h4>
+<p>The Cell component determines the curtain wall design and how the panels will be distributed along the curtain wall area. It is defined by the following parameters:</p>
+
+<h5>Division</h5>
+
+<p>The division of the Cell component determines how the curtain wall is divided. There are 5 different 
+division types:</p>
+<blockquote>
+
+<p><strong>1. Fixed number of cells</strong> <img alt="Fixed cell number" height="24" src="../images/Curtain Wall/C.Wall Fixed Cell Number -24.png" width="24" /></p>
+<p>Determines the number of curtain wall cells according to a fixed number of horizontal and vertical 
+divisions, regardless of the curtain wall length 
+and height in the model.</p>
+
+<p><strong>2. Fixed cell size</strong> <img alt="Fixed cell size" height="24" src="../images/Curtain Wall/C.Wall Fixed Cell Dimensions -24.png" width="24" /></p>
+
+<p>Fixes the cell size regardless of the curtain wall length and height in the model.</p>
+<p>Since the curtain wall objects length and height may not fit with the cell size, 
+there are some parameters that help to adjust the position of the grid division along a curtain wall object in the model:</p>
+<ul>
+<li><img alt="Row fit type" height="24" src="../images/Curtain Wall/Last Cell Fit type horizontal -24.png" width="24" /> <strong>Row fit</strong>: option to specify whether the last 
+cell of each row of the curtain wall object extends to fit with the end or 
+is trimmed.</li>
+	<li><img alt="Column fit type" height="24" src="../images/Curtain Wall/Last Cell Fit Type -24.png" width="24" /> <strong>Column fit</strong>: option to specify whether the last 
+	cell of each column of the curtain wall object extends to fit with the end or is trimmed.</li>
+<li><img alt="Alignment" height="24" src="../images/Curtain Wall/Curtain Wall Grid Alignment -24.png" width="24" /> <strong>Alignment</strong>: option to specify the position from which the grid division will be created from along the curtain wall object.</li>
+</ul>
+ 
+<p><strong>3. Horizontal division</strong> <img alt="Horizontal division" height="24" src="../images/Curtain Wall/C.Wall Vertical Division-24.png" width="24" /></p>
+<p>By default, it generates two Cell components divided horizontally.</p>
+<p>New Cell components can be added by doing right click on the <strong>Cell component &gt; New &gt; 
+Cell</strong>. Each subdivision panel takes a "None" division type by default, 
+but it can have any other type of division, and get subdivided again.</p>
+<p>The Cell components that have an horizontal division can have their subdivision cells 
+size defined as a percentage value (%) or a real 
+size value.</p> 
+<p><strong>Note:</strong> If a cell component is divided again as a vertical or horizontal division type, it can only 
+have its width/hight value defined as a fixed size, in case its parent cell width/hight is set to fixed size too. 
+</p>
+<p><strong>4. Vertical division <img alt="Vertical division" height="24" src="../images/Curtain Wall/C.Wall Horizontal Division-24.png" width="24" /></strong></p>
+<p>By default, it generates two Cell components divided vertically. It works in the same way as the Horizontal division type.</p>
+
+
+<p><strong>5. None</strong> <img alt="None" height="24" src="../images/Curtain Wall/C.Wall None Division-24.png" width="24" /></p>
+<p>Generates a single panel with no subdivision.</p>
+
+</blockquote>
+
+<h5>Infill</h5>
+<p>The infills determine how each cell composing a Curtain Wall is filled. There 
+are 3 different Infill types: <img alt="Infill type" height="24" src="../images/Curtain Wall/Curtain Wall Infill Type -24.png" width="24" /></p>
+<ul>
+<li><img alt="Infill type" height="16" src="../images/Curtain Wall/Curtain Wall Single Panel-16.png" width="16" /> <strong>Single Panel</strong>: Each cell is filled with a single panel.</li>
+<li><img alt="Infill type" height="16" src="../images/Curtain Wall/Curtain Wall Empty Panel-16.png" width="16" /> <strong>Empty</strong>: Each cell appears empty.</li>
+<li><img alt="Infill type" height="16" src="../images/Curtain Wall/Curtain wall -16.png" width="16" /> <strong>Curtain Wall</strong>: Each cell is filled with a curtain wall style.</li>
+
+</ul>
+<p><strong>Panel Thickness</strong>: When the infill panel thickness is 0, it is represented as a single surface.</p>
+<p><strong>Curtain Wall Style</strong>: this option shows the list of 
+curtain wall styles available when the infill type is set to Curtain Wall.</p>
+
+<p><strong>Panel gap</strong>: space left among panels at their horizontal and vertical joints.</p>
+
+<h4>Frame <img alt="Curtain Wall Frame" height="24" src="../images/Curtain Wall/Curtain Wall Frame -24.png" width="24" /></h4>
+<p>Curtain walls can have a frame. The frame component is defined by the following parameters:</p>
+
+<h5>Geometry</h5>
+<ul><li>
+	<strong>Depth</strong> and <strong>width:</strong> the sizes can be edited independently for the vertical and 
+the horizontal parts of the frame.</li></ul>
+
+<h4>Mullions <img alt="Curtain Wall Mullions" height="24" src="../images/Curtain Wall/Curtain Wall Mullions -24.png" width="24" /></h4>
+<p>Curtain walls can have mullions. The mullion component represents the frames 
+situated at cells divisions. They are defined by the following 
+parameters:</p>
+<h5>Geometry</h5>
+<ul><li>
+	<strong>Depth</strong> and <strong>width:</strong> the sizes can be edited independently for the vertical and 
+the horizontal mullions.</li></ul>
+
+<h4>Supports <img alt="Curtain Wall supports" height="24" src="../images/Curtain Wall/Curtain Wall Mountings -24.png" width="24" /></h4>
+<p>Curtain walls can have supports.</p>
+<p>Supports are structural elements that support the curtain wall 
+panels. Curtain walls can have more than one Support component. To add a new 
+Support component, right click on the <strong>Curtain wall style &gt; New &gt; 
+Curtain wall support</strong>.</p>
+<p>Supports are 
+defined by the following parameters:</p>
+<h5>Geometry</h5>
+<ul>
+<li><strong>Support type</strong>: supports can be either vertical or 
+horizontal. If you want to combine both, add a new 
+Support component to the Curtain Wall style. You can also specify if supports are created at the start and 
+at the end of the curtain wall.</li>
+	<li><strong>Placement</strong>: You can specify the Longitudinal and Transversal offset of the 
+	support position from the panels.</li>
+	<li><strong>Rotation</strong>: The rotation of the support profile around its 
+	own axis.</li>
+</ul>
+<h5>Profile</h5>
+<ul><li>The support shape is defined by a profile and by its size. You can 
+	assign a custom profile to a Support component.</li>
+</ul>
+<p>To add a custom profile, draw a closed and flat curve and convert it into a 
+new profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em>
+<img alt="Profile from curve command" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a> command.<br />
+Once the custom profile has been created, it will appear at the end of the list of preset parametric profiles library.</p>
+
+

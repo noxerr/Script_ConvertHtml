@@ -1,0 +1,131 @@
+<h3>Öffnung</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaÖffnung</div>
+		
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Öffnung &gt; Öffnung</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaopening.wmv" preview="../images/previews/vaOpeningvideo.png" width="300px" height="300px"></div>
+
+<p>Die Operationen und das Verhalten einer Öffnung sind mit denen eines Fensters identisch.<br />
+Öffnungen können nur in eine Wand eingefügt werden. Die Verbindung beider Elemente wird anhand einer Verankerung vorgenommen und die Öffnung wird automatisch in der Wand generiert.</p>
+
+<p>Durch Ausführen des Befehls <strong>vaÖffnung</strong> wird das 
+<a href="Interface_Dialog.html">Einfüge-Dialogfenster</a> für Öffnungen geöffnet. Das Dialogfenster zeigt eine Liste aller verfügbaren Öffnungsstile sowie die grundlegenden Optionen des Öffnungsobjekts und die entsprechende Vorschau an.</p>
+<p>Die erforderlichen Schritte zum Einfügen einer Öffnung in eine Wand hängen von den ausgewählten Einfügungsoptionen ab.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Öffnungsstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Zum Einsetzen einer Öffnung in eine Wand gibt es zwei Möglichkeiten:</li><br />
+		<ul>
+			<li><strong>Versatz:</strong> Dadurch wird die Öffnung in einem bestimmten Abstand (Versatz) vom Wandende eingefügt, das sich der Wand am nächsten befindet. Bestimmen Sie die Öffnungsseite durch Verschieben des Mauszeigers in die entsprechende Richtung und bestätigen Sie mit einem Klick. Fügen Sie die Öffnung mit einem Klick ein.</li>
+			<li><strong>Einfügungspunkt:</strong> Mit dieser Option können Sie die Öffnung an einer beliebigen Position in der Wand einfügen. Klicken Sie mit der linken Maustaste, um die Öffnung am gewünschten Punkt einzufügen.</li>
+		</ul>
+	<li>Bestimmen Sie die <strong>Öffnungsseite</strong> durch Klick auf die entsprechende Seite der Wand. Dieser Schritt ist nicht notwendig, wenn Sie die Tür mit der Option "Versatz" einfügen.</li>
+
+</ol>
+
+<p>Sie können so viele Öffnungen einfügen, wie Sie möchten und den Befehl durch Drücken von ENTER oder ESC beenden.</p>
+<p>Bei beiden Einfügungsoptionen wird die Öffnung automatisch in der Wand erzeugt.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/opening/Insert Opening dialog.png" alt="Einfügedialog Öffnungen"/><br/>
+	Einfügedialog Öffnungen
+</div>
+
+<br clear="all" />
+<h3>Öffnung aus Kurve</h3>
+<p>Öffnungen können auch aus Kurven erstellt werden, die dann deren Form bestimmen.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Führen Sie den Befehl <strong>vaÖffnung</strong> aus.</li>
+	<li>Wählen Sie den <strong>Öffnungsstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Wählen Sie die Option <strong>AusKurven</strong> in der Befehlszeile.</li>
+	<li>Wählen Sie eine <strong>Kurve</strong> (oder mehrere Kurven) im Modell. Die Kurve muss 
+	<em>geschlossen</em> und <em>vertikal</em> sein.</li>
+</ol>
+<p>Die Öffnung wird in der Wand erzeugt, die der Kurve am nächsten liegt.</p>
+<p><strong>Anmerkung</strong>: Die Kurven zur Erzeugung von Öffnungen müssen nicht parallel zur Wand sein, in die die Öffnungen eingefügt werden. Die Öffnungen werden automatisch gemäß der nächsten Wandposition eingefügt und ausgerichtet.</p>
+
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/opening control points.png" alt="Kontrollpunkte auf Öffnungen" width="350" height="125"  style="float: right;"/>
+<p>Öffnungen verfügen über fünf Kontrollpunkte:</p>
+	<ol>
+		<li>Kontrollpunkt für die Öffnungsseite</li>
+		<li>Linker Einfügungspunkt</li>
+		<li>Mittlerer Einfügungspunkt</li>
+		<li>Rechter Einfügungspunkt</li>
+		<li>Kontrollpunkt der Referenzmarkierung</li>
+	</ol>
+<br clear="all" />
+
+<p>Um die Öffnung zu verschieben (entweder in der gleichen Wand oder in eine andere Wand), wählen Sie sie aus und ziehen Sie sie an die gewünschte Position.</p>
+<p>Öffnungen können nur in der VisualARQ-Draufsicht ausgewählt werden.</p>
+
+<h4>Einfügungsoptionen und -parameter</h4>
+
+<h5>Ausrichtung</h5>
+
+<p>Die Öffnung kann auf drei Arten bezüglich der Wandstärke ausgerichtet werden:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Ausrichtung innen"/></td>
+				<td><strong>Innen</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Ausrichtung Mitte"/></td>
+				<td><strong>Mitte</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Ausrichtung außen"/></td>
+				<td><strong>Außen</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<p>Um die Ausrichtung einer Öffnung zu verändern, bearbeiten Sie die Werte im Dialogfenster <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Optionen" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Vertikale Ausrichtung</h5>
+
+<p>Öffnungen können bezüglich der Grundkurve einer Wand mit zwei verschiedenen vertikalen Ausrichtungen eingefügt werden.</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Vertikale Ausrichtung oben"/></td>
+				<td><strong>Unten:</strong> Referenzdistanz zwischen der Grundkurve der Wand und der unteren Oberfläche der Öffnung.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Vertikale Ausrichtung unten"/></td>
+				<td><strong>Oben:</strong> Referenzdistanz zwischen der Grundkurve der Wand und der oberen Oberfläche der Öffnung.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>Die vertikale Ausrichtung ist keine Stileigenschaft. Der Wert wird beim Einfügen für jedes Objekt im Einfügedialog definiert.</p><br />
+<p>Zum Ändern der vertikalen Ausrichtung einer Öffnung bearbeiten Sie den Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Höhe vom Boden</h5>
+
+<p>Die Höhe vom Boden einer Öffnung wird immer unabhängig von der Ebene in Bezug zur Grundlinie der Wand gemessen, in die sie eingefügt wurde. Nach Einfügen der Öffnung gibt die Höhe vom Boden die Position der Öffnung unabhängig von der zugehörigen Wand und Ebene auf der Z-Achse der Weltkoordinaten an. Die Höhe vom Boden ist keine Stileigenschaft. Der Wert wird beim Einfügen für jedes Objekt im Einfügedialog definiert.<br />
+Der standardmäßige Höhenwert für Öffnungen ist 0. Wenn Sie diesen Wert ändern, zeigt der Einfügedialog den zuletzt verwendeten Wert an.</p>
+
+<p>Zum Ändern der Erhöhung einer Öffnung vom Boden bearbeiten Sie den Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>

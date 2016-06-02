@@ -1,0 +1,97 @@
+<h3>Poteau</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaPoteau</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Column.jpg" alt="Poteau"/> clic [<a href="Commands_vaColumnStyles.html" title="Commande vaPoteauStyles">clic droit</a>]
+	</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html">Objets</a> : </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Poteau &gt; Poteau</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaColumn.wmv" preview="../images/previews/vaColumnvideo.png" width="300px" height="300px"></div>
+
+<p>Des poteaux peuvent être insérés à l'intérieur ou à l'extérieur d'un mur.<br />
+Lorsqu'un poteau est inséré dans un mur, la limite du poteau coupe automatiquement la ligne du mur qu'il traverse afin de définir l'intersection entre les deux éléments (dans les vues en plan et en perspective).</p>
+
+<p>Lorsque vous lancez la commande <strong>vaPoteau</strong>, la 
+<a href="Interface_Dialog.html">boîte de dialogue d'insertion</a> d'un poteau apparaît. Cette boîte de dialogue affiche une liste de tous les styles de poteau disponibles, ainsi que des options de base et un aperçu du poteau.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez le <strong>style de poteau</strong> que vous voulez insérer et définissez les options d'insertion de base.</li>
+	<li>Sélectionnez le <strong>point d'insertion du poteau</strong><strong></strong> en cliquant sur le point désiré.</li>
+	<li>Ensuite, indiquez l'<strong>orientation du poteau</strong><strong></strong> manuellement avec le curseur. Cliquez à nouveau quand le poteau est en position.</li>
+</ol>
+
+<p>Vous pouvez définir autant de poteaux que vous voulez et vous pouvez annuler la commande en appuyant sur Entrée ou Échap.</p>
+
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Column/col 1.png" alt="Boîte de dialogue d'insertion de l'objet Poteau."/><br/>
+Boîte de dialogue d'insertion d'un poteau
+</div>
+<br clear="all" />
+
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Les poteaux ont un seul point de contrôle, qui est toujours leur point d'insertion. Ce point correspond à l'alignement choisi pour le poteau lorsqu'il est inséré.</p>
+
+<div class="figureWithDescription block"><img src="../images/column_scheme.png" alt="Points de contrôle sur les poteaux" width="50" height="50" /><br/>
+Points de contrôle sur les poteaux</div>
+<br clear="all" />
+
+<h4>Options et paramètres d'insertion</h4>
+
+<h5>Alignement</h5>
+
+<p>
+L'alignement du poteau détermine la position du point d'insertion du poteau en fonction de la forme de son profil.</p>
+<p>Options d'alignement :</p>
+<ul>
+	<li>Supérieur gauche, Supérieur centre et Supérieur droit</li>
+	<li>Milieu gauche, Centre et Milieu droite</li>
+	<li>Inférieur gauche, Inférieur centre et Inférieur droit</li>
+</ul>
+<p>Pour modifier l'alignement d'un poteau, modifiez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" /></p>
+
+<h5>Marque d'insertion</h5>
+
+<p>Cette marque est affichée sur le point d'alignement et indique la face fixe du poteau. Elle n'apparaît que lorsque l'option Marque d'insertion est activée. Vous pouvez choisir une des formes suivantes :</p>
+<ul>
+	<li>Circulaire</li>
+	<li>Triangulaire</li>
+</ul>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column insertion marks.png" alt="Poteaux avec différents types de marques d'insertion." width="303" height="126" /><br />
+Poteaux avec différents types de marques d'insertion
+</div>
+<br clear="all" />
+
+<p>Les marques d'insertion sont uniquement affichées dans la vue en plan.<br />
+Pour modifier la marque d'insertion d'un poteau, modifiez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Décalage</h5>
+<p>Montre la distance (décalage) entre les points X et Y du poteau par rapport au point d'insertion.</p>
+
+<p>Pour modifier le décalage d'un poteau, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Roulis</h5>
+<p>Cette valeur détermine l'angle de rotation du poteau autour de son axe, en prenant la position de son alignement comme centre de rotation. </p>
+<p>Le roulis du poteau peut uniquement être modifié dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Symétrique</h5>
+<p>Lorsque cette option est activée, l'orientation du poteau est inversée symétriquement. </p>
+<p>Cette option peut uniquement être modifiée dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+

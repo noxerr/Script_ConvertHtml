@@ -1,0 +1,112 @@
+<h3>Estilos de pilar</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaPilarEstilos</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Column.jpg" alt="Pilar"/> clic derecho [<a href="Commands_vaColumn.html" title="Comando Pilar">clic izquierdo</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barra de herramientas Objetos</a>:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Pilar &gt; Estilos de pilar</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menú contextual</a>: </div>
+	<div class="value context">Pilar &gt; Estilos de pilar</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione un objeto de pilar &gt; (<em>Alt, Mayús</em> o <em>Ctrl</em>) + doble clic</div>
+
+	
+</div>
+
+<p>El estilo de pilar define las características de los pilares. Para cada estilo de pilar se pueden definir los siguientes parámetros: <strong>Nombre</strong>, <strong>Atributos</strong>, <strong>Forma</strong> (geometría) y <strong>Medidas</strong>.</p>
+
+<p>Los estilos de pilar están definidos por el componente <strong>Recubrimiento</strong>, que se puede agregar o eliminar en cualquier momento.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column Components.jpg" alt="Componentes de pilar" width="300" height="300" /><br />
+Pilar y componente de recubrimiento:
+<ol>
+<li><strong>Pilar</strong></li>
+<li><strong><img alt="Recubrimiento de pilar" height="16" src="../images/Column Coating-16.jpg" width="16" /> Recubrimiento</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+
+<p>Para crear un estilo de pilar, pulse el botón <strong>Nuevo estilo</strong> del cuadro de diálogo <a href="Interface_StyleProperties.html">Administrador de estilos</a>. Utilice el asistente que aparezca para introducir los parámetros del pilar que se explican a continuación.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/ColumnNewStyle.png" alt="Cuadro de diálogo Administrador de estilos del objeto Pilar." /><br />
+Cuadro de diálogo Administrador de estilos del objeto Pilar
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Edición general de estilos</div>
+<div class="value">Puede utilizar el comando <strong>vaPilarEstilos</strong> o, alternativamente
+	<ul>
+		<li>Utilice el comando <strong>vaEstiloPropiedades</strong>, seleccione un pilar y pulse Intro, o bien</li>
+		<li>Haga clic con el botón derecho en 
+		<img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione un pilar y pulse Intro, o bien</li>
+		<li>Seleccione un pilar, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Pilar &gt; Propiedades de estilo</strong>, o bien</li>
+		<li>Pulse <em>Alt, Mayús</em> o <em>Ctrl </em> y haga doble clic en un objeto de pilar.</li>
+	</ul>
+	Los cambios aplicados a un estilo se aplican a <strong>todos los elementos</strong> con ese estilo.
+</div>
+<div class="field">Edición específica por objeto</div>
+<div class="value"><ul>
+		<li>Utilice el comando <strong>vaPropiedades</strong>, seleccione un pilar y pulse Intro, o bien</li>
+		<li>Haga clic en <img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione un pilar y pulse Intro, o bien</li>
+		<li>Seleccione un pilar, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Pilar &gt; Propiedades</strong>, o bien,</li>
+		<li>Haga doble clic en un objeto de pilar. </li>
+	</ul>
+		</div>
+	Los cambios se aplican solo en el estilo del <strong>elemento seleccionado</strong>.</div>
+</div>
+
+<h4>Atributos</h4>
+<p>Los atributos definen las características de cada estilo de pilar y sus componentes para las vistas y la impresión. Los atributos válidos son:</p>
+
+<ul>
+<li><strong>General</strong>: Capa, visibilidad y material</li>
+<li><strong>Proyección</strong>: Color, Tipo de línea , Ancho de impresión de línea y Color de impresión de línea</li>
+<li><strong>Sección</strong>: Color, Tipo de línea, Ancho de impresión de línea, Color de impresión de línea, Patrón, Escala de patrón, Ángulo de patrón y Color de patrón</li>
+</ul>
+
+<h4>Forma</h4>
+
+<p>La forma del pilar viene definida por un perfil.<br />
+VisualARQ ofrece una librería con los principales perfiles estándar de <em>Europa</em> y <em>EEUU</em>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column custom profile.jpg" alt="Asistente de creación de pilares: selección de perfil." /><br />
+Asistente de creación de pilares: selección de perfil
+</div>
+<br clear="all" />
+
+<p>También pueden usarse perfiles de formas personalizadas para definir pilares.</p>
+
+<p>Para añadir un perfil personalizado, dibuje previamente una curva cerrada y plana, y conviértala en perfil utilizando el comando <a href="Commands_vaProfileFromCurve.html"><em>vaPerfilDesdeCurva</em></a>
+<img alt="vaPerfilDesdeCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Una vez creado, el perfil personalizado aparece al final de la lista de la librería de perfiles paramétricos predefinidos.</p>
+
+<p>El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.</p>
+
+<h4>Medidas</h4>
+
+<p>Los parámetros que corresponden a las medidas de un pilar varían dependiendo del tipo de perfil seleccionado. Pueden especificarse diferentes medidas para un mismo estilo de pilar.</p>
+
+<p>Las medidas también pueden especificarse al momento de insertar el pilar, desde el cuadro de inserción, eligiendo la opción 
+<strong>Medidas &gt; Otras</strong> dentro de la sección <strong>Perfil</strong> de este cuadro.</p>
+
+<h3>Componentes de pilar</h3>
+<h4>Recubrimiento <img alt="Recubrimiento de pilares" height="16" src="../images/Column Coating-16.jpg" width="16" /> </h4>
+
+<p>Los pilares pueden tener un recubrimiento.<br />
+La única propiedad del recubrimiento es el Grosor.</p>
+<p>Para agregar un recubrimiento a un pilar que no tenga, seleccione el estilo de pilar en la parte izquierda del cuadro de diálogo, haga clic con el botón derecho para abrir el menú contextual y seleccione 
+<strong>Nuevo &gt; Revestimiento</strong>.</p>
+<br clear="all" />

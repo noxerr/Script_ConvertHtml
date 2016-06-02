@@ -1,0 +1,123 @@
+<h3>Object Properties panel (in Rhino Properties panel)<img alt="properties icon" height="32" src="../images/properties icon.jpg" width="32"/></h3>
+
+
+<div>
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/COLUMN/Column Properties panel.png" alt="VisualARQ Properties Section for the Column object, in Rhino Properties dialog box."/><br/>
+		VisualARQ Properties section for the Column object,<br />
+		 in Rhino Properties dialog box.</p>
+	</div>
+	
+	<div class="leftBorder">
+		<p>In addition to the Object Properties dialog box described above, you can edit the properties of a VisualARQ object from the VisualARQ Properties section. <img alt="Properties icon"  src="../images/properties icon.jpg" height="24" width="24"/> 
+		(also available from the Rhino menu <strong>Edit &gt; Object Properties...<br />
+		</strong>This section is integrated in the Rhino Properties Panel, but it is only displayed when you select a VisualARQ object.</p>
+
+		<p>The parameters available in this section are not the same for all VisualARQ objects. This example shows the parameters of the Column object that can be edited.</p>
+		<p>You can edit the parameters of the selected VisualARQ object that do not depend on a specific style from the VisualARQ Properties section.</p>
+		
+		<p>The parameters available in this section depend on the type of object selected and are the same as those in the Object Properties dialog box.</p>
+
+		</div>
+</div>
+<br clear="all"/>
+
+<h5>General</h5>
+<ul>
+	<li><strong>Name:</strong> name of the selected object.</li>
+	<li><strong>Description: </strong>description of the selected object.</li>
+	<li><strong>Style:</strong> list of available object styles from the VisualARQ object libraries plus the new styles created by the user.</li>
+	<li><strong>Serial Number: </strong>serial number of the selected object.</li>
+	<li><strong>Tag: </strong>reference name that appears in <a href="Commands_vaTag.html">tag</a> objects.</li>
+</ul>
+
+<h5>Display</h5>
+<ul>
+	<li><strong>Isocurve Density:</strong> Defines the number of isoparametric curves 
+	that Rhino draws on the surface.</li>
+	<li><strong>Plan Visibility:</strong> Hides or displays an object in a Plan view 
+	based on its location regarding the cutting plane inside a level.</li>
+		<ul>
+			<li><strong>Hidden:</strong> The object won't be displayed regardless of its size 
+			and position.</li>
+			<li><strong>In Cut Plane:</strong> The object will be displayed only when it is 
+			located within the cutting plane</li>
+			<li><strong>Below Cutting Plane:</strong> The object will be displayed when it is 
+			located within the cutting plane or below it.</li>
+			<li><strong>Above Cutting Plane:</strong> The object will be displayed when it is 
+			located within the cutting plane or above it.</li>
+			<li><strong>Inside Level:</strong> The object will be always displayed while it is 
+			located inside a level, regardless of 
+			its size and position.</li>
+		</ul>
+		
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/Plan Visibility.png" alt="Plan Visibility scheme." width="450" height="247"/><br/>
+		Plan Visibility scheme.</p>
+	</div>
+<br clear="all"/>
+
+	<p>Example of which windows from the above image would be displayed 
+	depending on the Plan visibility option selected:</p>
+		<ul>
+			<li><em>Hidden:</em> None.</li>
+			<li><em>In Cut Plane:</em> Window <strong>2.</strong></li>
+			<li><em>Below Cutting Plane</em>: Windows <strong>2</strong> and <strong>3.</strong></li>
+			<li><em>Above Cutting Plane:</em> Windows <strong>1</strong> and <strong>2.</strong></li>
+			<li><em>Inside level: Windows</em> <strong>1, 2</strong> and <strong>3.</strong></li>
+
+		</ul>
+</ul>
+<br/>
+
+<h5>Location</h5>
+<ul>
+	<li><strong>Insert Point:</strong> Coordinates of an object insert point.</li>
+	<li><strong>Insert Mark</strong> (only for columns): Enables the display of 
+	the insert mark and its type.</li>
+</ul>
+
+<h5>Geometry</h5>
+<ul>
+	<li><strong>Height:</strong> Specifies the object height. This value can be changed regardless of the object style. In walls and 
+	columns, this height can be also defined by style.</li>
+	<li><strong>Profile:</strong> Description of the object profile.</li>
+	<li><strong>Width/Height:</strong> The object dimensions.</li>
+	<li><strong>Cut Depth</strong> (option only available for doors, windows and openings): 
+	Specifies the maximum depth distance an opening profile will cut a wall.</li>
+</ul>
+
+<h5>Opening </h5>
+<p>(Option available for doors and windows)</p>
+<ul>
+	<li><strong>Aperture (%):</strong> The aperture percentage defines how open or closed doors and windows leaves are displayed in the 
+	Plan and Perspective views.</li>
+	<li><strong>Opening Side:</strong> Direction in which the door or window 
+	leave will open.</li>
+</ul>
+
+
+<h5>Profile</h5>
+<p>(Option available for beams and columns)</p>
+<ul>
+	<li><strong>Roll/Rotation:</strong> Rotation of the object profile.</li>
+	<li><strong>Alignment:</strong> 
+	Insert position of the object according to its profile.</li>
+	<li><strong>Alignment Offset:</strong> Distance from the alignment position.</li>
+</ul>
+
+<h4>The More... button</h4>
+<p>At the bottom of the dialog there is the More... button from which you can quickly access to 
+some shortcuts related to the selected objects. These options are similar to those that can be found in the <a href="Interface_Context.html">Context Menu</a> after selecting an object.</p>
+<ul>
+	<li>Delete</li>
+	<li>Duplicate</li>
+	<li>Isolate Objects</li>
+	<li>Hide Objects</li>
+	<li>Lock Objects</li>
+	<li>Control Points On</li>
+	<li><a href="Commands_vaWallReverse.html">Reverse</a> (only for walls)</li>
+	<li>Select</li>
+	<li><a href="Commands_vaUpdate.html">Update</a></li>
+	<li><a href="Interface_StyleProperties.html">Style Properties</a></li>
+	<li><a href="Interface_ObjectProperties.html">Properties</a></li></ul>

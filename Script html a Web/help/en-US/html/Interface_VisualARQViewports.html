@@ -1,0 +1,77 @@
+<h3>VisualARQ Viewports</h3>
+
+<p>VisualARQ viewports follow the same behavior and control pattern as Rhino 
+viewports.
+The main difference lies in the representation of VisualARQ objects in the Top view (Plan view), called Floor 1 in VisualARQ.</p>
+
+<p class="figureWithDescription">
+<img src="../images/Level 02 plan View.png" alt="Plan view (Floor 1) and Perspective View" width="450" height="400"/><br/>
+Plan view (Level 02).</p>
+
+<p>Rhino objects are displayed in 3-D from aboveù but VisualARQ objects are drawn in 2-D for this type of view. The 2-D drawing uses the standard display of floor elements in architectural drawings: walls show their components, doors show their swing, steps on stairs are numbered, etc.</p>
+
+<p>VisualARQ <strong>Plan </strong>view is a horizontal section with a cutting plane at a default elevation of 1.40 meters of the elevation from the current floor. You can modify the height of floors and elevation of the cut plane of each floor from the <a href="Commands_vaLevels.html" title="Level Manager dialog box">Level Manager</a> 
+dialog box.</p>
+
+<p>When working with VisualARQ templates, the title of the <strong>Plan </strong>view is displayed by default as 
+<strong>Level 01</strong>
+or<em> </em><strong>Floor 1</strong>. When you create additional levels on the drawing using the <a href="Commands_vaLevels.html" title="Level Manager dialog box">Level Manager</a> 
+dialog box, VisualARQ allows you to filter the information displayed on the 
+selected view, showing only the elements corresponding to the level defined as
+<strong>Current Level</strong><em>, </em>
+and the projection of the visible objects underneath.<em> </em>The current level name is shown on the view tooltip.</p>
+
+
+<p>You can launch the <a href="Commands_vaLevels.html" title="Level Manager dialog box">Level Manager</a> 
+dialog box in 
+four different ways:</p>
+
+<ul>
+	<li>In <strong>VisualARQ </strong>menu, click <strong>Levels &gt; Edit Levels...</strong></li>
+	<li>Right-click on the view title and choose <strong>VisualARQ &gt; Levels...</strong></li>
+	<li>In the <strong>VisualARQ Tools<em> </em></strong>toolbar,<strong>
+	</strong>click on the <strong>Levels</strong> icon.</li>
+	<li>Run the <strong>vaLevels</strong> command from the command line.</li>
+</ul>
+<p class="figureWithDescription">
+<img src="../images/setfloorview.jpg" alt="Viewport title context menu &gt; VisualARQ &gt; Levels" /><br/>
+<br/>
+To open the Levels dialog box, right-click on the view title and choose <strong>
+VisualARQ &gt; Levels...</strong></p>
+
+<p>You can set any level as <strong>Current</strong> from the <a href="Commands_vaLevels.html" title="Level Manager dialog box">Level Manager</a> 
+dialog box.</p>
+
+<p>There are two ways to change between the usual display of a Rhino Top view and the VisualARQ 2-D drawing representation.</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Plan View"/></td>
+				<td>In the <strong>Level Manager </strong>toolbar, click on the
+				<strong>Cut Plane </strong>icon. </td>
+			</tr>
+		</table>			
+	</li>
+	<li>Run the <strong>vaSetView </strong>command from the command line. This 
+	command automatically changes the current viewport into Top and activates 
+	the Cut Plane of a selected Building and Level.</li>
+</ul>
+
+<p><strong>NOTE:</strong> The <strong>vaSetView</strong> <strong>&gt; Level 
+</strong>and <strong>vaSetView &gt; Model </strong>options can be used in any view.</p>
+
+<p>
+<img alt="Scale symbol in orthographic views" height="144" src="../images/Scale%20symbol.png" style="float: right" width="274" /></p>
+<h5>Scale Symbol</h5>
+
+<p>When VisualARQ is loaded and you are working with one of its templates, the viewports with parallel projection views (i.e. all default views except the Perspective view) show a scale symbol on the lower right corner.</p>
+<p>The Scale symbol options can be edited in the <a href="Interface_VisualARQOptions.html">VisualARQ 
+Options</a> from the <strong>Rhino Options </strong>dialog box.</p>
+<br clear="all" />
+<p>
+<img style="float: right" alt="Elevation references in Front Viewport" height="144" src="../images/Elevation%20marks%20front.png" width="274" /></p>
+
+<h5>Elevation References</h5>
+<p>The <em>Front</em> and <em>Side</em> views show the elevation references; their number, name and elevation depend on the levels created with the Level Manager. The level reference appears highlighted indicating the level where you are working from.</p>
+<p>The Elevation references can be edited in the <a href="Interface_VisualARQOptions.html">VisualARQ 
+Options</a> from the <strong>Rhino Options </strong>dialog box.</p>

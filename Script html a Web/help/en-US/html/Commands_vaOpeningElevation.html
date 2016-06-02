@@ -1,0 +1,41 @@
+<h3>Opening Elevation</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaOpeningElevation</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_OpeningElevation.jpg" alt="Opening Elevation"/> left click
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">
+		Documentation</a> toolbar:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="VisualARQ Documentation Tools Toolbar" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Opening Elevation &gt; Opening Elevation</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaOpeningElevation.wmv" preview="../images/previews/vaOpeningElevationvideo.png" width="300px" height="300px"></div>
+
+<p>This command generates 2D representations from the elevations of the different model openings.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>doors</strong> and <strong>windows</strong> you wish to obtain an elevation from. The command automatically filters the selection, so that only the opening objects are displayed.</li>
+	<li>Select the <strong>start</strong> and <strong>end point</strong> of the insertion.</li>
+</ol>
+<p>The command ends when the 2D drawing of each selected opening is inserted, with their corresponding references. The same references will be displayed in the Plan view, identifying the location of each type of door and window in the model.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningsSelect.png" alt="Selection of openings (flitering)" width="250" height="245" /><br/>Selection of openings (filtering)</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevations.png" alt="References of the model opening" width="250" height="245"/><br/>References of the model opening</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevZoom.png" alt="Dimensioned opening elevations " width="500" height="150"/><br/>Dimensioned opening elevations, with reference to each model opening</div>
+<br clear="all" />
+
+<p><strong>NOTE:</strong> In the case of openings (doors or windows) with the same features - sizes, elevation and opening side - a single drawing will be created with a single reference.</p>
+
+<p>Opening elevations and their references are created by default in the <strong>Documentation</strong> layer.<br/>
+To hide the references, simply turn off the layer where they have been created.<br/>
+To delete the references, select the opening you wish to delete and open the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> section (in 
+the Rhino Properties Panel <img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />). Delete the <strong>Reference text </strong>
+value, in the 
+<strong>Reference </strong>section.</p>
+

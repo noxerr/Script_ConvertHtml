@@ -1,0 +1,237 @@
+<h3>Edit Levels</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaLevels</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_FloorManager.jpg" alt="Level Manager"/>left click
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Tools</a> 
+		toolbar:</div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="VisualARQ Tools Toolbar" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Levels &gt; Edit levels</div>
+</div>
+	
+<p>The <strong>vaLevels</strong> command opens a dockable <strong>Level manager 
+</strong>dialog box from which it is possible to create, delete and edit new buildings and levels.</p> 
+<p> From the <strong>Level manager </strong>dialog box you can control each level
+<strong>CPlane </strong>(construction plane), <strong>visibility</strong> and its <strong>Elevation </strong>and <strong>Cut Plane
+</strong>values.</p>
+<p>The <strong>Level manager </strong>dialog box is divided in two parts:
+<ul>
+	<li>A toolbar line with the following options: <strong>New Building, New Level, 
+	Delete </strong>and<strong> Cut Plane visualization</strong>.</li>
+	<li>The list of buildings and levels and their properties: <strong>CPlane
+	</strong>(construction plane), <strong>On/Off </strong>visibility, <strong>Plan
+	View</strong> visibility, <strong>Elevation </strong>value, <strong>Cut Plane
+	Height</strong> value, <strong>Top Offset</strong> and <strong>Bottom Offset</strong> values.</li>
+
+</ul>
+</p>	
+
+<p class="figureWithDescription"><img src="../images/Level Manager.png" alt="Level Manager dialog box"/><br/>
+Level Manager dialog box.</p>
+<br/>
+<p class="figureWithDescription"><img src="../images/Levels.png" alt="Level 1 parts and parameters"/><br/>
+Parameters for Level "1":
+<ul>
+<li><strong>L0</strong>: Elevation of Level "0" and position of Cplane of Level 0</li>
+<li><strong>L1</strong>: Elevation of Level "1" and position of Cplane of Level 1</li>
+<li><strong>L2</strong>: Elevation of Level "2" and position of Cplane of Level 2 (and 
+top limits of Level 1)</li>
+<li><strong>C.P</strong>: Level 1 Cut Plane height</li>
+<li><strong>T.O</strong>.: Top offset distance of Level 1</li>
+<li><strong>B.O</strong>.: Bottom offset distance of Level 1</li>
+
+</ul></p>
+
+<h5>New building</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Building.jpg" alt="New building"/></td>
+	<td>Creates new buildings from which you can add levels. Each building has its own elevation value and 
+	the elevation values of the contained levels are relative to that building.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>New level</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Level.jpg" alt="New level"/></td>
+	<td>Adds a new level to a selected building. The new level will be automatically created above the upper existing level, and will have by default the same elevation value than the level underneath. 
+	A building element must be created to create levels.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Delete</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Delete.jpg" alt="Delete"/></td>
+	<td>Deletes a specific level or building. This does not affect all Rhino and VisualARQ objects which are contained 
+	within the deleted level or building. They remain in the same place.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Cut Plane</h5>
+<p>The <strong>Cut Plane</strong> represents an invisible <em>horizontal section</em> 
+<em>plane</em> 
+that each level has, situated at a specific height from each level 
+elevation. The Cut Plane button turns On or Off the <strong>Cut Plane</strong> 
+of a selected level, in the active viewport. A building and a level must be created to enable the <strong>
+Cut Plane</strong> status.</p>
+<p>When the Cut Plane is turned On for a specific level in the active viewport, <em>
+everything above the cutting plane of that level will NOT be displayed. </em></p>
+<p>When the Cut Plane is turned On in <em>Top viewports</em>, the VisualARQ 
+objects, such as doors, windows, stairs, etc... will show their 2D plan view graphic 
+representation.</p>
+<br/>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Cut Plane On"/></td>
+	<td><strong>Cut Plane On</strong>: the viewport shows the level sectioned according to 
+	its Cut Plane 
+	position.</td>
+</tr>
+
+<tr>
+	<td valign="top" style="height: 28px"><img align="left" src="../images/Cut Plane Off.jpg" alt="Cut Plane Off"/></td>
+	<td style="height: 28px"><strong>Cut Plane Off</strong>: the viewport displays the entire level (according to its 
+	visibility On/Off status).</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane Dis.jpg" alt="Cut Plane disabled"/></td>
+	<td><strong>Cut Plane disabled</strong>: you need to select a level to 
+	enable its Cut Plane status.</td>
+</tr>
+
+</table>
+</div>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane On.jpg" />
+<br/>
+Level 0 and Level 1 view with the Cut Plane on Level 1 On.</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane Off.jpg" />
+<br/>
+Level 0 and Level 1 view with the Cut Plane on Level 1 off. (Level 2 
+visualization is off)</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 only.jpg" />
+<br/>
+Level 1 view only with the Cut Plane off. (Levels 0 and 2 visualization is 
+off)</p><br/>
+
+
+<h5>CPlane</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/CPlane.jpg" alt="CPlane"/></td>
+	<td>The CPlane (construction plane) determines the plane elevation from 
+	where you are working on. Click on any level CPlane icon to move the CPlane 
+	into the elevation of that level in the active viewport.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>On/Off</h5>
+<p>
+The level On/Off visibility status shows or hides the objects or parts of the objects 
+situated between the current level Elevation, and the upper level Elevation 
+(taking into account the Top and Bottom offset values).</p>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/On.jpg" alt="On"/></td>
+	<td>The level is visible and you can see objects or parts of the objects on this level.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Off.jpg" alt="Off"/></td>
+	<td>The level is not visible, and you cannot see objects or parts of the 
+	objects on this level.</td>
+</tr>
+</table>
+</div>
+<p><strong>Note</strong>: in-between levels can't be hidden individually. When an 
+in-between level is hidden, the rest of levels above will be hidden 
+automatically as well.</p>
+
+<h5>Plan View On/Off</h5>
+<p>The Plan View displays the 2D representation of any level, in the CPlane 
+(construction plane) of the active viewport. This 2D representation 
+is not editable and only shows the sectioned objects in the selected level, according to 
+the Cut Plane position in that level.</p>
+<p><div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View on.jpg" alt="Plan view on"/></td>
+	<td>The selected level 2D representation is visible in the CPlane of the active viewport.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View off.jpg" alt="Plan view off"/></td>
+	<td>The selected level 2D representation is not visible in the CPlane of the active 
+	viewport.</td>
+</tr>
+</table>
+</div>
+</p>
+
+
+
+<h5>Set Current Floor</h5>
+<p>To set a specific level as the current floor in the active viewport, 
+<strong>double click on level name</strong>. This operation will automatically put the CPlane 
+onto the selected level and will turn this level on in case it was hidden.</p>
+
+<h5>Elevation</h5>
+<p>The Elevation  value tells the base height of each building or level and the 
+position of a Construction plane relative to each Building or Level. It determines which part of the model corresponds to each level. <em>Elevation values on levels</em> are relative to building elevation height. The <em>building elevation</em> value is measured along the z-axis of the document.</p>
+
+<p class="figureWithDescription">
+<img alt="Elevation marks" src="../images/Left View 400.jpg" /><br/>
+The elevation mark of current level appears highlighted.</p>
+
+<h5>Cut Plane height</h5>
+<p>The cut plane determines the elevation of the <em>horizontal section</em> of each floor; i.e., only the objects in that elevation or right under it are included in the representation.</p>
+
+
+
+<p><strong>NOTE:</strong> When a viewport is turned into a VisualARQ Plan view 
+mode, the display mode is changed into &quot;hidden&quot; mode and changes the 
+viewport for the <strong>Top</strong><em> </em>view. As long as the Plan view 
+mode is enabled, the viewport will show any selected display mode although you 
+switch the level view.</p>
+
+<h5>Top offset</h5>
+<p>The top offset determines the value by which a level's upper limit is increased or decreased when hiding entire levels. This is especially useful when you hide the upper part of a building and want to hide also the upper slab of the last shown level. This value is irrelevant for the top level of a building and only affects viewports that have the Cut Plane off.</p>
+<h5>Bottom offset</h5>
+
+<p>The bottom offset determines the value by which a level's lower limit is increased or decreased when hiding entire levels. This is especially useful when you hide the lower part of a building and want to hide also the lower slab of the last shown level. This value is irrelevant for the bottom level of a building and only affects viewports that have the Cut Plane off.</p>
+
+
+
+	

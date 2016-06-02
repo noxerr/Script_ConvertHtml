@@ -1,0 +1,52 @@
+<h3>Schnittansicht</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaSchnittAnsicht</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon">
+		<img alt="Schnittansicht " height="24" src="../images/VA_SectionView.png" width="24" /> Linksklick [<a href="Commands_vaSectionViewStyles.html" title="Schnittansichtsstile"> Rechtsklick</a>]</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Dokumentation</a>: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Werkzeugleiste VisualARQ-Dokumentation" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Schnitt &gt; Schnittansicht</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionView.wmv" preview="../images/previews/vaSectionViewvideo.png" width="300px" height="300px"></div>
+
+<p>Durch Ausführen des Befehls <strong>vaSchnittAnsicht</strong> wird eine 2D-Zeichnung erzeugt, die die 3D-Objekte in einer Ebene darstellt. Die Schnittansicht wird gemäß der Position der <strong>Schnittmarkierung</strong> im Modell erstellt. Nach Ausführung des Befehls wird das <a href="Interface_Dialog.html">
+<strong>Einfüge-Dialogfenster</strong></a> für die <strong>Schnittansicht</strong> geöffnet. Folgen Sie den Schritten in der Befehlszeile. Bestätigen Sie mit ENTER oder der rechten Maustaste und gehen Sie zum nächsten Schritt.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section view insert.png" alt="Einfügedialog Schnittansicht" /><br/>Einfügedialog Schnittansicht</div>
+<br clear="all" />
+
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie im Einfügedialog einen <strong>Schnittansichtsstil</strong> aus.</li>
+	<li>Wählen Sie die <strong>Schnittmarkierung</strong> aus.</li>
+	<li>Wählen Sie einen <strong>Einfügungspunkt</strong>. Klicken Sie mit der linken Maustaste auf den Bildschirm, um die Schnittzeichnung einzufügen.</li>
+</ol>
+<p>Diese Schnittzeichnung verbleibt an die Schnittmarkierung angeheftet, wenn Sie sie nicht zerlegen. Wenn die Schnittmarkierung gelöscht wird, verschwindet auch die Schnittansicht. Bei Verschieben der Position der Schnittmarkierung wird die Schnittzeichnung automatisch aktualisiert. Die Schnittzeichnung behält zudem die Ebeneneigenschaften der Objekte bei, die sie repräsentiert. </p>
+
+<h4>Parameter einer Schnittansicht</h4>
+Folgende Parameter können für Schnittansichtsobjekte definiert werden, nachdem sie erzeugt wurden. Diese Option kann nur in den <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> (im Panel der Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />) verändert werden). 
+<ul>
+<li><strong>Stil</strong>: Der Stil definiert die Attribute der Schnittansichten</li>
+	<li><strong>Titel</strong>: Der Titel der Schnittansicht ist standardmäßig der Referenztext der entsprechenden Schnittmarkierung, dem derselbe Text noch einmal mit einem nachgeschobenen " ' " hinzugefügt wird. (z.B. Schnittreferenztext = A, Titel der Schnittansicht = A-A'). Der Titel der Schnittansicht kann aber auch durch einen anderen Text ersetzt werden:</li>
+	<li><strong>Schnitt</strong>: Option zur Änderung der Schnittansicht durch Auswahl einer anderen Schnittmarkierung.</li>
+	<li><strong>Automatische Aktualisierung</strong>: Option zur Aktivierung eines automatischen Updates der Schnittansicht, wenn das entsprechende Schnittmarkierungsobjekt bewegt oder bearbeitet wird.</li>
+	<li><strong>Toleranzfaktor</strong>: dieser Wert gibt den Detailgrad an, mit dem die Schnittansicht erzeugt wird. Je größer dieser Wert, desto weniger Details hat die Schnittansicht.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Dynamic Section drawing.png" alt="Dynamische Schnittansicht, Schnittmarkierung und Schnittansicht" width="600" height="345" /><br/>Modell in Dynamischer Schnittansicht, Schnittmarkierung und Schnittansicht</div>
+<br clear="all" />
+<p><strong>Anmerkung 1:</strong> Versteckte Seiten werden in der Schnittansicht nicht angezeigt.</p>
+<p><strong>Anmerkung 2: </strong>Die Schnittansicht und die entsprechende Schnittmarkierung werden in der Ebene erzeugt, die bei Ausführung des Befehls aktiviert ist. Wenn eine gelöscht wird, wird die andere ebenfalls gelöscht.</p>
+<p><strong>Anmerkung 3:</strong> In der Schnittansicht werden nur die im Schnittbereich durch ihre Einfügungspunkte und Schnittlängenpunkte beschränkten Objekte angezeigt.</p>
+
+
+

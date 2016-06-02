@@ -1,0 +1,96 @@
+<h3>IFC Tag</h3>
+
+<p>The <strong>Ifc Tag</strong> panel is used to assign properties to the objects when they are exported to IFC. This panel is located under the <img alt="IFC tag icon"  src="../images/IFC Tag-24.png" height="24" width="24"/> icon, 
+		in the Rhino Properties Panel <img alt="Properties icon"  src="../images/properties icon.jpg" height="24" width="24"/>, 
+		after selecting one or more objects that are not VisualARQ objects.</p>
+		
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Ifc/IFC Tag Ramp.png" alt="IFC properties panel"/><br/>
+	IFC properties panel</div>
+<br clear="all" />
+		
+<h4>Type</h4>
+
+<p><strong>VisualARQ objects:</strong></p>
+	
+<p>VisualARQ objects already have an IFC type assigned by default, according to VisualARQ object type, when they are exported to IFC:</p>
+
+<ul>
+	<li>Wall &gt; IfcWall</li>
+	<li>Curtain wall &gt; IfcCurtainWall</li>
+	<li>Beam &gt; IfcBeam</li>
+	<li>Column &gt; IfcColumn</li>
+	<li>Door &gt; IfcDoor</li>
+	<li>Window &gt; IfcWindow</li>
+	<li>Stair &gt; IfcStair</li>
+	<li>Railing &gt; IfcRailing</li>
+	<li>Slab &gt; IfcSlab</li>
+	<li>Roof &gt; IfcRoof</li>
+		
+</ul>
+
+<li>Space &gt; IfcSpace</li>
+
+<p><strong>Rhino 3D geometry:</strong></p>
+<p>All Rhino geometry, (non-VisualARQ objects), has its IFC Type Property assigned "By Layer" by default.</p>
+<p>The IFC type properties can be assigned by layer from the <a href="Commands_IfcExportOptionsDialog.html">IfcExportOptionsDialog</a> command.</p>
+
+<ul>
+	<li><em>By Layer</em>: the IFC Property is assigned by layer. </li>
+	<li><em>No export</em>: the object won't be exported to IFC.</li>
+	<li><em>Ifc Proxy</em>: the objects will be exported to IFC as <em>Proxies</em> or <em>generic geometry</em>.</li>
+</ul>
+
+<p>Other IFC types:</p>
+<ul>
+	<li>IfcBeam</li>
+	<li>IfcColumn</li>
+	<li>IfcCovering</li>
+	<li>IfcCurtainWall</li>
+	<li>IfcDoor</li>
+	<li>IfcFooting</li>
+	<li>IfcMember</li>
+	<li>IfcPile</li>
+	<li>IfcPlate</li>
+	<li>IfcRailing</li>
+	<li>IfcRamp</li>
+	<li>IfcRampFlight</li>
+	<li>IfcRoof</li>
+	<li>IfcSlab</li>
+	<li>IfcStair</li>
+	<li>IfcStairFlight</li>
+	<li>IfcWall</li>
+	<li>IfcWindow</li>
+	<li>IfcWall</li>
+	<li>IfcBuildingElementPart</li>
+	<li>IfcReinforcingBar</li>
+	<li>IfcReinforcingMesh</li>
+	<li>IfcTendon</li>
+	<li>IfcTendonAnchor</li>
+	<li>IfcDistributionElement</li>
+	<li>IfcEnergyConversionDevice</li>
+	<li>IfcFlowFitting</li>
+	<li>IfcFlowMovingDevice</li>
+	<li>IfcFlowSegment</li>
+	<li>IfcFlowStorageDevice</li>
+	<li>IfcFlowTerminal</li>
+	<li>IfcFlowTreatmentDevice</li>
+	<li>IfcElectricalElement</li>
+	<li>IfcElementAssembly</li>
+	<li>IfcDiscreteAccessory</li>
+	<li>IfcFastener</li>
+	<li>IfcMechanicalFastener</li>
+	<li>IfcEquipmentElement</li>
+	<li>IfcFurnishingElement</li>
+	<li>IfcTransportElement</li>
+	<li>IfcVirtualElement</li>
+</ul>
+
+<h4>Name</h4>
+<p>Optional name for use by the participating software systems or users.</p>
+<h4>Description</h4>
+<p>Optional description, provided for exchanging informative comments.</p>
+<h4>Tag</h4>
+<p>The tag (or label) identifier at the particular instance of a product, e.g. the serial number, or the position number.</p>
+
+
+

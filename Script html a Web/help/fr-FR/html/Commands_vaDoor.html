@@ -1,0 +1,171 @@
+<h3>Porte</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaPorte</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Door.jpg" alt="Porte"/> clic gauche [<a href="Commands_vaDoorStyles.html" title="commande vaPorteStyles">clic droit</a>]
+	</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html">Objets</a> : </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Porte &gt; Porte</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaDoor.wmv" preview="../images/previews/vaDoorvideo.png" width="300px" height="300px"></div>
+
+<p>Les portes ne peuvent être insérées que dans un mur. Les deux éléments sont liés et l'ouverture est générée automatiquement dans le mur où la porte est insérée.</p>
+
+<p>Lorsque vous lancez la commande <strong>vaPorte</strong>, la 
+<a href="Interface_Dialog.html">boîte de dialogue d'insertion</a> d'une porte apparaît. Cette boîte de dialogue affiche une liste de tous les styles de porte disponibles, ainsi que des options de base et un aperçu de la porte.</p>
+<p>Les étapes nécessaires à l'insertion d'une porte dans un mur dépendront des options d'insertion sélectionnées.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez le <strong>Style de porte</strong> que vous voulez utiliser et définissez les options d'insertion de base.</li>
+	<li>Il existe deux options pour permettre l'insertion d'une porte dans un mur :<br />
+		<ul>
+			<li><strong>Décalage :</strong> insère la porte à une distance spécifique (décalage) de l'extrémité la plus proche du mur. Indiquez le côté d'ouverture en déplaçant le curseur ; la commande le définit automatiquement selon la position du curseur. Cliquez pour insérer la porte.</li>
+			<li><strong>Point d'insertion : </strong> insère librement la porte dans le mur. Cliquez pour insérer la porte au point désiré.</li>
+		</ul>
+	</li>
+	<li>Indiquez le <strong>côté d'ouverture</strong> en cliquant sur le côté désiré du mur. Cette étape n'est pas nécessaire lorsque vous insérez une porte avec l'option Décalage.</li>
+</ol>
+
+<p>Vous pouvez définir autant de portes que vous voulez et vous pouvez annuler la commande en appuyant sur Entrée ou Échap.</p>
+<p>Avec les deux options d'insertion, l'ouverture correspondant à la porte est générée automatiquement dans le mur.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Door/door insert dialog.png" alt="Boîte de dialogue d'insertion des portes"/><br/>
+Boîte de dialogue d'insertion d'une porte
+</div>
+
+<br clear="all" />
+<h3>Porte à partir d'une courbe</h3>
+<p>Les portes peuvent être créées à partir de courbes, qui déterminent leur forme.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Lancez la commande <strong>vaPorte</strong>.</li>
+	<li>Sélectionnez le <strong>Style de porte</strong> que vous voulez utiliser et définissez les options d'insertion de base.</li>
+	<li>Sélectionnez l'option <strong>ÀPartirDeCourbes</strong> dans la ligne de commandes.</li>
+	<li>Sélectionnez une ou plusieurs <strong>courbes</strong> dans le modèle. Cette courbe doit être 
+	<em>fermée</em> et <em>verticale</em>.</li>
+</ol>
+<p>La porte est générée à l'intérieur du mur le plus proche de la courbe sélectionnée.</p>
+<p><strong>Remarque </strong>: Les courbes sélectionnées pour créer des portes ne doivent pas obligatoirement être orientées parallèlement au mur où les portes seront placées. Les portes sont insérées et orientées automatiquement en fonction de la position du mur le plus proche.</p>
+
+
+
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/door_scheme.png" alt="Points de contrôle sur les portes" width="150" height="160" style="float: right;"/>
+	<p>Les portes ont cinq points de contrôle :</p>
+	
+	<ol>
+		<li>Point de contrôle pour le côté d'ouverture</li>
+		<li>Point d'insertion gauche</li>
+		<li>Point d'insertion central</li>
+		<li>Point d'insertion droit</li>
+		<li>Point de contrôle de la marque de référence</li>
+	</ol>
+<br clear="all" />
+
+<p>Pour déplacer la porte (dans le mur ou sur un autre mur), sélectionnez-la à partir d'un des points et faites-la glisser où vous voulez.</p>
+<p>Pour changer le côté d'ouverture de la porte, sélectionnez le point de contrôle du côté d'ouverture (1) et déplacez-le de l'autre côté du mur.</p>
+
+<h4>Options et paramètres d'insertion</h4>
+
+<h5>Alignement</h5>
+
+<p>La porte peut être alignée avec l'épaisseur du mur selon 3 méthodes :</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Intérieur"/></td>
+				<td><strong>Intérieur</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Centre"/></td>
+				<td><strong>Centre</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Extérieur"/></td>
+				<td><strong>Extérieur</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+
+<p>Pour modifier l'alignement d'une porte, modifiez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Pourcentage d'ouverture</h5>
+<p>Le pourcentage d'ouverture indique le degré d'ouverture des battants dans les vues en plan et en perspective. Le pourcentage d'ouverture est défini par deux options :</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0">
+			<tr valign="middle">
+				<td valign="top"> <img align="left" src="../images/Max aperture 32.png" height="24" width="24" alt="Ouverture maximale (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Ouverture maximale (%)</strong> : cette valeur définit l'ouverture maximale que les battants de la porte peuvent atteindre. L'ouverture maximale de la porte est affichée uniquement dans la 
+				<em>vue de dessus</em> lorsque le mode de vue en plan de VisualARQ est activé, et elle est représentée par une simple ligne et un arc.</td>
+			</tr>
+		</table> </li>
+	<li><table border="0" cellspacing="0" cellpadding="0" >
+			<tr valign="middle">
+				<td valign="top"><img align="left" src="../images/aperture 32.png" height="24" width="24" alt="Ouverture (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Ouverture (%) :</strong> cette valeur indique le degré d'ouverture des battants dans les vues en perspective et en plan.</td>
+			</tr>
+		</table></li>
+</ul>
+
+<div class="figureWithDescription block"><img src="../images/Door aperture 2D 3D.jpg" alt="Exemple d'ouverture d'une porte."/><br/>
+Exemple d'ouverture d'une porte : Ouverture maximale : 50 %, Ouverture : 25%
+</div>
+<br/>
+<p>Le pourcentage d'ouverture n'est pas une propriété de style. La valeur est définie, dans la boîte de dialogue d'insertion de la porte, pour chaque objet inséré.</p>
+
+<p>La valeur d'ouverture par défaut est de 50 % mais vous pouvez utiliser des valeurs allant de 0% à 100 %. Si vous modifiez cette valeur, la boîte de dialogue d'insertion montrera la dernière valeur utilisée.</p>
+
+<p>Pour modifier le pourcentage d'ouverture d'une porte, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+<br clear="all" />
+<h5>Alignement vertical</h5>
+
+<p>Deux alignements verticaux par rapport à la ligne de base du mur peuvent être utilisés lors de l'insertion des portes :</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Inférieur"/></td>
+				<td><strong>Inférieur :</strong> distance de référence entre la ligne de base du mur et la surface inférieure de la porte.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Supérieur"/></td>
+				<td><strong>Supérieur :</strong> distance de référence entre la ligne de base du mur et la surface supérieure de la porte.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>L'alignement vertical n'est pas une propriété de style. La valeur est définie dans la boîte de dialogue d'insertion pour chaque objet inséré.</p><br />
+<p>Pour modifier l'alignement vertical d'une porte, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Élévation</h5>
+<p>L'élévation d'une porte dans la boîte de dialogue d'insertion est toujours mesurée par rapport à la ligne de base du mur où elle est insérée, quel que soit son niveau. Lorsque la porte a été insérée, la valeur d'élévation indique la position de la porte dans les coordonnées Z du repère général, quels que soient le mur et le niveau d'insertion. L'élévation n'est pas une propriété de style. La valeur est définie dans la boîte de dialogue d'insertion pour chaque objet inséré.<br />
+La valeur d'élévation par défaut pour les portes est de 0. Si vous modifiez cette valeur, la boîte de dialogue d'insertion montrera la dernière valeur utilisée.</p>
+
+<p>Pour modifier l'élévation d'une porte, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

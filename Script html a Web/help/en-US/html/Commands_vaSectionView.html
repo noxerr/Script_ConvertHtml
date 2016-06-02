@@ -1,0 +1,72 @@
+<h3>Section View</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaSectionView</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon">
+		<img alt="Section View" height="24" src="../images/VA_SectionView.png" width="24" /> left click
+		[<a href="Commands_vaSectionViewStyles.html" title="Section View styles">right 
+		click</a>]</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> 
+		toolbar: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="VisualARQ Documentation Tools Toolbar" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Section &gt; Section View</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionView.wmv" preview="../images/previews/vaSectionViewvideo.png" width="300px" height="300px"></div>
+
+<p>When you run the <strong>vaSectionView</strong> command, you are creating a
+2D drawing that represents the 3D objects projected on a plane. This section view is created according to the <strong>section mark </strong>position in the model. After 
+running the command, the <strong>Section View</strong> <a href="Interface_Dialog.html">
+<strong>insert dialog box</strong></a> will appear.
+Follow the steps from the command line. Press the right mouse button or ENTER to accept and go to 
+the next step.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section view insert.png" alt="Section view insert dialog" /><br/>Section View 
+	insert dialog</div>
+<br clear="all" />
+
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Specify a <strong>section view style</strong> from the insert dialog box.</li>
+	<li>Select the <strong>section mark</strong>.</li>
+	<li>Specify an <strong>insertion point</strong>. Left click anywhere on the 
+	screen to insert the section drawing.</li>
+</ol>
+<p>This section drawing keeps attached to the section mark it was created from, as long as you don't explode it. If the section mark is deleted, the section view 
+is also deleted.
+When you move the section mark position, the section drawing updates automatically. The section drawing also mantains the layer properties of the objects it represents. </p>
+
+<h4>Section View parameters</h4>
+The following parameters can be defined for each Section View object, 
+after they have been created. They can be edited in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Style</strong>: the style defines the attributes of section views</li>
+	<li><strong>Title</strong>: the section view title takes by default the 
+	corresponding section mark 
+	reference text and adds the same text with 
+	a &quot; ' &quot;. (i.e. Section reference text = A, Section View title = A-A'). 
+	However the section view title can be changed by any other text.</li>
+	<li><strong>Section</strong>: option to change the section view by selecting 
+	a different section mark.</li>
+	<li><strong>Auto Update</strong>: option to enable an automatic update of the 
+	Section View when its corresponding section mark object is moved or edited.</li>
+	<li><strong>Tolerance factor</strong>: this value determines the level of 
+	detail the section view is generated with. The higher this value is, the less detailed the section view will be.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Dynamic Section drawing.png" alt="Dynamic Section view, Section mark and Section view" width="600" height="345" /><br/>Model in dynamic section view, section mark and section view</div>
+<br clear="all" />
+<p><strong>Note 1:</strong> The section view does not show the hidden faces.</p>
+<p><strong>Note 2: </strong>The section view and its corresponding section mark are created in the layer that is on when you run the command. Deleting one automatically deletes the other.</p>
+<p><strong>Note 3:</strong> Only objects contained within the section area delimited by its insertion points and its section lenght points will be displayed in the section view.</p>
+
+
+

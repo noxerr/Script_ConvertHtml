@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<Index title="Guida in linea di VisualARQ" language="Inglese">
+
+    <topic title="Introduzione" file="Introduction" />
+	<topic title="Requisiti del sistema" file="Requirements" />
+	<topic title="Specifiche generali" file="General specifications" />
+	
+	<topic title="Interfaccia" file="Interface">
+		<topic title="Barre degli strumenti" file="Interface_Toolbars" />
+		<topic title="Menu a discesa" file="Interface_Drop-down" />
+		<topic title="Menu di scelta rapida" file="Interface_Context" />
+		<topic title="Comandi da tastiera" file="Interface_Commands" />
+		<topic title="Gestore dei livelli" file="Commands_vaLevels" />
+		<topic title="Finestre di dialogo di inserimento" file="Interface_Dialog" />
+		<topic title="Proprietà degli stili" file="Interface_StyleProperties" />
+		<topic title="Finestra di dialogo delle proprietà oggetto" file="Interface_ObjectProperties" />
+		<topic title="Pannello delle proprietà oggetto" file="Interface_VisualARQProperties" />
+		<topic title="Attributi di sezione" file="Interface_SectionAttributes" />
+		<topic title="Viste di VisualARQ" file="Interface_VisualARQViewports" />
+		<topic title="Opzioni di VisualARQ" file="Interface_VisualARQOptions" />
+		<topic title="Interoperabilità con Rhino" file="Interface_Interoperability" />
+		<topic title="Rendering" file="Interface_Render" />
+	</topic>
+	
+	<topic title="Comandi relativi agli oggetti architettonici" file="Architectural objects commands">
+		<topic title="vaMuro" file="Commands_vaWall" >
+			<topic title="vaMuroStili" file="Commands_vaWallStyles" />
+			<topic title="vaMuro &gt; DaCurve" file="Commands_vaWall" />
+			<topic title="vaMuroImpostaPercorso" file="Commands_vaWallSetPath" />
+			<topic title="vaMuroInverti" file="Commands_vaWallReverse" />
+			<topic title="vaMuroEstendi" file="Commands_vaWallExtendToSrf" />
+			<topic title="vaMuroEstendi &gt; AnnullaEstensione" file="Commands_vaWallUnextend" />
+			<topic title="vaMuroSuddividi" file="Commands_vaWallSplit" />
+			<topic title="vaMuroDaSolido" file="Commands_vaWallFromSolid" />
+			<topic title="vaMuroImpostaSolidoPersonalizzato" file="Commands_vaWallSetCustomSolid" />
+			<topic title="vaMuroAggiungiSolidi" file="Commands_vaWallAddSolids" />
+			<topic title="vaMuroSottraiSolidi" file="Commands_vaWallSubtractSolids" />
+			<topic title="vaMuroEstraiSolidi" file="Commands_vaWallExtractSolids" />
+			<topic title="vaMuroSeleziona" file="Commands_vaWallSelect" />
+			
+		</topic>
+		
+		<topic title="vaFacciataContinua" file="Commands_vaCurtainWall" >
+			<topic title="vaFacciataContinuaStili" file="Commands_vaCurtainWallStyles" />
+		</topic>
+		
+		<topic title="vaTrave" file="Commands_vaBeam" >
+			<topic title="vaTraveStili" file="Commands_vaBeamStyles" />
+		</topic>
+
+		<topic title="vaColonna" file="Commands_vaColumn" >
+			<topic title="vaColonnaStili" file="Commands_vaColumnStyles" />
+		</topic>
+		
+		<topic title="vaPorta" file="Commands_vaDoor" >
+			<topic title="vaPortaStili" file="Commands_vaDoorStyles" />
+		</topic>
+		
+		<topic title="vaFinestra" file="Commands_vaWindow" >
+			<topic title="vaFinestraStili" file="Commands_vaWindowStyles" />
+		</topic>
+		
+		<topic title="vaApertura" file="Commands_vaOpening" >
+			<topic title="vaAperturaStili" file="Commands_vaOpeningStyles" />
+		</topic>
+
+			<topic title="vaScala" file="Commands_vaStair" >
+			<topic title="vaScalaStili" file="Commands_vaStairStyles" />
+			<topic title="vaScalaContornoForoDiPassaggio" file="Commands_vaStairClearanceContour" />
+		</topic>
+		
+		<topic title="vaRinghiera" file="Commands_vaRailing" >
+			<topic title="vaRinghieraStili" file="Commands_vaRailingStyles" />
+		</topic>
+
+		
+		<topic title="vaSolaio" file="Commands_vaSlab" >
+			<topic title="vaSolaioAggiungi" file="Commands_vaSlabAdd" />
+			<topic title="vaSolaioSottrai" file="Commands_vaSlabSubtract" />	
+			<topic title="vaSolaioSottraiForoDiPassaggioScala" file="Commands_vaSlabSubtractStairClearance" />
+		</topic>
+		
+		<topic title="vaTetto" file="Commands_vaRoof" >
+			<topic title="vaTettoAggiungi" file="Commands_vaRoofAdd" />
+			<topic title="vaTettoSottrai" file="Commands_vaRoofSubtract" />
+			<topic title="vaTettoCambiaAngoloInclinazione" file="Commands_vaRoofChangeSlopeAngle" />
+			<topic title="vaTettoEsplodi" file="Commands_vaRoofExplode" />
+		</topic>
+		
+		
+	</topic>
+	<topic title="Strumenti per la documentazione" file="Documentation Tools">
+	
+		<topic title="vaVano" file="Commands_vaSpace" >
+			<topic title="vaVanoStili" file="Commands_vaSpaceStyles" />
+		</topic>
+		
+		<topic title="vaTabella" file="Commands_vaTable" >
+			<topic title="vaTabellaStili" file="Commands_vaTableStyles" />
+			<topic title="vaTabellaEsporta" file="Commands_vaTableExport" />
+		</topic>
+		
+		<topic title="vaEtichetta" file="Commands_vaTag" >
+			<topic title="vaEtichettaStili" file="Commands_vaTagStyles" />
+		</topic>
+
+				<topic title="vaProspettoPorteFinestre" file="Commands_vaOpeningElevation" />
+		<topic title="vaSezione" file="Commands_vaSection" >
+			<topic title="vaSezioneStili" file="Commands_vaSectionStyles" />
+			</topic>
+		<topic title="vaSezioneDinamica" file="Commands_vaDynamicSection" />
+		<topic title="vaVistaSezione" file="Commands_vaSectionView" >
+			<topic title="vaStiliVisteDiSezione" file="Commands_vaSectionViewStyles" />
+			</topic>
+		
+		<topic title="vaVistaInPianta" file="Commands_vaPlanView" >
+			<topic title="vaStiliVisteInPianta" file="Commands_vaPlanViewStyles" />
+			</topic>
+
+	
+	</topic>
+	<topic title="Strumenti di VisualARQ" file="VisualARQ Tools">
+		<topic title="vaLivelli" file="Commands_vaLevels" />
+		<topic title="vaAggiorna" file="Commands_vaUpdate" />
+		<topic title="vaAperturaSerie" file="Commands_vaOpeningArray" />
+		<topic title="vaProfiloDaCurva" file="Commands_vaProfileFromCurve" />
+		<topic title="vaProprietà" file="Interface_ObjectProperties" >
+			<topic title="vaStileProprietà" file="Interface_StyleProperties" />
+		</topic>
+		<topic title="vaStiliImporta" file="Commands_vaStylesImport" />
+		<topic title="vaStiliEsporta" file="Commands_vaStylesExport" />
+		<topic title="Esportazione IFC" file="IFC Export" />
+	</topic>
+</Index>

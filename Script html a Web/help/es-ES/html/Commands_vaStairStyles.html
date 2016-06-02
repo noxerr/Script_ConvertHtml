@@ -1,0 +1,114 @@
+<h3>Estilos de escalera</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaEscaleraEstilos</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Escalera"/> clic derecho [<a href="Commands_vaStair.html" title="Comando Escalera">clic izquierdo</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barra de herramientas</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Escalera  &gt; Estilos de escalera</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menú contextual</a>: </div>
+	<div class="value context">Escalera &gt; Propiedades de estilo</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione un objeto de escalera &gt; (<em>Alt, Mayús</em> o <em>Ctrl</em>) + doble clic</div>
+
+	
+</div>
+
+<p>El estilo de escalera define algunas características de los escaleras. Para cada estilo de escalera se pueden definir los siguientes parámetros: <strong>Nombre</strong>, <strong>Atributos</strong>, 
+<strong>Tipo</strong>, <strong>Pasos</strong> y <strong>Reglas</strong>.</p>
+
+
+<p>Los estilos de escalera están definidos por el componente <strong>Losa</strong>, que se puede agregar o eliminar en cualquier momento.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stair Components.jpg" alt="Componentes de escalera" width="300" height="300" /><br />
+Componentes y partes diferentes de una escalera: 
+<ol>
+<li><strong>1: Losa de contrahuella</strong></li>
+<li><strong>2: Losa de huella</strong></li>
+<li><strong><img alt="Losa de escalera" height="16" src="../images/Stair slab-16.png" width="16" /> Losa de escalera</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+
+<p>Para crear un estilo de escalera, pulse el botón <strong>Nuevo estilo</strong> del cuadro de diálogo <a href="Interface_StyleProperties.html">Administrador de estilos</a>. Utilice el asistente que aparezca para introducir los parámetros de la escalera que se explican a continuación.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/StairNewStyle.png" alt="Cuadro de diálogo del Administrador de estilos de escalera" /> <br />
+Cuadro de diálogo del Administrador de estilos de escalera
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="field">Edición general de estilos</div>
+<div class="value">Puede utilizar el comando <strong>vaEscaleraEstilos</strong> o, alternativamente,
+	<ul>
+		<li>Utilice el comando <strong>vaEstiloPropiedades</strong>, seleccione una escalera y pulse Intro, o bien</li>
+		<li>Haga clic con el botón derecho en 
+		<img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una escalera y pulse Intro, o bien</li>
+		<li>Seleccione una escalera, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Escalera &gt; Propiedades de estilo</strong>, o bien</li>
+		<li>Pulse <em>Alt, Mayús</em> o <em>Ctrl </em> y haga doble clic en un objeto de escalera.</li>
+	</ul>
+	Los cambios aplicados a un estilo se aplican a <strong>todos los elementos</strong> con ese estilo.
+</div>
+<div class="field">Edición específica por objeto</div>
+<div class="value"><ul>
+		<li>Utilice el comando <strong>vaPropiedades</strong>, seleccione una escalera y pulse Intro, o bien</li>
+		<li>Haga clic en <img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una escalera y pulse Intro, o bien</li>
+		<li>Seleccione una escalera, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Escalera &gt; Propiedades</strong>, o bien,</li>
+		<li>Haga doble clic en un objeto de escalera. </li>
+	</ul>
+	Los cambios se aplican solo en el estilo del <strong>elemento seleccionado</strong>.</div>
+</div>
+
+<h4>Atributos</h4>
+<p>Los atributos definen las características de cada estilo de escalera y sus componentes para las vistas y la impresión. Los atributos válidos son:</p>
+<ul>
+<li><strong>General</strong>: Capa, visibilidad y material</li>
+<li><strong>Proyección</strong>: Color, Tipo de línea , Ancho de impresión de línea y Color de impresión de línea</li>
+<li><strong>Sección</strong>: Color, Tipo de línea, Ancho de impresión de línea, Color de impresión de línea, Patrón, Escala de patrón, Ángulo de patrón y Color de patrón</li>
+</ul>
+
+<h4>Tipo</h4>
+<p>El parámetro Tipo define el tipo de escalera, que puede ser:</p>
+<ul>
+	<li><strong>Predeterminada: </strong> Se coloca un descansillo en la zona de inflexión de la escalera.</li>
+	<li><strong>Compensada:</strong> El valor de huella se aplica al centro de todos los peldaños.</li>
+</ul>
+
+<h4>Peldaños</h4>
+<p>Los componentes de un peldaño son:</p>
+<ul>
+	<li><strong>Losa de huella</strong>: Se visualiza en 3D, alzados y secciones, pero no afecta a la 
+	<span class="style2">representación en planta</span>.<br />
+	Las propiedades de la losa de huella son <strong>Grosor</strong> y <strong>Nariceo</strong>.</li>
+	<li><strong>Losa de contrahuella</strong>: Se visualiza en 3D, alzados y secciones, pero no afecta a la representación en <span class="style2"></span><span class="style1">
+	</span><span class="style2"></span><span class="style2">Planta 
+</span>. La propiedad de losa de contrahuella es <strong>Grosor</strong>.</li>
+</ul>
+
+<h4>Reglas:</h4>
+<p>Active esta opción cuando desee definir la inclinación de la escalera teniendo en cuenta la regla siguiente: 2 contrahuellas + 1 huella = "número x".<br /> 
+El "número x" predeterminado oscila entre 0,54 m y 0,70 m y representa el intervalo de tamaños de un paso humano estándar.</p>
+
+<h3>Componentes de escalera</h3>
+<h4>Losa<img alt=" Losa de escalera" height="16" src="../images/Stair slab-16.png" width="16" /></h4>
+<p>Las escaleras pueden tener una losa. Las losas de escalera se pueden crear o eliminar haciendo clic con el botón derecho en el nombre de estilo de escalera (Nueva &gt; Losa de escalera o Eliminar existente). El <strong>grosor de losa</strong> puede editarse en la ficha de geometría cuando se selecciona el componente de losa.</p>
+<p>La losa de escalera puede extenderse hasta la losa inicial y la losa del descansillo modificando su grosor desde la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (panel Propiedades de Rhino <img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />):</p>
+<ul>
+	<li class="style2"><strong>Grosor de losa superior</strong>: Grosor de losa de escalera necesario para la extensión del grosor de escalera donde finaliza la escalera.</li>
+	<li><strong>Grosor de losa inferior</strong>: Grosor de losa de escalera necesario para la extensión del grosor de escalera donde empieza la escalera.</li>
+</ul>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stairs Planta.png" alt="Ejemplos de escaleras" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stairs.png" alt="Ejemplos de escaleras" /><br/>Ejemplos de escaleras rectas y de caracol.</div>
+<br clear="all" />
+<p><strong>NOTA: </strong> Las propiedades de escalera no pertenecen al estilo de escalera, ni pueden definirse tampoco desde el cuadro de inserción.</p>

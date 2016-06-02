@@ -1,0 +1,106 @@
+<h3>Gestore degli stili</h3>
+
+<p>La finestra di dialogo del <strong>Gestore degli stili</strong> non solo consente di editare le proprietà di stile dell'oggetto selezionato, ma anche di creare nuovi stili per quel determinato oggetto.</p>
+
+<p>Per creare un nuovo stile di oggetto, premere il pulsante <strong>Nuovo stile</strong>.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorNewStyle.png" alt="Finestra di dialogo Gestore degli stili dell'oggetto Porta" width="350" height="243"/><br/>
+Finestra di dialogo Gestore degli stili dell'oggetto Porta
+</p>
+
+<p>Verrete guidati da una procedura che vi richiederà man mano i parametri dello stile di oggetto da definire.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Procedura guidata per gli stili delle porte."  width="300" height="347" /><br/>
+Procedura guidata per gli stili delle porte.</p>
+
+<p>Quando si seleziona uno stile dall'elenco degli stili, viene visualizzata un'anteprima dell'oggetto nel riquadro sinistro inferiore.</p>
+<p>Quando un oggetto è costituito da vari componenti, il componente selezionato viene visualizzato in turchese.</p>
+<p>L'anteprima si può modificare con il mouse, in modo simile alle viste di Rhino:</p>
+
+<ul>
+	<li><em>Tasto destro del mouse</em>: consente di ruotare il punto di vista per visualizzare il modello da vari punti.</li>
+	<li><em>Ctrl + Tasto destro del mouse</em>: consente di effettuare degli zoom per poter espandere o ridurre il campo visivo.</li>
+	<li><em>Maiusc + Tasto destro del mouse</em>: consente di spostare il punto di vista in modo parallelo al piano di visione: in alto, in basso, a destra o a sinistra.</li>
+</ul>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorAttributes.png" alt="Finestra di dialogo Gestore degli stili, scheda Attributi." width="350" height="243"/><br/>
+Finestra di dialogo Gestore degli stili, scheda Attributi.</p>
+
+<p>Per ogni stile selezionato, è possibile definire le proprietà mostrate nel riquadro destro. Essa racchiude varie schede, che possono variare a seconda del tipo di oggetto:</p>
+
+<ul>
+
+	<li><strong>Attributi<em> </em> </strong><br />
+		Tutti gli oggetti che usano una finestra di dialogo presentano questa scheda. La scheda definisce le caratteristiche (attributi) di ciascuno stile di oggetto e di ciascuno dei suoi componenti. Gli attributi sono: <ul>
+			<li>Livello</li>
+			<li>Visibilità</li>
+			<li>Colore di visualizzazione</li>
+			<li>Tipo di linea</li>
+			<li>Larghezza di stampa</li>
+			<li>Colore di stampa</li>
+			<li>Materiale</li>
+			<li>Tratteggio</li>
+			<li>Stile testo</li>
+			<li>Stile quota</li>
+		</ul>
+		<br />
+		<strong>NOTA: </strong> L'attributo "Materiale" dello stile di un oggetto consente di assegnare un materiale diverso a ciascun componente dell'oggetto. Per assegnare un solo materiale a tutto l'oggetto, si segua il procedimento usuale di Rhino.<br />
+	</li>
+	
+	<li><strong>Geometria </strong><br />
+		Muri, colonne, porte e finestre presentano questa scheda. In questa scheda vengono definiti i valori geometrici di ciascun oggetto e dei suoi componenti.<br />
+		Valori geometrici dell'oggetto Muro:
+		<ul>
+			<li>Altezza</li>
+			<li>Larghezza (si può modificare solo per ciascun componente del muro)</li>
+		</ul>
+		
+		Valori geometrici dell'oggetto Colonna:
+		<ul>
+			<li>Altezza</li>
+			<li>Profilo (definisce la forma dell'oggetto)</li>
+			<li>Larghezza del rivestimento</li>
+		</ul>
+		
+		Valori geometrici dell'oggetto Porta: <ul>
+			<li>Profilo (definisce la forma dell'oggetto)</li>
+			<li>Dimensioni (larghezza e profondità) del telaio e del fermo</li>
+			<li>Dimensioni (larghezza e profondità) e verso di apertura dell'anta</li>
+		</ul>
+		
+		Valori geometrici dell'oggetto Finestra:
+		<ul>
+			<li>Profilo (definisce la forma dell'oggetto)</li>
+			<li>Dimensioni (larghezza e profondità) del telaio e del fermo</li>
+			<li>Dimensioni (larghezza e profondità) e verso di apertura dell'anta</li>
+			<li>Dimensioni (spessore, estensione e profondità) del davanzale.</li>
+		</ul>
+	</li>
+	
+	<li><strong>Dimensioni<em> </em></strong><br />
+	Questa scheda viene usata solo per quegli oggetti che usano dei profili per definire la loro forma (colonne, porte e finestre). Questa scheda si usa per definire le dimensioni (larghezza ed altezza) del profilo usato dall'oggetto. Questa opzione si può usare per creare varie dimensioni per lo stesso profilo.
+	</li>
+	
+	<li><strong>Blocchi<em> </em> </strong><br />
+	Solo le porte e le finestre presentano questa scheda. Questa scheda definisce le rappresentazioni in 2D (pianta) e 3D (modello) dell'oggetto, assegnando a ciascuna di esse un blocco creato in precedenza a piacimento dall'utente. Questa opzione si può usare per creare porte e finestre personalizzate.</li>
+	
+	<li><strong>Rinforzi<em> </em> </strong><br />
+	Solo i muri presentano questa scheda. Questa scheda si usa per definire il valore dei vari tipi di rinforzi presenti in un muro (iniziale, finale, angolare ed apertura).</li>
+	
+	<li><strong>Tipo<em> </em> </strong><br />
+	Solo le scale presentano questa scheda. Essa si usa per definire il tipo di scala usata, a seconda se si attiva o meno l'opzione Bilanciato (con gradini a ventaglio).</li>
+
+	<li><strong>Gradini </strong><br />
+		Solo le scale presentano questa scheda, in cui si possono specificare i valori geometrici delle piastre della pedata e dell'alzata. Valori geometrici della <strong>Piastra della pedata</strong>:
+		<ul>
+			<li>Spessore</li>
+			<li>Sporgenza</li>
+		</ul>
+		
+		Valori geometrici della <strong>Piastra dell'alzata</strong>:
+		<ul>
+			<li>Spessore</li>
+		</ul>
+	</li>
+</ul>

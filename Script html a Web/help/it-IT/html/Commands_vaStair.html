@@ -1,0 +1,175 @@
+<h3>Scala</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaScala</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Scala"/> clic sinistro [<a href="Commands_vaStairStyles.html" title="Stili di scala">clic destro</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barra degli strumenti</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Scala &gt; Scala</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaStair.wmv" preview="../images/previews/vaStairvideo.png" width="300px" height="300px"></div>
+
+<p>Quando si esegue il comando <strong>vaScala</strong>, appare la <a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> delle scale. Questa finestra mostra l'elenco di tutti gli stili di scala disponibili, così come le opzioni di base dell'oggetto scala ed un'anteprima dello stesso.</p>
+<p>Per creare una scala, sono necessari almeno due punti (punto di inserimento e punto finale).</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare lo <strong>stile di scala</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Inserire la scala specificando un <strong>punto di inserimento</strong>.</li>
+	<li>Specificare tutti i punti desiderati fino a coprire l'intera lunghezza della scala. Ciascun punto determina un nuovo tratto di scala e la direzione di ogni tratto. La lunghezza dipende dai parametri definiti in precedenza (<strong>Altezza</strong>, 
+	<strong>Pedata</strong>, <strong>Numero pedate</strong>).</li>
+	<li>Premere INVIO oppure il tasto destro del mouse per terminare il comando.</li>
+</ol>
+
+<p>Ad ogni punto selezionato, il comando crea una rampa di scale che può cambiare di direzione o continuare dritta. Le varie rampe vengono unite tra di loro tramite dei pianerottoli.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/StairInsert.png" alt="Finestra di dialogo di inserimento delle scale"/><br/>
+Finestra di dialogo di inserimento delle scale
+</div>
+<br clear="all" />
+
+
+<h3>Scala a spirale</h3>
+
+<p>Spuntare l'opzione della scala a spirale nella parte inferiore della <a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> delle scale per visualizzare una sezione speciale, in cui si possono definire i parametri di una scala a spirale:</p>
+
+<ul>
+	<li>Angolo di rotazione</li>
+	<li>Raggio</li>
+	<li>In senso orario: determina la direzione della scala a spirale</li>
+</ul>
+<p>Questa opzione non può essere modificata una volta inserita la scala. Per passare da una scala diritta ad una scala a spirale, inserire di nuovo la scala, attivando l'opzione desiderata.</p>
+<p><strong>NOTA</strong>: le scale a spirale non possono avere un angolo di rotazione superiore a 360º. Per creare una scala a spirale che gira su se stessa con un angolo superiore a 360º, vanno create due o più scale a spirale.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Stair/winding stair.png" alt="Vista superiore e prospettica di una scala a spirale." width="400" height="170"/><br/>
+Scala a spirale: vista superiore e vista prospettica
+</div>
+
+<br clear="all" />
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+	<div class="figureWithDescription picRight"><img src="../images/stair_scheme.png" alt="Punti di controllo nelle scale" width="250" height="135" style="float: right;"/></div>
+	<p>Le scale hanno tanti punti di controllo quanti punti inseriti per definirle:</p>
+	<ol>
+		<li>Punto di inserimento (inizio della scala)</li>
+		<li>Inizio della seconda rampa</li>
+		<li>Inizio della terza rampa</li>
+		<li>Fine della scala</li>
+	</ol>
+<p>Tutti i punti di controllo di una scala vengono usati per spostarla. Non per operazioni di scalatura.</p>
+<p>Per definire la direzione di ogni tratto di scala, selezionare e spostare il punto desiderato sullo schermo oppure inserire un angolo nella linea di comando.</p>
+
+
+<br clear="all" />
+
+<h4>Opzioni e parametri di inserimento</h4>
+<p>La maggior parte dei parametri di una scala vengono definiti nella finestra di dialogo di inserimento quando essa viene inserita. Questi parametri si possono modificare in un secondo momento nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> <img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino <img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+</p>
+
+<h5>Allineamento</h5>
+
+<p>Una scala si può allineare in 3 modi:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment c.jpg" alt="Allineamento al centro"/></td>
+				<td><strong>Centro</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment r.jpg" alt="Allineamento a destra"/></td>
+				<td><strong>Destra</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/salignment l.jpg" alt="Allineamento a sinistra"/></td>
+				<td><strong>Sinistra</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Altezza</h5>
+<p>Il valore Altezza corrisponde alla distanza tra il livello di inizio della scala ed il livello in cui avviene lo sbarco.</p>
+
+
+<h5>Larghezza</h5>
+
+<p>Il valore Larghezza rimane costante per tutte le rampe della scala.</p>
+
+<h5>Numero pedate</h5>
+<p>Specifica il numero complessivo di pedate di una scala.</p>
+
+
+<h5>Pedata</h5>
+
+<p>Il valore Pedata corrisponde alla profondità di ciascun gradino. Rimane costante per tutti i gradini della scala.</p>
+
+
+<h5>Alzata</h5>
+
+<p>Il valore Alzata corrisponde all'altezza di ciascun gradino. Viene calcolata automaticamente a partire dai valori di Altezza e Numero di pedate e rimane costante per tutti i gradini della scala.
+</p>
+
+<h5>Spessore superiore ed inferiore della soletta della scala:</h5>
+<p>Questi valori regolano lo spessore della soletta della scala sui punti iniziale e finale in funzione dello spessore del solaio.</p>
+
+
+<h4>Parametri rampa e pianerottolo</h4>
+
+<p>Diversamente dagli altri oggetti di VisualARQ, le scale hanno alcune proprietà dell'oggetto che si possono assegnare solo dopo l'inserimento delle stesse. <br/>
+Queste proprietà sono i parametri <strong>Rampa</strong> e <strong>Pianerottolo</strong>, i quali si possono editare solo nella finestra delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> <img alt="Proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> :</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/stair flight landing.png" alt="Finestra di dialogo (Proprietà dell'oggetto) della scala" /><br />
+Finestra di dialogo (Proprietà dell'oggetto) della scala
+</div>
+<br clear="all" />
+
+<h4>Parametri della rampa</h4>
+<ul>
+	<li>Tipo
+		<ul>
+			<li><strong>Pianerottolo</strong>: Indica che la rampa è costituita da una soletta piana o pianerottolo.</li>
+			<li><strong>Gradini</strong>: Indica che la rampa è costituita da gradini.</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+<h4>Parametri del pianerottolo</h4>
+<ul>
+	<li>Tipo
+		<ul>
+			<li><strong>Pianerottolo</strong>: Indica che il pianerottolo è costituito da una soletta piana o pianerottolo.</li>
+			<li><strong>Gradini</strong>: Indica che il pianerottolo è costituito da gradini.</li>
+		</ul>
+	</li>
+	<li>Contorno
+		<ul>
+			<li>Interno
+				<ul>
+					<li><strong>Dritto</strong>: Indica che il contorno interno è dritto (angolare).</li>
+					<li><strong>Curvo</strong>: Indica che il contorno interno è curvo (ad arco).</li>
+				</ul>
+			</li>
+			<li>Esterno
+				<ul>
+					<li><strong>Dritto</strong>: Indica che il contorno esterno è dritto (angolare).</li>
+					<li><strong>Curvo</strong>: Indica che il contorno esterno è curvo (ad arco).</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+

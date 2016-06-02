@@ -1,0 +1,52 @@
+<h3>Vista en sección</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaSecciónVista</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon">
+		<img alt="Vista en sección " height="24" src="../images/VA_SectionView.png" width="24" /> clic izquierdo [<a href="Commands_vaSectionViewStyles.html" title="Estilos de vista en sección">clic derecho</a>]</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentación</a>: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra de herramientas Herramientas de documentación de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Sección &gt; Vista en sección</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionView.wmv" preview="../images/previews/vaSectionViewvideo.png" width="300px" height="300px"></div>
+
+<p>Cuando ejecute el comando <strong>vaSecciónVista</strong>, creará un dibujo 2D que representa los objetos 3D proyectados en un plano. Esta vista en sección se crea teniendo en cuenta la posición de la <strong>marca de sección</strong> en el modelo. Cuando ejecute el comando, aparecerá el cuadro de diálogo de inserción de <strong>Vista en sección</strong><a href="Interface_Dialog.html">
+<strong></strong></a> . Siga los pasos que se indican en la línea de comandos. Pulse el botón derecho del ratón o INTRO para aceptar y pasar al siguiente paso.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section view insert.png" alt="Diálogo de inserción de Vista en sección" /><br/>Diálogo de inserción de Vista en sección</div>
+<br clear="all" />
+
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Especifique un <strong>estilo de vista sección</strong> desde el cuadro de diálogo de inserción.</li>
+	<li>Seleccione una <strong>marca de sección</strong>.</li>
+	<li>Especifique un <strong>punto de inserción</strong>. Pulse el botón izquierdo del ratón sobre cualquier punto de la pantalla para insertar la sección.</li>
+</ol>
+<p>Este dibujo de sección se mantiene asociado a la marca de sección desde la que se creó, siempre que no se descomponga. Si la marca de sección se elimina, la vista en sección también se elimina. Cuando se mueve la posición de la marca de sección, el dibujo de sección se actualiza automáticamente. El dibujo de sección también mantiene las propiedades de capa de los objetos que representa. </p>
+
+<h4>Parámetros de vista en sección</h4>
+Los siguientes parámetros pueden definirse para cada objeto de vista en sección, una vez se han creado. Pueden editarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Estilo</strong>: el estilo define las atributos de las vistas en sección</li>
+	<li><strong>Título</strong>: el título de la vista en sección toma por defecto el texto de referencia de la marca de sección correspondiente y añade el mismo texto con un apóstrofe. (p.e. Texto de referencia de sección = A, Título de vista en sección = A-A') Sin embargo, el título de vista en sección se puede cambiar por otro texto.</li>
+	<li><strong>Sección</strong>: opción para cambiar la vista en sección seleccionando una marca de sección diferente.</li>
+	<li><strong>Actualización automática</strong>: opción para activar una actualización automática de la vista en sección cuando su objeto de marca de sección correspondiente se mueve o modifica.</li>
+	<li><strong>Factor de tolerancia</strong>: este valor determina el nivel de detalle con el que se genera la vista en sección. Cuanto más alto sea este valor, menos detallada será la vista en sección.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Dynamic Section drawing.png" alt="Vista de sección dinámica, marca de sección y vista en sección" width="600" height="345" /><br/>Modelo en vista de sección dinámica, marca de sección y vista en sección</div>
+<br clear="all" />
+<p><strong>Nota 1:</strong> La vista en sección no muestra las caras ocultas.</p>
+<p><strong>Nota 2: </strong>La sección y su respectiva marca de sección se crean en la capa que esté activa al momento de ejecutar el comando. La eliminación de una, elimina automáticamente a la otra.</p>
+<p><strong>Nota 3:</strong> Solo los objetos contenidos dentro del área de la sección delimitada por los puntos de inserción y los puntos de longitud de sección se mostrarán en la vista en sección.</p>
+
+
+

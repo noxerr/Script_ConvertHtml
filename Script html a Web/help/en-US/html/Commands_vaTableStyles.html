@@ -1,0 +1,123 @@
+<h3>Table Styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaTableStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Table.jpg" alt="Table Styles"/> right click
+	[<a href="Commands_vaTable.html" title="Table command">left click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> 
+		toolbar:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="VisualARQ Documentation Tools Toolbar" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Table &gt; Table Styles...</div>
+	
+	<div class="field">Shortcut key: </div>
+	<div class="value menu">Select a table object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + 
+		double click</div>
+
+</div>
+
+<p>The table style defines the table features. You can define the following parameters in each table style: <strong>Name, Attributes</strong> and <strong>Apply to.</strong></p>
+<p>The table styles are defined by different <strong>Property Fields</strong> that can be added or deleted at any time.</p>
+
+<h4>New table style</h4>
+<p>To create a new table style, press the <strong>New style</strong> button in the <a href="Interface_StyleProperties.html">Style Manager</a> 
+dialog box. Follow the steps of the table style wizard to define the new table style 
+parameters:</p>
+<ul>
+<li><strong>Style name</strong></li>
+<li><strong>Object types</strong>: more than one object type can be selected</li>
+<li><strong>Schedule table fields</strong>: specify the field name and which property it applies to.</li>
+<li><strong>Quantity field</strong>: option to specify the field in which to group the table elements</li>
+</ul>
+<h4>Edit a table style</h4>
+<p>Once the new table style is created it appears on the list in the left panel. Select the table style you wish to define and use the tabs that appear in the right panel to enter the table parameters:</p>
+<p><strong>Add a property field</strong>: New property fields can be added to a table style. 
+Select the table style, right-click to display the context menu and then select 
+<strong>New 
+&gt; Table property field</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Schedule/style Manager.png" alt="Style Manager dialog box for the Table object" /><br />
+Style Manager dialog box for the table object, "Apply to" tab.
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaTableStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		table and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)"/>, 
+		then select a table and press Enter, or</li>
+		<li>Select a table and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Table &gt; Style Properties</strong>, or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on a table object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a table 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a table and press Enter, or</li>
+		<li>Select a table and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Table &gt; Properties</strong>, 
+		or,</li>
+		<li>Double click on a table object. </li>
+	</ul>
+		</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each table style for display and print purposes. The valid attributes are:</p>
+<ul><li>Layer, Visibility, Text style, Dimension style, Color, Linetype, Line print width, Line print color, 
+	Pattern, Pattern scale, Pattern angle and Pattern color.</li></ul>
+
+<h4>Apply to</h4>
+<p>This tab specifies the <em>type of objects</em> displayed on the table. The command automatically filters the selection, so that only the type of objects selected are displayed.</p>
+<p>The style manager dialog box of the Table object displays two more tabs when you select one of the columns of each table style: <strong>Group</strong> and <strong>Property</strong>.</p>
+<p>The quantity and column type of each table style can be defined by the user, depending on what needs to be quantified. For the three default table styles, the predefined columns are:</p>
+<ul>
+	<li><strong>Openings</strong> style: <em>Quantity, Reference, Width, Height, Elevation</em> and <em>Opening Side.</em></li>
+	<li><strong>Spaces</strong> style: <em>Name, Perimeter</em> and <em>Area.</em></li>
+	<li><strong>Walls </strong>style: <em>Quantity, Style, Length, Area</em> and
+	<em>Volume.</em></li>
+</ul>
+
+<h5>Group</h5>
+<p>This tab is used to define the <em>common features</em> of a quantified object so that it can be considered as part of the same group.<br/> 
+This tab only appears when you select the column on the table corresponding to the <em>Quantity</em> (used in the opening elevations).</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Schedule/Style Manager - Group.png" alt="Style Manager dialog box for the Table object, Group tab" /><br />
+Style Manager dialog box for the Table object, "Group" tab.
+</div>
+<br clear="all" />
+
+<h5>Property</h5>
+<p>This tab is used to define the <em>property type</em> of a quantified object that must be displayed in each table column.<br/> 
+This tab is displayed only when you select any of the table columns, except  in the case of <em>Quantity</em>.</p>
+
+<h5>Sort</h5>
+<p>This tab is displayed when selecting a table style. It is used to set a criterion to order the different property fields within the table style and also to order the values of each property field alphabetically or numerically.</p>
+<p>Click on the <strong>Add</strong> button to add a new property field which will 
+establish the first criterion to order the values of that table style. Click on this 
+property field name to select a different property field.
+Select the Order type (Ascending or Descending) besides the property field.</p>
+<p>You can add more property fields that will provide new criteria to order the values in table styles. Use the arrows at the right-bottom corner of the dialog to change the property fields order.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Schedule/Sort Tab.png" alt="Style Manager dialog box for the Table object, Sort tab" /><br />
+Style Manager dialog box for the Table object, "Sort" tab.
+</div>
+<br clear="all" />
+

@@ -1,0 +1,175 @@
+<h3>Opening styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaOpeningStyles</div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Opening &gt; Opening Styles...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Opening &gt; Styles Properties</div>
+	
+	<div class="field">Shortcut: </div>
+	<div class="value menu">Select an opening object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + 
+		double click</div>
+
+	
+</div>
+
+<p>The opening style defines the Opening features. You can define the following parameters in each 
+Opening style: <strong>Name</strong>, <strong>Attributes</strong>, <strong>Shape</strong> (geometry) and <strong>Custom blocks</strong>.</p>
+
+<p>The opening styles are defined by an <strong>Opening Frame</strong> component that can be added or deleted at any time.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening/Opening Components.jpg" alt="Opening components" width="300" height="300" /><br />
+Different parts and components of an opening:
+<ol>
+<li><strong>1: Opening profile</strong></li>
+<li><strong>2: <img alt="Door Frame" height="16" src="../images/Frame-16.png" width="16" /> 
+Opening Frame</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+<h4>New opening style:</h4>
+<p>You can create new styles and duplicate existing styles from the Opening <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+
+<h4><strong>Delete an opening style</strong>:</h4>
+<p>You can delete opening styles from the opening <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing opening in the model.</p>
+
+<h4>Edit an opening style:</h4>
+<p>Select the opening style or the opening component item at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add an opening component:</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the opening style name to open the context menu, and select <em>New > "Component item"</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the opening style and click on the <em>New</em> icon, from the dialog toolbar. Select <em>New > "Component item"</em>.</li>	
+</ul>
+<p><strong>Delete components:</strong> use the Context menu (righ-click on the component to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/opening/opening New Style.png" alt="Style Manager dialog box for the opening object." /><br />
+Style Manager dialog box for the opening object
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="value">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaOpeningStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select an 
+		opening and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)"/>, 
+		then select an opening and press Enter, or</li>
+		<li>Select an opening and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Opening &gt; Style Properties</strong>, 
+		or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on an opening object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select an 
+		opening and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select an opening and press Enter, or</li>
+		<li>Select an opening and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Opening &gt; Properties</strong>, or,</li>
+		<li>Double click on an opening object. </li>
+	</ul>
+	</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each opening style and its components 
+for display and print purposes. The valid attributes are:</p>
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle and Pattern color</li>
+</ul>
+
+<h4>Shape</h4>
+
+<p>The opening shape (or rough opening) is defined by a profile. VisualARQ offers a library with predefined parametric profiles: Rectangular, Circular, 90º Arc, Gothic, etc.<br />
+</p>
+
+<p>Customized shape profiles can also be used to define Openings.</p>
+
+<p>To add a customized profile, draw a closed and flat curve and convert it into 
+a profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em></a> command
+<img alt="Profile From Curve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br/>
+Once the custom profile has been created, it will appear at the end of the list of preset parametric profiles library.</p>
+
+<p>The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.</p>
+
+<h4>Sizes</h4>
+<p>The parameters corresponding to the sizes of an opening will depend on the type of profile selected.<br />
+Different sizes can be specified for the same opening style.</p>
+<p>The sizes can also be specified at any time when inserting the opening from the insert dialog box by choosing the 
+<strong>Sizes &gt; Other</strong> option in the <strong>Profile</strong> section of this 
+panel.</p>
+
+<h3>Opening components</h3>
+<h4>Frame <img alt="Door Frame" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>The opening styles can have a frame.<br />
+To add a frame to an opening, in the Opening styles list, right click on the
+<strong>Opening</strong> name<strong> </strong>then choose <strong>New &gt; Opening 
+frame</strong>.<br /> 
+To delete the frame from the opening, in the Opening styles list, right click on the
+<strong>Opening frame </strong>name and choose <strong>Delete</strong>. </p>
+<p>The frame <strong>Width</strong> and <strong>Depth </strong>values can be edited. In addition, the 
+<strong>Adjust depth to wall thickness </strong>option can be enabled.</p>
+
+
+<h3>Opening from custom blocks</h3>
+
+<p>The opening styles can be created with 2D and 3D blocks that define their representation in the plan and model views, respectively.<br />
+To create a custom opening style, assign a <strong>profile</strong> (which defines the shape of the rough opening on the wall), a 
+<strong>2D block</strong> (which defines the plan representation) and a <strong>3D block</strong> (which defines the model representation).</p>
+
+<p><strong>Steps:</strong></p>
+<ul>
+<li><strong>Create a custom profile:</strong> Draw a closed and flat curve and convert 
+it into a profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em></a> command
+<img alt="vaProfileFromCurve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Once the custom profile has been created, it will appear at the end of the list of the preset parametric profiles library.<br />
+The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.
+</li>
+<li><strong>Create the 2D and 3D blocks:</strong> Create the 3D model and draw the 2D representation from it. 
+Then, create two blocks from them with the <strong>Block </strong>command (<strong>Edit 
+</strong>menu <strong>&gt; Block &gt; Create Block Definition</strong>).</li>
+<li><strong>Create the new Opening style:</strong> Once you have created the profile and the 2D/3D blocks, press the 
+<strong>New style </strong>button in the Style Manager dialog box. Use the wizard displayed to assign a custom profile to the style.
+
+<p>Skip the dialogs where the opening style parameters are defined by pressing the 
+<strong>Next </strong>button until the custom block definition dialog box is displayed.<br />
+Select the checkbox that enables the options to use custom blocks for the model and plan views in the 
+<strong>Custom blocks </strong>dialog box. Once they have been enabled, select the 3D and 2D blocks in the drop-down menu to define the opening style 
+representation in those views.</p>
+</li>
+</ul>
+
+<p>Before creating the blocks (2D/3D), make sure that the objects you wish to convert in VisualARQ openings are aligned with the universal X, Y and Z axes (WCS).<br />
+Once you have aligned the objects with the WCS, choose the <strong>lower center point</strong> of your geometry as the insertion point when creating the block.<br />
+This will guarantee that the orientation of the opening is correct.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/opening/Opening blocks.png" alt="opening creation wizard, block definition." width="400" height="247" /><br />
+	Opening creation, block definition
+</div>
+
+<p>When 3D and 2D blocks are used to define the representation of a custom style, the Sizes 
+and Frame parameters do not have an effect on the appearance of the style created. Custom styles are NOT parametric: their appearance (size, proportion, level of detail) depends on the block drawing used to define them.</p>
+
+<p>VisualARQ can also create <em>hybrid</em> opening styles, replacing only the plan view (with a 2D block) and using the model view of a parametric style or vice versa.<br />
+The representation that does not use a block must be defined with style parameters (Sizes and Frame), as in any standard opening style.</p>
+
+
+

@@ -1,0 +1,158 @@
+<h3>Fenêtre</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaFenêtre</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Window.jpg" alt="Fenêtre"/> clic [<a href="Commands_vaWindowStyles.html" title="Commande vaFenêtreStyles">clic droit</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barre d'outils Objets</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Fenêtre &gt; Fenêtre</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaWindow.wmv" preview="../images/previews/vaWindowvideo.png" width="300px" height="300px"></div>
+
+<p>Le fonctionnement et le comportement d'une fenêtre sont identiques à ceux d'une porte.<br />
+Les fenêtres ne peuvent être insérées que dans un mur. Les deux éléments sont liés et l'ouverture est générée automatiquement dans le mur où elle  est insérée.</p>
+
+<p>Lorsque vous lancez la commande <strong>vaFenêtre</strong>, la <a href="Interface_Dialog.html">boîte de dialogue d'insertion</a> d'une fenêtre apparaît. Cette boîte de dialogue affiche une liste de tous les styles de fenêtres disponibles, des options de base pour définir la fenêtre et un aperçu.</p>
+<p>Les étapes nécessaires à l'insertion d'une fenêtre dans un mur dépendront des options d'insertion sélectionnées.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez le <strong>Style de fenêtre</strong> que vous voulez utiliser et définissez les options d'insertion de base.</li>
+	<li>Il existe deux options pour permettre l'insertion d'une fenêtre dans un mur :<br/>
+		<ul>
+			<li><strong>Décalage :</strong> insère la fenêtre à une distance spécifique (décalage) de l'extrémité la plus proche du mur où la fenêtre est insérée. Indiquez le côté d'ouverture en déplaçant le curseur ; la commande le définit automatiquement selon la position du curseur. Cliquez pour insérer la fenêtre.</li>
+			<li><strong>Point d'insertion : </strong> insère librement la fenêtre dans le mur. Cliquez pour insérer la fenêtre.</li>
+		</ul>
+	</li>
+	<li>Indiquez le <strong>côté d'ouverture</strong> en cliquant sur le côté désiré du mur. Cette étape n'est pas nécessaire lorsque vous insérez une fenêtre avec l'option décalage.</li>
+</ol>
+
+<p>Vous pouvez définir autant de fenêtres que vous voulez et vous pouvez annuler la commande en appuyant sur Entrée ou Échap.</p>
+<p>Avec les deux options d'insertion, l'ouverture correspondant à la fenêtre est générée automatiquement dans le mur.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Window/window 2.png" alt="Boîte de dialogue d'insertion des fenêtres"/><br/>
+Boîte de dialogue d'insertion d'une fenêtre
+</div>
+
+<br clear="all" />
+<h3>Fenêtre à partir d'une courbe</h3>
+<p>Les fenêtres peuvent être créées à partir de courbes, qui déterminent leur forme.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Lancez la commande <strong>vaFenêtre</strong>.</li>
+	<li>Sélectionnez le <strong>Style de fenêtre</strong> que vous voulez utiliser et définissez les options d'insertion de base</li>
+	<li>Sélectionnez l'option <strong>ÀPartirDeCourbes</strong> dans la ligne de commandes</li>
+	<li>Sélectionnez une ou plusieurs <strong>courbes</strong> dans le modèle. Cette courbe doit être 
+	<em>fermée</em> et <em>verticale</em></li>
+</ol>
+<p>La fenêtre est générée à l'intérieur du mur le plus proche de la courbe sélectionnée.</p>
+<p><strong>Remarque </strong>: Les courbes sélectionnées pour créer des fenêtres ne doivent pas obligatoirement être orientées parallèlement au mur où les fenêtres seront placées. Les fenêtres sont insérées et orientées automatiquement en fonction de la position du mur le plus proche.</p>
+
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/window_scheme.png" alt="Points de contrôle sur les fenêtres" width="220" height="160"  style="float: right;"/>
+<p>Les fenêtres ont cinq points de contrôle :</p>
+	<ol>
+		<li>Point de contrôle pour le côté d'ouverture</li>
+		<li>Point d'insertion gauche</li>
+		<li>Point d'insertion central</li>
+		<li>Point d'insertion droit</li>
+		<li>Point de contrôle de la marque de référence</li>
+	</ol>
+<br clear="all" />
+
+<p>Pour déplacer la fenêtre (dans le mur ou sur un autre mur), sélectionnez-la à partir d'un des points et faites-la glisser où vous voulez.</p>
+<p>Pour changer le côté d'ouverture de la fenêtre, sélectionnez le point de contrôle du côté d'ouverture (1) et déplacez-le de l'autre côté du mur.</p>
+
+<h4>Options et paramètres d'insertion</h4>
+
+<h5>Alignement</h5>
+
+<p>La fenêtre peut être alignée avec l'épaisseur du mur selon 3 méthodes :</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Alignement intérieur"/></td>
+				<td><strong>Intérieur</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Alignement au centre"/></td>
+				<td><strong>Centre</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Alignement extérieur"/></td>
+				<td><strong>Extérieur</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<p>Pour modifier l'alignement d'une fenêtre, modifiez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a><img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Pourcentage d'ouverture</h5>
+<p>Le pourcentage d'ouverture indique le degré d'ouverture des battants dans les vues en plan et en perspective. Le pourcentage d'ouverture est défini par deux options :</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0">
+			<tr valign="middle">
+				<td valign="top"> <img align="left" src="../images/Max aperture 32.png" height="24" width="24" alt="Ouverture maximale (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Ouverture maximale (%)</strong>: cette valeur définit l'ouverture maximale que les battants de la fenêtre peuvent atteindre. L'ouverture maximale de la fenêtre est affichée uniquement dans la vue de dessus lorsque le mode de vue en plan de VisualARQ est activé, et elle est représentée par une simple ligne et un arc.</td>
+			</tr>
+		</table> </li>
+	<li><table border="0" cellspacing="0" cellpadding="0" >
+			<tr valign="middle">
+				<td valign="top"><img align="left" src="../images/aperture 32.png" height="24" width="24" alt="Ouverture (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Ouverture (%) :</strong> cette valeur indique le degré d'ouverture des battants dans les vues en perspective et en plan.</td>
+			</tr>
+		</table></li>
+</ul>
+<div class="figureWithDescription block"><img src="../images/Window aperture 2D 3D.jpg" alt="Exemple d'ouverture d'une fenêtre."/><br/>
+Exemple d'ouverture d'une fenêtre: Ouverture maximale : 65 %, Ouverture : 0%
+</div>
+<br/>
+<p>Le pourcentage d'ouverture n'est pas une propriété de style. La valeur est définie dans la boîte de dialogue d'insertion pour chaque fenêtre insérée.</p>
+
+<p>La valeur d'ouverture par défaut pour les fenêtres est de 50 % mais vous pouvez utiliser des valeurs situées entre 0 et 100 %. Si vous modifiez cette valeur, la boîte de dialogue d'insertion montrera la dernière valeur utilisée.</p>
+
+<p>Pour modifier le pourcentage d'ouverture d'une fenêtre, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a><img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+<br clear="all" />
+<h5>Alignement vertical</h5>
+
+<p>Deux alignements verticaux par rapport à la ligne de base du mur peuvent être utilisés lors de l'insertion des fenêtres :</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Alignement vertical inférieur"/></td>
+				<td><strong>Inférieur :</strong> distance de référence entre la ligne de base du mur et la surface inférieure de la fenêtre.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Alignement vertical supérieur"/></td>
+				<td><strong>Supérieur :</strong> distance de référence entre la ligne de base du mur et la surface supérieure de la fenêtre.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>L'alignement vertical n'est pas une propriété de style. La valeur est définie dans la boîte de dialogue d'insertion pour chaque objet inséré.</p><br />
+<p>Pour modifier l'alignement vertical d'une fenêtre, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a><img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Élévation</h5>
+
+<p>L'élévation d'une fenêtre dans la boîte de dialogue d'insertion est toujours mesurée par rapport à la ligne de base du mur où elle est insérée, quel que soit son niveau. Lorsque la fenêtre a été insérée, la valeur d'élévation indique la position de la fenêtre dans les coordonnées Z du repère général, quels que soient le mur et le niveau d'insertion. L'élévation n'est pas une propriété de style. La valeur est définie dans la boîte de dialogue d'insertion pour chaque objet inséré.<br />
+La valeur d'élévation par défaut pour les fenêtres est de 0. Si vous modifiez cette valeur, la boîte de dialogue d'insertion montrera la dernière valeur utilisée.</p>
+
+<p>Pour modifier l'élévation d'une fenêtre, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a><img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

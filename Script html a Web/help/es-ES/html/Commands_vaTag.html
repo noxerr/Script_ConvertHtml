@@ -1,0 +1,55 @@
+<h3>Etiqueta</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaEtiqueta</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon">
+		<img alt="Etiqueta" height="24" src="../images/VA_Tag.png" width="24" /> clic izquierdo [<a href="Commands_vaTagStyles.html" title="Estilos de etiqueta">clic derecho</a>]</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentación</a>: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra de herramientas Herramientas de documentación de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Etiqueta &gt; Etiqueta</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaTag.wmv" preview="../images/previews/vaTagvideo.png" width="300px" height="300px"></div>
+
+<p>El comando <strong>vaEtiqueta</strong> se utiliza para mostrar las etiquetas con textos de referencia específicos en los objetos de VisualARQ que están en el modelo. </p>
+<p>Los objetos a etiquetar deben tener el campo etiqueta rellenado antes de ejecutar este comando. El campo de etiqueta puede editarse en cada objeto de VisualARQ en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino <img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />), en la sección <em>General</em>. </p>
+
+<p>Cuando ejecute el comando, aparecerá el cuadro de diálogo de inserción de <strong>Etiqueta</strong>. Siga los pasos que se indican en la línea de comandos. Pulse el botón derecho del ratón o INTRO para aceptar y pasar al siguiente paso.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tag insert dialog.png" alt="Diálogo de inserción de etiqueta"/><br/>
+	Diálogo de inserción de etiqueta</div>
+<br clear="all" />
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Especifique un <strong>estilo de etiqueta</strong> desde el cuadro de diálogo de inserción.</li>
+	<li>Seleccione los <strong>objetos</strong> a etiquetar.</li>
+</ol>
+<p>La etiqueta se creará automáticamente junto al objeto seleccionado. 
+</p>
+<h4>Puntos de control de etiquetas</h4>
+<p>Los objetos de etiqueta no tienen puntos de control. Se pueden mover independientemente de la posición de sus objetos de referencia. Cuando sus objetos de referencia se mueven, las etiquetas también se mueven automáticamente, manteniendo su posición relativa, a menos que la opción Posición fija está activada. </p>
+<h4>Eliminar una etiqueta</h4>
+<p>Solo tiene que seleccionar la etiqueta y eliminarla.</p>
+
+<h4>Parámetros de etiqueta</h4>
+Los siguientes parámetros pueden definirse para cada objeto de etiqueta, una vez se han creado. Pueden editarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Estilo</strong>: el estilo de etiqueta define los atributos de las etiquetas.</li>
+	<li><strong>Posición</strong>: coordenadas XYZ universales de la etiqueta.</li>
+	<li><strong>Posición fija</strong>: opción para fijar la posición de la etiqueta, aunque se mueva su objeto de referencia.</li>
+	<li><strong>Formato</strong>: formato del texto que se muestra en la etiqueta. Utilice la fórmula "<strong>%&lt;elemento.etiqueta&gt;%</strong>" para agregar el texto antes o después del texto de referencia de la etiqueta.
+	<ul>
+		<li>por ejemplo: para una puerta cuyo texto de referencia de etiqueta es <em>"D3"</em>, puede escribir <em>
+		"Puerta %&lt;elemento.etiqueta&gt;%"</em> para mostrar <em>"Puerta D3"</em> en la etiqueta.</li>
+	</ul>
+	</li>
+</ul>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tags.png" alt="Puerta y muro etiquetados" /><br/>
+	Ejemplos de etiquetas</div>
+<br clear="all" />
+

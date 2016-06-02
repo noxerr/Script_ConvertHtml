@@ -1,0 +1,114 @@
+<h3>Treppenstile</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaTreppenStile</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Stair.jpg" alt="Treppe"/> Rechtsklick [<a href="Commands_vaStair.html" title="Befehl Treppe">Linksklick</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Werkzeugleiste</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Treppe &gt; Treppenstile...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Kontextmenü</a>: </div>
+	<div class="value context">Treppe &gt; Stileigenschaften</div>
+	
+	<div class="field">Tastenkombination: </div>
+	<div class="value menu">ein Treppenobjekt auswählen &gt; (<em>Alt, Umschalttaste</em> oder <em>Strg</em>) + Doppelklick</div>
+
+	
+</div>
+
+<p>Der Treppenstil definiert die Treppeneigenschaften. Folgende Parameter können für jeden Treppenstil definiert werden: <strong>Name</strong>, <strong>Attribute</strong>, 
+<strong>Typ</strong>, <strong>Stufen</strong> und <strong>Regeln</strong>.</p>
+
+
+<p>Die Treppenstile werden von einer <strong>Deckenkomponente</strong> bestimmt, die jederzeit hinzugefügt oder gelöscht werden kann.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stair Components.jpg" alt="Treppenkomponenten" width="300" height="300" /><br />
+Verschiedene Teile und Komponenten einer Treppe: 
+<ol>
+<li><strong>1: Setzstufe</strong></li>
+<li><strong>2: Trittstufe</strong></li>
+<li><strong><img alt="Treppendecke" height="16" src="../images/Stair slab-16.png" width="16" /> Treppendecke</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+
+<p>Um einen Treppenstil zu erzeugen, klicken Sie auf die Schaltfläche <strong>Neuer Stil…</strong> im Dialogfenster des <a href="Interface_StyleProperties.html">Stilmanagers</a>. Verwenden Sie den Assistenten, um die Treppenparameter einzugeben.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/StairNewStyle.png" alt="Dialogfenster des Stilmanagers für Treppen" /> <br />
+Dialogfenster des Stilmanagers für Treppen
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="field">Allgemeine Bearbeitung des Stils</div>
+<div class="value">Sie können entweder den Befehl <strong>vaTreppenStile</strong> verwenden, oder
+	<ul>
+		<li>den Befehl <strong>vaStilEigenschaften</strong> ausführen, eine Treppe auswählen und mit Enter bestätigen, oder</li>
+		<li>mit der rechten Maustaste auf die Schaltfläche 
+		<img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Rechtsklick)"/> klicken, eine Treppe wählen und mit Enter bestätigen, oder</li>
+		<li>durch einen langen Klick mit der rechten Maustaste auf eine Treppe das dazugehörige Kontextmenü öffnen und <strong>Treppe &gt; Stileigenschaften</strong> wählen, oder</li>
+		<li><em>Alt, Umschalttaste</em> oder <em>Strg</em> drücken und doppelt auf ein Treppenobjekt klicken.</li>
+	</ul>
+	Die Änderungen wirken sich auf <strong>alle Elemente</strong> mit diesem Stil aus.
+</div>
+<div class="field">Objektspezifische Bearbeitung des Stils</div>
+<div class="value"><ul>
+		<li>Geben Sie den Befehl <strong>vaEigenschaften</strong> ein, wählen Sie eine Treppe und bestätigen Sie mit Enter, oder</li>
+		<li>Klicken Sie auf die Schaltfläche <img src="images/VA_Properties.jpg" alt="vaStilEigenschaften (Linksklick)"/>, wählen Sie eine Treppe und bestätigen Sie mit Enter, oder</li>
+		<li>Wählen Sie eine Treppe aus, öffnen Sie durch einen langen Rechtsklick das Kontextmenü und wählen Sie darin <strong>Treppe &gt; Eigenschaften</strong>, oder</li>
+		<li>Doppelklicken Sie auf ein Treppenobjekt. </li>
+	</ul>
+	Die Änderungen wirken sich nur auf den Stil des <strong>ausgewählten Elements</strong> aus.</div>
+</div>
+
+<h4>Attribute</h4>
+<p>Mit den Attributen werden die Anzeige- und Druckeigenschaften eines Treppenstils und seiner Komponenten bestimmt. Gültige Attribute sind:</p>
+<ul>
+<li><strong>Allgemein</strong>: Ebene, Sichtbarkeit und Material</li>
+<li><strong>Projektion</strong>: Farbe, Linientyp, Liniendruckbreite und Liniendruckfarbe</li>
+<li><strong>Schnitt</strong>: Farbe, Linientyp, Liniendruckbreite, Liniendruckfarbe, Muster, Musterskala, Musterwinkel und Musterfarbe</li>
+</ul>
+
+<h4>Typ</h4>
+<p>Es stehen Ihnen zwei Treppentypen zur Verfügung:</p>
+<ul>
+	<li><strong>Standard:</strong> Im Wendebereich der Treppe wird ein Podest eingefügt.</li>
+	<li><strong>Ausgeglichen:</strong> Der Wert für den Auftritt wird in der Mitte aller Stufen angewendet.</li>
+</ul>
+
+<h4>Stufen</h4>
+<p>Komponenten von Stufen:</p>
+<ul>
+	<li><strong>Trittstufe</strong>: Sichtbar in 3D- und Höhenansichten sowie Schnitten. Nicht sichtbar in der 
+	<span class="style2">Planansicht</span>.<br />
+	Die Eigenschaften der Trittstufe sind <strong>Stärke</strong> und <strong>Überstand</strong>.</li>
+	<li><strong>Setzstufe</strong>: Sichtbar in 3D- und Höhenansichten sowie Schnitten. Nicht sichtbar in der Planansicht<span class="style2"></span><span class="style1">
+	</span><span class="style2"></span><span class="style2">.
+</span>Die einzige Eigenschaft der Setzstufe ist ihre <strong>Stärke</strong>.</li>
+</ul>
+
+<h4>Regeln:</h4>
+<p>Aktivieren Sie diese Option, wenn Sie die Neigung der Treppe nach der Regel "2 Stufen + Auftritt" definieren möchten.<br /> 
+Das Ergebnis dieser Formel liegt dabei standardmäßig im Bereich zwischen 0,54 m und 0,7 m, was einer normalen menschlichen Schrittlänge entspricht.</p>
+
+<h3>Treppenkomponenten</h3>
+<h4>Decke <img alt="Treppendecke" height="16" src="../images/Stair slab-16.png" width="16" /></h4>
+<p>Treppen können über eine Treppendecke verfügen. Treppendecken können durch Rechtsklick auf den Stilnamen erstellt oder gelöscht werden (Neu &gt;Treppendecke bzw. Löschen). Die <strong>Deckenstärke</strong> kann aus dem Geometriereiter aus bearbeitet werden, wenn die Deckenkomponente ausgewählt wird.</p>
+<p>Die Treppendecke kann durch Einstellung ihrer Stärke in den <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> im Rhino-Dialogfenster <img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" /> bis zur Ausgangs- bzw.  verlängert werden.</p>
+<ul>
+	<li class="style2"><strong>Obere Deckenstärke</strong>: Die notwendige Stärke der Treppendecke zur Verlängerung derselben zum Landungspunkt der Treppe.</li>
+	<li><strong>Untere Deckenstärke</strong>: Die notwendige Stärke der Treppendecke zur Verlängerung derselben zum Ausgangspunkt der Treppe.</li>
+</ul>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stairs Planta.png" alt="Treppenbeispiele" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Stair/Stairs.png" alt="Treppenbeispiele" /><br/>Beispiele für gerade und Wendeltreppen.</div>
+<br clear="all" />
+<p><strong>HINWEIS: </strong> Treppenobjekteigenschaften sind nicht Teil des Treppenstils und können nicht im Einfügedialog definiert werden.</p>

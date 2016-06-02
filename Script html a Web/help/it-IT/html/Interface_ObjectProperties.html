@@ -1,0 +1,106 @@
+<h3>Proprietà oggetto</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaProprietà</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Proprietà degli oggetti"/> clic sinistro [<a href="Interface_StyleProperties.html" title="Proprietà degli stili">clic destro</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Barra degli strumenti</a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Barra Strumenti di VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Proprietà &gt; Proprietà degli oggetti</div>
+	
+	<div class="field">Scorciatoia: </div>
+	<div class="value menu">Selezionare l'oggetto &gt; Doppio clic</div>
+
+	
+</div>
+
+<p>Quando si esegue il comando <strong>vaProprietà</strong>, appare la finestra di dialogo delle <strong>Proprietà dell'oggetto</strong>. Questa finestra si può usare per modificare le proprietà degli oggetti selezionati, a prescindere dalle proprietà del loro stile specifico.</p>
+
+<h3>Com'è organizzata questa finestra di dialogo?</h3>
+<p>La finestra di dialogo delle proprietà degli oggetti è suddivisa in tre parti:</p>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Stair/Object%20Properties%20-%20stair.png" alt="Finestra di dialogo Proprietà dell'oggetto, proprietà oggetto di una scala." /><br/>
+Finestra di dialogo Proprietà dell'oggetto, proprietà oggetto di una scala.</p>
+
+<ol>
+	<li>Nel riquadro sinistro superiore, si mostra l'elenco degli oggetti selezionati durante l'esecuzione del comando.</li>
+	<li>Nel riquadro sinistro inferiore, si mostra l'anteprima dell'oggetto selezionato. Dalla barra situata nella parte superiore della finestra di dialogo, si possono impostare le seguenti opzioni di visualizzazione:
+		<ul>
+			<li>
+			<img alt="Finestra di anteprima attiva" height="26" src="../images/Preview%20on.jpg" width="26" /> Opzione per mostrare o nascondere la finestra di <strong>anteprima</strong>.</li>
+			<li><img alt="Anteprima nella vista in pianta attiva" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Opzione per mostrare l'oggetto nella vista piana o prospettica.</li>
+		</ul> 
+	L'anteprima si può modificare con il mouse, in modo simile alle viste di Rhino: <ul>
+	<li><em>Tasto destro del mouse</em>: consente di ruotare il punto di vista per visualizzare il modello da vari punti.</li>
+	<li><em>Ctrl + Tasto destro del mouse</em>: consente di effettuare degli zoom per poter espandere o ridurre il campo visivo.</li>
+	<li><em>Maiusc + Tasto destro del mouse</em>: consente di spostare il punto di vista in modo parallelo al piano di visione: in alto, in basso, a destra o a sinistra.</li>
+</ul>
+</li>
+	<li>Questa sezione mostra le varie proprietà o i vari parametri modificabili per ciascun oggetto selezionato. Essa racchiude varie schede, che possono variare a seconda del tipo di oggetto.</li>
+</ol>
+
+
+<h3>Modificare le proprietà di un oggetto</h3>
+
+<p>Per modificare un oggetto, selezionarlo dall'elenco ed editarne le proprietà dalle schede del riquadro sulla destra.</p>
+<h4>Schede</h4>
+
+<ul>
+	<li><strong>Stile</strong><br />
+	Tutti gli oggetti che fanno uso di finestre di dialogo presentano questa scheda. Viene usata per assegnare uno stile all'oggetto selezionato.</li>
+
+	<li><strong>Posizione</strong><br />
+		Tutti gli oggetti che fanno uso di finestre di dialogo presentano questa scheda. In essa si definiscono i parametri di posizione di ciascun oggetto.<br />
+		<br />
+		
+		Parametri di posizione degli oggetti Muro, Facciata continua, Ringhiera e Scala:
+		<ul>
+			<li>Allineamento (sinistra/centro/destra)</li>
+		</ul>
+		
+		Parametri di posizione degli oggetti Colonna e Trave: 
+		<ul>
+			<li>Allineamento (punto di inserimento nella geometria del profilo di sezione)</li>
+			<li>Contrassegno di inserimento (solo nelle colonne)</li>
+			<li>Offset (in x/y, dal punto di inserimento)</li>
+		</ul>
+		
+		Parametri di posizione degli oggetti Porta, Finestra ed Apertura:
+		<ul>
+			<li>Allineamento (interno/centro/esterno, dal muro)</li>
+			<li>Elevazione (dal muro)</li>
+		</ul>
+			
+	</li>
+	
+	<li><strong>Geometria</strong><br />
+		Muri, facciate continue, colonne e scale presentano questa scheda. In essa si definiscono i valori geometrici (dimensioni) di ciascun oggetto.<br />
+		<ul>
+			<li>Larghezza</li>
+			<li>Altezza</li>
+		</ul>
+	</li>
+	
+	<li><strong>Profilo</strong><br />
+	Travi, colonne, porte, finestre ed aperture (gli oggetti che usano un profilo) presentano questa scheda. Essa viene usata per definire le dimensioni del profilo usato.</li>
+
+	<li><strong>Intersezioni</strong><br />
+	I muri presentano questa scheda. Essa viene usata per definire i valori Raggio di posizionamento ed Estensione massima dell'oggetto muro.</li>
+
+	<li><strong>Apertura</strong><br />
+	Le porte e le finestre presentano questa scheda. Essa viene usata per definire la percentuale di apertura di porte e finestre.</li>
+	
+	<li><strong>Gradini</strong><br />
+Solo le scale presentano questa scheda. Essa viene usata per definire il numero di gradini ed i valori di pedata ed alzata.</li>
+	<li><strong>Contrassegno</strong><br />
+	Solo le sezioni presentano questa scheda. Essa viene usata per modificare il testo di riferimento del contrassegno della sezione.</li>
+	
+</ul>

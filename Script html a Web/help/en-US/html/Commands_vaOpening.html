@@ -1,0 +1,143 @@
+<h3>Opening</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaOpening</div>
+		
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Opening &gt; Opening</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaopening.wmv" preview="../images/previews/vaOpeningvideo.png" width="300px" height="300px"></div>
+
+<p>The operation and behavior of an opening is identical to the one of a window or a door.<br />
+Openings can be inserted in a wall or a curtain wall object or as floating objects. In the first case both elements are anchored and the opening is generated automatically in the wall/curtain wall where it is inserted. Openings can be detached from walls/curtain walls by moving them outside of their surface limits.</p>
+
+<p>After running the <strong>vaOpening</strong> command, the opening 
+<a href="Interface_Dialog.html">insert dialog box</a> will appear. This dialog box shows a list of all opening styles available, as well as the basic options 
+and the preview of the opening object.</p>
+<p>The steps required to insert an opening depend on the insertion options selected.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>Opening style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select the Opening <strong>insertion point</strong> with a left-click on the desired point in the model. If that point is near to a wall/curtain wall path, the opening will be automatically inserted in that wall/curtain wall. In that case there are two options available:<br />
+		<ul>
+			<li><strong>Offset:</strong> insert the opening at a specific distance (offset), from the end nearest to the wall/curtain wall where the opening is inserted. Specify the opening side by moving the cursor; the command calculates it automatically with the cursor's position. 
+			Click to insert the opening.</li>
+			<li><strong>Horizontal alignment:</strong> Insert the opening freely in any part of the wall/curtain wall. 
+			Click to insert the opening in the desired point.</li>
+		</ul>
+	</li>
+	<li>Specify the <strong>opening orientation</strong> manually with the cursor. This step is not required when the opening has detected a wall or a curtain wall.</li>
+	<li>Specify the <strong>Opening side</strong> by clicking on the desired side of the wall/curtain wall or the opening position. This step is not required when you insert an opening with the offset option.</li>
+</ol>
+
+<p>You can enter as many openings as you wish and you can cancel the command by pressing ENTER or ESC.</p>
+<p>In the two insertion options, the opening is automatically generated in the wall/curtain wall as soon as it detects the wall/curtain wall path.</p>
+
+<p><strong>Note</strong>: the opening will not be invisible nor selectable in the model if its style has no component and it has been inserted without being attached to a wall/curtain wall.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/opening/Insert Opening dialog.png" alt="Insert dialog box for openings."/><br/>
+	Opening insert dialog box
+</div>
+
+<br clear="all" />
+<h3>Opening from curve</h3>
+<p>Openings can be created from curves, which determine their shape profile.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Run the <strong>vaOpening</strong> command.</li>
+	<li>Select the <strong>Opening style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select the <strong>FromCurves</strong> option in the command line.</li>
+	<li>Select a <strong>curve</strong> (or several curves) in the model. This curve must be 
+	<em>closed</em> and <em>vertical</em>.</li>
+</ol>
+<p>The opening will be generated in the selected curve and will only be inserted in a wall/curtain wall if it is close enough.</p>
+<p><strong>Note</strong>: The curves selected to create openings does not need to be oriented parallel to the wall/curtain wall where the openings will be 
+placed. Openings are inserted and oriented automatically according to the closest 
+wall/curtain wall position.</p>
+
+
+<h4>Control points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/opening control points.png" alt="Control points on openings" width="350" height="125"  style="float: right;"/>
+<p>Openings have five control points:</p>
+	<ol>
+		<li>Control point for the opening side</li>
+		<li>Left insert</li>
+		<li>Center insert</li>
+		<li>Right insert</li>
+		<li>Reference mark control point</li>
+	</ol>
+<br clear="all" />
+
+<p>To move the opening (either in the wall/curtain wall or to a different wall/curtain wall), select it from any point and drag it to the desired location.</p>
+<p>Openings can only be selected from the VisualARQ Top view.</p>
+
+<h4>Insertion options and parameters</h4>
+
+<h5>Alignment</h5>
+
+<p>The opening can be aligned with three methods within the wall/curtain wall thickness:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Interior alignment"/></td>
+				<td><strong>Interior</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Center alignment"/></td>
+				<td><strong>Center</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Exterior alignment"/></td>
+				<td><strong>Exterior</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<p>To modify the alignment of an opening, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Vertical alignment</h5>
+
+<p>Openings can be inserted in a wall/curtain wall from two different vertical alignments in relation with the base line of the wall/curtain wall:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Top vertical alignment"/></td>
+				<td><strong>Bottom:</strong> reference distance between the base line of the wall/curtain wall and the bottom surface of the opening.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Bottom vertical alignment"/></td>
+				<td><strong>Top:</strong> reference distance between the base line of the wall/curtain wall and the top surface of the opening.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>The vertical alignment is not a style property. The value is specified for each object in the insert dialog box when each object is inserted.</p><br />
+<p>To modify an opening vertical alignment, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevation</h5>
+
+<p>The opening elevation in the insert dialog is measured in relation to the baseline of the wall/curtain wall it is inserted in, regardless of its level. After the 
+opening has been inserted, its elevation value indicates the opening position in the world Z coordinates, regardless of the wall/curtain wall and the level where it is inserted. The elevation is not a style property. The value is specified for each object in the insert dialog box when each object is inserted.<br />
+The default elevation value for openings is 0. If you modify this value, the insert dialog box will show the last value used.</p>
+
+<p>To modify an opening elevation, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

@@ -1,0 +1,62 @@
+<h3>Planansicht</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaPlanansicht</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_CreatePlanView.jpg" alt="Planansicht"/> Linksklick [<a href="Commands_vaPlanViewStyles.html" title="Planansichtsstile">Rechtsklick</a>]
+</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Dokumentation</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Werkzeugleiste VisualARQ-Dokumentation" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Planansicht &gt; Planansicht
+	</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaPlanView.wmv" preview="../images/previews/vaPlanViewvideo.png" width="300px" height="300px"></div>
+
+<p>Der Befehl <strong>vaPlanansicht</strong> stellt die 3D-Objekte dar und projiziert diese auf eine horizontale Ebene, wobei verborgene Seiten nicht angezeigt werden.</p>
+<p>Die Planansicht wird gemäß einer bestehenden Ebene des Modells erstellt, so dass ein Gebäude und eine Ebene vorhanden sein müssen, bevor dieser Befehl ausgeführt werden kann. </p>
+<p>Nach Ausführung des Befehls <strong>vaPlanansicht</strong> öffnet sich ein Dialog zum Einfügen, in dem eine Liste von Planansichtsstilen zur Verfügung steht. Auf diesen Dialog folgt ein weiterer, in dem die Ebene zur Anzeige der Planansicht angegeben werden muss. Folgen Sie nach dem Schließen dieser Dialoge den Schritten in der Befehlszeile. Bestätigen Sie mit ENTER oder der rechten Maustaste und gehen Sie zum nächsten Schritt.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/insert plan view style.png" alt="Wählen Sie den Planansichtsstil" /><br/>
+	Einfügedialog 1: Wählen Sie den Planansichtsstil</div>
+	<br clear="all" />
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Plan/Select Level dialog.png" alt="Wählen Sie die Ebene der Planansicht aus." /><br/>
+	Einfügedialog 2: Wählen Sie die Ebene der Planansicht aus.</div>
+<br clear="all" />
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den gewünschten <strong>	Planansichtsstil</strong> aus.</li>
+	<li>Wählen Sie im folgenden Dialogfenster die <strong>Ebene</strong> aus, die Sie in der zweidimensionalen Planansicht anzeigen lassen möchten. (Wenn noch keine Ebenen erzeugt wurden, beenden Sie den Befehl und führen Sie zunächst 
+	<a href="Commands_vaLevels.html">vaEbenen</a> aus, um ein neues Gebäude und eine Ebene zu erstellen.)</li>
+	<li>Bestimmen Sie die <strong>Begrenzungsfläche</strong>, innerhalb deren die Objekte in die Planansicht mit einbezogen werden. Es sind zwei Optionen verfügbar:<ol>
+		<li><strong>R</strong><strong>echteckige Begrenzungsfläche</strong>: geben Sie die zwei gegenüberliegenden Eckpunkte der rechteckigen Fläche an.</li>
+
+		<li><strong>Benutzerdefinierte Begrenzungsfläche</strong>: Klicken Sie dazu in der Befehlszeile auf die Option <strong>AusKurve</strong> und wählen Sie eine bereits vorhandene <em>geschlossene</em> und <em>planare</em> Kurve, die alle Objekte umschließt, die Sie in der Planansicht anzeigen lassen möchten. </li>
+
+	</ol>
+	</li>
+	<li>
+	Wählen Sie einen <strong>Einfügungspunkt</strong>. Klicken Sie mit der linken Maustaste auf den Bildschirm, um die Planansicht einzufügen.</li></ol>
+
+<p>Der Befehl wird beendet, wenn die 2D-Zeichnung der Planansicht am definierten Einfügungspunkt eingefügt wurde. Die Zeichnung wird auf der aktuellen Ebene erstellt.</p>
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Die Zeichnung der Planansicht hat dieselben Kontrollpunkte wie die Begrenzungsfläche, die die Objekte der Planansicht umschließt.</p>
+<h4>Parameter für die Planansicht</h4>
+Folgende Parameter können für Planansichten definiert werden, nachdem sie erzeugt wurden. Diese Option kann nur in den <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> (im Panel der Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />) verändert werden). 
+<ul>
+<li><strong>Stil</strong>: Der Stil bestimmt die Attribute der Planansichten.</li>
+	<li><strong>Ebene</strong>: Option zur Änderung der in der Planansicht angezeigten Ebene.</li>
+<li><strong>Titel</strong>: als Titel der Planansicht wird standardmäßig der Name der Ebene verwendet. Es kann aber auch jeder andere Text verwendet werden.</li>
+<li><strong>Skala</strong>: Skalierungsfaktor, in dem die Planansicht angezeigt wird.</li>
+<li><strong>Automatische Aktualisierung</strong>: Option zur Aktivierung der automatischen Aktualisierung der Planansicht bei Änderung der Ebeneneigenschaften (Name, Höhe vom Boden oder Schnittebene).</li>
+<li><strong>Begrenzung anzeigen</strong>: Option zum Anzeigen oder Verbergen der Begrenzungsfläche der Planansicht.</li>
+	<li><strong>Bemaßungen anzeigen</strong>: Mit dieser Option werden die Bemaßungslinien beim Erstellen einer Planansicht mit den Außenwänden, Dächern und Öffnungen eines Projekts gezeichnet.</li>
+	<li><strong>Toleranzfaktor</strong>: dieser Wert gibt den Detailgrad an, mit dem die Planansicht erzeugt wird. Je größer dieser Wert, desto weniger Details hat die Planansicht.</li>
+
+	</ul>

@@ -1,0 +1,58 @@
+<h3>Interopérabilité de VisualARQ avec les commandes et l'interface de Rhino</h3>
+
+<h4>Commandes de Rhino</h4>
+
+<p>Étant donné que les objets de VisualARQ sont en réalité des blocs de Rhino, toutes les commandes de Rhino fonctionnant avec les blocs fonctionneront également par défaut avec les objets de VisualARQ. D'autres commandes ont été adaptées, comme par exemple les commandes qui dupliquent des objets (telles que Copier, Matrice et Symétrie) ainsi que certaines commandes d'édition de Windows (telles que Couper, Copier et Coller : CTRL+X, CTRL+C, CTRL+V respectivement).<br />
+Lorsque des commandes de Rhino qui ne sont pas compatibles avec VisualARQ sont lancées, les objets de VisualARQne peuvent pas être sélectionnés.</p>
+
+<p>La commande <strong>Décomposer</strong> supprime les propriétés des objets de VisualARQ et les convertit ainsi en polysurfaces. Dans ce cas, vous pouvez les modifier comme toutes les autres polysurfaces de Rhino.</p>
+
+<p>VisualARQ dispose de commandes spéciales qui peuvent être utilisées pour convertir (ou reconvertir) certains objets de Rhino en objets de VisualRQ.<br />
+Ces commandes sont <a href="Commands_vaWall.html#Wallfromcurves"><strong>vaMur &gt; ÀPartirCourbes</strong></a> et 
+<a href="Commands_vaWallFromSolid.html"><strong>vaMurÀPartirDeSolide</strong></a><em>.</em> Voir ces commandes pour plus d'informations. De plus, les garde-corps et les poutres peuvent également être créés à partir de courbes 2D ou 3D. Les dalles et les toits sont créés à partir de courbes fermées.</p>
+
+<h4>Comportement des commandes de Rhino</h4>
+
+<ul>
+	<li><strong>Répéter la dernière commande et les dernières commandes utilisées :</strong><br />
+		Comme pour les commandes de Rhino, vous pouvez répéter la plupart des commandes de VisualArq ainsi : 
+		<ul>
+			<li>Pour répéter la dernière commande, appuyez sur Entrée, sur la Barre d'espace ou cliquez avec le bouton de droite lorsqu'aucune commande n'est en cours. </li>
+			<li>Pour répéter une commande utilisée récemment, cliquez avec le bouton de droite dans la ligne de commande.
+			</li>
+	</ul>
+	</li>
+	<li><strong>Sélectionner des objets :</strong><br />
+		Comme pour les commandes de Rhino, la plupart des opérations de VisualARQ vous demandent de sélectionner un ou plusieurs objets. Les objets de VisualARQ sont sélectionnés comme les objets de Rhino :
+		<ul>
+			<li>Pour sélectionner un seul objet, cliquez dessus.</li>
+			<li>Pour sélectionner plusieurs objets, laissez enfoncée la touche Maj tout en cliquant sur les objets, ou utilisez une fenêtre de sélection.</li>
+		</ul>
+	</li>
+	<li><strong>Aides à la modélisation et accrochages aux objets :</strong><br />
+		Les aides à la modélisation (magnétisme de la grille, mode Ortho et mode planéité) et les accrochages aux objets (fin, proche, point, mi, cen, int, perp, etc.) peuvent être utilisées sur les objets de VisualARQ en appliquant les mêmes méthodes que pour les objets de Rhino.</li>
+</ul>
+<h4>Points de contrôle</h4>
+<div class="comDescr">
+	<div class="field">Clavier : </div>
+	<div class="value keyboardCommand">ActiverPoints / DésactiverPoints</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Propriétés"/> Activer les points de contrôle : Clic</div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Propriétés"/> Désactiver les points de contrôle : Bouton de droite</div>
+	
+		
+	<div class="field">Menu : </div>
+	<div class="value menu">Édition &gt; Points de contrôle &gt; Activer les points de contrôle / Désactiver les points de contrôle</div>
+	
+	<div class="field">Raccourci : </div>
+	<div class="value menu">Points de contrôle activés (F10), Points de contrôle désactivés (F11)</div>
+
+	
+	
+</div>
+
+<p>Tous les objets de VisualARQ peuvent être édités en activant leurs points de contrôle. Pour activer et désactiver les points de contrôle de VisualARQ, vous pouvez utiliser les mêmes commandes que dans Rhino.</p>
+<p class="figureWithDescription">
+<img src="../images/Wall and door control points.jpg" alt="Mur et porte de VisualARQ avec points de contrôle activés" /><br/>
+Mur et porte de VisualARQ avec points de contrôle activés.</p>

@@ -1,0 +1,239 @@
+
+<h3>Wall Styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaWallStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Wall.jpg" alt="Wall"/> right click
+	[<a href="Commands_vaWall.html" title="Wall command">left click</a>, <a href="Interface_Toolbars.html#VisualARQWallsToolbar" title="VisualARQ Walls Toolbar">long click</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects</a> toolbar:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Wall &gt; Wall Styles</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Wall &gt; Styles Properties</div>
+	
+	<div class="field">Shortcut key: </div>
+	<div class="value menu">Select a wall object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) + double click</div>
+
+</div>
+
+<p>The wall style defines the wall features. The following parameters can be specified for each style: <strong>Name, Attributes, Geometry</strong> and <strong>
+Wrapping.</strong></p>
+
+<p>The wall styles are defined by different <strong>Wall Layers</strong> that can be added or 
+deleted at any time.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Wall layers.png" alt="Wall style composed by 3 layers" width="300" height="300" /><br />
+Wall style composed by 3 layers:
+<ol>
+<li><strong><img alt="Wall layer" height="16" src="../images/Wall Layer-16.png" width="16" /> Wall layer A</strong></li>
+<li><strong><img alt="Wall layer" height="16" src="../images/Wall Layer-16.png" width="16" /> Wall layer B</strong></li>
+<li><strong><img alt="Wall layer" height="16" src="../images/Wall Layer-16.png" width="16" /> Wall layer C</strong></li>
+</ol>
+</div>
+<br clear="all" />
+
+<h4>New wall style:</h4>
+<p>You can create new styles and duplicate existing styles from the wall <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+<p>When clicking on the <strong>New Style... button</strong>, the new style wizard appears. Follow the steps of the wizard to define the new wall style parameters:</p>
+<ul>
+<li>Name</li>
+<li>Number of layers</li>
+<li>Layer parameters</li>
+<li>Wall height</li>
+</ul>
+
+<h4><strong>Delete a wall style</strong>:</h4>
+<p>You can delete wall styles from the wall <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing wall in the model.</p>
+
+<h4>Edit a wall style:</h4>
+<p>Select the wall style or the wall layer at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<h4>Add a new wall layer</h4>
+<ul>
+	<li><strong>Context menu</strong>: do right-click on the wall style name to open the context menu, and select <em>New > Layer</em>.</li>	
+	<li><strong>New icon</strong> <img alt="New icon" height="20" src="../images/New Icon.png" width="20" />: select the wall style and click on the <em>New</em> icon, from the dialog toolbar. Select <em>Wall layer</em>.</li>	
+</ul>
+<p><strong>Delete layers:</strong> use the Context menu (righ-click on the component to delete and select <em>Delete</em>) or the Delete button <img alt="Delete" height="16" src="../images/delete.jpg" width="16" />.</p>
+
+
+
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Wall/WallNewStyle.png" alt="Style Manager dialog box for the Wall object" /><br/>
+Style Manager dialog box for the wall object
+</div>
+<br clear="all" />
+
+<div class="comDescr">
+	<div class="field">General style editing</div>
+	<div class="value">You can use the <strong>vaWallStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		wall and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)" />, 
+		then select a wall and press Enter, or</li>
+		<li>Select a wall and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Wall &gt; Style Properties</strong>, or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on a wall object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a wall 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a wall and press Enter, or</li>
+		<li>Select a wall and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Wall &gt; Properties</strong>, or,</li>
+		<li>Double click on a wall object. </li>
+	</ul>
+		</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each wall style and its layers 
+for display and print purposes. The valid attributes are:</p>
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle, and Pattern color</li>
+</ul>
+
+
+<p><strong>Note</strong>: The layers of different walls that have the same 
+hatch pattern assigned, merge in wall intersections. The non-consecutive 
+layers of the same wall object that have the same hatch pattern also merge if they meet at wrappings. </p>
+
+<h3>Wall components</h3>
+
+<h4>Layers <img alt="Wall layer" height="16" src="../images/Wall Layer-16.png" width="16" /></h4>
+<p>You can specify the following parameters for each Wall style layer: <strong>
+Name, Attributes, Geometry, Type, Function</strong> and <strong>Wrapping</strong>. 
+The Type, Function and Wrapping parameters can be edited from the <strong>
+Construction</strong> tab.</p>
+<div class="figureWithDescription block">
+	<img alt="Wall style dialog, components" src="../images/assistants/Wall/Wall components.png" /><br/>
+Attributes tab for Layer 1 of Standard wall style, in Wall styles 
+	dialog</div>
+<br clear="all" />
+<p>See the following example of a 5-layer wall style with exterior wrapping at 
+the wall cap ends:</p>
+
+<p>
+<img alt="Wall components scheme" height="175" src="../images/Wall Components.png" width="400" style="float: right" /></p>
+<ol>
+	<li>Interior layer 1 (i.e. Stucco)</li>
+	<li>Layer 2 (i.e. Brick)</li>
+	<li>Layer 3 (i.e. air chamber)</li>
+	<li>Layer 4 (i.e. insulation layer)</li>
+	<li>Exterior layer 5 (i.e. brick)</li>
+	<li>Layer 4 wrap</li>
+	<li>Layer 5 wrap</li>
+</ol>
+
+<p>The total wall <strong>Thickness</strong> is the result of the sum of layer thicknesses. <br />
+In turn, the <strong>Height</strong> is defined for the wall as a unit, remaining constant for all its layers.</p>
+
+<h4>Type</h4>
+<p>There are two types of wall layers which establish the order of connection with each other:</p>
+<ul><li><strong>Core</strong>: layers with priority number 1. <em>Core</em> 
+	layers are meant to be the structural ones in a wall, so they will tend 
+	to connect with each other.</li>
+<li><strong>Normal</strong>: layers with priority number 2. They tend to connect with other 
+Normal layers after the Core layers are connected. They can also 
+be wrapped around Core layers, depending on their wrapping 
+settings. </li></ul>
+
+<h4>Function</h4>
+<p>There are 5 types of function specifications that can be assigned to wall layers. These functions are 
+for information only.</p>
+<ul>
+<li>None</li>
+<li>Structure</li>
+<li>Isolation</li>
+<li>Finish</li>
+<li>Decoration</li>
+</ul>
+<h4>Wrapping</h4>
+<p>The wall wrapping is defined by how the wall layers finish at the end 
+caps of a wall, and at their encounter with openings (windows, doors and 
+openings). Wrapping affects only walls composed by 3 or 
+more layers and is visible from the <strong>Top</strong> viewport, when the plan view mode is enabled.</p>
+<p>There are 3 types of wall wrapping by style for the wall end caps and for the 
+encounter with openings:</p>
+<ol>
+		<li><strong>None:</strong> Wall with no wrap (at openings and end caps).</li>
+		<li><strong>Exterior:</strong>	Wall exterior layers wrap at end caps and/or openings.</li>
+		<li><strong>Interior:</strong>	Wall interior layers wrap at end caps and/or openings.</li>
+</ol>
+<br clear="all" />
+<div style="padding:5px;" class="figureWithDescription block"><img alt="Wall wrapping: none" height="54" src="../images/Wall wrapping None.png" width="350"  /><br/>
+1. Wall wrapping: None.
+</div>
+<div style="padding:5px;" class="figureWithDescription block">
+	<img alt="Wall wrapping: exterior" height="53" src="../images/Wall wrapping Exterior.png" width="350" /><br/>
+	2. Wall wrapping: Exterior.
+</div>
+<div style="padding:5px;" class="figureWithDescription block">
+	<img alt="Wall wrapping: Interior" height="54" src="../images/Wall wrapping Interior.png" width="350" /><br/>
+	3. Wall wrapping: Interior.
+</div>
+<br clear="all" />
+<p><strong>Wall Layer Wrapping: </strong>There are four options available to define the wrapping of wall layers:</p>
+<ul>
+	<li><strong>None:</strong> No wrap is created.</li>
+	<li><strong>Ends:</strong> The layer wraps at the ends of the wall.</li>
+	<li><strong>Openings</strong>: the layer wraps at the encounter with a door, a window or an opening.</li>
+	<li><strong>Ends and Openings</strong>: the layer wraps at the ends of a wall and at the encounter with doors, windows or openings</li>
+</ul>
+<br clear="all" />
+<p><strong>Note</strong>: Wall layers that are <strong>Core</strong> 
+type can't wrap.</p>
+<h4>Wall joints 
+<img alt="Wall joints" height="24" src="../images/Wall Joints.png" width="24" /></h4>
+
+<p>There are three types of wall joints:</p>
+
+<ul>
+	<li>None</li>
+	<li>Miter</li>
+	<li>Butt</li>
+</ul>
+<div class="figureWithDescription block">
+	<img alt="Wall Joint: none" height="150" src="../images/Wall Joint None.png" width="250" /><br/>
+	1. Wall Joint: None.
+</div>
+<div class="figureWithDescription block">
+	<img alt="Wall Joint: Miter" height="150" src="../images/Wall Joint Miter.png" width="250" /><br/>
+	2. Wall Joint: Miter.
+</div>
+<div class="figureWithDescription block">
+	<img alt="Wall Joint: Butt" height="150" src="../images/Wall Joint Butt.png" width="250" /><br/>
+	3. Wall Joint: Butt.
+</div>
+<br clear="all" />
+<p><strong>Editing wall joints:</strong></p>
+<p>Wall joints can be edited from the VisualARQ object properties, in Rhino Properties 
+Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />, after <strong>selecting all walls implied in the intersection</strong>.
+When walls intersect, they take an "auto" joint type that depends on each wall style. 
+If the walls have the same style, the joint type by default is <strong>Miter</strong><em>.</em> If the walls 
+have different styles, the joint type by default is <strong>Butt</strong>.</p>
+<p>When three or more walls intersect, the joint resolution depends on the order the walls have been added at the intersection point. 
+The <strong>Sort order</strong><em> </em>option, in the <strong>Geometry</strong><em> </em>section, allows 
+changing the order until you find the most 
+appropriate solution. </p>
+<p>When two wall layers join, if they have different hatch patterns, a line 
+appears at the joint. If the two layers have the same hatch pattern, no 
+lines appear at the joint</p>
+

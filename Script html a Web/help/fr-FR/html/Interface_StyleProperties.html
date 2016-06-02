@@ -1,0 +1,225 @@
+<h3>Propriétés du style</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaStylePropriétés</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Propriétés"/> clic droit [<a href="Interface_ObjectProperties.html" title="Propriétés objet"> clic gauche</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Barre d'outils Outils </a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Barre d'outils Documentation de VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Propriétés &gt; Propriétés du style...</div>
+	
+	<div class="field">Raccourci : </div>
+	<div class="value menu">Sélectionner l'objet, appuyer sur <em>Alt, Maj</em> ou <em>Ctrl</em> et double cliquer</div>
+
+	
+	
+</div>
+
+<p>
+La boîte de dialogue des <strong>Propriétés de style</strong> (appelée également <strong>Gestionnaire de styles</strong>) permet de modifier les propriétés de style d'un objet et de créer de nouveaux styles pour cet objet. Les commandes suivantes ouvrent le gestionnaire de styles pour le type d'objet correspondant :</p>
+<p>Objets architecturaux :</p>
+<ul>
+<li><strong>Mur </strong>: <a href="Commands_vaWallStyles.html">vaMurStyles</a></li>
+<li><strong>Mur-rideau</strong> : <a href="Commands_vaCurtainWallStyles.html">vaMurRideauStyles</a></li>
+<li><strong>Poutre </strong>: <a href="Commands_vaBeamStyles.html">vaPoutreStyles</a></li>
+<li><strong>Poteau </strong>: <a href="Commands_vaColumnStyles.html">vaPoteauStyles</a></li>
+<li><strong>Porte </strong>: <a href="Commands_vaDoorStyles.html">vaPorteStyles</a></li>
+<li><strong>Fenêtre </strong>: <a href="Commands_vaWindowStyles.html">vaFenêtreStyles</a></li>
+<li><strong>Ouverture </strong>: <a href="Commands_vaOpeningStyles.html">vaOuvertureStyles</a></li>
+<li><strong>Escalier </strong>: <a href="Commands_vaStairStyles.html">vaEscalierStyles</a></li>
+<li><strong>Garde-corps </strong>: <a href="Commands_vaRailingStyles.html">vaGardeCorpsStyles</a></li>
+<li><strong>Dalle</strong> : <em>(Les dalles n'ont pas de styles)</em></li>
+<li><strong>Toit </strong>: <em>(Les toits n'ont pas de styles)</em></li>
+
+</ul>
+<p>Objets de documentation :</p>
+<ul>
+<li><strong>Espace </strong>: <a href="Commands_vaSpaceStyle.html">vaEspaceStyles</a></li>
+<li><strong>Nomenclature </strong>: <a href="Commands_vaTableStyle.html">vaNomenclatureStyles</a></li>
+<li><strong>Étiquette</strong>: <a href="Commands_vaTagStyles.html">vaÉtiquetteStyles</a></li>
+<li><strong>Ligne de coupe de section </strong>: <a href="Commands_vaSectionStyles.html">vaSectionStyles</a></li>
+<li><strong>Vue de section </strong>: <a href="Commands_vaSectionViewStyles.html">vaVueSectionStyles</a></li>
+<li><strong>Vue en plan </strong>: <a href="Commands_vaPlanViewStyles.html">vaVueEnPlanStyles</a></li>
+
+</ul>
+
+<p>Lorsque vous lancez la commande <strong>vaStylePropriétés</strong>, la boîte de dialogue <strong>Propriétés du style
+</strong> apparaît.<br />
+Cette boîte de dialogue permet de modifier les propriétés de style des objets sélectionnés.</p>
+
+<h3>Comment s'organise cette boîte de dialogue ?</h3>
+<p>La boîte de dialogue des propriétés de style se divise en trois zones :</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/window/Style Properties - window.png" alt="Boîte de dialogue Propriétés du style, propriétés de style d'une fenêtre" /><br />
+Boîte de dialogue Propriétés du style, propriétés de style d'une fenêtre.</p>
+
+<ol>
+	<li>Le panneau supérieur gauche affiche la liste des styles pour les objets qui étaient sélectionnés lorsque la commande a été lancée.</li>
+	<li>Le panneau inférieur gauche affiche l'aperçu du style d'objet que vous avez choisi dans la liste. Vous pouvez définir les options d'affichage suivantes pour cette fenêtre d'aperçu dans la barre d'outils située en haut de la boîte de dialogue :
+		<ul>
+			<li>
+			<img alt="Fenêtre d'aperçu activée" height="26" src="../images/Preview%20on.jpg" width="26" /> Option pour afficher ou masquer la fenêtre d'<strong>aperçu</strong>.</li>
+			<li><img alt="Aperçu dans la vue en plan" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Option pour afficher le style d'objet dans la vue en plan ou en perspective.</li>
+		</ul> 
+	L'aperçu affiché peut être modifié avec la souris tout comme dans les vues de Rhino : <ul>
+	<li><em>Bouton droit de la souris</em> : permet de faire tourner la vue pour afficher le modèle selon différents points de vue.</li>
+	<li><em>Ctrl + bouton droit</em> : permet de zoomer pour agrandir ou réduire le champ de vision.</li>
+	<li><em>Maj+ bouton droit</em> : permet de déplacer le point de vue parallèlement au plan de vision, vers le haut, le bas, la droite ou la gauche.</li>
+</ul>
+</li>
+	<li>Cette zone montre différentes informations en fonction de ce qui est sélectionné dans le panneau supérieur gauche :</li>
+		<ul><li>Lorsque le dossier racine de styles d'objet est sélectionné, cette zone affiche la liste des styles existants. En bas de la boîte de dialogue apparaissent des options permettant de créer un Nouveau style, de Dupliquer ou de Supprimer un style dans la liste supérieure. </li>
+	<li>Lorsq'un style ou un composant spécifique est sélectionné, cette zone affiche les différents onglets et propriétés permettant de modifier chaque paramètre.</li>
+	</ul>
+</ol>
+
+<h3>Créer un nouveau style d'objet</h3>
+
+<p>Pour créer un nouveau style, sélectionnez le dossier des styles dans le panneau supérieur gauche afin d'afficher la liste des styles dans le panneau de droite. Deux options sont disponibles pour créer un nouveau style :</p> 
+<ol><li><strong>Utiliser l'assistant de création de style </strong>: appuyez sur le bouton <strong>Nouveau style</strong><em></em>.</li>
+<li><strong>Dupliquer un style existant</strong> : sélectionnez dans la liste supérieure le style que vous souhaitez dupliquer et cliquez sur le bouton <strong>Dupliquer</strong>.</li>
+</ol>
+
+<p class="figureWithDescription">
+<img alt="Gestionnaire de styles pour les garde-corps"  src="../images/assistants/Railing/Railing%20styles.png" /><br/>
+Gestionnaire de styles pour les garde-corps.
+</p>
+
+<p>Dans l'option 1, un assistant vous guide par des étapes simples en vous demandant les paramètres du style d'objet défini. Les objets de VisualARQ n'utilisent pas tous l'assistant pour créer de nouveaux styles et certains paramètres ne peuvent être définis qu'à la fin de l'assistant (comme par exemples, les attributs de style, les petits-bois des vitres pour les portes et les fenêtres, l'épaisseur de la dalle des escaliers, etc.). Les types d'objet qui n'utilisent pas l'assistant ajoutent simplement un nouveau style à la fin de la liste après avoir cliqué sur le bouton <strong>Nouveau style</strong>.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Assistant de style de porte."  /><br/>
+Assistant de style de porte.</p>
+
+
+<h3>Modifier des styles d'objets</h3>
+
+<p>Pour modifier un style d'objet, sélectionnez le style ou le composant de style dans la liste et modifiez ses propriétés dans les onglets situés à droite. Ces onglets et propriétés peuvent être différents en fonction du type d'objet ou du composant.</p>
+
+
+<h3>Onglets</h3>
+
+
+<h4>Attributs</h4>
+
+<p>Cet onglet est affiché pour tous les objets qui utilisent une boîte de dialogue. Il permet de définir les fonctions (attributs) de chaque style d'objets et de chacun de ses composants. Les attributs varient en fonction du style d'objet auquel ils sont appliqués.</p>
+	
+<ul>
+	<li><strong>Objet architectural </strong>: Murs, Murs-rideaux, Poutres, Poteaux, Portes, Fenêtres, Ouvertures, Escaliers et Garde-corps :
+		<ul>
+			<li>Attributs généraux :
+				<ul>
+					<li>Calque</li>
+					<li>Visibilité</li>
+					<li>Matériau</li>
+				</ul>
+			</li>
+			<li>Attributs de section et de projection : <ul>
+					<li>Couleur</li>
+					<li>Type de ligne</li>
+					<li>Largeur d'impression de ligne</li>
+					<li>Couleur d'impression de ligne</li>
+					<li>Motif</li>
+					<li>Échelle du motif</li>
+					<li>Angle du motif</li>
+					<li>Couleur du motif</li>
+				</ul>
+			</li>
+		</ul></li>
+	<li><strong>Objet de documentation </strong>: Espaces, Nomenclatures, Étiquettes, Sections, Vues de section et Vues en plan :
+		<ul>
+			<li>Attributs généraux :
+				<ul>
+					<li>Calque</li>
+					<li>Visibilité</li>
+					<li>Style de texte</li>
+					<li>Style de cote</li>
+					<li>Couleur</li>
+					<li>Type de ligne</li>
+					<li>Largeur d'impression de ligne</li>
+					<li>Couleur d'impression de ligne</li>
+					<li>Motif</li>
+					<li>Échelle du motif</li>
+					<li>Angle du motif</li>
+					<li>Couleur du motif</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	
+	</ul>
+	<p><strong>REMARQUE :  </strong> À partir de l'attribut Matériau du style d'objet, vous pouvez assigner un matériau différent à chaque composant de l'objet. Pour assigner un seul matériau à tout l'objet, suivez la procédure habituelle de Rhino.<br />
+	</p> <br />
+	
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/wall/Wall style attributes.png" alt="Onglet Attributs dans la boîte de dialogue des styles de mur" /><br/>
+		Onglet Attributs dans la boîte de dialogue des styles de mur.</p>
+	</div>
+	
+<br clear="all" />
+	
+<h4>Géométrie</h4>
+	
+		Tous les objets, à l'exception des escaliers, des dalles et des toits, possèdent cet onglet. Les valeurs géométriques pour chaque objet et chaque composant sont définies dans cet onglet.<br />
+		Valeurs géométriques pour les murs :
+		<ul>
+			<li>Hauteur</li>
+			<li>Épaisseur (ne peut être modifiée que pour chaque composant du mur)</li>
+		</ul>
+		
+		Valeurs géométriques pour les poteaux et les poutres :
+		<ul>
+			<li>Hauteur</li>
+			<li>Profil (définit la forme de l'objet)</li>
+			<li>Épaisseur du revêtement (uniquement pour les poteaux)</li>
+		</ul>
+		
+		Valeurs géométriques pour les portes, les fenêtres et les ouvertures :
+		<ul>
+			<li>Profil (définit la forme de l'objet)</li>
+			<li>Tailles (largeur et profondeur) du dormant et de la cale</li>
+			<li>Tailles (largeur et profondeur) et côté d'ouverture du battant</li>
+			<li>Tailles (épaisseur, prolongement et profondeur) du rebord (uniquement pour les fenêtres et les ouvertures)</li>
+		</ul>
+		Valeurs géométriques pour les garde-corps :
+		<ul>
+			<li>Composant de lisse : marges finales et style. Joints plans et non plans.</li>
+			<li>Barreaux : marges supérieure et inférieure.</li>
+		</ul>
+
+<h4>Tailles</h4>
+<p>Cet onglet ne sert qu'aux objets qui utilisent des profils pour définir leur forme (poteaux, portes, fenêtres et ouvertures). Il permet de définir les tailles (largeur et auteur) du profil utilisé par l'objet. Cette option permet de créer différentes tailles pour le même profil.</p>
+<h4>Blocs</h4>
+	
+<p>Seules les portes, les fenêtres et les ouvertures possèdent cet onglet. L'onglet définit les représentations 2D (plan) et 3D (modèle) de l'objet, en assignant un bloc déjà créé par l'utilisateur, avec des paramètres personnalisés pour chaque représentation. Cette option permet de créer des portes et des fenêtres personnalisées.</p>
+
+<h4>Construction et Retour</h4>
+<p>Seuls les murs présentent cet onglet. Cet onglet est utilisé pour définir la façon dont les composants du mur se terminent aux extrémités fermées d'un mur et au niveau des ouvertures. L'onglet Construction est utilisé pour définir les types de composants du mur et leurs fonctions.</p>
+	
+	<h4>Type</h4>
+	<p>Seuls les escaliers présentent cet onglet. Il permet de définir le type d'escalier utilisé, suivant si l'option Marches balancées est activée ou non.</p>
+	
+	<h4>Marches</h4>
+	<p>Cet onglet n'apparaît que pour les escaliers, il permet de définir les valeurs géométriques des dalles de contremarche et de giron.</p>
+	<ul> 		
+		<li>Valeurs géométriques pour la <strong>Dalle de giron</strong> :
+		<ul>
+			<li>Épaisseur de la dalle</li>
+			<li>Nez</li>
+	</ul></li>
+		<li>Valeurs géométriques pour la <strong>Dalle de contremarche </strong>:
+		<ul>
+			<li>Épaisseur de la dalle</li>
+	</ul></li>
+	
+</ul>
+<h4>Division <span class="auto-style1">et</span> Remplissage</h4>
+<p>Seuls les murs-rideaux présentent ces onglets. Ils sont utilisés pour définir les paramètres du composant de Cellule</p>
+
+

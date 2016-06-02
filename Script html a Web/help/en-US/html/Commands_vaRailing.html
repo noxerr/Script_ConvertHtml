@@ -1,0 +1,128 @@
+<h3>Railing</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaRailing</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Railing.jpg" alt="Railing"/> left click
+	[<a href="Commands_vaRailingStyles.html" title="RailingStyle command">right 
+		click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects </a>Toolbar: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Railing &gt; Railing</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaRailing.wmv" preview="../images/previews/vaRailingvideo.png" width="300px" height="300px"></div>
+
+<p>After running the <strong>vaRailing</strong> command, the<strong> </strong> 
+railing <a href="Interface_Dialog.html">
+<strong>insert dialog box</strong></a> will appear. This dialog box shows a list of all 
+railing styles available, as well as the basic options and the preview of the 
+railing object.</p>
+
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>Railing style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select any number of <strong>points</strong> throughout the total length of the railing object.</li>
+	<li>Press <em>ENTER</em> or right click to <strong>finish</strong> the railing command.</li>
+</ol>
+
+<p>You can enter as many <strong>railings</strong> as you wish and you can cancel the command by pressing ENTER or ESC.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Railing insert dialog box" height="567" src="../images/assistants/Railing/Railing%20insert%20dialog.png" width="358"/><br/>
+	Railing insert dialog box
+</div>
+
+<br clear= "all" />
+
+<h3>Railing from Curve</h3>
+<p>Railings can also be created from a curve in the model:</p>
+
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>Railing style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select <strong>FromCurves</strong> in the command line then pick one <strong>Curve</strong> 
+	or multiple <strong>Curves</strong> from the model. The curves can be any 
+	type or shape of curve, as long as they are <em>open</em>.</li>
+	<li>Press enter or right click to finish the command.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Railing created from a curve and its control points" height="275" longdesc="Railing From Curve" src="../images/assistants/Railing/Railing from curve.png" width="400" /><br/>
+	Railing created from a curve and its control points.
+</div>
+
+
+<br clear= "all" />
+
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Railings can have different control points depending on how the railing has been 
+created: these control points can be moved in any direction, and modify the 
+railing position and dimensions.</p>
+<ul>
+	<li><strong>Straight railing:</strong> the railing has two control points, at the edges of the object.</li>
+	<li><strong>Railing from curve:</strong> the railing has as many control points as 
+	the curve from which it was created. </li>
+</ul>
+<br/>
+<h4>Insertion Options and Parameters</h4>
+
+<h5>Alignment</h5>
+
+<p>Railings can be aligned according to three rules, depending on the direction of the base curve:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Center alignment"/></td>
+				<td><strong>Center</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Right alignment"/></td>
+				<td><strong>Right</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Left alignment"/></td>
+				<td><strong>Left</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>To modify the alignment of a Railing, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Alignment offset</h5>
+<p>Inserts the railing at a specific distance from the direction of its base curve.</p>
+
+<p>To modify a Railing offset, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevation</h5>
+<p>A railing elevation is always measured in relation to the baseline of the 
+level it is inserted in. The elevation is not a style property. The value is 
+specified for each railing object in the insert dialog box when a new railing is inserted.<br/>
+The default elevation value for railings is 0. If you modify this value, the 
+insert dialog box will show the last value used.</p>
+<h5>Height</h5>
+<p>Even though the height is a <strong>property of the railing style</strong>, you can assign a value that is different to the default height value in the insert dialog box. Simply clear the 
+<strong>Height by style </strong>checkbox and choose the desired value, using the numerical height control.</p>
+<p>This value can be edited also in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+

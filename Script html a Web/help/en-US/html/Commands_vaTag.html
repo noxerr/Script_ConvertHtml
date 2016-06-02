@@ -1,0 +1,78 @@
+<h3>Tag</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaTag</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon">
+		<img alt="Tag" height="24" src="../images/VA_Tag.png" width="24" /> left click
+		[<a href="Commands_vaTagStyles.html" title="Tag styles">right 
+		click</a>]</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> 
+		toolbar: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="VisualARQ Documentation Tools Toolbar" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Tag &gt; Tag</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaTag.wmv" preview="../images/previews/vaTagvideo.png" width="300px" height="300px"></div>
+
+<p>The <strong>Tag</strong> command is used to display labels with specific reference texts for VisualARQ objects in the model.</p>
+<p>The objects to tag need to have their tag field filled before running this command. The tag field can be edited 
+for each VisualARQ object in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel <img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />), 
+in the <em>General</em> section. 
+ </p>
+
+<p>After running the command, the <strong>Tag</strong> insert dialog box will appear.
+Follow the steps from the command line. Press the right mouse button or ENTER to accept and go to 
+the next step.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tag insert dialog.png" alt="Tag insert dialog"/><br/>
+	Tag insert dialog</div>
+<br clear="all" />
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Specify a <strong>tag style</strong> from the insert dialog box.</li>
+	<li>Select the <strong>objects</strong> to tag.</li>
+</ol>
+<p>The tag will be created automatically next to the selected object. 
+</p>
+<h4>Tag control points</h4>
+<p>Tag objects don't have control points. They can be moved independently from 
+their reference objects position. When their reference objects are moved, tags 
+move automatically too, keeping their relative position, unless the Fixed 
+Position option is on. </p>
+<h4>Delete a tag</h4>
+<p>Simply select the tag and delete it.</p>
+
+<h4>Tag parameters</h4>
+The following parameters can be defined by each Tag object, 
+after they have been created. They can be edited in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Style</strong>: the style defines the attributes of tags.</li>
+	<li><strong>Position</strong>: the tag world XYZ coordinates.</li>
+	<li><strong>Fixed  position</strong>: option to fix the position of the tag, even though its reference object is moved.</li>
+	<li><strong>Orientation</strong>: tags can be aligned with the object in three different ways:
+		<ul>
+			<li><strong>Vertical</strong>: the tag will be oriented along the Y axis.</li>
+			<li><strong>Horizontal</strong>: the tag will be oriented along the X axis.</li>
+			<li><strong>Aligned</strong>: the tag will be oriented following the object path curve.</li>
+		</ul>
+	</li>
+	<li><strong>Format</strong>: the format of the text displayed in the tag. Use the formula "<strong>%&lt;element.tag&gt;%</strong>" to add text before and/or after the tag 
+	reference text.
+	<ul>
+		<li>e.g: for a door whose tag reference text is <em>"D3"</em>, you can type <em>
+		"Door %&lt;element.tag&gt;%"</em> 
+		to display <em>"Door D3"</em> in the label.</li>
+	</ul>
+	</li>
+</ul>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Tag/Tags.png" alt="Door and wall tagged" /><br/>
+	Tag examples</div>
+<br clear="all" />
+

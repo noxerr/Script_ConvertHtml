@@ -1,0 +1,185 @@
+<h3>Door</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaDoor</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Door.jpg" alt="Door"/> left click
+	[<a href="Commands_vaDoorStyles.html" title="DoorStyle command">right click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects </a>Toolbar: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Door &gt; Door</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaDoor.wmv" preview="../images/previews/vaDoorvideo.png" width="300px" height="300px"></div>
+
+<p>Doors can be inserted in a wall or a curtain wall object or as floating objects. In the first case both elements are anchored and the door opening is generated automatically in the wall/curtain wall where it is inserted. Doors can be detached from walls/curtain walls by moving them outside of their surface limits.</p>
+
+<p>After running the <strong>vaDoor</strong> command, the door 
+<a href="Interface_Dialog.html">insert dialog box</a> will appear. This dialog box shows a list of all 
+door styles available, as well as the basic options and the preview of the door object.</p>
+<p>The steps required to insert a door depend on the insertion options selected.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>Door style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select the Door <strong>insertion point</strong> with a left-click on the desired point in the model. If that point is near to a wall/curtain wall path, the door will be automatically inserted in that wall/curtain wall. In that case there are two options available:<br />
+		<ul>
+			<li><strong>Offset:</strong> insert the door at a specific distance (offset), from the end nearest to the wall/curtain wall where the door is inserted. Specify the opening side by moving the cursor; the command calculates it automatically with the cursor's position. 
+			Click to insert the door.</li>
+			<li><strong>Horizontal alignment:</strong> Insert the door freely in any part of the wall/curtain wall. 
+			Click to insert the door in the desired point.</li>
+		</ul>
+	</li>
+	<li>Specify the <strong>door orientation</strong> manually with the cursor. This step is not required when the door has detected a wall or a curtain wall.</li>
+	<li>Specify the <strong>Opening side</strong> by clicking on the desired side of the wall/curtain wall or the door position. This step is not required when you insert a door with the offset option.</li>
+</ol>
+
+<p>You can enter as many doors as you wish and you can cancel the command by pressing ENTER or ESC.</p>
+<p>In the two insertion options, the opening corresponding to the door is automatically generated in the wall/curtain wall as soon as it detects the wall/curtain path.</p>
+
+<div class="figureWithDescription block"><img src="../images/assistants/Door/door insert dialog.png" alt="Insert dialog box for doors."/><br/>
+Door insert dialog box
+</div>
+
+<br clear="all" />
+<h3>Door from curve</h3>
+<p>Doors can be created from curves, which determine their shape profile.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Run the <strong>vaDoor</strong> command.</li>
+	<li>Select the <strong>Door style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select the <strong>FromCurves</strong> option in the command line.</li>
+	<li>Select a <strong>curve</strong> (or several curves) in the model. This curve must be <em>closed</em> and <em>vertical</em>.</li>
+</ol>
+<p>The door will be generated in the selected curve and will only be inserted in a wall/curtain wall if it is close enough.</p>
+<p><strong>Note</strong>: The curves selected to create doors don't need to be oriented parallel to the wall/curtain wall where the doors will be 
+placed. Doors are inserted and oriented automatically according to the closest 
+wall/curtain wall position.</p>
+
+
+<h4>Control points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+	<img src="../images/door_scheme.png" alt="Control points on doors" width="150" height="160" style="float: right;"/>
+	<p>Doors have five control points:</p>
+	
+	<ol>
+		<li>Control point for the opening side</li>
+		<li>Left insert</li>
+		<li>Center insert</li>
+		<li>Right insert</li>
+		<li>Reference mark control point</li>
+	</ol>
+<br clear="all" />
+
+<p>To move the door (either in the wall/curtain wall or to a different wall/curtain wall), select it from any point and drag it to the desired location.</p>
+<p>To change the opening side of the door, select the control point for the opening side (1) and drag it to the other side of the wall/curtain wall.</p>
+
+<h4>Insertion options and parameters</h4>
+
+<h5>Alignment</h5>
+
+<p>The door can be aligned with three methods within the wall/curtain wall thickness:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment i.jpg" alt="Interior"/></td>
+				<td><strong>Interior</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment c.jpg" alt="Center"/></td>
+				<td><strong>Center</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/alignment e.jpg" alt="Exterior"/></td>
+				<td><strong>Exterior</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+
+<p>To modify the alignment of a door, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Aperture percentage</h5>
+<p>The aperture percentage defines how open or closed the door leaves are displayed in the plan and perspective views. There are two Aperture 
+percentage options:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0">
+			<tr valign="middle">
+				<td valign="top"> <img align="left" src="../images/Max aperture 32.png" height="24" width="24" alt="Max aperture (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Max aperture (%)</strong>: This value defines the maximum aperture the door leaves can reach. The Maximum door aperture is only displayed in 
+				<em>Top Viewport</em> when the VisualARQ Plan view mode is enabled, and it is represented with a simple line and an arch.</td>
+			</tr>
+		</table> </li>
+	<li><table border="0" cellspacing="0" cellpadding="0" >
+			<tr valign="middle">
+				<td valign="top"><img align="left" src="../images/aperture 32.png" height="24" width="24" alt="Aperture (%)"/></td>
+				<td cellpadding="5">     </td>
+				<td><strong>Aperture (%):</strong> This value defines how open or closed the door leaves are displayed in perspective and plan views.</td>
+			</tr>
+		</table></li>
+</ul>
+
+<div class="figureWithDescription block"><img src="../images/Door aperture 2D 3D.jpg" alt="Door aperture example."/><br/>
+Door aperture example: Max aperture : 50%, Aperture: 25%
+</div>
+<br/>
+<p>The aperture percentage is not a style property. The value is defined, in the 
+insert dialog box of the Door object, for each object inserted .</p>
+
+<p>The default aperture value for doors is 50% but you can use values from 0% to 100%. If you modify this value, the insert dialog box will show the last value used.</p>
+
+<p>To modify a door aperture percentage, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+<br clear="all" />
+<h5>Vertical alignment</h5>
+
+<p>Doors can be inserted in a wall/curtain with two different vertical alignments in relation with the base line of the wall/curtain wall:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Bottom.jpg" alt="Bottom"/></td>
+				<td><strong>Bottom:</strong> reference distance between the base line of the wall/curtain wall and the bottom surface of the door.</td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="top"><img align="left" src="../images/va Top.jpg" alt="Top"/></td>
+				<td><strong>Top:</strong> reference distance between the base line of the wall/curtain wall and the top surface of the door.</td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>The vertical alignment is not a style property. The value is specified for each object in the insert dialog box when each object is inserted.</p><br />
+<p>To modify a door vertical alignment, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevation</h5>
+<p>The door elevation in the insert dialog is measured in relation to the baseline of the wall/curtain wall it is inserted in, regardless of its level. After the door has been 
+inserted, its elevation value indicates the door position in the world Z 
+coordinates, regardless of the wall/curtain wall and the level where it is inserted. The elevation is not a style property. The value is specified for each object in the insert dialog box when 
+the object is inserted.<br />
+The default elevation value for doors is 0. If you modify this value, the insert dialog box will show the last value used.</p>
+
+<p>To modify a door elevation, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in the Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

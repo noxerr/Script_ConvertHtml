@@ -1,0 +1,106 @@
+<h3>Gestionnaire de styles</h3>
+
+<p>Le <strong>gestionnaire de styles</strong> permet de modifier les propriétés de style d'un objet et de créer de nouveaux styles pour cet objet.</p>
+
+<p>Pour créer de nouveaux styles d'objet, cliquez sur le bouton <strong>Nouveau style</strong>.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorNewStyle.png" alt="Gestionnaire de styles pour l'objet Porte." width="350" height="243"/><br/>
+Gestionnaire de styles pour l'objet Porte.
+</p>
+
+<p>Un assistant vous guide par des étapes simples en vous demandant les paramètres du style d'objet défini.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Assistant de style de porte."  width="300" height="347" /><br/>
+Assistant de style de porte.</p>
+
+<p>Un aperçu de l'objet est affiché en bas à gauche lorsque vous sélectionnez un style dans la liste.</p>
+<p>Le composant sélectionné est marqué en turquoise lorsque l'objet possède plusieurs composants.</p>
+<p>L'aperçu affiché peut être modifié avec la souris tout comme dans les vues de Rhino :</p>
+
+<ul>
+	<li><em>Bouton droit de la souris</em> : permet de faire tourner la vue pour afficher le modèle selon différents points de vue.</li>
+	<li><em>Ctrl + bouton droit</em> : permet de zoomer pour agrandir ou réduire le champ de vision.</li>
+	<li><em>Maj+ bouton droit</em> : permet de déplacer le point de vue parallèlement au plan de vision, vers le haut, le bas, la droite ou la gauche.</li>
+</ul>
+
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/DoorAttributes.png" alt="Gestionnaire de styles, onglet Attributs." width="350" height="243"/><br/>
+Gestionnaire de styles, onglet Attributs.</p>
+
+<p>Pour chaque style d'objet sélectionné, vous pouvez définir les propriétés affichées dans la case de droite. Cette zone comprend plusieurs onglets, qui peuvent être différents en fonction du type d'objet :</p>
+
+<ul>
+
+	<li><strong>Attributs<em> </em> </strong><br />
+		Cet onglet est affiché pour tous les objets qui utilisent une boîte de dialogue. Il permet de définir les fonctions (attributs) de chaque style d'objets et de chacun de ses composants. Attributs : <ul>
+			<li>Calque</li>
+			<li>Visibilité</li>
+			<li>Couleur d'affichage</li>
+			<li>Type de ligne</li>
+			<li>Largeur d'impression</li>
+			<li>Couleur d'impression</li>
+			<li>Matériau</li>
+			<li>Hachures</li>
+			<li>Style de texte</li>
+			<li>Style de cote</li>
+		</ul>
+		<br />
+		<strong>REMARQUE :  </strong> À partir de l'attribut Matériau du style d'objet, vous pouvez assigner un matériau différent à chaque composant de l'objet. Pour assigner un seul matériau à tout l'objet, suivez la procédure habituelle de Rhino.<br />
+	</li>
+	
+	<li><strong>Géométrie </strong><br />
+		Les murs, poteaux, portes et fenêtres possèdent cet onglet. Les valeurs géométriques pour chaque objet et chaque composant sont définies dans cet onglet.<br />
+		Valeurs géométriques pour l'objet Mur :
+		<ul>
+			<li>Hauteur</li>
+			<li>Largeur (ne peut être modifiée que pour chaque composant du mur)</li>
+		</ul>
+		
+		Valeurs géométriques pour l'objet Poteau :
+		<ul>
+			<li>Hauteur</li>
+			<li>Profil (définit la forme de l'objet)</li>
+			<li>Largeur du Revêtement</li>
+		</ul>
+		
+		Valeurs géométriques pour l'objet Porte : <ul>
+			<li>Profil (définit la forme de l'objet)</li>
+			<li>Tailles (largeur et profondeur) du dormant et de la cale</li>
+			<li>Tailles (largeur et profondeur) et côté d'ouverture du battant</li>
+		</ul>
+		
+		Valeurs géométriques pour l'objet Fenêtre :
+		<ul>
+			<li>Profil (définit la forme de l'objet)</li>
+			<li>Tailles (largeur et profondeur) du dormant et de la cale</li>
+			<li>Tailles (largeur et profondeur) et côté d'ouverture du battant</li>
+			<li>Tailles (épaisseur, prolongement et profondeur) du rebord.</li>
+		</ul>
+	</li>
+	
+	<li><strong>Tailles<em> </em> </strong><br />
+	Cet onglet ne sert qu'aux objets qui utilisent des profils pour définir leur forme (poteaux, portes et fenêtres). Il permet de définir les tailles (largeur et auteur) du profil utilisé par l'objet. Cette option permet de créer différentes tailles pour le même profil.
+	</li>
+	
+	<li><strong>Blocs<em> </em> </strong><br />
+	Seules les portes et les fenêtres possèdent cet onglet. L'onglet définit les représentations 2D (plan) et 3D (modèle) de l'objet, en assignant un bloc déjà créé par l'utilisateur, avec des paramètres personnalisés pour chaque représentation. Cette option permet de créer des portes et des fenêtres personnalisées.</li>
+	
+	<li><strong>Jambages<em> </em> </strong><br />
+	Seuls les murs présentent cet onglet. Il permet de définir les valeurs de chaque type de jambage du mur (Départ, Final, Angle et Ouverture).</li>
+	
+	<li><strong>Type<em> </em> </strong><br />
+	Seuls les escaliers présentent cet onglet. Il permet de définir le type d'escalier utilisé, suivant si l'option Marches balancées est activée ou non.</li>
+
+	<li><strong>Étapes </strong><br />
+		Cet onglet n'apparaît que pour les escaliers, il permet de définir les valeurs géométriques des dalles de contremarche et de giron. Valeurs géométriques pour la <strong>Dalle de giron</strong> :
+		<ul>
+			<li>Épaisseur de la dalle</li>
+			<li>Nez</li>
+		</ul>
+		
+		Valeurs géométriques pour la <strong>Dalle de contremarche </strong>:
+		<ul>
+			<li>Épaisseur de la dalle</li>
+		</ul>
+	</li>
+</ul>

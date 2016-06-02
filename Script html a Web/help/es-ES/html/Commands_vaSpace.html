@@ -1,0 +1,102 @@
+<h3>Espacio</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaEspacio</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Space.jpg" alt="Espacio"/> clic izquierdo [<a href="Commands_vaSpaceStyles.html" title="Comando Estilo de espacio">clic derecho</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Barra de herramientas Documentación</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra de herramientas Herramientas de documentación de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Espacio &gt;<li>Desde punto</li>
+			<li>Desde curva</li>
+			<li>Desde superficie plana</li>
+	</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaSpace.wmv" preview="../images/previews/vaSpacevideo.png" width="300px" height="300px"></div>
+
+<p>El objeto Espacio representa la entidad de superficiado que muestra la información (nombre, área, perímetro. etc.) de un espacio o habitación, mediante un patrón de sombreado y una etiqueta.</p>
+<p>se considera habitación a todo espacio cerrado delimitado en todos sus lados por muros y/o pilares. Los muros y pilares pueden estar en distintas elevaciones, siempre y cuando pertenezcan a la misma planta.</p>
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Hay tres opciones para crear un espacio. Estas opciones se muestran en la <em></em>línea de comandos cuando se ejecuta el comando <strong>vaEspacio</strong>:</li>
+		<ul>
+			<li>Espacio formado por <strong>muros o pilares </strong>(habitación): Pulse el botón izquierdo del ratón dentro del espacio donde desee calcular el área. </li>
+			<li>Espacio definido por una <strong>curva</strong>: Haga clic en la opción de la línea de comandos <em>DesdeCurva<u></u></em>. Seleccione una curva cerrada y plana.</li>
+			<li>Espacio definido por una <strong>superficie</strong>: Haga clic en la opción de la línea de comandos <em>DesdeSupPlana<u></u></em>. Seleccione una superficie plana.</li>
+		</ul>
+	<li>Aparecerá el cuadro de diálogo <strong>Nuevo espacio</strong>. Introduzca la información del espacio seleccionado:</li>
+		<ul>
+			<li><strong>Nombre</strong></li>
+			<li><strong>Tipo de área</strong>: útil o construida</li>
+			<li><strong>Estilo</strong></li>
+		</ul>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Space/Space Insert.png" alt="Cuadro de inserción del objeto Espacio." /><br />
+	Cuadro de inserción de Espacio</div>
+<br clear="all" />
+<p>En la habitación detectada se inserta un patrón de sombreado que marca el área que ocupa, así como una etiqueta con su nombre y características geométricas.</p>
+<p>Puede seguir creando espacios de la misma manera, hasta que cancele el comando pulsando INTRO o ESC.</p>
+
+<h4>Modificar un espacio</h4>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaEspacioDefinirContorno</div>
+</div>
+<p> </p>
+
+<p>Un espacio puede modificarse con el comando <strong>vaEspacioDefinirContorno</strong> de tres maneras:</p> 
+<ol>
+	<li>Seleccione el <strong>espacio</strong> que desee modificar.</li>
+	<li>Seleccionar un <strong>nuevo punto</strong> (dentro de una habitación) para insertar el espacio o seleccione una de las opciones del comando que aparecen en la línea de comandos: 
+	<strong>DesdeCurva</strong><u><strong></strong></u><strong></strong> y 
+	<strong>DesdeSupPlana</strong><u><strong></strong></u><strong></strong>.</li>
+</ol>
+<p class="style2">El espacio se modifica a la vez que se mantienen sus propiedades. </p>
+<p><strong>NOTA: </strong>Los espacios conformados por muros y/o pilares se pueden <em>desplazar manualmente</em> con el cursor dentro de otras habitaciones. También pueden <em>actualizarse</em> tras hacer algún cambio en los muros y/o pilares originales con el comando <a href="Commands_vaUpdate.html" title="vaActualizar">vaActualizar</a>
+<img alt="vaActualizar" height="26" src="../images/VA_Update.jpg" width="26" />.</p>
+
+<h4>Puntos de control<img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/assistants/Space/Space Control Points.png" alt="Puntos de control en espacios" width="250" height="170"  style="float: right;"/>
+<p>Los espacios tienen dos puntos de control:<br />
+<ol>
+	<li>Punto de inserción<strong> del patrón de sombreado</strong> que marca al espacio.</li>
+	<li>Punto de inserción de la <strong>etiqueta</strong><em>.</em></li>
+</ol>
+</p>
+<p><strong>NOTA: </strong> Todos los puntos de control de espacio sirven para desplazarlo (no lo escalan).</p>
+<p>Para desplazar un espacio a una nueva habitación, seleccione el espacio (patrón de sombreado y etiqueta) y arrástrelo hasta la nueva habitación.</p>
+<p>Para desplazar la etiqueta del espacio, active los puntos de control del espacio y desplace el punto de control de la etiqueta al sitio que desee.</p>
+
+<h4>Opciones y parámetros de inserción</h4>
+
+<p> El cuadro de diálogo de inserción de espacio incluye las opciones para elegir el espacio:
+<strong>Nombre</strong>, <strong>Tipo de área</strong> y <strong>Estilo</strong>.</p>
+<p> Los parámetros que definen las características de un espacio corresponden al <strong>estilo de espacio</strong>, aunque pueden modificarse independientemente de éste, desde el cuadro de diálogo de <a href="Interface_ObjectProperties.html">Propiedades de objeto</a> 
+<img alt="Propiedades VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> o desde la sección <a href="Interface_VisualARQProperties.html">Propiedades VisualARQ</a>  (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+
+<h5>Nombre</h5>
+
+
+
+<p>El nombre de un espacio sirve para diferenciar ese espacio del resto e indicar su funcionalidad.</p>
+<p>Para modificar el nombre de un espacio, abra el cuadro de diálogo de propiedades de objeto del espacio y haga clic con el botón izquierdo sobre el nombre.</p>
+
+<h5>Tipo de área</h5>
+
+<p>El área de un espacio puede ser de dos tipos:</p>
+<ul>
+	<li><strong>Útil: </strong> Área de ocupación de una habitación (o edificio), que no incluye el grosor de los muros.</li>
+	<li><strong>Construida:</strong> Área comprendida entre los límites exteriores de la construcción en planta.</li>
+</ul>
+<p>Para modificar el tipo de área de un espacio, es necesario borrar el espacio y crearlo de nuevo, eligiendo el tipo de área deseado.</p>
+
+<h5>Altura</h5>
+<p>El objeto de espacio tiene un valor de altura que determina el volumen de la habitación. Este valor puede modificarse en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

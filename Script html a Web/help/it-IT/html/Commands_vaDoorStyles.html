@@ -1,0 +1,186 @@
+<h3>Stili di porta</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaPortaStili</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Door.jpg" alt="Porta"/> clic destro [<a href="Commands_vaDoor.html" title="Porta">clic sinistro</a>]
+	
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html">Oggetti</a>:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Porta &gt; Stili di porta...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menu di scelta rapida</a>: </div>
+	<div class="value context">Porta &gt; Proprietà degli stili</div>
+	
+	<div class="field">Scorciatoia: </div>
+	<div class="value menu">Selezionare un oggetto porta &gt; (<em>Alt, Maiusc</em> o <em>Ctrl</em>) + doppio clic</div>
+
+	
+</div>
+
+<p>Lo stile di una porta definisce le caratteristiche della porta. Per ciascuno stile di porta, si possono definire i seguenti parametri: <strong>Nome</strong>, <strong>Attributi</strong>, <strong>Tipo</strong> di apertura, <strong>Forma</strong> (geometria) ed uso di <strong>Blocchi personalizzati</strong>.</p>
+
+<p>Gli stili di porta vengono definiti da vari componenti che possono essere aggiunti od eliminati in qualsiasi momento:<strong> Telaio</strong>, <strong>Fermo</strong> ed <strong>Anta</strong>.
+</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Door/Door components.png" alt="Parti e componenti dell'oggetto porta" width="170" height="300" /><br />
+Parti e componenti dell'oggetto porta:
+<ol>
+	<li><strong>Profilo</strong> della porta</li>
+	<li><img alt="Telaio della porta" height="16" src="../images/Frame-16.png" width="16" /> <strong> Telaio</strong> della porta</li>
+	<li><img alt="Fermo della porta" height="16" src="../images/Stop-16.png" width="16" /> <strong>Fermo</strong> della porta</li>
+	<li><img alt="Anta della porta" height="16" src="../images/Door Leaf-16.png" width="16" /> <strong>Anta</strong> della porta</li>
+	<li><img alt="Vetro" height="16" src="../images/Glass component 16.png" width="16" /> <strong>Vetro</strong> dell'anta</li>
+	<li><strong>Listelli</strong> del vetro</li>
+</ol>
+</div>
+<p>Per creare uno stile di porta, premere il pulsante <strong>Nuovo stile</strong> nella finestra di dialogo <a href="Interface_StyleProperties.html">Gestore degli stili</a>. Usare la procedura guidata visualizzata per inserire i seguenti parametri della porta.</p>
+<p>Per aggiungere un nuovo componente ad uno stile di porta, selezionare il nome dello stile di porta sulla parte sinistra della finestra di dialogo, cliccare con il tasto destro per aprire il menu di scelta rapida, selezionare 
+<strong>Nuovo</strong> e quindi il componente.</p>
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Door/DoorNewStyle.png" alt="Finestra di dialogo Gestore degli stili dell'oggetto Porta" /><br />
+Finestra di dialogo Gestore degli stili dell'oggetto Porta
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Editing generico</div>
+<div class="value">Si può usare il comando <strong>vaPortaStili</strong> oppure, in alternativa, <ul>
+		<li>Usare il comando <strong>vaStileProprietà</strong>, quindi selezionare una porta e premere Invio, oppure</li>
+		<li>Fare clic destro su
+		<img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic destro)"/>, quindi selezionare una porta e premere Invio, oppure</li>
+		<li>Selezionare una porta ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Porta &gt; Proprietà degli stili</strong>, oppure</li>
+		<li>Premere <em>Alt, Maiusc</em> o <em>Ctrl</em> e quindi fare doppio clic su un oggetto porta.</li>
+	</ul>
+	Le modifiche applicate ad uno stile vengono applicate a <strong>tutti gli elementi</strong> aventi quello stile.
+</div>
+<div class="field">Editing specifico per oggetto</div>
+<div class="value"><ul>
+		<li>Usare il comando <strong>vaProprietà</strong>, quindi selezionare una porta e premere Invio, oppure</li>
+		<li>Fare clic su <img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic sinistro)"/>, quindi selezionare una porta e premere Invio, oppure</li>
+		<li>Selezionare una porta ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Porta &gt; Proprietà</strong>, oppure,</li>
+		<li>Fare doppio clic su un oggetto porta. </li>
+	</ul>
+		</div>
+	Le modifiche vengono applicate solo allo stile dell'<strong>elemento selezionato</strong>.</div>
+</div>
+
+<h4>Attributi</h4>
+<p>Gli attributi definiscono le caratteristiche di ciascuno stile di porta e dei suoi componenti ai fini della visualizzazione e della stampa. Gli attributi validi sono:</p>
+
+<ul>
+<li><strong>Generali</strong>: Livello, visibilità e materiale</li>
+<li><strong>Proiezione</strong>: Colore, tipo di linea, larghezza di stampa e colore di stampa</li>
+<li><strong>Sezione</strong>: Colore, tipo di linea, larghezza di stampa, colore di stampa, modello, scala del modello, angolo del modello e colore del modello</li>
+</ul>
+
+<h4>Tipo di apertura</h4>
+
+<p>VisualARQ consente di creare stili di porta con due tipi diversi di apertura:</p>
+<ul>
+	<li><strong>Scorrevole</strong>: porta che scorre lungo un binario o una scanalatura.</li>
+	<li><strong>A battente</strong>: porta che si apre da un lato, con battente che ruota sui cardini.</li>
+</ul>
+
+<h4>Forma</h4>
+<p>La forma della porta viene definita tramite un profilo. VisualARQ fornisce una libreria con vari profili parametrici predefiniti: Rettangolare, Circolare, Arco 90º, Gotico, ecc.<br />
+</p>
+
+<p>Per definire le porte, si possono usare anche profili dalle forme personalizzate.</p>
+
+<p>Per inserire un profilo personalizzato, disegnare prima una curva chiusa e piana, quindi trasformarla in profilo usando il comando <a href="Commands_vaProfileFromCurve.html"><em>vaProfiloDaCurva</em></a> 
+<img alt="Profilo da curva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br/>
+Una volta creato, il profilo personalizzato appare in fondo all'elenco della libreria di profili parametrici predefiniti.</p>
+
+<p>Il profilo risultante non è parametrico, per cui esso potrà essere usato solo con le misure e proporzioni con cui si è disegnato in origine.</p>
+
+<h4>Dimensioni</h4>
+<p>I parametri che corrispondono alle dimensioni di una porta variano a seconda del tipo di profilo selezionato.<br />
+Si possono specificare varie dimensioni per lo stesso stile di porta.</p>
+<p>Le dimensioni si possono specificare nel momento in cui si inserisce la porta, scegliendo l'opzione 
+<strong>Dimensioni &gt; Altro</strong> della sezione <strong>Profilo</strong> della finestra di inserimento.</p>
+
+<h3>Componenti delle porte</h3>
+
+<h4>Telaio <img alt="Telaio della porta" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>Gli stili di porta possono presentare o meno un telaio.<br />
+I valori modificabili del telaio sono <strong>Larghezza</strong> e <strong>Profondità</strong>. È inoltre possibile attivare l'opzione 
+<strong>Regola la profondità secondo lo spessore del muro</strong>.</p>
+
+<h4>Fermo <img alt="Fermo della porta" height="16" src="../images/Stop-16.png" width="16" /></h4>
+<p>Gli stili di porta possono presentare o meno un fermo.<br />
+Le proprietà del fermo sono <strong>Larghezza</strong> e <strong>Profondità</strong>.</p>
+
+
+<h4>Ante <img alt="Anta della porta" height="16" src="../images/Door Leaf-16.png" width="16" /></h4>
+<p>Gli stili di porta possono presentare una o più ante.<br />
+Le proprietà delle ante sono <strong>Larghezza</strong> (in percentuale) e <strong>Spessore</strong>.<br />
+Le ante di una porta possono essere uguali oppure avere larghezze diverse. Disattivando l'opzione 
+<strong>Larghezze uguali</strong> nella procedura guidata per la creazione degli stili di porta, è possibile editare la percentuale di larghezza di ciascuna anta, assegnandole un valore compreso tra lo 0% ed il 100%.<br />
+È anche possibile cambiare il verso di apertura di ciascuna anta, attivando l'opzione <strong>Inverti verso di apertura</strong>.</p>
+
+<h4>Vetro <img alt="Vetro" height="16" src="../images/Glass component 16.png" width="16" /></h4>
+<p>Le ante delle porte possono avere o meno un vetro. Quando si crea una nuova anta, essa non contiene nessun vetro. Per aggiungere un vetro all'anta di una porta, selezionare il componente <strong>Anta</strong> sulla parte sinistra della finestra di dialogo, cliccare con il tasto destro per aprire il menu di scelta rapida, e quindi selezionare 
+<strong>Nuovo &gt; Vetro</strong><em>.</em></p>
+<p>I vetri hanno due componenti diversi:</p>
+<ol>
+<li><strong>Telaio</strong>: Il telaio che sostiene il vetro nell'anta di una porta. Le proprietà del telaio del vetro sono la 
+<strong>Larghezza</strong> e lo <strong>Spessore</strong>; quest'ultimo equivale allo spessore dell'anta e si può editare selezionando il componente anta. Il telaio può essere rimosso dal vetro. </li>
+<li><strong>Listelli: </strong> I listelli di supporto tra un riquadro di vetro e quello contiguo. Le proprietà dei listelli sono il numero di listelli che suddividono un pannello di vetro e la loro larghezza. </li>
+</ol>
+
+<h3>Blocchi personalizzati</h3>
+
+<p>Gli stili di porta si possono creare a partire da blocchi 2D e 3D che ne definiscono la rappresentazione nelle viste in pianta e modello, rispettivamente.<br />
+Per creare uno stile di porta personalizzato, assegnare un <strong>profilo</strong> (che definisca la forma dell'apertura nel muro), un <strong>blocco 2D</strong> (che definisca la rappresentazione in pianta) ed un <strong>blocco 3D</strong> (che definisca la rappresentazione nel modello).</p>
+
+<p><strong>Passi:</strong></p>
+
+<ul>
+<li><strong>Creare un profilo personalizzato:</strong> Disegnare una curva chiusa e piana e trasformarla in un profilo usando il comando <a href="Commands_vaProfileFromCurve.html"><em>vaProfiloDaCurva</em></a> 
+<img alt="vaProfiloDaCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Una volta creato, il profilo personalizzato appare in fondo all'elenco della libreria di profili parametrici predefiniti.<br />
+Il profilo risultante non è parametrico, per cui esso potrà essere usato solo con le misure e proporzioni con cui si è disegnato in origine.
+</li>
+<li><strong>Creare i blocchi 2D e 3D:</strong> Creare il modello 3D e quindi tracciare la rappresentazione 2D a partire da esso. Quindi, creare due blocchi con il comando <strong>Blocco</strong><em> </em>(menu <strong>Modifica</strong> <strong>&gt; Blocchi &gt; Crea definizione blocco</strong>).</li>
+<li><strong>Creare il nuovo stile di porta:</strong> Una volta creato il profilo ed i blocchi 2D/3D, premere il pulsante 
+<strong>Nuovo stile... </strong>nella finestra di dialogo del gestore degli stili. Usare la procedura guidata per assegnare un profilo personalizzato allo stile.
+
+<p>Ignorare le finestre in cui si definiscono i parametri di stile della porta premendo il pulsante 
+<strong>Avanti &gt;</strong>, fino ad arrivare alla finestra di dialogo di definizione dei blocchi personalizzati.<br />
+Nella finestra dei 
+<strong>blocchi personalizzati</strong>, spuntare le caselle di selezione che attivano le opzioni per l'uso di blocchi personalizzati nelle viste modello e in pianta. Queste caselle verranno attivate solo in presenza di un blocco creato nel documento. Una volta spuntate le caselle, selezionare i blocchi 3D e 2D dal menu a discesa per definire la rappresentazione dello stile di porta in tali viste. </p>
+</li>
+</ul>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Door/profile custom.jpg" alt="Finestra di dialogo Gestore degli stili dell'oggetto Porta" /><br />
+Procedura guidata per la creazione di una porta: selezione del profilo
+</div>
+
+<p>Prima di creare i blocchi (2D/3D), assicurarsi che gli oggetti che si desidera trasformare in aperture di VisualARQ siano allineati agli assi universali X, Y e Z (WCS).<br />
+Una volta allineati gli oggetti al sistema globale, nel momento in cui si va a creare il blocco, selezionare il <strong>punto inferiore centrale</strong> della geometria come punto di inserimento.<br />
+Ciò garantirà che l'orientamento dell'apertura sia corretto.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Door/2d 3d blocks.png" alt="Procedura guidata per la creazione di una porta: definizione blocchi" /><br />
+Procedura guidata per la creazione di una porta: definizione blocchi
+</div>
+
+<p>Quando si usano blocchi 3D e 2D per definire la rappresentazione di uno stile personalizzato, i parametri Dimensioni, Telaio, Fermo ed Ante non influiscono sull'aspetto dello stile creato. Gli stili personalizzati NON sono parametrici: il loro aspetto (dimensioni, proporzione, livello di dettaglio) dipende dai blocchi usati per definirli.</p>
+
+<p>VisualARQ consente anche la creazione di stili di porta <em>ibridi</em>, sostituendo solo la rappresentazione in pianta (tramite un blocco 2D) ed usando la vista modello di uno stile standard parametrico o viceversa.<br />
+La rappresentazione che non usa un blocco va definita tramite i parametri di stile (Dimensioni, Telaio, Fermo ed Ante), come con qualsiasi stile di porta standard.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Door/Custom Door.png" alt="Blocco 3D, blocco 2D ed un profilo per il nuovo stile di porta personalizzato" width="400" height="222" /></div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Door/Custom Door 2.png" alt="Stile di porta personalizzato, definito a partire da un blocco 3D, un blocco 2D ed un profilo" width="400" height="167" /><br />
+Stile di porta personalizzato, definito a partire da un blocco 3D, un blocco 2D ed un profilo</div>
+<br clear="all" />

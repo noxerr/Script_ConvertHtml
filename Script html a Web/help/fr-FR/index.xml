@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+
+<Index title="Aide de VisualARQ" language="Français">
+
+    <topic title="Introduction" file="Introduction" />
+	<topic title="Configuration requise" file="Requirements" />
+	<topic title="Caractéristiques générales" file="General specifications" />
+	
+	<topic title="Interface" file="Interface">
+		<topic title="Barres d&apos;outils" file="Interface_Toolbars" />
+		<topic title="Menu déroulant" file="Interface_Drop-down" />
+		<topic title="Menu contextuel" file="Interface_Context" />
+		<topic title="Commandes au clavier" file="Interface_Commands" />
+		<topic title="Gestionnaire de niveaux" file="Commands_vaLevels" />
+		<topic title="Boîtes de dialogue d&apos;insertion" file="Interface_Dialog" />
+		<topic title="Propriétés du style" file="Interface_StyleProperties" />
+		<topic title="Boîte de dialogue propriétés d’un objet" file="Interface_ObjectProperties" />
+		<topic title="Panneau des Propriétés objet" file="Interface_VisualARQProperties" />
+		<topic title="Attributs de section" file="Interface_SectionAttributes" />
+		<topic title="Fenêtres de VisualARQ" file="Interface_VisualARQViewports" />
+		<topic title="Options de VisualARQ" file="Interface_VisualARQOptions" />
+		<topic title="Integration dans Rhino" file="Interface_Interoperability" />
+		<topic title="Rendu" file="Interface_Render" />
+	</topic>
+	
+	<topic title="Commandes des objets de VisualARQ" file="Architectural objects commands">
+		<topic title="vaMur" file="Commands_vaWall" >
+			<topic title="vaMurStyles" file="Commands_vaWallStyles" />
+			<topic title="vaMur &gt; ÀPartirDeCourbes" file="Commands_vaWall" />
+			<topic title="vaMurDéfinirChemin" file="Commands_vaWallSetPath" />
+			<topic title="vaMurInverser" file="Commands_vaWallReverse" />
+			<topic title="vaMurProlonger" file="Commands_vaWallExtendToSrf" />
+			<topic title="vaMurProlonger &gt; AnnulerProlongement" file="Commands_vaWallUnextend" />
+			<topic title="vaMurDiviser" file="Commands_vaWallSplit" />
+			<topic title="vaMurÀPartirDeSolide" file="Commands_vaWallFromSolid" />
+			<topic title="vaMurDéfinirSolidePersonnalisé" file="Commands_vaWallSetCustomSolid" />
+			<topic title="vaMurAjouterSolides" file="Commands_vaWallAddSolids" />
+			<topic title="vaMurSoustraireSolides" file="Commands_vaWallSubtractSolids" />
+			<topic title="vaMurExtraireSolides" file="Commands_vaWallExtractSolids" />
+			<topic title="vaMurSélectionner" file="Commands_vaWallSelect" />
+			
+		</topic>
+		
+		<topic title="vaMurRideau" file="Commands_vaCurtainWall" >
+			<topic title="vaMurRideauStyles" file="Commands_vaCurtainWallStyles" />
+		</topic>
+		
+		<topic title="vaPoutre" file="Commands_vaBeam" >
+			<topic title="vaPoutreStyles" file="Commands_vaBeamStyles" />
+		</topic>
+
+		<topic title="vaPoteau" file="Commands_vaColumn" >
+			<topic title="vaPoteauStyles" file="Commands_vaColumnStyles" />
+		</topic>
+		
+		<topic title="vaPorte" file="Commands_vaDoor" >
+			<topic title="vaPorteStyles" file="Commands_vaDoorStyles" />
+		</topic>
+		
+		<topic title="vaFenêtre" file="Commands_vaWindow" >
+			<topic title="vaFenêtreStyles" file="Commands_vaWindowStyles" />
+		</topic>
+		
+		<topic title="vaOuverture" file="Commands_vaOpening" >
+			<topic title="vaOuvertureStyles" file="Commands_vaOpeningStyles" />
+		</topic>
+
+			<topic title="vaEscalier" file="Commands_vaStair" >
+			<topic title="vaEscalierStyles" file="Commands_vaStairStyles" />
+			<topic title="vaContourTrémieEscalier" file="Commands_vaStairClearanceContour" />
+		</topic>
+		
+		<topic title="vaGardeCorps" file="Commands_vaRailing" >
+			<topic title="vaGardeCorpsStyles" file="Commands_vaRailingStyles" />
+		</topic>
+
+		
+		<topic title="vaDalle" file="Commands_vaSlab" >
+			<topic title="vaDalleAjouter" file="Commands_vaSlabAdd" />
+			<topic title="vaDalleSoustraire" file="Commands_vaSlabSubtract" />	
+			<topic title="vaDalleSoustraireTrémieEscalier" file="Commands_vaSlabSubtractStairClearance" />
+		</topic>
+		
+		<topic title="vaToit" file="Commands_vaRoof" >
+			<topic title="vaToitAjouter" file="Commands_vaRoofAdd" />
+			<topic title="vaToitSoustraire" file="Commands_vaRoofSubtract" />
+			<topic title="vaToitChangerAnglePente" file="Commands_vaRoofChangeSlopeAngle" />
+			<topic title="vaToitDécomposer" file="Commands_vaRoofExplode" />
+		</topic>
+		
+		
+	</topic>
+	<topic title="Outils de documentation" file="Documentation Tools">
+	
+		<topic title="vaEspace" file="Commands_vaSpace" >
+			<topic title="vaEspaceStyles" file="Commands_vaSpaceStyles" />
+		</topic>
+		
+		<topic title="vaNomenclature" file="Commands_vaTable" >
+			<topic title="vaNomenclatureStyles" file="Commands_vaTableStyles" />
+			<topic title="vaExporterNomenclature" file="Commands_vaTableExport" />
+		</topic>
+		
+		<topic title="vaÉtiquette" file="Commands_vaTag" >
+			<topic title="vaÉtiquetteStyles" file="Commands_vaTagStyles" />
+		</topic>
+
+				<topic title="vaÉlévationOuverture" file="Commands_vaOpeningElevation" />
+		<topic title="vaSection" file="Commands_vaSection" >
+			<topic title="vaSectionStyles" file="Commands_vaSectionStyles" />
+			</topic>
+		<topic title="vaSectionDynamique" file="Commands_vaDynamicSection" />
+		<topic title="vaVueSection" file="Commands_vaSectionView" >
+			<topic title="vaVueSectionStyles" file="Commands_vaSectionViewStyles" />
+			</topic>
+		
+		<topic title="vaVueEnPlan" file="Commands_vaPlanView" >
+			<topic title="vaVueEnPlanStyles" file="Commands_vaPlanViewStyles" />
+			</topic>
+
+	
+	</topic>
+	<topic title="Outils de VisualARQ" file="VisualARQ Tools">
+		<topic title="vaNiveaux" file="Commands_vaLevels" />
+		<topic title="vaActualiser" file="Commands_vaUpdate" />
+		<topic title="vaMatriceOuverture" file="Commands_vaOpeningArray" />
+		<topic title="vaProfilÀPartirDeCourbe" file="Commands_vaProfileFromCurve" />
+		<topic title="vaPropriétés" file="Interface_ObjectProperties" >
+			<topic title="vaStylePropriétés" file="Interface_StyleProperties" />
+		</topic>
+		<topic title="vaImporterStyles" file="Commands_vaStylesImport" />
+		<topic title="vaExporterStyles" file="Commands_vaStylesExport" />
+		<topic title="Exportation IFC" file="IFC Export" />
+	</topic>
+</Index>

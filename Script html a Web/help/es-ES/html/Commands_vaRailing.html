@@ -1,0 +1,112 @@
+<h3>Baranda</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaBaranda</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Railing.jpg" alt="Baranda"/> clic izquierdo [<a href="Commands_vaRailingStyles.html" title="Comando vaBarandaEstilos">clic derecho</a>]
+	</div>
+	
+	<div class="field">Barra de herramientas <a href="Interface_Toolbars.html">Objetos</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Baranda &gt; Baranda</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaRailing.wmv" preview="../images/previews/vaRailingvideo.png" width="300px" height="300px"></div>
+
+<p>Cuando ejecute el comando <strong>vaBaranda</strong>, aparecerá el <strong></strong><a href="Interface_Dialog.html">
+<strong>cuadro de diálogo de inserción</strong></a> de baranda. Este cuadro muestra una lista con los estilos de baranda disponibles, así como las opciones básicas del objeto baranda y una previsualización del mismo.</p>
+
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione el <strong>Estilo de baranda</strong> que desea utilizar y defina las opciones básicas de inserción.</li>
+	<li>Seleccione tantos <strong>puntos</strong> como se desee, hasta alcanzarse el valor del largo total de la baranda.</li>
+	<li>Pulse botón <em>INTRO</em> o haga clic con el botón derecho para <strong>finalizar</strong> el comando.</li>
+</ol>
+
+<p>Puede seguir insertando <strong>barandas</strong> hasta que cancele el comando pulsando INTRO o ESC.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Cuadro de inserción de Baranda." height="567" src="../images/assistants/Railing/Railing%20insert%20dialog.png" width="358"/><br/>
+	Cuadro de inserción de Baranda.
+</div>
+
+<br clear= "all" />
+
+<h3>Baranda desde curva</h3>
+<p>Las barandas también se pueden crear a partir de una curva en el modelo:</p>
+
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione el <strong>Estilo de baranda</strong> que desea utilizar y defina las opciones básicas de inserción.</li>
+	<li>Seleccione <strong>DesdeCurvas</strong> en la línea  de comandos y designe una <strong>Curva</strong> o varias <strong>Curvas</strong> desde el modelo. Estas curva pueden ser de cualquier forma o tipo, siempre y cuando sean <em>abiertas</em>.</li>
+	<li>Pulse botón INTRO o haga clic con el botón derecho para finalizar el comando.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Baranda creada a partir de una curva y sus puntos de control" height="275" longdesc="Railing From Curve" src="../images/assistants/Railing/Railing from curve.png" width="400" /><br/>
+	Baranda creada a partir de una curva y sus puntos de control.
+</div>
+
+
+<br clear= "all" />
+
+<h4>Puntos de control <img alt="Puntos de control" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Las barandas pueden tener diferentes puntos de control según cómo se haya creado la baranda: estos puntos de control se pueden mover en cualquier dirección y la posición y las dimensiones de la baranda se pueden modificar.</p>
+<ul>
+	<li><strong>Baranda recta:</strong> la baranda tiene dos puntos de control en los extremos del objeto.</li>
+	<li><strong>Baranda desde curva:</strong> la baranda tiene tantos puntos de control como tiene la curva desde la que se creó. </li>
+</ul>
+<br/>
+<h4>Opciones y parámetros de inserción</h4>
+
+<h5>Alineación</h5>
+
+<p>Las barandas pueden alinearse de tres modos, según la dirección de la curva base:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Centrar"/></td>
+				<td><strong>Centro</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Alineación a la derecha"/></td>
+				<td><strong>Derecha</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Alineación a la izquierda"/></td>
+				<td><strong>Izquierda</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+<p>Para modificar la alineación de una baranda, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="" height="26" src="../images/VA_Properties.jpg" width="26" /> o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Desfase de alineación</h5>
+<p>Inserta la baranda a una distancia específica desde la dirección de su curva base.</p>
+
+<p>Para modificar el desfase de una baranda, edite su valor en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />, o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Elevación</h5>
+<p>La elevación de las barandas siempre se calcula en relación a la línea base del nivel en la que se inserta. La elevación no es una propiedad de estilo. El valor se especifica para cada objeto de baranda en el cuadro de inserción y en el momento de insertarlo.<br/>
+El valor de elevación que aparece por defecto para barandas es de 0. Si este valor se modifica, el cuadro de inserción muestra siempre el último valor utilizado.</p>
+<h5>Altura</h5>
+<p>Aunque la altura es una <strong>propiedad del estilo de baranda</strong>, desde el cuadro de inserción es posible asignar un valor de altura distinto al predefinido. Basta con desactivar la casilla de verificación 
+<strong>Altura por estilo</strong> y elegir el valor deseado, utilizando el control numérico de altura.</p>
+<p>Este valor puede modificarse en el cuadro de diálogo <a href="Interface_ObjectProperties.html">Propiedades de objeto</a>
+<img alt="Propiedades de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" />, o bien en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino
+<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+

@@ -1,0 +1,102 @@
+<h3>Espace</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaEspace</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Space.jpg" alt="Espace"/> clic [<a href="Commands_vaSpaceStyles.html" title="Commande vaEspaceStyles">clic droit</a>]
+	</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentation</a> :</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barre d'outils Documentation de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Espace &gt;<li>À partir d'un point</li>
+			<li>À partir d'une courbe</li>
+			<li>À partir d'une surface plane</li>
+	</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaSpace.wmv" preview="../images/previews/vaSpacevideo.png" width="300px" height="300px"></div>
+
+<p>L'objet espace représente l'entité de surface qui affiche les informations (nom, surface, périmètre, etc.) d'un espace ou d'une pièce avec un motif de hachure et une étiquette.</p>
+<p>Une pièce est définie comme tout espace fermé et limité par des murs ou des poteaux sur les quatre côtés. Les murs et les poteaux peuvent être à différentes élévations, tant qu'ils appartiennent au même étage.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Vous disposez de trois options pour créer un espace. Ces options apparaissent dans la ligne de<em> </em>commande lorsque vous lancez la commande <strong>vaEspace</strong> :</li>
+		<ul>
+			<li>Espace composé de <strong>murs et/ou poteaux </strong>(pièce) : Cliquez avec le bouton de gauche à l'intérieur de la pièce pour laquelle vous voulez calculer la surface. </li>
+			<li>Espace défini par une <strong>courbe</strong> : Cliquez sur l'option <em>ÀPartirDeCourbe<u></u></em> dans la ligne de commandes. Sélectionnez une courbe fermée et plane.</li>
+			<li>Espace défini par une <strong>surface</strong> : Cliquez sur l'option <em>ÀPartirDeSurfacePlane<u></u></em> dans la ligne de commandes. Sélectionnez une surface plane.</li>
+		</ul>
+	<li>La boîte de dialogue d'insertion d'un <strong>Nouvel espace</strong> apparaît. Entrez les informations de l'espace sélectionné :</li>
+		<ul>
+			<li><strong>Nom</strong></li>
+			<li><strong>Type de surface</strong> : Utile ou Bâtie</li>
+			<li><strong>Style</strong></li>
+		</ul>
+</ol>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Space/Space Insert.png" alt="Boîte de dialogue d'insertion d'un espace." /><br />
+	Boîte de dialogue d'insertion d'un espace</div>
+<br clear="all" />
+<p>Un motif de hachures est inséré dans la pièce pour indiquer la zone occupée, une étiquette avec le nom et les caractéristiques géométriques de l'espace est ajoutée.</p>
+<p>Vous pouvez définir autant d'espaces que vous voulez et vous pouvez annuler la commande en appuyant sur Entrée ou Échap.</p>
+
+<h4>Modifier un espace</h4>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaEspaceDéfinirContour</div>
+</div>
+<p> </p>
+
+<p>Un espace peut être modifié avec la commande <strong>vaEspaceDéfinirContour</strong> de trois différentes façons :</p> 
+<ol>
+	<li>Sélectionnez l'<strong>espace</strong> que vous voulez modifier.</li>
+	<li>Sélectionnez un <strong>nouveau point</strong> (à l'intérieur d'une pièce) pour insérer l'espace ou sélectionnez une des options de la commande affichées dans la ligne de commandes : 
+	<strong>ÀPartirDeCourbe</strong><u><strong></strong></u><strong></strong> ou 
+	<strong>ÀPartirSurfacePlane</strong><u><strong></strong></u><strong></strong>.</li>
+</ol>
+<p class="style2">L'espace est modifié tout en conservant ses propriétés. </p>
+<p><strong>REMARQUE : </strong>Les espaces constitués de murs et/ou de poteaux peuvent être déplacés <em>manuellement</em> avec le curseur dans d'autres pièces. Ils peuvent également être <em>actualisés</em> lorsque des modifications sont réalisées sur les murs et les poteaux originaux en utilisant la commande <a href="Commands_vaUpdate.html" title="vaActualiser">vaActualiser</a>
+<img alt="vaActualiser" height="26" src="../images/VA_Update.jpg" width="26" />.</p>
+
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+<img src="../images/assistants/Space/Space Control Points.png" alt="Points de contrôle des espaces" width="250" height="170"  style="float: right;"/>
+<p>Les espaces ont deux points de contrôle :<br />
+<ol>
+	<li>Le point d'insertion du <strong>motif de hachures</strong> qui marque l'espace.</li>
+	<li>Le point d'insertion de l'<strong>étiquette</strong><em>.</em></li>
+</ol>
+</p>
+<p><strong>REMARQUE :  </strong> Tous les points de contrôle d'un espace servent à le déplacer (ils ne modifient pas la taille).</p>
+<p>Pour déplacer un espace dans une nouvelle pièce, sélectionnez l'espace (motif de hachure et étiquette) et faites-le glisser vers la nouvelle pièce.</p>
+<p>Pour déplacer l'étiquette de l'espace, activez les points de contrôle de l'espace et déplacez le point de contrôle de l'étiquette où vous voulez.</p>
+
+<h4>Options et paramètres d'insertion</h4>
+
+<p> La boîte de dialogue d'insertion d'un espace permet de définir le 
+<strong>Nom</strong>, le <strong>Type de surface</strong> et le <strong>Style</strong>.</p>
+<p> Les paramètres qui définissent les caractéristiques d'un espace correspondent au <strong>style de l'espace</strong>, même s'ils peuvent être modifiés quel que soit le style dans la boîte de dialogue des <a href="Interface_ObjectProperties.html">propriétés objet</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> du panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+
+<h5>Nom</h5>
+
+
+
+<p>Le nom d'un espace est utilisé pour le distinguer des autres et pour indiquer sa fonction.</p>
+<p>Pour modifier le nom d'un espace, ouvrez la boîte de dialogue des propriétés objet de l'espace et cliquez sur le nom de ce dernier.</p>
+
+<h5>Type de surface</h5>
+
+<p>Il existe deux types de surface d'espace :</p>
+<ul>
+	<li><strong>Utile :</strong> surface occupée par une pièce (ou un bâtiment), en excluant l'épaisseur des murs.</li>
+	<li><strong>Bâtie :</strong> Surface comprise entre les limites extérieures de la construction.</li>
+</ul>
+<p>Pour modifier le type de surface d'un espace, supprimez l'espace et créez un nouvel espace, en sélectionnant la surface désirée.</p>
+
+<h5>Hauteur</h5>
+<p>L'espace dispose d'une valeur de hauteur qui détermine le volume de la pièce. Cette valeur peut être modifiée dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

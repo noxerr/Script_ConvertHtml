@@ -1,0 +1,139 @@
+<h3>Stili di apertura</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaAperturaStili</div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Apertura &gt; Stili di apertura...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menu di scelta rapida</a>: </div>
+	<div class="value context">Apertura &gt; Proprietà degli stili</div>
+	
+	<div class="field">Scorciatoia: </div>
+	<div class="value menu">Selezionare un oggetto apertura &gt; (<em>Alt, Maiusc</em> o <em>Ctrl</em>) + doppio clic</div>
+
+	
+</div>
+
+<p>Lo stile di un'apertura definisce le caratteristiche dell'apertura. Per ciascuno stile di apertura, si possono definire i seguenti parametri: <strong>Nome</strong>, <strong>Attributi</strong>, <strong>Forma</strong> (geometria) e <strong>Blocchi personalizzati</strong>.</p>
+
+<p>Gli stili di apertura vengono definiti da un componente <strong>Telaio</strong> che può essere aggiunto od eliminato in qualsiasi momento.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening/Opening Components.jpg" alt="Componenti delle aperture" width="300" height="300" /><br />
+Parti e componenti di un'apertura:
+<ol>
+<li><strong>1: Profilo dell'apertura</strong></li>
+<li><strong>2: <img alt="Telaio dell'apertura" height="16" src="../images/Frame-16.png" width="16" /> Telaio dell'apertura</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+<p>Per creare uno stile di apertura, premere il pulsante <strong>Nuovo stile</strong> nella finestra di dialogo <a href="Interface_StyleProperties.html">Gestore degli stili</a>. Usare la procedura guidata visualizzata per inserire i seguenti parametri dell'apertura.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/opening/opening New Style.png" alt="Finestra di dialogo Gestore degli stili dell'oggetto Apertura" /><br />
+Finestra di dialogo Gestore degli stili dell'oggetto Apertura
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+<div class="value">
+<div class="field">Editing generico</div>
+<div class="value">Si può usare il comando <strong>vaAperturaStili</strong> oppure, in alternativa,
+	<ul>
+		<li>Usare il comando <strong>vaStileProprietà</strong>, quindi selezionare un'apertura e premere Invio, oppure</li>
+		<li>Fare clic destro su 
+		<img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic destro)"/>, quindi selezionare un'apertura e premere Invio, oppure</li>
+		<li>Selezionare un'apertura ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Apertura &gt; Proprietà degli stili</strong>, oppure</li>
+		<li>Premere <em>Alt, Maiusc</em> o <em>Ctrl</em> e quindi fare doppio clic su un oggetto apertura.</li>
+	</ul>
+	Le modifiche applicate ad uno stile vengono applicate a <strong>tutti gli elementi</strong> aventi quello stile.
+</div>
+<div class="field">Editing specifico per oggetto</div>
+<div class="value"><ul>
+		<li>Usare il comando <strong>vaProprietà</strong>, quindi selezionare un'apertura e premere Invio, oppure</li>
+		<li>Fare clic su <img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic sinistro)"/>, quindi selezionare un'apertura e premere Invio, oppure</li>
+		<li>Selezionare un'apertura ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Apertura &gt; Proprietà</strong>, oppure,</li>
+		<li>Fare doppio clic su un oggetto apertura. </li>
+	</ul>
+	</div>
+	Le modifiche vengono applicate solo allo stile dell'<strong>elemento selezionato</strong>.</div>
+</div>
+
+<h4>Attributi</h4>
+<p>Gli attributi definiscono le caratteristiche di ciascuno stile di apertura e dei suoi componenti ai fini della visualizzazione e della stampa. Gli attributi validi sono:</p>
+<ul>
+<li><strong>Generali</strong>: Livello, visibilità e materiale</li>
+<li><strong>Proiezione</strong>: Colore, tipo di linea, larghezza di stampa e colore di stampa</li>
+<li><strong>Sezione</strong>: Colore, tipo di linea, larghezza di stampa, colore di stampa, modello, scala del modello, angolo del modello e colore del modello</li>
+</ul>
+
+<h4>Forma</h4>
+
+<p>La forma dell'apertura viene definita tramite un profilo. VisualARQ fornisce una libreria con vari profili parametrici predefiniti: Rettangolare, Circolare, Arco 90º, Gotico, ecc.<br />
+</p>
+
+<p>Per definire le aperture, si possono usare anche profili dalle forme personalizzate.</p>
+
+<p>Per inserire un profilo personalizzato, disegnare prima una curva chiusa e piana, quindi trasformarla in profilo usando il comando <a href="Commands_vaProfileFromCurve.html"><em>vaProfiloDaCurva</em></a> 
+<img alt="Profilo da curva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br/>
+Una volta creato, il profilo personalizzato appare in fondo all'elenco della libreria di profili parametrici predefiniti.</p>
+
+<p>Il profilo risultante non è parametrico, per cui esso potrà essere usato solo con le misure e proporzioni con cui si è disegnato in origine.</p>
+
+<h4>Dimensioni</h4>
+<p>I parametri che corrispondono alle dimensioni di un'apertura variano a seconda del tipo di profilo selezionato.<br />
+Si possono specificare varie dimensioni per lo stesso stile di apertura.</p>
+<p>Le dimensioni si possono specificare nel momento in cui si inserisce l'apertura, scegliendo l'opzione 
+<strong>Dimensioni &gt; Altro</strong> della sezione <strong>Profilo</strong> della finestra di inserimento.</p>
+
+<h3>Componenti delle aperture</h3>
+<h4>Telaio <img alt="Telaio della porta" height="16" src="../images/Frame-16.png" width="16" /></h4>
+<p>Gli stili di apertura possono presentare o meno un telaio.<br />
+Per aggiungere un telaio ad un'apertura, nell'elenco degli stili di apertura, fare clic con il tasto destro sul nome dello stile di 
+<strong>apertura </strong>e quindi selezionare <strong>Nuovo &gt; Telaio apertura</strong>.<br /> 
+Per eliminare il telaio dall'apertura, nell'elenco degli stili di apertura, fare clic con il tasto destro sul nome del 
+<strong>telaio dell'apertura</strong> e quindi selezionare <strong>Cancella</strong>. </p>
+<p>I valori modificabili del telaio sono <strong>Larghezza</strong> e <strong>Profondità</strong>. È inoltre possibile attivare l'opzione 
+<strong>Regola profondità secondo spessore muro</strong>.</p>
+
+
+<h3>Apertura da blocchi personalizzati</h3>
+
+<p>Gli stili di apertura si possono creare a partire da blocchi 2D e 3D che ne definiscono la rappresentazione nelle viste in pianta e modello, rispettivamente.<br />
+Per creare uno stile di apertura personalizzato, assegnare un <strong>profilo</strong> (che definisca la forma dell'apertura nel muro), un 
+<strong>blocco 2D</strong> (che definisca la rappresentazione in pianta) ed un <strong>blocco 3D</strong> (che definisca la rappresentazione nel modello).</p>
+
+<p><strong>Passi:</strong></p>
+<ul>
+<li><strong>Creare un profilo personalizzato:</strong> Disegnare una curva chiusa e piana e trasformarla in un profilo usando il comando <a href="Commands_vaProfileFromCurve.html"><em>vaProfiloDaCurva</em></a> 
+<img alt="vaProfiloDaCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Una volta creato, il profilo personalizzato appare in fondo all'elenco della libreria di profili parametrici predefiniti.<br />
+Il profilo risultante non è parametrico, per cui esso potrà essere usato solo con le misure e proporzioni con cui si è disegnato in origine.
+</li>
+<li><strong>Creare i blocchi 2D e 3D:</strong> Creare il modello 3D e quindi tracciare la rappresentazione 2D a partire da esso. Quindi, creare due blocchi con il comando <strong>Blocco</strong> (menu <strong>Modifica
+</strong> <strong>&gt; Blocco &gt; Crea definizione blocco</strong>).</li>
+<li><strong>Creare il nuovo stile di apertura:</strong> Una volta creato il profilo ed i blocchi 2D/3D, premere il pulsante 
+<strong>Nuovo stile...</strong> nella finestra di dialogo del gestore degli stili. Usare la procedura guidata per assegnare un profilo personalizzato allo stile. <p>Ignorare le finestre in cui si definiscono i parametri di stile dell'apertura premendo il pulsante 
+<strong>Avanti &gt;</strong>, fino ad arrivare alla finestra di dialogo di definizione dei blocchi personalizzati.<br />
+Nella finestra dei 
+<strong>blocchi personalizzati</strong>, spuntare le caselle di selezione che attivano le opzioni per l'uso di blocchi personalizzati nelle viste modello e in pianta. Una volta spuntate le caselle, selezionare i blocchi 3D e 2D dal menu a discesa per definire la rappresentazione dello stile di apertura in tali viste.</p>
+</li>
+</ul>
+
+<p>Prima di creare i blocchi (2D/3D), assicurarsi che gli oggetti che si desidera trasformare in aperture di VisualARQ siano allineati agli assi universali X, Y e Z (WCS).<br />
+Una volta allineati gli oggetti al sistema globale, nel momento in cui si va a creare il blocco, selezionare il <strong>punto inferiore centrale</strong> della geometria come punto di inserimento.<br />
+Ciò garantirà che l'orientamento dell'apertura sia corretto.</p>
+
+<br clear="all" />
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/opening/Opening blocks.png" alt="Procedura guidata per la creazione di un'apertura: definizione blocchi" width="400" height="247" /><br />
+	Procedura guidata per la creazione di un'apertura: definizione blocchi
+</div>
+
+<p>Quando si usano blocchi 3D e 2D per definire la rappresentazione di uno stile personalizzato, i parametri Dimensioni e Telaio non influiscono sull'aspetto dello stile creato. Gli stili personalizzati NON sono parametrici: il loro aspetto (dimensioni, proporzione, livello di dettaglio) dipende dai blocchi usati per definirli.</p>
+
+<p>VisualARQ consente anche la creazione di stili di apertura <em>ibridi</em>, sostituendo solo la rappresentazione in pianta (tramite un blocco 2D) ed usando la vista modello di uno stile standard parametrico o viceversa.<br />
+La rappresentazione che non usa un blocco va definita tramite i parametri di stile (Dimensioni e Telaio), come con qualsiasi stile di apertura standard.</p>
+
+
+

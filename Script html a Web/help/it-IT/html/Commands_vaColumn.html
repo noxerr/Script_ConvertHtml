@@ -1,0 +1,97 @@
+<h3>Colonna</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaColonna</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Column.jpg" alt="Colonna"/> clic sinistro [<a href="Commands_vaColumnStyles.html" title="Stili di colonna">clic destro</a>]
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html">Oggetti</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Colonna &gt; Colonna</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaColumn.wmv" preview="../images/previews/vaColumnvideo.png" width="300px" height="300px"></div>
+
+<p>Le colonne si possono inserire all'interno o all'esterno di un muro.<br />
+Quando si inseriscono all'interno di un muro, il contorno della colonna ritaglia automaticamente la linea del muro che lo attraversa, per definire l'intersezione tra entrambi gli elementi (sia nella vista in pianta che nella vista prospettica).</p>
+
+<p>Quando si esegue il comando <strong>vaColonna</strong>, appare la 
+<a href="Interface_Dialog.html">finestra di dialogo di inserimento</a> delle colonne. Questa finestra mostra l'elenco di tutti gli stili di colonne disponibili, così come le opzioni di base dell'oggetto colonna ed un'anteprima dello stesso.</p>
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Selezionare lo <strong>stile di colonna</strong> desiderato e definire le opzioni di inserimento di base.</li>
+	<li>Specificare il <strong>punto di inserimento</strong> <strong>della colonna</strong> con un clic sul punto desiderato.</li>
+	<li>Specificare l'<strong>orientamento</strong> <strong>della colonna</strong> manualmente, usando il cursore. Una volta sistemata la colonna nel punto desiderato, fare di nuovo clic.</li>
+</ol>
+
+<p>Si può proseguire con l'inserimento delle colonne fino all'annullamento del comando con INVIO o ESC.</p>
+
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Column/col 1.png" alt="Finestra di dialogo di inserimento dell'oggetto Colonna"/><br/>
+Finestra di dialogo di inserimento delle colonne
+</div>
+<br clear="all" />
+
+<h4>Punti di controllo <img alt="Punti di controllo" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Le colonne hanno un solo punto di controllo, il quale coincide sempre con il loro punto di inserimento. Questo punto corrisponde all'allineamento scelto per la colonna quando essa viene inserita.</p>
+
+<div class="figureWithDescription block"><img src="../images/column_scheme.png" alt="Punti di controllo nelle colonne" width="50" height="50" /><br/>
+Punti di controllo nelle colonne</div>
+<br clear="all" />
+
+<h4>Opzioni e parametri di inserimento</h4>
+
+<h5>Allineamento</h5>
+
+<p>
+L'allineamento determina la posizione del punto di inserimento della colonna secondo la forma del suo profilo.</p>
+<p>Opzioni di allineamento:</p>
+<ul>
+	<li>Superiore sinistra, Superiore centro e Superiore destra</li>
+	<li>Centro sinistra, Centro e Centro destra</li>
+	<li>Inferiore sinistra, Inferiore centro e Inferiore destra</li>
+</ul>
+<p>Per modificare l'allineamento di una colonna, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> 
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Contrassegno di inserimento</h5>
+
+<p>Il contrassegno che si sistema sul punto di allineamento e che indica la faccia fissa della colonna. Il contrassegno viene visualizzato solo quando l'opzione "Contrassegno di inserimento" viene attivata. È possibile scegliere tra le seguenti forme:</p>
+<ul>
+	<li>Circolare</li>
+	<li>Triangolare</li>
+</ul>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column insertion marks.png" alt="Colonne con tipi diversi di contrassegni di inserimento" width="303" height="126" /><br />
+Colonne con tipi diversi di contrassegni di inserimento
+</div>
+<br clear="all" />
+
+<p>I contrassegni di inserimento vengono visualizzati solo nella vista in pianta.<br />
+Per modificare il contrassegno di inserimento di una colonna, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> 
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Offset</h5>
+<p>Indica la distanza (offset) tra i punti X ed Y della colonna ed il punto di inserimento.</p>
+
+<p>Per modificare l'offset di una colonna, editarne i valori nella finestra di dialogo delle <a href="Interface_ObjectProperties.html">Proprietà dell'oggetto</a> 
+<img alt="proprietà di VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> oppure nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Rollio</h5>
+<p>Questo valore determina l'angolo secondo il quale la colonna ruota attorno al suo asse, considerando come centro di rotazione la sua posizione di allineamento. </p>
+<p>Il rollio di una colonna si può editare solo nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Riflesso</h5>
+<p>Quando attivata, questa opzione cambia l'orientamento della colonna in base a quello della sua immagine speculare. </p>
+<p>Questa opzione si può editare solo nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+

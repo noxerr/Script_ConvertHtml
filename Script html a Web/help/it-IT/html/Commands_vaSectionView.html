@@ -1,0 +1,52 @@
+<h3>Vista di sezione</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaVistaSezione</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon">
+		<img alt="Vista di sezione" height="24" src="../images/VA_SectionView.png" width="24" /> clic sinistro [<a href="Commands_vaSectionViewStyles.html" title="Stili viste di sezione">clic destro</a>]</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">Documentazione</a>: </div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra degli strumenti Documentazione di VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Sezione &gt; Vista di sezione</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaSectionView.wmv" preview="../images/previews/vaSectionViewvideo.png" width="300px" height="300px"></div>
+
+<p>Quando si esegue il comando <strong>vaVistaSezione</strong>, si crea un disegno 2D che rappresenta gli oggetti 3D proiettati su un piano. La vista di sezione viene creata secondo la posizione del <strong>contrassegno della sezione</strong> nel modello. Quando si esegue il comando, appare la <strong></strong><a href="Interface_Dialog.html">
+<strong>finestra di dialogo di inserimento</strong></a> delle viste di sezione. Seguire i passi dalla linea di comando. Premere il tasto destro del mouse oppure INVIO per accettare e passare al passo successivo.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Section view insert.png" alt="Finestra di inserimento delle viste di sezione" /><br/>Finestra di inserimento delle viste di sezione</div>
+<br clear="all" />
+
+<p><strong>Passi:</strong></p>
+<ol>
+	<li>Specificare uno <strong>stile per la vista di sezione</strong> dalla finestra di dialogo di inserimento.</li>
+	<li>Selezionare il <strong>contrassegno della sezione</strong>.</li>
+	<li>Specificare un <strong>punto di inserimento</strong>. Premere il pulsante sinistro su un punto qualsiasi dello schermo per inserire il disegno della sezione.</li>
+</ol>
+<p>Il disegno della sezione rimane vincolato al contrassegno della sezione da cui è stato creato, a meno che non lo si esploda. Se il contrassegno della sezione viene eliminato, si elimina anche la vista di sezione. Se si cambia la posizione del contrassegno della sezione, il disegno della sezione si aggiorna automaticamente. Il disegno della sezione mantiene inoltre le proprietà dei livelli degli oggetti che rappresenta. </p>
+
+<h4>Parametri delle viste di sezione</h4>
+I seguenti parametri si possono definire per ciascun oggetto vista di sezione creato. Si possono editare nella sezione <a href="Interface_VisualARQProperties.html">Proprietà di VisualARQ</a> (nel pannello delle proprietà di Rhino 
+<img alt="icona delle proprietà di Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). 
+<ul>
+<li><strong>Stile</strong>: lo stile definisce gli attributi delle viste di sezione.</li>
+	<li><strong>Titolo</strong>: una vista di sezione assume come titolo predefinito il testo di riferimento del relativo contrassegno della sezione, aggiungendovi lo stesso testo seguito da " ' ". (es: Testo di riferimento della sezione = A, Titolo della vista di sezione = A-A'). Il titolo della vista di sezione si può comunque cambiare per qualsiasi altro nome.</li>
+	<li><strong>Sezione</strong>: opzione per cambiare la vista di sezione selezionando un contrassegno della sezione diverso.</li>
+	<li><strong>Auto-aggiornamento</strong>: opzione che consente l'aggiornamento automatico della vista di sezione quando il corrispondente oggetto contrassegno viene spostato o modificato.</li>
+	<li><strong>Fattore di tolleranza</strong>: questo valore determina il livello di dettaglio con cui viene generata la vista di sezione. Quanto maggiore è questo valore, tanto meno dettagliata è la vista di sezione.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Section/Dynamic Section drawing.png" alt="Vista in sezione dinamica, contrassegno della sezione e vista di sezione" width="600" height="345" /><br/>Vista in sezione dinamica, contrassegno della sezione e vista di sezione</div>
+<br clear="all" />
+<p><strong>Nota 1:</strong> La vista di sezione non mostra le facce nascoste.</p>
+<p><strong>Nota 2: </strong>La vista di sezione ed il relativo contrassegno si creano nel livello attivo nel momento in cui si esegue il comando. L'eliminazione di uno dei due elementi fa che si elimini automaticamente anche l'altro.</p>
+<p><strong>Nota 3:</strong> Nella vista di sezione, verranno mostrati solo gli oggetti che ricadono nell'area della sezione delimitata dai punti di inserimento e dai punti della lunghezza della sezione.</p>
+
+
+

@@ -1,0 +1,112 @@
+<h3>Stili di colonna</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaColonnaStili</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Column.jpg" alt="Colonna"/> clic destro [<a href="Commands_vaColumn.html" title="Colonna">clic sinistro</a>]
+	</div>
+	
+	<div class="field">Barra degli strumenti <a href="Interface_Toolbars.html">Oggetti</a>:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra strumenti Oggetti di VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Colonna &gt; Stili di colonna...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menu di scelta rapida</a>: </div>
+	<div class="value context">Colonna &gt; Proprietà degli stili</div>
+	
+	<div class="field">Scorciatoia: </div>
+	<div class="value menu">Selezionare un oggetto colonna &gt; (<em>Alt, Maiusc</em> o <em>Ctrl</em>) + doppio clic</div>
+
+	
+</div>
+
+<p>Lo stile di una colonna definisce le caratteristiche della colonna. Per ciascuno stile di colonna, si possono definire i seguenti parametri: <strong>Nome</strong>, <strong>Attributi</strong>, <strong>Forma</strong> (geometria) e <strong>Dimensioni</strong>.</p>
+
+<p>Gli stili di colonna vengono definiti da un componente <strong>Rivestimento</strong> che può essere aggiunto od eliminato in qualsiasi momento.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column Components.jpg" alt="Componenti delle colonne" width="300" height="300" /><br />
+Colonna con rivestimento:
+<ol>
+<li><strong>Colonna</strong></li>
+<li><strong><img alt="Rivestimento della colonna" height="16" src="../images/Column Coating-16.jpg" width="16" /> Rivestimento</strong></li>
+</ol>
+
+</div>
+<br clear="all" />
+
+
+<p>Per creare uno stile di colonna, premere il pulsante <strong>Nuovo stile</strong> nella finestra di dialogo <a href="Interface_StyleProperties.html">Gestore degli stili</a>. Usare la procedura guidata visualizzata per inserire i seguenti parametri della colonna.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/ColumnNewStyle.png" alt="Finestra di dialogo Gestore degli stili dell'oggetto Colonna" /><br />
+Finestra di dialogo Gestore degli stili dell'oggetto Colonna
+</div>
+<br clear="all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Editing generico</div>
+<div class="value">Si può usare il comando <strong>vaColonnaStili</strong> oppure, in alternativa,
+	<ul>
+		<li>Usare il comando <strong>vaStileProprietà</strong>, quindi selezionare una colonna e premere Invio, oppure</li>
+		<li>Fare clic destro su
+		<img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic destro)"/>, quindi selezionare una colonna e premere Invio, oppure</li>
+		<li>Selezionare una colonna ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Colonna &gt; Proprietà degli stili</strong>, oppure</li>
+		<li>Premere <em>Alt, Maiusc</em> o <em>Ctrl</em> e quindi fare doppio clic su un oggetto colonna.</li>
+	</ul>
+	Le modifiche applicate ad uno stile vengono applicate a <strong>tutti gli elementi</strong> aventi quello stile.
+</div>
+<div class="field">Editing specifico per oggetto</div>
+<div class="value"><ul>
+		<li>Usare il comando <strong>vaProprietà</strong>, quindi selezionare una colonna e premere Invio, oppure</li>
+		<li>Fare clic su<img src="images/VA_Properties.jpg" alt="vaStileProprietà (clic sinistro)"/>, quindi selezionare una colonna e premere Invio, oppure</li>
+		<li>Selezionare una colonna ed aprire il menu di scelta rapida con un clic destro prolungato, quindi selezionare <strong>Colonna &gt; Proprietà</strong>, oppure,</li>
+		<li>Fare doppio clic su un oggetto colonna. </li>
+	</ul>
+		</div>
+	Le modifiche vengono applicate solo allo stile dell'<strong>elemento selezionato</strong>.</div>
+</div>
+
+<h4>Attributi</h4>
+<p>Gli attributi definiscono le caratteristiche di ciascuno stile di colonna e dei suoi componenti ai fini della visualizzazione e della stampa. Gli attributi validi sono:</p>
+
+<ul>
+<li><strong>Generali</strong>: Livello, visibilità e materiale</li>
+<li><strong>Proiezione</strong>: Colore, tipo di linea, larghezza di stampa e colore di stampa</li>
+<li><strong>Sezione</strong>: Colore, tipo di linea, larghezza di stampa, colore di stampa, modello, scala del modello, angolo del modello e colore del modello</li>
+</ul>
+
+<h4>Forma</h4>
+
+<p>La forma della colonna viene definita tramite un profilo.<br />
+VisualARQ fornisce una libreria con i principali profili standard <em>europei</em> ed <em>americani</em>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Column/Column custom profile.jpg" alt="Procedura guidata per la creazione di una colonna: selezione del profilo" /><br />
+Procedura guidata per la creazione di una colonna: selezione del profilo
+</div>
+<br clear="all" />
+
+<p>Per definire le colonne, si possono usare anche profili dalle forme personalizzate.</p>
+
+<p>Per inserire un profilo personalizzato, disegnare prima una curva chiusa e piana, quindi trasformarla in profilo usando il comando <a href="Commands_vaProfileFromCurve.html"><em>vaProfiloDaCurva</em></a> 
+<img alt="vaProfiloDaCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br />
+Una volta creato, il profilo personalizzato appare in fondo all'elenco della libreria di profili parametrici predefiniti.</p>
+
+<p>Il profilo risultante non è parametrico, per cui esso potrà essere usato solo con le misure e proporzioni con cui si è disegnato in origine.</p>
+
+<h4>Dimensioni</h4>
+
+<p>I parametri che corrispondono alle dimensioni di una colonna variano a seconda del tipo di profilo selezionato. Si possono specificare varie dimensioni per lo stesso stile di colonna.</p>
+
+<p>Le dimensioni si possono specificare nel momento in cui si inserisce la colonna, scegliendo l'opzione 
+<strong>Dimensioni &gt; Altro</strong> della sezione <strong>Profilo</strong> della finestra di inserimento.</p>
+
+<h3>Componenti delle colonne</h3>
+<h4>Rivestimento <img alt="Rivestimento della colonna" height="16" src="../images/Column Coating-16.jpg" width="16" /> </h4>
+
+<p>Le colonne possono avere o meno un rivestimento.<br />
+L'unica proprietà del rivestimento è il suo spessore.</p>
+<p>Per aggiungere un rivestimento ad una colonna priva di rivestimento, selezionare lo stile di colonna sulla parte sinistra della finestra di dialogo, cliccare con il tasto destro per aprire il menu di scelta rapida, e quindi selezionare 
+<strong>Nuovo &gt; Rivestimento</strong>.</p>
+<br clear="all" />

@@ -1,0 +1,201 @@
+<h3>Ebenen bearbeiten</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaEbenen</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_FloorManager.jpg" alt="Ebenenmanager"/> Linksklick
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html#VisualARQToolsToolbar">Werkzeuge</a>:</div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="VisualARQ-Werkzeugleiste" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Ebenen &gt; Ebenen bearbeiten</div>
+</div>
+	
+<p>Der Befehl <strong>vaEbenen</strong> öffnet einen andockbaren <strong>Ebenenmanager
+</strong>, in dem Sie neue Gebäude und Ebenen anlegen, löschen und bearbeiten können.</p> 
+<p> Im Dialogfenster des <strong>Ebenenmanagers</strong> können Sie für jede Ebene die Werte für 
+<strong>KEbene</strong> (Konstruktionsebene), <strong>Sichtbarkeit</strong>, <strong>Höhe vom Boden</strong> und <strong>Schnittebene
+</strong> eingeben.</p>
+<p>Der <strong>Ebenenmanager</strong> ist in zwei Teile unterteilt:
+<ul>
+	<li>Eine Werkzeugleiste mit den folgenden Optionen: <strong>Neues Gebäude, Neue Ebene, Löschen</strong> und <strong>Schnittebene anzeigen</strong>.</li>
+	<li>Die Liste der Gebäude und Ebenen sowie ihre Eigenschaften: <strong>KEbene
+	</strong>(Konstruktionsebene), Sichtbarkeit <strong>Ein/Aus</strong>, Sichtbarkeit <strong>Planansicht</strong>, <strong>Höhe vom Boden</strong>, <strong>Höhe der Schnittebene</strong>, <strong>Versatz oben</strong> und <strong>Versatz unten</strong>.</li>
+
+</ul>
+</p>	
+
+<p class="figureWithDescription"><img src="../images/Level Manager.png" alt="Dialogfenster Ebenenmanager"/><br/>
+Dialogfenster Ebenenmanager.</p>
+<br/>
+<p class="figureWithDescription"><img src="../images/Levels.png" alt="Bestandteile und Parameter von Ebene 1"/><br/>
+Parameter für Ebene "1":
+<ul>
+<li><strong>L0</strong>: Höhe vom Boden der Ebene "0" und Position der KEbene von Ebene 0.</li>
+<li><strong>L1</strong>: Höhe vom Boden der Ebene "1" und Position der KEbene von Ebene 1.</li>
+<li><strong>L2</strong>: Höhe vom Boden der Ebene "2" und Position der KEbene von Ebene 2 (und obere Beschränkung der Ebene 1).</li>
+<li><strong>C.P</strong>: Höhe der Schnittebene von Ebene 1</li>
+<li><strong>T.O</strong>.: Oberer Versatzabstand von Ebene 1</li>
+<li><strong>B.O</strong>.: Unterer Versatzabstand von Ebene 1</li>
+
+</ul></p>
+
+<h5>Neues Gebäude</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Building.jpg" alt="Neues Gebäude"/></td>
+	<td>Zur Erzeugung eines neuen Gebäudes, dem Sie Ebenen hinzufügen können. Jedes Gebäude hat seine eigene Höhe und die Höhe vom Boden der enthaltenen Ebenen ist relativ zum Gebäude.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Neue Ebene</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Level.jpg" alt="Neue Ebene"/></td>
+	<td>Zum Hinzufügen einer neuen Ebene zu einem gewählten Gebäude. Die neue Ebene wird automatisch über der obersten der vorhandenen Ebenen erzeugt und hat standardmäßig dieselbe Höhe vom Boden wie die Ebene darunter. Zur Erstellung der Ebenen ist ein Gebäudeelement nötig.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Löschen</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Delete.jpg" alt="Löschen"/></td>
+	<td>Zum Löschen einer Ebene oder eines Gebäudes. Dies hat allerdings keinen Einfluss auf die Rhino- und VisualARQ-Objekte der Ebene oder des Gebäudes. Diese werden dadurch nicht gelöscht und verbleiben an derselben Position.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Schnittebene</h5>
+<p>Die <strong>Schnittebene</strong> ist eine unsichtbare <em>horizontale Schnittebene</em> auf einer bestimmten Höhe jeder 
+<em>Ebene</em>. Mit der Schnittebenen-Schaltfläche kann die <strong>Schnittebene</strong> einer gewählten Ebene im aktiven Ansichtsfenster ein-/ausgeschaltet werden. Zum De-/Aktivieren der <strong>
+Schnittebene</strong> müssen ein Gebäude und eine Ebene erzeugt worden sein.</p>
+<p>Wenn die Schnittebene einer bestimmten Ebene im aktiven Ansichtsfenster eingeschaltet ist, <em>
+wird alles oberhalb dieser Schnittebene ausgeblendet.</em></p>
+<p>Wenn die Schnittebene in der <em>Draufsicht</em> eingeschaltet ist, werden VisualARQ-Objekte wie Türen, Fenster, Treppen etc. in ihrer 2D-Darstellung angezeigt.</p>
+<br/>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane On.jpg" alt="Schnittebene ein"/></td>
+	<td><strong>Schnittebene ein</strong>: Im Ansichtsfenster wird ein Querschnitt der Ebene gemäß der Position der Schnittebene angezeigt.</td>
+</tr>
+
+<tr>
+	<td valign="top" style="height: 28px"><img align="left" src="../images/Cut Plane Off.jpg" alt="Schnittebene aus"/></td>
+	<td style="height: 28px"><strong>Schnittebene aus</strong>: Im Ansichtsfenster wird die gesamte Ebene entsprechend dem Status ihrer Sichtbarkeit angezeigt.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Cut Plane Dis.jpg" alt="Schnittebene deaktiviert"/></td>
+	<td><strong>Schnittebene deaktiviert</strong>: Eine Ebene muss ausgewählt werden, um ihren Schnittebenenstatus aktivieren zu können.</td>
+</tr>
+
+</table>
+</div>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane On.jpg" />
+<br/>
+Ansicht der Ebenen 0 und 1 mit eingeschalteter Schnittebene auf Ebene 1.</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 Cut Plane Off.jpg" />
+<br/>
+Ansicht der Ebenen 0 und 1 mit ausgeschalteter Schnittebene auf Ebene 1. (Ebene 2 ist ausgeblendet)</p><br/>
+
+<p class="figureWithDescription">
+<img alt="" src="../images/Level 1 only.jpg" />
+<br/>
+Ansicht der Ebene 1 mit ausgeschalteter Schnittebene. (Ebenen 0 und 2 ausgeblendet)</p><br/>
+
+
+<h5>Konstruktionsebene</h5>
+<p>
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/CPlane.jpg" alt="Konstruktionsebene"/></td>
+	<td>Die Konstruktionsebene (KEbene) ist die Ebene, auf der Sie momentan arbeiten. Mit einem Klick auf das KEbenen-Symbol können Sie die KEbene in der Höhe vom Boden der Ebene im aktiven Ansichtsfenster einsetzen.</td>
+</tr>
+</table>
+</div>
+</p>
+
+<h5>Ein/Aus</h5>
+<p>
+Der Anzeigestatus einer Ebene (Ein/Aus) bestimmt, ob die Objekte oder Objektteile zwischen der Höhe vom Boden der aktuellen Ebene und derjenigen der oberen Ebene (unter Beachtung des Versatzes oben und unten) angezeigt oder verborgen werden.</p>
+
+<div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/On.jpg" alt="Ein"/></td>
+	<td>Die Ebene sowie die auf ihr befindlichen Objekte bzw. Objektteile sind sichtbar.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Off.jpg" alt="Aus"/></td>
+	<td>Die Ebene und die auf ihr befindlichen Objekte bzw. Objektteile sind nicht sichtbar.</td>
+</tr>
+</table>
+</div>
+<p><strong>Anmerkung</strong>: Zwischenebenen können nicht einzeln verborgen werden. Wenn eine Zwischenebene verborgen wird, werden auch die restlichen Ebenen unter ihr ausgeblendet.</p>
+
+<h5>Planansicht Ein/Aus</h5>
+<p>Die Planansicht ist eine 2D-Darstellung einer Ebene in der KEbene (Konstruktionsebene) des aktiven Ansichtsfensters. Die 2D-Darstellung kann nicht bearbeitet werden und zeigt nur die Schnittobjekte der gewählten Ebene entsprechend der Position der jeweiligen Schnittebene an.</p>
+<p><div class="value icon" >
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View on.jpg" alt="Planansicht an"/></td>
+	<td>Die 2D-Darstellung der gewählten Ebene ist in der KEbene des aktiven Ansichtsfensters sichtbar.</td>
+</tr>
+<tr>
+	<td valign="top"><img align="left" src="../images/Plan View off.jpg" alt="Planansicht aus"/></td>
+	<td>Die 2D-Darstellung der gewählten Ebene ist in der KEbene des aktiven Ansichtsfensters sichtbar.</td>
+</tr>
+</table>
+</div>
+</p>
+
+
+
+<h5>Aktuelles Geschoss definieren</h5>
+<p>Um eine bestimmte Ebene als aktuelles Geschoss im aktiven Ansichtsfenster einzustellen, 
+<strong>klicken Sie doppelt auf den Ebenennamen</strong>. Mit dieser Operation wird die KEbene automatisch auf die gewählte Ebene gesetzt und diese gegebenenfalls eingeschaltet.</p>
+
+<h5>Höhe vom Boden</h5>
+<p>Der Höhenwert gibt die Basishöhe des Gebäudes oder der Ebene und die Position einer Konstruktionsebene bezüglich jedes Gebäudes oder Ebene an. Er gibt an, welcher Teil des Modells zu jeder Ebene gehört. Die <em>Höhe vom Boden einer Ebene</em> ist relativ zur Höhe vom Boden des Gebäudes. Die <em>Höhe vom Boden des Gebäudes</em> wird bezüglich der Z-Achse des Dokuments gemessen.</p>
+
+<p class="figureWithDescription">
+<img alt="Höhenmarkierungen" src="../images/Left View 400.jpg" /><br/>
+Die Höhenmarkierung der aktuellen Ebene ist farblich hervorgehoben.</p>
+
+<h5>Höhe der Schnittebene</h5>
+<p>Die Schnittebene bestimmt die Höhe des <em>horizontalen Schnitts</em> jedes Geschosses, d.h. nur die Objekte auf dieser Höhe oder gerade darunter werden in die Darstellung miteinbezogen.</p>
+
+
+
+<p><strong>HINWEIS: </strong> Wenn in einem Ansichtsfenster eine VisualARQ-Planansicht angezeigt wird, wechselt der Anzeigemodus in den "versteckten" Modus und zeigt dafür darüber eine <strong>Draufsicht</strong><em> </em>an. So lange die Planansicht aktiviert ist, zeigt das Ansichtsfenster den gewählten Anzeigemodus an, selbst wenn Sie die Ebenensicht ändern.</p>
+
+<h5>Versatz oben</h5>
+<p>Der obere Versatz bestimmt, um wie viel die obere Begrenzung einer Ebene beim Ein- und Ausblenden von Ebenen erhöht bzw. vermindert wird. Dies ist besonders dann nützlich, wenn Sie den oberen Teil eines Gebäudes verbergen möchten und dabei die Decke der letzten angezeigten Ebene ebenfalls ausblenden möchten. Der Wert ist für die oberste Ebene eines Gebäudes irrelevant und betrifft nur Ansichtsfenster, in denen die Schnittebene ausgeschaltet ist.</p>
+<h5>Versatz unten</h5>
+
+<p>Der untere Versatz bestimmt, um wie viel die untere Begrenzung einer Ebene beim Ein- und Ausblenden von Ebenen erhöht bzw. vermindert wird. Dies ist besonders dann nützlich, wenn Sie den unteren Teil eines Gebäudes verbergen möchten und dabei den Boden der letzten angezeigten Ebene ebenfalls ausblenden möchten. Der Wert ist für die unterste Ebene eines Gebäudes irrelevant und betrifft nur Ansichtsfenster, in denen die Schnittebene ausgeschaltet ist.</p>
+
+
+
+	

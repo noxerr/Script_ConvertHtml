@@ -1,0 +1,118 @@
+<h3>Beam Styles</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaBeamStyles</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Beam.jpg" alt="Beam"/> right click
+	[<a href="Commands_vaBeam.html" title="Beam command">left click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Objects </a>Toolbar: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Beam &gt; Beam Styles...</div>
+	
+	<div class="field"><a href="Interface_Context.html">Context Menu</a>: </div>
+	<div class="value context">Beam &gt; Styles Properties</div>
+	
+	<div class="field">Shortcut: </div>
+	<div class="value menu">Select a beam object &gt; (<em>Alt, Shift</em> or <em>Ctrl</em>) 
+		+ 
+		double click</div>
+
+	
+</div>
+
+<p>The beam style defines the Beam features. You can define the following 
+parameters for each Beam style: <strong>Name</strong>, <strong>Attributes</strong>, <strong>Shape</strong> (geometry) and <strong>Size</strong>.</p>
+
+<h4>New beam style:</h4>
+<p>You can create new styles and duplicate existing styles from the beam <a href="Interface_StyleProperties.html#NewStyle">Style Manager</a> dialog box.</p>
+
+<h4><strong>Delete a beam style</strong>:</h4>
+<p>You can delete beam styles from the beam <a href="Interface_StyleProperties.html#Delete">Style Manager</a> dialog box. You can only delete those styles that are not being used by any existing beam in the model.</p>
+
+<h4>Edit a beam style:</h4>
+<p>Select the beam style at the top left panel, and edit their different parameters from the tabs that appear in the right panel.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Beam/BeamNewStyle.png" alt="Style Manager dialog box for the Beam object." /><br/>
+Style Manager dialog box for the beam object
+</div>
+<br clear= "all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">General style editing</div>
+<div class="value">You can use the <strong>vaBeamStyles</strong> command or, alternatively,
+	<ul>
+		<li>Use the <strong>vaStyleProperties</strong> command, then select a 
+		beam and press Enter, or</li>
+		<li>Right click on
+		<img src="images/VA_Properties.jpg" alt="vaStyleProperties (right click)"/>, 
+		then select a beam and press Enter, or</li>
+		<li>Select a beam and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Beam &gt; Style Properties</strong>, or</li>
+		<li>Press <em>Alt, Shift</em> or <em>Ctrl </em>then 
+		double click on a beam object.</li>
+	</ul>
+	The changes applied to a style are applied to <strong>all elements</strong> with that style.
+</div>
+<div class="field">Object-specific editing</div>
+<div class="value"><ul>
+		<li>Use the <strong>vaProperties</strong> command, then select a beam 
+		and press Enter, or</li>
+		<li>Click on <img src="images/VA_Properties.jpg" alt="vaStyleProperties (left click)"/>, 
+		then select a beam and press Enter, or</li>
+		<li>Select a beam and open the context menu by pressing the right mouse button 
+		for a while then select <strong>Beam &gt; Properties</strong>, or,</li>
+		<li>Double click on a beam object. </li>
+	</ul>
+		</div>
+	The changes are applied only to the style of the <strong>selected element</strong>.</div>
+</div>
+
+<h4>Attributes</h4>
+<p>Attributes define the features of each beam style for display and print purposes. The valid attributes are:</p>
+
+<ul>
+<li><strong>General</strong>: Layer, Visibility and Material</li>
+<li><strong>Projection</strong>: Color, Linetype, Line print width and Line print color</li>
+<li><strong>Section</strong>: Color, Linetype, Line print width, Line print color, Pattern, Pattern scale, Pattern angle and Pattern color</li>
+</ul>
+
+
+<h5>Plan view representation</h5>
+
+<p>Beams are represented in the plan view with a curve that has a DashDot line 
+type by default. <span>This curve follows the same alignment as the beam it 
+representents</span>. Edit this line type from the attributes tab for each beam style.</p>
+
+<h4>Shape</h4>
+
+<p>The Beam shape is defined by a profile.<br/>
+VisualARQ offers a library with the main standard <em>European</em> and <em>North American</em> profiles.</p>
+
+<p>Customized shape profiles can also be used to define Beams.</p>
+
+<p>To add a customized profile, draw a closed and flat curve and convert it into 
+a profile using the <a href="Commands_vaProfileFromCurve.html"><em>vaProfileFromCurve</em></a> command
+<img alt="Profile From Curve" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26" />.<br/>
+Once the custom profile has been created, it will appear at the end of the list of preset parametric profiles library.</p>
+
+<p>The resulting profile is not parametric, so it can only be used with the dimensions and proportions of the original drawing.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Beam/BeamCustomProfile.png" alt="New Beam Style with custom profile." /><br/>
+New Beam style with a custom profile.
+</div>
+<br clear= "all" />
+
+<h4>Sizes</h4>
+
+<p>The parameters corresponding to the Beam sizes will vary in accordance with the type of profile selected.
+You can specify different sizes for the same Beam style.</p>
+
+<p>The sizes can be specified at any time when inserting the beam from the insert dialog box by choosing the 
+<strong>Sizes &gt; Other</strong> option in the <strong>Profile </strong>section of this panel.</p>
+

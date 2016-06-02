@@ -1,0 +1,207 @@
+<h3>Wall</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Keyboard</a>: </div>
+	<div class="value keyboardCommand">vaWall</div>
+	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_Wall.jpg" alt="Wall"/> left click
+	[<a href="Commands_vaWallStyles.html" title="WallStyle command">right click</a>, <a href="Interface_Toolbars.html#VisualARQWallsToolbar" title="VisualARQ Walls Toolbar">long 
+		click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Toolbar</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ Objects Toolbar" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Wall &gt; Wall</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaWall.wmv" preview="../images/previews/vaWallvideo.png" width="300px" height="300px"></div>
+
+<p>Walls are fundamental elements in VisualARQ.</p>
+
+<p>After running the <strong>vaWall</strong> command, the<strong> </strong> 
+wall<strong> </strong><a href="Interface_Dialog.html">insert dialog box</a> will appear. This dialog box shows a list of all wall styles available, as well as the basic options of the 
+wall object and its preview.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+	<li>Select the <strong>wall style</strong> you wish to use and define the basic insertion options.</li>
+	<li>Select the wall <strong>start point</strong> (insertion point) with a left-click. When you specify the start point, a dynamic dimension will display the length value of the wall being inserted in real time.</li>
+	<li>Left-click again to specify the wall <strong>end point.</strong></li>
+</ol>
+
+<p>The <strong>length</strong> and <strong>direction</strong> of the wall can be specified as follows:
+<ul>
+	<li>Entering the coordinates (relative and absolute) in the command line.</li>
+	<li>Entering the value to specify the length and/or angle in the command line.</li>
+	<li>Manually, by left-clicking the desired point.</li>
+</ul>
+</p>
+
+<p>Each new wall will be drawn next to the previous one until you press ENTER, ESC 
+or right click. 
+The command immediately prompts the start point to start drawing the next wall, but it does not link it to the previous wall by default but rather starts drawing it on the new start point selected.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/wall/wall 1.png" alt="Insert dialog box for the Wall object."/><br/>
+Wall insert dialog box
+</div><br/>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Wall Dimensions.png" alt="Dimension showing the length of a wall." /><br/>
+Dimension showing the length of a wall
+</div>
+
+<br clear="all" />
+
+<a name="Wallfromcurves" />
+<h3>Wall: From Curves</h3>
+
+<div class="comDescr">	
+	<div class="field">Icon: </div>
+	<div class="value icon"><img src="../images/VA_WallsFromCurves.jpg" alt="Wall: From Curves"/> left click
+	[<a href="Commands_vaWallSetPath.html" title="Wall: Set Path">right click</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQWallsToolbar">Walls</a> 
+		toolbar: </div>
+	<div class="value toolbar"><img src="../images/Walls.jpg" alt="VisualARQ Walls Toolbar" usemap ="#WallsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Wall &gt; From Curves</div>
+</div>
+
+<div class="comVideo" id="video2" src="vaWallFromCurve.wmv" preview="../images/previews/vaWallFromCurvevideo.png" width="300px" height="300px"></div>
+
+<p>Option to create walls from previously drawn curves, following its boundary.</p>
+
+<p>When you run the <strong>vaWall </strong>&gt;<strong> FromCurves</strong> command, the wall
+<a href="Interface_Dialog.html">insert dialog box</a> will appear. Follow the steps from the 
+command line. Press the right mouse button 
+out of the wall insert dialog box or hit ENTER to end the command.</p> 
+<p><strong>Steps:</strong></p>
+<ol>
+		<li>Select a <strong>Curve</strong> or multiple <strong>Curves</strong> 
+		that will be used to generate walls. The curves can be any type or shape 
+		of curve, as long as they are <em>flat.</em></li>
+		<li>Select the <strong>wall insertion options</strong> from the wall
+		<a href="Interface_Dialog.html">insert dialog box</a> 
+		that will define the wall created from that curve<strong>.</strong> This 
+		step can be done before or after selecting the curve or curves to 
+		generate walls.<br/>
+		</li>
+		
+</ol>
+<br />
+
+<p>The walls created with this operation behave as all other VisualARQ walls. They can be edited (by object or style) and you can insert doors and windows in them.</p>
+<p>Walls created with curves are not only parametric but you can also change their path manually. To do so, VisualARQ offers two options:<br/>
+	<ul>
+		<li>Deform the wall path using its own control points.</li>
+		<li>Deform the wall using the <a href="Commands_vaWallSetPath.html"><strong>vaWallSetPath</strong></a>.</li>
+	</ul>
+</p>
+
+<br clear="all" />
+
+<h4>Control Points <img alt="Control Points" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>The walls have three <em>control points</em> and three <em>control arrows</em>:<br />
+<ul>
+	<li>The <em>start</em> and <em>end control points</em> can be used to stretch and/or change its direction, while the <em>center control point</em> is used to 
+	bend it in the case of curved walls.</li>
+	<li>The <em>control arrows</em> that appear in the Plan view are used to stretch the wall horizontally from its ends, while the <em>control arrow</em> that appears in all other views (Perspective, Front and Right) is used to stretch the wall vertically, as required to modify its height manually.</li>
+</ul>
+</p>
+
+<div class="figureWithDescription block"><img src="../images/Wall control points.jpg" alt="Control points on walls" width="450" height="150" /><br/>
+Control points on walls</div>
+
+<br clear="all" />
+
+<ol>
+	<li>Start control point (insertion point).</li>
+	<li>Control arrow (vertical), (not editable in Top viewport).</li>
+	<li>End control point.</li>
+	<li>Control arrows (horizontal).</li>
+	<li>Wall from curve control points.</li>
+</ol>
+
+<h4>Insertion Options and Parameters</h4>
+
+
+<h5>Height</h5>
+<p>Even though <strong>Height</strong> is a wall style property, you can assign a value that is different to the default height value in the insert dialog box. Simply clear the 
+<strong>Height by style</strong> checkbox and choose the desired value, using the numerical height control.</p>
+
+<p>To modify a wall height, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Alignment</h5>
+<p>There are three options to align the wall, depending on
+its position based on the direction of its base curve:</p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Alignment options"/></td>
+				<td><strong>Center</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Alignment options"/></td>
+				<td><strong>Right</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Alignment options"/></td>
+				<td><strong>Left</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Alignment offset</h5>
+<p>Inserts the wall at a specific distance from the direction of its base curve.</p>
+<p>To modify a wall alignment or the alignment offset, edit its value in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box 
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> section (in Rhino Properties 
+Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Wall intersections:</h5>
+
+<p>The Intersections between walls (and their layers) are resolved automatically. A wall is extended to a nearby wall by default when it is within its cleanup radius.</p>
+<ul>
+	<li>
+	<img alt="Cleanup radius" height="32" src="../images/Cleanup%20radius.png" width="32" /> The<strong> cleanup radius</strong> 
+	specifies the maximum distance at which a wall baseline can be from another 
+	wall baseline when joining the two walls. </li>
+	<li>
+	<img alt="Maximum extension" height="32" src="../images/Maximum%20extension.png" width="32" /> The <strong>maximum extension</strong> specifies the 
+	maximum distance by which one wall extends from its ends points to the point where it intersects with another wall.</li>
+</ul>
+
+<p>To modify a <strong>wall cleanup radius</strong> and the <strong>maximum 
+extension</strong>, edit their values in the <a href="Interface_ObjectProperties.html">Object Properties</a> 
+dialog box
+<img alt="VisualARQ properties" height="26" src="../images/VA_Properties.jpg" width="26" /> or in the <a href="Interface_VisualARQProperties.html">VisualARQ Properties</a> 
+section (in Rhino Properties Panel
+<img alt="Rhino properties icon" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+
+<h3>Create and edit walls</h3>
+<p>VisualARQ has a toolbar with some options than can be used to create and edit 
+walls in different ways.</p>
+
+<div class="figureWithDescription block">
+	<div class="value toolbar"><img src="../images/Walls.jpg" alt="VisualARQ Walls Toolbar" usemap ="#WallsToolbarMap"/><br/>
+	VisualARQ Walls toolbar</div>
+	</div>
+	<br clear="all" />
+	
+
+

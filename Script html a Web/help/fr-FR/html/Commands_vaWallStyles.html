@@ -1,0 +1,195 @@
+
+<h3>Styles de mur</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaMurStyles</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_Wall.jpg" alt="Mur "/> clic [<a href="Commands_vaWall.html" title="commande vaMur">clic gauche</a>, <a href="Interface_Toolbars.html#VisualARQWallsToolbar" title="Barre d'outils Murs de VisualARQ">clic long</a>]
+	
+	</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html">Objets</a> :</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Mur &gt; Styles de mur</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menu contextuel </a>: </div>
+	<div class="value context">Mur &gt; Propriétés de style</div>
+	
+	<div class="field">Raccourci : </div>
+	<div class="value menu">Sélectionner un mur, appuyer sur <em>Alt, Maj</em> ou <em>Ctrl</em> et double cliquer</div>
+
+</div>
+
+<p>Le style de mur définit les caractéristiques du mur. Les paramètres suivants peuvent être définis pour chaque style : <strong>Nom, Attributs, Géométrie</strong> et <strong>
+Retour.</strong></p>
+
+<p>Les styles de mur sont définis par différents <strong>Composant</strong> qui peuvent être ajoutés ou supprimés à tout moment.</p>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Wall/Wall layers.png" alt="Style de mur avec 3 composants" width="300" height="300" /><br />
+Style de mur avec 3 composants :
+<ol>
+<li><strong><img alt="Composant de mur" height="16" src="../images/Wall Layer-16.png" width="16" /> Composant de mur A</strong></li>
+<li><strong><img alt="Composant de mur" height="16" src="../images/Wall Layer-16.png" width="16" /> Composant de mur B</strong></li>
+<li><strong><img alt="Composant de mur" height="16" src="../images/Wall Layer-16.png" width="16" /> Composant de mur C</strong></li>
+</ol>
+</div>
+<br clear="all" />
+
+<h4>Nouveau style de mur :</h4>
+<p>Vous disposez de deux techniques pour créer un nouveau style de mur :</p>
+<ul><li><strong>À partir de l'assistant de création de style :</strong> cliquez sur le bouton <strong>Nouveau style
+	</strong> dans le <a href="Interface_StyleProperties.html">Gestionnaire de styles</a>. Utilisez l'assistant pour entrer les paramètres suivants :<br/>
+<ol>
+<li>Nom du style</li>
+<li>Nombre de composants</li>
+<li>Nom et épaisseur de chaque composant</li>
+<li>Hauteur</li>
+</ol>
+</li>
+<li><strong>Dupliquer un style existant :</strong> sélectionnez un style dans la liste de droite et cliquez sur le bouton <strong>Dupliquer</strong><em> </em>.</li>
+</ul>
+<div class="figureWithDescription block"><img src="../images/assistants/Wall/WallNewStyle.png" alt="Gestionnaire de styles pour les murs" /><br/>
+Gestionnaire de styles pour les murs
+</div>
+<br clear="all" />
+
+<div class="comDescr">
+	<div class="field">Modifications sur le style en général</div>
+	<div class="value">Utilisez la commande <strong>vaMurStyles</strong> ou, <ul>
+		<li>Utilisez la commande <strong>vaStylePropriétés</strong>, puis sélectionnez un mur et appuyez sur Entrée, ou</li>
+		<li>Cliquez avec le bouton de droite sur 
+		<img src="images/VA_Properties.jpg" alt="vaStylePropriétés" />, puis sélectionnez un mur et appuyez sur Entrée, ou</li>
+		<li>Sélectionnez un mur et ouvrez le menu contextuel en appuyant sur le bouton de droite pendant un instant puis sélectionnez <strong>Fenêtre &gt; Propriétés de style</strong>, ou</li>
+		<li>Appuyez sur <em>Alt, Maj</em> ou <em>Ctrl</em> puis double cliquez sur un mur.</li>
+	</ul>
+	Les modifications réalisées sur un style sont appliquées à <strong>tous les éléments</strong> de ce style.
+</div>
+<div class="field">Modification d'un objet particulier</div>
+<div class="value"><ul>
+		<li>Utilisez la commande <strong>vaPropriétés</strong>, puis sélectionnez un mur et appuyez sur Entrée, ou</li>
+		<li>Cliquez sur <img src="images/VA_Properties.jpg" alt="vaStylePropriétés"/>, puis sélectionnez un mur et appuyez sur Entrée, ou</li>
+		<li>Sélectionnez un mur et ouvrez le menu contextuel en appuyant sur le bouton de droite pendant un instant puis sélectionnez <strong>Fenêtre &gt; Propriétés</strong>, ou,</li>
+		<li>Double-cliquez sur un mur. </li>
+	</ul>
+		</div>
+	Les modifications sont appliquées au style de <strong>l'élément sélectionné</strong>.</div>
+
+<h4>Attributs</h4>
+<p>Les attributs définissent les caractéristiques de chaque style de mur pour l'affichage et l'impression. Attributs valides :</p>
+<ul>
+<li><strong>Général </strong>: Calque, Visibilité et Matériau</li>
+<li><strong>Projection </strong>: Couleur, Type de ligne, Largeur d'impression de ligne et Couleur d'impression de ligne</li>
+<li><strong>Section</strong> : Couleur, Type de ligne, Largeur d'impression de ligne, Motif, Échelle du motif, Angle du motif et Couleur du motif</li>
+</ul>
+
+
+<p><strong>Remarque</strong>: Les composants de différents murs possédant le même motif de hachures, sont fusionnés dans les intersections. Les composants non consécutifs d'un même mur, possédant le même motif de hachures, sont aussi fusionnés s'ils se rencontrent sur les retours. </p>
+
+<h3>Composants d'un mur</h3>
+
+<h4>Composants <img alt="Composant d'un mur" height="16" src="../images/Wall Layer-16.png" width="16" /></h4>
+<p>Les composant des murs sont uniquement affichés dans la vue en plan.<br />
+Vous pouvez définir les paramètres suivants pour chaque composant de mur : <strong>
+Nom, Attributs, Géométrie, Type, Fonction</strong> et <strong>Retour</strong>. Les paramètres de Type, Fonction et Retour peuvent être modifiés dans l'onglet <strong>
+Construction</strong>.</p>
+<div class="figureWithDescription block">
+	<img alt="Boîte de dialogue du style de murs, Composants" src="../images/assistants/Wall/Wall components.png" /><br/>
+Onglet Attributs pour le Composant 1 du style de mur Standard, dans la boîte de dialogue des styles de mur.</div>
+<br clear="all" />
+<p>Regardez l'exemple suivant d'un style de mur à 5 composants avec un retour extérieur au niveau des extrémités du mur :</p>
+
+<p>
+<img alt="Schéma des composants du mur" height="175" src="../images/Wall Components.png" width="400" style="float: right" /></p>
+<ol>
+	<li>Composant intérieur 1 (Stuc)</li>
+	<li>Composant 2 (Brique)</li>
+	<li>Composant 3 (vide d'air)</li>
+	<li>Composant 4 (isolation)</li>
+	<li>Composant extérieur 5 (brique)</li>
+	<li>Composant 4 (retour)</li>
+	<li>Composant 5 (retour)</li>
+</ol>
+
+<p><strong>Ajouter de nouveaux composants :</strong> Vous pouvez ajouter de nouveaux composants à un style de mur en sélectionnant le style, en cliquant avec le bouton droit pour ouvrir le menu contextuel et en sélectionnant <strong>Nouveau &gt; Composant de mur</strong><em>.</em></p>
+<p><strong>Supprimer des composants :</strong> sélectionnez le composant que vous voulez supprimer, cliquez avec le bouton droit pour ouvrir le menu contextuel et sélectionnez <strong>Supprimer</strong>. Vous pouvez aussi supprimer un style de mur ou un composant de mur avec l'icône 
+<img alt="Supprimer" height="16" src="../images/delete.jpg" width="16" /> dans la barre d'outils. Il n'est pas possible de supprimer un style de mur ou un composant utilisé par un mur existant du modèle.</p>
+<p>Chaque composant reçoit un <strong>Nom</strong> et une <strong>Épaisseur</strong> spécifiques.</p>
+
+<p>L'<strong>Épaisseur</strong> totale du mur correspond à la somme des épaisseurs de ses composants. <br />
+La <strong>hauteur</strong> du mur est définie comme une unité qui reste constante pour tous les composants.</p>
+
+<h4>Type</h4>
+<p>Il existe deux types de composants de mur qui définissent l'ordre de connexion entre eux :</p>
+<ul><li><strong>Noyau </strong>: composants de priorité 1. Les composants de <em>Noyau</em> sont des éléments de structure du mur, ils seront normalement connectés les uns aux autres.</li>
+<li><strong>Normal </strong>: composants de priorité 2. Ils sont normalement liés à d'autres composants normaux une fois que les composants de noyau sont connectés. Ils peuvent aussi être placés autour des composants de noyau, suivant leurs paramèters de retour. </li></ul>
+
+<h4>Fonction</h4>
+<p>Les composants de mur peuvent avoir 5 types de fonction. Ces fonctions ne servent que d'informations.</p>
+<ul>
+<li>Aucun</li>
+<li>Structure</li>
+<li>Isolation</li>
+<li>Finition</li>
+<li>Décoration</li>
+</ul>
+<h4>Retour</h4>
+<p>Le retour du mur est défini par la façon dont les composants du mur se terminent aux extrémités fermées d'un mur et au niveau des ouvertures. Le retour concerne uniquement les murs composés d'au moins 3 composants et il est visible dans la fenêtre <strong>Dessus</strong> lorsque le mode de vue en plan est activé.</p>
+<p>Il existe 3 types de retour pour les extrémités et pour les ouvertures :</p>
+<ol>
+		<li><strong>Aucun :</strong> Mur sans retour (au niveau des ouvertures et des extrémités fermées).</li>
+		<li><strong>Extérieur :</strong>	Les composants extérieurs du mur forment un retour au niveau des extrémités fermées et/ou des ouvertures.</li>
+		<li><strong>Extérieur :</strong>	Les composants intérieurs du mur forment un retour au niveau des extrémités fermées et/ou des ouvertures.</li>
+</ol>
+<br clear="all" />
+<div style="padding:5px;" class="figureWithDescription block"><img alt="Retour d'un mur : aucun" height="54" src="../images/Wall wrapping None.png" width="350"  /><br/>
+1. Retour d'un mur : Aucun.
+</div>
+<div style="padding:5px;" class="figureWithDescription block">
+	<img alt="Retour d'un mur : extérieur" height="53" src="../images/Wall wrapping Exterior.png" width="350" /><br/>
+	2. Retour d'un mur : Extérieur.
+</div>
+<div style="padding:5px;" class="figureWithDescription block">
+	<img alt="Retour d'un mur : Intérieur" height="54" src="../images/Wall wrapping Interior.png" width="350" /><br/>
+	3. Retour d'un mur : Intérieur.
+</div>
+<br clear="all" />
+<p><strong>Retour des composants d'un mur : </strong>Quatre options permettent de définir le retour des composants d'un mur :</p>
+<ul>
+	<li><strong>Aucun :</strong> Aucun retour n'est créé.</li>
+	<li><strong>Extrémités :</strong> le composant effectue un retour aux extrémités du mur.</li>
+	<li><strong>Ouvertures </strong>: le composant effectue un retour au point de rencontre avec une porte, une fenêtre ou une ouverture.</li>
+	<li><strong>Extrémités et ouvertures </strong>: le composant effectue un retour aux extrémités d'un mur et au point de rencontre avec une porte, une fenêtre ou une ouverture.</li>
+</ul>
+<br clear="all" />
+<p><strong>Remarque</strong>: Les composants de mur de type <strong>Noyau</strong> ne peuvent pas avoir de retour.</p>
+<h4>Joints de mur 
+<img alt="Joints de mur" height="24" src="../images/Wall Joints.png" width="24" /></h4>
+
+<p>Trois types de joints sont possibles entre les murs :</p>
+
+<ul>
+	<li>Aucun</li>
+	<li>Onglet</li>
+	<li>About</li>
+</ul>
+<div class="figureWithDescription block">
+	<img alt="Joint de mur : aucun" height="150" src="../images/Wall Joint None.png" width="250" /><br/>
+	1. Joint de mur : Aucun.
+</div>
+<div class="figureWithDescription block">
+	<img alt="Joint de mur : Onglet" height="150" src="../images/Wall Joint Miter.png" width="250" /><br/>
+	2. Joint de mur : Onglet.
+</div>
+<div class="figureWithDescription block">
+	<img alt="Joint de mur : About" height="150" src="../images/Wall Joint Butt.png" width="250" /><br/>
+	3. Joint de mur : About.
+</div>
+<br clear="all" />
+<p><strong>Édition des joints entre murs :</strong></p>
+<p>Les joints entre murs peuvent être modifiés dans les propriétés objet de VisualARQ, dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />, après avoir <strong>sélectionné tous les murs impliqués dans l'intersection</strong>. Lorsque des murs se croisent, ils appliquent un joint automatique qui dépend du style du mur. Si les murs ont le même style, le joint par défaut utilisé est <strong>Onglet</strong><em>.</em> Si les murs sont de styles différents, le joint par défaut utilisé est <strong>About</strong>.</p>
+<p>Lorsque trois murs, ou plus, forment une intersection, le joint dépend de l'ordre dans lequel les murs ont été ajoutés au niveau du point d'intersection. L'option <strong>Ordre de tri</strong><em></em> de la section <strong>Géométrie</strong><em></em> permet de changer l'ordre jusqu'à ce que vous trouviez la solution qui convient le mieux. </p>
+<p>Lorsque deux composants de mur se rejoignent, si leurs motifs de hachures sont différents, une ligne apparaît au niveau du joint. Si les deux composants ont le même motif de hachures, aucun ligne n'apparaît au niveau du joint.</p>
+

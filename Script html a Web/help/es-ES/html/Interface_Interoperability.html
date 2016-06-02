@@ -1,0 +1,58 @@
+<h3>Interoperabilidad de VisualARQ con los comandos y la interfaz de Rhino</h3>
+
+<h4>Comandos de Rhino</h4>
+
+<p>Puesto que los objetos de VisualARQ son bloques de Rhino, todos aquellos comandos de Rhino que funcionan con bloques también funcionan por defecto con los objetos de VisualARQ. Otros comandos han tenido que ser adaptados; un ejemplo de ello son aquellos comandos que duplican objetos (como Copiar, Matriz y Reflejar), así como algunos comandos de edición de Windows (como Cortar, Copiar y Pegar: CTRL+X, CTRL+C y CTRL+V, respectivamente).<br />
+Al ejecutar comandos de Rhino que no son compatibles con objetos VisualARQ, estos no permiten ser seleccionados.</p>
+
+<p>El comando <strong>Descomponer</strong> hace que los objetos de VisualARQ pierdan sus propiedades, convirtiéndolos en polisuperficies. De esta manera, pueden ser editados como se editaría cualquier polisuperficie de Rhino.</p>
+
+<p>VisualARQ cuenta con comandos especiales que permiten convertir (o reconvertir) ciertos objetos de Rhino en objetos de VisualARQ.<br />
+Estos comandos son <a href="Commands_vaWall.html#Wallfromcurves"><strong>vaMuroDesdeCurvas</strong></a> y 
+<a href="Commands_vaWallFromSolid.html"><strong>vaMuroDesdeSólido</strong></a><em>.</em> Consulte estos comandos para obtener más información. Además, también se pueden crear objetos de Baranda y Viga a partir de curvas 2D y 3D. Los objetos de Losa y Cubierta también se crean a partir de curvas cerradas.</p>
+
+<h4>Funcionamiento de los comandos de Rhino</h4>
+
+<ul>
+	<li><strong>Repetición del último comando y de comandos recientes:</strong><br />
+		Al igual que los comandos de Rhino, la mayoría de comandos de VisualARQ pueden repetirse de la siguiente manera: 
+		<ul>
+			<li>Para repetir el último comando, pulse INTRO, la BARRA ESPACIADORA o el botón derecho del ratón cuando no haya ningún comando activo. </li>
+			<li>Para repetir algún comando reciente, pulse el botón derecho del ratón en cualquier parte de la línea de comandos.
+			</li>
+	</ul>
+	</li>
+	<li><strong>Selección de objetos:</strong><br />
+		Al igual que los comandos de Rhino, la mayoría de las operaciones de VisualARQ solicitan seleccionar uno o varios objetos. La selección de objetos en VisualARQ funciona exactamente igual que la selección de objetos en Rhino:
+		<ul>
+			<li>Para seleccionar un solo objeto, haga clic en cualquier parte del objeto.</li>
+			<li>Para seleccionar varios objetos, pulse MAYÚS mientras hace clic en los objetos que desee seleccionar, o bien utilice la selección por ventana.</li>
+		</ul>
+	</li>
+	<li><strong>Ayudas de modelado y referencias a objetos:</strong><br />
+		Con los objetos de VisualARQ, las ayudas de modelado (forzado a la rejilla, modo ortogonal y modo planar), así como las referencias a objetos (fin, cerca, punto, medio, centro, intersec, perp, etc.), pueden usarse tal y como se usan con los objetos de Rhino.</li>
+</ul>
+<h4>Puntos de control</h4>
+<div class="comDescr">
+	<div class="field">Teclado: </div>
+	<div class="value keyboardCommand">_ActivarPuntos / _DesactivarPuntos</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Propiedades"/> Activar puntos de control: Clic izquierdo</div>
+	<div class="value icon"><img src="../images/Points on.png" alt="Propiedades"/> Desactivar puntos de control: Clic derecho</div>
+	
+		
+	<div class="field">Menú: </div>
+	<div class="value menu">Edición &gt; Puntos de control &gt;  Activar/Desactivar puntos de control</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Activar puntos de control (F10), Desactivar puntos de control (F11)</div>
+
+	
+	
+</div>
+
+<p>Todos los objetos de VisualARQ se pueden editar activando sus puntos de control. Para activar y desactivar los puntos de control en VisualARQ, puede utilizar los mismos comandos que en Rhino.</p>
+<p class="figureWithDescription">
+<img src="../images/Wall and door control points.jpg" alt="Muro y puerta de VisualARQ con los puntos de control activados" /><br/>
+Muro y puerta de VisualARQ con los puntos de control activados.</p>

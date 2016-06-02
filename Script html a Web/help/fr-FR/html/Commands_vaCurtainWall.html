@@ -1,0 +1,130 @@
+<h3>Mur-rideau</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaMurRideau</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_CurtainWall.jpg" alt="Mur-rideau"/> clic [<a href="Commands_vaCurtainWallStyles.html" title="Style de mur-rideau">clic droit</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barre d'outils Objets</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt;Mur-rideau &gt; Mur-rideau</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaCurtainWall.wmv" preview="../images/previews/vaCurtainWallvideo.png" width="300px" height="300px"></div>
+
+<p>Lorsque vous lancez la commande <strong>vaMurRideau</strong>, la<strong> </strong><a href="Interface_Dialog.html">boîte de dialogue d'insertion</a> d'un mur-rideau apparaît. Cette boîte de dialogue affiche une liste de tous les styles de murs-rideaux disponibles, des options de base pour définir le mur-rideau et un aperçu.</p>
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez le <strong>style de mur-rideau</strong> que vous voulez utiliser et définissez les options d'insertion de base.</li>
+	<li>Indiquez le <strong>point de départ</strong> du mur-rideau (point d'insertion) en cliquant. Après avoir défini le point de départ, une cote dynamique affichera en temps réel la longueur du mur-rideau inséré.</li>
+	<li>Cliquez à nouveau pour définir le <strong>point final</strong> du mur-rideau.</li>
+</ol>
+
+<p>La <strong>longueur</strong> et la <strong>direction</strong> du mur-rideau peuvent être définies :
+<ul>
+	<li>En entrant les coordonnées (relatives et absolues) dans la ligne de commande.</li>
+	<li>En entrant une valeur pour définir la longueur ou l'angle dans la ligne de commande.</li>
+	<li>Manuellement, en cliquant dans le modèle.</li>
+</ul>
+</p>
+
+<p>Chaque nouveau mur-rideau est dessiné à côté du précédent jusqu'à ce que vous appuyiez sur la touche Entrée ou Échap ou que vous cliquiez avec le bouton de droite. La commande demande immédiatement le point de départ pour commencer à dessiner le mur suivant ; ce nouveau mur-rideau n'est pas lié au précédent et il est dessiné à partir du point sélectionné.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Curtain wall/Curtain wall insert dialog.png" alt="Boîte de dialogue d'insertion d'un Mur-rideau."/><br/>
+Boîte de dialogue d'insertion d'un mur-rideau
+</div>
+<br clear="all" />
+
+<h3>Mur-rideau : À partir de courbes</h3>
+
+<p>Les murs-rideaux peuvent aussi être créés à partir de courbes du modèle.</p>
+
+<p>Lorsque vous lancez la commande <strong>vaMurRideau</strong>, la 
+<a href="Interface_Dialog.html">boîte d'insertion</a> d'un mur-rideau apparaît.</p> 
+<p><strong>Étapes :</strong></p>
+<ol>
+		<li>Sélectionnez l'option <strong>ÀPartirDeCourbes</strong> dans la ligne de commandes.</li>
+		<li>Sélectionnez une <strong>Courbe</strong> ou plusieurs <strong>Courbes</strong> dans le modèle afin de les utiliser pour générer des murs-rideaux. Le type et la forme des courbes ne sont pas importants mais elles doivent être <em>planes. </em>Si une polyligne est sélectionnée, un mur-rideau sera généré pour chaque segment de polyilgne.</li>
+		<li>Sélectionnez les <strong>options d'insertion du mur-rideau</strong> dans la 
+		<span lang="es"></span>
+		<a href="Interface_Dialog.html">boîte de dialogue d'insertion</a> afin de définir le <span lang="es">mur-rideau</span> créé à partir de la courbe<strong>.</strong> Cette étape peut être réalisée avant ou après avoir sélectionné les courbes permettant de générer les murs-rideaux.<br/>
+		</li>
+		
+</ol>
+<br />
+
+<p>Les murs-rideaux créés de cette façon se comportent comme tous les autres murs-rideaux de VisualARQ.</p>
+
+<br clear="all" />
+
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Les murs-rideaux disposent de trois <em>points de contrôle</em> et de trois <em>flèches de contrôle</em> :<br />
+<ul>
+	<li>Les <em>points de contrôle de départ</em> et <em>final</em> peuvent être utilisés pour étirer ou changer la direction du mur-rideau, alors que le <em>point de contrôle central</em> est utilisé pour le courber dans le cas de murs-rideaux courbés.</li>
+	<li>Les <em>flèches de contrôle</em> qui apparaissent dans la vue en plan (ainsi que dans la vue en perspective) sont utilisées pour étirer le mur-rideau horizontalement à partir de ses extrémités, alors que la <em>flèche de contrôle</em> qui apparaît dans toutes les autres vues (perspective, face et droite) est utilisée pour étirer le mur-rideau verticalement afin de pouvoir modifier sa hauteur manuellement.</li>
+</ul>
+</p>
+
+<div class="figureWithDescription block"><img src="../images/Curtain Wall Control Points.jpg" alt="Points de contrôle sur les murs-rideaux" width="450" height="150" /><br/>
+Points de contrôle sur les murs-rideaux</div>
+
+<br clear="all" />
+
+<ol>
+	<li>Point de contrôle de départ (point d'insertion).</li>
+	<li>Flèche de contrôle (vertical), (non modifiable dans la fenêtre Dessus).</li>
+	<li>Point de contrôle final.</li>
+	<li>Flèches de contrôle (horizontal).</li>
+	<li>Points de contrôle d'un mur-rideau créé à partir d'une courbe.</li>
+</ol>
+
+<h4>Options et paramètres d'insertion</h4>
+
+
+<h5>Hauteur</h5>
+<p>Même si la <strong>Hauteur</strong> est une propriété de style du mur-rideau, vous pouvez assigner une valeur différente dans la boîte de dialogue d'insertion. Désactivez la case 
+<strong>Hauteur par style</strong> et choisissez la valeur désirée en utilisant le contrôle de hauteur numérique.</p>
+
+<p>Pour modifier la hauteur d'un mur-rideau, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino<span lang="es"></span>
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Alignement</h5>
+<p>Trois options sont disponibles pour aligner un mur-rideau, en fonction de 
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">sa position définie à partir de la direction de sa courbe de base :</span></p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Alignement au centre"/></td>
+				<td><strong>Centre</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Alignement à droite"/></td>
+				<td><strong>Droite</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Alignement à gauche"/></td>
+				<td><strong>Gauche</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Décalage de l'alignement</h5>
+<p>Insère le mur-rideau à une distance déterminée de la courbe de base</p>
+<p>Pour modifier l'alignement d'un mur-rideau, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>

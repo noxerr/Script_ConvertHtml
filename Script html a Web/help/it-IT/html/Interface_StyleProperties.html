@@ -1,0 +1,228 @@
+<h3>Proprietà degli stili</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastiera</a>: </div>
+	<div class="value keyboardCommand">vaStileProprietà</div>
+	
+	<div class="field">Icona: </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Proprietà"/> clic destro [<a href="Interface_ObjectProperties.html" title="Proprietà degli oggetti">clic sinistro</a>]
+	
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQToolsToolbar">Barra degli strumenti Strumenti</a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="Barra Strumenti di VisualARQ" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu</a>: </div>
+	<div class="value menu">VisualARQ &gt; Proprietà &gt; Proprietà degli stili ...</div>
+	
+	<div class="field">Scorciatoia: </div>
+	<div class="value menu">Selezionare l'oggetto &gt; (<em>Alt, Maiusc</em> o <em>Ctrl</em>) + doppio clic</div>
+
+	
+	
+</div>
+
+<p>
+La finestra di dialogo delle <strong>Proprietà degli stili</strong> (denominata anche <strong>Gestore degli stili</strong>) si può usare per modificare le proprietà degli stili degli oggetti selezionati e per creare nuovi stili per quei determinati oggetti. I seguenti comandi aprono il gestore degli stili dei vari tipi di oggetto:</p>
+<p>Oggetti architettonici:</p>
+<ul>
+<li><strong>Muro</strong>: <a href="Commands_vaWallStyles.html">vaMuroStili</a></li>
+<li><strong>Facciata continua</strong>: <a href="Commands_vaCurtainWallStyles.html">vaFacciataContinuaStili</a></li>
+<li><strong>Trave</strong>: <a href="Commands_vaBeamStyles.html">vaTraveStili</a></li>
+<li><strong>Colonna</strong>: <a href="Commands_vaColumnStyles.html">vaColonnaStili</a></li>
+<li><strong>Porta</strong>: <a href="Commands_vaDoorStyles.html">vaPortaStili</a></li>
+<li><strong>Finestra</strong>: <a href="Commands_vaWindowStyles.html">vaFinestraStili</a></li>
+<li><strong>Apertura</strong>: <a href="Commands_vaOpeningStyles.html">vaAperturaStili</a></li>
+<li><strong>Scala</strong>: <a href="Commands_vaStairStyles.html">vaScalaStili</a></li>
+<li><strong>Ringhiera</strong>: <a href="Commands_vaRailingStyles.html">vaRinghieraStili</a></li>
+<li><strong>Solaio</strong>: <em>(I solai non hanno stili)</em></li>
+<li><strong>Tetto</strong>: <em>(I tetti non hanno stili)</em></li>
+
+</ul>
+<p>Oggetti per la documentazione:</p>
+<ul>
+<li><strong>Vano</strong>: <a href="Commands_vaSpaceStyle.html">vaVanoStili</a></li>
+<li><strong>Tabella</strong>: <a href="Commands_vaTableStyle.html">vaTabellaStili</a></li>
+<li><strong>Etichetta</strong>: <a href="Commands_vaTagStyles.html">vaEtichettaStili</a></li>
+<li><strong>Contrassegno della sezione</strong>: <a href="Commands_vaSectionStyles.html">vaSezioneStili</a></li>
+<li><strong>Vista di sezione</strong>: <a href="Commands_vaSectionViewStyles.html">vaStiliVisteDiSezione</a></li>
+<li><strong>Vista in pianta</strong>: <a href="Commands_vaPlanViewStyles.html">vaStiliVisteInPianta</a></li>
+
+</ul>
+
+<p>Quando si esegue il comando <strong>vaStileProprietà</strong>, appare la finestra di dialogo delle <strong>Proprietà degli stili</strong>.<br />
+Questa finestra di dialogo si può usare per modificare le proprietà degli stili degli oggetti selezionati.</p>
+
+<h3>Com'è organizzata questa finestra di dialogo?</h3>
+<p>La finestra di dialogo delle proprietà degli stili è suddivisa in tre parti:</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/window/Style Properties - window.png" alt="Finestra di dialogo Proprietà degli stili, proprietà degli stili di una finestra" /><br />
+Finestra di dialogo Proprietà degli stili, proprietà degli stili di una finestra.</p>
+
+<ol>
+	<li>Nel riquadro sinistro superiore, si mostra l'elenco degli stili degli oggetti selezionati durante l'esecuzione del comando.</li>
+	<li>Nel riquadro sinistro inferiore, si mostra l'anteprima dello stile dell'oggetto selezionato dall'elenco. Dalla barra situata nella parte superiore della finestra di dialogo, si possono impostare le seguenti opzioni di visualizzazione:
+		<ul>
+			<li>
+			<img alt="Finestra di anteprima attiva" height="26" src="../images/Preview%20on.jpg" width="26" /> Opzione per mostrare o nascondere la finestra di <strong>anteprima</strong>.</li>
+			<li><img alt="Anteprima nella vista in pianta attiva" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Opzione per mostrare lo stile dell'oggetto nella vista piana o prospettica.</li>
+		</ul> 
+	L'anteprima si può modificare con il mouse, in modo simile alle viste di Rhino:
+
+<ul>
+	<li><em>Tasto destro del mouse</em>: consente di ruotare il punto di vista per visualizzare il modello da vari punti.</li>
+	<li><em>Ctrl + Tasto destro del mouse</em>: consente di effettuare degli zoom per poter espandere o ridurre il campo visivo.</li>
+	<li><em>Maiusc + Tasto destro del mouse</em>: consente di spostare il punto di vista in modo parallelo al piano di visione: in alto, in basso, a destra o a sinistra.</li>
+</ul>
+</li>
+	<li>Questa sezione mostra informazioni diverse a seconda di ciò che è selezionato nel riquadro sinistro superiore:</li>
+		<ul><li>Quando è selezionata la cartella generale degli stili di oggetto, questa zona mostra l'elenco degli stili dell'oggetto esistenti. Nella parte inferiore della finestra di dialogo appaiono le opzioni per creare un nuovo stile, duplicarlo oppure eliminare uno stile esistente dall'elenco superiore. </li>
+	<li>Quando risulta selezionato uno stile di oggetto specifico oppure uno dei componenti di uno stile di oggetto, questa zona mostra le varie schede e le proprietà da cui si possono editare tutti i parametri dello stile di oggetto.</li>
+	</ul>
+</ol>
+
+<h3>Creare un nuovo stile di oggetto</h3>
+
+<p>Per creare un nuovo stile di oggetto, selezionare la cartella degli stili di oggetto nel riquadro sinistro superiore per visualizzare l'elenco di stili nel riquadro destro. Esistono due opzioni per creare un nuovo stile:</p> 
+<ol><li><strong>Usando la procedura guidata "Nuovo stile"</strong>: premere il pulsante <strong>Nuovo stile</strong><em></em>.</li>
+<li><strong>Duplicando uno stile esistente</strong>: selezionare lo stile che si desidera duplicare dall'elenco superiore e premere il pulsante <strong>Duplica</strong>.</li>
+</ol>
+
+<p class="figureWithDescription">
+<img alt="Finestra degli stili dell'oggetto ringhiera"  src="../images/assistants/Railing/Railing%20styles.png" /><br/>
+Finestra di dialogo del gestore degli stili dell'oggetto ringhiera.
+</p>
+
+<p>Scegliendo l'opzione 1, verrete guidati da una procedura che vi richiederà man mano i parametri dello stile di oggetto da definire. Non tutti gli oggetti di VisualARQ usano la procedura guidata per creare nuovi stili ed alcuni parametri degli stili di oggetto si possono definire solo alla fine della procedura guidata (per esempio, gli attributi degli stili di oggetto, i vetri con listelli per le porte e le finestre, lo spessore delle solette delle scale, ecc.). I  tipi di oggetto che non usano la procedura guidata aggiungono semplicemente un nuovo stile di oggetto alla fine dell'elenco dopo aver fatto clic sul pulsante <strong>Nuovo stile</strong>.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Procedura guidata per gli stili delle porte."  /><br/>
+Procedura guidata per gli stili delle porte.</p>
+
+
+<h3>Modificare gli stili di oggetto</h3>
+
+<p>Per modificare lo stile di un oggetto, selezionare lo stile o il componente dello stile che si desidera modificare ed editarne le proprietà nelle schede del riquadro sulla destra. Queste schede e proprietà possono essere diverse a seconda del tipo di oggetto o del componente di un oggetto.</p>
+
+
+<h3>Schede</h3>
+
+
+<h4>Attributi</h4>
+
+<p>Tutti gli oggetti che usano una finestra di dialogo presentano questa scheda. La scheda definisce le caratteristiche (attributi) di ciascuno stile di oggetto e di ciascuno dei suoi componenti. Gli attributi cambiano a seconda dello stile di oggetto a cui si riferiscono.</p>
+	
+<ul>
+	<li><strong>Oggetto architettonico</strong>: muri, facciate continue, travi, colonne, porte, finestre, aperture, scale e ringhiere.
+		<ul>
+			<li>Attributi generali
+				<ul>
+					<li>Livello</li>
+					<li>Visibilità</li>
+					<li>Materiale</li>
+				</ul>
+			</li>
+			<li>Attributi di sezioni e proiezioni:
+				<ul>
+					<li>Colore</li>
+					<li>Tipo di linea</li>
+					<li>Larghezza di stampa</li>
+					<li>Colore di stampa</li>
+					<li>Modello</li>
+					<li>Scala del modello</li>
+					<li>Angolo del modello</li>
+					<li>Colore del modello</li>
+				</ul>
+			</li>
+		</ul></li>
+	<li><strong>Oggetto per la documentazione</strong>: vani, tabelle, etichette, sezioni, viste di sezione e viste in pianta.
+		<ul>
+			<li>Attributi generali
+				<ul>
+					<li>Livello</li>
+					<li>Visibilità</li>
+					<li>Stile testo</li>
+					<li>Stile quota</li>
+					<li>Colore</li>
+					<li>Tipo di linea</li>
+					<li>Larghezza di stampa</li>
+					<li>Colore di stampa</li>
+					<li>Modello</li>
+					<li>Scala del modello</li>
+					<li>Angolo del modello</li>
+					<li>Colore del modello</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	
+	</ul>
+	<p><strong>NOTA:</strong> L'attributo "Materiale" dello stile di un oggetto consente di assegnare un materiale diverso a ciascun componente dell'oggetto. Per assegnare un solo materiale a tutto l'oggetto, si segua il procedimento usuale di Rhino.<br />
+	</p> <br />
+	
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/wall/Wall style attributes.png" alt="Scheda Attributi della finestra di dialogo degli stili di muro" /><br/>
+		Scheda Attributi della finestra di dialogo degli stili di muro.</p>
+	</div>
+	
+<br clear="all" />
+	
+<h4>Geometria</h4>
+	
+		Tutti gli oggetti, tranne le scale, i solai ed i tetti, presentano questa scheda. In questa scheda vengono definiti i valori geometrici di ciascun oggetto e dei suoi componenti.<br />
+		Valori geometrici dell'oggetto Muro:
+		<ul>
+			<li>Altezza</li>
+			<li>Spessore (si può modificare solo per ciascuno strato del muro)</li>
+		</ul>
+		
+		Valori geometrici degli oggetti Trave e Colonna:
+		<ul>
+			<li>Altezza</li>
+			<li>Profilo (definisce la forma dell'oggetto)</li>
+			<li>Spessore del rivestimento (solo per le colonne)</li>
+		</ul>
+		
+		Valori geometrici degli oggetti Porta, Finestra ed Apertura:
+		<ul>
+			<li>Profilo (definisce la forma dell'oggetto)</li>
+			<li>Dimensioni (larghezza e profondità) del telaio e del fermo</li>
+			<li>Dimensioni (larghezza e profondità) e verso di apertura dell'anta</li>
+			<li>Dimensioni (spessore, estensione e profondità) del davanzale (solo per le finestre e le aperture)</li>
+		</ul>
+		Valori geometrici dei componenti dell'oggetto Ringhiera: <ul>
+			<li>Componente corrente: Margini e stile delle estremità. Giunti planari e non planari.</li>
+			<li>Balaustri: Margini superiore ed inferiore.</li>
+		</ul>
+
+<h4>Dimensioni</h4>
+<p>Questa scheda viene usata solo per quegli oggetti che usano dei profili per definire la loro forma (colonne, porte, finestre ed aperture). 
+Si usa per definire le dimensioni (larghezza ed altezza) del profilo usato dall'oggetto. Questa opzione si può usare per creare varie dimensioni per lo stesso profilo.</p>
+<h4>Blocchi</h4>
+	
+<p>Solo le porte, le finestre e le aperture presentano questa scheda. Questa scheda definisce le rappresentazioni in 2D (pianta) e 3D (modello) dell'oggetto, assegnando a ciascuna di esse un blocco creato in precedenza a piacimento dall'utente. Questa opzione si può usare per creare porte e finestre personalizzate.</p>
+
+
+<h4>Costruzione e Ripiegatura</h4>
+<p>Solo i muri presentano questa scheda. Questa scheda si usa per definire in che modo i livelli o strati di un muro terminano alle estremità del muro e nei punti in cui si incontrano con delle aperture (con una ripiegatura o senza ripiegatura). La scheda "Costruzione" si usa per definire il tipo e la funzione dei livelli o strati del muro.</p>
+	
+	<h4>Tipo</h4>
+	<p>Solo le scale presentano questa scheda. Essa si usa per definire il tipo di scala usata, a seconda se si attiva o meno l'opzione Bilanciato (con gradini a ventaglio).</p>
+	
+	<h4>Gradini</h4>
+	<p>Solo le scale presentano questa scheda, in cui si possono specificare i valori geometrici delle piastre della pedata e dell'alzata.</p>
+	<ul> 		
+		<li>Valori geometrici della <strong>Piastra della pedata</strong>:
+		<ul>
+			<li>Spessore</li>
+			<li>Sporgenza</li>
+	</ul></li>
+		<li>Valori geometrici della <strong>Piastra dell'alzata</strong>:
+		<ul>
+			<li>Spessore</li>
+	</ul></li>
+	
+</ul>
+<h4>Divisione <span class="auto-style1">e</span> Riempimento</h4>
+<p>Solo le facciate continue presentano queste schede. Esse vengono usate per definire i parametri del componente Cella.</p>
+
+

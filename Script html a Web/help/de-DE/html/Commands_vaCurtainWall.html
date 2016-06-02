@@ -1,0 +1,130 @@
+<h3>Fassade</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaFassade</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_CurtainWall.jpg" alt="Fassade"/> Linksklick [<a href="Commands_vaCurtainWallStyles.html" title="Befehl Fassadenstil">Rechtsklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Fassade &gt; Fassadenstile</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaCurtainWall.wmv" preview="../images/previews/vaCurtainWallvideo.png" width="300px" height="300px"></div>
+
+<p>Durch Ausführen des Befehls <strong>vaFassade</strong> wird das <strong></strong><a href="Interface_Dialog.html">Einfüge-Dialogfenster</a> für Fassaden geöffnet. Das Dialogfenster zeigt eine Liste aller verfügbaren Fassadenstile sowie die grundlegenden Optionen des Fassadenobjekts und die entsprechende Vorschau an.</p>
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Fassadenstil</strong> und die grundlegenden Einfügungsoptionen aus.</li>
+	<li>Wählen Sie den <strong>Anfangspunkt</strong> (Einfügungspunkt) der Fassade mit einem Klick. Beim Definieren des Anfangspunktes zeigt eine dynamische Bemaßung den Längenwert der Fassade in Echtzeit an.</li>
+	<li>Wählen Sie den <strong>Endpunkt</strong> der Fassade mit einem Klick.</li>
+</ol>
+
+<p><strong>Länge</strong> und <strong>Richtung</strong> der Fassade können wie folgt definiert werden:
+<ul>
+	<li>Durch Eingabe von Koordinaten (relative und absolute) in der Befehlszeile.</li>
+	<li>Durch Eingabe einer Länge- und/oder eines Winkels in der Befehlszeile.</li>
+	<li>Durch Klick mit der linken Maustaste auf den entsprechenden Punkt.</li>
+</ul>
+</p>
+
+<p>Es werden so lange neue Fassaden gezeichnet, bis Sie den Vorgang mit ENTER, ESC oder Rechtsklick abschließen. Dabei wird der Startpunkt der neuen Fassade automatisch gesetzt, wobei diese standardmäßig nicht mit der vorherigen Fassade verknüpft, sondern vom neuen Startpunkt aus gezeichnet wird.</p>
+
+
+<div class="figureWithDescription block"><img src="../images/assistants/Curtain wall/Curtain wall insert dialog.png" alt="Einfügedialog für das Fassadenobjekt."/><br/>
+Einfügedialog Fassade
+</div>
+<br clear="all" />
+
+<h3>Fassade: Aus Kurven</h3>
+
+<p>Fassaden können auch aus bereits vorhandenen Kurven erstellt werden.</p>
+
+<p>Beim Ausführen des Befehls <strong>vaFassade</strong> wird das 
+<a href="Interface_Dialog.html">Einfüge-Dialogfenster</a> für Fassaden geöffnet.</p> 
+<p><strong>Schritte:</strong></p>
+<ol>
+		<li>Wählen Sie die Option <strong>AusKurven</strong> in der Befehlszeile.</li>
+		<li>Wählen Sie eine <strong>Kurve</strong> oder mehrere <strong>Kurven</strong>, die als Basis für die Fassade dienen. Die Kurven können jeden beliebigen Typs  sein, so lange sie <em>flach</em> sind. Bei Auswahl einer Polylinienkurve wird für jedes Polyliniensegment ein Fassadenobjekt erstellt.</li>
+		<li>Wählen Sie im 
+		<a href="Interface_Dialog.html">Einfügedialog</a> die <strong>Einfügungsoptionen</strong>
+		<span lang="es"></span> der Fassade, die aus der Form der Kurve erzeugt werden soll.<span lang="es"></span><strong></strong> Dieser Schritt kann vor oder nach Auswahl der Kurven erfolgen.<br/>
+		</li>
+		
+</ol>
+<br />
+
+<p>Die mit dieser Operation erzeugten Fassaden verhalten sich wie alle anderen VisualARQ-Fassaden auch.</p>
+
+<br clear="all" />
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Fassaden verfügen über drei <em>Kontrollpunkte</em> und drei <em>Kontrollpunktpfeile</em>:<br />
+<ul>
+	<li>Die Kontrollpunkte am <em>Anfang</em> und <em>Ende</em> können verwendet werden, um die Richtung zu dehnen und/oder zu ändern, während der <em>mittlere Kontrollpunkt</em> verwendet wird, um Fassaden mit Kurven zu biegen.</li>
+	<li>Die <em>Kontrollpfeile</em> in der Planansicht werden verwendet, um die Fassade von ihren Enden aus horizontal zu dehnen. Der <em>Kontrollpfeil</em>, der in allen anderen Ansichten erscheint (Perspektive, Front und Rechts), wird verwendet, um die Fassade vertikal zu dehnen.</li>
+</ul>
+</p>
+
+<div class="figureWithDescription block"><img src="../images/Curtain Wall Control Points.jpg" alt="Kontrollpunkte auf Fassaden" width="450" height="150" /><br/>
+Kontrollpunkte auf Fassaden</div>
+
+<br clear="all" />
+
+<ol>
+	<li>Startkontrollpunkt (Einfügungspunkt).</li>
+	<li>Vertikaler Kontrollpfeil (nicht bearbeitbar in der Draufsicht).</li>
+	<li>Endkontrollpunkt.</li>
+	<li>Horizontale Kontrollpfeile.</li>
+	<li>Fassade aus Kurvenkontrollpunkten.</li>
+</ol>
+
+<h4>Einfügungsoptionen und -parameter</h4>
+
+
+<h5>Höhe</h5>
+<p>Obwohl die <strong>Höhe</strong> eigentlich eine Eigenschaft des Fassadenstils ist, können Sie einen vom Standardwert abweichenden Wert einstellen. Deaktivieren Sie dazu einfach die Option 
+<strong>Höhe nach Stil</strong> und geben Sie den gewünschten Wert ein.</p>
+
+<p>Zum Ändern der Höhe der Fassade können Sie auch den Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" /> ändern).<span lang="es"></span></p>
+
+<h5>Ausrichtung</h5>
+<p>Zur Ausrichtung einer Fassade gibt es abhängig von ihrer der Richtung der Grundkurve
+<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"> entsprechenden Position drei Möglichkeiten:</span></p>
+<ul>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment c.jpg" alt="Ausrichtung Mitte"/></td>
+				<td><strong>Mitte</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment r.jpg" alt="Ausrichtung rechts."/></td>
+				<td><strong>Rechts</strong></td>
+			</tr>
+		</table>			
+	</li>
+	<li><table border="0" cellspacing="0" cellpadding="0" width="100">
+			<tr>
+				<td valign="top"><img align="left" src="../images/walignment l.jpg" alt="Ausrichtung links"/></td>
+				<td><strong>Links</strong></td>
+			</tr>
+		</table>			
+	</li>
+</ul>
+
+<h5>Ausrichtungsversatz</h5>
+<p>Fügt die Fassade in einem bestimmten Abstand von der Richtung ihrer Grundkurve ein.</p>
+<p>Zum Ändern des Versatzes einer Fassade bearbeiten Sie seinen Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>

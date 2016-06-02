@@ -1,0 +1,40 @@
+<h3>Alzado de carpintería</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaAlzadoDeCarpintería</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_OpeningElevation.jpg" alt="Alzado de carpintería"/> clic izquierdo
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html#VisualARQDocumentationToolbar">
+		Barra de herramientas Documentación</a>:</div>
+	<div class="value toolbar"><img src="../images/Documentation.png" alt="Barra de herramientas Herramientas de documentación de VisualARQ" usemap ="#DocumentationToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Alzado de carpintería &gt; Alzado de carpintería</div>
+</div>
+
+<div  class="comVideo" id="video1" src="vaOpeningElevation.wmv" preview="../images/previews/vaOpeningElevationvideo.png" width="300px" height="300px"></div>
+
+<p>Este comando genera representaciones 2D de las elevaciones (o alzados) de las distintas carpinterías del modelo.</p>
+<p><strong>Pasos:</strong></p>
+<ol>
+	<li>Seleccione las <strong>puertas<strong> y </strong>ventanas</strong> de las que desea obtener un alzado. El comando filtra automáticamente la selección, para que sólo sean detectados los objetos de carpintería.</li>
+	<li>Designe el <strong>inicio</strong> y el <strong>final</strong> de la inserción.</li>
+</ol>
+<p>El comando termina al insertarse el dibujo 2D de cada una de las distintas carpinterías seleccionadas, con sus respectivas referencias. En la vista Planta se mostrarán estas mismas referencias, identificando así la ubicación de cada tipo de puerta y ventana dentro del modelo.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningsSelect.png" alt="Selección de carpinterías (filtrado)" width="250" height="245" /><br/>Selección de carpinterías (filtrado)</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevations.png" alt="Referencias de las carpinterías del modelo" width="250" height="245"/><br/>Referencias de las carpinterías del modelo</div>
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Opening Elevation/OpeningElevZoom.png" alt="Alzados de carpintería acotados " width="500" height="150"/><br/>Alzados de carpintería acotados y con su referencia a cada carpintería del modelo</div>
+<br clear="all" />
+
+<p><strong>NOTA: </strong> Para todas las carpinterías (puertas o ventanas) que sean iguales en todas sus características – medidas, elevación y lado de apertura - se creará un único dibujo con una única referencia.</p>
+
+<p>Los alzados de carpintería y sus referencias se crean por defecto en la <strong>capa Documentación</strong>.<br/>
+Para ocultar las referencias, basta con desactivar la capa en la que han sido creadas.<br/>
+Para eliminar las referencias, seleccione la carpintería que desee eliminar y entre en la sección <a href="Interface_VisualARQProperties.html">Propiedades de VisualARQ</a> (en el panel Propiedades de Rhino<img alt="Propiedades de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />). Elimine el valor <strong>Texto de referencia
+<strong> en la sección </strong>
+Referencia</strong>.</p>
+

@@ -1,0 +1,228 @@
+<h3>Stileigenschaften</h3>
+
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaStilEigenschaften</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_Properties.jpg" alt="Eigenschaften"/> Linksklick [<a href="Interface_ObjectProperties.html" title="Objekteigenschaften">Rechtsklick</a>]
+	
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html#VisualARQToolsToolbar">Werkzeuge</a>: </div>
+	<div class="value toolbar"><img src="../images/Tools.jpg" alt="VisualARQ-Werkzeugleiste" usemap ="#ToolsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Eigenschaften &gt; Stileigenschaften</div>
+	
+	<div class="field">Tastenkombination: </div>
+	<div class="value menu">Objekt auswählen  &gt; (<em>Alt, Umschalttaste</em> oder <em>Strg</em>) + Doppelklick</div>
+
+	
+	
+</div>
+
+<p>
+Im Dialogfenster <strong>Stileigenschaften</strong> oder <strong>Stilmanager</strong> können die Stileigenschaften der ausgewählten Objekte bearbeitet und neue Stile erstellt werden. Die folgenden Befehle öffnen den Stilmanager für den jeweiligen Objekttyp:</p>
+<p>Architekturobjekte:</p>
+<ul>
+<li><strong>Wand</strong>: <a href="Commands_vaWallStyles.html">vaWandStile</a></li>
+<li><strong>Fassade</strong>: <a href="Commands_vaCurtainWallStyles.html">vaFassadenStile</a></li>
+<li><strong>Balken</strong>: <a href="Commands_vaBeamStyles.html">vaBalkenStile</a></li>
+<li><strong>Stütze</strong>: <a href="Commands_vaColumnStyles.html">vaStützenStile</a></li>
+<li><strong>Tür</strong>: <a href="Commands_vaDoorStyles.html">vaTürStile</a></li>
+<li><strong>Fenster</strong>: <a href="Commands_vaWindowStyles.html">vaFensterStile</a></li>
+<li><strong>Öffnung</strong>: <a href="Commands_vaOpeningStyles.html">vaÖffnungsStile</a></li>
+<li><strong>Treppe</strong>: <a href="Commands_vaStairStyles.html">vaTreppenStile</a></li>
+<li><strong>Geländer</strong>: <a href="Commands_vaRailingStyles.html">vaGeländerStile</a></li>
+<li><strong>Decke</strong>: <em>(Decken haben keine Stile)</em></li>
+<li><strong>Dach</strong>: <em>(Dächer haben keine Stile)</em></li>
+
+</ul>
+<p>Dokumentationsobjekte:</p>
+<ul>
+<li><strong>Fläche</strong>: <a href="Commands_vaSpaceStyle.html">vaFlächenStile</a></li>
+<li><strong>Tabelle</strong>: <a href="Commands_vaTableStyle.html">vaTabellenStile</a></li>
+<li><strong>Beschriftung</strong>: <a href="Commands_vaTagStyles.html">vaBeschriftungsStile</a></li>
+<li><strong>Schnittmarkierung</strong>: <a href="Commands_vaSectionStyles.html">vaSchnittStile</a></li>
+<li><strong>Schnittansicht</strong>: <a href="Commands_vaSectionViewStyles.html">vaSchnittAnsichtsStile</a></li>
+<li><strong>Planansicht</strong>: <a href="Commands_vaPlanViewStyles.html">vaPlanansichtsStile</a></li>
+
+</ul>
+
+<p>Durch Ausführen des Befehls <strong>vaStilEigenschaften</strong> öffnet sich das Dialogfenster <strong>Stileigenschaften
+</strong>.<br />
+In diesem Dialogfenster können die Stileigenschaften der ausgewählten Objekte bearbeitet werden.</p>
+
+<h3>Aufbau des Dialogs</h3>
+<p>Das Dialogfenster "Stileigenschaften" ist in drei Bereiche unterteilt:</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/window/Style Properties - window.png" alt="Dialogfenster Stileigenschaften, Stileigenschaften eines Fensters" /><br />
+Dialogfenster Stileigenschaften, Stileigenschaften eines Fensters.</p>
+
+<ol>
+	<li>Das linke obere Feld zeigt die Liste der Stile der ausgewählten Objekte.</li>
+	<li>Das linke untere Feld zeigt eine Vorschau des in der Liste ausgewählten Objektstils. Sie können dafür in der Werkzeugleiste im oberen Bereich des Dialogfensters folgende Anzeigeeigenschaften vornehmen:
+		<ul>
+			<li>
+			<img alt="Vorschaufenster ein" height="26" src="../images/Preview%20on.jpg" width="26" /> Vorschaufenster anzeigen oder verbergen<strong></strong>.</li>
+			<li><img alt="Vorschau in Draufsicht ein" height="26" src="../images/Plan%20View%20on.jpg" width="26" /> Objektstil in Drauf- oder perspektivischer Ansicht anzeigen oder verbergen</li>
+		</ul> 
+	Die Vorschau kann mit der Maus so ähnlich wie in den Rhino-Ansichten geändert werden:
+
+<ul>
+	<li><em>Rechte Maustaste</em>: zur Änderung der Perspektive und der Anzeige des Modells aus verschiedenen Blickwinkeln.</li>
+	<li><em>Strg + rechte Maustaste</em>: zum Hinein- und Herauszoomen in die bzw. aus der Arbeitsfläche.</li>
+	<li><em>Umschalttaste + rechte Maustaste</em>: zum Bewegen des Blickwinkels parallel zur Sichtebene; aufwärts, abwärts, nach links oder rechts.</li>
+</ul>
+</li>
+	<li>Der rechte Bereich zeigt je nach Auswahl im linken oberen Feld andere Informationen an:</li>
+		<ul><li>Bei Auswahl des allgemeinen Ordners der Objektstile wird in diesem Bereich die Liste der vorhandenen Objektstile angezeigt. Im unteren Bereich des Dialogfensters erscheinen die Optionen zum Erzeugen eines neuen Stils sowie zum Duplizieren und Löschen eines bestehenden Stils aus der Liste. </li>
+	<li>Bei Auswahl eines bestimmten Objektstils oder einer Objektstilkomponente werden in diesem Bereich verschiedene Reiter und Eigenschaften angezeigt, mit denen Sie die Objektstilparameter bearbeiten können.</li>
+	</ul>
+</ol>
+
+<h3>Erzeugung eines neuen Objektstils</h3>
+
+<p>Zur Erzeugung eines neuen Objektstils wählen Sie den Ordner mit den Objektstilen im linken oberen Feld, um so die Liste der Stile im rechten Bereich anzeigen zu lassen. Ein neuer Stil kann auf zwei verschiedene Arten erzeugt werden:</p> 
+<ol><li><strong>Mit dem Assistenten für neue Stile</strong>: klicken Sie dazu die Schaltfläche <strong>Neuer Stil</strong><em> </em>.</li>
+<li><strong>Durch Duplizieren eines vorhandenen Stils</strong>: wählen Sie dazu den zu duplizierenden Stil aus der Liste aus und klicken Sie auf die Schaltfläche <strong>Duplizieren</strong>.</li>
+</ol>
+
+<p class="figureWithDescription">
+<img alt="Dialogfenster Geländerobjektstil"  src="../images/assistants/Railing/Railing%20styles.png" /><br/>
+Dialogfenster Stilmanager für das Geländerobjekt.
+</p>
+
+<p>Bei der ersten Option begleitet Sie der Assistent durch den ganzen Prozess und definiert Schritt für Schritt die Parameter des neuen Objektstils. Nicht alle VisualARQ-Objekte nutzen den Assistenten zur Erzeugung neuer Stile und es gibt einige Objektstilparameter, die erst nach Abschluss des Assistenten definiert werden können. (z.B. die Objektstilattribute, die Glassprossen für Türen und Fenster, die Dicke der Treppenstufen etc.). Objekttypen, die den Assistenten nicht verwenden, fügen nach Klick auf die Schaltfläche <strong>Neuer Stil</strong> lediglich einen neuen Objektstil am Ende der Liste hinzu.</p>
+
+<p class="figureWithDescription"><img src="../images/assistants/Door/Door Wizard.png" alt="Türstilassistent."  /><br/>
+Türstilassistent.</p>
+
+
+<h3>Bearbeitung der Objektstile</h3>
+
+<p>Zur Bearbeitung eines Objektstils wählen Sie den Objektstil oder die Objektstilkomponente und bearbeiten Sie die Eigenschaften in den Reitern auf der rechten Seite. Diese Reiter und Eigenschaften sind je nach Objekttyp oder Objektkomponente verschieden.</p>
+
+
+<h3>Reiter</h3>
+
+
+<h4>Attribute</h4>
+
+<p>Dieser Reiter wird für alle Objekte angezeigt, die ein Dialogfenster verwenden. In diesem Reiter können die Eigenschaften (Attribute) des Objektstils und aller seiner Komponenten definiert werden. Die Attribute variieren je nach Objektstil, auf den sie angewandt werden sollen.</p>
+	
+<ul>
+	<li><strong>Architekturobjekt</strong>: Wände, Fassaden, Balken, Stützen, Türen, Fenster, Öffnungen, Treppen und Geländer:
+		<ul>
+			<li>Allgemeine Attribute
+				<ul>
+					<li>Ebene</li>
+					<li>Sichtbarkeit</li>
+					<li>Material</li>
+				</ul>
+			</li>
+			<li>Schnitt- und Projektionsattribute:
+				<ul>
+					<li>Farbe</li>
+					<li>Linientyp</li>
+					<li>Liniendruckbreite</li>
+					<li>Liniendruckfarbe</li>
+					<li>Muster</li>
+					<li>Musterskala</li>
+					<li>Musterwinkel</li>
+					<li>Musterfarbe</li>
+				</ul>
+			</li>
+		</ul></li>
+	<li><strong>Dokumentationsobjekt</strong>: Flächen, Tabellen, Beschriftungen, Schnitte, Schnittkurven und Planansichten:
+		<ul>
+			<li>Allgemeine Attribute
+				<ul>
+					<li>Ebene</li>
+					<li>Sichtbarkeit</li>
+					<li>Textstil</li>
+					<li>Bemaßungsstil</li>
+					<li>Farbe</li>
+					<li>Linientyp</li>
+					<li>Liniendruckbreite</li>
+					<li>Liniendruckfarbe</li>
+					<li>Muster</li>
+					<li>Musterskala</li>
+					<li>Musterwinkel</li>
+					<li>Musterfarbe</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	
+	</ul>
+	<p><strong>HINWEIS: </strong> Sie können jeder Objektkomponente vom Materialattribut des Objektstils aus ein anderes Material zuweisen. Um dem gesamten Objekt ein einziges Material zuzuordnen, gehen Sie einfach wie von Rhino gewohnt vor.<br />
+	</p> <br />
+	
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/wall/Wall style attributes.png" alt="Attribute im Wandstil-Dialogfenster" /><br/>
+		Attribute im Wandstil-Dialogfenster.</p>
+	</div>
+	
+<br clear="all" />
+	
+<h4>Geometrie</h4>
+	
+		Alle Objekte außer Treppen, Decken und Dächer verfügen über diesen Reiter. Die Geometriewerte jedes Objekts und jeder Objektkomponente können in diesem Reiter definiert werden.<br />
+		Geometriewerte für das Wandobjekt:
+		<ul>
+			<li>Höhe</li>
+			<li>Stärke (kann nur für jede Wandschicht bearbeitet werden)</li>
+		</ul>
+		
+		Geometriewerte für das Balken- und das Stützenobjekt:
+		<ul>
+			<li>Höhe</li>
+			<li>Profil (definiert die Objektform)</li>
+			<li>Verkleidungsstärke (nur für Stützen)</li>
+		</ul>
+		
+		Geometriewerte für das Tür-, Fenster- und Öffnungsobjekt:
+		<ul>
+			<li>Profil (definiert die Objektform)</li>
+			<li>Abmessungen (Breite und Tiefe) für Rahmen und Türfalz</li>
+			<li>Abmessungen (Breite und Tiefe) und Öffnungsseite für den Flügel</li>
+			<li>Abmessungen (Stärke, Verlängerung und Tiefe) der Fensterbank (nur für Fenster und Öffnungen)</li>
+		</ul>
+		Geometriewerte für die Geländerobjektkomponenten: <ul>
+			<li>Geländerkomponente: Endrand und -stil. Planare und nichtplanare Verbindungen.</li>
+			<li>Vertikalholme: Oberer und unterer Rand.</li>
+		</ul>
+
+<h4>Abmessungen</h4>
+<p>Dieser Reiter wird nur für Objekte verwendet, die Ihre Form mithilfe von Profilen definieren (Stützen, Türen, Fenster und Öffnungen). Es werden die Abmessungen (Breite und Höhe) des vom Objekt verwendeten Profils definiert. Diese Option kann verwendet werden, um verschiedene Abmessungen für das gleiche Profil zu erzeugen.</p>
+<h4>Blöcke</h4>
+	
+<p>Nur Türen, Fenster und Öffnungen verfügen über diesen Reiter. In diesem Reiter können die 2D- und 3D-Darstellungen des Objekts definiert und ein Block zugewiesen werden, der zuvor vom Benutzer mit benutzerdefinierten Eigenschaften erzeugt wurde. Diese Option kann verwendet werden, um benutzerdefinierte Türen und Fenster zu erzeugen.</p>
+
+
+<h4>Konstruktion und Abschluss</h4>
+<p>Nur Wände verfügen über diesen Reiter. In diesem Reiter kann festgelegt werden, wie die Wandschichten an den Deckflächen einer Wand und bei Zusammentreffen mit Öffnungen abschließen. Im Reiter "Konstruktion" kann der Typ und die Funktion der Wandschicht festgelegt werden.</p>
+	
+	<h4>Typ</h4>
+	<p>Nur Treppen verfügen über diesen Reiter. Er wird verwendet, um den gewählten Treppentyp zu definieren, je nachdem, ob die Treppenoption "Ausgeglichen" aktiviert ist oder nicht.</p>
+	
+	<h4>Schritte</h4>
+	<p>Nur Treppen haben diesen Reiter. Darin werden die Geometriewerte der Tritt- und Setzstufen definiert.</p>
+	<ul> 		
+		<li>Geometriewerte für die <strong>Trittstufe</strong>:
+		<ul>
+			<li>Deckenstärke</li>
+			<li>Überstand</li>
+	</ul></li>
+		<li>Geometriewerte für die <strong>Setzstufe</strong>:
+		<ul>
+			<li>Deckenstärke</li>
+	</ul></li>
+	
+</ul>
+<h4>Aufteilung <span class="auto-style1">und</span> Füllelement</h4>
+<p>Nur Fassaden verfügen über diese Reiter. Sie können darin die Parameter der Zellenkomponente bestimmen.</p>
+
+

@@ -1,0 +1,283 @@
+
+<h3>Estilos de baranda</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Teclado</a>: </div>
+	<div class="value keyboardCommand">vaBarandaEstilos</div>
+	
+	<div class="field">Icono: </div>
+	<div class="value icon"><img src="../images/VA_Railing.jpg" alt="Baranda"/> clic derecho [<a href="Commands_vaRailing.html" title="Comando Baranda">clic izquierdo</a>]
+	</div>
+	
+	<div class="field"><a href="Interface_Toolbars.html">Barra de herramientas Objetos</a>:</div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barra de herramientas Objetos de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menú</a>: </div>
+	<div class="value menu">VisualARQ &gt; Baranda &gt; Estilos de baranda</div>
+	
+	<div class="field"><a href="Interface_Context.html">Menú contextual</a>: </div>
+	<div class="value context">Baranda &gt; Estilos de baranda</div>
+	
+	<div class="field">Acceso directo: </div>
+	<div class="value menu">Seleccione un objeto de baranda &gt; (<em>Alt, Mayús</em> o <em>Ctrl</em>) + doble clic</div>
+
+	
+</div>
+
+<p>El estilo de baranda define las características de las barandas. Para cada estilo de baranda se pueden definir los siguientes parámetros: <strong>Nombre</strong> y <strong>Atributos</strong>.</p>
+ <p>Cada estilo de baranda se define mediante la combinación de 3 componentes que se pueden añadir o eliminar en cualquier momento: <strong>
+Barandal</strong>, <strong>Pilastra</strong> y <strong>Balaustre</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing components.jpg" alt="Objeto Baranda y sus componentes" width="300" height="340" /><br />
+Componentes y partes diferentes de una baranda:
+<ol>
+<li><strong>1. <img alt="Barandal" height="16" src="../images/Railing Rail.png" width="16" /> Barandal</strong></li>
+<li><strong>2. <img alt="Pilastra" height="16" src="../images/Railing Post.png" width="16" /> Pilastra</strong></li>
+<li><strong>3. <img alt="Balaustre" height="16" src="../images/Railing baluster.png" width="16"/> Balaustre</strong></li>
+</ol>
+</div>
+<br clear="all" />
+<p>Para cada componente y estilo de baranda se pueden definir los siguientes parámetros: <strong>Nombre</strong>, <strong>Atributos</strong>, <strong>
+Posición, Geometría</strong> y <strong>Perfil</strong>.</p>
+
+
+<h3>Nuevo estilo de baranda</h3>
+<p>Para crear un estilo de baranda, pulse el botón <strong>Nuevo estilo</strong> del cuadro de diálogo <a href="Interface_StyleProperties.html">
+Administrador de estilos</a>. Para duplicar un estilo existente de baranda, selecciónelo en la lista del panel derecho y pulse el botón <strong>Duplicar</strong>.</p>
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing styles dialog.png" alt="Cuadro de diálogo Administrador de estilos del objeto Baranda." /><br/>
+Cuadro de diálogo Administrador de estilos del objeto Baranda
+</div>
+<br clear= "all" />
+
+<div class="comDescr editing">
+	<div class="value">
+<div class="field">Edición general de estilos</div>
+<div class="value">Puede utilizar el comando <strong>vaBarandaEstilos</strong>  o, alternativamente
+	<ul>
+		<li>Utilice el comando <strong>vaEstiloPropiedades</strong>, seleccione una baranda y pulse Intro, o bien</li>
+		<li>Haga clic con el botón derecho en 
+		<img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una baranda y pulse Intro, o bien</li>
+		<li>Seleccione una baranda, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Baranda &gt; Propiedades de estilo</strong>, o bien</li>
+		<li>Pulse <em>Alt, Mayús</em> o <em>Ctrl </em> y haga doble clic en un objeto de baranda.</li>
+	</ul>
+	Los cambios aplicados a un estilo se aplican a <strong>todos los elementos</strong> con ese estilo.
+</div>
+<div class="field">Edición específica por objeto</div>
+<div class="value"><ul>
+		<li>Utilice el comando <strong>vaPropiedades</strong>, seleccione una baranda y pulse Intro, o bien</li>
+		<li>Haga clic en <img src="images/VA_Properties.jpg" alt="vaEstiloPropiedades"/>, seleccione una baranda y pulse Intro, o bien</li>
+		<li>Seleccione una baranda, abra el menú contextual pulsando el botón derecho del ratón durante un momento y seleccione <strong>Baranda &gt; Propiedades</strong>, o bien,</li>
+		<li>Haga doble clic en un objeto de baranda. </li>
+	</ul>
+		</div>
+	Los cambios se aplican solo en el estilo del <strong>elemento seleccionado</strong>.</div>
+</div>
+
+<h4>Atributos</h4>
+<p>Los atributos definen las características de cada estilo de baranda y sus componentes para las vistas y la impresión. Los atributos válidos son:</p>
+ 
+<ul>
+<li><strong>General</strong>: Capa, visibilidad y material</li>
+<li><strong>Proyección</strong>: Color, Tipo de línea , Ancho de impresión de línea y Color de impresión de línea</li>
+<li><strong>Sección</strong>: Color, Tipo de línea, Ancho de impresión de línea, Color de impresión de línea, Patrón, Escala de patrón, Ángulo de patrón y Color de patrón</li>
+</ul>
+
+<h3>Componentes de baranda</h3>
+
+<h4>Barandal <img alt="Barandal" height="16" src="../images/Railing Rail.png" width="16" /></h4>
+<p>Es el componente horizontal que se extiende por la curva de trayectoria base. Puede definir el pasamanos o los barandales secundarios de la baranda. El componente de barandal se define mediante los siguientes parámetros:</p>
+<h5>Posición</h5>
+
+<p>La ubicación del componente barandal define su posición en relación con la curva de trayectoria base y la altura de la baranda.</p>
+<ul>
+<li><img src="images/Rail horizontal alignment 32.png" alt="Alineación horizontal de barandal"/>
+<strong>Alineación horizontal:</strong> la alineación del barandal depende de la dirección de la curva base. Tiene tres opciones diferentes: <strong>
+Exterior, Centro</strong> e <strong>Interior</strong>. </li>
+	<li><img src="images/Rail horizontal offset 32.png" alt="Desfase horizontal de barandal"/> <strong>Desfase horizontal</strong>: el desfase de alineación horizontal inserta el barandal a una distancia específica de la curva de base.</li>
+
+<li><img src="images/Rail vertical alignment 32.png" alt="Alineación vertical del barandal"/><strong> Alineación vertical:</strong> la alineación vertical define la posición vertical del componente barandal en relación con la altura total del objeto baranda. Tiene tres opciones diferentes: <strong>Superior, Centro </strong> e <strong>Inferior</strong>. </li>
+	<li><img src="images/Rail vertical offset 32.png" alt="Desfase vertical de barandal"/>
+	<strong>Desfase vertical</strong>: el desfase de alineación vertical inserta el barandal a una distancia específica de la posición de alineación vertical.</li>
+<li><img src="images/Rail orientation 32.png" alt="Orientación de barandal"/><strong> Orientación:</strong>
+<ul><li><strong>Alineada</strong>: la geometría se genera extruyendo el perfil del barandal perpendicularmente a la dirección del eje de la baranda.</li>
+<li><strong>Vertical</strong>: la geometría se genera extruyendo el perfil del barandal verticalmente a la dirección del eje de la baranda.</li></ul></li>
+</ul>
+
+<p>Las medidas también pueden especificarse en el momento de insertar la baranda, desde el cuadro de inserción, eligiendo la opción 
+<strong>Medidas &gt; Otras</strong> dentro de la sección <strong>Perfil</strong> de este cuadro.</p>
+<h5>Geometría:</h5>
+<p>Los parámetros de la geometría de los componentes del barandal los definen en sus extremos y en las juntas:</p>
+<ul><li><strong>Extremos:</strong>
+<ul>
+		<li><img src="images/Rail style 32.png" alt="Estilo de barandal"/><strong>Estilo</strong>: Opciones para definir el corte de eje del barandal en los extremos:
+		
+<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Cuadrado</strong></li>
+			<li><strong>A plomo</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Estilos de extremos de barandal" height="80" src="../images/assistants/Railing/Rail%20end%20styles.png" class="auto-style2" width="280" /></td>
+	</tr>
+</table>
+		</li>
+		<li><img src="images/Rail ends offset 32.png" alt="Margen de extremos de barandal"/><strong>Margen</strong>: distancia entre los extremos de la curva de trayectoria de la baranda y los extremos del barandal.</li>
+	</ul>
+	</li>
+	<li><strong>Juntas:
+	</strong>
+	<ul>
+			<li><img src="images/Rail planar joints 32.png" alt="Juntas planas de barandal"/><strong>Planas</strong>:
+			
+				<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Ninguno</strong></li>
+			<li><strong>Cancelar</strong></li>
+			<li><strong>Inglete</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Juntas planas de barandal" height="100" src="../images/assistants/Railing/Rail%20planar%20Joints.png" class="auto-style2" width="600"/></td>
+	</tr>
+</table>
+			</li>
+		<li><img src="images/Rail non planar joints 32.png" alt="Juntas no planas de barandal"/><strong>No planas</strong>:
+		<table style="width: 100%">
+	<tr>
+		<td style="width: 149px">
+		<ol>
+			<li><strong>Ninguno</strong></li>
+			<li><strong>Cancelar</strong></li>
+			<li><strong>Inglete</strong></li>
+			<li><strong>Plano</strong></li>
+		</ol>
+		</td>
+		<td>
+		<img alt="Juntas no planas de barandal" height="100" src="../images/assistants/Railing/Rail%20non%20planar%20Joints.png" class="auto-style2" width="800"/></td>
+	</tr>
+</table>
+		</li>
+	</ul>
+	</li>
+</ul>
+<h5>Perfil</h5>
+
+<ul>
+<li><img src="images/Shape profile -32.png" alt="Perfil de forma de barandal"/><strong> Perfil:</strong> los perfiles disponibles de manera predeterminada para el componente barandal son los perfiles <strong>Rectangular
+</strong> y <strong>Circular</strong>.<br/>
+
+También pueden usarse perfiles de formas personalizadas para definir barandales de barandas:<br/>
+<ul>
+<li>Para agregar un perfil personalizado: dibuje una curva cerrada y plana y conviértala en perfil utilizando el comando <a href="Commands_vaProfileFromCurve.html"><em>vaPerfilDesdeCurva</em> 
+<img alt="Comando vaPerfilDesdeCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a></li>
+<li>Una vez creado, el perfil personalizado aparece al final de la lista de la librería de perfiles paramétricos predefinidos. (El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="Perfil de rotación de barandal"/><strong> Rotación</strong>: ángulo por el que los barandales giran alrededor del eje de la baranda, tomando como centro de rotación el punto central de su área de perfil.</li>
+<li><strong>Medidas</strong>: parámetros correspondientes a las medidas de los barandales, según el tipo de perfil seleccionado.</li>
+</ul>
+
+<h4>Pilastra <img alt="Pilastra de baranda" height="16" src="../images/Railing Post.png" width="16" /></h4>
+<p>Las pilastras son el componente vertical principal de un objeto de baranda. Una pilastra se coloca en los puntos iniciales y finales de una curva de trayectoria de baranda y en cada uno de los puntos de discontinuidad que hay en medio. El componente de <strong>Pilastra</strong> se define mediante los siguientes parámetros:</p>
+
+<h5>Posición</h5>
+
+<p>La ubicación del componente pilastra define su posición en relación con la curva de trayectoria base y la altura de la baranda.</p>
+<ul>
+<li><img src="images/Posts horizontal alignment 32.png" alt="Alineación horizontal de las pilastras"/><strong> Alineación horizontal:</strong> la alineación de la pilastra depende de la dirección de la curva base. Tiene tres opciones diferentes: <strong>
+Exterior</strong>,
+<strong>Centro</strong> e <strong>Interior</strong>.</li>
+	<li><img src="images/Posts horizontal offset 32.png" alt="Desfase horizontal de las pilastras"/> <strong>Desfase de alineación horizontal</strong>: el desfase de alineación inserta la pilastra a una distancia específica de la curva de base. 
+	</li>
+<li><img src="images/Posts end offset 32.png" alt="Margen de extremos de pilastras"/> <strong>
+Margen de extremos:</strong> distancia <span>entre las pilastras y los extremos de la curva base de la baranda</span>.</li>
+</ul>
+
+<h5>Perfil</h5>
+
+<p>La forma de la pilastra está definida por un <strong>perfil</strong>,<em> </em>un ángulo de <strong>rotación
+</strong> y un <strong>tamaño</strong> de perfil.</p>
+<ul>
+
+<li><img src="images/Shape profile -32.png" alt="perfil de forma de pilastra"/> <strong>Perfil:</strong>
+los perfiles disponibles de manera predeterminada para el componente Pilastra son los perfiles <strong>Rectangular</strong> y <strong>Circular</strong>.<br/>
+
+También pueden usarse perfiles de formas personalizadas para definir barandales de pilastras:<br/>
+<ul>
+<li>Agregar un perfil personalizado: dibuje una curva cerrada y plana y conviértala en perfil utilizando el comando <a href="Commands_vaProfileFromCurve.html"><em>vaPerfilDesdeCurva</em> 
+<img alt="Comando vaPerfilDesdeCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a>.</li>
+<li>Una vez creado, el perfil personalizado aparece al final de la lista de la librería de perfiles paramétricos predefinidos. (El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="Perfil de rotación de pilastra"/><strong> Rotación</strong>: ángulo de rotación de las pilastras alrededor de sus ejes verticales, tomando como centro de rotación el punto central de su área de perfil.</li>
+<li><strong>Medidas</strong>: parámetros correspondientes a las medidas de las pilastras, según el tipo de perfil seleccionado.</li>
+</ul>
+
+<h4>Balaustre 
+<img alt="Balaustre de baranda" height="16" src="../images/Railing baluster.png" width="16"/></h4>
+
+<p>El balaustre es el componente vertical secundario de un objeto de baranda.</p>
+
+<h5>Posición</h5>
+
+<p>La ubicación del componente balaustre define su posición en relación con la curva de trayectoria base de la baranda.</p>
+<ul>
+<li><img src="images/Posts horizontal alignment 32.png" alt="Alineación horizontal de los balaustres"/><strong> Alineación horizontal:</strong> la alineación del balaustre depende de la dirección de la curva base. Tiene tres opciones diferentes:
+<strong>Interior</strong>,
+<strong>Centro </strong> y <strong>Exterior.</strong></li>
+	<li><img src="images/Posts horizontal offset 32.png" alt="Desfase horizontal de los balaustres"/> <strong>Desfase de alineación horizontal</strong>: el desfase de alineación inserta los balaustres a una distancia específica de la curva de base. 
+	</li>
+
+<li><img src="images/baluster path distance 32.png" alt="distancia de trayectoria de balaustres"/> <strong>Distancia de trayectoria:</strong> distancia entre el eje vertical central de cada balaustre a lo largo de la trayectoria de la baranda.</li>
+	<li><img src="images/baluster path alignment 32.png" alt="alineación de trayectoria de de balaustres"/> <strong>Distancia de trayectoria</strong>: distribución de balaustres a lo largo de la trayectoria de la baranda. Hay cuatro opciones disponibles: 
+		<ul>
+			<li><strong>Inicio</strong></li>
+			<li><strong>Medio</strong></li>
+			<li><strong>Fin</strong></li>
+			<li><strong>Justificar</strong></li>
+		</ul></li>
+	<li><img src="images/baluster path margin 32.png" alt="margen de trayectoria de balaustres"/> <strong>
+	<span class="auto-style1">Margen de trayectoria</span></strong>: distancia entre las caras exteriores de las pilastras y la cara más cercana del balaustre. Las pilastras se ubican en los extremos y en los puntos de discontinuidad de la curva base de la baranda. En barandas que no tienen pilastras, la distancia del margen de trayectoria comprende el primer y el último balaustre, ubicados en los extremos de la curva base de la baranda y en los puntos de discontinuidad.</li>
+</ul>
+
+<h5>Geometría</h5>
+
+<p>La geometría del componente balaustre define su forma en relación con la altura de la baranda.</p>
+<ul>
+<li><img src="images/baluster top offset 32.png" alt="desfase superior de balaustres"/> <strong>Margen superior: </strong>distancia entre la parte superior de la baranda y la superficie superior del balaustre.</li>
+
+<li><img src="images/baluster bottom offset 32.png" alt="desfase Inferior de balaustres"/> <strong>Margen Inferior: </strong>distancia entre la línea base de la baranda y la superficie inferior del balaustre.</li>
+</ul>
+
+
+<h5>Perfil</h5>
+
+<p>La forma de la balaustre está definida por un <strong>perfil</strong>,<em> </em>un ángulo de 
+<strong>rotación</strong> y <strong>tamaños</strong> de perfil.</p>
+
+<ul>
+
+<li><img src="images/Shape profile -32.png" alt="perfil de forma de balaustre"/> <strong>Perfil:</strong> los perfiles disponibles de manera predeterminada para el componente balaustre son los perfiles <strong>Rectangular</strong> y <strong>Circular</strong>.<br/>
+
+También pueden usarse perfiles de formas personalizadas para definir balaustres de pilastras:<br/>
+<ul>
+<li>Para agregar un perfil personalizado: dibuje una curva cerrada y plana y conviértala en perfil utilizando el comando <a href="Commands_vaProfileFromCurve.html"><em>vaPerfilDesdeCurva</em> 
+<img alt="Comando vaPerfilDesdeCurva" height="26" src="../images/VA_ProfileFromPolyline.jpg" width="26"/></a></li>
+<li>Una vez creado, el perfil personalizado aparece al final de la lista de la librería de perfiles paramétricos predefinidos. (El perfil resultante NO es paramétrico, por lo que puede utilizarse únicamente con las medidas y proporciones con las que fue dibujado.)</li>
+</ul>
+</li>
+<li><img src="images/Rotation profile -32.png" alt="perfil de rotación de balaustre"/> <strong>Rotación</strong>: ángulo por el que los balaustres giran alrededor de su eje vertical, tomando como centro de rotación el punto central de su área de perfil</li>
+<li><strong>Medidas</strong>: parámetros correspondientes a las medidas de los balaustres, según el tipo de perfil seleccionado.</li>
+</ul>
+
+
+
+<div class="figureWithDescription blockInline"><img src="../images/assistants/Railing/Railing styles.jpg" alt="Ejemplos de estilos de baranda." width="500" height="226" /><br/>
+Ejemplos de estilos de baranda
+</div>
+

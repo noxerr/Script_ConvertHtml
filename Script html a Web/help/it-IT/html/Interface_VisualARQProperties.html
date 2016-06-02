@@ -1,0 +1,114 @@
+<h3>Pannello delle proprietà degli oggetti (nel pannello delle proprietà di Rhino)<img alt="icona delle proprietà" height="32" src="../images/properties icon.jpg" width="32"/></h3>
+
+
+<div>
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/assistants/COLUMN/Column Properties panel.png" alt="Sezione Proprietà di VisualARQ dell'oggetto Colonna, nel pannello delle proprietà di Rhino."/><br/>
+		Sezione Proprietà di VisualARQ dell'oggetto Colonna,<br />
+		 nel pannello delle proprietà di Rhino.</p>
+	</div>
+	
+	<div class="leftBorder">
+		<p>Oltre che dalla finestra di dialogo delle proprietà degli oggetti qui sopra descritta, l'editing delle proprietà di un oggetto di VisualARQ si può realizzare dalla sezione delle proprietà di VisualARQ. <img alt="icona delle proprietà"  src="../images/properties icon.jpg" height="24" width="24"/> (disponibile anche dal menu di Rhino <strong>Modifica &gt; Proprietà oggetto...)<br />
+		</strong>Questa sezione è integrata nel pannello delle proprietà di Rhino ed appare solo quando si seleziona un oggetto di VisualARQ.</p>
+
+		<p>I parametri disponibili in questa sezione non solo gli stessi per tutti gli oggetti di VisualARQ. In questo esempio, si mostrano i parametri modificabili dell'oggetto "Colonna".</p>
+		<p>Dalla sezione delle proprietà di VisualARQ si possono editare quei parametri dell'oggetto selezionato di VisualARQ che non dipendono da uno stile specifico.</p>
+		
+		<p>I parametri disponibili in questa sezione dipendono dal tipo di oggetto selezionato e sono gli stessi di quelli contenuti nella finestra di dialogo delle proprietà dell'oggetto.</p>
+
+		</div>
+</div>
+<br clear="all"/>
+
+<h5>Generali</h5>
+<ul>
+	<li><strong>Nome:</strong> Il nome dell'oggetto selezionato.</li>
+	<li><strong>Descrizione: </strong>La descrizione dell'oggetto selezionato.</li>
+	<li><strong>Stile:</strong> L'elenco degli stili di oggetto disponibili nelle librerie di oggetti di VisualARQ e dei nuovi stili creati dall'utente.</li>
+	<li><strong>Numero di serie: </strong>Il numero di serie dell'oggetto selezionato.</li>
+</ul>
+
+<h5>Visualizzazione</h5>
+<ul>
+	<li><strong>Densità isocurve:</strong> Definisce il numero di curve isoparametriche che Rhino traccia sulla superficie.</li>
+	<li><strong>Visibilità in pianta:</strong> Nasconde o mostra un oggetto in una vista in pianta in base alla sua posizione rispetto al piano di taglio all'interno di un livello.</li>
+		<ul>
+			<li><strong>Nascosto:</strong> L'oggetto non verrà visualizzato, a prescindere dalle sue dimensioni e dalla sua posizione.</li>
+			<li><strong>Sul piano di taglio:</strong> L'oggetto verrà visualizzato solo quando interseca il piano di taglio.</li>
+			<li><strong>Sotto il piano di taglio:</strong> L'oggetto verrà visualizzato quando interseca il piano di taglio o quando si trova al di sotto di esso.</li>
+			<li><strong>Sopra il piano di taglio:</strong> L'oggetto verrà visualizzato quando interseca il piano di taglio o quando si trova al di sopra di esso.</li>
+			<li><strong>All'interno del livello:</strong> L'oggetto verrà sempre visualizzato quando si trova all'interno di un livello, a prescindere dalle sue dimensioni e dalla sua posizione.</li>
+		</ul>
+		
+	<div class="block">
+		<p class="figureWithDescription"><img src="../images/Plan Visibility.png" alt="Schema della visibilità in pianta." width="450" height="247"/><br/>
+		Schema della visibilità in pianta.</p>
+	</div>
+<br clear="all"/>
+
+	<p>Esempio delle varie condizioni di visibilità delle finestre dell'immagine qui sopra in funzione dell'opzione di visibilità in pianta selezionata:</p>
+		<ul>
+			<li><em>Nascosto:</em> Nessuno.</li>
+			<li><em>Sul piano di taglio:</em> La finestra <strong>2</strong>.</li>
+			<li><em>Sotto il piano di taglio</em>: Le finestre <strong>2</strong> e <strong>3</strong>.</li>
+			<li><em>Sopra il piano di taglio:</em> Le finestre <strong>1</strong> e <strong>2</strong>.</li>
+			<li><em>All'interno del livello: Le finestre</em> <strong>1, 2</strong> e <strong>3</strong>.</li>
+
+		</ul>
+</ul>
+<br/>
+
+<h5>Posizione</h5>
+<ul>
+	<li><strong>Punto di inserimento:</strong> Le coordinate del punto di inserimento di un oggetto.</li>
+	<li><strong>Contrassegno di inserimento</strong> (solo per le colonne): Attiva la visualizzazione del tipo di contrassegno di inserimento selezionato.</li>
+</ul>
+
+<h5>Geometria</h5>
+<ul>
+	<li><strong>Altezza:</strong> Specifica l'altezza dell'oggetto. Questo valore può essere modificato a prescindere dallo stile di oggetto. Nei muri e nelle colonne, l'altezza può essere definita anche per stile.</li>
+	<li><strong>Profilo: </strong> La descrizione del profilo dell'oggetto.</li>
+	<li><strong>Larghezza/Altezza:</strong> Le dimensioni dell'oggetto.</li>
+	<li><strong>Profondità di taglio</strong> (opzione disponibile solo per le porte, le finestre e le aperture): Specifica la distanza massima di profondità secondo la quale un muro verrà tagliato dal profilo di un'apertura.</li>
+</ul>
+
+<h5>Apertura </h5>
+<p>(Opzione disponibile per le porte e le finestre)</p>
+<ul>
+	<li><strong>Apertura (%):</strong> La percentuale di apertura definisce il grado di apertura con cui vengono visualizzate le ante delle porte e delle finestre nelle viste in pianta e nelle viste prospettiche.</li>
+	<li><strong>Verso di apertura:</strong> La direzione in cui si apriranno le ante delle porte e delle finestre.</li>
+</ul>
+
+
+<h5>Profilo</h5>
+<p>(Opzione disponibile per le travi e le colonne)</p>
+<ul>
+	<li><strong>Rollio/Rotazione:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">La rotazione del profilo dell'oggetto</span>.</li>
+	<li><strong>Allineamento:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">La posizione di inserimento dell'oggetto secondo il suo profilo</span>.</li>
+	<li><strong>Offset di allineamento:</strong> 
+	<span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA">La distanza dalla posizione di allineamento</span>. </li>
+</ul>
+
+<h4>Il pulsante Altro...</h4>
+<p>Nella parte inferiore della finestra di dialogo c'è il pulsante "Altro...", dal quale si può accedere direttamente ad alcuni comandi riguardanti gli oggetti selezionati. Queste opzioni sono simili a quelle che si trovano nel <a href="Interface_Context.html">Menu di scelta rapida</a> dopo aver selezionato un oggetto.</p>
+<ul>
+	<li>Elimina</li>
+	<li>Duplica</li>
+	<li>Isola oggetti</li>
+	<li>Nascondi oggetti</li>
+	<li>Blocca oggetti</li>
+	<li>Attiva punti di controllo</li>
+	<li><a href="Commands_vaWallReverse.html">Inverti</a> (solo per i muri)</li>
+	<li>Seleziona</li>
+	<li><a href="Commands_vaUpdate.html">Aggiorna</a></li>
+	<li><a href="Interface_StyleProperties.html">Proprietà degli stili</a></li>
+	<li><a href="Interface_ObjectProperties.html">Proprietà</a></li></ul>

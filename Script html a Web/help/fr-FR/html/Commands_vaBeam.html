@@ -1,0 +1,103 @@
+<h3>Poutre</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Clavier</a> : </div>
+	<div class="value keyboardCommand">vaPoutre</div>
+	
+	<div class="field">Icône : </div>
+	<div class="value icon"><img src="../images/VA_beam.jpg" alt="poutre"/> clic [<a href="Commands_vabeamStyles.html" title="commande vaPoutreStyles">clic droit</a>]
+	</div>
+	
+	<div class="field">Barre d'outils <a href="Interface_Toolbars.html">Objets</a> : </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="Barre d'outils Objets de VisualARQ" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menu </a>: </div>
+	<div class="value menu">VisualARQ &gt; Poutre &gt; Poutre</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaBeam.wmv" preview="../images/previews/vaBeamvideo.png" width="300px" height="300px"></div>
+
+<p>Lorsque vous lancez la commande <strong>vaPoutre</strong>, la 
+<a href="../Ele/Interface_Dialog.html">boîte de dialogue d'insertion</a> d'une poutre apparaît. Cette boîte de dialogue affiche une liste de tous les styles de poutres disponibles, ainsi que des options de base et un aperçu de la poutre.</p>
+
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Sélectionnez le <strong>Style de poutre</strong> que vous voulez insérer et définissez les options d'insertion de base.</li>
+	<li>Sélectionnez le <strong>Point de départ de la poutre</strong><strong></strong> en cliquant sur le point désiré.</li>
+	<li>Sélectionnez la <strong>Fin de la poutre</strong><strong></strong> en cliquant sur le point désiré.</li>
+</ol>
+
+<p>Vous pouvez définir autant de poutres que vous voulez et vous pouvez annuler la commande en appuyant sur Entrée ou Échap.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Boîte de dialogue d'insertion d'un poutre" height="808" src="../images/assistants/Beam/beam.png" width="358"/><br/>
+	Boîte de dialogue de la poutre
+</div>
+
+<br clear= "all" />
+
+<h3>Poutre à partir d'une courbe</h3>
+<p>Les poutres peuvent être créées à partir d'une courbe du modèle :</p>
+
+<p><strong>Étapes :</strong></p>
+<ol>
+	<li>Utilisez la commande <strong>vaPoutre</strong> pour créer une nouvelle poutre. La boîte de dialogue d'insertion d'une <strong>poutre
+	</strong> apparaît.</li>
+	<li>Sélectionnez le <strong>Style de poutre</strong> que vous voulez insérer et définissez les options d'insertion de base.</li>
+	<li>Sélectionnez <strong>ÀPartirDeCourbes</strong><em> </em>dans la ligne de commandes puis sélectionnez une <strong>courbe</strong> dans le modèle.</li>
+	<li>Appuyez sur ENTRÉE ou cliquez avec le bouton droit pour terminer la commande.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Point de contrôle de la poutre" height="198" longdesc="Beam created from a curve, with control points on" src="../images/assistants/Beam/beamFromCurve.png" width="325" /><br/>
+	Poutre créée à partir d'une courbe, avec les points de contrôle activés.
+</div>
+
+<br clear= "all" />
+
+<h4>Points de contrôle <img alt="Points de contrôle" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Les poutres peuvent avoir différents points de contrôle en fonction de la méthode utilisée pour leur création. Ces points de contrôle peuvent être déplacés dans toutes les directions, afin de modifier la position et les dimensions de la poutre.</p>
+<ul>
+	<li><strong>Poutre droite :</strong> la poutre possède deux points de contrôle, aux extrémités de l'objet.</li>
+	<li><strong>Poutre à partir d'une courbe :</strong> la poutre possède autant de points de contrôle que la courbe à partir de laquelle elle a été créée. </li>
+</ul>
+<br/>
+<h4>Options et paramètres d'insertion</h4>
+
+<h5>Alignement</h5>
+
+<p>L'alignement de la poutre détermine la position du point d'insertion de celle-ci en fonction de la forme de son profil.<br/> Options d'alignement :</p>
+
+
+<ul>
+	<li>Supérieur gauche, Supérieur centre et Supérieur droit</li>
+	<li>Milieu gauche, Centre et Milieu droite</li>
+	<li>Inférieur gauche, Inférieur centre et Inférieur droit</li>
+</ul>
+<p>Pour modifier l'alignement d'une poutre, modifiez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" /></p>
+
+<h5>Décalage</h5>
+<p>Montre la distance (décalage) entre les points X et Y de la poutre par rapport au point d'insertion.</p>
+
+<p>Pour modifier le décalage d'une poutre, changez sa valeur dans la boîte de dialogue <a href="Interface_ObjectProperties.html">Propriétés des objets</a>
+<img alt="Propriétés de VisualARQ" height="26" src="../images/VA_Properties.jpg" width="26" /> ou dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans la boîte de dialogue 
+<img alt="Propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />icône des propriétés de Rhino).</p>
+
+<h5>Élévation</h5>
+<p>L'élévation d'une poutre  est toujours mesurée par rapport à la ligne de base du niveau où elle est insérée. L'élévation n'est pas une propriété de style. La valeur est définie dans la boîte de dialogue d'insertion pour chaque poutre insérée lors de sa création.<br/>
+La valeur d'élévation par défaut pour les poutres est de 3 mètres. Si vous modifiez cette valeur, la boîte de dialogue de la 
+<strong>Poutre</strong> montrera la dernière valeur utilisée.</p>
+
+<h5>Roulis</h5>
+<p>Cette valeur détermine l'angle de rotation de la poutre autour de son axe, en prenant la position de son alignement comme centre de rotation. </p>
+<p>Le roulis de la poutre peut uniquement être modifié dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+<h5>Symétrique</h5>
+<p>Lorsque cette option est activée, l'orientation de la poutre est transformée en son image symétrique. </p>
+<p>Cette option peut uniquement être modifiée dans la section <a href="Interface_VisualARQProperties.html">Propriétés de VisualARQ</a> (dans le panneau Propriétés de Rhino
+<img alt="icône des propriétés de Rhino" height="26" src="../images/Rhino Properties.jpg" width="26" />).</p>
+
+

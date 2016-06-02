@@ -1,0 +1,103 @@
+<h3>Balken</h3>
+<div class="comDescr">
+	<div class="field"><a href="Interface_Commands.html">Tastatur</a>: </div>
+	<div class="value keyboardCommand">vaBalken</div>
+	
+	<div class="field">Symbol: </div>
+	<div class="value icon"><img src="../images/VA_beam.jpg" alt="Balken"/> Linksklick [<a href="Commands_vabeamStyles.html" title="Befehl BalkenStil">Rechtsklick</a>]
+	</div>
+	
+	<div class="field">Werkzeugleiste <a href="Interface_Toolbars.html">Objekte</a>: </div>
+	<div class="value toolbar"><img src="../images/Objects.jpg" alt="VisualARQ-Werkzeugleiste Objekte" usemap ="#ObjectsToolbarMap"/></div>
+	
+	<div class="field"><a href="Interface_Drop-down.html">Menü</a>: </div>
+	<div class="value menu">VisualARQ &gt; Balken &gt; Balken</div>
+</div>
+
+<div class="comVideo" id="video1" src="vaBeam.wmv" preview="../images/previews/vaBeamvideo.png" width="300px" height="300px"></div>
+
+<p>Durch Ausführen des Befehls <strong>vaBalken</strong> wird das 
+<a href="../Ele/Interface_Dialog.html">Einfüge-Dialogfenster</a> für Balken geöffnet. Dieses Dialogfenster zeigt eine Liste mit allen verfügbaren Balkenstilen sowie die grundlegenden Optionen und eine Vorschau des Balkenobjekts an.</p>
+
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Wählen Sie den <strong>Balkenstil</strong> und die grundlegenden Einfügungsoptionen.</li>
+	<li>Wählen Sie den <strong>Startpunkt</strong> des <strong>Balkens</strong> durch einen Klick auf die entsprechende Stelle.</li>
+	<li>Bestimmen Sie den <strong>Endpunkt</strong> des <strong>Balkens</strong> mit einem Klick auf die entsprechende Stelle.</li>
+</ol>
+
+<p>Sie können so viele Balken erstellen, wie Sie möchten. Durch Drücken von ENTER oder ESC beenden Sie die Ausführung des Befehls.</p>
+
+
+<div class="figureWithDescription block">
+	<img alt="Einfüge-Dialogfenster Balken" height="808" src="../images/assistants/Beam/beam.png" width="358"/><br/>
+	Dialogfenster Balken
+</div>
+
+<br clear= "all" />
+
+<h3>Balken aus Kurve</h3>
+<p>Balken können auch aus einer Kurve im Modell erzeugt werden:</p>
+
+<p><strong>Schritte:</strong></p>
+<ol>
+	<li>Führen Sie den Befehl <strong>vaBalken</strong> aus, um einen neuen Balken zu erstellen. Das Dialogfenster für das Einfügen eines <strong>Balkens
+	</strong> wird geöffnet.</li>
+	<li>Wählen Sie den <strong>Balkenstil</strong> und die grundlegenden Einfügungsoptionen.</li>
+	<li>Wählen Sie in der Befehlszeile <strong>AusKurven</strong><em> </em>und wählen Sie dann eine <strong>Kurve</strong> aus dem Modell.</li>
+	<li>Schließen Sie die Ausführung des Befehls durch Drücken von ENTER oder mit Klick auf die rechte Maustaste ab.</li>
+</ol>
+
+<div class="figureWithDescription block">
+	<img alt="Balkenkontrollpunkte" height="198" longdesc="Beam created from a curve, with control points on" src="../images/assistants/Beam/beamFromCurve.png" width="325" /><br/>
+	Balken aus einer Kurve mit aktivierten Kontrollpunkten.
+</div>
+
+<br clear= "all" />
+
+<h4>Kontrollpunkte <img alt="Kontrollpunkte" height="26" src="../images/Points on.png" width="26" /></h4>
+<p>Balken können je nachdem, wie sie erzeugt wurden, unterschiedliche Kontrollpunkte haben. Diese Kontrollpunkte können in alle Richtungen bewegt werden, wodurch sich die Position und die Bemaßungen des Balkens ändern.</p>
+<ul>
+	<li><strong>Gerader Balken:</strong> der Balken verfügt über zwei Kontrollpunkte an den beiden Enden des Objekts.</li>
+	<li><strong>Balken aus Kurve:</strong> der Balken hat genau so viele Kontrollpunkte wie die Kurve, aus der er erzeugt wurde. </li>
+</ul>
+<br/>
+<h4>Einfügungsoptionen und -parameter</h4>
+
+<h5>Ausrichtung</h5>
+
+<p>Die Ausrichtung des Balkens bestimmt die Position des Einfügungspunktes des Balkens gemäß der Form seines Profils.<br/> Ausrichtungsoptionen:</p>
+
+
+<ul>
+	<li>Oben Links, Oben Mitte und Oben Rechts</li>
+	<li>Mitte Links, Mitte und Mitte Rechts</li>
+	<li>Unten Links, Unten Mitte und Unten Rechts</li>
+</ul>
+<p>Um die Ausrichtung eines Balkens zu verändern, bearbeiten Sie die Werte im Dialogfenster <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen 
+<img alt="Rhino-Optionen" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Versatz</h5>
+<p>Zeigt den Abstand (Versatz) zwischen den X- und Y-Punkten des Balkens und dem Einfügungspunkt an.</p>
+
+<p>Zum Ändern des Versatzes eines Balkens, bearbeiten Sie seinen Wert in den <a href="Interface_ObjectProperties.html">Objekteigenschaften</a> 
+<img alt="VisualARQ-Eigenschaften" height="26" src="../images/VA_Properties.jpg" width="26" /> oder im Abschnitt <a href="Interface_VisualARQProperties.html">VisualARQ</a> in den Rhino-Optionen
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />.</p>
+
+<h5>Höhe vom Boden</h5>
+<p>Die Höhe eines Balkens vom Boden wird immer in Bezug auf die Grundlinie der Ebene gemessen, in der er angelegt wurde. Die Höhe vom Boden ist keine Stileigenschaft. Der Wert wird für jedes Balkenobjekt beim Erzeugen desselben im Einfügedialog definiert.<br/>
+Der standardmäßige Höhenwert für Balken beträgt 3 Meter. Wenn Sie diesen Wert ändern, zeigt der Einfügedialog des 
+<strong>Balkens</strong> den zuletzt verwendeten Wert an.</p>
+
+<h5>Rollen</h5>
+<p>Dieser Wert bestimmt den Rotationswinkel des Balkens um seine Achse, wobei die Ausrichtungsposition als Rotationszentrum dient. </p>
+<p>Das Rollen des Balkens kann nur in den <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> (im Panel der Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />) verändert werden.</p>
+
+<h5>Gespiegelt</h5>
+<p>Durch Aktivieren dieser Option wird die Balkenausrichtung spiegelverkehrt angeordnet. </p>
+<p>Diese Option kann nur in den <a href="Interface_VisualARQProperties.html">VisualARQ-Eigenschaften</a> (im Panel der Rhino-Eigenschaften 
+<img alt="Rhino-Eigenschaften" height="26" src="../images/Rhino Properties.jpg" width="26" />) verändert werden.</p>
+
+
